@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="com.fsck.k9.activity.UpgradeDatabases">
+    <intentSummary>
+      <source name="com.fsck.k9.activity.MessageCompose"/>
+      <destination name="com.fsck.k9.activity.UpgradeDatabases"/>
+      <sendICCInfo action="upgrade_databases" extras="Parcelable-start_intent" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_SINGLE_TOP ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;(r2)" methodSig="&lt;com.fsck.k9.activity.UpgradeDatabases: boolean actionUpgradeDatabases(android.content.Context,android.content.Intent)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.fsck.k9.activity.MessageCompose: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;com.fsck.k9.activity.MessageCompose: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;com.fsck.k9.activity.UpgradeDatabases: boolean actionUpgradeDatabases(android.content.Context,android.content.Intent)&gt;, &lt;com.fsck.k9.activity.MessageCompose: boolean initFromIntent(android.content.Intent)&gt;"/>
+      <nodes>
+        <node method="&lt;com.fsck.k9.activity.MessageCompose: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="MessageCompose onCreate" type="ReceiveIntentFromOutMethod" unit="$r11 = virtualinvoke r0.&lt;com.fsck.k9.activity.MessageCompose: android.content.Intent getIntent()&gt;()"/>
+        <node method="UpgradeDatabases actionUpgradeDatabases" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter1: android.content.Intent"/>
+        <node method="UpgradeDatabases actionUpgradeDatabases" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="UpgradeDatabases actionUpgradeDatabases" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lcom/fsck/k9/activity/UpgradeDatabases;&quot;)"/>
+        <node method="UpgradeDatabases actionUpgradeDatabases" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;upgrade_databases&quot;)"/>
+        <node method="UpgradeDatabases actionUpgradeDatabases" type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;start_intent&quot;, $r1)"/>
+        <node method="UpgradeDatabases actionUpgradeDatabases" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(536903680)"/>
+        <node method="UpgradeDatabases actionUpgradeDatabases" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.fsck.k9.activity.MessageCompose"/>
+      <sendICCInfo action="org.openintents.openpgp.action.QUERY_AUTOCRYPT_STATUS" extras="String[]-user_ids,int-result_code,Parcelable-error"/>
+      <receiveICCInfo extras="Parcelable-intent,boolean-keys_confirmed,int-result_code,int-autocrypt_status">
+        <info unit="$i0 = virtualinvoke r3.&lt;android.content.Intent: int getIntExtra(java.lang.String,int)&gt;(&quot;result_code&quot;, 0)" methodSig="&lt;com.fsck.k9.message.AutocryptStatusInteractor: com.fsck.k9.message.AutocryptStatusInteractor$RecipientAutocryptStatus retrieveCryptoProviderRecipientStatus(org.openintents.openpgp.util.OpenPgpApi,java.lang.String[])&gt;" instructionId="7" key="result_code" value="null"/>
+        <info unit="$r6 = virtualinvoke r3.&lt;android.content.Intent: android.os.Parcelable getParcelableExtra(java.lang.String)&gt;(&quot;intent&quot;)" methodSig="&lt;com.fsck.k9.message.AutocryptStatusInteractor: com.fsck.k9.message.AutocryptStatusInteractor$RecipientAutocryptStatus retrieveCryptoProviderRecipientStatus(org.openintents.openpgp.util.OpenPgpApi,java.lang.String[])&gt;" instructionId="14" key="intent" value="null"/>
+        <info unit="$z0 = virtualinvoke $r1.&lt;android.content.Intent: boolean getBooleanExtra(java.lang.String,boolean)&gt;(&quot;keys_confirmed&quot;, 0)" methodSig="&lt;com.fsck.k9.message.AutocryptStatusInteractor: com.fsck.k9.message.AutocryptStatusInteractor$RecipientAutocryptStatusType getRecipientAutocryptStatusFromIntent(android.content.Intent)&gt;" instructionId="2" key="keys_confirmed" value="null"/>
+        <info unit="$i0 = virtualinvoke $r1.&lt;android.content.Intent: int getIntExtra(java.lang.String,int)&gt;(&quot;autocrypt_status&quot;, 0)" methodSig="&lt;com.fsck.k9.message.AutocryptStatusInteractor: com.fsck.k9.message.AutocryptStatusInteractor$RecipientAutocryptStatusType getRecipientAutocryptStatusFromIntent(android.content.Intent)&gt;" instructionId="3" key="autocrypt_status" value="null"/>
+      </receiveICCInfo>
+      <method value="&lt;com.fsck.k9.activity.MessageCompose: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;com.fsck.k9.activity.MessageCompose: void onCreate(android.os.Bundle)&gt;,&lt;com.fsck.k9.activity.compose.RecipientPresenter: void asyncUpdateCryptoStatus()&gt;,&lt;com.fsck.k9.activity.compose.RecipientPresenter$1: java.lang.Object doInBackground(java.lang.Object[])&gt;,&lt;com.fsck.k9.activity.compose.RecipientPresenter$1: com.fsck.k9.message.AutocryptStatusInteractor$RecipientAutocryptStatus doInBackground(java.lang.Void[])&gt;,com.fsck.k9.message.AutocryptStatusInteractor$RecipientAutocryptStatus doInBackground(java.lang.Void[]), &lt;com.fsck.k9.message.AutocryptStatusInteractor: com.fsck.k9.message.AutocryptStatusInteractor$RecipientAutocryptStatus retrieveCryptoProviderRecipientStatus(org.openintents.openpgp.util.OpenPgpApi,java.lang.String[])&gt;"/>
+      <nodes>
+        <node method="&lt;com.fsck.k9.activity.MessageCompose: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="&lt;com.fsck.k9.activity.compose.RecipientPresenter: void asyncUpdateCryptoStatus()&gt;"/>
+        <node method="&lt;com.fsck.k9.activity.compose.RecipientPresenter$1: java.lang.Object doInBackground(java.lang.Object[])&gt;"/>
+        <node method="&lt;com.fsck.k9.activity.compose.RecipientPresenter$1: com.fsck.k9.message.AutocryptStatusInteractor$RecipientAutocryptStatus doInBackground(java.lang.Void[])&gt;"/>
+        <node method="AutocryptStatusInteractor retrieveCryptoProviderRecipientStatus" type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String[])&gt;(&quot;user_ids&quot;, $r2)"/>
+        <node method="AutocryptStatusInteractor retrieveCryptoProviderRecipientStatus" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="AutocryptStatusInteractor retrieveCryptoProviderRecipientStatus" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;org.openintents.openpgp.action.QUERY_AUTOCRYPT_STATUS&quot;)"/>
+        <node method="AutocryptStatusInteractor retrieveCryptoProviderRecipientStatus" type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String[])&gt;(&quot;user_ids&quot;, $r2)"/>
+        <node method="AutocryptStatusInteractor retrieveCryptoProviderRecipientStatus" type="ReceiveIntentFromRetValue" unit="r3 = virtualinvoke $r1.&lt;org.openintents.openpgp.util.OpenPgpApi: android.content.Intent executeApi(android.content.Intent,java.io.InputStream,java.io.OutputStream)&gt;(r3, null, null)"/>
+        <node method="AutocryptStatusInteractor retrieveCryptoProviderRecipientStatus" type="GetIntentExtra" unit="$i0 = virtualinvoke r3.&lt;android.content.Intent: int getIntExtra(java.lang.String,int)&gt;(&quot;result_code&quot;, 0)"/>
+        <node method="AutocryptStatusInteractor retrieveCryptoProviderRecipientStatus" type="GetIntentExtra" unit="$r6 = virtualinvoke r3.&lt;android.content.Intent: android.os.Parcelable getParcelableExtra(java.lang.String)&gt;(&quot;intent&quot;)"/>
+        <node method="OpenPgpApi executeApi" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="OpenPgpApi executeApi" type="InitIntent" unit="specialinvoke $r14.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>
+        <node method="OpenPgpApi executeApi" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;result_code&quot;, 0)"/>
+        <node method="OpenPgpApi executeApi" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;error&quot;, $r11)"/>
+        <node method="OpenPgpApi executeApi" type="ReceiveIntentFromRetValue" unit="$r1 = specialinvoke r0.&lt;org.openintents.openpgp.util.OpenPgpApi: android.content.Intent executeApi(android.content.Intent,android.os.ParcelFileDescriptor,int)&gt;($r1, r5, i0)"/>
+        <node method="OpenPgpApi executeApi" type="CreateMethod" unit="$r14 = new android.content.Intent"/>
+        <node method="AutocryptStatusInteractor getRecipientAutocryptStatusFromIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="AutocryptStatusInteractor getRecipientAutocryptStatusFromIntent" type="GetIntentExtra" unit="$z0 = virtualinvoke $r1.&lt;android.content.Intent: boolean getBooleanExtra(java.lang.String,boolean)&gt;(&quot;keys_confirmed&quot;, 0)"/>
+        <node method="AutocryptStatusInteractor getRecipientAutocryptStatusFromIntent" type="GetIntentExtra" unit="$i0 = virtualinvoke $r1.&lt;android.content.Intent: int getIntExtra(java.lang.String,int)&gt;(&quot;autocrypt_status&quot;, 0)"/>
+        <node method="AutocryptStatusInteractor$RecipientAutocryptStatus &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.app.PendingIntent"/>
+        <node method="RecipientPresenter$1 doInBackground" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.app.PendingIntent"/>
+        <node method="OpenPgpApi executeApi" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="OpenPgpApi executeApi" type="InitIntent" unit="specialinvoke $r10.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>
+        <node method="OpenPgpApi executeApi" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;result_code&quot;, 0)"/>
+        <node method="OpenPgpApi executeApi" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;error&quot;, $r7)"/>
+        <node method="OpenPgpApi executeApi" type="CreateMethod" unit="$r10 = new android.content.Intent"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.fsck.k9.activity.MessageCompose"/>
+      <destination name="com.fsck.k9.activity.UpgradeDatabases"/>
+      <sendICCInfo action="upgrade_databases" extras="Parcelable-start_intent" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_SINGLE_TOP ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;(r2)" methodSig="&lt;com.fsck.k9.activity.UpgradeDatabases: boolean actionUpgradeDatabases(android.content.Context,android.content.Intent)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.fsck.k9.activity.MessageCompose: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;com.fsck.k9.activity.MessageCompose: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;com.fsck.k9.activity.UpgradeDatabases: boolean actionUpgradeDatabases(android.content.Context,android.content.Intent)&gt;, &lt;com.fsck.k9.activity.MessageCompose: boolean initFromIntent(android.content.Intent)&gt;"/>
+      <nodes>
+        <node method="&lt;com.fsck.k9.activity.MessageCompose: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="MessageCompose onCreate" type="ReceiveIntentFromOutMethod" unit="$r11 = virtualinvoke r0.&lt;com.fsck.k9.activity.MessageCompose: android.content.Intent getIntent()&gt;()"/>
+        <node method="UpgradeDatabases actionUpgradeDatabases" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter1: android.content.Intent"/>
+        <node method="UpgradeDatabases actionUpgradeDatabases" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="UpgradeDatabases actionUpgradeDatabases" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lcom/fsck/k9/activity/UpgradeDatabases;&quot;)"/>
+        <node method="UpgradeDatabases actionUpgradeDatabases" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;upgrade_databases&quot;)"/>
+        <node method="UpgradeDatabases actionUpgradeDatabases" type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;start_intent&quot;, $r1)"/>
+        <node method="UpgradeDatabases actionUpgradeDatabases" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(536903680)"/>
+        <node method="UpgradeDatabases actionUpgradeDatabases" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.fsck.k9.service.BootReceiver"/>
+      <sendICCInfo data="" extras="Parcelable-com.fsck.k9.service.BroadcastReceiver.pendingIntent"/>
+      <receiveICCInfo action="notEmpty" extras="Parcelable-com.fsck.k9.service.BroadcastReceiver.pendingIntent">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: android.os.Parcelable getParcelableExtra(java.lang.String)&gt;(&quot;com.fsck.k9.service.BroadcastReceiver.pendingIntent&quot;)" methodSig="&lt;com.fsck.k9.service.BootReceiver: android.app.PendingIntent buildPendingIntent(android.content.Context,android.content.Intent)&gt;" instructionId="3" key="com.fsck.k9.service.BroadcastReceiver.pendingIntent" value="null"/>
+        <info unit="$r5 = virtualinvoke r4.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.fsck.k9.service.BootReceiver: android.app.PendingIntent buildPendingIntent(android.content.Context,android.content.Intent)&gt;" instructionId="5" key="action" value="[notEmpty]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.fsck.k9.service.BootReceiver: android.app.PendingIntent buildPendingIntent(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.fsck.k9.service.BootReceiver: android.app.PendingIntent buildPendingIntent(android.content.Context,android.content.Intent)&gt;,android.app.PendingIntent buildPendingIntent(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.fsck.k9.service.BootReceiver: android.app.PendingIntent buildPendingIntent(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="BootReceiver buildPendingIntent" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="BootReceiver buildPendingIntent" type="GetIntentExtra" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: android.os.Parcelable getParcelableExtra(java.lang.String)&gt;(&quot;com.fsck.k9.service.BroadcastReceiver.pendingIntent&quot;)"/>
+        <node method="BootReceiver buildPendingIntent" type="GetAttribute" unit="$r5 = virtualinvoke r4.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="BootReceiver buildPendingIntent" type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;com.fsck.k9.service.BroadcastReceiver.pendingIntent&quot;, r4)"/>
+        <node method="BootReceiver buildPendingIntent" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r7)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>
