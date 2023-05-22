@@ -1,0 +1,440 @@
+=============1================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-autocrypt_peer_id,ParcelableArrayList-android.intent.extra.STREAM,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.CC,CharSequence-android.intent.extra.TEXT
+=============2================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##extra:String-autocrypt_peer_id
+=============3================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============4================
+ ##source:com.fsck.k9.activity.setup.AccountSetupAccountType ##sendOrReceive:receive ##extra:boolean-makeDefault
+=============5================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============6================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##extra:String-message_reference,String-autocrypt_peer_id,String-account
+=============7================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============8================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##data:notEmpty ##extra:String-message_reference,Bundle-app_data,(,String-com.fsck.k9.search_folder,String-com.fsck.k9.search_account),String-folder,String-account,String-query
+=============9================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-message_reference,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============10================
+ ##source:com.fsck.k9.activity.setup.AccountSetupCheckSettings ##sendOrReceive:receive ##extra:String-account
+=============11================
+ ##source:com.fsck.k9.activity.UnreadWidgetConfiguration ##sendOrReceive:receive ##extra:int-appWidgetId
+=============12================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##extra:String-message_reference,String-autocrypt_peer_id
+=============13================
+ ##source:com.fsck.k9.activity.Accounts ##sendOrReceive:receive ##destination:com.fsck.k9.activity.UpgradeDatabases ##action:importSettings
+=============14================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:String-message_reference,String-folder,boolean-no_threading,String-query,String-account,byteArray-search_bytes
+=============15================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty, notEmpty, mSheme://mHost:mPort/notEmpty, mSheme:mAuthority/notEmpty ##extra:String-message_reference
+=============16================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-folder,boolean-no_threading,String-account,String-query
+=============17================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty
+=============18================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============19================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC,String-account
+=============20================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##data:notEmpty ##extra:String-message_reference,String-folder,String-query,String-account
+=============21================
+ ##source:com.fsck.k9.activity.setup.Prefs ##sendOrReceive:receive ##data:notEmpty, mSheme://mHost:mPort/notEmpty, mSheme:mAuthority/notEmpty
+=============22================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============23================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-special_folder
+=============24================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:String-message_reference,String-special_folder
+=============25================
+ ##source:com.fsck.k9.activity.EditIdentity ##sendOrReceive:receive ##extra:String-com.fsck.k9.EditIdentity_account
+=============26================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:String-folder,boolean-no_threading,String-query,String-account
+=============27================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##extra:String-message_reference
+=============28================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##extra:Parcelable-intent,boolean-keys_confirmed,int-result_code,int-autocrypt_status
+=============29================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##extra:String-message_reference
+=============30================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##type:notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============31================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty ##extra:String-message_reference
+=============32================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##data:notEmpty ##extra:Bundle-app_data,(,String-com.fsck.k9.search_folder,String-com.fsck.k9.search_account),String-folder,String-query,String-account
+=============33================
+ ##source:com.fsck.k9.activity.Accounts ##sendOrReceive:receive ##data:notEmpty
+=============34================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============35================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-message_reference,String-folder,String-special_folder,String-account
+=============36================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-autocrypt_peer_id,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC,CharSequence-android.intent.extra.TEXT
+=============37================
+ ##source:com.fsck.k9.activity.Accounts ##sendOrReceive:receive ##destination:com.fsck.k9.activity.UpgradeDatabases ##action:importSettings ##extra:boolean-startup
+=============38================
+ ##source:com.fsck.k9.activity.UnreadWidgetConfiguration ##sendOrReceive:receive ##extra:String-com.fsck.k9.ChooseAccount_account_uuid
+=============39================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:boolean-no_threading,String-query,byteArray-search_bytes
+=============40================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##extra:String-message_reference,Bundle-app_data,(,String-com.fsck.k9.search_folder,String-com.fsck.k9.search_account),String-query
+=============41================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##extra:Parcelable-intent
+=============42================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC,String-account
+=============43================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC
+=============44================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============45================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-message_reference,String-folder,boolean-no_threading,String-query,String-account,byteArray-search_bytes
+=============46================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============47================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============48================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC
+=============49================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##type:notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============50================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##data:notEmpty ##extra:String-query
+=============51================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:ParcelableArrayList-android.intent.extra.STREAM,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.CC,CharSequence-android.intent.extra.TEXT
+=============52================
+ ##source:com.fsck.k9.activity.setup.AccountSettings ##sendOrReceive:receive ##extra:String-com.fsck.k9.ChooseFolder_newfolder
+=============53================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-message_reference,boolean-no_threading,String-query
+=============54================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result
+=============55================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-message_reference,boolean-no_threading,String-query,byteArray-search_bytes
+=============56================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##extra:String-message_reference,String-autocrypt_peer_id
+=============57================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============58================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============59================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##extra:String-message_reference,String-query
+=============60================
+ ##source:com.fsck.k9.activity.UpgradeDatabases ##sendOrReceive:receive ##action:DatabaseUpgradeService.upgradeComplete, DatabaseUpgradeService.upgradeProgress ##extra:String-account_uuid
+=============61================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============62================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============63================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##data:notEmpty ##extra:String-message_reference,Bundle-app_data,(,String-com.fsck.k9.search_folder,String-com.fsck.k9.search_account),String-query
+=============64================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-folder,boolean-no_threading,String-query,String-account
+=============65================
+ ##source:com.fsck.k9.activity.setup.AccountSetupCheckSettings ##sendOrReceive:receive ##extra:Serializable-checkDirection
+=============66================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============67================
+ ##source:com.fsck.k9.activity.setup.AccountSettings ##sendOrReceive:receive ##extra:String-account
+=============68================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##type:notEmpty ##extra:String-message_reference,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============69================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##data:notEmpty ##extra:Bundle-app_data,(,String-com.fsck.k9.search_folder,String-com.fsck.k9.search_account),String-query
+=============70================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-message_reference,boolean-no_threading,byteArray-search_bytes,String-query
+=============71================
+ ##source:com.fsck.k9.activity.setup.AccountSetupOptions ##sendOrReceive:receive ##extra:boolean-makeDefault
+=============72================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============73================
+ ##source:com.fsck.k9.activity.ChooseFolder ##sendOrReceive:receive ##extra:String-com.fsck.k9.ChooseFolder_account,String-com.fsck.k9.ChooseFolder_showOptionNone,String-com.fsck.k9.ChooseFolder_showDisplayableOnly,String-com.fsck.k9.ChooseFolder_curfolder,String-com.fsck.k9.ChooseFolder_message,String-com.fsck.k9.ChooseFolder_selfolder,String-com.fsck.k9.ChooseFolder_showcurrent
+=============74================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============75================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============76================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:boolean-no_threading,String-query
+=============77================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============78================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-message_reference,String-special_folder
+=============79================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:String-message_reference,String-folder,boolean-no_threading,String-query,String-account
+=============80================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##extra:String-message_reference
+=============81================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============82================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty, notEmpty ##extra:String-message_reference,String-autocrypt_peer_id
+=============83================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,String-account
+=============84================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty, notEmpty, mSheme://mHost:mPort/notEmpty, mSheme:mAuthority/notEmpty
+=============85================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty, notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,String-account
+=============86================
+ ##source:com.fsck.k9.activity.LauncherShortcuts ##sendOrReceive:receive ##action:android.intent.action.CREATE_SHORTCUT
+=============87================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##extra:String-message_reference
+=============88================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============89================
+ ##source:com.fsck.k9.activity.setup.AccountSetupOutgoing ##sendOrReceive:receive ##extra:boolean-makeDefault
+=============90================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION
+=============91================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:String-special_folder
+=============92================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty
+=============93================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result
+=============94================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============95================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,String-account
+=============96================
+ ##source:com.fsck.k9.activity.FolderList ##sendOrReceive:receive ##extra:boolean-fromShortcut,String-account
+=============97================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##extra:String-message_reference,Parcelable-message_decryption_result
+=============98================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id
+=============99================
+ ##source:com.fsck.k9.activity.setup.AccountSetupIncoming ##sendOrReceive:receive ##action:android.intent.action.EDIT
+=============100================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC
+=============101================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============102================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============103================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-message_reference,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============104================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##extra:boolean-keys_confirmed,int-autocrypt_status
+=============105================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##extra:String-folder,String-query,String-account
+=============106================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============107================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:String-message_reference,boolean-no_threading,String-query,byteArray-search_bytes
+=============108================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:boolean-no_threading,byteArray-search_bytes,String-query
+=============109================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##extra:String-message_reference,Parcelable-message_decryption_result,String-account
+=============110================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty, notEmpty ##extra:String-message_reference
+=============111================
+ ##source:com.fsck.k9.activity.NotificationDeleteConfirmation ##sendOrReceive:receive ##extra:StringArrayList-messageReferences,String-accountUuid
+=============112================
+ ##source:com.fsck.k9.activity.EmailAddressList ##sendOrReceive:receive ##extra:Serializable-contact
+=============113================
+ ##source:com.fsck.k9.activity.UnreadWidgetConfiguration ##sendOrReceive:receive ##extra:String-com.fsck.k9.ChooseFolder_newfolder
+=============114================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============115================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============116================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##extra:String-message_reference
+=============117================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============118================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:boolean-no_threading,String-query
+=============119================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:String-folder,String-special_folder,String-account
+=============120================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC,CharSequence-android.intent.extra.TEXT
+=============121================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-folder,boolean-no_threading,String-account,byteArray-search_bytes,String-query
+=============122================
+ ##source:com.fsck.k9.activity.setup.FolderSettings ##sendOrReceive:receive ##extra:Serializable-com.fsck.k9.folderName
+=============123================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##extra:int-result_code
+=============124================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##extra:Parcelable-insecure_detail_intent,boolean-override_crypto_warning,Parcelable-decryption,Parcelable-signature,Parcelable-intent
+=============125================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC,String-account
+=============126================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============127================
+ ##source:com.fsck.k9.activity.setup.AccountSetupIncoming ##sendOrReceive:receive ##extra:boolean-makeDefault
+=============128================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-autocrypt_peer_id,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC,CharSequence-android.intent.extra.TEXT
+=============129================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:String-message_reference,String-folder,String-special_folder,String-account
+=============130================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##extra:Parcelable-intent
+=============131================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##extra:String-autocrypt_peer_id
+=============132================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============133================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC,CharSequence-android.intent.extra.TEXT
+=============134================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-message_reference,String-folder,boolean-no_threading,String-query,String-account
+=============135================
+ ##source:com.fsck.k9.activity.EditIdentity ##sendOrReceive:receive ##extra:int-com.fsck.k9.EditIdentity_identity_index
+=============136================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============137================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:String-message_reference,String-folder,boolean-no_threading,String-account,String-query,byteArray-search_bytes
+=============138================
+ ##source:com.fsck.k9.activity.setup.AccountSetupOutgoing ##sendOrReceive:receive ##extra:String-account
+=============139================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result
+=============140================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC
+=============141================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============142================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============143================
+ ##source:com.fsck.k9.activity.setup.AccountSetupIncoming ##sendOrReceive:receive ##extra:String-account
+=============144================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##data:notEmpty
+=============145================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============146================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============147================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:String-message_reference,boolean-no_threading,String-query
+=============148================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============149================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-folder,String-special_folder,String-account
+=============150================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============151================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,String-account
+=============152================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC
+=============153================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##extra:Parcelable-error
+=============154================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,String-account
+=============155================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:String-message_reference,String-folder,boolean-no_threading,String-account,String-query
+=============156================
+ ##source:com.fsck.k9.activity.FolderList ##sendOrReceive:receive ##extra:String-account
+=============157================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============158================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-autocrypt_peer_id,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC
+=============159================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-message_reference,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============160================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##extra:Parcelable-insecure_detail_intent,boolean-override_crypto_warning,Parcelable-decryption,Parcelable-signature,Parcelable-intent
+=============161================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============162================
+ ##source:com.fsck.k9.activity.setup.FolderSettings ##sendOrReceive:receive ##extra:String-com.fsck.k9.account
+=============163================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##data:notEmpty ##extra:String-folder,String-query,String-account
+=============164================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##extra:Parcelable-error
+=============165================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##extra:String-message_reference,String-account
+=============166================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##extra:String-message_reference,String-account
+=============167================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##type:notEmpty ##extra:String-message_reference,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============168================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##extra:String-message_reference,String-account
+=============169================
+ ##source:com.fsck.k9.activity.Accounts ##sendOrReceive:receive ##action:importSettings
+=============170================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##extra:String-message_reference,String-folder,String-query,String-account
+=============171================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:ParcelableArrayList-android.intent.extra.STREAM,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.CC,CharSequence-android.intent.extra.TEXT
+=============172================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##extra:String-message_reference,Bundle-app_data,(,String-com.fsck.k9.search_folder,String-com.fsck.k9.search_account),String-folder,String-account,String-query
+=============173================
+ ##source:com.fsck.k9.activity.EditIdentity ##sendOrReceive:receive ##extra:Serializable-com.fsck.k9.EditIdentity_identity
+=============174================
+ ##source:com.fsck.k9.activity.setup.AccountSetupOptions ##sendOrReceive:receive ##extra:String-account
+=============175================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC,String-account
+=============176================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##extra:String-autocrypt_peer_id
+=============177================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty, notEmpty, mSheme://mHost:mPort/notEmpty, mSheme:mAuthority/notEmpty ##extra:String-folder,String-account
+=============178================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result,String-account
+=============179================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:String-folder,boolean-no_threading,String-query,String-account,byteArray-search_bytes
+=============180================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##type:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============181================
+ ##source:com.fsck.k9.activity.setup.AccountSetupOutgoing ##sendOrReceive:receive ##action:android.intent.action.EDIT
+=============182================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============183================
+ ##source:com.fsck.k9.activity.setup.AccountSetupNames ##sendOrReceive:receive ##extra:String-account
+=============184================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:ParcelableArrayList-android.intent.extra.STREAM,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,String-android.intent.extra.SUBJECT,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============185================
+ ##source:com.fsck.k9.activity.ChooseFolder ##sendOrReceive:receive ##extra:String-com.fsck.k9.ChooseFolder_account,String-com.fsck.k9.ChooseFolder_showOptionNone,String-com.fsck.k9.ChooseFolder_showDisplayableOnly,String-com.fsck.k9.ChooseFolder_curfolder,String-com.fsck.k9.ChooseFolder_selfolder,String-com.fsck.k9.ChooseFolder_showcurrent
+=============186================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty, notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result,String-account
+=============187================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id
+=============188================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-message_reference,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============189================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##data:notEmpty ##extra:String-message_reference,String-query
+=============190================
+ ##source:com.fsck.k9.activity.UpgradeDatabases ##sendOrReceive:receive ##action:DatabaseUpgradeService.upgradeComplete, DatabaseUpgradeService.upgradeProgress
+=============191================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-folder,boolean-no_threading,String-query,byteArray-search_bytes,String-account
+=============192================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:boolean-no_threading,String-query,byteArray-search_bytes
+=============193================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty, notEmpty, mSheme://mHost:mPort/notEmpty, mSheme:mAuthority/notEmpty ##extra:String-message_reference,String-folder,String-account
+=============194================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-autocrypt_peer_id,ParcelableArrayList-android.intent.extra.STREAM,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,String-android.intent.extra.SUBJECT,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============195================
+ ##source:com.fsck.k9.activity.ChooseIdentity ##sendOrReceive:receive ##extra:String-com.fsck.k9.ChooseIdentity_account
+=============196================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##data:notEmpty ##extra:String-folder,String-account,String-query
+=============197================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-message_reference,String-folder,boolean-no_threading,String-account,String-query
+=============198================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##data:notEmpty ##extra:String-message_reference,Bundle-app_data,(,String-com.fsck.k9.search_folder,String-com.fsck.k9.search_account),String-folder,String-query,String-account
+=============199================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##extra:int-result_code
+=============200================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##data:notEmpty ##extra:String-message_reference,String-folder,String-account,String-query
+=============201================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##extra:String-message_reference,String-autocrypt_peer_id
+=============202================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##extra:String-message_reference,String-folder,String-account,String-query
+=============203================
+ ##source:com.fsck.k9.activity.setup.AccountSetupComposition ##sendOrReceive:receive ##extra:String-account
+=============204================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION, com.fsck.k9.intent.action.REPLY_ALL, com.fsck.k9.intent.action.FORWARD, com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT, com.fsck.k9.intent.action.EDIT_DRAFT, com.fsck.k9.intent.action.COMPOSE, com.fsck.k9.intent.action.REPLY ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,Parcelable-message_decryption_result,ParcelableArrayList-android.intent.extra.STREAM,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC,String-account
+=============205================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result
+=============206================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##extra:String-query
+=============207================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##extra:String-folder,boolean-no_threading,String-query,byteArray-search_bytes,String-account
+=============208================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##type:notEmpty ##extra:String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC
+=============209================
+ ##source:com.fsck.k9.activity.setup.AccountSetupAccountType ##sendOrReceive:receive ##extra:String-account
+=============210================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-autocrypt_peer_id,ParcelableArrayList-android.intent.extra.STREAM,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.CC,CharSequence-android.intent.extra.TEXT
+=============211================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##extra:Bundle-app_data,(,String-com.fsck.k9.search_folder,String-com.fsck.k9.search_account),String-query
+=============212================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##extra:String-message_reference,String-autocrypt_peer_id,Parcelable-message_decryption_result
+=============213================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty, notEmpty ##type:notEmpty ##extra:String-message_reference,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,Parcelable-android.intent.extra.STREAM,CharSequence-android.intent.extra.TEXT,StringArray-android.intent.extra.CC
+=============214================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##action:android.intent.action.SEND_MULTIPLE, android.intent.action.SENDTO, android.intent.action.VIEW, android.intent.action.SEND, org.autocrypt.PEER_ACTION ##data:notEmpty ##type:notEmpty ##extra:String-message_reference,String-android.intent.extra.SUBJECT,StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,CharSequence-android.intent.extra.TEXT,Parcelable-android.intent.extra.STREAM,StringArray-android.intent.extra.CC
+=============215================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW ##data:notEmpty ##extra:String-message_reference,String-folder,boolean-no_threading,String-account,byteArray-search_bytes,String-query
+=============216================
+ ##source:com.fsck.k9.activity.UpgradeDatabases ##sendOrReceive:receive ##extra:Parcelable-start_intent
+=============217================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##extra:String-message_reference,Bundle-app_data,(,String-com.fsck.k9.search_folder,String-com.fsck.k9.search_account),String-folder,String-query,String-account
+=============218================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##extra:StringArray-android.intent.extra.EMAIL,StringArray-android.intent.extra.BCC,StringArray-android.intent.extra.CC
+=============219================
+ ##source:com.fsck.k9.activity.MessageCompose ##sendOrReceive:receive ##extra:Parcelable-error,int-result_code
+=============220================
+ ##source:com.fsck.k9.activity.MessageList ##sendOrReceive:receive ##action:shortcut, android.intent.action.VIEW, android.intent.action.SEARCH ##extra:Bundle-app_data,(,String-com.fsck.k9.search_folder,String-com.fsck.k9.search_account),String-folder,String-query,String-account
