@@ -1,6 +1,7 @@
 package model;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -13,8 +14,17 @@ import java.util.Set;
 public class AppModel {
     private static final AppModel intance = new AppModel();
 
+    public String pkgName;
     public String appName;
     public String appPath;
+
+//    public HashMap<String, ComponentModel> componentMap;
+    public HashMap<String, ComponentModel> activityMap = new HashMap<>(); //保存activity名及其对应的activityModel
+    public HashMap<String, ComponentModel> serviceMap = new HashMap<>();
+    public HashMap<String, ComponentModel> providerMap = new HashMap<>();
+    public HashMap<String, ComponentModel> receiverMap = new HashMap<>();
+    public HashMap<String, ActivityModel> eaMap = new HashMap<>();
+    public String mainActivity;
 
     public Set<String> usesPermissionSet;
     public String permission;
@@ -25,7 +35,7 @@ public class AppModel {
 
 
     public String manifestString;  //manifestString保存manifest文件信息
-    public String pkgName;
+
 
 
     //全局单例
@@ -34,7 +44,7 @@ public class AppModel {
     }
 
 
-    public void setManifestString(String manifestString) {
-        AppModel.v().manifestString = manifestString;
+    public HashMap<String, ActivityModel> getEaMap() {
+        return AppModel.v().eaMap;
     }
 }

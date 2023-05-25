@@ -10,8 +10,8 @@ public class ActivityModel extends ComponentModel implements Serializable {
 	public String taskAffinity ;
 
 	
-	public ActivityModel(AppModel appModel) {
-		super(appModel);
+	public ActivityModel() {
+		super();
 	}
 	public String getLaunchMode() {
 		return launchMode;

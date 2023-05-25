@@ -1,6 +1,7 @@
 package utils;
 
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -24,5 +25,22 @@ public class PrintUtils {
         if (res.toString().endsWith(split))
             res = new StringBuilder(res.substring(0, res.length() - split.length()));
         return res.toString();
+    }
+
+    //根据分隔符split分割list并输出
+    public static String printList(List<?> list, String split) {
+        if (list == null)
+            return "";
+        String res = "";
+        for (Object o : list) {
+            if(o!=null) res += o.toString() + split;
+        }
+        if (res.length() > 0)
+            res = res.substring(0, res.length() - split.length());
+        return res;
+    }
+
+    public static String refineString(String old) {
+        return old.replace("\\", "").replace("\"", "");
     }
 }
