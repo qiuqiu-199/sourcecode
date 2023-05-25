@@ -24,9 +24,6 @@ public class ICCMsg {
     public String port;
     public String type;
     public Set<String> extras = new HashSet<String>();
-//     String flag; TODO flag待处理
-
-//     String sendOrReceive;
 
     public ICCMsg(){}
 
@@ -40,7 +37,18 @@ public class ICCMsg {
         path = path2;
         port = port2;
         type = type2;
-        extras = new HashSet<String>(extra2);
+        extras = new HashSet<>(extra2);
+    }
+    public ICCMsg(String action2, Set<String> category2, String data2, String scheme2, String host2, String path2, String port2,
+                  String type2) {
+        action = action2;
+        category = category2;
+        data = data2;
+        scheme = scheme2;
+        host = host2;
+        path = path2;
+        port = port2;
+        type = type2;
     }
 
 
@@ -85,5 +93,78 @@ public class ICCMsg {
     public ICCMsg clone() throws CloneNotSupportedException {
         ICCMsg icc = new ICCMsg(action, category, data, scheme, host, path, port,type , extras);
         return icc;
+    }
+
+
+    public String getAction() {
+        return action;
+    }
+
+    public void setAction(String action) {
+        this.action = action;
+    }
+
+    public Set<String> getCategory() {
+        return category;
+    }
+
+    public void setCategory(Set<String> category) {
+        this.category = category;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public String getScheme() {
+        return scheme;
+    }
+
+    public void setScheme(String scheme) {
+        this.scheme = scheme;
+    }
+
+    public String getHost() {
+        return host;
+    }
+
+    public void setHost(String host) {
+        this.host = host;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    public String getPort() {
+        return port;
+    }
+
+    public void setPort(String port) {
+        this.port = port;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public Set<String> getExtras() {
+        return extras;
+    }
+
+    public void setExtras(Set<String> extras) {
+        this.extras = extras;
     }
 }

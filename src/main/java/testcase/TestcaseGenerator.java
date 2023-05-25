@@ -112,7 +112,7 @@ public class TestcaseGenerator {
             if (line.contains("</application>")) {
 //                content = "<uses-sdk android:targetSdkVersion=\"23\" android:minSdkVersion=\"16\"/>\n" + content;
                 for (int i=1; i<= appId; i++) {
-                    content += "\t\t<activity android:name=\"."+ConstantUtils.ACTIVITY +i +"\" android:exported=\"true\"/>\n";
+                    content += "\t\t<activity android:name=\"."+ConstantUtils.ACTIVITY_ +i +"\" android:exported=\"true\"/>\n";
                 }
             }
             content += line;
@@ -141,7 +141,7 @@ public class TestcaseGenerator {
             else str +="null;;";
 
             //提取category属性
-            if(msg.category != null && msg.category.size()>0){
+            if(msg.category != null && msg.category.size()>0 && !msg.category.toString().equals("[]")){
                 for(String c: msg.category){
                     str += c;
                     break;
@@ -170,7 +170,7 @@ public class TestcaseGenerator {
             //提取extras，举例：extras="boolean-no_threading,byte[]-search_bytes"
             if(msg.extras != null){
                 for (String extra : msg.extras) {
-                    if(!extra.equals("")){
+                    if(!extra.equals("") && extra.contains("-")){
                         String[] extra_pair = extra.split("-");
                         String extra_type = extra_pair[0];
                         String extra_key = extra_pair[1];
@@ -189,6 +189,14 @@ public class TestcaseGenerator {
                     }
                 }
             }
+            //TODO 有时候从componentInfo解析得到的extras太多了会导致ACDT爆炸，取30个
+            if (ACDTStr.size() > 30){
+                HashSet<String> newSet = new HashSet<String>();
+                Object[] obj = ACDTStr.toArray();
+                newSet.add((String) obj[30]);
+                ACDTStr = newSet;
+            }
+
             for (String s : ACDTStr) {
                 generateJavaFile(s,actName);
             }
@@ -208,7 +216,7 @@ public class TestcaseGenerator {
         String pro_name = AppModel.v().appName;
         String projectPath ="Result_testGen\\testcases\\" + pro_name + File.separator + ConstantUtils.GENERATEDAPP1 +  pro_name ;
 
-        gen_java_file(projectPath + File.separator + ConstantUtils.SRCFOLDER + File.separator+ ConstantUtils.ACTIVITY ,
+        gen_java_file(projectPath + File.separator + ConstantUtils.SRCFOLDER + File.separator+ ConstantUtils.ACTIVITY_ ,
                 null, actName, acdt);
 
     }
@@ -362,6 +370,7 @@ public class TestcaseGenerator {
         }
         else {
             String extra_key = Utils.refineString(ss[1]);
+            if(extra_key.equals("intent")) extra_key = "intent1";
             if (extra_key.equals(""))
                 return;
             extra_key = extra_key.replace(".","_dot_");
@@ -463,6 +472,9 @@ public class TestcaseGenerator {
                         extra_value = extra_key;
                     }
                 }
+                //TODO 关于bundle先这样处理，后面再改5.24
+                if (extra_type.equals("Bundle"))
+                    extra_value = "\"" + extra_value + "\"";
                 content += "\t\t" + objName + "." + putAPI + "(\"" + extra_key.replace("_dot_", ".").replace("_maohao_", ":").replace("_line_","-")
                         + "\", " + extra_value + ");\n";
             }
@@ -620,10 +632,10 @@ public class TestcaseGenerator {
         //android create project --name K9Mail --target android-23 --path Result_testGen\testcase\K9Mail\generatedApp\K9Mail --package qiu.com.fsck.k9 --activity Activity_
         Utils.exec("android create project --name " + pro_name + " --target " + ConstantUtils.ANDROIDTARGET
                 + " --path " + pro_path + " --package " + ConstantUtils.APKFLAG + oldpkg + " --activity "
-                + ConstantUtils.ACTIVITY);
+                + ConstantUtils.ACTIVITY_);
         System.out.println("android create project --name " + pro_name + " --target " + ConstantUtils.ANDROIDTARGET
                 + " --path " + pro_path + " --package " + ConstantUtils.APKFLAG + oldpkg + " --activity "
-                + ConstantUtils.ACTIVITY);
+                + ConstantUtils.ACTIVITY_);
 
 
     }
