@@ -12,7 +12,7 @@ import java.util.Set;
  */
 
 public class AppModel {
-    private static final AppModel intance = new AppModel();
+    private static AppModel intance = new AppModel();
 
     public String pkgName;
     public String appName;

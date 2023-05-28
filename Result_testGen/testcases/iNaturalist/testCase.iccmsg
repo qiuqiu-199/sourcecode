@@ -1,0 +1,7 @@
+1	org.inaturalist.android.ObservationEditor	android.intent.action.SEND;;android.intent.category.DEFAULT;;null;;image/*;;
+2	org.inaturalist.android.ObservationEditor	android.intent.action.SEND_MULTIPLE;;android.intent.category.DEFAULT;;null;;image/*;;
+3	org.inaturalist.android.ObservationEditor	android.intent.action.INSERT;;android.intent.category.DEFAULT;;null;;vnd.android.cursor.dir/vnd.google.observation;;
+4	org.inaturalist.android.com.google.android.gms.appinvite.PreviewActivity	com.google.android.gms.appinvite.ACTION_PREVIEW;;android.intent.category.DEFAULT;;null;;null;;
+5	org.inaturalist.android.com.google.android.gms.tagmanager.TagManagerPreviewActivity	android.intent.action.VIEW;;android.intent.category.DEFAULT;;tagmanager.c.org.inaturalist.android;;null;;
+6	org.inaturalist.android.ObservationListActivity	android.intent.action.MAIN;;android.intent.category.LAUNCHER;;null;;null;;
+7	org.inaturalist.android.ObservationListActivity	null;;android.intent.category.LAUNCHER;;null;;null;;

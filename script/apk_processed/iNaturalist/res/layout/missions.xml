@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/no_connectivity_container" android:background="#ffeeeeee" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingBottom="32.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/no_connectivity_icon" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cloud_off_black_48dp" android:tint="#ff929292" android:layout_centerInParent="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#8a000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_connectivity" android:layout_below="@id/no_connectivity_icon" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/no_recommended_missions" android:background="#ffeeeeee" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingBottom="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/no_recommended_missions_icon" android:paddingBottom="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_my_location_black_48dp" android:tint="#ff929292" android:layout_centerInParent="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#8a000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_recommended_missions" android:layout_below="@id/no_recommended_missions_icon" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <RelativeLayout android:id="@id/recommended_for_you_container" android:background="#ffeeeeee" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/recommended_for_you" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recommended_for_you" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff74ac00" android:id="@id/view_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/view_all_all_caps" android:layout_alignBottom="@id/recommended_for_you" android:layout_alignParentRight="true" />
+                <android.support.v4.view.ViewPager android:id="@id/recommended_missions" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginTop="16.0dip" android:layout_below="@id/view_all" />
+                <ProgressBar android:gravity="center" android:id="@id/loading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignTop="@id/recommended_missions" android:layout_centerHorizontal="true" style="?android:progressBarStyleLarge" />
+                <TextView android:id="@id/loading_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/searching_your_area" android:layout_below="@id/loading" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/missions_by_category_container" android:background="#ffffffff" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff74ac00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/browse_by_category" />
+                <org.inaturalist.android.GridViewExtended android:gravity="center" android:orientation="vertical" android:id="@id/categories" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

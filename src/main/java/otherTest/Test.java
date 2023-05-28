@@ -1,7 +1,11 @@
 package otherTest;
 
+import utils.IOUtils;
 import utils.Utils;
 
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -16,15 +20,10 @@ import java.util.regex.Pattern;
 
 public class Test {
     public static void main(String[] args) {
-        System.out.println("getProjectName(\"K9Mail\") = " + getProjectName("K9Mail_gyi"));
-        Map<Integer,Integer> map = new HashMap<>();
-//        map.key
+        System.out.println(Utils.getProjectName("AFWall+"));
+        ArrayList<Integer> android_dot_intent_dot_extra_dot_STREAM = new ArrayList<>();
+
     }
 
-    public static String getProjectName(String str) {
-        String regEx = "[^a-z|^A-Z|^0-9|^_]";
-        Pattern p = Pattern.compile(regEx);
-        Matcher n = p.matcher(str);
-        return n.replaceAll("_");
-    }
+
 }

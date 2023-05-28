@@ -4,6 +4,7 @@ import java.io.*;
 import com.google.common.io.Files;
 import java.util.*;
 import java.util.Map.Entry;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Utils {
@@ -82,6 +83,14 @@ public class Utils {
 		if(old==null || old.equals("\"\"")) return "null";
 		String newStr = old.replace("\\", "").replace("\"", "");
 		return newStr;
+	}
+
+	//创建安卓项目时项目名只能由大小写字母和下划线组成，这里用来将不合规的项目名变得合规。
+	public static String getProjectName(String str) {
+		String regEx = "[^a-z|^A-Z|^0-9|^_]";
+		Pattern p = Pattern.compile(regEx);
+		Matcher n = p.matcher(str);
+		return n.replaceAll("_");
 	}
 
 

@@ -1,0 +1,25 @@
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes.dex : \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_1$1.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_1.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_2$1.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_2.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_3$1.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_3.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_4$1.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_4.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_5$1.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_5.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_6$1.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_6.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_7$1.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\Activity_7.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\BuildConfig.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\MyParcelable.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\MySerializable.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\R$attr.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\R$drawable.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\R$id.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\R$layout.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\R$string.class \
+F:\ThesisReproduction\qiu\Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\bin\classes\qiu\org\inaturalist\android\R.class \

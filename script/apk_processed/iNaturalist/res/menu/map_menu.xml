@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@android:drawable/ic_menu_mapmode" android:id="@id/layers" android:title="@string/layers" android:alphabeticShortcut="l" />
+    <item android:icon="@android:drawable/ic_menu_myplaces" android:id="@id/nearby" android:title="@string/nearby_observations" android:alphabeticShortcut="n" />
+    <item android:icon="@android:drawable/ic_menu_add" android:id="@id/add" android:title="@string/add" android:alphabeticShortcut="a" />
+</menu>
