@@ -8,6 +8,7 @@ import org.dom4j.io.SAXReader;
 import parser.ManifestParser;
 import soot.jimple.infoflow.android.iccta.App;
 import testcase.TestcaseGenerator;
+import utils.Global;
 
 import java.io.*;
 import java.util.*;
@@ -21,25 +22,28 @@ import java.util.*;
 
 public class Parser {
     public static void main(String[] args) throws DocumentException, IOException {
-//        System.setOut(new PrintStream(new File("summaryInfo/outInfo.txt")));
-        long totalstarttime = System.currentTimeMillis();
-        long currentstarttime = totalstarttime;
+        System.setOut(new PrintStream(new File("summaryInfo/outInfo.txt"))); //控制台输出重定向到文件
+        //收集生成测试用例的时间
+        long totalstarttime = System.currentTimeMillis(); //收集单个apk的测试用例生成时间
+        long currentstarttime = totalstarttime;  //收集全部测试用例生成时间
 
-        //解析manifest文件
-        AppModel.v().appPath = "apk" + File.separator;
-        File appPath = new File(AppModel.v().appPath);
+
+        File appPath = new File(Global.v().appPath);
         String[] list = appPath.list();
         File file = new File("summaryInfo/pkg.txt");
         if(!file.exists()) file.createNewFile();
         FileOutputStream fileOutputStream = new FileOutputStream(file,true);
 
+        assert list != null;
         for (String appName : list) {
-            AppModel.v().appName = appName.substring(0, appName.length() - 4);
-            System.out.println("当前应用：" + AppModel.v().appName);
+            Global.appModel = new AppModel();
+            Global.appModel.appName = appName.substring(0, appName.length() - 4);
+            System.out.println("当前应用：" + Global.appModel.appName);
 
-            ManifestParser manifestParser = new ManifestParser(AppModel.v().appPath + appName);
+            //解析manifest文件
+            ManifestParser manifestParser = new ManifestParser(Global.v().appPath + appName);
             manifestParser.parse(true);  //这个true，对应fax里面的
-            String content = AppModel.v().pkgName +"\n";
+            String content = Global.appModel.pkgName +"\n";
             fileOutputStream.write(content.getBytes());
 
 
