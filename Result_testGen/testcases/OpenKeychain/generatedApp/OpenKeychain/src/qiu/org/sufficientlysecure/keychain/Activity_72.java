@@ -19,14 +19,11 @@ public class Activity_72 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.setData(Uri.parse("notEmpty"));
+		intent.setAction("org.sufficientlysecure.keychain.action.DECRYPT_DATA");
+		intent.setData(Uri.parse("?"));
 		intent.setType("application/autocrypt-setup");
-		intent.putExtra("android.intent.extra.TEXT", "999999999999999999999999999999999999999999999999999");
-		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
-		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
 		startActivity(intent);
-		//android.intent.action.SEND;;null;;notEmpty;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,
+		//org.sufficientlysecure.keychain.action.DECRYPT_DATA;;null;;?;;application/autocrypt-setup;;
 	}
     /** Called when the activity is first created. */
     @Override

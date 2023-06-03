@@ -17,12 +17,14 @@ public class Activity_396 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.EncryptTextActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SecurityTokenOperationActivity");
 		intent.setComponent(cn);
-		intent.setAction("org.sufficientlysecure.keychain.action.ENCRYPT_TEXT");
-		intent.addCategory("android.intent.category.DEFAULT");
+		Parcelable crypto_input = new MyParcelable();
+		intent.putExtra("crypto_input", crypto_input);
+		Parcelable required_input = new MyParcelable();
+		intent.putExtra("required_input", required_input);
 		startActivity(intent);
-		//org.sufficientlysecure.keychain.action.ENCRYPT_TEXT;;android.intent.category.DEFAULT;;null;;null;;
+		//null;;null;;null;;null;;Parcelable->required_input->ParcelableObj,Parcelable->crypto_input->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

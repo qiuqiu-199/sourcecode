@@ -1,0 +1,327 @@
+BugInfo:
+hash:1879216937
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{qiu.com.csipsimple/qiu.com.csipsimple.Activity_81}: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.csipsimple/com.csipsimple.ui.prefs.cupcake.MainPrefs}; have you declared this activity in your AndroidManifest.xml?
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.csipsimple/com.csipsimple.ui.prefs.cupcake.MainPrefs}; have you declared this activity in your AndroidManifest.xml?
+	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2005)
+	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1673)
+	at android.app.Activity.startActivityForResult(Activity.java:4587)
+	at android.app.Activity.startActivityForResult(Activity.java:4545)
+	at android.app.Activity.startActivity(Activity.java:4906)
+	at android.app.Activity.startActivity(Activity.java:4874)
+	at qiu.com.csipsimple.Activity_81.launch(Activity_81.java:23)
+	at qiu.com.csipsimple.Activity_81.onCreate(Activity_81.java:32)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+81	com.csipsimple.ui.prefs.cupcake.MainPrefs	com.csipsimple.ui.action.PREFS_GLOBAL;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1430829004
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.csipsimple/com.csipsimple.wizards.BasePrefsWizard}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.csipsimple.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.csipsimple.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getLong(BaseBundle.java:1064)
+	at android.content.Intent.getLongExtra(Intent.java:7397)
+	at com.csipsimple.wizards.BasePrefsWizard.onCreate(BasePrefsWizard.java:67)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.csipsimple.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.csipsimple.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.csipsimple-fI7_zuQSCrO8XOT0vMNsyg==/base.apk"],nativeLibraryDirectories=[/data/app/com.csipsimple-fI7_zuQSCrO8XOT0vMNsyg==/lib/arm, /system/fake-libs, /data/app/com.csipsimple-fI7_zuQSCrO8XOT0vMNsyg==/base.apk!/lib/armeabi-v7a, /system/lib, /system/vendor/lib]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+20	com.csipsimple.wizards.BasePrefsWizard	null;;null;;null;;null;;String->wizard->!@#$%^ds:+_,Serializable->id->SerializableObj,
+
+21	com.csipsimple.wizards.BasePrefsWizard	null;;null;;null;;null;;String->wizard->abcde,Serializable->id->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:35466670
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to resume activity {com.csipsimple/com.csipsimple.ui.calllog.CallLogDetailsActivity}: java.lang.NullPointerException: Attempt to get length of null array
+	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3825)
+	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3857)
+	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to get length of null array
+	at com.csipsimple.ui.calllog.CallLogDetailsFragment.getCallLogEntryUris(CallLogDetailsFragment.java:161)
+	at com.csipsimple.ui.calllog.CallLogDetailsFragment.onResume(CallLogDetailsFragment.java:147)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:918)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1083)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1065)
+	at android.support.v4.app.FragmentManagerImpl.dispatchResume(FragmentManager.java:1854)
+	at android.support.v4.app.FragmentActivity.onResumeFragments(FragmentActivity.java:431)
+	at android.support.v4.app.FragmentActivity.onPostResume(FragmentActivity.java:420)
+	at com.actionbarsherlock.app.SherlockFragmentActivity.onPostResume(SherlockFragmentActivity.java:70)
+	at android.app.Activity.performResume(Activity.java:7325)
+	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3817)
+	... 11 more
+
+ICC Msgs:
+82	com.csipsimple.ui.calllog.CallLogDetailsActivity	null;;null;;null;;null;;long[]->EXTRA_CALL_LOG_IDS->Long.MIN_VALUE,
+
+83	com.csipsimple.ui.calllog.CallLogDetailsActivity	null;;null;;null;;null;;long[]->EXTRA_CALL_LOG_IDS->0,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:843463537
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.csipsimple/com.csipsimple.ui.prefs.cupcake.PrefsLoaderActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:226)
+	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2155)
+	at android.content.res.Resources.getXml(Resources.java:1206)
+	at android.preference.GenericInflater.inflate(GenericInflater.java:262)
+	at android.preference.PreferenceManager.inflateFromResource(PreferenceManager.java:324)
+	at android.preference.PreferenceActivity.addPreferencesFromResource(PreferenceActivity.java:1549)
+	at com.csipsimple.ui.prefs.GenericPrefs.onCreate(GenericPrefs.java:53)
+	at com.csipsimple.ui.prefs.cupcake.PrefsLoaderActivity.onCreate(PrefsLoaderActivity.java:45)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+85	com.csipsimple.ui.prefs.cupcake.PrefsLoaderActivity	null;;null;;null;;null;;int->preference_type->Integer.MIN_VALUE,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:432964020
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.csipsimple/com.csipsimple.ui.outgoingcall.OutgoingCallChooser}: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+	at android.telephony.PhoneNumberUtils.getNumberFromIntent(PhoneNumberUtils.java:193)
+	at com.csipsimple.ui.outgoingcall.OutgoingCallChooser.getPhoneNumber(OutgoingCallChooser.java:85)
+	at com.csipsimple.ui.outgoingcall.OutgoingCallChooser.onCreate(OutgoingCallChooser.java:56)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+237	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.CALL_PRIVILEGED;;android.intent.category.DEFAULT;;sip;;null;;
+
+140	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.VIEW;;android.intent.category.DEFAULT;;sip;;null;;
+
+134	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.SENDTO;;android.intent.category.DEFAULT;;smsto;;null;;
+
+222	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	notEmpty;;null;;notEmpty;;null;;long->acc_id->Long.MAX_VALUE,
+
+229	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.phone.extra.NEW_CALL_INTENT;;android.intent.category.DEFAULT;;sip;;null;;
+
+155	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.SENDTO;;null;;notEmpty;;null;;
+
+104	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.SENDTO;;null;;notEmpty;;null;;long->acc_id->Long.MIN_VALUE,
+
+103	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.SENDTO;;null;;notEmpty;;null;;long->acc_id->0,
+
+162	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.CALL;;android.intent.category.DEFAULT;;sips;;null;;
+
+223	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	notEmpty;;null;;notEmpty;;null;;long->acc_id->0,
+
+135	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	notEmpty;;null;;notEmpty;;null;;
+
+177	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.VIEW;;android.intent.category.BROWSABLE;;imtosip;;null;;
+
+234	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.CALL_PRIVILEGED;;android.intent.category.DEFAULT;;tel;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1457529326
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{qiu.com.csipsimple/qiu.com.csipsimple.Activity_80}: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.csipsimple/com.csipsimple.ui.prefs.cupcake.MainPrefs}; have you declared this activity in your AndroidManifest.xml?
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.csipsimple/com.csipsimple.ui.prefs.cupcake.MainPrefs}; have you declared this activity in your AndroidManifest.xml?
+	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2005)
+	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1673)
+	at android.app.Activity.startActivityForResult(Activity.java:4587)
+	at android.app.Activity.startActivityForResult(Activity.java:4545)
+	at android.app.Activity.startActivity(Activity.java:4906)
+	at android.app.Activity.startActivity(Activity.java:4874)
+	at qiu.com.csipsimple.Activity_80.launch(Activity_80.java:24)
+	at qiu.com.csipsimple.Activity_80.onCreate(Activity_80.java:33)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+80	com.csipsimple.ui.prefs.cupcake.MainPrefs	com.csipsimple.ui.action.PREFS_GLOBAL;;android.intent.category.DEFAULT;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-660139912
+FATAL EXCEPTION: main
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+	at com.csipsimple.ui.messages.MessageFragment.onViewCreated(MessageFragment.java:138)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:885)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1083)
+	at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:635)
+	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1431)
+	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:523)
+	at com.csipsimple.ui.messages.MessageActivity.onStart(MessageActivity.java:57)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+	at android.app.Activity.performStart(Activity.java:7165)
+	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+98	com.csipsimple.ui.messages.MessageActivity	null;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1663292261
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.csipsimple/com.csipsimple.wizards.BasePrefsWizard}: java.lang.IllegalArgumentException: Unknown URI content://com.csipsimple.db/accounts/-9223372036854775808
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.IllegalArgumentException: Unknown URI content://com.csipsimple.db/accounts/-9223372036854775808
+	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:165)
+	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:135)
+	at android.content.ContentProviderProxy.query(ContentProviderNative.java:418)
+	at android.content.ContentResolver.query(ContentResolver.java:803)
+	at android.content.ContentResolver.query(ContentResolver.java:753)
+	at android.content.ContentResolver.query(ContentResolver.java:711)
+	at com.csipsimple.api.SipProfile.getProfileFromDbId(SipProfile.java:1587)
+	at com.csipsimple.wizards.BasePrefsWizard.onCreate(BasePrefsWizard.java:72)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+14	com.csipsimple.wizards.BasePrefsWizard	null;;null;;null;;null;;long->id->Long.MIN_VALUE,String->wizard->999999999999999999999999999999999999999999999999999,String->ID->abcde,
+
+11	com.csipsimple.wizards.BasePrefsWizard	null;;null;;null;;null;;long->id->Long.MIN_VALUE,String->wizard->abcde,String->ID->!@#$%^ds:+_,
+
+15	com.csipsimple.wizards.BasePrefsWizard	null;;null;;null;;null;;long->id->Long.MIN_VALUE,String->wizard->999999999999999999999999999999999999999999999999999,String->ID->!@#$%^ds:+_,
+
+12	com.csipsimple.wizards.BasePrefsWizard	null;;null;;null;;null;;long->id->Long.MIN_VALUE,String->wizard->abcde,String->ID->abcde,
+
+------------------------------------------------------------------------
+

@@ -17,15 +17,13 @@ public class Activity_366 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.SearchActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.EditAccountActivity");
 		intent.setComponent(cn);
-		Parcelable metadata = new MyParcelable();
-		intent.putExtra("metadata", metadata);
-		Parcelable intent1 = new MyParcelable();
-		intent.putExtra("intent", intent);
-		intent.putExtra("result_code", Integer.MAX_VALUE);
+		intent.putExtra("fingerprint", "abcde");
+		intent.putExtra("jid", "abcde");
+		intent.putExtra("init", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->result_code->Integer.MAX_VALUE,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,
+		//null;;null;;null;;null;;boolean->init->true,String->jid->abcde,String->fingerprint->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,12 +17,12 @@ public class Activity_150 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.FolderList");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.FolderSettings");
 		intent.setComponent(cn);
-		intent.putExtra("account", "abcde");
-		intent.putExtra("appWidgetId", Integer.MIN_VALUE);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->appWidgetId->Integer.MIN_VALUE,String->account->abcde,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

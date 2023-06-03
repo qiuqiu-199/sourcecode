@@ -17,13 +17,12 @@ public class Activity_8 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupIncoming");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.EmailAddressList");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.EDIT");
-		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("makeDefault", false);
+		MySerializable contact = new MySerializable();
+		intent.putExtra("contact", contact);
 		startActivity(intent);
-		//android.intent.action.EDIT;;null;;null;;null;;boolean->makeDefault->false,String->account->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Serializable->contact->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,13 +17,12 @@ public class Activity_145 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.widgets.AccountWidgetConfigure");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SENDTO");
-		intent.setData(Uri.parse("imto://mHost:mPort/mPath"));
-		intent.putExtra("acc_id", 0);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//android.intent.action.SENDTO;;null;;imto://mHost:mPort/mPath;;null;;long->acc_id->0,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,15 +17,24 @@ public class Activity_143 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.themes.WidgetThemeConfigActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity");
 		intent.setComponent(cn);
-		intent.putExtra("previewID", 0);
-		MySerializable mode = new MySerializable();
-		intent.putExtra("mode", mode);
-		intent.putExtra("name", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("useWallpaper", true);
+		intent.setAction("?");
+		intent.setData(Uri.parse("?"));
+		intent.putExtra("android.intent.extra.alarm.VIBRATE", true);
+		Parcelable android_dot_intent_dot_extra_dot_ringtone_dot_PICKED_URI = new MyParcelable();
+		intent.putExtra("android.intent.extra.ringtone.PICKED_URI", android_dot_intent_dot_extra_dot_ringtone_dot_PICKED_URI);
+		intent.putExtra("selectedAlarm", Long.MIN_VALUE);
+		intent.putExtra("android.intent.extra.alarm.MESSAGE", "!@#$%^ds:+_");
+		intent.putExtra("showBack", false);
+		intent.putExtra("android.intent.extra.alarm.MINUTES", 0);
+		intent.putExtra("android.intent.extra.alarm.RINGTONE", "abcde");
+		intent.putExtra("android.intent.extra.alarm.HOUR", 0);
+		intent.putExtra("solarevent", "abcde");
+		ArrayList<Integer> android_dot_intent_dot_extra_dot_alarm_dot_DAYS = new ArrayList<Integer>();
+		intent.putIntegerArrayListExtra("android.intent.extra.alarm.DAYS", android_dot_intent_dot_extra_dot_alarm_dot_DAYS);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->useWallpaper->true,String->name->999999999999999999999999999999999999999999999999999,Serializable->mode->SerializableObj,int->previewID->0,
+		//?;;null;;?;;null;;IntegerArrayList->android.intent.extra.alarm.DAYS->0,String->solarevent->abcde,int->android.intent.extra.alarm.HOUR->0,String->android.intent.extra.alarm.RINGTONE->abcde,int->android.intent.extra.alarm.MINUTES->0,boolean->showBack->false,String->android.intent.extra.alarm.MESSAGE->!@#$%^ds:+_,long->selectedAlarm->Long.MIN_VALUE,Parcelable->android.intent.extra.ringtone.PICKED_URI->ParcelableObj,boolean->android.intent.extra.alarm.VIBRATE->true,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,12 +17,12 @@ public class Activity_7 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.ModelFieldEditor");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.DeckPicker");
 		intent.setComponent(cn);
-		intent.putExtra("title", "abcde");
-		intent.putExtra("noteTypeID", 0);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->noteTypeID->0,String->title->abcde,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,13 +17,10 @@ public class Activity_68 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.QrCodeCaptureActivity");
 		intent.setComponent(cn);
-		intent.setAction("org.sufficientlysecure.keychain.action.DECRYPT_DATA");
-		intent.setData(Uri.parse("mSheme://com.android.email.attachmentprovider:mPort/mPath"));
-		intent.setType("application/autocrypt-setup");
 		startActivity(intent);
-		//org.sufficientlysecure.keychain.action.DECRYPT_DATA;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

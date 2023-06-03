@@ -19,11 +19,10 @@ public class Activity_22 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.ShareActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND_MULTIPLE");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("*/*");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//android.intent.action.SEND_MULTIPLE;;android.intent.category.DEFAULT;;null;;*/*;;
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,15 +17,12 @@ public class Activity_230 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.ExchangeActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		intent.putExtra("GroupId", "abcde");
-		intent.putExtra("NumUsers", Integer.MIN_VALUE);
-		byte[] UserData = new byte[1];
-		intent.putExtra("UserData", UserData);
-		intent.putExtra("HostName", "abcde");
+		intent.setAction("android.nfc.action.NDEF_DISCOVERED");
+		intent.setData(Uri.parse("?://mHost:mPort//.well-known/openpgpkey/hu/"));
 		startActivity(intent);
-		//null;;null;;null;;null;;String->HostName->abcde,byteArray->UserData->0,int->NumUsers->Integer.MIN_VALUE,String->GroupId->abcde,
+		//android.nfc.action.NDEF_DISCOVERED;;null;;?://mHost:mPort//.well-known/openpgpkey/hu/;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

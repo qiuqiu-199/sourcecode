@@ -19,8 +19,19 @@ public class Activity_33 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.ConfirmActivity");
 		intent.setComponent(cn);
+		Bundle alarm_params = new Bundle();
+		Parcelable alarm_params1 = new MyParcelable();
+		alarm_params.putParcelable("alarm_params1", alarm_params1);
+		MySerializable schedule_id = new MySerializable();
+		intent.putExtra("schedule_id", schedule_id);
+		intent.putExtra("alarm_params", "alarm_params");
+		intent.putExtra("schedule_time", "abcde");
+		intent.putExtra("action", Integer.MAX_VALUE);
+		Parcelable target = new MyParcelable();
+		intent.putExtra("target", target);
+		intent.putExtra("date", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;String->date->abcde,Parcelable->target->ParcelableObj,int->action->Integer.MAX_VALUE,String->schedule_time->abcde,Bundle->alarm_params->BundleObj,(,Parcelable->alarm_params1->ParcelableObj,),Serializable->schedule_id->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

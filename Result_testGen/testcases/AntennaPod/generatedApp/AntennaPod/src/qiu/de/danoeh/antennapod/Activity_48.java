@@ -17,11 +17,13 @@ public class Activity_48 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.MainActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.OpmlImportFromPathActivity");
 		intent.setComponent(cn);
-		intent.putExtra("fragment_feed_id", Long.MAX_VALUE);
+		intent.setData(Uri.parse("/"));
+		int[] de_dot_danoeh_dot_antennapod_dot_selectedItems = new int[1];
+		intent.putExtra("de.danoeh.antennapod.selectedItems", de_dot_danoeh_dot_antennapod_dot_selectedItems);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->fragment_feed_id->Long.MAX_VALUE,
+		//null;;null;;/;;null;;intArray->de.danoeh.antennapod.selectedItems->0,
 	}
     /** Called when the activity is first created. */
     @Override

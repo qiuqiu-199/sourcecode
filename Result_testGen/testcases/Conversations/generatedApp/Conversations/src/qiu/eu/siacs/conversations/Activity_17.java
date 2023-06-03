@@ -17,15 +17,12 @@ public class Activity_17 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ContactDetailsActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChangePasswordActivity");
 		intent.setComponent(cn);
-		intent.setAction("view_contact");
-		intent.putExtra("fingerprint", "abcde");
-		Parcelable intent1 = new MyParcelable();
-		intent.putExtra("intent", intent);
-		intent.putExtra("contact", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("account", "!@#$%^ds:+_");
+		intent.putExtra("password", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//view_contact;;null;;null;;null;;String->contact->999999999999999999999999999999999999999999999999999,Parcelable->intent->ParcelableObj,String->fingerprint->abcde,
+		//null;;null;;null;;null;;String->password->999999999999999999999999999999999999999999999999999,String->account->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

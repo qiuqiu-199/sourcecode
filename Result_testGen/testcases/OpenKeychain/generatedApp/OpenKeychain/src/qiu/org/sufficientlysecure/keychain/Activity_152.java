@@ -17,16 +17,15 @@ public class Activity_152 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity");
 		intent.setComponent(cn);
-		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEY_SERVER_AND_RETURN_RESULT");
-		intent.setData(Uri.parse("notEmpty://mHost:mPort//.well-known/openpgpkey/hu/"));
-		Parcelable result_crypto_input = new MyParcelable();
-		intent.putExtra("result_crypto_input", result_crypto_input);
-		Parcelable result_data = new MyParcelable();
-		intent.putExtra("result_data", result_data);
+		intent.putExtra("package_name", "abcde");
+		Parcelable data = new MyParcelable();
+		intent.putExtra("data", data);
+		intent.putExtra("package_signature", 0);
+		intent.putExtra("user_id", "!@#$%^ds:+_");
 		startActivity(intent);
-		//org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEY_SERVER_AND_RETURN_RESULT;;null;;notEmpty://mHost:mPort//.well-known/openpgpkey/hu/;;null;;Parcelable->result_data->ParcelableObj,Parcelable->result_crypto_input->ParcelableObj,
+		//null;;null;;null;;null;;String->user_id->!@#$%^ds:+_,byte[]->package_signature->0,Parcelable->data->ParcelableObj,String->package_name->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

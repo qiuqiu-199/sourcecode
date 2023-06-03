@@ -17,11 +17,10 @@ public class Activity_9 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.TouchImageActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassEditActivity");
 		intent.setComponent(cn);
-		intent.putExtra("IMAGE", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->IMAGE->abcde,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

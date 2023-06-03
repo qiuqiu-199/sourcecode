@@ -17,11 +17,17 @@ public class Activity_339 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.MagicCreateActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		intent.putExtra("eu.siacs.conversations.invite_uri", "abcde");
+		intent.setAction("eu.siacs.conversations.action.VIEW");
+		intent.putExtra("nick", "abcde");
+		intent.putExtra("as_quote", false);
+		intent.putExtra("pm", false);
+		intent.putExtra("do_not_append", true);
+		intent.putExtra("conversationUuid", "!@#$%^ds:+_");
+		intent.putExtra("android.intent.extra.TEXT", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->eu.siacs.conversations.invite_uri->abcde,
+		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->abcde,String->conversationUuid->!@#$%^ds:+_,boolean->do_not_append->true,boolean->pm->false,boolean->as_quote->false,String->nick->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

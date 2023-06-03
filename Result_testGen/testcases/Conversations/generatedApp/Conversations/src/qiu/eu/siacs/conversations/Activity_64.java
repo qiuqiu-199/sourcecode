@@ -19,13 +19,13 @@ public class Activity_64 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChooseContactActivity");
 		intent.setComponent(cn);
-		intent.putExtra("account", "abcde");
+		intent.putExtra("account", "!@#$%^ds:+_");
 		intent.putExtra("extra_select_multiple", false);
-		intent.putExtra("extra_filtered_contacts", "!@#$%^ds:+_");
+		intent.putExtra("extra_filtered_contacts", "abcde");
 		intent.putExtra("extra_conversation", "!@#$%^ds:+_");
-		intent.putExtra("extra_show_enter_jid", false);
+		intent.putExtra("extra_show_enter_jid", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->extra_show_enter_jid->false,String->extra_conversation->!@#$%^ds:+_,String[]->extra_filtered_contacts->!@#$%^ds:+_,boolean->extra_select_multiple->false,String->account->abcde,
+		//null;;null;;null;;null;;boolean->extra_show_enter_jid->true,String->extra_conversation->!@#$%^ds:+_,String[]->extra_filtered_contacts->abcde,boolean->extra_select_multiple->false,String->account->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

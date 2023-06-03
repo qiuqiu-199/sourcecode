@@ -17,14 +17,12 @@ public class Activity_27 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CertifyKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.RetryUploadDialogActivity");
 		intent.setComponent(cn);
-		intent.putExtra("certify_key_id", Long.MAX_VALUE);
-		intent.putExtra("extra_key_ids", 0);
-		Parcelable operation_result = new MyParcelable();
-		intent.putExtra("operation_result", operation_result);
+		Parcelable extra_crypto_input = new MyParcelable();
+		intent.putExtra("extra_crypto_input", extra_crypto_input);
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->operation_result->ParcelableObj,long[]->extra_key_ids->0,long->certify_key_id->Long.MAX_VALUE,
+		//null;;null;;null;;null;;Parcelable->extra_crypto_input->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

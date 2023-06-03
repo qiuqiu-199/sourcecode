@@ -17,10 +17,12 @@ public class Activity_372 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.BlocklistActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.EditAccountActivity");
 		intent.setComponent(cn);
+		intent.putExtra("jid", "abcde");
+		intent.putExtra("opened_from_notification", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;boolean->opened_from_notification->true,String->jid->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -19,14 +19,16 @@ public class Activity_31 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.facebook.FacebookActivity");
 		intent.setComponent(cn);
-		intent.setAction("PassThrough");
-		intent.putExtra("action_id", "!@#$%^ds:+_");
-		intent.putExtra("com.facebook.platform.protocol.CALL_ID", "abcde");
+		intent.setAction("FacebookDialogFragment");
+		Bundle com_dot_facebook_dot_platform_dot_protocol_dot_BRIDGE_ARGS = new Bundle();
+		com_dot_facebook_dot_platform_dot_protocol_dot_BRIDGE_ARGS.putString("action_id", "!@#$%^ds:+_");
+		Bundle com_dot_facebook_dot_platform_dot_protocol_dot_METHOD_ARGS = new Bundle();
 		intent.putExtra("com.facebook.platform.protocol.METHOD_ARGS", "com_dot_facebook_dot_platform_dot_protocol_dot_METHOD_ARGS");
-		intent.putExtra("com.facebook.platform.protocol.PROTOCOL_VERSION", 0);
+		intent.putExtra("com.facebook.platform.protocol.CALL_ID", "!@#$%^ds:+_");
 		intent.putExtra("com.facebook.platform.protocol.BRIDGE_ARGS", "com_dot_facebook_dot_platform_dot_protocol_dot_BRIDGE_ARGS");
+		intent.putExtra("com.facebook.platform.protocol.PROTOCOL_VERSION", 0);
 		startActivity(intent);
-		//PassThrough;;null;;null;;null;;Bundle->com.facebook.platform.protocol.BRIDGE_ARGS->BundleObj,int->com.facebook.platform.protocol.PROTOCOL_VERSION->0,Bundle->com.facebook.platform.protocol.METHOD_ARGS->BundleObj,String->com.facebook.platform.protocol.CALL_ID->abcde,String->action_id->!@#$%^ds:+_,
+		//FacebookDialogFragment;;null;;null;;null;;int->com.facebook.platform.protocol.PROTOCOL_VERSION->0,Bundle->com.facebook.platform.protocol.BRIDGE_ARGS->BundleObj,(,String->action_id->!@#$%^ds:+_,),String->com.facebook.platform.protocol.CALL_ID->!@#$%^ds:+_,Bundle->com.facebook.platform.protocol.METHOD_ARGS->BundleObj,(,),
 	}
     /** Called when the activity is first created. */
     @Override

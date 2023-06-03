@@ -17,12 +17,12 @@ public class Activity_114 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupCheckSettings");
 		intent.setComponent(cn);
-		intent.setAction("com.fsck.k9.intent.action.EDIT_DRAFT");
-		intent.putExtra("message_reference", "!@#$%^ds:+_");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//com.fsck.k9.intent.action.EDIT_DRAFT;;null;;null;;null;;String->message_reference->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

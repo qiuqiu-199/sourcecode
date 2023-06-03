@@ -24,10 +24,10 @@ public class Activity_42 extends Activity
 		Parcelable intent1 = new MyParcelable();
 		intent.putExtra("intent", intent);
 		intent.putExtra("result_code", 0);
-		intent.putExtra("contact", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("body", "abcde");
+		intent.putExtra("contact", "abcde");
+		intent.putExtra("body", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->body->abcde,String->contact->999999999999999999999999999999999999999999999999999,int->result_code->0,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,
+		//null;;null;;null;;null;;String->body->!@#$%^ds:+_,String->contact->abcde,int->result_code->0,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,11 +17,12 @@ public class Activity_9 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadViewActivity");
+		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadLandDataActivity");
 		intent.setComponent(cn);
-		intent.putExtra("pad_id", Long.MIN_VALUE);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->pad_id->Long.MIN_VALUE,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

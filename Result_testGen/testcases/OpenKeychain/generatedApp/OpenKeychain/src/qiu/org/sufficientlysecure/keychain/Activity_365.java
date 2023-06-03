@@ -17,12 +17,10 @@ public class Activity_365 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CreateKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SecurityTokenChangePinOperationActivity");
 		intent.setComponent(cn);
-		intent.putExtra("email", "abcde");
-		intent.putExtra("name", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->name->999999999999999999999999999999999999999999999999999,String->email->abcde,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

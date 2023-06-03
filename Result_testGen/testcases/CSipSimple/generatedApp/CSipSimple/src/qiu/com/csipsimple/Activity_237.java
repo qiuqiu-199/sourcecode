@@ -19,11 +19,10 @@ public class Activity_237 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.CALL_PRIVILEGED");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("sip"));
+		intent.setAction("?");
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//android.intent.action.CALL_PRIVILEGED;;android.intent.category.DEFAULT;;sip;;null;;
+		//?;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

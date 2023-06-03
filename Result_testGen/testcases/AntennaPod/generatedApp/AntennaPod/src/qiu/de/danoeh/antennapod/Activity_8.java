@@ -17,11 +17,13 @@ public class Activity_8 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.FeedInfoActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.StorageErrorActivity");
 		intent.setComponent(cn);
-		intent.putExtra("de.danoeh.antennapod.extra.feedId", 0);
+		intent.setAction("android.intent.action.MEDIA_MOUNTED");
+		intent.putExtra("selected_dir", "!@#$%^ds:+_");
+		intent.putExtra("read", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->de.danoeh.antennapod.extra.feedId->0,
+		//android.intent.action.MEDIA_MOUNTED;;null;;null;;null;;boolean->read->true,String->selected_dir->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

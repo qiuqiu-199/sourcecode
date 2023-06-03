@@ -17,10 +17,12 @@ public class Activity_185 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.multimediacard.activity.TranslationActivity");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.CardTemplateEditor");
 		intent.setComponent(cn);
+		intent.putExtra("modelId", Long.MAX_VALUE);
+		intent.putExtra("noteId", Long.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;long->noteId->Long.MIN_VALUE,long->modelId->Long.MAX_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

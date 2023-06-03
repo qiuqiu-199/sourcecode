@@ -1,0 +1,26 @@
+--------- beginning of main
+--------- beginning of system
+05-29 12:12:48.600  9358  9358 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 12:12:48.610  9358  9358 D M_InsDal: Leu/siacs/conversations/ui/ShareWithActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 12:12:48.628  9358  9358 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStart()V
+05-29 12:12:48.630  9358  9358 D M_InsDal: Leu/siacs/conversations/ui/ShareWithActivity;--->onStart()V
+05-29 12:12:48.630  9358  9358 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onResume()V
+05-29 12:12:48.639  9358  9358 D M_InsDal: Leu/siacs/conversations/ui/service/EmojiService$1;--->onFailed(Ljava/lang/Throwable;)V
+05-29 12:12:48.674  3967  3967 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/OpenPgpService;--->onCreate()V
+--------- beginning of crash
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: FATAL EXCEPTION: main
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: Process: eu.siacs.conversations, PID: 9358
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.util.ArrayList.size()' on a null object reference
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: 	at eu.siacs.conversations.ui.ShareWithActivity.refreshUiReal(ShareWithActivity.java:197)
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: 	at eu.siacs.conversations.ui.ShareWithActivity.onBackendConnected(ShareWithActivity.java:153)
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: 	at eu.siacs.conversations.ui.XmppActivity$1.onServiceConnected(XmppActivity.java:112)
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher.doConnected(LoadedApk.java:1730)
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1762)
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+05-29 12:12:48.701  9358  9358 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+05-29 12:12:49.907  3967  3967 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/OpenPgpService;--->onCreate()V

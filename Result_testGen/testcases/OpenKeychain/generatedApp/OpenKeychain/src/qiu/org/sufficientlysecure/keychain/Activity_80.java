@@ -19,14 +19,11 @@ public class Activity_80 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
 		intent.setComponent(cn);
-		intent.setAction("notEmpty");
-		intent.setData(Uri.parse("mSheme://com.android.email.attachmentprovider:mPort/mPath"));
+		intent.setAction("DECRYPT_DATA_CLIPBOARD");
+		intent.setData(Uri.parse("?"));
 		intent.setType("application/autocrypt-setup");
-		intent.putExtra("android.intent.extra.TEXT", "!@#$%^ds:+_");
-		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
-		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
 		startActivity(intent);
-		//notEmpty;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->!@#$%^ds:+_,
+		//DECRYPT_DATA_CLIPBOARD;;null;;?;;application/autocrypt-setup;;
 	}
     /** Called when the activity is first created. */
     @Override

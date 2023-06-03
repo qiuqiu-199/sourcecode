@@ -17,12 +17,12 @@ public class Activity_57 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.FirstStartActivity");
+		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.WebGuiActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.MAIN");
-		intent.addCategory("android.intent.category.LAUNCHER");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//android.intent.action.MAIN;;android.intent.category.LAUNCHER;;null;;null;;
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

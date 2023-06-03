@@ -17,16 +17,15 @@ public class Activity_64 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.OrbotRequiredDialogActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.setType("application/autocrypt-setup");
-		intent.putExtra("android.intent.extra.TEXT", "999999999999999999999999999999999999999999999999999");
-		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
-		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
+		Parcelable messenger = new MyParcelable();
+		intent.putExtra("messenger", messenger);
+		intent.putExtra("start_orbot", true);
+		Parcelable extra_crypto_input = new MyParcelable();
+		intent.putExtra("extra_crypto_input", extra_crypto_input);
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;notEmpty;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Parcelable->extra_crypto_input->ParcelableObj,boolean->start_orbot->true,Parcelable->messenger->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

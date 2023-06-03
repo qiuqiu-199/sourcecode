@@ -19,9 +19,10 @@ public class Activity_4 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.SettingsActivity");
 		intent.setComponent(cn);
-		intent.putExtra("com.nutomic.syncthingandroid.activities.SettingsActivity.OPEN_SUB_PREF_SCREEN", "999999999999999999999999999999999999999999999999999");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.nutomic.syncthingandroid.activities.SettingsActivity.OPEN_SUB_PREF_SCREEN->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -19,10 +19,12 @@ public class Activity_25 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.ChooseFolder");
 		intent.setComponent(cn);
-		intent.putExtra("com.fsck.k9.ChooseFolder_showDisplayableOnly", "abcde");
+		intent.putExtra("com.fsck.k9.ChooseFolder_selfolder", "abcde");
+		intent.putExtra("com.fsck.k9.ChooseFolder_message", "abcde");
 		intent.putExtra("com.fsck.k9.ChooseFolder_account", "abcde");
+		intent.putExtra("com.fsck.k9.ChooseFolder_curfolder", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.fsck.k9.ChooseFolder_account->abcde,String->com.fsck.k9.ChooseFolder_showDisplayableOnly->abcde,
+		//null;;null;;null;;null;;String->com.fsck.k9.ChooseFolder_curfolder->abcde,String->com.fsck.k9.ChooseFolder_account->abcde,String->com.fsck.k9.ChooseFolder_message->abcde,String->com.fsck.k9.ChooseFolder_selfolder->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

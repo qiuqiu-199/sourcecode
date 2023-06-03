@@ -19,14 +19,10 @@ public class Activity_31 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("previewID", 0);
-		intent.putExtra("name", "abcde");
-		intent.putExtra("useWallpaper", true);
-		intent.putExtra("noselect", true);
-		intent.putExtra("selected", "abcde");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;notEmpty;;null;;String->selected->abcde,boolean->noselect->true,boolean->useWallpaper->true,String->name->abcde,int->previewID->0,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

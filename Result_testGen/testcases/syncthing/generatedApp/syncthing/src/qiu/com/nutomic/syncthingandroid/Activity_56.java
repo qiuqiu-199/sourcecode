@@ -17,11 +17,11 @@ public class Activity_56 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.FolderActivity");
+		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.WebGuiActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("notEmpty"));
+		intent.putExtra("com.nutomic.syncthing", true);
 		startActivity(intent);
-		//null;;null;;notEmpty;;null;;
+		//null;;null;;null;;null;;boolean->com.nutomic.syncthing->true,
 	}
     /** Called when the activity is first created. */
     @Override

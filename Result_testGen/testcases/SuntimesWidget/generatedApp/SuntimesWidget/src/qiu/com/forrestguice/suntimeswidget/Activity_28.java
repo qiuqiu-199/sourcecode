@@ -17,16 +17,12 @@ public class Activity_28 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.ClockWidget0ConfigActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("previewID", Integer.MIN_VALUE);
-		intent.putExtra("name", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("useWallpaper", true);
-		intent.putExtra("noselect", true);
-		intent.putExtra("selected", "abcde");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;notEmpty;;null;;String->selected->abcde,boolean->noselect->true,boolean->useWallpaper->true,String->name->999999999999999999999999999999999999999999999999999,int->previewID->Integer.MIN_VALUE,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,12 +17,13 @@ public class Activity_152 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.FolderList");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.FolderSettings");
 		intent.setComponent(cn);
-		intent.putExtra("account", "abcde");
-		intent.putExtra("fromShortcut", true);
+		intent.putExtra("com.fsck.k9.account", "abcde");
+		MySerializable com_dot_fsck_dot_k9_dot_folderName = new MySerializable();
+		intent.putExtra("com.fsck.k9.folderName", com_dot_fsck_dot_k9_dot_folderName);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->fromShortcut->true,String->account->abcde,
+		//null;;null;;null;;null;;Serializable->com.fsck.k9.folderName->SerializableObj,String->com.fsck.k9.account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

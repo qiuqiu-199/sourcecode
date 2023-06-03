@@ -20,10 +20,12 @@ public class Activity_21 extends Activity
 		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.ShareActivity");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.SEND");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("*/*");
+		intent.putExtra("com.nutomic.syncthingandroid.activities.FolderPickerActivity.RESULT_DIRECTORY", "!@#$%^ds:+_");
+		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
+		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
+		intent.putExtra("com.nutomic.syncthing", true);
 		startActivity(intent);
-		//android.intent.action.SEND;;android.intent.category.DEFAULT;;null;;*/*;;
+		//android.intent.action.SEND;;null;;null;;null;;boolean->com.nutomic.syncthing->true,Parcelable->android.intent.extra.STREAM->ParcelableObj,String->com.nutomic.syncthingandroid.activities.FolderPickerActivity.RESULT_DIRECTORY->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,12 +17,12 @@ public class Activity_117 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.LauncherShortcuts");
 		intent.setComponent(cn);
-		intent.setAction("org.autocrypt.PEER_ACTION");
+		intent.setAction("android.intent.action.CREATE_SHORTCUT");
 		intent.addCategory("android.intent.category.DEFAULT");
 		startActivity(intent);
-		//org.autocrypt.PEER_ACTION;;android.intent.category.DEFAULT;;null;;null;;
+		//android.intent.action.CREATE_SHORTCUT;;android.intent.category.DEFAULT;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

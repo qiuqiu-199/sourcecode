@@ -17,16 +17,18 @@ public class Activity_172 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.setData(Uri.parse("notEmpty://mHost:mPort//.well-known/openpgpkey/hu/"));
-		Parcelable result_crypto_input = new MyParcelable();
-		intent.putExtra("result_crypto_input", result_crypto_input);
-		Parcelable result_data = new MyParcelable();
-		intent.putExtra("result_data", result_data);
+		byte[] package_signature = new byte[1];
+		intent.putExtra("package_signature", package_signature);
+		intent.putExtra("package_name", "abcde");
+		Parcelable data = new MyParcelable();
+		intent.putExtra("data", data);
+		intent.putExtra("user_id", "999999999999999999999999999999999999999999999999999");
+		Parcelable operation_result = new MyParcelable();
+		intent.putExtra("operation_result", operation_result);
 		startActivity(intent);
-		//android.intent.action.SEND;;null;;notEmpty://mHost:mPort//.well-known/openpgpkey/hu/;;null;;Parcelable->result_data->ParcelableObj,Parcelable->result_crypto_input->ParcelableObj,
+		//null;;null;;null;;null;;Parcelable->operation_result->ParcelableObj,String->user_id->999999999999999999999999999999999999999999999999999,Parcelable->data->ParcelableObj,String->package_name->abcde,byteArray->package_signature->Byte.MAX_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

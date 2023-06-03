@@ -17,11 +17,12 @@ public class Activity_47 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.plugin.LocaleEdit");
+		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.MainActivity");
 		intent.setComponent(cn);
-		intent.setAction("com.twofortyfouram.locale.intent.action.EDIT_SETTING");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//com.twofortyfouram.locale.intent.action.EDIT_SETTING;;null;;null;;null;;
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

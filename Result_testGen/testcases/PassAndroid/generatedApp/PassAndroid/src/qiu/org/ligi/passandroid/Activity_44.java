@@ -17,13 +17,13 @@ public class Activity_44 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
 		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("httpwww.usairwaysmobile.com"));
+		intent.setData(Uri.parse("httpmbp.swiss.com"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;httpwww.usairwaysmobile.com;;null;;
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;httpmbp.swiss.com;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

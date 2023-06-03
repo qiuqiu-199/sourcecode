@@ -17,12 +17,26 @@ public class Activity_4 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.inaturalist.android","org.inaturalist.android.com.google.android.gms.appinvite.PreviewActivity");
+		ComponentName cn=new ComponentName("org.inaturalist.android","org.inaturalist.android.ObservationEditor");
 		intent.setComponent(cn);
-		intent.setAction("com.google.android.gms.appinvite.ACTION_PREVIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setAction("android.intent.action.SEND_MULTIPLE");
+		intent.setData(Uri.parse("?"));
+		intent.putExtra("delete_photo_index", 0);
+		intent.putExtra("choose_photo", false);
+		intent.putExtra("field_id", Integer.MAX_VALUE);
+		intent.putExtra("id_name", "!@#$%^ds:+_");
+		intent.putExtra("observation_project", Integer.MAX_VALUE);
+		intent.putExtra("photoUri", "!@#$%^ds:+_");
+		ArrayList<Integer> project_ids = new ArrayList<Integer>();
+		intent.putIntegerArrayListExtra("project_ids", project_ids);
+		MySerializable taxon_result = new MySerializable();
+		intent.putExtra("taxon_result", taxon_result);
+		intent.putExtra("accuracy", Double.MAX_VALUE);
+		intent.putExtra("taxon_id", Integer.MAX_VALUE);
+		intent.putExtra("latitude", Double.MAX_VALUE);
+		intent.putExtra("from_suggestion", true);
 		startActivity(intent);
-		//com.google.android.gms.appinvite.ACTION_PREVIEW;;android.intent.category.DEFAULT;;null;;null;;
+		//android.intent.action.SEND_MULTIPLE;;null;;?;;null;;boolean->from_suggestion->true,double->latitude->Double.MAX_VALUE,int->taxon_id->Integer.MAX_VALUE,double->accuracy->Double.MAX_VALUE,Serializable->taxon_result->SerializableObj,IntegerArrayList->project_ids->Integer.MIN_VALUE,String->photoUri->!@#$%^ds:+_,int->observation_project->Integer.MAX_VALUE,String->id_name->!@#$%^ds:+_,int->field_id->Integer.MAX_VALUE,boolean->choose_photo->false,int->delete_photo_index->0,
 	}
     /** Called when the activity is first created. */
     @Override

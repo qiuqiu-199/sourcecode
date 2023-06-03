@@ -17,7 +17,7 @@ public class Activity_42 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.DirectoryChooserActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.OpmlImportFromPathActivity");
 		intent.setComponent(cn);
 		startActivity(intent);
 		//null;;null;;null;;null;;

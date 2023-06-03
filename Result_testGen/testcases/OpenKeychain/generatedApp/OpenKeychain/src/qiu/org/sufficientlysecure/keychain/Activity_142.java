@@ -17,12 +17,12 @@ public class Activity_142 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.MainActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.NDEF_DISCOVERED");
-		intent.setData(Uri.parse("notEmpty"));
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//android.nfc.action.NDEF_DISCOVERED;;null;;notEmpty;;null;;
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

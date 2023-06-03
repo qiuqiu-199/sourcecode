@@ -1,0 +1,26 @@
+--------- beginning of main
+--------- beginning of system
+05-29 20:31:16.697  3680  3680 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+05-29 20:31:16.714  3680  3680 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+05-29 20:31:16.721  3680  3680 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 20:31:16.729  3680  3680 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/ImportKeysActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 20:31:16.731  3680  3680 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onResume()V
+05-29 20:31:16.731  3680  3680 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/ImportKeysActivity;--->onResumeFragments()V
+05-29 20:31:16.732  3680  3680 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/ImportKeysSearchFragment;--->onAttach(Landroid/content/Context;)V
+05-29 20:31:16.741  3680  3680 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/ImportKeysListFragment;--->onAttach(Landroid/content/Context;)V
+--------- beginning of crash
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: FATAL EXCEPTION: Thread-3
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 3680
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: java.lang.NoClassDefFoundError: Failed resolution of: Lokhttv5/Request$Builder;
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: 	at org.sufficientlysecure.keychain.network.OkHttpKeybaseClient.getUrlResponse(OkHttpKeybaseClient.java:44)
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: 	at com.textuality.keybase.lib.KeybaseQuery.getFromKeybase(KeybaseQuery.java:64)
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: 	at com.textuality.keybase.lib.KeybaseQuery.search(KeybaseQuery.java:51)
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: 	at org.sufficientlysecure.keychain.keyimport.KeybaseKeyserverClient.search(KeybaseKeyserverClient.java:57)
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: 	at org.sufficientlysecure.keychain.keyimport.KeybaseKeyserverClient.search(KeybaseKeyserverClient.java:33)
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: 	at org.sufficientlysecure.keychain.keyimport.CloudSearch$1.run(CloudSearch.java:68)
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:764)
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "okhttv5.Request$Builder" on path: DexPathList[[zip file "/data/app/org.sufficientlysecure.keychain-ju4SeniCOqMRYv0PvSfm4A==/base.apk"],nativeLibraryDirectories=[/data/app/org.sufficientlysecure.keychain-ju4SeniCOqMRYv0PvSfm4A==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+05-29 20:31:16.775  3680  3708 E AndroidRuntime: 	... 7 more

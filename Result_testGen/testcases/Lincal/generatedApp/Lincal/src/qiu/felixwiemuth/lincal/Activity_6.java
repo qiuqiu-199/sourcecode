@@ -19,9 +19,11 @@ public class Activity_6 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("felixwiemuth.lincal","felixwiemuth.lincal.ui.AddCalendarActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("mSheme:mAuthority/notEmpty"));
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setType("text/plain");
 		startActivity(intent);
-		//null;;null;;mSheme:mAuthority/notEmpty;;null;;
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;null;;text/plain;;
 	}
     /** Called when the activity is first created. */
     @Override

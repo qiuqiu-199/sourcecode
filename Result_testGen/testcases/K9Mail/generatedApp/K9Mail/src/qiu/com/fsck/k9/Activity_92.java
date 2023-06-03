@@ -17,11 +17,37 @@ public class Activity_92 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSettings");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageList");
 		intent.setComponent(cn);
-		intent.putExtra("account", "!@#$%^ds:+_");
+		intent.setAction("shortcut");
+		intent.setData(Uri.parse("mSheme://mHost:mPort/?"));
+		Bundle app_data = new Bundle();
+		app_data.putString("com.fsck.k9.search_folder", "abcde");
+		app_data = new Bundle();
+		app_data.putString("com.fsck.k9.search_account", "abcde");
+		intent.putExtra("message_reference", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("account", "abcde");
+		Parcelable error = new MyParcelable();
+		intent.putExtra("error", error);
+		intent.putExtra("no_threading", true);
+		Parcelable intent1 = new MyParcelable();
+		intent.putExtra("intent", intent);
+		intent.putExtra("query", "!@#$%^ds:+_");
+		Parcelable decryption = new MyParcelable();
+		intent.putExtra("decryption", decryption);
+		Parcelable insecure_detail_intent = new MyParcelable();
+		intent.putExtra("insecure_detail_intent", insecure_detail_intent);
+		intent.putExtra("app_data", "app_data");
+		intent.putExtra("folder", "!@#$%^ds:+_");
+		byte[] search_bytes = new byte[1];
+		intent.putExtra("search_bytes", search_bytes);
+		intent.putExtra("result_code", Integer.MAX_VALUE);
+		intent.putExtra("special_folder", "abcde");
+		Parcelable signature = new MyParcelable();
+		intent.putExtra("signature", signature);
+		intent.putExtra("override_crypto_warning", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->account->!@#$%^ds:+_,
+		//shortcut;;null;;mSheme://mHost:mPort/?;;null;;boolean->override_crypto_warning->false,Parcelable->signature->ParcelableObj,String->special_folder->abcde,int->result_code->Integer.MAX_VALUE,byteArray->search_bytes->Byte.MAX_VALUE,String->folder->!@#$%^ds:+_,Bundle->app_data->BundleObj,(,String->com.fsck.k9.search_account->abcde,String->com.fsck.k9.search_folder->abcde,),Parcelable->insecure_detail_intent->ParcelableObj,Parcelable->decryption->ParcelableObj,String->query->!@#$%^ds:+_,Parcelable->intent->ParcelableObj,boolean->no_threading->true,Parcelable->error->ParcelableObj,String->account->abcde,String->message_reference->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,13 +17,12 @@ public class Activity_10 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.wizards.BasePrefsWizard");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.PrefsFast");
 		intent.setComponent(cn);
-		intent.putExtra("ID", "abcde");
-		intent.putExtra("wizard", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("id", 0);
+		intent.setAction("com.csipsimple.ui.action.PREFS_FAST");
+		intent.addCategory("android.intent.category.DEFAULT");
 		startActivity(intent);
-		//null;;null;;null;;null;;long->id->0,String->wizard->999999999999999999999999999999999999999999999999999,String->ID->abcde,
+		//com.csipsimple.ui.action.PREFS_FAST;;android.intent.category.DEFAULT;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,14 +17,13 @@ public class Activity_66 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.AudioplayerActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.DownloadAuthenticationActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("file"));
-		intent.setType("audio/*");
+		intent.putExtra("send_to_downloadrequester", false);
+		Parcelable request = new MyParcelable();
+		intent.putExtra("request", request);
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;file;;audio/*;;
+		//null;;null;;null;;null;;Parcelable->request->ParcelableObj,boolean->send_to_downloadrequester->false,
 	}
     /** Called when the activity is first created. */
     @Override

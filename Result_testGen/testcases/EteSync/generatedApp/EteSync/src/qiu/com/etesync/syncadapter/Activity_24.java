@@ -17,12 +17,10 @@ public class Activity_24 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.etesync.syncadapter","at.bitfire.cert4android.TrustCertificateActivity");
+		ComponentName cn=new ComponentName("com.etesync.syncadapter","com.etesync.syncadapter.ui.AppSettingsActivity");
 		intent.setComponent(cn);
-		byte[] certificate = new byte[1];
-		intent.putExtra("certificate", certificate);
 		startActivity(intent);
-		//null;;null;;null;;null;;byteArray->certificate->Byte.MAX_VALUE,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

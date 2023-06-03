@@ -17,11 +17,13 @@ public class Activity_158 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity");
 		intent.setComponent(cn);
-		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_FILE_AND_RETURN");
+		intent.putExtra("package_name", "abcde");
+		intent.putExtra("package_signature", Byte.MAX_VALUE);
+		intent.putExtra("user_id", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_FILE_AND_RETURN;;null;;null;;null;;
+		//null;;null;;null;;null;;String->user_id->999999999999999999999999999999999999999999999999999,byte[]->package_signature->Byte.MAX_VALUE,String->package_name->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

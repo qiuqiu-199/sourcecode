@@ -17,13 +17,12 @@ public class Activity_16 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.TouchImageActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.BROWSABLE");
-		intent.setData(Uri.parse("passandroid"));
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;passandroid;;null;;
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

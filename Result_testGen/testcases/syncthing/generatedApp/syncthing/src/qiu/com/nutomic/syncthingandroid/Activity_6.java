@@ -17,11 +17,11 @@ public class Activity_6 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.PullOrderDialogActivity");
+		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.SettingsActivity");
 		intent.setComponent(cn);
-		intent.putExtra("com.nutomic.syncthinandroid.activities.PullOrderDialogActivity.PULL_ORDER", "!@#$%^ds:+_");
+		intent.putExtra("com.nutomic.syncthingandroid.activities.SettingsActivity.OPEN_SUB_PREF_SCREEN", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.nutomic.syncthinandroid.activities.PullOrderDialogActivity.PULL_ORDER->!@#$%^ds:+_,
+		//null;;null;;null;;null;;String->com.nutomic.syncthingandroid.activities.SettingsActivity.OPEN_SUB_PREF_SCREEN->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

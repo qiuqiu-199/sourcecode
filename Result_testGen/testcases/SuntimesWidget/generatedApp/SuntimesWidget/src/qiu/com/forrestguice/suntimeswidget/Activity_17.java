@@ -17,16 +17,12 @@ public class Activity_17 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.MoonWidget0ConfigActivity_3x1");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("previewID", Integer.MIN_VALUE);
-		intent.putExtra("name", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("useWallpaper", true);
-		intent.putExtra("noselect", false);
-		intent.putExtra("selected", "abcde");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;notEmpty;;null;;String->selected->abcde,boolean->noselect->false,boolean->useWallpaper->true,String->name->999999999999999999999999999999999999999999999999999,int->previewID->Integer.MIN_VALUE,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

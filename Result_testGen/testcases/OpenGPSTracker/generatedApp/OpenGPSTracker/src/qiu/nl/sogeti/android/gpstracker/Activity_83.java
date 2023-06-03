@@ -17,11 +17,11 @@ public class Activity_83 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.oauth.PrepareRequestTokenActivity");
+		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.actions.Statistics");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("x-oauthflow-opengpstracker://mHost:mPort/mPath"));
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//null;;null;;x-oauthflow-opengpstracker://mHost:mPort/mPath;;null;;
+		//null;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

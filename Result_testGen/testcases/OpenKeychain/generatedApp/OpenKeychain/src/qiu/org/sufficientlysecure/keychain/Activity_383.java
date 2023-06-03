@@ -17,11 +17,12 @@ public class Activity_383 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CreateKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.NDEF_DISCOVERED");
+		intent.setAction("android.nfc.action.TAG_DISCOVERED");
+		intent.setData(Uri.parse("mSheme://com.android.contacts:mPort/mPath"));
 		startActivity(intent);
-		//android.nfc.action.NDEF_DISCOVERED;;null;;null;;null;;
+		//android.nfc.action.TAG_DISCOVERED;;null;;mSheme://com.android.contacts:mPort/mPath;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

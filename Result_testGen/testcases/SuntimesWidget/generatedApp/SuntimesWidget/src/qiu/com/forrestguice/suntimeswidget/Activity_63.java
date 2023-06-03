@@ -17,13 +17,12 @@ public class Activity_63 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesSettingsActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity");
 		intent.setComponent(cn);
-		intent.setAction("com.forrestguice.suntimeswidget.PREFS_GENERAL");
-		intent.putExtra("isModified", true);
-		intent.putExtra("name", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("previewID", 0);
+		intent.putExtra("selected", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//com.forrestguice.suntimeswidget.PREFS_GENERAL;;null;;null;;null;;String->name->999999999999999999999999999999999999999999999999999,boolean->isModified->true,
+		//null;;null;;null;;null;;String->selected->999999999999999999999999999999999999999999999999999,int->previewID->0,
 	}
     /** Called when the activity is first created. */
     @Override

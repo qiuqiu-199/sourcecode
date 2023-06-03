@@ -19,11 +19,10 @@ public class Activity_3 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("org.inaturalist.android","org.inaturalist.android.ObservationEditor");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.INSERT");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("vnd.android.cursor.dir/vnd.google.observation");
+		intent.setAction("android.intent.action.EDIT");
+		intent.putExtra("return_to_observation_list", false);
 		startActivity(intent);
-		//android.intent.action.INSERT;;android.intent.category.DEFAULT;;null;;vnd.android.cursor.dir/vnd.google.observation;;
+		//android.intent.action.EDIT;;null;;null;;null;;boolean->return_to_observation_list->false,
 	}
     /** Called when the activity is first created. */
     @Override

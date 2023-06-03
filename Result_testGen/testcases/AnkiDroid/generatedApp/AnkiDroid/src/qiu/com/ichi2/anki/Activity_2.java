@@ -19,8 +19,9 @@ public class Activity_2 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.DeckPicker");
 		intent.setComponent(cn);
+		intent.putExtra("allDecksSelected", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;boolean->allDecksSelected->true,
 	}
     /** Called when the activity is first created. */
     @Override

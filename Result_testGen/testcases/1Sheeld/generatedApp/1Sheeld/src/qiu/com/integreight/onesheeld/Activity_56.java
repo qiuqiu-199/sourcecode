@@ -17,12 +17,11 @@ public class Activity_56 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.shields.controller.utils.NfcUtils");
+		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.Tutorial");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.TECH_DISCOVERED");
-		intent.addCategory("android.intent.category.DEFAULT");
+		intent.putExtra("isMenu", false);
 		startActivity(intent);
-		//android.nfc.action.TECH_DISCOVERED;;android.intent.category.DEFAULT;;null;;null;;
+		//null;;null;;null;;null;;boolean->isMenu->false,
 	}
     /** Called when the activity is first created. */
     @Override

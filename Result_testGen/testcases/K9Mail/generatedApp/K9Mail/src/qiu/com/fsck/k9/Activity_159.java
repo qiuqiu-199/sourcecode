@@ -17,7 +17,7 @@ public class Activity_159 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.OpenPgpAppSelectDialog");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.Accounts");
 		intent.setComponent(cn);
 		startActivity(intent);
 		//null;;null;;null;;null;;

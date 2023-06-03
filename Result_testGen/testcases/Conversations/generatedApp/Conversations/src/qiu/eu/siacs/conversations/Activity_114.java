@@ -17,16 +17,12 @@ public class Activity_114 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.RecordingActivity");
 		intent.setComponent(cn);
-		intent.setAction("eu.siacs.conversations.action.VIEW");
-		intent.putExtra("nick", "!@#$%^ds:+_");
-		intent.putExtra("as_quote", true);
-		intent.putExtra("pm", false);
-		intent.putExtra("conversationUuid", "abcde");
-		intent.putExtra("android.intent.extra.TEXT", "999999999999999999999999999999999999999999999999999");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,String->conversationUuid->abcde,boolean->pm->false,boolean->as_quote->true,String->nick->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

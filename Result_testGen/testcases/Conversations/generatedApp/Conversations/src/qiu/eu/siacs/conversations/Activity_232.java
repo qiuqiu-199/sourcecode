@@ -19,15 +19,19 @@ public class Activity_232 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		intent.setAction("eu.siacs.conversations.action.VIEW");
-		intent.putExtra("nick", "!@#$%^ds:+_");
-		intent.putExtra("as_quote", false);
-		intent.putExtra("pm", true);
-		intent.putExtra("do_not_append", true);
-		intent.putExtra("conversationUuid", "abcde");
-		intent.putExtra("android.intent.extra.TEXT", "abcde");
+		intent.setAction("new java.util.List");
+		Parcelable error = new MyParcelable();
+		intent.putExtra("error", error);
+		Parcelable metadata = new MyParcelable();
+		intent.putExtra("metadata", metadata);
+		Parcelable intent1 = new MyParcelable();
+		intent.putExtra("intent", intent);
+		intent.putExtra("result_code", Integer.MIN_VALUE);
+		intent.putExtra("conversationUuid", "!@#$%^ds:+_");
+		intent.putExtra("eu.siacs.conversations.invite_uri", "abcde");
+		intent.putExtra("sign_key_id", Long.MAX_VALUE);
 		startActivity(intent);
-		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->abcde,String->conversationUuid->abcde,boolean->do_not_append->true,boolean->pm->true,boolean->as_quote->false,String->nick->!@#$%^ds:+_,
+		//new java.util.List;;null;;null;;null;;long->sign_key_id->Long.MAX_VALUE,String->eu.siacs.conversations.invite_uri->abcde,String->conversationUuid->!@#$%^ds:+_,int->result_code->Integer.MIN_VALUE,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,Parcelable->error->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

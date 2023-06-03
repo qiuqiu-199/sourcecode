@@ -17,12 +17,15 @@ public class Activity_355 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SettingsSmartPGPAuthoritiesActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteDeduplicateActivity");
 		intent.setComponent(cn);
-		String[] smartpgp_authorities = new String[1];
-		intent.putExtra("smartpgp_authorities", smartpgp_authorities);
+		intent.putExtra("package_name", "abcde");
+		ArrayList<String> duplicate_emails = new ArrayList<String>();
+		intent.putStringArrayListExtra("duplicate_emails", duplicate_emails);
+		Parcelable data = new MyParcelable();
+		intent.putExtra("data", data);
 		startActivity(intent);
-		//null;;null;;null;;null;;StringArray->smartpgp_authorities->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Parcelable->data->ParcelableObj,StringArrayList->duplicate_emails->abcde,String->package_name->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

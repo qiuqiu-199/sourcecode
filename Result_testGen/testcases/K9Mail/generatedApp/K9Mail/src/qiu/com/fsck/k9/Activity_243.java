@@ -17,13 +17,11 @@ public class Activity_243 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.UnreadWidgetConfiguration");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.UpgradeDatabases");
 		intent.setComponent(cn);
-		intent.putExtra("no_threading", false);
-		intent.putExtra("appWidgetId", Integer.MIN_VALUE);
-		intent.putExtra("search_bytes", Byte.MAX_VALUE);
+		intent.setAction("DatabaseUpgradeService.upgradeComplete");
 		startActivity(intent);
-		//null;;null;;null;;null;;byte[]->search_bytes->Byte.MAX_VALUE,int->appWidgetId->Integer.MIN_VALUE,boolean->no_threading->false,
+		//DatabaseUpgradeService.upgradeComplete;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

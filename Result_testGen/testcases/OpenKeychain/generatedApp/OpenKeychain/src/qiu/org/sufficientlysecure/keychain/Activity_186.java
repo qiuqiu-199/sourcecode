@@ -19,10 +19,10 @@ public class Activity_186 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.setData(Uri.parse("notEmpty://mHost:mPort//.well-known/openpgpkey/hu/"));
+		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEYSERVER");
+		intent.putExtra("org.sufficientlysecure.keychain.EXTRA_QUERY", "!@#$%^ds:+_");
 		startActivity(intent);
-		//android.intent.action.SEND;;null;;notEmpty://mHost:mPort//.well-known/openpgpkey/hu/;;null;;
+		//org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEYSERVER;;null;;null;;null;;String->org.sufficientlysecure.keychain.EXTRA_QUERY->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

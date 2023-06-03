@@ -17,13 +17,12 @@ public class Activity_31 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.ExtractURLAsIphoneActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.BROWSABLE");
-		intent.setData(Uri.parse("httpmobile.virginaustralia.com"));
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpmobile.virginaustralia.com;;null;;
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

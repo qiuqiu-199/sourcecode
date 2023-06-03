@@ -17,11 +17,13 @@ public class Activity_33 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.ExtractURLAsIphoneActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("mSheme://notEmpty:mPort/mPath"));
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setData(Uri.parse("httpsmci.aircanada.com"));
 		startActivity(intent);
-		//null;;null;;mSheme://notEmpty:mPort/mPath;;null;;
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;httpsmci.aircanada.com;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

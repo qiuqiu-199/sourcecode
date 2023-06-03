@@ -17,11 +17,13 @@ public class Activity_153 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.MyAccount");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.CardBrowser");
 		intent.setComponent(cn);
-		intent.putExtra("notLoggedIn", true);
+		intent.putExtra("defaultDeckId", Long.MIN_VALUE);
+		intent.putExtra("selectedDeck", 0);
+		intent.putExtra("currentCard", Long.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->notLoggedIn->true,
+		//null;;null;;null;;null;;long->currentCard->Long.MIN_VALUE,long->selectedDeck->0,long->defaultDeckId->Long.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -1,0 +1,369 @@
+--------- beginning of system
+--------- beginning of main
+05-30 11:37:22.467   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesApplication;---><init>()V
+05-30 11:37:22.467   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/calculator/CalculatorProvider;---><clinit>()V
+05-30 11:37:22.467   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/calculator/CalculatorProvider;---><init>()V
+05-30 11:37:22.467   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/calculator/CalculatorProvider;--->onCreate()Z
+05-30 11:37:22.469   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesApplication;--->onCreate()V
+05-30 11:37:22.474   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/WidgetThemeConfigActivity;---><clinit>()V
+05-30 11:37:22.474   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/WidgetThemeConfigActivity$UIMode;---><clinit>()V
+05-30 11:37:22.474   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/WidgetThemeConfigActivity$UIMode;---><init>(Ljava/lang/String;I)V
+05-30 11:37:22.474   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/WidgetThemeConfigActivity$UIMode;---><init>(Ljava/lang/String;I)V
+05-30 11:37:22.474   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/WidgetThemeConfigActivity;---><init>()V
+05-30 11:37:22.474   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils;---><clinit>()V
+05-30 11:37:22.474   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils;---><init>()V
+05-30 11:37:22.474   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/WidgetThemeConfigActivity$7;---><init>(Lcom/forrestguice/suntimeswidget/themes/WidgetThemeConfigActivity;)V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/WidgetThemeConfigActivity;--->attachBaseContext(Landroid/content/Context;)V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;---><clinit>()V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;---><clinit>()V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$DateTapAction;---><clinit>()V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$DateTapAction;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$DateTapAction;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$ClockTapAction;---><clinit>()V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$ClockTapAction;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$ClockTapAction;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetTimezones$TimeZoneSort;---><clinit>()V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetTimezones$TimeZoneSort;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetTimezones$TimeZoneSort;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->initLocale(Landroid/content/Context;)Landroid/content/Context;
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleInfo;---><init>()V
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->initLocale(Landroid/content/Context;Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleInfo;)Landroid/content/Context;
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->loadLocaleModePref(Landroid/content/Context;)Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->loadLocaleModePref(Landroid/content/SharedPreferences;)Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;--->valueOf(Ljava/lang/String;)Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;--->values()[Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;
+05-30 11:37:22.475   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->resetLocale(Landroid/content/Context;)Landroid/content/Context;
+05-30 11:37:22.476   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/WidgetThemeConfigActivity;--->onCreate(Landroid/os/Bundle;)V
+05-30 11:37:22.476   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->loadTheme(Landroid/content/Context;)I
+05-30 11:37:22.476   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->loadThemePref(Landroid/content/Context;)Ljava/lang/String;
+05-30 11:37:22.476   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->themePrefToStyleId(Landroid/content/Context;Ljava/lang/String;Lcom/forrestguice/suntimeswidget/calculator/SuntimesRiseSetData;)I
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/WidgetThemeConfigActivity;--->initLocale()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSun1x1;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSun1x1;---><init>(Ljava/lang/String;ILjava/lang/String;I)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSun1x1;---><init>(Ljava/lang/String;ILjava/lang/String;I)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSunPos1x1;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSunPos1x1;---><init>(Ljava/lang/String;ILjava/lang/String;I)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSunPos1x1;---><init>(Ljava/lang/String;ILjava/lang/String;I)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeMoon1x1;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeMoon1x1;---><init>(Ljava/lang/String;ILjava/lang/String;I)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeMoon1x1;---><init>(Ljava/lang/String;ILjava/lang/String;I)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$RiseSetOrder;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$RiseSetOrder;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$RiseSetOrder;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeMode;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeMode;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeMode;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolsticeEquinoxMode;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolsticeEquinoxMode;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolsticeEquinoxMode;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$MoonPhaseMode;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$MoonPhaseMode;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$MoonPhaseMode;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SolarEvents;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SolarEvents;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;IIZ)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SolarEvents;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;IIZ)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TrackingMode;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TrackingMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TrackingMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$CompareMode;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$CompareMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$CompareMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$ActionMode;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$ActionMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$ActionMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LocationMode;---><clinit>()V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LocationMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.478   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LocationMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimezoneMode;---><clinit>()V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimezoneMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimezoneMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolarTimeMode;---><clinit>()V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolarTimeMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolarTimeMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$DateMode;---><clinit>()V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$DateMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$DateMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings;--->initDefaults(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings;--->getLengthUnit(Ljava/lang/String;)Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;--->valueOf(Ljava/lang/String;)Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;--->values()[Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$ActionMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$ActionMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$ActionMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSun1x1;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSun1x1;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSun1x1;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSunPos1x1;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSunPos1x1;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSunPos1x1;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeMoon1x1;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeMoon1x1;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeMoon1x1;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TrackingMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TrackingMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TrackingMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$CompareMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$CompareMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$CompareMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeMode;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeMode;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$MoonPhaseMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$MoonPhaseMode;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$MoonPhaseMode;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolsticeEquinoxMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolsticeEquinoxMode;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolsticeEquinoxMode;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LocationMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LocationMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LocationMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimezoneMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimezoneMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimezoneMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolarTimeMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolarTimeMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolarTimeMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$DateMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$DateMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$DateMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$RiseSetOrder;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$RiseSetOrder;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$RiseSetOrder;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/SuntimesTheme$ThemeBackground;---><clinit>()V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/SuntimesTheme$ThemeBackground;---><init>(Ljava/lang/String;IILjava/lang/String;Z)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/SuntimesTheme$ThemeBackground;---><init>(Ljava/lang/String;IILjava/lang/String;Z)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/SuntimesTheme$ThemeBackground;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/SuntimesTheme$ThemeBackground;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/themes/SuntimesTheme$ThemeBackground;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.479   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings;--->loadTimeFormatModePref(Landroid/content/Context;I)Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;
+05-30 11:37:22.480   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;--->valueOf(Ljava/lang/String;)Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;
+05-30 11:37:22.480   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;--->values()[Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;
+05-30 11:37:22.481   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;---><clinit>()V
+05-30 11:37:22.481   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;---><init>(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;D)V
+05-30 11:37:22.481   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;---><init>(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;D)V
+05-30 11:37:22.481   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:37:22.481   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;--->values()[Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;
+05-30 11:37:22.481   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:37:22.481   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:37:22.504   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.504   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.504   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.506   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.507   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.507   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.507   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.509   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.509   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.509   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.510   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.510   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.510   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.510   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.510   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.510   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.510   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.511   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.511   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.511   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.511   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.511   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.511   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.511   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.512   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.512   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.512   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.512   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.512   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.512   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.512   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.513   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.513   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.513   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.513   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.514   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.514   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.514   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.514   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.514   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.514   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.515   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.515   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.515   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.515   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.515   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.515   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.516   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.516   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.516   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.516   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.517   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.517   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.517   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.517   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.517   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.517   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.517   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.518   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.518   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.518   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.518   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.518   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.519   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.519   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.519   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.519   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.519   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.519   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.519   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.520   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.521   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.521   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.521   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SizeEditView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.522   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.522   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.522   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.523   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.523   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.523   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.523   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.524   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.524   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.524   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.524   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.525   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.525   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.525   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.525   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.525   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.526   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.526   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.526   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.527   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.527   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.527   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.527   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.528   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.528   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.528   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.528   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.528   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.529   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.529   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.529   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.529   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.529   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.529   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.529   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.530   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.530   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.530   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.530   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.531   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.531   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.531   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.531   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.532   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.532   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.532   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.532   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.532   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.533   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.533   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.533   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.533   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.534   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.534   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.534   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.534   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.534   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.534   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.534   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.535   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.535   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.535   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.535   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.536   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.536   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.536   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.536   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.536   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.536   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.536   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.536   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.537   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.537   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.537   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.537   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.537   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.537   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.537   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.537   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.539   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.539   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.539   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-30 11:37:22.539   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->getLayoutID(Landroid/content/Context;Landroid/util/AttributeSet;)I
+05-30 11:37:22.540   466   466 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/ColorChooserView;--->applyAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
+--------- beginning of crash
+05-30 11:37:22.542   466   466 E AndroidRuntime: FATAL EXCEPTION: main
+05-30 11:37:22.542   466   466 E AndroidRuntime: Process: com.forrestguice.suntimeswidget, PID: 466
+05-30 11:37:22.542   466   466 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.forrestguice.suntimeswidget/com.forrestguice.suntimeswidget.themes.WidgetThemeConfigActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.forrestguice.suntimeswidget.MySerializable)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+05-30 11:37:22.542   466   466 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.forrestguice.suntimeswidget.MySerializable)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.os.BaseBundle.getSerializable(BaseBundle.java:1227)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.os.Bundle.getSerializable(Bundle.java:1034)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.content.Intent.getSerializableExtra(Intent.java:7516)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at com.forrestguice.suntimeswidget.themes.WidgetThemeConfigActivity.onCreate(WidgetThemeConfigActivity.java:175)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	... 11 more
+05-30 11:37:22.542   466   466 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.com.forrestguice.suntimeswidget.MySerializable
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	... 23 more
+05-30 11:37:22.542   466   466 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.forrestguice.suntimeswidget.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.forrestguice.suntimeswidget-GJN3XKN69mlrcfSnvVReCQ==/base.apk"],nativeLibraryDirectories=[/data/app/com.forrestguice.suntimeswidget-GJN3XKN69mlrcfSnvVReCQ==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+05-30 11:37:22.542   466   466 E AndroidRuntime: 	... 32 more

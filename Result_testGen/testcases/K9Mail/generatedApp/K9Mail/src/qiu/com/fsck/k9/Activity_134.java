@@ -17,13 +17,13 @@ public class Activity_134 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.Accounts");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
 		intent.setComponent(cn);
-		intent.setAction("importSettings");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("startup", true);
+		intent.setAction("android.intent.action.SENDTO");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setData(Uri.parse("mailto"));
 		startActivity(intent);
-		//importSettings;;null;;notEmpty;;null;;boolean->startup->true,
+		//android.intent.action.SENDTO;;android.intent.category.DEFAULT;;mailto;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

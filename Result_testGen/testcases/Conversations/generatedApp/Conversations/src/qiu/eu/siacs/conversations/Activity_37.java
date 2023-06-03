@@ -19,15 +19,10 @@ public class Activity_37 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShareViaAccountActivity");
 		intent.setComponent(cn);
-		Parcelable metadata = new MyParcelable();
-		intent.putExtra("metadata", metadata);
-		Parcelable intent1 = new MyParcelable();
-		intent.putExtra("intent", intent);
-		intent.putExtra("result_code", 0);
-		intent.putExtra("contact", "abcde");
-		intent.putExtra("body", "!@#$%^ds:+_");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->body->!@#$%^ds:+_,String->contact->abcde,int->result_code->0,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

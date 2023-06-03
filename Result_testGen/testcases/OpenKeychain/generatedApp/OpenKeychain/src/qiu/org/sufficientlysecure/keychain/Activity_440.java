@@ -17,14 +17,18 @@ public class Activity_440 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteSelectIdKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteSelectPubKeyActivity");
 		intent.setComponent(cn);
-		intent.putExtra("show_autocrypt_hint", true);
-		intent.putExtra("package_name", "abcde");
-		intent.putExtra("package_signature", 0);
-		intent.putExtra("user_id", "!@#$%^ds:+_");
+		MySerializable dublicate_emails = new MySerializable();
+		intent.putExtra("dublicate_emails", dublicate_emails);
+		intent.putExtra("no_user_ids", false);
+		intent.putExtra("master_key_ids", Long.MIN_VALUE);
+		MySerializable missing_emails = new MySerializable();
+		intent.putExtra("missing_emails", missing_emails);
+		Parcelable data = new MyParcelable();
+		intent.putExtra("data", data);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->user_id->!@#$%^ds:+_,byte[]->package_signature->0,String->package_name->abcde,boolean->show_autocrypt_hint->true,
+		//null;;null;;null;;null;;Parcelable->data->ParcelableObj,Serializable->missing_emails->SerializableObj,long[]->master_key_ids->Long.MIN_VALUE,boolean->no_user_ids->false,Serializable->dublicate_emails->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

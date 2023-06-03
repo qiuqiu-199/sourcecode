@@ -17,13 +17,12 @@ public class Activity_69 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesSettingsActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.ClockWidget0ConfigActivity_3x1");
 		intent.setComponent(cn);
-		intent.setAction("com.forrestguice.suntimeswidget.PREFS_LOCALE");
-		intent.putExtra("isModified", true);
-		intent.putExtra("name", "!@#$%^ds:+_");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//com.forrestguice.suntimeswidget.PREFS_LOCALE;;null;;null;;null;;String->name->!@#$%^ds:+_,boolean->isModified->true,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

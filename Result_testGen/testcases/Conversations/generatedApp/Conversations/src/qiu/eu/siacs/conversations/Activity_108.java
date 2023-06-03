@@ -17,16 +17,15 @@ public class Activity_108 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChooseContactActivity");
 		intent.setComponent(cn);
-		intent.setAction("eu.siacs.conversations.action.VIEW");
-		intent.putExtra("nick", "!@#$%^ds:+_");
-		intent.putExtra("as_quote", false);
-		intent.putExtra("pm", false);
-		intent.putExtra("conversationUuid", "!@#$%^ds:+_");
-		intent.putExtra("android.intent.extra.TEXT", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("account", "abcde");
+		intent.putExtra("extra_title_res_id", 0);
+		intent.putExtra("extra_select_multiple", false);
+		intent.putExtra("extra_group_chat_name", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("extra_show_enter_jid", false);
 		startActivity(intent);
-		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,String->conversationUuid->!@#$%^ds:+_,boolean->pm->false,boolean->as_quote->false,String->nick->!@#$%^ds:+_,
+		//null;;null;;null;;null;;boolean->extra_show_enter_jid->false,String->extra_group_chat_name->999999999999999999999999999999999999999999999999999,boolean->extra_select_multiple->false,int->extra_title_res_id->0,String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,13 +17,12 @@ public class Activity_143 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShareWithActivity");
 		intent.setComponent(cn);
-		intent.setAction("eu.siacs.conversations.action.VIEW");
-		intent.putExtra("do_not_append", false);
-		intent.putExtra("conversationUuid", "abcde");
+		intent.setAction("android.intent.action.SEND");
+		intent.setType("text/plain");
 		startActivity(intent);
-		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->conversationUuid->abcde,boolean->do_not_append->false,
+		//android.intent.action.SEND;;null;;null;;text/plain;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,19 +17,12 @@ public class Activity_388 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CreateKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.NDEF_DISCOVERED");
-		intent.putExtra("email", "!@#$%^ds:+_");
-		Parcelable android_dot_nfc_dot_extra_dot_TAG = new MyParcelable();
-		intent.putExtra("android.nfc.extra.TAG", android_dot_nfc_dot_extra_dot_TAG);
-		intent.putExtra("first_time", false);
-		intent.putExtra("name", "999999999999999999999999999999999999999999999999999");
-		Parcelable token_info = new MyParcelable();
-		intent.putExtra("token_info", token_info);
-		intent.putExtra("create_yubi_key", true);
+		intent.putExtra("linked_transition", true);
+		intent.putExtra("master_key_id", Long.MIN_VALUE);
 		startActivity(intent);
-		//android.nfc.action.NDEF_DISCOVERED;;null;;null;;null;;boolean->create_yubi_key->true,Parcelable->token_info->ParcelableObj,String->name->999999999999999999999999999999999999999999999999999,boolean->first_time->false,Parcelable->android.nfc.extra.TAG->ParcelableObj,String->email->!@#$%^ds:+_,
+		//null;;null;;null;;null;;long->master_key_id->Long.MIN_VALUE,boolean->linked_transition->true,
 	}
     /** Called when the activity is first created. */
     @Override

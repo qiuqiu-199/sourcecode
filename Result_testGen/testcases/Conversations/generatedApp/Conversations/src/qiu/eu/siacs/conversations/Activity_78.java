@@ -17,12 +17,15 @@ public class Activity_78 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShareWithActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChooseContactActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND_MULTIPLE");
-		intent.setType("text/plain");
+		intent.putExtra("account", "!@#$%^ds:+_");
+		intent.putExtra("extra_select_multiple", true);
+		intent.putExtra("extra_filtered_contacts", "abcde");
+		intent.putExtra("extra_conversation", "!@#$%^ds:+_");
+		intent.putExtra("extra_show_enter_jid", true);
 		startActivity(intent);
-		//android.intent.action.SEND_MULTIPLE;;null;;null;;text/plain;;
+		//null;;null;;null;;null;;boolean->extra_show_enter_jid->true,String->extra_conversation->!@#$%^ds:+_,String[]->extra_filtered_contacts->abcde,boolean->extra_select_multiple->true,String->account->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

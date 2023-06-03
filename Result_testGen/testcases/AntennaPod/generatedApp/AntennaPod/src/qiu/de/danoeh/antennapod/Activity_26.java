@@ -17,13 +17,12 @@ public class Activity_26 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.OpmlImportFromPathActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.FeedSettingsActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("notEmpty"));
-		int[] de_dot_danoeh_dot_antennapod_dot_selectedItems = new int[1];
-		intent.putExtra("de.danoeh.antennapod.selectedItems", de_dot_danoeh_dot_antennapod_dot_selectedItems);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;notEmpty;;null;;intArray->de.danoeh.antennapod.selectedItems->0,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

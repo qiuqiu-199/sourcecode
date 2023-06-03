@@ -1,0 +1,29 @@
+--------- beginning of main
+--------- beginning of system
+05-30 10:19:43.080 17080 17080 D M_InsDal: Lde/tobiasbielefeld/solitaire/classes/c;--->onCreate(Landroid/os/Bundle;)V
+05-30 10:19:43.081 17080 17080 D M_InsDal: Lde/tobiasbielefeld/solitaire/ui/GameManager;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: FATAL EXCEPTION: main
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: Process: de.tobiasbielefeld.solitaire, PID: 17080
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{de.tobiasbielefeld.solitaire/de.tobiasbielefeld.solitaire.ui.GameManager}: java.lang.ArrayIndexOutOfBoundsException: length=22; index=-1
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: Caused by: java.lang.ArrayIndexOutOfBoundsException: length=22; index=-1
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at java.util.ArrayList.get(ArrayList.java:439)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at de.tobiasbielefeld.solitaire.a.a(Unknown Source:11)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at de.tobiasbielefeld.solitaire.ui.GameManager.onCreate(Unknown Source:351)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+05-30 10:19:43.106 17080 17080 E AndroidRuntime: 	... 11 more

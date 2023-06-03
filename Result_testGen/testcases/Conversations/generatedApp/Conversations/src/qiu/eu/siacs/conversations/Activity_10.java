@@ -19,10 +19,9 @@ public class Activity_10 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChangePasswordActivity");
 		intent.setComponent(cn);
-		intent.putExtra("account", "abcde");
-		intent.putExtra("password", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->password->999999999999999999999999999999999999999999999999999,String->account->abcde,
+		//null;;null;;null;;null;;String->account->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

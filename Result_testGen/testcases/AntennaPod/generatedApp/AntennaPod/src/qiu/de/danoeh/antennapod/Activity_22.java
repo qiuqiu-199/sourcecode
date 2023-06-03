@@ -17,14 +17,11 @@ public class Activity_22 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.VideoplayerActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.FeedSettingsActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("file"));
-		intent.setType("video/*");
+		intent.putExtra("de.danoeh.antennapod.extra.feedId", 0);
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;file;;video/*;;
+		//null;;null;;null;;null;;long->de.danoeh.antennapod.extra.feedId->0,
 	}
     /** Called when the activity is first created. */
     @Override

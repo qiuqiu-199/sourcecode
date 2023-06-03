@@ -17,16 +17,10 @@ public class Activity_449 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.PublishProfilePictureActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.SearchActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("account", "!@#$%^ds:+_");
-		Parcelable CROP_IMAGE_EXTRA_RESULT = new MyParcelable();
-		intent.putExtra("CROP_IMAGE_EXTRA_RESULT", CROP_IMAGE_EXTRA_RESULT);
-		intent.putExtra("setup", false);
-		intent.putExtra("eu.siacs.conversations.invite_uri", "abcde");
 		startActivity(intent);
-		//null;;null;;notEmpty;;null;;String->eu.siacs.conversations.invite_uri->abcde,boolean->setup->false,Parcelable->CROP_IMAGE_EXTRA_RESULT->ParcelableObj,String->account->!@#$%^ds:+_,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,17 +17,12 @@ public class Activity_392 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteSecurityTokenOperationActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SecurityTokenOperationActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.TAG_DISCOVERED");
-		Parcelable data = new MyParcelable();
-		intent.putExtra("data", data);
-		Parcelable crypto_input = new MyParcelable();
-		intent.putExtra("crypto_input", crypto_input);
-		Parcelable required_input = new MyParcelable();
-		intent.putExtra("required_input", required_input);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;Parcelable->required_input->ParcelableObj,Parcelable->crypto_input->ParcelableObj,Parcelable->data->ParcelableObj,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

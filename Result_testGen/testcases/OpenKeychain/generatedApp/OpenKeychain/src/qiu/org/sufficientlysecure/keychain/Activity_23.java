@@ -17,7 +17,7 @@ public class Activity_23 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SettingsKeyServerActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.RetryUploadDialogActivity");
 		intent.setComponent(cn);
 		startActivity(intent);
 		//null;;null;;null;;null;;

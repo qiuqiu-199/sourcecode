@@ -1,0 +1,35 @@
+--------- beginning of main
+--------- beginning of system
+05-29 19:31:28.736 23177 23177 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+05-29 19:31:28.756 23177 23177 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+05-29 19:31:28.762 23177 23177 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 19:31:28.770 23177 23177 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/SettingsKeyServerActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 19:31:28.774 23177 23177 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/SettingsKeyserverFragment;--->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+--------- beginning of crash
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: FATAL EXCEPTION: main
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 23177
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke interface method 'java.lang.Object[] java.util.Collection.toArray()' on a null object reference
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at java.util.ArrayList.<init>(ArrayList.java:191)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at org.sufficientlysecure.keychain.ui.SettingsKeyserverFragment.onViewCreated(SettingsKeyserverFragment.java:91)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1439)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1759)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1827)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.dispatchStateChange(FragmentManager.java:3244)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:3200)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.support.v4.app.FragmentController.dispatchActivityCreated(FragmentController.java:195)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:597)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.support.v7.app.AppCompatActivity.onStart(AppCompatActivity.java:177)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:7165)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+05-29 19:31:28.774 23177 23177 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)

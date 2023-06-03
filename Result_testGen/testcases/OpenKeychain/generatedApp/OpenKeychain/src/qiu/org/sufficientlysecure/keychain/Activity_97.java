@@ -17,11 +17,13 @@ public class Activity_97 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.MainActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
 		intent.setComponent(cn);
-		intent.putExtra("master_key_id", 0);
+		intent.setAction("android.intent.action.SEND_MULTIPLE");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setType("message/*");
 		startActivity(intent);
-		//null;;null;;null;;null;;long->master_key_id->0,
+		//android.intent.action.SEND_MULTIPLE;;android.intent.category.DEFAULT;;null;;message/*;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -21,9 +21,9 @@ public class Activity_106 extends Activity
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
 		intent.setData(Uri.parse("mSheme://mHost:mPort/.apkg"));
-		intent.setType("notEmpty");
+		intent.setType("?");
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;mSheme://mHost:mPort/.apkg;;notEmpty;;
+		//android.intent.action.VIEW;;null;;mSheme://mHost:mPort/.apkg;;?;;
 	}
     /** Called when the activity is first created. */
     @Override

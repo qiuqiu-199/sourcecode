@@ -17,10 +17,15 @@ public class Activity_289 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteDeduplicateActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.ExchangeActivity");
 		intent.setComponent(cn);
+		intent.putExtra("GroupId", "!@#$%^ds:+_");
+		intent.putExtra("NumUsers", Integer.MIN_VALUE);
+		byte[] UserData = new byte[1];
+		intent.putExtra("UserData", UserData);
+		intent.putExtra("HostName", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;String->HostName->abcde,byteArray->UserData->0,int->NumUsers->Integer.MIN_VALUE,String->GroupId->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

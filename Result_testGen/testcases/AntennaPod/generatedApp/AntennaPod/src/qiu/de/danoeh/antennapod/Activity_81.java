@@ -17,17 +17,10 @@ public class Activity_81 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.OnlineFeedViewActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.SplashActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.setType("text/plain");
-		intent.putExtra("android.intent.extra.SUBJECT", "abcde");
-		intent.putExtra("android.intent.extra.TEXT", "!@#$%^ds:+_");
-		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
-		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
-		intent.putExtra("android.intent.extra.EMAIL", "abcde");
 		startActivity(intent);
-		//android.intent.action.SEND;;null;;null;;text/plain;;String[]->android.intent.extra.EMAIL->abcde,Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->!@#$%^ds:+_,String->android.intent.extra.SUBJECT->abcde,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

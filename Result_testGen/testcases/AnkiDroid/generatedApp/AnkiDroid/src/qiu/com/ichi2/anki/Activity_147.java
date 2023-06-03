@@ -20,9 +20,11 @@ public class Activity_147 extends Activity
 		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.CardBrowser");
 		intent.setComponent(cn);
 		intent.putExtra("selectedDeck", 0);
-		intent.putExtra("defaultDeckId", 0);
+		MySerializable defaultDeckId = new MySerializable();
+		intent.putExtra("defaultDeckId", defaultDeckId);
+		intent.putExtra("currentCard", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->defaultDeckId->0,long->selectedDeck->0,
+		//null;;null;;null;;null;;long->currentCard->0,Serializable->defaultDeckId->SerializableObj,long->selectedDeck->0,
 	}
     /** Called when the activity is first created. */
     @Override

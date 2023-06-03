@@ -17,10 +17,12 @@ public class Activity_57 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.SettingsActivity");
+		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.LoginActivity");
 		intent.setComponent(cn);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

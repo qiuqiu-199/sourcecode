@@ -19,11 +19,11 @@ public class Activity_177 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.BROWSABLE");
-		intent.setData(Uri.parse("imtosip"));
+		intent.setAction("?");
+		intent.setData(Uri.parse("csip:csip/mPath"));
+		intent.putExtra("acc_id", Long.MIN_VALUE);
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;imtosip;;null;;
+		//?;;null;;csip:csip/mPath;;null;;long->acc_id->Long.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

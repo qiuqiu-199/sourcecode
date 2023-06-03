@@ -17,12 +17,10 @@ public class Activity_254 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.UnreadWidgetConfiguration");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.FontSizeSettings");
 		intent.setComponent(cn);
-		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("appWidgetId", Integer.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->appWidgetId->Integer.MIN_VALUE,String->account->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

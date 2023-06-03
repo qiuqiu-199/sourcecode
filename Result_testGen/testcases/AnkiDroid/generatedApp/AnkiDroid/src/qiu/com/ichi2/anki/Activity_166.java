@@ -17,11 +17,13 @@ public class Activity_166 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.StudyOptionsActivity");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.CardBrowser");
 		intent.setComponent(cn);
-		intent.putExtra("withDeckOptions", false);
+		intent.putExtra("selectedDeck", Long.MAX_VALUE);
+		intent.putExtra("defaultDeckId", 0);
+		intent.putExtra("currentCard", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->withDeckOptions->false,
+		//null;;null;;null;;null;;long->currentCard->0,long->defaultDeckId->0,long->selectedDeck->Long.MAX_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

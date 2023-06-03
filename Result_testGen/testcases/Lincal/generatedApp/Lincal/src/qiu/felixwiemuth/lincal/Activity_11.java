@@ -17,7 +17,7 @@ public class Activity_11 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("felixwiemuth.lincal","felixwiemuth.lincal.ui.CalendarListActivity");
+		ComponentName cn=new ComponentName("felixwiemuth.lincal","felixwiemuth.lincal.ui.AddCalendarActivity");
 		intent.setComponent(cn);
 		startActivity(intent);
 		//null;;null;;null;;null;;

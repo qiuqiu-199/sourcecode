@@ -20,9 +20,9 @@ public class Activity_57 extends Activity
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
 		intent.setAction("com.csipsimple.phone.action.CALLLOG");
-		intent.setData(Uri.parse("notEmpty"));
+		intent.addCategory("android.intent.category.DEFAULT");
 		startActivity(intent);
-		//com.csipsimple.phone.action.CALLLOG;;null;;notEmpty;;null;;
+		//com.csipsimple.phone.action.CALLLOG;;android.intent.category.DEFAULT;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

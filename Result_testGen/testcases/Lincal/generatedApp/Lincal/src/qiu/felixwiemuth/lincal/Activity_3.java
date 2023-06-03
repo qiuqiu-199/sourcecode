@@ -17,13 +17,12 @@ public class Activity_3 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("felixwiemuth.lincal","felixwiemuth.lincal.ui.AddCalendarActivity");
+		ComponentName cn=new ComponentName("felixwiemuth.lincal","felixwiemuth.lincal.ui.SettingsActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("text/plain");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;null;;text/plain;;
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

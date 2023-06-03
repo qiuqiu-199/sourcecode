@@ -17,11 +17,10 @@ public class Activity_414 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.linked.LinkedIdWizard");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ViewKeyAdvActivity");
 		intent.setComponent(cn);
-		intent.putExtra("master_key_id", Long.MAX_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->master_key_id->Long.MAX_VALUE,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

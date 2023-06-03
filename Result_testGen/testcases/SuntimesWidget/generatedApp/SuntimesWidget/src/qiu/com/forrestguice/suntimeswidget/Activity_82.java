@@ -19,11 +19,10 @@ public class Activity_82 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesSettingsActivity");
 		intent.setComponent(cn);
-		intent.setAction("com.forrestguice.suntimeswidget.PREFS_ALARMCLOCK");
-		intent.putExtra("isModified", true);
-		intent.putExtra("name", "!@#$%^ds:+_");
+		intent.putExtra(":android:no_headers", false);
+		intent.putExtra(":android:show_fragment", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//com.forrestguice.suntimeswidget.PREFS_ALARMCLOCK;;null;;null;;null;;String->name->!@#$%^ds:+_,boolean->isModified->true,
+		//null;;null;;null;;null;;String->:android:show_fragment->999999999999999999999999999999999999999999999999999,boolean->:android:no_headers->false,
 	}
     /** Called when the activity is first created. */
     @Override

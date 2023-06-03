@@ -20,13 +20,15 @@ public class Activity_37 extends Activity
 		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.facebook.FacebookActivity");
 		intent.setComponent(cn);
 		intent.setAction("PassThrough");
-		intent.putExtra("action_id", "!@#$%^ds:+_");
-		intent.putExtra("com.facebook.platform.protocol.CALL_ID", "999999999999999999999999999999999999999999999999999");
+		Bundle com_dot_facebook_dot_platform_dot_protocol_dot_BRIDGE_ARGS = new Bundle();
+		com_dot_facebook_dot_platform_dot_protocol_dot_BRIDGE_ARGS.putString("action_id", "abcde");
+		Bundle com_dot_facebook_dot_platform_dot_protocol_dot_METHOD_ARGS = new Bundle();
 		intent.putExtra("com.facebook.platform.protocol.METHOD_ARGS", "com_dot_facebook_dot_platform_dot_protocol_dot_METHOD_ARGS");
-		intent.putExtra("com.facebook.platform.protocol.PROTOCOL_VERSION", Integer.MIN_VALUE);
+		intent.putExtra("com.facebook.platform.protocol.CALL_ID", "abcde");
 		intent.putExtra("com.facebook.platform.protocol.BRIDGE_ARGS", "com_dot_facebook_dot_platform_dot_protocol_dot_BRIDGE_ARGS");
+		intent.putExtra("com.facebook.platform.protocol.PROTOCOL_VERSION", 0);
 		startActivity(intent);
-		//PassThrough;;null;;null;;null;;Bundle->com.facebook.platform.protocol.BRIDGE_ARGS->BundleObj,int->com.facebook.platform.protocol.PROTOCOL_VERSION->Integer.MIN_VALUE,Bundle->com.facebook.platform.protocol.METHOD_ARGS->BundleObj,String->com.facebook.platform.protocol.CALL_ID->999999999999999999999999999999999999999999999999999,String->action_id->!@#$%^ds:+_,
+		//PassThrough;;null;;null;;null;;int->com.facebook.platform.protocol.PROTOCOL_VERSION->0,Bundle->com.facebook.platform.protocol.BRIDGE_ARGS->BundleObj,(,String->action_id->abcde,),String->com.facebook.platform.protocol.CALL_ID->abcde,Bundle->com.facebook.platform.protocol.METHOD_ARGS->BundleObj,(,),
 	}
     /** Called when the activity is first created. */
     @Override

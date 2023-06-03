@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
-        <ImageView android:id="@id/category_icon" android:visibility="visible" android:layout_width="82.0dip" android:layout_height="82.0dip" android:src="@drawable/ic_taxa_amphibians" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
-        <TextView android:textSize="11.0dip" android:textColor="#ff3a3a3a" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/category_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="TextView" android:layout_below="@id/category_icon" />
-    </RelativeLayout>
-</RelativeLayout>

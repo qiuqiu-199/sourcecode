@@ -19,9 +19,10 @@ public class Activity_80 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesSettingsActivity");
 		intent.setComponent(cn);
-		intent.setAction("com.forrestguice.suntimeswidget.PREFS_UI");
+		intent.putExtra(":android:no_headers", true);
+		intent.putExtra(":android:show_fragment", "abcde");
 		startActivity(intent);
-		//com.forrestguice.suntimeswidget.PREFS_UI;;null;;null;;null;;
+		//null;;null;;null;;null;;String->:android:show_fragment->abcde,boolean->:android:no_headers->true,
 	}
     /** Called when the activity is first created. */
     @Override

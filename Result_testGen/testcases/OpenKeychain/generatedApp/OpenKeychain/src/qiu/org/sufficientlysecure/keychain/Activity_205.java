@@ -17,12 +17,12 @@ public class Activity_205 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SettingsActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		intent.setAction("org.sufficientlysecure.keychain.ui.PREFS_GEN");
-		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_CLIPBOARD");
+		intent.setData(Uri.parse("?:?//.well-known/openpgpkey/hu/"));
 		startActivity(intent);
-		//org.sufficientlysecure.keychain.ui.PREFS_GEN;;android.intent.category.DEFAULT;;null;;null;;
+		//org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_CLIPBOARD;;null;;?:?//.well-known/openpgpkey/hu/;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

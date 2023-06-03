@@ -17,16 +17,20 @@ public class Activity_125 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShareWithActivity");
 		intent.setComponent(cn);
-		intent.setAction("eu.siacs.conversations.action.VIEW");
-		intent.putExtra("nick", "abcde");
-		intent.putExtra("as_quote", true);
-		intent.putExtra("pm", false);
-		intent.putExtra("conversationUuid", "abcde");
+		intent.setAction("android.intent.action.SEND");
+		intent.setType("?");
+		Parcelable metadata = new MyParcelable();
+		intent.putExtra("metadata", metadata);
+		Parcelable intent1 = new MyParcelable();
+		intent.putExtra("intent", intent);
+		intent.putExtra("result_code", Integer.MIN_VALUE);
 		intent.putExtra("android.intent.extra.TEXT", "999999999999999999999999999999999999999999999999999");
+		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
+		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
 		startActivity(intent);
-		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,String->conversationUuid->abcde,boolean->pm->false,boolean->as_quote->true,String->nick->abcde,
+		//android.intent.action.SEND;;null;;null;;?;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,int->result_code->Integer.MIN_VALUE,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

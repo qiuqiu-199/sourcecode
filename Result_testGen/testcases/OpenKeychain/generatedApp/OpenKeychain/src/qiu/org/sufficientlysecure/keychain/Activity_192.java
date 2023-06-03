@@ -19,10 +19,11 @@ public class Activity_192 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEYSERVER");
-		intent.putExtra("org.sufficientlysecure.keychain.EXTRA_QUERY", "999999999999999999999999999999999999999999999999999");
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.BROWSABLE");
+		intent.setData(Uri.parse("facebook.com"));
 		startActivity(intent);
-		//org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEYSERVER;;null;;null;;null;;String->org.sufficientlysecure.keychain.EXTRA_QUERY->999999999999999999999999999999999999999999999999999,
+		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;facebook.com;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

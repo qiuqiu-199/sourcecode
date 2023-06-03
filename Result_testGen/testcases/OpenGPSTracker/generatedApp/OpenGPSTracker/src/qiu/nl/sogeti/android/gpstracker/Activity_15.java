@@ -17,12 +17,14 @@ public class Activity_15 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.viewer.TrackList");
+		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.viewer.LoggerMap");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("content://mHost:mPort/mPath"));
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setData(Uri.parse("content"));
+		intent.setType("vnd.android.cursor.item/vnd.nl.sogeti.android.track");
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;content://mHost:mPort/mPath;;null;;
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;content;;vnd.android.cursor.item/vnd.nl.sogeti.android.track;;
 	}
     /** Called when the activity is first created. */
     @Override

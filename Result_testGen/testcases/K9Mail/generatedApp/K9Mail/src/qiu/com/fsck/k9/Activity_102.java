@@ -17,12 +17,12 @@ public class Activity_102 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.LauncherShortcuts");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSettings");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.CREATE_SHORTCUT");
-		intent.addCategory("android.intent.category.DEFAULT");
+		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("com.fsck.k9.ChooseFolder_newfolder", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//android.intent.action.CREATE_SHORTCUT;;android.intent.category.DEFAULT;;null;;null;;
+		//null;;null;;null;;null;;String->com.fsck.k9.ChooseFolder_newfolder->999999999999999999999999999999999999999999999999999,String->account->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

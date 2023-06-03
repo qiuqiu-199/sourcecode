@@ -19,9 +19,8 @@ public class Activity_9 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("felixwiemuth.lincal","felixwiemuth.lincal.ui.AddCalendarActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("mSheme://mHost:mPort/notEmpty"));
 		startActivity(intent);
-		//null;;null;;mSheme://mHost:mPort/notEmpty;;null;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

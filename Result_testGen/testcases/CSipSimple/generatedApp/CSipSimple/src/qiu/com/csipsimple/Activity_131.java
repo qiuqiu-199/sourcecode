@@ -17,13 +17,12 @@ public class Activity_131 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.incall.InCallMediaControl");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.CALL_PRIVILEGED");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("vnd.android.cursor.item/person");
+		intent.setAction("com.csipsimple.service.CALL_CHANGED");
+		intent.putExtra("android.intent.extra.KEY_EVENT", 0);
 		startActivity(intent);
-		//android.intent.action.CALL_PRIVILEGED;;android.intent.category.DEFAULT;;null;;vnd.android.cursor.item/person;;
+		//com.csipsimple.service.CALL_CHANGED;;null;;null;;null;;int->android.intent.extra.KEY_EVENT->0,
 	}
     /** Called when the activity is first created. */
     @Override

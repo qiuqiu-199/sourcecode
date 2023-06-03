@@ -17,13 +17,11 @@ public class Activity_118 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.LauncherShortcuts");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SENDTO");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("mailto"));
+		intent.setAction("android.intent.action.CREATE_SHORTCUT");
 		startActivity(intent);
-		//android.intent.action.SENDTO;;android.intent.category.DEFAULT;;mailto;;null;;
+		//android.intent.action.CREATE_SHORTCUT;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

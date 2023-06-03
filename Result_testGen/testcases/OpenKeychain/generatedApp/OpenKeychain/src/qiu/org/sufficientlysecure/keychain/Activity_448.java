@@ -17,16 +17,12 @@ public class Activity_448 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteSelectIdKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.HelpActivity");
 		intent.setComponent(cn);
-		intent.putExtra("show_autocrypt_hint", true);
-		intent.putExtra("package_name", "abcde");
-		Parcelable data = new MyParcelable();
-		intent.putExtra("data", data);
-		intent.putExtra("package_signature", Byte.MIN_VALUE);
-		intent.putExtra("user_id", "!@#$%^ds:+_");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->user_id->!@#$%^ds:+_,byte[]->package_signature->Byte.MIN_VALUE,Parcelable->data->ParcelableObj,String->package_name->abcde,boolean->show_autocrypt_hint->true,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

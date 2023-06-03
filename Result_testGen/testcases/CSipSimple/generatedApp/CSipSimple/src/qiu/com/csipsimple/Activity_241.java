@@ -17,18 +17,13 @@ public class Activity_241 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.incall.InCallActivity");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.service.CALL_CHANGED");
-		Parcelable call_info = new MyParcelable();
-		intent.putExtra("call_info", call_info);
-		intent.putExtra("android.intent.extra.SUBJECT", "abcde");
-		intent.putExtra("android.intent.extra.UID", Integer.MAX_VALUE);
-		intent.putExtra("call_id", Integer.MIN_VALUE);
-		intent.putExtra("android.intent.extra.PHONE_NUMBER", "abcde");
-		intent.putExtra("id", 0);
+		intent.setAction("android.intent.action.SENDTO");
+		intent.setData(Uri.parse("?:csip/mPath"));
+		intent.putExtra("acc_id", Long.MIN_VALUE);
 		startActivity(intent);
-		//com.csipsimple.service.CALL_CHANGED;;null;;null;;null;;long->id->0,String->android.intent.extra.PHONE_NUMBER->abcde,int->call_id->Integer.MIN_VALUE,int->android.intent.extra.UID->Integer.MAX_VALUE,String->android.intent.extra.SUBJECT->abcde,Parcelable->call_info->ParcelableObj,
+		//android.intent.action.SENDTO;;null;;?:csip/mPath;;null;;long->acc_id->Long.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

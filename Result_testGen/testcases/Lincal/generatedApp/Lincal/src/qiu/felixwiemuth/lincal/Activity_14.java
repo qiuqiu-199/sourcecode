@@ -17,12 +17,11 @@ public class Activity_14 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("felixwiemuth.lincal","felixwiemuth.lincal.ui.CalendarListActivity");
+		ComponentName cn=new ComponentName("felixwiemuth.lincal","felixwiemuth.lincal.ui.AddCalendarActivity");
 		intent.setComponent(cn);
-		intent.putExtra("felixwiemuth.lincal.CalendarListActivity.EXTRA_RESULT_CAL_ADDED", 0);
-		intent.putExtra("felixwiemuth.lincal.CalendarListActivity.EXTRA_RESULT_CAL_REMOVED", 0);
+		intent.setData(Uri.parse("mSheme:mAuthority/?"));
 		startActivity(intent);
-		//null;;null;;null;;null;;int->felixwiemuth.lincal.CalendarListActivity.EXTRA_RESULT_CAL_REMOVED->0,int->felixwiemuth.lincal.CalendarListActivity.EXTRA_RESULT_CAL_ADDED->0,
+		//null;;null;;mSheme:mAuthority/?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -20,9 +20,9 @@ public class Activity_48 extends Activity
 		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.PatientDetailActivity");
 		intent.setComponent(cn);
 		intent.putExtra("patient_id", 0);
-		intent.putExtra("qr_data", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("qr_data", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->qr_data->999999999999999999999999999999999999999999999999999,long->patient_id->0,
+		//null;;null;;null;;null;;String->qr_data->abcde,long->patient_id->0,
 	}
     /** Called when the activity is first created. */
     @Override

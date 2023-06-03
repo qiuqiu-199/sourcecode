@@ -1,0 +1,31 @@
+--------- beginning of system
+--------- beginning of main
+--------- beginning of crash
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: FATAL EXCEPTION: main
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: Process: org.inaturalist.android, PID: 10195
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{org.inaturalist.android/org.inaturalist.android.ObservationViewerActivity}: java.lang.NullPointerException: uri
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: Caused by: java.lang.NullPointerException: uri
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at com.android.internal.util.Preconditions.checkNotNull(Preconditions.java:128)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:786)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:753)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:711)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.app.Activity.managedQuery(Activity.java:2560)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at org.inaturalist.android.ObservationViewerActivity.reloadObservation(ObservationViewerActivity.java:655)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at org.inaturalist.android.ObservationViewerActivity.onCreate(ObservationViewerActivity.java:482)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-01 14:35:48.584 10195 10195 E AndroidRuntime: 	... 11 more

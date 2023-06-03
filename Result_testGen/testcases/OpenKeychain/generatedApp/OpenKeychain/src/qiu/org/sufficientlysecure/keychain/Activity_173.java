@@ -17,13 +17,13 @@ public class Activity_173 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteSelectAuthenticationKeyActivity");
 		intent.setComponent(cn);
-		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("application/pgp-keys");
+		intent.putExtra("package_name", "999999999999999999999999999999999999999999999999999");
+		Parcelable data = new MyParcelable();
+		intent.putExtra("data", data);
 		startActivity(intent);
-		//org.sufficientlysecure.keychain.action.IMPORT_KEY;;android.intent.category.DEFAULT;;null;;application/pgp-keys;;
+		//null;;null;;null;;null;;Parcelable->data->ParcelableObj,String->package_name->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

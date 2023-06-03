@@ -17,7 +17,7 @@ public class Activity_223 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.NotificationDeleteConfirmation");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.ChooseAccount");
 		intent.setComponent(cn);
 		startActivity(intent);
 		//null;;null;;null;;null;;

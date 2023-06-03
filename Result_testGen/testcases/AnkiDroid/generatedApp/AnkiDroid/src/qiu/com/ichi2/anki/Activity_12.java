@@ -20,9 +20,9 @@ public class Activity_12 extends Activity
 		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.ModelFieldEditor");
 		intent.setComponent(cn);
 		intent.putExtra("title", "abcde");
-		intent.putExtra("noteTypeID", Long.MIN_VALUE);
+		intent.putExtra("noteTypeID", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->noteTypeID->Long.MIN_VALUE,String->title->abcde,
+		//null;;null;;null;;null;;long->noteTypeID->0,String->title->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

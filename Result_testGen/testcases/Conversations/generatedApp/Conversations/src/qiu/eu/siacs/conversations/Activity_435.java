@@ -17,14 +17,11 @@ public class Activity_435 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.UriHandlerActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.WelcomeActivity");
 		intent.setComponent(cn);
-		intent.setAction("scan_qr_code");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("result", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("eu.siacs.conversations.invite_uri", "abcde");
+		intent.putExtra("eu.siacs.conversations.invite_uri", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//scan_qr_code;;null;;notEmpty;;null;;String->eu.siacs.conversations.invite_uri->abcde,String->result->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;String->eu.siacs.conversations.invite_uri->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

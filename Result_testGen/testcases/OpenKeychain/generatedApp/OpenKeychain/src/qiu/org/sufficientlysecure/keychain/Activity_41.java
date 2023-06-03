@@ -17,12 +17,12 @@ public class Activity_41 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.OrbotRequiredDialogActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteImportKeysActivity");
 		intent.setComponent(cn);
-		Parcelable extra_crypto_input = new MyParcelable();
-		intent.putExtra("extra_crypto_input", extra_crypto_input);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->extra_crypto_input->ParcelableObj,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,13 +17,10 @@ public class Activity_72 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassImportActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassViewActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.BROWSABLE");
-		intent.setType("application/pdf");
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;null;;application/pdf;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

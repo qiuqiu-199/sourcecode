@@ -17,7 +17,7 @@ public class Activity_21 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.preferences.PreferencesActivity");
+		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.activity.LogActivity");
 		intent.setComponent(cn);
 		intent.putExtra("validate", "abcde");
 		startActivity(intent);

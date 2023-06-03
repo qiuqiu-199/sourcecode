@@ -17,10 +17,13 @@ public class Activity_423 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteErrorActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.AppSettingsActivity");
 		intent.setComponent(cn);
+		intent.putExtra("package_name", "abcde");
+		Parcelable operation_result = new MyParcelable();
+		intent.putExtra("operation_result", operation_result);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;Parcelable->operation_result->ParcelableObj,String->package_name->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

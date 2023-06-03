@@ -19,9 +19,8 @@ public class Activity_2 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.hc.MainPrefs");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.ui.action.PREFS_GLOBAL");
 		startActivity(intent);
-		//com.csipsimple.ui.action.PREFS_GLOBAL;;null;;null;;null;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

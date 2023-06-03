@@ -17,11 +17,13 @@ public class Activity_138 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.FolderList");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
 		intent.setComponent(cn);
-		intent.putExtra("account", "abcde");
+		intent.setAction("android.intent.action.SEND");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setType("*/*");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->account->abcde,
+		//android.intent.action.SEND;;android.intent.category.DEFAULT;;null;;*/*;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,11 +17,12 @@ public class Activity_82 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.calllog.CallLogDetailsActivity");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
-		intent.putExtra("EXTRA_CALL_LOG_IDS", Long.MIN_VALUE);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;long[]->EXTRA_CALL_LOG_IDS->Long.MIN_VALUE,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

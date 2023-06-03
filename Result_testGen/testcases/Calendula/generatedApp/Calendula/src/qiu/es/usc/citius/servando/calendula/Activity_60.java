@@ -23,9 +23,9 @@ public class Activity_60 extends Activity
 		intent.putExtra("ABOUT_LIBRARIES_THEME", Integer.MAX_VALUE);
 		MySerializable ABOUT_COLOR = new MySerializable();
 		intent.putExtra("ABOUT_COLOR", ABOUT_COLOR);
-		intent.putExtra("ABOUT_LIBRARIES_TITLE", "abcde");
+		intent.putExtra("ABOUT_LIBRARIES_TITLE", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->ABOUT_LIBRARIES_TITLE->abcde,Serializable->ABOUT_COLOR->SerializableObj,int->ABOUT_LIBRARIES_THEME->Integer.MAX_VALUE,String->ABOUT_LIBRARIES_STYLE->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;String->ABOUT_LIBRARIES_TITLE->!@#$%^ds:+_,Serializable->ABOUT_COLOR->SerializableObj,int->ABOUT_LIBRARIES_THEME->Integer.MAX_VALUE,String->ABOUT_LIBRARIES_STYLE->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

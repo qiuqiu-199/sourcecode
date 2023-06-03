@@ -17,12 +17,10 @@ public class Activity_428 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.PanicResponderActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteSelectPubKeyActivity");
 		intent.setComponent(cn);
-		intent.setAction("info.guardianproject.panic.action.TRIGGER");
-		intent.addCategory("android.intent.category.DEFAULT");
 		startActivity(intent);
-		//info.guardianproject.panic.action.TRIGGER;;android.intent.category.DEFAULT;;null;;null;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

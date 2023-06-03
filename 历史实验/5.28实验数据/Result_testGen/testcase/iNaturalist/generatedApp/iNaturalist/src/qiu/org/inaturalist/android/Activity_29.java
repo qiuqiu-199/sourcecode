@@ -1,0 +1,46 @@
+package qiu.org.inaturalist.android;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.content.Intent;
+import java.util.List;
+import android.content.ComponentName;
+import android.os.Parcelable;
+import java.util.ArrayList;
+import android.net.Uri;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class Activity_29 extends Activity
+{
+	public void launch(){
+		Intent intent = new Intent();
+		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		ComponentName cn=new ComponentName("org.inaturalist.android","org.inaturalist.android.OnboardingActivity");
+		intent.setComponent(cn);
+		Parcelable com_dot_facebook_dot_LoginFragment_maohao_Result = new MyParcelable();
+		intent.putExtra("com.facebook.LoginFragment:Result", com_dot_facebook_dot_LoginFragment_maohao_Result);
+		intent.putExtra("authAccount", "!@#$%^ds:+_");
+		intent.putExtra("accountType", "!@#$%^ds:+_");
+		intent.putExtra("new com.adobe.xmp.properties.XMPPropertyInfo", "!@#$%^ds:+_");
+		intent.putExtra("show_skip", true);
+		intent.putExtra("login", true);
+		startActivity(intent);
+		//null;;null;;null;;null;;boolean->login->true,boolean->show_skip->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->!@#$%^ds:+_,String->accountType->!@#$%^ds:+_,String->authAccount->!@#$%^ds:+_,Parcelable->com.facebook.LoginFragment:Result->ParcelableObj,
+	}
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+		launch();
+		Button button1=(Button)findViewById(R.id.button1);
+		button1.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				launch();
+		}});
+    }
+}

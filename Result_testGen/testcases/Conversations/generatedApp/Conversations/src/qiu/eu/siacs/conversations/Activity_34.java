@@ -17,12 +17,14 @@ public class Activity_34 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShareViaAccountActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ContactDetailsActivity");
 		intent.setComponent(cn);
-		intent.putExtra("contact", "!@#$%^ds:+_");
-		intent.putExtra("body", "!@#$%^ds:+_");
+		intent.setAction("view_contact");
+		intent.putExtra("account", "abcde");
+		intent.putExtra("fingerprint", "abcde");
+		intent.putExtra("contact", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->body->!@#$%^ds:+_,String->contact->!@#$%^ds:+_,
+		//view_contact;;null;;null;;null;;String->contact->999999999999999999999999999999999999999999999999999,String->fingerprint->abcde,String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

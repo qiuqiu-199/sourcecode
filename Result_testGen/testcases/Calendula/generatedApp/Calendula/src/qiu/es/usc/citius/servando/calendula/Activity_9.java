@@ -22,10 +22,10 @@ public class Activity_9 extends Activity
 		MySerializable schedule_id = new MySerializable();
 		intent.putExtra("schedule_id", schedule_id);
 		intent.putExtra("schedule_time", "!@#$%^ds:+_");
-		intent.putExtra("position", Integer.MAX_VALUE);
-		intent.putExtra("date", "!@#$%^ds:+_");
+		intent.putExtra("position", 0);
+		intent.putExtra("date", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->date->!@#$%^ds:+_,int->position->Integer.MAX_VALUE,String->schedule_time->!@#$%^ds:+_,Serializable->schedule_id->SerializableObj,
+		//null;;null;;null;;null;;String->date->abcde,int->position->0,String->schedule_time->!@#$%^ds:+_,Serializable->schedule_id->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

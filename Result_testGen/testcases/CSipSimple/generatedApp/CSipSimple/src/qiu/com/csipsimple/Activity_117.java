@@ -17,13 +17,12 @@ public class Activity_117 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.Codecs");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SENDTO");
-		intent.setData(Uri.parse("notEmpty:csip/mPath"));
-		intent.putExtra("acc_id", Long.MIN_VALUE);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//android.intent.action.SENDTO;;null;;notEmpty:csip/mPath;;null;;long->acc_id->Long.MIN_VALUE,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

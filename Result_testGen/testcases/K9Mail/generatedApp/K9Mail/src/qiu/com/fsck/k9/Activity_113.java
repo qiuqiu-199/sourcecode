@@ -17,12 +17,13 @@ public class Activity_113 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupCheckSettings");
 		intent.setComponent(cn);
-		intent.setAction("com.fsck.k9.intent.action.EDIT_DRAFT");
-		intent.putExtra("message_reference", "abcde");
+		intent.putExtra("account", "!@#$%^ds:+_");
+		MySerializable checkDirection = new MySerializable();
+		intent.putExtra("checkDirection", checkDirection);
 		startActivity(intent);
-		//com.fsck.k9.intent.action.EDIT_DRAFT;;null;;null;;null;;String->message_reference->abcde,
+		//null;;null;;null;;null;;Serializable->checkDirection->SerializableObj,String->account->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

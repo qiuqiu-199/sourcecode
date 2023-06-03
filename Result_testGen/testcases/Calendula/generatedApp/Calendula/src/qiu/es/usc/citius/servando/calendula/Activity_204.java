@@ -17,12 +17,11 @@ public class Activity_204 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.notifications.LockScreenAlarmActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.ConfirmSchedulesActivity");
 		intent.setComponent(cn);
-		Parcelable target = new MyParcelable();
-		intent.putExtra("target", target);
+		intent.putExtra("qr_data", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->target->ParcelableObj,
+		//null;;null;;null;;null;;String->qr_data->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

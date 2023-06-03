@@ -17,12 +17,11 @@ public class Activity_9 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesConfigActivity0_2x1");
 		intent.setComponent(cn);
-		intent.putExtra("previewID", Integer.MIN_VALUE);
-		intent.putExtra("selected", "abcde");
+		intent.setAction("android.appwidget.action.APPWIDGET_CONFIGURE");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->selected->abcde,int->previewID->Integer.MIN_VALUE,
+		//android.appwidget.action.APPWIDGET_CONFIGURE;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

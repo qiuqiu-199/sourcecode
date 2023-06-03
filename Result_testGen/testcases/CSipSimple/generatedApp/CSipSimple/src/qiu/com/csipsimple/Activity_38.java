@@ -17,12 +17,12 @@ public class Activity_38 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.filters.EditFilter");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.phone.action.FAVORITES");
-		intent.setData(Uri.parse("notEmpty:mAuthority/mPath"));
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//com.csipsimple.phone.action.FAVORITES;;null;;notEmpty:mAuthority/mPath;;null;;
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

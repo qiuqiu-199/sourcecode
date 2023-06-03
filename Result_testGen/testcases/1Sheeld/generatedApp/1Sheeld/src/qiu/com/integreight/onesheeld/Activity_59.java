@@ -17,11 +17,11 @@ public class Activity_59 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.shields.controller.utils.NfcUtils");
+		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.Tutorial");
 		intent.setComponent(cn);
-		intent.setAction("notEmpty");
+		intent.putExtra("isMenu", true);
 		startActivity(intent);
-		//notEmpty;;null;;null;;null;;
+		//null;;null;;null;;null;;boolean->isMenu->true,
 	}
     /** Called when the activity is first created. */
     @Override

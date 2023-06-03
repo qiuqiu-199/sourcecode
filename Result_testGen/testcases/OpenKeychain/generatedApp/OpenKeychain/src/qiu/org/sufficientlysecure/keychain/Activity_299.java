@@ -17,12 +17,14 @@ public class Activity_299 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DeleteKeyDialogActivity");
 		intent.setComponent(cn);
-		MySerializable master_key_id = new MySerializable();
-		intent.putExtra("master_key_id", master_key_id);
+		intent.putExtra("extra_delete_master_key_ids", Long.MAX_VALUE);
+		intent.putExtra("extra_has_secret", true);
+		Parcelable extra_keyserver = new MyParcelable();
+		intent.putExtra("extra_keyserver", extra_keyserver);
 		startActivity(intent);
-		//null;;null;;null;;null;;Serializable->master_key_id->SerializableObj,
+		//null;;null;;null;;null;;Parcelable->extra_keyserver->ParcelableObj,boolean->extra_has_secret->true,long[]->extra_delete_master_key_ids->Long.MAX_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

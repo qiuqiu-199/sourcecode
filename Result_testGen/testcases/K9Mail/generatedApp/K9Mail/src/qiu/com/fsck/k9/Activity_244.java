@@ -17,13 +17,13 @@ public class Activity_244 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.UnreadWidgetConfiguration");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.UpgradeDatabases");
 		intent.setComponent(cn);
-		intent.putExtra("no_threading", false);
-		intent.putExtra("appWidgetId", Integer.MIN_VALUE);
-		intent.putExtra("search_bytes", 0);
+		intent.setAction("upgrade_databases");
+		Parcelable start_intent = new MyParcelable();
+		intent.putExtra("start_intent", start_intent);
 		startActivity(intent);
-		//null;;null;;null;;null;;byte[]->search_bytes->0,int->appWidgetId->Integer.MIN_VALUE,boolean->no_threading->false,
+		//upgrade_databases;;null;;null;;null;;Parcelable->start_intent->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,11 +17,11 @@ public class Activity_323 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ViewKeyAdvActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.BackupActivity");
 		intent.setComponent(cn);
-		intent.putExtra("master_key_id", Long.MIN_VALUE);
+		intent.putExtra("export_secret", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->master_key_id->Long.MIN_VALUE,
+		//null;;null;;null;;null;;boolean->export_secret->false,
 	}
     /** Called when the activity is first created. */
     @Override

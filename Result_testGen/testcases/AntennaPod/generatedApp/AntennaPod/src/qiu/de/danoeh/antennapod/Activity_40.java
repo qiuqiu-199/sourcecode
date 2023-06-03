@@ -17,11 +17,12 @@ public class Activity_40 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.ImportExportActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.VideoplayerActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("notEmpty"));
+		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("mSheme:mAuthority/?"));
 		startActivity(intent);
-		//null;;null;;notEmpty;;null;;
+		//android.intent.action.VIEW;;null;;mSheme:mAuthority/?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

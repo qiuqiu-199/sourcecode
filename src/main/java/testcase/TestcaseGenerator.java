@@ -3,12 +3,15 @@ package testcase;
 import model.AppModel;
 import model.ICCMsg;
 import utils.ConstantUtils;
+import utils.Global;
 import utils.IOUtils;
 import utils.Utils;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.*;
+
+import static com.sun.org.apache.xalan.internal.lib.ExsltStrings.split;
 
 /**
  * @ClassName: TestcaseGenerator
@@ -25,20 +28,20 @@ public class TestcaseGenerator {
     public TestcaseGenerator(Map<String, Set<ICCMsg>> act2ReceivedICCMap) {
         this.act2ReceivedICCMap = act2ReceivedICCMap;
         this.appId = 0;
-        this.apkTC = ConstantUtils.RESULTFOLDER + ConstantUtils.TESTCASEFOLDER + AppModel.v().appName + File.separator + "testCase.iccmsg";
+        this.apkTC = ConstantUtils.RESULTFOLDER + ConstantUtils.TESTCASEFOLDER + Global.v().getAppModel().appName + File.separator + "testCase.iccmsg";
 
     }
 
 
     public void generateTestApp() {
         //项目名，也就是apk名
-        String pro_name = AppModel.v().appName;
+        String pro_name = Global.v().getAppModel().appName;
         //生成安卓项目的目录  Result_testGen\testcases\K9Mail\generatedApp\K9Mail
         String pro_path = "Result_testGen\\testcases\\" + pro_name + File.separator + ConstantUtils.GENERATEDAPP1 + pro_name;
         //创建安卓项目
-        createAndroidProject(AppModel.v().pkgName, pro_path, Utils.getProjectName(AppModel.v().appName));
+        createAndroidProject(Global.v().getAppModel().pkgName, pro_path, Utils.getProjectName(Global.v().getAppModel().appName));
         //安卓项目的java文件所在目录，也就是src/qiu/com/fsck/k9/
-        ConstantUtils.SRCFOLDER = "src" + File.separator + ConstantUtils.APKFLAG.replace(".", File.separator) + AppModel.v().pkgName.replace(".", File.separator) + File.separator;
+        ConstantUtils.SRCFOLDER = "src" + File.separator + ConstantUtils.APKFLAG.replace(".", File.separator) + Global.v().getAppModel().pkgName.replace(".", File.separator) + File.separator;
 
         //复制三个模板进项目中
         copySerFiles(pro_path);
@@ -56,8 +59,8 @@ public class TestcaseGenerator {
     }
 
     public void buildProject() {
-        String pro_name = AppModel.v().appName;
-        String folder = ConstantUtils.RESULTFOLDER + ConstantUtils.TESTCASEFOLDER + AppModel.v().appName + File.separator;
+        String pro_name = Global.v().getAppModel().appName;
+        String folder = ConstantUtils.RESULTFOLDER + ConstantUtils.TESTCASEFOLDER + Global.v().getAppModel().appName + File.separator;
         String projectPath = folder + ConstantUtils.GENERATEDAPP1 + pro_name;
         try {
             buildApp(projectPath);
@@ -72,11 +75,11 @@ public class TestcaseGenerator {
     }
 
     public void moveGeratedAPK(String projectPath) {
-        String folder = ConstantUtils.RESULTFOLDER + ConstantUtils.TESTCASEFOLDER + AppModel.v().appName + File.separator + "apkTestcases" + File.separator;
+        String folder = ConstantUtils.RESULTFOLDER + ConstantUtils.TESTCASEFOLDER + Global.v().getAppModel().appName + File.separator + "apkTestcases" + File.separator;
         File f = new File(folder);
         f.mkdirs();
 
-        String oriPath = projectPath + File.separator + "bin" + File.separator + Utils.getProjectName(AppModel.v().appName)
+        String oriPath = projectPath + File.separator + "bin" + File.separator + Utils.getProjectName(Global.v().getAppModel().appName)
                 + "-debug.apk";
         String desPath = folder + "test.apk";
         Utils.moveFile(oriPath, desPath);
@@ -94,11 +97,11 @@ public class TestcaseGenerator {
         String content = "";
         for (String line : lines) {
             if (line.contains("@string/app_name"))
-                line = line.replace("@string/app_name", AppModel.v().appName + "_Launcher");
+                line = line.replace("@string/app_name", Global.v().getAppModel().appName + "_Launcher");
             //TODO 关于应用的permission待处理
 //            if (line.contains("</manifest>")) {
-//                if (AppModel.v().permission.length() != 0)
-//                    content += "\t<uses-permission android:name=\"" + AppModel.v().permission + "\"/>\n";
+//                if (Global.v().getAppModel().permission.length() != 0)
+//                    content += "\t<uses-permission android:name=\"" + Global.v().getAppModel().permission + "\"/>\n";
             //TODO manifest文件解析获取activity的permission
 //                for ( ActivityModel ea : appModel.ops.getActivityMap().values()) {
 //                    if (ea.getPermission() != null && ea.getPermission().length()>0) {
@@ -122,8 +125,8 @@ public class TestcaseGenerator {
     }
 
     public void generateManifest() {
-        String pro_name = AppModel.v().appName;
-        String folder = ConstantUtils.RESULTFOLDER + ConstantUtils.TESTCASEFOLDER + AppModel.v().appName + File.separator;
+        String pro_name = Global.v().getAppModel().appName;
+        String folder = ConstantUtils.RESULTFOLDER + ConstantUtils.TESTCASEFOLDER + Global.v().getAppModel().appName + File.separator;
         String projectPath = folder + ConstantUtils.GENERATEDAPP1 + pro_name;
 
         int flag = gen_manifest_file(projectPath + File.separator + ConstantUtils.MANIFEST);
@@ -163,6 +166,9 @@ public class TestcaseGenerator {
                 str += msg.type + ";;";
             else str += "null;;";
 
+            //将notEmpty改为“？”
+            str = str.replace("notEmpty","?");
+
             //提取得到的基本属性加入ACDTStr中
             //到这一步，ACDTStr里只有一个字符串，分别表示acdt四种基本属性的值，中间用两个分号隔开
             ACDTStr.add(str);
@@ -171,7 +177,49 @@ public class TestcaseGenerator {
             if (msg.extras != null) {
                 Set<String> keyHistory = new HashSet<>();  //用来排掉一些变量名相同的额外属性
                 for (String extra : msg.extras) {
-                    if (!extra.equals("") && extra.contains("-")) {
+                    if(extra.contains("-null"))
+                        continue;  //避免activity接收的extras中有这样的：Serializable-null，否则java文件会出现MySerializable null = new MySerializable();
+                    //bundle类型额外处理,extra = "Bundle-app_data->(String-com.fsck.k9.search_account,String-com.fsck.k9.search_folder)"
+                    //处理后ACDTStr应该有这样的效果：null;;null;;null;;null;;Extras->ExtrasObj->ExtrasObj,(,String->com.ichi2.anki.LoadPronounciationActivity.extra.source->abcde,),
+                    if(extra.contains("Bundle")){
+                        String[] split = extra.split("->");
+                        String bundleName =split[0].split("-")[1];
+                        //基本属性传入两个ACDTStr中
+                        Set<String> ACDTStr1 = new HashSet<String>(ACDTStr);
+                        Set<String> ACDTStr2 = new HashSet<String>(ACDTStr);
+                        handleExtraAccordingToTypeNormal("Bundle",bundleName,ACDTStr1);
+                        handleExtraAccordingToTypeAbnormal("Bundle",bundleName,ACDTStr2);
+
+                        ACDTStr.clear();
+                        ACDTStr.addAll(ACDTStr1);
+                        ACDTStr.addAll(ACDTStr2);
+                        //加左括号
+                        Set<String> copy = new HashSet<String>(ACDTStr);
+                        for (String acdt : copy) {
+                            ACDTStr.add(acdt +"(,");
+                            ACDTStr.remove(acdt);
+                        }
+
+                        Set<String> ACDTStr3 = new HashSet<String>(ACDTStr);
+                        Set<String> ACDTStr4 = new HashSet<String>(ACDTStr);
+                        String[] kvs = split[1].split(",");
+                        for(String kv : kvs){
+                            kv = kv.replace("(","").replace(")","");
+                            if(kv.contains("-")){
+                                String[] k_v = kv.split("-");
+                                handleExtraAccordingToTypeNormal(k_v[0],k_v[1],ACDTStr3);
+                                handleExtraAccordingToTypeAbnormal(k_v[0],k_v[1],ACDTStr4);
+                            }
+                        }
+                        ACDTStr.clear();
+                        ACDTStr.addAll(ACDTStr3);
+                        ACDTStr.addAll(ACDTStr4);
+                        Set<String> copy1 = new HashSet<String>(ACDTStr);
+                        for (String acdt : copy1) {
+                            ACDTStr.add(acdt +"),");
+                            ACDTStr.remove(acdt);
+                        }
+                    }else if (!extra.equals("") && extra.contains("-")) {
                         String[] extra_pair = extra.split("-");
                         String extra_type = extra_pair[0];
                         if(keyHistory.contains(extra_pair[1])) continue;
@@ -194,6 +242,36 @@ public class TestcaseGenerator {
                     }
                 }
             }
+
+            //对变量名去重
+            //举例：String->date->abcde,Parcelable->target->ParcelableObj,int->action->Integer.MIN_VALUE,Serializable->routine_id->SerializableObj,Bundle->alarm_params->BundleObj,(,Parcelable->alarm_params->ParcelableObj,),
+            Set<String> diffSet = new HashSet<>();
+            Map<String,String> old2new = new HashMap<>();
+            for (String acdt : ACDTStr) {
+                String[] s = acdt.split(";;");
+                if(s.length <= 4) continue;
+                String[] extras = s[4].split(",");
+                for (String extra : extras) {
+                    if(extra.equals("(") || extra.equals(")")) continue;
+                    String type = extra.split("->")[0];
+                    String value = extra.split("->")[2];
+                    String variable = extra.split("->")[1];
+                    if(!diffSet.contains(variable)){
+                        diffSet.add(variable);
+                    }else {
+                        variable = variable + 1;
+                        String extraNew = type +"->"+ variable+"->"+value;
+                        String acdtNew = acdt.replace(extra,extraNew);
+                        old2new.put(acdt,acdtNew);
+                    }
+                }
+                diffSet = new HashSet<>();
+            }
+            for (String old : old2new.keySet()) {
+                ACDTStr.remove(old);
+            }
+            ACDTStr.addAll(old2new.values());
+
             //TODO 有时候从componentInfo解析得到的extras太多了会导致ACDT爆炸，取30个
             if (ACDTStr.size() > 30) {
                 HashSet<String> newSet = new HashSet<String>();
@@ -203,6 +281,7 @@ public class TestcaseGenerator {
             }
 
             for (String s : ACDTStr) {
+
                 generateJavaFile(s, actName);
             }
 
@@ -211,14 +290,14 @@ public class TestcaseGenerator {
 //                generateJavaFile(it.next(), actName);
 //            }
 
-            AppModel.v().countTC_use += appId;
+            Global.v().getAppModel().countTC_use += appId;
         }
     }
 
     private void generateJavaFile(String acdt, String actName) {
         actName = actName.replace("$", "_dollar_");
 //        String pro_name = getProjectName(appModel.appName);
-        String pro_name = AppModel.v().appName;
+        String pro_name = Global.v().getAppModel().appName;
         String projectPath = "Result_testGen\\testcases\\" + pro_name + File.separator + ConstantUtils.GENERATEDAPP1 + pro_name;
 
         gen_java_file(projectPath + File.separator + ConstantUtils.SRCFOLDER + File.separator + ConstantUtils.ACTIVITY_,
@@ -268,7 +347,7 @@ public class TestcaseGenerator {
                 content = "\tpublic void launch(){\n";
                 content += "\t\tIntent intent = new Intent();\n";
                 content += "\t\tintent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);\n";
-                content += "\t\tComponentName cn=new ComponentName(\"" + AppModel.v().pkgName + "\",\"" + clsname.replace("_dollar_", "$")
+                content += "\t\tComponentName cn=new ComponentName(\"" + Global.v().getAppModel().pkgName + "\",\"" + clsname.replace("_dollar_", "$")
                         + "\");\n";
                 content += "\t\tintent.setComponent(cn);\n";
 
@@ -479,7 +558,7 @@ public class TestcaseGenerator {
                         extra_value = extra_key;
                     }
                 }
-                //TODO 关于bundle先这样处理，后面再改5.24
+                //TODO 关于bundle处理，后面再改5.24，6.3处理完成
                 if (extra_type.equals("Bundle"))
                     extra_value = "\"" + extra_value + "\"";
                 content += "\t\t" + objName + "." + putAPI + "(\"" + extra_key.replace("_dot_", ".").replace("_maohao_", ":").replace("_line_", "-")
@@ -604,7 +683,7 @@ public class TestcaseGenerator {
 
         //按行获取templateF路径的文件的内容
         ArrayList<String> lines = Utils.getList(templateF);
-        IOUtils.write_to_file(desF, "package " + ConstantUtils.APKFLAG + AppModel.v().pkgName + ";\n", false);
+        IOUtils.write_to_file(desF, "package " + ConstantUtils.APKFLAG + Global.v().getAppModel().pkgName + ";\n", false);
         //将MySerializable.java的内容存入desF指定的路径中
         for (String line : lines)
             IOUtils.write_to_file(desF, line + "\n", true);
@@ -614,7 +693,7 @@ public class TestcaseGenerator {
         templateF = "template\\MyParcelable.java";
         desF = java_file_path + "MyParcelable.java";
         ArrayList<String> lines2 = Utils.getList(templateF);
-        IOUtils.write_to_file(desF, "package " + ConstantUtils.APKFLAG + AppModel.v().pkgName + ";\n", false);
+        IOUtils.write_to_file(desF, "package " + ConstantUtils.APKFLAG + Global.v().getAppModel().pkgName + ";\n", false);
         for (String line : lines2)
             IOUtils.write_to_file(desF, line + "\n", true);
 

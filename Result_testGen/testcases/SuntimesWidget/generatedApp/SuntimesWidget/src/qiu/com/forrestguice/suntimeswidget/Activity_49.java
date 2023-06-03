@@ -19,9 +19,14 @@ public class Activity_49 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity");
 		intent.setComponent(cn);
+		intent.setData(Uri.parse("?"));
 		intent.putExtra("previewID", 0);
+		intent.putExtra("name", "!@#$%^ds:+_");
+		intent.putExtra("useWallpaper", false);
+		intent.putExtra("noselect", true);
+		intent.putExtra("selected", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;int->previewID->0,
+		//null;;null;;?;;null;;String->selected->!@#$%^ds:+_,boolean->noselect->true,boolean->useWallpaper->false,String->name->!@#$%^ds:+_,int->previewID->0,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -21,10 +21,10 @@ public class Activity_26 extends Activity
 		intent.setComponent(cn);
 		intent.putExtra("padLocalName", "abcde");
 		intent.putExtra("padServer", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("padUrl", "abcde");
-		intent.putExtra("padName", "abcde");
+		intent.putExtra("padUrl", "!@#$%^ds:+_");
+		intent.putExtra("padName", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->padName->abcde,String->padUrl->abcde,String->padServer->999999999999999999999999999999999999999999999999999,String->padLocalName->abcde,
+		//null;;null;;null;;null;;String->padName->999999999999999999999999999999999999999999999999999,String->padUrl->!@#$%^ds:+_,String->padServer->999999999999999999999999999999999999999999999999999,String->padLocalName->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

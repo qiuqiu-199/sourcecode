@@ -17,14 +17,12 @@ public class Activity_325 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ViewKeyAdvActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DisplayTextActivity");
 		intent.setComponent(cn);
-		intent.putExtra("selected_tab", Integer.MAX_VALUE);
-		Parcelable operation_result = new MyParcelable();
-		intent.putExtra("operation_result", operation_result);
-		intent.putExtra("master_key_id", Long.MAX_VALUE);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->master_key_id->Long.MAX_VALUE,Parcelable->operation_result->ParcelableObj,int->selected_tab->Integer.MAX_VALUE,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

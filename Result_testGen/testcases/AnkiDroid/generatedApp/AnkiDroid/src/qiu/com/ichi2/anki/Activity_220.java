@@ -17,10 +17,12 @@ public class Activity_220 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.Preferences");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.Reviewer");
 		intent.setComponent(cn);
+		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("market://details?id=com.ichi2.anki"));
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//android.intent.action.VIEW;;null;;market://details?id=com.ichi2.anki;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

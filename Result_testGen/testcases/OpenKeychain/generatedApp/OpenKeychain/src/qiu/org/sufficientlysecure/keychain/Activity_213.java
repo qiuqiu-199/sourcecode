@@ -17,10 +17,13 @@ public class Activity_213 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CertifyFingerprintActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
+		intent.setAction("android.intent.action.SEND");
+		intent.addCategory("android.intent.category.BROWSABLE");
+		intent.setType("text/plain");
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//android.intent.action.SEND;;android.intent.category.BROWSABLE;;null;;text/plain;;
 	}
     /** Called when the activity is first created. */
     @Override

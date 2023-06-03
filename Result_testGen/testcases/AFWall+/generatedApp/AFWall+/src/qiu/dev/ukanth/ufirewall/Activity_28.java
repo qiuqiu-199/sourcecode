@@ -17,13 +17,12 @@ public class Activity_28 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.MainActivity");
+		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.widget.ToggleWidgetActivity");
 		intent.setComponent(cn);
-		intent.setAction("notEmpty");
-		intent.putExtra("dev.ukanth.ufirewall.intent.extra.SCRIPT2", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("dev.ukanth.ufirewall.intent.extra.SCRIPT", "!@#$%^ds:+_");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//notEmpty;;null;;null;;null;;String->dev.ukanth.ufirewall.intent.extra.SCRIPT->!@#$%^ds:+_,String->dev.ukanth.ufirewall.intent.extra.SCRIPT2->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

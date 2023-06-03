@@ -17,11 +17,12 @@ public class Activity_3 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.PrefsFast");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.hc.MainPrefs");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.ui.action.PREFS_FAST");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//com.csipsimple.ui.action.PREFS_FAST;;null;;null;;null;;
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

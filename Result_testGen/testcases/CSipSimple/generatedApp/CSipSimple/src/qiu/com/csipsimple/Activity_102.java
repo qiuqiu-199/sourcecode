@@ -17,7 +17,7 @@ public class Activity_102 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.widgets.AccountWidgetConfigure");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.cupcake.MainPrefs");
 		intent.setComponent(cn);
 		startActivity(intent);
 		//null;;null;;null;;null;;

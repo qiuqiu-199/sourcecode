@@ -17,16 +17,10 @@ public class Activity_70 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.QrCodeCaptureActivity");
 		intent.setComponent(cn);
-		intent.setAction("notEmpty");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.setType("application/autocrypt-setup");
-		intent.putExtra("android.intent.extra.TEXT", "abcde");
-		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
-		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
 		startActivity(intent);
-		//notEmpty;;null;;notEmpty;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

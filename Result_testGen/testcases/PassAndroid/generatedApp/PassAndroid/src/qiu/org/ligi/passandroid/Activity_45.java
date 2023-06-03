@@ -17,11 +17,13 @@ public class Activity_45 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("notEmpty"));
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setData(Uri.parse("pass2u"));
 		startActivity(intent);
-		//null;;null;;notEmpty;;null;;
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;pass2u;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

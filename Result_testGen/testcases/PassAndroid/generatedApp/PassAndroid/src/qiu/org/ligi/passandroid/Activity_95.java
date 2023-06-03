@@ -21,9 +21,10 @@ public class Activity_95 extends Activity
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
 		intent.addCategory("android.intent.category.BROWSABLE");
-		intent.setType("application/vnd.espass-espass+zip");
+		intent.setData(Uri.parse("content*"));
+		intent.setType("*/*");
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;null;;application/vnd.espass-espass+zip;;
+		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;content*;;*/*;;
 	}
     /** Called when the activity is first created. */
     @Override

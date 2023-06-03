@@ -17,12 +17,12 @@ public class Activity_47 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.WebViewActivity");
+		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.MainActivity");
 		intent.setComponent(cn);
-		intent.putExtra("url", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("mark", true);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->mark->true,String->url->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

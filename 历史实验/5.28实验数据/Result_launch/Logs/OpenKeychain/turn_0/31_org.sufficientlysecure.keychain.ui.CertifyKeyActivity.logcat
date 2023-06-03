@@ -1,0 +1,12 @@
+--------- beginning of main
+--------- beginning of system
+05-29 19:34:23.856 23769 23769 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+05-29 19:34:23.883 23769 23769 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 19:34:23.891 23769 23769 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/QueueingCryptoOperationFragment;--->onCreate(Landroid/os/Bundle;)V
+05-29 19:34:23.891 23769 23769 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/CachingCryptoOperationFragment;--->onCreate(Landroid/os/Bundle;)V
+05-29 19:34:23.891 23769 23769 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/CertifyKeyFragment;--->onCreate(Landroid/os/Bundle;)V
+05-29 19:34:23.900 23769 23769 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/CertifyKeyFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+05-29 19:34:23.901 23769 23769 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/MultiUserIdsFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+05-29 19:34:23.902 23769 23769 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/QueueingCryptoOperationFragment;--->onViewStateRestored(Landroid/os/Bundle;)V
+05-29 19:34:23.904 23769 23795 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainDatabase$1;--->onOpen(Landroid/arch/persistence/db/SupportSQLiteDatabase;)V
+05-29 19:34:24.336 23769 23769 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V

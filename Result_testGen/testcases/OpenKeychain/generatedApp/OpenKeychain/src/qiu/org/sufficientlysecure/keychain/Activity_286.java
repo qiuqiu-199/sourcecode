@@ -17,15 +17,15 @@ public class Activity_286 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteDeduplicateActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.ExchangeActivity");
 		intent.setComponent(cn);
-		intent.putExtra("package_name", "abcde");
-		ArrayList<String> duplicate_emails = new ArrayList<String>();
-		intent.putStringArrayListExtra("duplicate_emails", duplicate_emails);
-		Parcelable data = new MyParcelable();
-		intent.putExtra("data", data);
+		intent.putExtra("GroupId", "!@#$%^ds:+_");
+		intent.putExtra("NumUsers", 0);
+		byte[] UserData = new byte[1];
+		intent.putExtra("UserData", UserData);
+		intent.putExtra("HostName", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->data->ParcelableObj,StringArrayList->duplicate_emails->abcde,String->package_name->abcde,
+		//null;;null;;null;;null;;String->HostName->abcde,byteArray->UserData->0,int->NumUsers->0,String->GroupId->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

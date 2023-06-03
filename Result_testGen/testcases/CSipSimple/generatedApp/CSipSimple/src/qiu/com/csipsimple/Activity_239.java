@@ -17,10 +17,13 @@ public class Activity_239 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.account.AccountsEditList");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
 		intent.setComponent(cn);
+		intent.setAction("?");
+		intent.setData(Uri.parse("tel:mAuthority/mPath"));
+		intent.putExtra("acc_id", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//?;;null;;tel:mAuthority/mPath;;null;;long->acc_id->0,
 	}
     /** Called when the activity is first created. */
     @Override

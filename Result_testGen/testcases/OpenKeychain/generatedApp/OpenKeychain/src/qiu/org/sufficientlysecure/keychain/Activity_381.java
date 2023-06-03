@@ -17,13 +17,12 @@ public class Activity_381 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CreateKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.NDEF_DISCOVERED");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("httpsmy.yubico.com"));
+		MySerializable master_key_id = new MySerializable();
+		intent.putExtra("master_key_id", master_key_id);
 		startActivity(intent);
-		//android.nfc.action.NDEF_DISCOVERED;;android.intent.category.DEFAULT;;httpsmy.yubico.com;;null;;
+		//null;;null;;null;;null;;Serializable->master_key_id->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

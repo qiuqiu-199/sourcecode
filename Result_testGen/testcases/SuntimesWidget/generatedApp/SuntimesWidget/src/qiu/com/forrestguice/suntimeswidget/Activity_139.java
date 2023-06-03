@@ -17,7 +17,7 @@ public class Activity_139 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesConfigActivity2_3x1");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesConfigActivity1");
 		intent.setComponent(cn);
 		intent.setAction("android.appwidget.action.APPWIDGET_CONFIGURE");
 		startActivity(intent);

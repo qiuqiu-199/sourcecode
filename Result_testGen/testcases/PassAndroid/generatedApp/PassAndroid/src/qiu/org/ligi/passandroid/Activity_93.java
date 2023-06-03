@@ -21,9 +21,10 @@ public class Activity_93 extends Activity
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
 		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("file*"));
+		intent.setData(Uri.parse("https*"));
+		intent.setType("*/*");
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;file*;;null;;
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;https*;;*/*;;
 	}
     /** Called when the activity is first created. */
     @Override

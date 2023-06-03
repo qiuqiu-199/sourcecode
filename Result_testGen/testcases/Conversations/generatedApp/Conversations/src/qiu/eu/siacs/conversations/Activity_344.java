@@ -17,12 +17,17 @@ public class Activity_344 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.SettingsActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.putExtra("page", "999999999999999999999999999999999999999999999999999");
+		intent.setAction("eu.siacs.conversations.action.VIEW");
+		intent.putExtra("nick", "abcde");
+		intent.putExtra("as_quote", true);
+		intent.putExtra("pm", false);
+		intent.putExtra("do_not_append", true);
+		intent.putExtra("conversationUuid", "!@#$%^ds:+_");
+		intent.putExtra("android.intent.extra.TEXT", "abcde");
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;null;;null;;String->page->999999999999999999999999999999999999999999999999999,
+		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->abcde,String->conversationUuid->!@#$%^ds:+_,boolean->do_not_append->true,boolean->pm->false,boolean->as_quote->true,String->nick->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

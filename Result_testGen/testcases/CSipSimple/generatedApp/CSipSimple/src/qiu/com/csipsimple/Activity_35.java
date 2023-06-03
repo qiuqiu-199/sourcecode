@@ -17,13 +17,12 @@ public class Activity_35 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.filters.EditFilter");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.phone.action.MESSAGES");
-		intent.putExtra("sender", "abcde");
-		intent.putExtra("body", "abcde");
+		intent.putExtra("account", Long.MAX_VALUE);
+		intent.putExtra("android.intent.extra.UID", 0);
 		startActivity(intent);
-		//com.csipsimple.phone.action.MESSAGES;;null;;null;;null;;String->body->abcde,String->sender->abcde,
+		//null;;null;;null;;null;;long->android.intent.extra.UID->0,long->account->Long.MAX_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

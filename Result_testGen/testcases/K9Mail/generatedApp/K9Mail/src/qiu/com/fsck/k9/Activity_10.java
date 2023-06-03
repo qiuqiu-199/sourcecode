@@ -20,9 +20,8 @@ public class Activity_10 extends Activity
 		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupIncoming");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.EDIT");
-		intent.putExtra("account", "abcde");
 		startActivity(intent);
-		//android.intent.action.EDIT;;null;;null;;null;;String->account->abcde,
+		//android.intent.action.EDIT;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,13 +17,12 @@ public class Activity_313 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.EncryptFilesActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","com.journeyapps.barcodescanner.CaptureActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND_MULTIPLE");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("video/*");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//android.intent.action.SEND_MULTIPLE;;android.intent.category.DEFAULT;;null;;video/*;;
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

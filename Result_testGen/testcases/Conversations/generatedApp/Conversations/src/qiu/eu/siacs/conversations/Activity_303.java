@@ -17,26 +17,21 @@ public class Activity_303 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.StartConversationActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		intent.setAction("notEmpty");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("account", "!@#$%^ds:+_");
+		intent.setAction("?");
+		Parcelable error = new MyParcelable();
+		intent.putExtra("error", error);
 		Parcelable metadata = new MyParcelable();
 		intent.putExtra("metadata", metadata);
 		Parcelable intent1 = new MyParcelable();
 		intent.putExtra("intent", intent);
-		intent.putExtra("result_code", 0);
-		intent.putExtra("extra_select_multiple", false);
-		intent.putExtra("contact", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("scanned", false);
-		intent.putExtra("extra_group_chat_name", "abcde");
-		String[] contacts = new String[1];
-		intent.putExtra("contacts", contacts);
+		intent.putExtra("result_code", Integer.MIN_VALUE);
+		intent.putExtra("conversationUuid", "999999999999999999999999999999999999999999999999999");
 		intent.putExtra("eu.siacs.conversations.invite_uri", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("extra_conversation", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("sign_key_id", Long.MAX_VALUE);
 		startActivity(intent);
-		//notEmpty;;null;;notEmpty;;null;;String->extra_conversation->999999999999999999999999999999999999999999999999999,String->eu.siacs.conversations.invite_uri->999999999999999999999999999999999999999999999999999,StringArray->contacts->999999999999999999999999999999999999999999999999999,String->extra_group_chat_name->abcde,boolean->scanned->false,String->contact->999999999999999999999999999999999999999999999999999,boolean->extra_select_multiple->false,int->result_code->0,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,String->account->!@#$%^ds:+_,
+		//?;;null;;null;;null;;long->sign_key_id->Long.MAX_VALUE,String->eu.siacs.conversations.invite_uri->999999999999999999999999999999999999999999999999999,String->conversationUuid->999999999999999999999999999999999999999999999999999,int->result_code->Integer.MIN_VALUE,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,Parcelable->error->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,17 +17,10 @@ public class Activity_75 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.OnlineFeedViewActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.DirectoryChooserActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.setType("text/plain");
-		intent.putExtra("android.intent.extra.SUBJECT", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("android.intent.extra.TEXT", "abcde");
-		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
-		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
-		intent.putExtra("android.intent.extra.EMAIL", "!@#$%^ds:+_");
 		startActivity(intent);
-		//android.intent.action.SEND;;null;;null;;text/plain;;String[]->android.intent.extra.EMAIL->!@#$%^ds:+_,Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,String->android.intent.extra.SUBJECT->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

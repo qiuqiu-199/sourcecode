@@ -17,13 +17,11 @@ public class Activity_60 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassImportActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.ExtractURLAsIphoneActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.BROWSABLE");
-		intent.setData(Uri.parse("content*"));
+		intent.setData(Uri.parse("mSheme://?:mPort/mPath"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;content*;;null;;
+		//null;;null;;mSheme://?:mPort/mPath;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

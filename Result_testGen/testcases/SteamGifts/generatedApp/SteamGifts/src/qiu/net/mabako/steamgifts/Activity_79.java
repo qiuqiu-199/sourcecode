@@ -17,15 +17,12 @@ public class Activity_79 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.WriteCommentActivity");
+		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.intro.IntroActivity");
 		intent.setComponent(cn);
-		intent.putExtra("title", "!@#$%^ds:+_");
-		intent.putExtra("xsrf", "abcde");
-		MySerializable parent = new MySerializable();
-		intent.putExtra("parent", parent);
-		intent.putExtra("path", "abcde");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->path->abcde,Serializable->parent->SerializableObj,String->xsrf->abcde,String->title->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

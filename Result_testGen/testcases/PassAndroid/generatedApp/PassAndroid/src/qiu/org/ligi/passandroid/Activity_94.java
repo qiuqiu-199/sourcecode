@@ -21,10 +21,9 @@ public class Activity_94 extends Activity
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
 		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("https*"));
-		intent.setType("*/*");
+		intent.setType("application/vnd.espass-espass");
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;https*;;*/*;;
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;null;;application/vnd.espass-espass;;
 	}
     /** Called when the activity is first created. */
     @Override

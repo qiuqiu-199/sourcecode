@@ -17,12 +17,10 @@ public class Activity_348 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.MediaBrowserActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.StartConversationActivity");
 		intent.setComponent(cn);
-		intent.putExtra("account", "!@#$%^ds:+_");
-		intent.putExtra("jid", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->jid->abcde,String->account->!@#$%^ds:+_,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

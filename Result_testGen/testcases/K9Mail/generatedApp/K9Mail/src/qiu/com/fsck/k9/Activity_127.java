@@ -17,12 +17,14 @@ public class Activity_127 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.FolderSettings");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
 		intent.setComponent(cn);
-		intent.putExtra("com.fsck.k9.folderName", "!@#$%^ds:+_");
-		intent.putExtra("com.fsck.k9.account", "!@#$%^ds:+_");
+		intent.setAction("com.fsck.k9.intent.action.FORWARD");
+		intent.putExtra("message_reference", "abcde");
+		Parcelable message_decryption_result = new MyParcelable();
+		intent.putExtra("message_decryption_result", message_decryption_result);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.fsck.k9.account->!@#$%^ds:+_,String->com.fsck.k9.folderName->!@#$%^ds:+_,
+		//com.fsck.k9.intent.action.FORWARD;;null;;null;;null;;Parcelable->message_decryption_result->ParcelableObj,String->message_reference->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

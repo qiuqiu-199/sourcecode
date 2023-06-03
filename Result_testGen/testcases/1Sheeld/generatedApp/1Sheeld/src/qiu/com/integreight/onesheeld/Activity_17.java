@@ -19,8 +19,10 @@ public class Activity_17 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.MainActivity");
 		intent.setComponent(cn);
+		intent.setAction("android.intent.action.MAIN");
+		intent.addCategory("android.intent.category.LAUNCHER");
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//android.intent.action.MAIN;;android.intent.category.LAUNCHER;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

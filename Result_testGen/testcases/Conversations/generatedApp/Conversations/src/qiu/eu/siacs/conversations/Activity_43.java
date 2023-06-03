@@ -17,11 +17,17 @@ public class Activity_43 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShortcutActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShareViaAccountActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.CREATE_SHORTCUT");
+		Parcelable metadata = new MyParcelable();
+		intent.putExtra("metadata", metadata);
+		Parcelable intent1 = new MyParcelable();
+		intent.putExtra("intent", intent);
+		intent.putExtra("result_code", 0);
+		intent.putExtra("contact", "!@#$%^ds:+_");
+		intent.putExtra("body", "abcde");
 		startActivity(intent);
-		//android.intent.action.CREATE_SHORTCUT;;null;;null;;null;;
+		//null;;null;;null;;null;;String->body->abcde,String->contact->!@#$%^ds:+_,int->result_code->0,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

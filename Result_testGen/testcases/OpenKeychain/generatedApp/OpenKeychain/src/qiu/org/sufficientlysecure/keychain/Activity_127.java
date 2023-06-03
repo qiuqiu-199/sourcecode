@@ -17,13 +17,14 @@ public class Activity_127 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteSecurityProblemDialogActivity");
 		intent.setComponent(cn);
-		intent.putExtra("package_name", "!@#$%^ds:+_");
-		intent.putExtra("package_signature", 0);
-		intent.putExtra("user_id", "!@#$%^ds:+_");
+		intent.putExtra("support_override", false);
+		intent.putExtra("package_name", "999999999999999999999999999999999999999999999999999");
+		MySerializable security_problem = new MySerializable();
+		intent.putExtra("security_problem", security_problem);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->user_id->!@#$%^ds:+_,byte[]->package_signature->0,String->package_name->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Serializable->security_problem->SerializableObj,String->package_name->999999999999999999999999999999999999999999999999999,boolean->support_override->false,
 	}
     /** Called when the activity is first created. */
     @Override

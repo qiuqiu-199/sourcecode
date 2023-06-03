@@ -19,9 +19,11 @@ public class Activity_61 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.shields.controller.utils.NfcUtils");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.TAG_DISCOVERED");
+		intent.setAction("?");
+		Parcelable android_dot_nfc_dot_extra_dot_TAG = new MyParcelable();
+		intent.putExtra("android.nfc.extra.TAG", android_dot_nfc_dot_extra_dot_TAG);
 		startActivity(intent);
-		//android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;
+		//?;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,12 +17,15 @@ public class Activity_63 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.SummaryCalendarActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","com.mikepenz.aboutlibraries.ui.LibsActivity");
 		intent.setComponent(cn);
-		intent.putExtra("rule", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("start", "!@#$%^ds:+_");
+		intent.putExtra("ABOUT_LIBRARIES_STYLE", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("ABOUT_LIBRARIES_THEME", 0);
+		MySerializable ABOUT_COLOR = new MySerializable();
+		intent.putExtra("ABOUT_COLOR", ABOUT_COLOR);
+		intent.putExtra("ABOUT_LIBRARIES_TITLE", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->start->!@#$%^ds:+_,String->rule->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;String->ABOUT_LIBRARIES_TITLE->abcde,Serializable->ABOUT_COLOR->SerializableObj,int->ABOUT_LIBRARIES_THEME->0,String->ABOUT_LIBRARIES_STYLE->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

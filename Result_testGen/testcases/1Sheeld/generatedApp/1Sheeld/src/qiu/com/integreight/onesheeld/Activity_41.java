@@ -17,14 +17,18 @@ public class Activity_41 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.plugin.action.ActionActivity");
+		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.facebook.FacebookActivity");
 		intent.setComponent(cn);
-		intent.putExtra("com.integreight.onesheeld.extra.PIN_NUMBER", Integer.MAX_VALUE);
-		intent.putExtra("com.twofortyfouram.locale.intent.extra.BUNDLE", "com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE");
-		intent.putExtra("com.integreight.onesheeld.extra.OUTPUT", true);
-		intent.putExtra("com.twofortyfouram.locale.intent.extra.BREADCRUMB", "999999999999999999999999999999999999999999999999999");
+		intent.setAction("PassThrough");
+		Bundle com_dot_facebook_dot_platform_dot_protocol_dot_BRIDGE_ARGS = new Bundle();
+		com_dot_facebook_dot_platform_dot_protocol_dot_BRIDGE_ARGS.putString("action_id", "abcde");
+		Bundle com_dot_facebook_dot_platform_dot_protocol_dot_METHOD_ARGS = new Bundle();
+		intent.putExtra("com.facebook.platform.protocol.METHOD_ARGS", "com_dot_facebook_dot_platform_dot_protocol_dot_METHOD_ARGS");
+		intent.putExtra("com.facebook.platform.protocol.CALL_ID", "!@#$%^ds:+_");
+		intent.putExtra("com.facebook.platform.protocol.BRIDGE_ARGS", "com_dot_facebook_dot_platform_dot_protocol_dot_BRIDGE_ARGS");
+		intent.putExtra("com.facebook.platform.protocol.PROTOCOL_VERSION", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.twofortyfouram.locale.intent.extra.BREADCRUMB->999999999999999999999999999999999999999999999999999,boolean->com.integreight.onesheeld.extra.OUTPUT->true,Bundle->com.twofortyfouram.locale.intent.extra.BUNDLE->BundleObj,int->com.integreight.onesheeld.extra.PIN_NUMBER->Integer.MAX_VALUE,
+		//PassThrough;;null;;null;;null;;int->com.facebook.platform.protocol.PROTOCOL_VERSION->0,Bundle->com.facebook.platform.protocol.BRIDGE_ARGS->BundleObj,(,String->action_id->abcde,),String->com.facebook.platform.protocol.CALL_ID->!@#$%^ds:+_,Bundle->com.facebook.platform.protocol.METHOD_ARGS->BundleObj,(,),
 	}
     /** Called when the activity is first created. */
     @Override

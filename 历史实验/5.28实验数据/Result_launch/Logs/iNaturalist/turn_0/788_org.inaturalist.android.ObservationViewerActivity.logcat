@@ -1,0 +1,27 @@
+--------- beginning of system
+--------- beginning of main
+--------- beginning of crash
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: FATAL EXCEPTION: main
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: Process: org.inaturalist.android, PID: 8474
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{org.inaturalist.android/org.inaturalist.android.ObservationViewerActivity}: java.lang.NullPointerException: Attempt to read from field 'java.lang.Integer org.inaturalist.android.Observation.id' on a null object reference
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field 'java.lang.Integer org.inaturalist.android.Observation.id' on a null object reference
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at org.inaturalist.android.ObservationViewerActivity$PhotosViewPagerAdapter.<init>(ObservationViewerActivity.java:301)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at org.inaturalist.android.ObservationViewerActivity.reloadPhotos(ObservationViewerActivity.java:2259)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at org.inaturalist.android.ObservationViewerActivity.onCreate(ObservationViewerActivity.java:606)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-01 14:30:09.275  8474  8474 E AndroidRuntime: 	... 11 more

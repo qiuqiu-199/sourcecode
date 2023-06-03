@@ -17,11 +17,13 @@ public class Activity_135 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteSelectAuthenticationKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.MainActivity");
 		intent.setComponent(cn);
-		intent.putExtra("package_name", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("init_frag", Integer.MIN_VALUE);
+		Parcelable openpgp_skt_info = new MyParcelable();
+		intent.putExtra("openpgp_skt_info", openpgp_skt_info);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->package_name->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Parcelable->openpgp_skt_info->ParcelableObj,int->init_frag->Integer.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

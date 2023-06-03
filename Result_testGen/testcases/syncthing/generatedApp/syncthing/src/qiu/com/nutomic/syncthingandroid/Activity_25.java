@@ -17,11 +17,11 @@ public class Activity_25 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.MainActivity");
+		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.ShareActivity");
 		intent.setComponent(cn);
-		intent.putExtra("com.nutomic.syncthing", false);
+		intent.setAction("android.intent.action.SEND");
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->com.nutomic.syncthing->false,
+		//android.intent.action.SEND;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

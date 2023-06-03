@@ -17,13 +17,10 @@ public class Activity_431 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.UriHandlerActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.AboutActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("xmpp"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;xmpp;;null;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

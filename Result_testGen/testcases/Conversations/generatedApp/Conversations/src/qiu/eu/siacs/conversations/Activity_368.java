@@ -17,11 +17,13 @@ public class Activity_368 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.BlocklistActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.EditAccountActivity");
 		intent.setComponent(cn);
-		intent.putExtra("account", "!@#$%^ds:+_");
+		intent.putExtra("fingerprint", "!@#$%^ds:+_");
+		intent.putExtra("jid", "!@#$%^ds:+_");
+		intent.putExtra("init", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->account->!@#$%^ds:+_,
+		//null;;null;;null;;null;;boolean->init->false,String->jid->!@#$%^ds:+_,String->fingerprint->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

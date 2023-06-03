@@ -19,11 +19,11 @@ public class Activity_2 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("org.inaturalist.android","org.inaturalist.android.ObservationEditor");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND_MULTIPLE");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("image/*");
+		intent.setAction("android.intent.action.INSERT");
+		intent.setData(Uri.parse("content://org.inaturalist.android.observation/observations"));
+		intent.putExtra("choose_photo", false);
 		startActivity(intent);
-		//android.intent.action.SEND_MULTIPLE;;android.intent.category.DEFAULT;;null;;image/*;;
+		//android.intent.action.INSERT;;null;;content://org.inaturalist.android.observation/observations;;null;;boolean->choose_photo->false,
 	}
     /** Called when the activity is first created. */
     @Override

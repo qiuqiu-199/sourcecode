@@ -19,12 +19,8 @@ public class Activity_22 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ContactDetailsActivity");
 		intent.setComponent(cn);
-		intent.setAction("view_contact");
-		intent.putExtra("account", "!@#$%^ds:+_");
-		intent.putExtra("fingerprint", "abcde");
-		intent.putExtra("contact", "abcde");
 		startActivity(intent);
-		//view_contact;;null;;null;;null;;String->contact->abcde,String->fingerprint->abcde,String->account->!@#$%^ds:+_,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

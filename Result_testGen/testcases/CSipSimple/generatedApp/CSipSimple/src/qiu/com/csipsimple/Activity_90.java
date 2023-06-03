@@ -17,11 +17,12 @@ public class Activity_90 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.filters.AccountFilters");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
-		intent.putExtra("id", Long.MIN_VALUE);
+		intent.setAction("?");
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//null;;null;;null;;null;;long->id->Long.MIN_VALUE,
+		//?;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

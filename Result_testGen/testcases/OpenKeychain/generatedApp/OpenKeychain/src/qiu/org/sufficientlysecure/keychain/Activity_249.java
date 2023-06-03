@@ -17,11 +17,10 @@ public class Activity_249 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DebugActionsActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteRegisterActivity");
 		intent.setComponent(cn);
-		intent.setAction("org.sufficientlysecure.keychain.debug");
 		startActivity(intent);
-		//org.sufficientlysecure.keychain.debug;;null;;null;;null;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

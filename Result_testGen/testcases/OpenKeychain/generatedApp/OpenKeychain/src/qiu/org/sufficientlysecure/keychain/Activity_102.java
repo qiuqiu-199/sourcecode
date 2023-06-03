@@ -17,13 +17,13 @@ public class Activity_102 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.MainActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
 		intent.setComponent(cn);
-		intent.putExtra("init_frag", 0);
-		Parcelable openpgp_skt_info = new MyParcelable();
-		intent.putExtra("openpgp_skt_info", openpgp_skt_info);
+		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("?"));
+		intent.setType("application/autocrypt-setup");
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->openpgp_skt_info->ParcelableObj,int->init_frag->0,
+		//android.intent.action.VIEW;;null;;?;;application/autocrypt-setup;;
 	}
     /** Called when the activity is first created. */
     @Override

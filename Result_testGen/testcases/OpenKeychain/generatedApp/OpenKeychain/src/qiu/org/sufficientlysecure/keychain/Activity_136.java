@@ -17,11 +17,11 @@ public class Activity_136 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteSelectAuthenticationKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.MainActivity");
 		intent.setComponent(cn);
-		intent.putExtra("package_name", "abcde");
+		intent.putExtra("master_key_id", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->package_name->abcde,
+		//null;;null;;null;;null;;long->master_key_id->0,
 	}
     /** Called when the activity is first created. */
     @Override

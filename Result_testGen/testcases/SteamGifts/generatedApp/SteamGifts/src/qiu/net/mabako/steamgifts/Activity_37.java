@@ -17,14 +17,12 @@ public class Activity_37 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.MainActivity");
+		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.UrlHandlingActivity");
 		intent.setComponent(cn);
-		intent.putExtra("no", true);
-		intent.putExtra("query", "!@#$%^ds:+_");
-		MySerializable type = new MySerializable();
-		intent.putExtra("type", type);
+		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("https://github.com/SteamGifts/SteamGifts"));
 		startActivity(intent);
-		//null;;null;;null;;null;;Serializable->type->SerializableObj,String->query->!@#$%^ds:+_,boolean->no->true,
+		//android.intent.action.VIEW;;null;;https://github.com/SteamGifts/SteamGifts;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

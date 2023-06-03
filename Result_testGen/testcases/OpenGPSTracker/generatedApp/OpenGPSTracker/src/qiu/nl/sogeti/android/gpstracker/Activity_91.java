@@ -17,11 +17,14 @@ public class Activity_91 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.actions.DescribeTrack");
+		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.actions.ShareTrack");
 		intent.setComponent(cn);
+		intent.setData(Uri.parse("?"));
 		intent.putExtra("NAME", "!@#$%^ds:+_");
+		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
+		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->NAME->!@#$%^ds:+_,
+		//null;;null;;?;;null;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->NAME->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

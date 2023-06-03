@@ -17,14 +17,12 @@ public class Activity_425 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.UriHandlerActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.MediaBrowserActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("result", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("eu.siacs.conversations.invite_uri", "abcde");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;notEmpty;;null;;String->eu.siacs.conversations.invite_uri->abcde,String->result->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,13 +17,10 @@ public class Activity_81 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.oauth.PrepareRequestTokenActivity");
+		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.actions.Statistics");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("x-oauthflow-opengpstracker://callback"));
-		intent.putExtra("ERROR", "!@#$%^ds:+_");
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;x-oauthflow-opengpstracker://callback;;null;;String->ERROR->!@#$%^ds:+_,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

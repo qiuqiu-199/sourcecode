@@ -19,11 +19,10 @@ public class Activity_68 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.SummaryCalendarActivity");
 		intent.setComponent(cn);
-		intent.putExtra("start", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("rest_days", Integer.MIN_VALUE);
-		intent.putExtra("active_days", Integer.MAX_VALUE);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->active_days->Integer.MAX_VALUE,int->rest_days->Integer.MIN_VALUE,String->start->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

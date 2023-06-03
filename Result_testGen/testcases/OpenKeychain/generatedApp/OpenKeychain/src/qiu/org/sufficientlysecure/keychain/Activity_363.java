@@ -17,11 +17,13 @@ public class Activity_363 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CreateKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteDeduplicateActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.TAG_DISCOVERED");
+		intent.putExtra("package_name", "abcde");
+		MySerializable duplicate_emails = new MySerializable();
+		intent.putExtra("duplicate_emails", duplicate_emails);
 		startActivity(intent);
-		//android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;
+		//null;;null;;null;;null;;Serializable->duplicate_emails->SerializableObj,String->package_name->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,15 +17,15 @@ public class Activity_287 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteDeduplicateActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.ExchangeActivity");
 		intent.setComponent(cn);
-		intent.putExtra("package_name", "999999999999999999999999999999999999999999999999999");
-		ArrayList<String> duplicate_emails = new ArrayList<String>();
-		intent.putStringArrayListExtra("duplicate_emails", duplicate_emails);
-		Parcelable data = new MyParcelable();
-		intent.putExtra("data", data);
+		intent.putExtra("GroupId", "abcde");
+		intent.putExtra("NumUsers", Integer.MIN_VALUE);
+		byte[] UserData = new byte[1];
+		intent.putExtra("UserData", UserData);
+		intent.putExtra("HostName", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->data->ParcelableObj,StringArrayList->duplicate_emails->999999999999999999999999999999999999999999999999999,String->package_name->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;String->HostName->999999999999999999999999999999999999999999999999999,byteArray->UserData->0,int->NumUsers->Integer.MIN_VALUE,String->GroupId->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,12 +17,11 @@ public class Activity_122 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.filters.AccountFilters");
 		intent.setComponent(cn);
-		intent.setAction("notEmpty");
-		intent.setData(Uri.parse("notEmpty:sip/mPath"));
+		intent.putExtra("id", 0);
 		startActivity(intent);
-		//notEmpty;;null;;notEmpty:sip/mPath;;null;;
+		//null;;null;;null;;null;;long->id->0,
 	}
     /** Called when the activity is first created. */
     @Override

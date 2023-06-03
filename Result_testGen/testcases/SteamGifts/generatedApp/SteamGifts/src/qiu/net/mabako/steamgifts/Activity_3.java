@@ -19,10 +19,13 @@ public class Activity_3 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.DetailActivity");
 		intent.setComponent(cn);
+		MySerializable discussion = new MySerializable();
+		intent.putExtra("discussion", discussion);
 		intent.putExtra("mark", false);
-		intent.putExtra("user", "abcde");
+		MySerializable comment = new MySerializable();
+		intent.putExtra("comment", comment);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->user->abcde,boolean->mark->false,
+		//null;;null;;null;;null;;Serializable->comment->SerializableObj,boolean->mark->false,Serializable->discussion->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

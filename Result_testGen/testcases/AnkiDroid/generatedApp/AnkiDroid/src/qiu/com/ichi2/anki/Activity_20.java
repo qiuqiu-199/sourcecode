@@ -17,15 +17,11 @@ public class Activity_20 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.Info");
 		intent.setComponent(cn);
-		MySerializable multim_dot_card_dot_ed_dot_extra_dot_whole_dot_note = new MySerializable();
-		intent.putExtra("multim.card.ed.extra.whole.note", multim_dot_card_dot_ed_dot_extra_dot_whole_dot_note);
-		intent.putExtra("multim.card.ed.extra.field.index", 0);
-		MySerializable multim_dot_card_dot_ed_dot_extra_dot_field = new MySerializable();
-		intent.putExtra("multim.card.ed.extra.field", multim_dot_card_dot_ed_dot_extra_dot_field);
+		intent.putExtra("infoType", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;Serializable->multim.card.ed.extra.field->SerializableObj,int->multim.card.ed.extra.field.index->0,Serializable->multim.card.ed.extra.whole.note->SerializableObj,
+		//null;;null;;null;;null;;int->infoType->0,
 	}
     /** Called when the activity is first created. */
     @Override

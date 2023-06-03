@@ -1,0 +1,37 @@
+--------- beginning of main
+--------- beginning of system
+05-29 12:15:10.398  9783  9783 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 12:15:10.405  9783  9783 D M_InsDal: Leu/siacs/conversations/ui/ShareWithActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 12:15:10.429  9783  9783 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStart()V
+05-29 12:15:10.431  9783  9783 D M_InsDal: Leu/siacs/conversations/ui/ShareWithActivity;--->onStart()V
+--------- beginning of crash
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: FATAL EXCEPTION: main
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: Process: eu.siacs.conversations, PID: 9783
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.eu.siacs.conversations.MyParcelable
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.content.Intent.getStringExtra(Intent.java:7445)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at eu.siacs.conversations.ui.ShareWithActivity.onStart(ShareWithActivity.java:130)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:7165)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+05-29 12:15:10.433  9783  9783 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+05-29 12:15:10.504  3967  3967 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+05-29 12:15:11.634  3967  3967 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/OpenPgpService;--->onCreate()V
+05-29 12:15:22.321  3967  3967 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+05-29 12:15:22.325  3967  3967 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V

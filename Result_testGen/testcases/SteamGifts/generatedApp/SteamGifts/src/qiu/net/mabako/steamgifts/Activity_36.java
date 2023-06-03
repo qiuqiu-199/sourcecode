@@ -17,14 +17,11 @@ public class Activity_36 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.MainActivity");
+		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.UrlHandlingActivity");
 		intent.setComponent(cn);
-		intent.putExtra("no", true);
-		intent.putExtra("query", "abcde");
-		MySerializable type = new MySerializable();
-		intent.putExtra("type", type);
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//null;;null;;null;;null;;Serializable->type->SerializableObj,String->query->abcde,boolean->no->true,
+		//null;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

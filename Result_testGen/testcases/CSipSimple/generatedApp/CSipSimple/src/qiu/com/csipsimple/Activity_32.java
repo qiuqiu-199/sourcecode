@@ -17,13 +17,12 @@ public class Activity_32 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.filters.EditFilter");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.DIAL");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("csip"));
+		intent.putExtra("account", Long.MAX_VALUE);
+		intent.putExtra("android.intent.extra.UID", Long.MAX_VALUE);
 		startActivity(intent);
-		//android.intent.action.DIAL;;android.intent.category.DEFAULT;;csip;;null;;
+		//null;;null;;null;;null;;long->android.intent.extra.UID->Long.MAX_VALUE,long->account->Long.MAX_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

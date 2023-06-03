@@ -17,12 +17,13 @@ public class Activity_160 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.NDEF_DISCOVERED");
-		intent.setData(Uri.parse("notEmpty:notEmpty//.well-known/openpgpkey/hu/"));
+		intent.putExtra("package_name", "abcde");
+		intent.putExtra("package_signature", 0);
+		intent.putExtra("user_id", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//android.nfc.action.NDEF_DISCOVERED;;null;;notEmpty:notEmpty//.well-known/openpgpkey/hu/;;null;;
+		//null;;null;;null;;null;;String->user_id->999999999999999999999999999999999999999999999999999,byte[]->package_signature->0,String->package_name->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

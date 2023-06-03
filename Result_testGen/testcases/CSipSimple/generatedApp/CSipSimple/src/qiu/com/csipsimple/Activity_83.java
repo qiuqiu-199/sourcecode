@@ -17,11 +17,12 @@ public class Activity_83 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.calllog.CallLogDetailsActivity");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
-		intent.putExtra("EXTRA_CALL_LOG_IDS", 0);
+		intent.setAction("com.csipsimple.phone.action.CALLLOG");
+		intent.setData(Uri.parse("?:mAuthority/mPath"));
 		startActivity(intent);
-		//null;;null;;null;;null;;long[]->EXTRA_CALL_LOG_IDS->0,
+		//com.csipsimple.phone.action.CALLLOG;;null;;?:mAuthority/mPath;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

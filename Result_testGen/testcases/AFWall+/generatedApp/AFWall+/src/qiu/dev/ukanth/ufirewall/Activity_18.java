@@ -17,7 +17,7 @@ public class Activity_18 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.activity.LogActivity");
+		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.activity.LogDetailActivity");
 		intent.setComponent(cn);
 		startActivity(intent);
 		//null;;null;;null;;null;;

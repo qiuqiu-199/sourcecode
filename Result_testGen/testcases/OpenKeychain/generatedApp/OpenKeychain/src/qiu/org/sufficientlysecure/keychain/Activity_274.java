@@ -17,28 +17,14 @@ public class Activity_274 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.PassphraseDialogActivity");
 		intent.setComponent(cn);
-		intent.setAction("org.sufficientlysecure.keychain.action.SCAN_QR_CODE_IMPORT");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("SCAN_RESULT_IMAGE_PATH", "abcde");
-		Parcelable result_crypto_input = new MyParcelable();
-		intent.putExtra("result_crypto_input", result_crypto_input);
-		intent.putExtra("SCAN_RESULT_ERROR_CORRECTION_LEVEL", "!@#$%^ds:+_");
-		Parcelable[] android_dot_nfc_dot_extra_dot_NDEF_MESSAGES = new MyParcelable[1];
-		android_dot_nfc_dot_extra_dot_NDEF_MESSAGES[0] = new MyParcelable();
-		intent.putExtra("android.nfc.extra.NDEF_MESSAGES", android_dot_nfc_dot_extra_dot_NDEF_MESSAGES);
-		byte[] SCAN_RESULT_BYTES = new byte[1];
-		intent.putExtra("SCAN_RESULT_BYTES", SCAN_RESULT_BYTES);
-		Parcelable operation_result = new MyParcelable();
-		intent.putExtra("operation_result", operation_result);
-		intent.putExtra("SCAN_RESULT_ORIENTATION", Integer.MIN_VALUE);
-		intent.putExtra("SCAN_RESULT", "abcde");
-		intent.putExtra("SCAN_RESULT_FORMAT", "999999999999999999999999999999999999999999999999999");
-		Parcelable result_data = new MyParcelable();
-		intent.putExtra("result_data", result_data);
+		Parcelable crypto_input = new MyParcelable();
+		intent.putExtra("crypto_input", crypto_input);
+		Parcelable required_input = new MyParcelable();
+		intent.putExtra("required_input", required_input);
 		startActivity(intent);
-		//org.sufficientlysecure.keychain.action.SCAN_QR_CODE_IMPORT;;null;;notEmpty;;null;;Parcelable->result_data->ParcelableObj,String->SCAN_RESULT_FORMAT->999999999999999999999999999999999999999999999999999,String->SCAN_RESULT->abcde,int->SCAN_RESULT_ORIENTATION->Integer.MIN_VALUE,Parcelable->operation_result->ParcelableObj,byteArray->SCAN_RESULT_BYTES->Byte.MAX_VALUE,ParcelableArray->android.nfc.extra.NDEF_MESSAGES->ParcelableArrayObj,String->SCAN_RESULT_ERROR_CORRECTION_LEVEL->!@#$%^ds:+_,Parcelable->result_crypto_input->ParcelableObj,String->SCAN_RESULT_IMAGE_PATH->abcde,
+		//null;;null;;null;;null;;Parcelable->required_input->ParcelableObj,Parcelable->crypto_input->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

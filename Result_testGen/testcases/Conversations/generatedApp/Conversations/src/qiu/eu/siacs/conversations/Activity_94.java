@@ -17,13 +17,15 @@ public class Activity_94 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShareWithActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChooseContactActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.setType("text/plain");
-		intent.putExtra("android.intent.extra.TEXT", "abcde");
+		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("extra_title_res_id", Integer.MIN_VALUE);
+		intent.putExtra("extra_select_multiple", true);
+		intent.putExtra("extra_group_chat_name", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("extra_show_enter_jid", true);
 		startActivity(intent);
-		//android.intent.action.SEND;;null;;null;;text/plain;;String->android.intent.extra.TEXT->abcde,
+		//null;;null;;null;;null;;boolean->extra_show_enter_jid->true,String->extra_group_chat_name->999999999999999999999999999999999999999999999999999,boolean->extra_select_multiple->true,int->extra_title_res_id->Integer.MIN_VALUE,String->account->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

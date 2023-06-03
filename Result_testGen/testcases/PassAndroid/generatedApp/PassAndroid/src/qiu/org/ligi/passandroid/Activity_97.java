@@ -20,10 +20,10 @@ public class Activity_97 extends Activity
 		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassImportActivity");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("https*"));
+		intent.addCategory("android.intent.category.BROWSABLE");
+		intent.setData(Uri.parse("httpswww.eventbrite.com"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;https*;;null;;
+		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpswww.eventbrite.com;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

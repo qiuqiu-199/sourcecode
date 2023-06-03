@@ -17,12 +17,11 @@ public class Activity_230 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.Search");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.Prefs");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEARCH");
-		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setData(Uri.parse("mSheme://mHost:mPort/?"));
 		startActivity(intent);
-		//android.intent.action.SEARCH;;android.intent.category.DEFAULT;;null;;null;;
+		//null;;null;;mSheme://mHost:mPort/?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,12 +17,22 @@ public class Activity_88 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShareWithActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChooseContactActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.setType("text/plain");
+		intent.putExtra("account", "abcde");
+		intent.putExtra("extra_title_res_id", Integer.MIN_VALUE);
+		intent.putExtra("extra_select_multiple", false);
+		intent.putExtra("contact", "999999999999999999999999999999999999999999999999999");
+		String[] extra_filtered_contacts = new String[1];
+		intent.putExtra("extra_filtered_contacts", extra_filtered_contacts);
+		intent.putExtra("extra_group_chat_name", "abcde");
+		intent.putExtra("extra_conversation", "abcde");
+		String[] contacts = new String[1];
+		intent.putExtra("contacts", contacts);
+		intent.putExtra("extra_show_enter_jid", false);
+		intent.putExtra("direct_search", true);
 		startActivity(intent);
-		//android.intent.action.SEND;;null;;null;;text/plain;;
+		//null;;null;;null;;null;;boolean->direct_search->true,boolean->extra_show_enter_jid->false,StringArray->contacts->999999999999999999999999999999999999999999999999999,String->extra_conversation->abcde,String->extra_group_chat_name->abcde,StringArray->extra_filtered_contacts->999999999999999999999999999999999999999999999999999,String->contact->999999999999999999999999999999999999999999999999999,boolean->extra_select_multiple->false,int->extra_title_res_id->Integer.MIN_VALUE,String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

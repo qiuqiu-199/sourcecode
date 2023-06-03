@@ -17,10 +17,13 @@ public class Activity_119 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.dialogs.AnkiDroidCrashReportDialog");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.IntentHandler");
 		intent.setComponent(cn);
+		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("mSheme:mAuthority/.apkg"));
+		intent.setType("application/apkg");
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//android.intent.action.VIEW;;null;;mSheme:mAuthority/.apkg;;application/apkg;;
 	}
     /** Called when the activity is first created. */
     @Override

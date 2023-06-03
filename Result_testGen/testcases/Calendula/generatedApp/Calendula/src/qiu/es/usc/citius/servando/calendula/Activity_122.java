@@ -17,11 +17,11 @@ public class Activity_122 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.ScheduleCreationActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.StartActivity");
 		intent.setComponent(cn);
-		intent.putExtra("scheduleType", 0);
+		intent.putExtra("StartActivity.extras.return_to_previous", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->scheduleType->0,
+		//null;;null;;null;;null;;boolean->StartActivity.extras.return_to_previous->false,
 	}
     /** Called when the activity is first created. */
     @Override

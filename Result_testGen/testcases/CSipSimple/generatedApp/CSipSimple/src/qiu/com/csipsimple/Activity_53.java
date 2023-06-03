@@ -19,10 +19,8 @@ public class Activity_53 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.phone.action.MESSAGES");
-		intent.setData(Uri.parse("notEmpty:mAuthority/mPath"));
 		startActivity(intent);
-		//com.csipsimple.phone.action.MESSAGES;;null;;notEmpty:mAuthority/mPath;;null;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

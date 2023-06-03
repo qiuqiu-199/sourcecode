@@ -1,0 +1,39 @@
+--------- beginning of main
+--------- beginning of system
+05-29 13:42:32.043 28115 28115 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 13:42:32.048 28115 28115 D M_InsDal: Leu/siacs/conversations/ui/MediaBrowserActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 13:42:32.059 28115 28115 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStart()V
+05-29 13:42:32.061 28115 28115 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onResume()V
+05-29 13:42:32.064 28115 28115 D M_InsDal: Leu/siacs/conversations/ui/service/EmojiService$1;--->onFailed(Ljava/lang/Throwable;)V
+05-29 13:42:32.102  3967  3967 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/OpenPgpService;--->onCreate()V
+--------- beginning of crash
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: FATAL EXCEPTION: main
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: Process: eu.siacs.conversations, PID: 28115
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: java.lang.IllegalArgumentException: Invalid input to toASCII: #$%^ds:+_
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at java.net.IDN.toASCII(IDN.java:110)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at rocks.xmpp.addr.FullJid.<init>(FullJid.java:132)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at rocks.xmpp.addr.FullJid.of(FullJid.java:238)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at rocks.xmpp.addr.Jid$-CC.of(Jid.java:160)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at eu.siacs.conversations.ui.MediaBrowserActivity.onBackendConnected(MediaBrowserActivity.java:52)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at eu.siacs.conversations.ui.XmppActivity$1.onServiceConnected(XmppActivity.java:112)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher.doConnected(LoadedApk.java:1730)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1762)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: Caused by: The input does not conform to the STD 3 ASCII rules. line:  0. preContext:  . postContext: +_
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at android.icu.impl.IDNA2003.convertToASCII(IDNA2003.java:219)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at android.icu.impl.IDNA2003.convertIDNToASCII(IDNA2003.java:277)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at android.icu.text.IDNA.convertIDNToASCII(IDNA.java:654)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	at java.net.IDN.toASCII(IDN.java:108)
+05-29 13:42:32.336 28115 28115 E AndroidRuntime: 	... 14 more
+05-29 13:42:32.371  3967  3967 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+05-29 13:42:32.375  3967  3967 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+05-29 13:42:33.454  3967  3967 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/OpenPgpService;--->onCreate()V
+05-29 13:42:33.459  3967  3967 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+05-29 13:42:44.077  3967  3967 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V

@@ -17,7 +17,7 @@ public class Activity_97 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.AudioTester");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.PickupSipUri");
 		intent.setComponent(cn);
 		startActivity(intent);
 		//null;;null;;null;;null;;

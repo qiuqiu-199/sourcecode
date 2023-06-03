@@ -17,11 +17,12 @@ public class Activity_98 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.MainActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
 		intent.setComponent(cn);
-		intent.putExtra("master_key_id", Long.MIN_VALUE);
+		intent.setAction("org.sufficientlysecure.keychain.action.DECRYPT_TEXT");
+		intent.addCategory("android.intent.category.DEFAULT");
 		startActivity(intent);
-		//null;;null;;null;;null;;long->master_key_id->Long.MIN_VALUE,
+		//org.sufficientlysecure.keychain.action.DECRYPT_TEXT;;android.intent.category.DEFAULT;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

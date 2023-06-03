@@ -17,11 +17,12 @@ public class Activity_85 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.cupcake.PrefsLoaderActivity");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
-		intent.putExtra("preference_type", Integer.MIN_VALUE);
+		intent.setAction("android.intent.action.DIAL");
+		intent.setData(Uri.parse("?://mHost:mPort/mPath"));
 		startActivity(intent);
-		//null;;null;;null;;null;;int->preference_type->Integer.MIN_VALUE,
+		//android.intent.action.DIAL;;null;;?://mHost:mPort/mPath;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -7,10 +7,7 @@ package parser;
  */
 
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -22,6 +19,7 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import soot.jimple.infoflow.android.axml.AXmlNode;
 import soot.jimple.infoflow.android.manifest.ProcessManifest;
+import utils.Global;
 import utils.PrintUtils;
 
 // This class is used to parse a manifest XML file
@@ -30,7 +28,8 @@ import utils.PrintUtils;
 public class ManifestParser {
     private ProcessManifest manifestManager;
 
-    public ManifestParser() {}
+    public ManifestParser() {
+    }
 
     public ManifestParser(String appPath) {
 
@@ -44,10 +43,10 @@ public class ManifestParser {
 //        }
     }
 
-    public void parse(boolean b){  //TODO 这里加了个boolean变量
+    public void parse(boolean b) {  //TODO 这里加了个boolean变量
         //获取manifest.xml文件内容，在appmodel里存为字符串manifestString
         try {
-            AppModel.v().manifestString = manifestManager.getAXml().toString();
+            Global.v().getAppModel().manifestString = manifestManager.getAXml().toString();
         } catch (Exception e) {
             e.printStackTrace();
             throw new RuntimeException("no manifest is available!qqq");
@@ -55,23 +54,22 @@ public class ManifestParser {
 
 
         String pkg = manifestManager.getPackageName();
-        if(pkg.endsWith(".debug"))
+        if (pkg.endsWith(".debug"))
             pkg = pkg.replace(".debug", "");
-        AppModel.v().pkgName = pkg;
+        Global.v().getAppModel().pkgName = pkg;
 
         AXmlNode appNode = manifestManager.getApplication();
 
         //解析permission
-        //从manifest文件里获取permission存入AppModel.v().permission里，存为字符串了
+        //从manifest文件里获取permission存入Global.v().getAppModel().permission里，存为字符串了
         //TODO 权限获取为null，目前不知道权限有啥用，后面有用再管
-        if(appNode.getAttribute("permission")!=null){
-            AppModel.v().permission = appNode.getAttribute("permission").getValue().toString();// which permission?
+        if (appNode.getAttribute("permission") != null) {
+            Global.v().getAppModel().permission = appNode.getAttribute("permission").getValue().toString();// which permission?
         }
-        AppModel.v().usesPermissionSet = manifestManager.getPermissions();
+        Global.v().getAppModel().usesPermissionSet = manifestManager.getPermissions();
 
 
         //解析组件activity、Service、Provider和Receiver
-
         parseComponent(manifestManager.getActivities(), "Activity");
         parseComponent(manifestManager.getServices(), "Service");
         parseComponent(manifestManager.getProviders(), "Provider");
@@ -80,28 +78,28 @@ public class ManifestParser {
         List<AXmlNode> alis = appNode.getChildrenWithTag("activity-alias");
         for (AXmlNode actNode : alis) {
             String name = actNode.getAttribute("targetActivity").getValue().toString();
-            if (AppModel.v().activityMap.containsKey(name)) {
-                ActivityModel actModel = (ActivityModel) AppModel.v().activityMap.get(name);
+            if (Global.v().getAppModel().activityMap.containsKey(name)) {
+                ActivityModel actModel = (ActivityModel) Global.v().getAppModel().activityMap.get(name);
                 analyzeIntentFilter(actModel, actNode);
             }
         }
 
         // get EAs
-        for (ComponentModel component : AppModel.v().activityMap.values()) {
-            String path = "summaryInfo/" + AppModel.v().appName;
+        for (ComponentModel component : Global.v().getAppModel().activityMap.values()) {
+            String path = "summaryInfo/" + Global.v().getAppModel().appName;
             File file1 = new File(path);
             if (!file1.exists()) file1.mkdir();
-            File file = new File( path + "/EAList.txt");
+            File file = new File(path + "/EAList.txt");
             FileOutputStream out = null;
             try {
-                out = new FileOutputStream(file,true);
-                if(!file.exists()) file.createNewFile();
+                out = new FileOutputStream(file, true);
+                if (!file.exists()) file.createNewFile();
             } catch (IOException e) {
                 e.printStackTrace();
             }
 
             if (component.is_exported()) {
-                AppModel.v().eaMap.put(component.getComponetName(), (ActivityModel)component);
+                Global.v().getAppModel().eaMap.put(component.getComponetName(), (ActivityModel) component);
                 try {
                     out.write(component.getComponetName().getBytes());
                     out.write("\n".getBytes());
@@ -114,12 +112,40 @@ public class ManifestParser {
 
         }
 
+        //输出Activity信息到文件中
+        String summaryInfoPath = "summaryInfo" + File.separator + Global.v().getAppModel().appName;
+        File file1 = new File(summaryInfoPath);
+        if(!file1.exists()) file1.mkdir();
+        File file = new File( summaryInfoPath+ File.separator + "declaredActivity.txt");
+        String content = "";
+        FileOutputStream out = null;
+        try {
+            if (!file.exists()) file.createNewFile();
+            out = new FileOutputStream(file);
+            content += "app_name: "+Global.v().getAppModel().appName + System.getProperty("line.separator");
+            content += "pkg_name: "+Global.v().getAppModel().pkgName + System.getProperty("line.separator");
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("输出declaredActivity.txt失败！");
+        }
+        for(ComponentModel componentModel : Global.v().getAppModel().activityMap.values()){
+            content += "act_name: " + componentModel.getComponetName() + System.getProperty("line.separator");
+        }
+        try {
+            out.write(content.getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("输出declaredActivity.txt失败！");
+        }
+
+
+
         //更新声明的属性, TODO 解析manifest文件时更新组件声明属性，暂不清楚用处，略过
 //        updataDeclaredAttribute();
     }
 
 //    private void updataDeclaredAttribute() {
-//        for( String act :AppModel.v().activityMap.keySet()){
+//        for( String act :Global.v().getAppModel().activityMap.keySet()){
 //            appModel.declared_action_item_map_of_app.put(act, appModel.activityMap.get(act).getActionResList());
 //            appModel.declared_category_item_map_of_app.put(act, appModel.activityMap.get(act).getCategoryResList());
 //            appModel.declared_data_item_map_of_app.put(act, appModel.activityMap.get(act).getDataResList());
@@ -131,6 +157,8 @@ public class ManifestParser {
         // get components
         HashMap<String, ComponentModel> componentMap = getComponentMap(type);
         for (AXmlNode componentNode : components) {
+
+
             // ignore the component whose "enabled" attribute is "false"
             if (!componentNode.getTag().equals("activity") && componentNode.hasAttribute("enabled")) {
                 if (componentNode.getAttribute("enabled").getValue().toString().equals("")
@@ -141,11 +169,13 @@ public class ManifestParser {
 
             // new ActivityData instance
             String componentName = componentNode.getAttribute("name").getValue().toString();
-            if (!componentName.contains(AppModel.v().pkgName)) {
+            //对于一些不以包名开头的Activity不作处理
+            if (!componentName.contains(Global.v().getAppModel().pkgName)) {
                 if (componentName.startsWith(".")) {
-                    componentName = AppModel.v().pkgName + componentName;
+                    componentName = Global.v().getAppModel().pkgName + componentName;
                 } else {
-                    componentName = AppModel.v().pkgName + "." + componentName;
+//                    componentName = Global.v().getAppModel().pkgName + "." + componentName;  //这种会出现actname不包含包名也不以.开头的activity
+                    continue;
                 }
             }
             // Exclude the activities not declared in app's package.
@@ -154,12 +184,13 @@ public class ManifestParser {
             // package
             // continue;
 
-            // add external libs according to component decalartion  //TODO 这里注释掉，不清除作用
+            // add external libs according to component decalartion  //TODO 这里注释掉，不清楚作用
 //            if (!componentName.contains(appModel.getPackageName())) {
 //                String ss[] = componentName.split("\\.");
 //                if (ss.length >= 2)
 //                    appModel.getExtendedPakgs().add(ss[0] + "." + ss[1]);
 //            }
+
             ComponentModel componentModel = getComponentModel(type, componentName);
             if (componentModel == null)
                 continue;
@@ -173,7 +204,7 @@ public class ManifestParser {
 
 
             // get the attributes of the activity element
-            if (componentNode.getAttribute("exported") != null){
+            if (componentNode.getAttribute("exported") != null) {
                 componentModel.setExported(componentNode.getAttribute("exported").getValue().toString());
             }
 
@@ -188,23 +219,23 @@ public class ManifestParser {
                 ((ActivityModel) componentModel).setTaskAffinity(componentNode.getAttribute("taskAffinity").getValue()
                         .toString());
             else if (componentModel instanceof ActivityModel)
-                ((ActivityModel) componentModel).setTaskAffinity(AppModel.v().pkgName);
+                ((ActivityModel) componentModel).setTaskAffinity(Global.v().getAppModel().pkgName);
 
+            //分析intentFilter
             analyzeIntentFilter(componentModel, componentNode);
         }
-
     }
 
     private HashMap<String, ComponentModel> getComponentMap(String type) {
         switch (type) {
             case "Activity":
-                return AppModel.v().activityMap;
+                return Global.v().getAppModel().activityMap;
             case "Service":
-                return AppModel.v().serviceMap;
+                return Global.v().getAppModel().serviceMap;
             case "Provider":
-                return AppModel.v().providerMap;
+                return Global.v().getAppModel().providerMap;
             case "Receiver":
-                return AppModel.v().receiverMap;
+                return Global.v().getAppModel().receiverMap;
         }
         return null;
     }
@@ -215,20 +246,20 @@ public class ManifestParser {
 //            return null;
         switch (type) {
             case "Activity":
-                if (AppModel.v().activityMap.containsKey(componentName))
-                    return AppModel.v().activityMap.get(componentName);
+                if (Global.v().getAppModel().activityMap.containsKey(componentName))
+                    return Global.v().getAppModel().activityMap.get(componentName);
                 return new ActivityModel();
             case "Service":
-                if (AppModel.v().serviceMap.containsKey(componentName))
-                    return AppModel.v().serviceMap.get(componentName);
+                if (Global.v().getAppModel().serviceMap.containsKey(componentName))
+                    return Global.v().getAppModel().serviceMap.get(componentName);
                 return new ServiceModel();
             case "Receiver":
-                if (AppModel.v().receiverMap.containsKey(componentName))
-                    return AppModel.v().receiverMap.get(componentName);
+                if (Global.v().getAppModel().receiverMap.containsKey(componentName))
+                    return Global.v().getAppModel().receiverMap.get(componentName);
                 return new BroadcastReceiverModel();
             case "Provider":
-                if (AppModel.v().providerMap.containsKey(componentName))
-                    return AppModel.v().providerMap.get(componentName);
+                if (Global.v().getAppModel().providerMap.containsKey(componentName))
+                    return Global.v().getAppModel().providerMap.get(componentName);
                 return new ContentProviderModel();
         }
         return null;
@@ -256,7 +287,7 @@ public class ManifestParser {
                     }
                     if (ifd.getAction_list().contains("android.intent.action.MAIN")
                             && ifd.getCategory_list().contains("android.intent.category.LAUNCHER")) {
-                        AppModel.v().mainActivity = componentModel.getComponetName();
+                        Global.v().getAppModel().mainActivity = componentModel.getComponetName();
                     }
 
                     if (childNode.getTag().equals("data")) {

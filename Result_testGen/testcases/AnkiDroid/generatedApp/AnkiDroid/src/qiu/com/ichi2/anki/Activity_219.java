@@ -17,16 +17,12 @@ public class Activity_219 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.NoteEditor");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.Reviewer");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.putExtra("edit.field.result.field", "abcde");
-		intent.putExtra("ID", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("CALLER", 0);
-		intent.putExtra("edit.field.result.field.index", Integer.MAX_VALUE);
-		intent.putExtra("CONTENTS", "!@#$%^ds:+_");
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.DEFAULT");
 		startActivity(intent);
-		//android.intent.action.SEND;;null;;null;;null;;String->CONTENTS->!@#$%^ds:+_,int->edit.field.result.field.index->Integer.MAX_VALUE,int->CALLER->0,String->ID->999999999999999999999999999999999999999999999999999,String->edit.field.result.field->abcde,
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

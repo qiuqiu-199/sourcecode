@@ -17,14 +17,17 @@ public class Activity_47 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShowLocationActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShareViaAccountActivity");
 		intent.setComponent(cn);
-		intent.setAction("eu.siacs.conversations.location.show, android.intent.action.VIEW");
-		intent.setData(Uri.parse("https://maps.google.com/maps?q=loc:,, geo:,?q=,()"));
-		intent.putExtra("longitude", 0.0);
-		intent.putExtra("latitude", Double.MAX_VALUE);
+		Parcelable metadata = new MyParcelable();
+		intent.putExtra("metadata", metadata);
+		Parcelable intent1 = new MyParcelable();
+		intent.putExtra("intent", intent);
+		intent.putExtra("result_code", 0);
+		intent.putExtra("contact", "!@#$%^ds:+_");
+		intent.putExtra("body", "!@#$%^ds:+_");
 		startActivity(intent);
-		//eu.siacs.conversations.location.show, android.intent.action.VIEW;;null;;https://maps.google.com/maps?q=loc:,, geo:,?q=,();;null;;double->latitude->Double.MAX_VALUE,double->longitude->0.0,
+		//null;;null;;null;;null;;String->body->!@#$%^ds:+_,String->contact->!@#$%^ds:+_,int->result_code->0,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

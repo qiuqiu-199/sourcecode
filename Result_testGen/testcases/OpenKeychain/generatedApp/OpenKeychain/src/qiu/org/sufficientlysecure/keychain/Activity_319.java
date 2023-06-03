@@ -17,15 +17,13 @@ public class Activity_319 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.EncryptFilesActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.BackupActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.setType("notEmpty");
-		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
-		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
+		intent.putExtra("export_secret", true);
+		long[] master_key_ids = new long[1];
+		intent.putExtra("master_key_ids", master_key_ids);
 		startActivity(intent);
-		//android.intent.action.SEND;;null;;notEmpty;;notEmpty;;Parcelable->android.intent.extra.STREAM->ParcelableObj,
+		//null;;null;;null;;null;;longArray->master_key_ids->Long.MIN_VALUE,boolean->export_secret->true,
 	}
     /** Called when the activity is first created. */
     @Override

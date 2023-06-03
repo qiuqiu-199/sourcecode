@@ -17,13 +17,12 @@ public class Activity_140 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.FolderList");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
 		intent.setComponent(cn);
-		intent.putExtra("account", "abcde");
-		intent.putExtra("fromShortcut", true);
-		intent.putExtra("appWidgetId", Integer.MIN_VALUE);
+		intent.setAction("com.fsck.k9.intent.action.REPLY");
+		intent.putExtra("message_reference", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;int->appWidgetId->Integer.MIN_VALUE,boolean->fromShortcut->true,String->account->abcde,
+		//com.fsck.k9.intent.action.REPLY;;null;;null;;null;;String->message_reference->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

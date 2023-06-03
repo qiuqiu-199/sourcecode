@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+import utils.Global;
 import utils.PrintUtils;
 
 /**
@@ -29,7 +30,7 @@ public class ComponentModel implements Serializable {
 	}
 
 	public Boolean is_mainAct() {
-		return AppModel.v().mainActivity.equals(componentName);
+		return Global.v().getAppModel().mainActivity.equals(componentName);
 	}
 
 	public Boolean is_exported() {

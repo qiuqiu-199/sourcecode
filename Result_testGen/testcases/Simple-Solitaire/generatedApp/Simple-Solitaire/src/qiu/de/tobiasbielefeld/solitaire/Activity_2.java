@@ -17,10 +17,12 @@ public class Activity_2 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.tobiasbielefeld.solitaire","de.tobiasbielefeld.solitaire.ui.manual.Manual");
+		ComponentName cn=new ComponentName("de.tobiasbielefeld.solitaire","de.tobiasbielefeld.solitaire.ui.about.AboutActivity");
 		intent.setComponent(cn);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

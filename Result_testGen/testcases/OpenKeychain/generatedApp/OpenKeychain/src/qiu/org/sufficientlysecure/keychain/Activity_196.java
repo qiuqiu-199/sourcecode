@@ -17,15 +17,12 @@ public class Activity_196 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteRegisterActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		byte[] package_signature = new byte[1];
-		intent.putExtra("package_signature", package_signature);
-		intent.putExtra("package_name", "abcde");
-		Parcelable data = new MyParcelable();
-		intent.putExtra("data", data);
+		intent.setAction("android.nfc.action.NDEF_DISCOVERED");
+		intent.setData(Uri.parse("?:?//.well-known/openpgpkey/hu/"));
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->data->ParcelableObj,String->package_name->abcde,byteArray->package_signature->Byte.MIN_VALUE,
+		//android.nfc.action.NDEF_DISCOVERED;;null;;?:?//.well-known/openpgpkey/hu/;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

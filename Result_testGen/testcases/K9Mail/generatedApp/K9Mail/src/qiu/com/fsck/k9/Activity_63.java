@@ -19,10 +19,10 @@ public class Activity_63 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageList");
 		intent.setComponent(cn);
-		intent.setAction("shortcut");
-		intent.setData(Uri.parse("notEmpty"));
+		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("mSheme://mHost:mPort/?"));
 		startActivity(intent);
-		//shortcut;;null;;notEmpty;;null;;
+		//android.intent.action.VIEW;;null;;mSheme://mHost:mPort/?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

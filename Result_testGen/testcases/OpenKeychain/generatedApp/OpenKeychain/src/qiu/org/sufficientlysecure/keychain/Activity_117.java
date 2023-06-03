@@ -17,15 +17,16 @@ public class Activity_117 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
 		intent.setComponent(cn);
-		intent.putExtra("package_name", "abcde");
-		Parcelable data = new MyParcelable();
-		intent.putExtra("data", data);
-		intent.putExtra("package_signature", 0);
-		intent.putExtra("user_id", "abcde");
+		intent.setAction("android.intent.action.SEND");
+		intent.setData(Uri.parse("mSheme://com.android.email.attachmentprovider:mPort/mPath"));
+		intent.setType("application/autocrypt-setup");
+		intent.putExtra("android.intent.extra.TEXT", "abcde");
+		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
+		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->user_id->abcde,byte[]->package_signature->0,Parcelable->data->ParcelableObj,String->package_name->abcde,
+		//android.intent.action.SEND;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

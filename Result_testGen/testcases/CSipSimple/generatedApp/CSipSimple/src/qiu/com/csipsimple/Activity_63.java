@@ -19,10 +19,10 @@ public class Activity_63 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.phone.action.DIALER");
-		intent.setData(Uri.parse("notEmpty://mHost:mPort/mPath"));
+		intent.setAction("com.csipsimple.phone.action.MESSAGES");
+		intent.addCategory("android.intent.category.DEFAULT");
 		startActivity(intent);
-		//com.csipsimple.phone.action.DIALER;;null;;notEmpty://mHost:mPort/mPath;;null;;
+		//com.csipsimple.phone.action.MESSAGES;;android.intent.category.DEFAULT;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,7 +17,7 @@ public class Activity_12 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.etesync.syncadapter","com.etesync.syncadapter.ui.AppSettingsActivity");
+		ComponentName cn=new ComponentName("com.etesync.syncadapter","com.etesync.syncadapter.ui.ViewCollectionActivity");
 		intent.setComponent(cn);
 		startActivity(intent);
 		//null;;null;;null;;null;;

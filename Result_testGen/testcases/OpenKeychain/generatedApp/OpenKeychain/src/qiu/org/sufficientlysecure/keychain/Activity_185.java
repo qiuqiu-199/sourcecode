@@ -19,10 +19,10 @@ public class Activity_185 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("market://details?id=org.torproject.android, https://f-droid.org/repository/browse/?fdid=org.torproject.android"));
+		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEYSERVER");
+		intent.putExtra("org.sufficientlysecure.keychain.EXTRA_QUERY", "abcde");
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;market://details?id=org.torproject.android, https://f-droid.org/repository/browse/?fdid=org.torproject.android;;null;;
+		//org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEYSERVER;;null;;null;;null;;String->org.sufficientlysecure.keychain.EXTRA_QUERY->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

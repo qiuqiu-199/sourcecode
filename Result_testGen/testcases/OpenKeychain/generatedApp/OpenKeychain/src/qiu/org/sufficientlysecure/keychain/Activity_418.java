@@ -17,15 +17,11 @@ public class Activity_418 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SafeSlingerActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.AppSettingsActivity");
 		intent.setComponent(cn);
-		Parcelable result_crypto_input = new MyParcelable();
-		intent.putExtra("result_crypto_input", result_crypto_input);
-		intent.putExtra("master_key_id", Long.MIN_VALUE);
-		Parcelable result_data = new MyParcelable();
-		intent.putExtra("result_data", result_data);
+		intent.putExtra("package_name", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->result_data->ParcelableObj,long->master_key_id->Long.MIN_VALUE,Parcelable->result_crypto_input->ParcelableObj,
+		//null;;null;;null;;null;;String->package_name->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

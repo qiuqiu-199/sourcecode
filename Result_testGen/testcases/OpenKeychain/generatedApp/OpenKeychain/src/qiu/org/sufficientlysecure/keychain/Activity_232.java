@@ -17,15 +17,12 @@ public class Activity_232 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.ExchangeActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		intent.putExtra("GroupId", "abcde");
-		intent.putExtra("NumUsers", 0);
-		byte[] UserData = new byte[1];
-		intent.putExtra("UserData", UserData);
-		intent.putExtra("HostName", "abcde");
+		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEY_SERVER_AND_RETURN_RESULT");
+		intent.setData(Uri.parse("?://mHost:mPort//.well-known/openpgpkey/hu/"));
 		startActivity(intent);
-		//null;;null;;null;;null;;String->HostName->abcde,byteArray->UserData->Byte.MIN_VALUE,int->NumUsers->0,String->GroupId->abcde,
+		//org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEY_SERVER_AND_RETURN_RESULT;;null;;?://mHost:mPort//.well-known/openpgpkey/hu/;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

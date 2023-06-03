@@ -17,12 +17,14 @@ public class Activity_270 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.PassphraseDialogActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.NDEF_DISCOVERED");
-		intent.setData(Uri.parse("notEmpty"));
+		Parcelable crypto_input = new MyParcelable();
+		intent.putExtra("crypto_input", crypto_input);
+		Parcelable required_input = new MyParcelable();
+		intent.putExtra("required_input", required_input);
 		startActivity(intent);
-		//android.nfc.action.NDEF_DISCOVERED;;null;;notEmpty;;null;;
+		//null;;null;;null;;null;;Parcelable->required_input->ParcelableObj,Parcelable->crypto_input->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

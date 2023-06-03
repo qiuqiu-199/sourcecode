@@ -17,13 +17,13 @@ public class Activity_38 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadListActivity");
+		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadViewActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
+		intent.setAction("android.intent.action.VIEW");
 		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("text/plain");
+		intent.setData(Uri.parse("https"));
 		startActivity(intent);
-		//android.intent.action.SEND;;android.intent.category.DEFAULT;;null;;text/plain;;
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;https;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

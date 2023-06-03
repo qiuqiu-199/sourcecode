@@ -20,8 +20,9 @@ public class Activity_81 extends Activity
 		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageList");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("mSheme:mAuthority/?"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;null;;null;;
+		//android.intent.action.VIEW;;null;;mSheme:mAuthority/?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

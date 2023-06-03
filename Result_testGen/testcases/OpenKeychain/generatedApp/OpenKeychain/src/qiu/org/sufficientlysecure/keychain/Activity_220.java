@@ -17,14 +17,12 @@ public class Activity_220 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.PassphraseDialogActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		Parcelable crypto_input = new MyParcelable();
-		intent.putExtra("crypto_input", crypto_input);
-		Parcelable required_input = new MyParcelable();
-		intent.putExtra("required_input", required_input);
+		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_CLIPBOARD");
+		intent.setData(Uri.parse("?://mHost:mPort//.well-known/openpgpkey/hu/"));
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->required_input->ParcelableObj,Parcelable->crypto_input->ParcelableObj,
+		//org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_CLIPBOARD;;null;;?://mHost:mPort//.well-known/openpgpkey/hu/;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -21,10 +21,10 @@ public class Activity_32 extends Activity
 		intent.setComponent(cn);
 		intent.putExtra("com.fsck.k9.ChooseFolder_selfolder", "!@#$%^ds:+_");
 		intent.putExtra("com.fsck.k9.ChooseFolder_message", "!@#$%^ds:+_");
-		intent.putExtra("com.fsck.k9.ChooseFolder_account", "!@#$%^ds:+_");
-		intent.putExtra("com.fsck.k9.ChooseFolder_curfolder", "!@#$%^ds:+_");
+		intent.putExtra("com.fsck.k9.ChooseFolder_account", "abcde");
+		intent.putExtra("com.fsck.k9.ChooseFolder_curfolder", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.fsck.k9.ChooseFolder_curfolder->!@#$%^ds:+_,String->com.fsck.k9.ChooseFolder_account->!@#$%^ds:+_,String->com.fsck.k9.ChooseFolder_message->!@#$%^ds:+_,String->com.fsck.k9.ChooseFolder_selfolder->!@#$%^ds:+_,
+		//null;;null;;null;;null;;String->com.fsck.k9.ChooseFolder_curfolder->abcde,String->com.fsck.k9.ChooseFolder_account->abcde,String->com.fsck.k9.ChooseFolder_message->!@#$%^ds:+_,String->com.fsck.k9.ChooseFolder_selfolder->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,11 +17,12 @@ public class Activity_177 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.ManageIdentities");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.FolderList");
 		intent.setComponent(cn);
-		intent.putExtra("com.fsck.k9.ChooseIdentity_account", "!@#$%^ds:+_");
+		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("fromShortcut", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.fsck.k9.ChooseIdentity_account->!@#$%^ds:+_,
+		//null;;null;;null;;null;;boolean->fromShortcut->true,String->account->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

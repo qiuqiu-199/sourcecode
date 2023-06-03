@@ -17,11 +17,10 @@ public class Activity_71 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.PreferenceActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.ImportExportActivity");
 		intent.setComponent(cn);
-		intent.putExtra("selected_dir", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->selected_dir->abcde,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

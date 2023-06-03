@@ -19,9 +19,8 @@ public class Activity_33 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.UrlHandlingActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("notEmpty"));
 		startActivity(intent);
-		//null;;null;;notEmpty;;null;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

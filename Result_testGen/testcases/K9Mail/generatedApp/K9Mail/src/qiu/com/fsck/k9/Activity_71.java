@@ -19,9 +19,11 @@ public class Activity_71 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageList");
 		intent.setComponent(cn);
-		intent.putExtra("message_reference", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("no_threading", true);
+		intent.putExtra("appWidgetId", 0);
+		intent.putExtra("search_bytes", Byte.MAX_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->message_reference->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;byte[]->search_bytes->Byte.MAX_VALUE,int->appWidgetId->0,boolean->no_threading->true,
 	}
     /** Called when the activity is first created. */
     @Override

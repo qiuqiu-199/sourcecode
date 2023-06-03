@@ -17,10 +17,11 @@ public class Activity_46 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.activity.CustomScriptActivity");
+		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.MainActivity");
 		intent.setComponent(cn);
+		intent.setAction("?");
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//?;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

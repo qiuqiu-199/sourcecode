@@ -17,11 +17,10 @@ public class Activity_216 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","com.journeyapps.barcodescanner.CaptureActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.AboutActivity");
 		intent.setComponent(cn);
-		intent.setAction("com.google.zxing.client.android.SCAN");
 		startActivity(intent);
-		//com.google.zxing.client.android.SCAN;;null;;null;;null;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

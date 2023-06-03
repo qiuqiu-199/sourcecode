@@ -21,11 +21,12 @@ public class Activity_291 extends Activity
 		intent.setComponent(cn);
 		intent.setAction("eu.siacs.conversations.location.show, android.intent.action.VIEW");
 		intent.setData(Uri.parse("https://maps.google.com/maps?q=loc:,, geo:,?q=,()"));
-		intent.putExtra("longitude", 0.0);
+		intent.putExtra("longitude", Double.MAX_VALUE);
 		intent.putExtra("name", "abcde");
+		intent.putExtra("jid", "abcde");
 		intent.putExtra("latitude", 0.0);
 		startActivity(intent);
-		//eu.siacs.conversations.location.show, android.intent.action.VIEW;;null;;https://maps.google.com/maps?q=loc:,, geo:,?q=,();;null;;double->latitude->0.0,String->name->abcde,double->longitude->0.0,
+		//eu.siacs.conversations.location.show, android.intent.action.VIEW;;null;;https://maps.google.com/maps?q=loc:,, geo:,?q=,();;null;;double->latitude->0.0,String->jid->abcde,String->name->abcde,double->longitude->Double.MAX_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

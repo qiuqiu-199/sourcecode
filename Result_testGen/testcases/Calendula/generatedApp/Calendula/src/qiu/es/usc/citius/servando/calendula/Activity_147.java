@@ -17,17 +17,11 @@ public class Activity_147 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.MedicinesActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.MedicinesSearchActivity");
 		intent.setComponent(cn);
-		intent.putExtra("action", "999999999999999999999999999999999999999999999999999");
-		Parcelable MedicineSearchActivity_dot_return_dot_extras_dot_PRESCRIPTION = new MyParcelable();
-		intent.putExtra("MedicineSearchActivity.return.extras.PRESCRIPTION", MedicineSearchActivity_dot_return_dot_extras_dot_PRESCRIPTION);
-		intent.putExtra("MedicineSearchActivity.return.extras.PRESCRIPTION_NAME", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("qr_data", "!@#$%^ds:+_");
-		intent.putExtra("MedicinesActivity.extras.SEARCH_TEXT", "!@#$%^ds:+_");
-		intent.putExtra("medicine_id", 0);
+		intent.putExtra("MedicinesSearchActivity.extras.EXTRA_SEARCH_TERM", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;long->medicine_id->0,String->MedicinesActivity.extras.SEARCH_TEXT->!@#$%^ds:+_,String->qr_data->!@#$%^ds:+_,String->MedicineSearchActivity.return.extras.PRESCRIPTION_NAME->999999999999999999999999999999999999999999999999999,Parcelable->MedicineSearchActivity.return.extras.PRESCRIPTION->ParcelableObj,String->action->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;String->MedicinesSearchActivity.extras.EXTRA_SEARCH_TERM->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

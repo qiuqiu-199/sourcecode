@@ -17,13 +17,10 @@ public class Activity_257 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.BackupActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CertifyFingerprintActivity");
 		intent.setComponent(cn);
-		intent.putExtra("export_secret", false);
-		long[] master_key_ids = new long[1];
-		intent.putExtra("master_key_ids", master_key_ids);
 		startActivity(intent);
-		//null;;null;;null;;null;;longArray->master_key_ids->0,boolean->export_secret->false,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

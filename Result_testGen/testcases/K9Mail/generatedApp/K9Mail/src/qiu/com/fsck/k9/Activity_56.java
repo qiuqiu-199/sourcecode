@@ -17,13 +17,13 @@ public class Activity_56 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageList");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.ChooseFolder");
 		intent.setComponent(cn);
-		intent.putExtra("no_threading", true);
-		intent.putExtra("appWidgetId", Integer.MAX_VALUE);
-		intent.putExtra("search_bytes", 0);
+		intent.putExtra("com.fsck.k9.ChooseFolder_selfolder", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("com.fsck.k9.ChooseFolder_account", "!@#$%^ds:+_");
+		intent.putExtra("com.fsck.k9.ChooseFolder_curfolder", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;byte[]->search_bytes->0,int->appWidgetId->Integer.MAX_VALUE,boolean->no_threading->true,
+		//null;;null;;null;;null;;String->com.fsck.k9.ChooseFolder_curfolder->!@#$%^ds:+_,String->com.fsck.k9.ChooseFolder_account->!@#$%^ds:+_,String->com.fsck.k9.ChooseFolder_selfolder->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

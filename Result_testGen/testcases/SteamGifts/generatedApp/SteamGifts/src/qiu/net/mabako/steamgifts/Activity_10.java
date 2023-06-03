@@ -19,8 +19,9 @@ public class Activity_10 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.DetailActivity");
 		intent.setComponent(cn);
+		intent.putExtra("mark", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;boolean->mark->false,
 	}
     /** Called when the activity is first created. */
     @Override

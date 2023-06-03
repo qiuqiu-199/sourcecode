@@ -1,0 +1,16 @@
+--------- beginning of main
+--------- beginning of system
+05-29 13:26:49.275 24690 24690 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 13:26:49.282 24690 24690 D M_InsDal: Leu/siacs/conversations/ui/StartConversationActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 13:26:49.341 24690 24690 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStart()V
+05-29 13:26:49.343 24690 24690 D M_InsDal: Leu/siacs/conversations/ui/StartConversationActivity;--->onStart()V
+05-29 13:26:49.344 24690 24690 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onResume()V
+05-29 13:26:49.348 24690 24690 D M_InsDal: Leu/siacs/conversations/ui/service/EmojiService$1;--->onFailed(Ljava/lang/Throwable;)V
+05-29 13:26:49.395  3967  3967 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/OpenPgpService;--->onCreate()V
+05-29 13:26:49.585 24690 24690 D M_InsDal: Leu/siacs/conversations/ui/widget/SwipeRefreshListFragment;--->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+05-29 13:26:49.587 24690 24690 D M_InsDal: Leu/siacs/conversations/ui/StartConversationActivity$MyListFragment;--->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+05-29 13:26:49.589 24690 24690 D M_InsDal: Leu/siacs/conversations/ui/widget/SwipeRefreshListFragment;--->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+05-29 13:26:49.589 24690 24690 D M_InsDal: Leu/siacs/conversations/ui/StartConversationActivity$MyListFragment;--->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+05-29 13:26:49.705 24690 24690 D M_InsDal: Leu/siacs/conversations/ui/EnterJidDialog;--->onActivityCreated(Landroid/os/Bundle;)V
+05-29 13:26:49.705 24690 24690 D M_InsDal: Leu/siacs/conversations/ui/EnterJidDialog;--->onStart()V
+05-29 13:27:01.267  3967  3967 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V

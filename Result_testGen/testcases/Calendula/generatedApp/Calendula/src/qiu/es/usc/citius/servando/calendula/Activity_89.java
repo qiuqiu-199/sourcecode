@@ -19,12 +19,10 @@ public class Activity_89 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.SummaryCalendarActivity");
 		intent.setComponent(cn);
-		intent.putExtra("rule", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("start", "abcde");
-		intent.putExtra("rest_days", 0);
-		intent.putExtra("active_days", 0);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->active_days->0,int->rest_days->0,String->start->abcde,String->rule->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

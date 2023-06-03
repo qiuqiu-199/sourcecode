@@ -17,16 +17,12 @@ public class Activity_346 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteSelectPubKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.PanicExitActivity");
 		intent.setComponent(cn);
-		MySerializable dublicate_emails = new MySerializable();
-		intent.putExtra("dublicate_emails", dublicate_emails);
-		intent.putExtra("no_user_ids", false);
-		intent.putExtra("master_key_ids", Long.MAX_VALUE);
-		MySerializable missing_emails = new MySerializable();
-		intent.putExtra("missing_emails", missing_emails);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;Serializable->missing_emails->SerializableObj,long[]->master_key_ids->Long.MAX_VALUE,boolean->no_user_ids->false,Serializable->dublicate_emails->SerializableObj,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

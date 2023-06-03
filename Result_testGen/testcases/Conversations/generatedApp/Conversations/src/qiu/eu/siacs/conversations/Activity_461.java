@@ -17,13 +17,12 @@ public class Activity_461 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.PublishGroupChatProfilePictureActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.TrustKeysActivity");
 		intent.setComponent(cn);
-		Parcelable CROP_IMAGE_EXTRA_RESULT = new MyParcelable();
-		intent.putExtra("CROP_IMAGE_EXTRA_RESULT", CROP_IMAGE_EXTRA_RESULT);
-		intent.putExtra("uuid", "!@#$%^ds:+_");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->uuid->!@#$%^ds:+_,Parcelable->CROP_IMAGE_EXTRA_RESULT->ParcelableObj,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

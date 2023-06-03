@@ -17,16 +17,11 @@ public class Activity_38 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.ConfirmActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.pinlock.PinLockActivity");
 		intent.setComponent(cn);
-		intent.putExtra("action", "abcde");
-		intent.putExtra("schedule_time", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("routine_id", 0);
-		intent.putExtra("schedule_id", Long.MAX_VALUE);
-		intent.putExtra("position", Integer.MIN_VALUE);
-		intent.putExtra("date", "999999999999999999999999999999999999999999999999999");
+		intent.setAction("?");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->date->999999999999999999999999999999999999999999999999999,int->position->Integer.MIN_VALUE,long->schedule_id->Long.MAX_VALUE,long->routine_id->0,String->schedule_time->999999999999999999999999999999999999999999999999999,String->action->abcde,
+		//?;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

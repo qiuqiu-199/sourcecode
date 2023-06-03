@@ -17,24 +17,11 @@ public class Activity_128 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesConfigActivity0");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SET_ALARM");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("android.intent.extra.alarm.VIBRATE", true);
-		Parcelable android_dot_intent_dot_extra_dot_ringtone_dot_PICKED_URI = new MyParcelable();
-		intent.putExtra("android.intent.extra.ringtone.PICKED_URI", android_dot_intent_dot_extra_dot_ringtone_dot_PICKED_URI);
-		intent.putExtra("selectedAlarm", 0);
-		intent.putExtra("android.intent.extra.alarm.MESSAGE", "abcde");
-		intent.putExtra("showBack", false);
-		intent.putExtra("android.intent.extra.alarm.MINUTES", 0);
-		intent.putExtra("android.intent.extra.alarm.RINGTONE", "abcde");
-		intent.putExtra("android.intent.extra.alarm.HOUR", 0);
-		intent.putExtra("solarevent", "999999999999999999999999999999999999999999999999999");
-		ArrayList<Integer> android_dot_intent_dot_extra_dot_alarm_dot_DAYS = new ArrayList<Integer>();
-		intent.putIntegerArrayListExtra("android.intent.extra.alarm.DAYS", android_dot_intent_dot_extra_dot_alarm_dot_DAYS);
+		intent.putExtra("appWidgetId", 0);
 		startActivity(intent);
-		//android.intent.action.SET_ALARM;;null;;notEmpty;;null;;IntegerArrayList->android.intent.extra.alarm.DAYS->0,String->solarevent->999999999999999999999999999999999999999999999999999,int->android.intent.extra.alarm.HOUR->0,String->android.intent.extra.alarm.RINGTONE->abcde,int->android.intent.extra.alarm.MINUTES->0,boolean->showBack->false,String->android.intent.extra.alarm.MESSAGE->abcde,long->selectedAlarm->0,Parcelable->android.intent.extra.ringtone.PICKED_URI->ParcelableObj,boolean->android.intent.extra.alarm.VIBRATE->true,
+		//null;;null;;null;;null;;int->appWidgetId->0,
 	}
     /** Called when the activity is first created. */
     @Override

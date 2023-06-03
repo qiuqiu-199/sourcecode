@@ -17,13 +17,11 @@ public class Activity_133 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.MainActivity");
 		intent.setComponent(cn);
-		intent.putExtra("package_name", "abcde");
-		intent.putExtra("package_signature", 0);
-		intent.putExtra("user_id", "!@#$%^ds:+_");
+		intent.putExtra("init_frag", Integer.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->user_id->!@#$%^ds:+_,byte[]->package_signature->0,String->package_name->abcde,
+		//null;;null;;null;;null;;int->init_frag->Integer.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

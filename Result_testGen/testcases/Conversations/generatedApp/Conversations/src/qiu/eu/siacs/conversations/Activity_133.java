@@ -17,21 +17,20 @@ public class Activity_133 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShareWithActivity");
 		intent.setComponent(cn);
-		intent.setAction("notEmpty");
-		Parcelable error = new MyParcelable();
-		intent.putExtra("error", error);
+		intent.setAction("android.intent.action.SEND_MULTIPLE");
+		intent.setType("?");
 		Parcelable metadata = new MyParcelable();
 		intent.putExtra("metadata", metadata);
 		Parcelable intent1 = new MyParcelable();
 		intent.putExtra("intent", intent);
-		intent.putExtra("result_code", Integer.MAX_VALUE);
-		intent.putExtra("conversationUuid", "abcde");
-		intent.putExtra("eu.siacs.conversations.invite_uri", "!@#$%^ds:+_");
-		intent.putExtra("sign_key_id", 0);
+		intent.putExtra("result_code", Integer.MIN_VALUE);
+		intent.putExtra("android.intent.extra.TEXT", "!@#$%^ds:+_");
+		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
+		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
 		startActivity(intent);
-		//notEmpty;;null;;null;;null;;long->sign_key_id->0,String->eu.siacs.conversations.invite_uri->!@#$%^ds:+_,String->conversationUuid->abcde,int->result_code->Integer.MAX_VALUE,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,Parcelable->error->ParcelableObj,
+		//android.intent.action.SEND_MULTIPLE;;null;;null;;?;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->!@#$%^ds:+_,int->result_code->Integer.MIN_VALUE,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

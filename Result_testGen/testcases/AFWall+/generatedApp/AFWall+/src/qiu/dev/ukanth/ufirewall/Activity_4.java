@@ -20,9 +20,9 @@ public class Activity_4 extends Activity
 		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.activity.AppDetailActivity");
 		intent.setComponent(cn);
 		intent.putExtra("package", "abcde");
-		intent.putExtra("appid", Integer.MAX_VALUE);
+		intent.putExtra("appid", Integer.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->appid->Integer.MAX_VALUE,String->package->abcde,
+		//null;;null;;null;;null;;int->appid->Integer.MIN_VALUE,String->package->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

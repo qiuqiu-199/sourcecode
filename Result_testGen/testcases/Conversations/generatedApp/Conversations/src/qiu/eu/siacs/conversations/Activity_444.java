@@ -17,12 +17,11 @@ public class Activity_444 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.PublishProfilePictureActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.MucUsersActivity");
 		intent.setComponent(cn);
-		intent.putExtra("account", "!@#$%^ds:+_");
-		intent.putExtra("setup", true);
+		intent.putExtra("uuid", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->setup->true,String->account->!@#$%^ds:+_,
+		//null;;null;;null;;null;;String->uuid->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -19,13 +19,13 @@ public class Activity_246 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		intent.setAction("eu.siacs.conversations.action.VIEW");
-		intent.putExtra("as_quote", false);
-		intent.putExtra("do_not_append", true);
-		intent.putExtra("conversationUuid", "abcde");
-		intent.putExtra("android.intent.extra.TEXT", "abcde");
+		intent.setAction("eu.siacs.conversations.location.show, android.intent.action.VIEW");
+		intent.setData(Uri.parse("https://maps.google.com/maps?q=loc:,, geo:,?q=,()"));
+		intent.putExtra("longitude", 0.0);
+		intent.putExtra("name", "!@#$%^ds:+_");
+		intent.putExtra("latitude", Double.MIN_VALUE);
 		startActivity(intent);
-		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->abcde,String->conversationUuid->abcde,boolean->do_not_append->true,boolean->as_quote->false,
+		//eu.siacs.conversations.location.show, android.intent.action.VIEW;;null;;https://maps.google.com/maps?q=loc:,, geo:,?q=,();;null;;double->latitude->Double.MIN_VALUE,String->name->!@#$%^ds:+_,double->longitude->0.0,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -19,12 +19,10 @@ public class Activity_105 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.IntentHandler");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("content"));
-		intent.setType("application/x-apkg");
+		intent.setAction("android.intent.action.MAIN");
+		intent.addCategory("android.intent.category.MULTIWINDOW_LAUNCHER");
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;content;;application/x-apkg;;
+		//android.intent.action.MAIN;;android.intent.category.MULTIWINDOW_LAUNCHER;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,11 +17,17 @@ public class Activity_169 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.ConfirmSchedulesActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.MedicinesActivity");
 		intent.setComponent(cn);
+		intent.putExtra("action", "999999999999999999999999999999999999999999999999999");
+		Parcelable MedicineSearchActivity_dot_return_dot_extras_dot_PRESCRIPTION = new MyParcelable();
+		intent.putExtra("MedicineSearchActivity.return.extras.PRESCRIPTION", MedicineSearchActivity_dot_return_dot_extras_dot_PRESCRIPTION);
+		intent.putExtra("MedicineSearchActivity.return.extras.PRESCRIPTION_NAME", "abcde");
 		intent.putExtra("qr_data", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("MedicinesActivity.extras.SEARCH_TEXT", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("medicine_id", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->qr_data->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;long->medicine_id->0,String->MedicinesActivity.extras.SEARCH_TEXT->999999999999999999999999999999999999999999999999999,String->qr_data->999999999999999999999999999999999999999999999999999,String->MedicineSearchActivity.return.extras.PRESCRIPTION_NAME->abcde,Parcelable->MedicineSearchActivity.return.extras.PRESCRIPTION->ParcelableObj,String->action->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

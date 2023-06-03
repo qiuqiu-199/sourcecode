@@ -17,12 +17,10 @@ public class Activity_58 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.FirstStartActivity");
+		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.FolderTypeDialogActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.MAIN");
-		intent.addCategory("android.intent.category.LEANBACK_LAUNCHER");
 		startActivity(intent);
-		//android.intent.action.MAIN;;android.intent.category.LEANBACK_LAUNCHER;;null;;null;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

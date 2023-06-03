@@ -17,13 +17,12 @@ public class Activity_209 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupOutgoing");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.ManageIdentities");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.EDIT");
-		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("makeDefault", false);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//android.intent.action.EDIT;;null;;null;;null;;boolean->makeDefault->false,String->account->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

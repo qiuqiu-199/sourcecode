@@ -17,15 +17,11 @@ public class Activity_52 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadListActivity");
+		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadInfoActivity");
 		intent.setComponent(cn);
-		intent.putExtra("action", "abcde");
-		intent.putExtra("android.intent.extra.TEXT", "abcde");
-		ArrayList<String> pad_id = new ArrayList<String>();
-		intent.putStringArrayListExtra("pad_id", pad_id);
-		intent.putExtra("focus_pad", 0);
+		intent.putExtra("pad_id", Long.MAX_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->focus_pad->0,StringArrayList->pad_id->abcde,String->android.intent.extra.TEXT->abcde,String->action->abcde,
+		//null;;null;;null;;null;;long->pad_id->Long.MAX_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

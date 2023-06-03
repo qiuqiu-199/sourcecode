@@ -17,13 +17,12 @@ public class Activity_220 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.NotificationDeleteConfirmation");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupAccountType");
 		intent.setComponent(cn);
-		ArrayList<String> messageReferences = new ArrayList<String>();
-		intent.putStringArrayListExtra("messageReferences", messageReferences);
-		intent.putExtra("accountUuid", "abcde");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->accountUuid->abcde,StringArrayList->messageReferences->abcde,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

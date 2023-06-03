@@ -17,12 +17,12 @@ public class Activity_128 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.FolderSettings");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
 		intent.setComponent(cn);
-		intent.putExtra("com.fsck.k9.folderName", "abcde");
-		intent.putExtra("com.fsck.k9.account", "!@#$%^ds:+_");
+		intent.setAction("android.intent.action.VIEW, com.fsck.k9.intent.action.COMPOSE");
+		intent.putExtra("appWidgetId", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.fsck.k9.account->!@#$%^ds:+_,String->com.fsck.k9.folderName->abcde,
+		//android.intent.action.VIEW, com.fsck.k9.intent.action.COMPOSE;;null;;null;;null;;int->appWidgetId->0,
 	}
     /** Called when the activity is first created. */
     @Override

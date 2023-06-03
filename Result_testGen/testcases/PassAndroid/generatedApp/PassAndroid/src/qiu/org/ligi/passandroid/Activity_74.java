@@ -17,13 +17,11 @@ public class Activity_74 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassImportActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassViewActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.BROWSABLE");
-		intent.setData(Uri.parse("file*"));
+		intent.putExtra("uuid", "!@#$%^ds:+_");
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;file*;;null;;
+		//null;;null;;null;;null;;String->uuid->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

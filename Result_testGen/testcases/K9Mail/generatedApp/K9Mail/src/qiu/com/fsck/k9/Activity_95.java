@@ -17,13 +17,12 @@ public class Activity_95 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupCheckSettings");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageList");
 		intent.setComponent(cn);
-		intent.putExtra("account", "abcde");
-		MySerializable checkDirection = new MySerializable();
-		intent.putExtra("checkDirection", checkDirection);
+		intent.setAction("android.intent.action.SEARCH");
+		intent.setData(Uri.parse("mSheme://mHost:mPort/?"));
 		startActivity(intent);
-		//null;;null;;null;;null;;Serializable->checkDirection->SerializableObj,String->account->abcde,
+		//android.intent.action.SEARCH;;null;;mSheme://mHost:mPort/?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

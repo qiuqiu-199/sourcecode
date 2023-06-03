@@ -17,13 +17,15 @@ public class Activity_396 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.UriHandlerActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChannelDiscoveryActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("conversations.im"));
+		Parcelable metadata = new MyParcelable();
+		intent.putExtra("metadata", metadata);
+		Parcelable intent1 = new MyParcelable();
+		intent.putExtra("intent", intent);
+		intent.putExtra("result_code", Integer.MAX_VALUE);
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;conversations.im;;null;;
+		//null;;null;;null;;null;;int->result_code->Integer.MAX_VALUE,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

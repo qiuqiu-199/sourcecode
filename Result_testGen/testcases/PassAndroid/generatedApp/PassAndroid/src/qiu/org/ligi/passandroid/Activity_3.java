@@ -17,11 +17,12 @@ public class Activity_3 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassEditActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.FullscreenMapActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("notEmpty"));
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;notEmpty;;null;;
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

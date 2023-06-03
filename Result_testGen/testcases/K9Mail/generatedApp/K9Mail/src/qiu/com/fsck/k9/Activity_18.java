@@ -17,13 +17,12 @@ public class Activity_18 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.ChooseFolder");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupIncoming");
 		intent.setComponent(cn);
-		intent.putExtra("com.fsck.k9.ChooseFolder_selfolder", "!@#$%^ds:+_");
-		intent.putExtra("com.fsck.k9.ChooseFolder_showcurrent", "abcde");
-		intent.putExtra("com.fsck.k9.ChooseFolder_account", "!@#$%^ds:+_");
+		intent.putExtra("account", "abcde");
+		intent.putExtra("makeDefault", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.fsck.k9.ChooseFolder_account->!@#$%^ds:+_,String->com.fsck.k9.ChooseFolder_showcurrent->abcde,String->com.fsck.k9.ChooseFolder_selfolder->!@#$%^ds:+_,
+		//null;;null;;null;;null;;boolean->makeDefault->true,String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

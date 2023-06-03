@@ -1,0 +1,43 @@
+--------- beginning of system
+--------- beginning of main
+05-30 10:37:02.217 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/Application;---><init>()V
+05-30 10:37:02.217 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/ApplicationTemplate;---><init>()V
+05-30 10:37:02.217 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/ApplicationTemplate;--->onCreate()V
+05-30 10:37:02.217 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;---><clinit>()V
+05-30 10:37:02.217 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;--->scheduleAllTasks(Landroid/content/Context;)V
+05-30 10:37:02.217 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;---><clinit>()V
+05-30 10:37:02.217 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;---><init>(Ljava/lang/String;IJLjava/lang/Class;)V
+05-30 10:37:02.218 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;--->values()[Lnet/mabako/steamgifts/PeriodicTasks$Task;
+05-30 10:37:02.218 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;--->scheduleTask(Lnet/mabako/steamgifts/PeriodicTasks$Task;Landroid/content/Context;)V
+05-30 10:37:02.218 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$TaskData;---><init>(Landroid/app/AlarmManager;Landroid/app/PendingIntent;)V
+05-30 10:37:02.221 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/CommonActivity;---><clinit>()V
+05-30 10:37:02.221 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity;---><init>()V
+05-30 10:37:02.221 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/CommonActivity;---><init>()V
+05-30 10:37:02.221 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/BaseActivity;---><init>()V
+05-30 10:37:02.221 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/CommonActivity;--->attachBaseContext(Landroid/content/Context;)V
+05-30 10:37:02.222 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+05-30 10:37:02.222 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/BaseActivity;--->setTheme()Z
+05-30 10:37:02.225 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SGToolsUserData;---><clinit>()V
+05-30 10:37:02.225 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SGToolsUserData;---><init>()V
+05-30 10:37:02.225 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SGToolsUserData;--->clear()V
+05-30 10:37:02.225 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SGToolsUserData;---><init>()V
+05-30 10:37:02.225 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity;--->onCreate(Landroid/os/Bundle;)V
+05-30 10:37:02.377 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity;--->getUrl(Ljava/lang/String;)Ljava/lang/CharSequence;
+05-30 10:37:02.378 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity$CustomWebViewClient;---><init>(Lnet/mabako/steamgifts/activities/WebViewActivity;)V
+05-30 10:37:02.378 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity$CustomWebChromeClient;---><init>(Lnet/mabako/steamgifts/activities/WebViewActivity;)V
+05-30 10:37:02.378 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity$1;---><init>(Lnet/mabako/steamgifts/activities/WebViewActivity;)V
+05-30 10:37:02.396 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/BaseActivity;--->onResume()V
+05-30 10:37:02.396 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/BaseActivity;--->setTheme()Z
+05-30 10:37:02.407 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity$CustomWebChromeClient;--->onProgressChanged(Landroid/webkit/WebView;I)V
+05-30 10:37:02.805 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity;--->onCreateOptionsMenu(Landroid/view/Menu;)Z
+05-30 10:37:02.808 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity$CustomWebViewClient;--->onPageStarted(Landroid/webkit/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V
+05-30 10:37:02.808 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity$CustomWebViewClient;--->onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
+05-30 10:37:02.808 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity$CustomWebChromeClient;--->onProgressChanged(Landroid/webkit/WebView;I)V
+05-30 10:37:02.845 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity$CustomWebChromeClient;--->onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
+05-30 10:37:02.846 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity;--->getUrl(Ljava/lang/String;)Ljava/lang/CharSequence;
+05-30 10:37:02.846 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity$CustomWebChromeClient;--->onProgressChanged(Landroid/webkit/WebView;I)V
+05-30 10:37:02.896 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity$CustomWebChromeClient;--->onProgressChanged(Landroid/webkit/WebView;I)V
+05-30 10:37:02.896 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity$CustomWebChromeClient;--->onProgressChanged(Landroid/webkit/WebView;I)V
+05-30 10:37:02.988 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity$CustomWebViewClient;--->onPageCommitVisible(Landroid/webkit/WebView;Ljava/lang/String;)V
+05-30 10:37:02.988 21093 21093 D M_InsDal: Lnet/mabako/steamgifts/activities/WebViewActivity;--->getUrl(Ljava/lang/String;)Ljava/lang/CharSequence;
+--------- beginning of crash

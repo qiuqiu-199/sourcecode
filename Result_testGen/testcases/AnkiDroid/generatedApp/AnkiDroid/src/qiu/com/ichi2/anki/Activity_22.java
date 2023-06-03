@@ -17,7 +17,7 @@ public class Activity_22 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.Info");
 		intent.setComponent(cn);
 		startActivity(intent);
 		//null;;null;;null;;null;;

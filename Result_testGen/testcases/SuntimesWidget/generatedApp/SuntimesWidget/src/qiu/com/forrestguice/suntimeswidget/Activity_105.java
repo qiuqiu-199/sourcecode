@@ -17,13 +17,12 @@ public class Activity_105 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesConfigActivity0");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.alarmclock.ui.AlarmDismissActivity");
 		intent.setComponent(cn);
-		intent.putExtra("isModified", true);
-		intent.putExtra("name", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("appWidgetId", 0);
+		intent.setAction("?");
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//null;;null;;null;;null;;int->appWidgetId->0,String->name->999999999999999999999999999999999999999999999999999,boolean->isModified->true,
+		//?;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

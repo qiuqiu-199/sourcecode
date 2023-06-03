@@ -17,10 +17,12 @@ public class Activity_129 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.FolderSettings");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
 		intent.setComponent(cn);
+		intent.setAction("android.intent.action.VIEW, com.fsck.k9.intent.action.COMPOSE");
+		intent.putExtra("appWidgetId", Integer.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//android.intent.action.VIEW, com.fsck.k9.intent.action.COMPOSE;;null;;null;;null;;int->appWidgetId->Integer.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

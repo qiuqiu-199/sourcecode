@@ -1,0 +1,20 @@
+--------- beginning of main
+05-29 21:26:49.002 15098 15098 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+05-29 21:26:49.020 15098 15098 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+05-29 21:26:49.026 15098 15098 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 21:26:49.037 15098 15098 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/RemoteSelectPubKeyActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 21:26:49.039 15098 15098 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/SelectPublicKeyFragment;--->onCreate(Landroid/os/Bundle;)V
+05-29 21:26:49.042 15098 15098 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/RecyclerFragment;--->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+05-29 21:26:49.042 15098 15098 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/SelectPublicKeyFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+05-29 21:26:49.043 15098 15098 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onResume()V
+05-29 21:26:49.044 15098 15124 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainDatabase$1;--->onOpen(Landroid/arch/persistence/db/SupportSQLiteDatabase;)V
+--------- beginning of system
+05-29 21:27:13.140 15170 15170 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+05-29 21:27:13.157 15170 15170 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+05-29 21:27:13.164 15170 15170 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 21:27:13.172 15170 15170 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/RemoteSelectPubKeyActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 21:27:13.175 15170 15170 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/SelectPublicKeyFragment;--->onCreate(Landroid/os/Bundle;)V
+05-29 21:27:13.177 15170 15170 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/RecyclerFragment;--->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+05-29 21:27:13.177 15170 15170 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/SelectPublicKeyFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+05-29 21:27:13.178 15170 15170 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onResume()V
+05-29 21:27:13.179 15170 15196 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainDatabase$1;--->onOpen(Landroid/arch/persistence/db/SupportSQLiteDatabase;)V

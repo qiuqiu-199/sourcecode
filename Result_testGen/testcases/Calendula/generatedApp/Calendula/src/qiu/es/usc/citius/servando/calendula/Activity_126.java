@@ -17,11 +17,12 @@ public class Activity_126 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.settings.CalendulaSettingsActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.StartActivity");
 		intent.setComponent(cn);
-		intent.putExtra("show_db_dialog", false);
+		intent.setAction("android.intent.action.MAIN");
+		intent.addCategory("android.intent.category.LAUNCHER");
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->show_db_dialog->false,
+		//android.intent.action.MAIN;;android.intent.category.LAUNCHER;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

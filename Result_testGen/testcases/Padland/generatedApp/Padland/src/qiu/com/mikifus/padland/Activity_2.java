@@ -17,11 +17,12 @@ public class Activity_2 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadLandDataActivity");
+		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.NewPadActivity");
 		intent.setComponent(cn);
-		intent.putExtra("pad_id", 0);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->pad_id->0,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

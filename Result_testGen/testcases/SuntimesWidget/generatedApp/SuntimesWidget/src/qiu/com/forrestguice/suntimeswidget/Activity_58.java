@@ -17,12 +17,11 @@ public class Activity_58 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesSettingsActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity");
 		intent.setComponent(cn);
-		intent.putExtra(":android:no_headers", false);
-		intent.putExtra(":android:show_fragment", "abcde");
+		intent.putExtra("noselect", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->:android:show_fragment->abcde,boolean->:android:no_headers->false,
+		//null;;null;;null;;null;;boolean->noselect->false,
 	}
     /** Called when the activity is first created. */
     @Override

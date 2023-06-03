@@ -17,15 +17,12 @@ public class Activity_60 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChooseContactActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShowLocationActivity");
 		intent.setComponent(cn);
-		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("extra_select_multiple", false);
-		intent.putExtra("extra_filtered_contacts", "abcde");
-		intent.putExtra("extra_conversation", "!@#$%^ds:+_");
-		intent.putExtra("extra_show_enter_jid", false);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->extra_show_enter_jid->false,String->extra_conversation->!@#$%^ds:+_,String[]->extra_filtered_contacts->abcde,boolean->extra_select_multiple->false,String->account->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

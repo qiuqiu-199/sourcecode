@@ -17,12 +17,12 @@ public class Activity_31 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.wizards.BasePrefsWizard");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.phone.action.MESSAGES");
-		intent.setData(Uri.parse("notEmpty://mHost:mPort/mPath"));
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//com.csipsimple.phone.action.MESSAGES;;null;;notEmpty://mHost:mPort/mPath;;null;;
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

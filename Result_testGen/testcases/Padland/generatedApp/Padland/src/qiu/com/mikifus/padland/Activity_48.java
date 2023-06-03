@@ -17,15 +17,12 @@ public class Activity_48 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadListActivity");
+		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadViewActivity");
 		intent.setComponent(cn);
-		intent.putExtra("action", "abcde");
-		intent.putExtra("android.intent.extra.TEXT", "999999999999999999999999999999999999999999999999999");
-		ArrayList<String> pad_id = new ArrayList<String>();
-		intent.putStringArrayListExtra("pad_id", pad_id);
-		intent.putExtra("focus_pad", 0);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->focus_pad->0,StringArrayList->pad_id->abcde,String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,String->action->abcde,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

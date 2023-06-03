@@ -1,0 +1,38 @@
+--------- beginning of main
+--------- beginning of system
+05-29 00:22:55.501 19634 19634 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaApp;--->onCreate()V
+05-29 00:22:55.583 19634 19634 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 00:22:55.583 19634 19634 D M_InsDal: Les/usc/citius/servando/calendula/activities/PatientDetailActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: FATAL EXCEPTION: main
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: Process: es.usc.citius.servando.calendula, PID: 19634
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{es.usc.citius.servando.calendula/es.usc.citius.servando.calendula.activities.PatientDetailActivity}: com.e.a.t: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 1 path $
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: Caused by: com.e.a.t: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 1 path $
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at com.e.a.b.a.i$a.b(Unknown Source:69)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at com.e.a.f.a(Unknown Source:20)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at com.e.a.f.a(Unknown Source:4)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at com.e.a.f.a(Unknown Source:9)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at com.e.a.f.a(Unknown Source:0)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at es.usc.citius.servando.calendula.activities.PatientDetailActivity.lookForQrData(Unknown Source:21)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at es.usc.citius.servando.calendula.activities.PatientDetailActivity.onCreate(Unknown Source:102)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	... 11 more
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 1 path $
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at com.e.a.d.a.c(Unknown Source:49)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	at com.e.a.b.a.i$a.b(Unknown Source:19)
+05-29 00:22:55.618 19634 19634 E AndroidRuntime: 	... 21 more

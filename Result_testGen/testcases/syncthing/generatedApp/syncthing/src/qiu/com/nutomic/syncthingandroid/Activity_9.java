@@ -19,9 +19,9 @@ public class Activity_9 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.PullOrderDialogActivity");
 		intent.setComponent(cn);
-		intent.putExtra("com.nutomic.syncthinandroid.activities.PullOrderDialogActivity.PULL_ORDER", "abcde");
+		intent.putExtra("com.nutomic.syncthinandroid.activities.PullOrderDialogActivity.PULL_ORDER", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.nutomic.syncthinandroid.activities.PullOrderDialogActivity.PULL_ORDER->abcde,
+		//null;;null;;null;;null;;String->com.nutomic.syncthinandroid.activities.PullOrderDialogActivity.PULL_ORDER->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

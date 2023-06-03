@@ -17,11 +17,13 @@ public class Activity_172 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.ConfirmSchedulesActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.MedicinesActivity");
 		intent.setComponent(cn);
-		intent.putExtra("qr_data", "!@#$%^ds:+_");
+		MySerializable medicine_id = new MySerializable();
+		intent.putExtra("medicine_id", medicine_id);
+		intent.putExtra("action", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->qr_data->!@#$%^ds:+_,
+		//null;;null;;null;;null;;String->action->abcde,Serializable->medicine_id->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

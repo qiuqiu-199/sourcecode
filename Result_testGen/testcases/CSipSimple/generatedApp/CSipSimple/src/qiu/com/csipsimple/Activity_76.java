@@ -17,10 +17,12 @@ public class Activity_76 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.wizards.WizardChooser");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
+		intent.setAction("com.csipsimple.phone.action.FAVORITES");
+		intent.setData(Uri.parse("?://mHost:mPort/mPath"));
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//com.csipsimple.phone.action.FAVORITES;;null;;?://mHost:mPort/mPath;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

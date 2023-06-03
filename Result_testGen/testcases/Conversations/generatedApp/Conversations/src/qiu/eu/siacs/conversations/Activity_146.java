@@ -17,14 +17,17 @@ public class Activity_146 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","com.theartofdev.edmodo.cropper.CropImageActivity");
 		intent.setComponent(cn);
-		intent.setAction("eu.siacs.conversations.action.VIEW");
-		intent.putExtra("nick", "!@#$%^ds:+_");
-		intent.putExtra("pm", true);
-		intent.putExtra("conversationUuid", "!@#$%^ds:+_");
+		Bundle CROP_IMAGE_EXTRA_BUNDLE = new Bundle();
+		Parcelable CROP_IMAGE_EXTRA_OPTIONS = new MyParcelable();
+		CROP_IMAGE_EXTRA_BUNDLE.putParcelable("CROP_IMAGE_EXTRA_OPTIONS", CROP_IMAGE_EXTRA_OPTIONS);
+		CROP_IMAGE_EXTRA_BUNDLE = new Bundle();
+		Parcelable CROP_IMAGE_EXTRA_SOURCE = new MyParcelable();
+		CROP_IMAGE_EXTRA_BUNDLE.putParcelable("CROP_IMAGE_EXTRA_SOURCE", CROP_IMAGE_EXTRA_SOURCE);
+		intent.putExtra("CROP_IMAGE_EXTRA_BUNDLE", "CROP_IMAGE_EXTRA_BUNDLE");
 		startActivity(intent);
-		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->conversationUuid->!@#$%^ds:+_,boolean->pm->true,String->nick->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Bundle->CROP_IMAGE_EXTRA_BUNDLE->BundleObj,(,Parcelable->CROP_IMAGE_EXTRA_SOURCE->ParcelableObj,Parcelable->CROP_IMAGE_EXTRA_OPTIONS->ParcelableObj,),
 	}
     /** Called when the activity is first created. */
     @Override

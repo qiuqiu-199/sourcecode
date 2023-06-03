@@ -1,0 +1,29 @@
+BugInfo:
+hash:-2037459344
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{dev.ukanth.ufirewall/dev.ukanth.ufirewall.activity.AppDetailActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.startsWith(java.lang.String)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.startsWith(java.lang.String)' on a null object reference
+	at dev.ukanth.ufirewall.activity.AppDetailActivity.onCreate(AppDetailActivity.java:91)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+5	dev.ukanth.ufirewall.activity.AppDetailActivity	null;;null;;null;;null;;
+
+------------------------------------------------------------------------
+

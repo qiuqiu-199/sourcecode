@@ -17,11 +17,10 @@ public class Activity_58 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadListActivity");
+		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.IntroActivity");
 		intent.setComponent(cn);
-		intent.putExtra("focus_pad", Long.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->focus_pad->Long.MIN_VALUE,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

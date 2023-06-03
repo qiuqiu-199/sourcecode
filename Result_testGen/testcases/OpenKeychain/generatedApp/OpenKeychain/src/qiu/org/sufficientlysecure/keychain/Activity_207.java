@@ -17,11 +17,14 @@ public class Activity_207 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SettingsActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		intent.putExtra(":android:show_fragment", "999999999999999999999999999999999999999999999999999");
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setData(Uri.parse("https"));
+		intent.setType("application/pgp-keys");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->:android:show_fragment->999999999999999999999999999999999999999999999999999,
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;https;;application/pgp-keys;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,12 +17,12 @@ public class Activity_218 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.PassphraseDialogActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		Parcelable required_input = new MyParcelable();
-		intent.putExtra("required_input", required_input);
+		intent.setAction("android.intent.action.SEND");
+		intent.setData(Uri.parse("?:?//.well-known/openpgpkey/hu/"));
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->required_input->ParcelableObj,
+		//android.intent.action.SEND;;null;;?:?//.well-known/openpgpkey/hu/;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

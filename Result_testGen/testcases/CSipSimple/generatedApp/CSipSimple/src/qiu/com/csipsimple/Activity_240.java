@@ -17,13 +17,13 @@ public class Activity_240 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.incall.InCallActivity");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.phone.action.INCALL");
-		Parcelable call_info = new MyParcelable();
-		intent.putExtra("call_info", call_info);
+		intent.setAction("?");
+		intent.setData(Uri.parse("tel:mAuthority/mPath"));
+		intent.putExtra("acc_id", Long.MIN_VALUE);
 		startActivity(intent);
-		//com.csipsimple.phone.action.INCALL;;null;;null;;null;;Parcelable->call_info->ParcelableObj,
+		//?;;null;;tel:mAuthority/mPath;;null;;long->acc_id->Long.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

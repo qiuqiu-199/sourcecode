@@ -17,12 +17,11 @@ public class Activity_27 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.wizards.BasePrefsWizard");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.phone.action.CALLLOG");
-		intent.setData(Uri.parse("notEmpty://mHost:mPort/mPath"));
+		intent.putExtra("wizard", "!@#$%^ds:+_");
 		startActivity(intent);
-		//com.csipsimple.phone.action.CALLLOG;;null;;notEmpty://mHost:mPort/mPath;;null;;
+		//null;;null;;null;;null;;String->wizard->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

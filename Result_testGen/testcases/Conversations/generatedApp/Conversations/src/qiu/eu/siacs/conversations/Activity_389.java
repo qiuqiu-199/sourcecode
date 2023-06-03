@@ -17,13 +17,10 @@ public class Activity_389 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.TrustKeysActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShareLocationActivity");
 		intent.setComponent(cn);
-		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("conversation", "abcde");
-		intent.putExtra("contacts", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String[]->contacts->abcde,String->conversation->abcde,String->account->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

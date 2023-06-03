@@ -20,13 +20,13 @@ public class Activity_194 extends Activity
 		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
 		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEY_SERVER_AND_RETURN_RESULT");
-		intent.setData(Uri.parse("notEmpty:notEmpty//.well-known/openpgpkey/hu/"));
+		intent.setData(Uri.parse("?:?//.well-known/openpgpkey/hu/"));
 		Parcelable result_crypto_input = new MyParcelable();
 		intent.putExtra("result_crypto_input", result_crypto_input);
 		Parcelable result_data = new MyParcelable();
 		intent.putExtra("result_data", result_data);
 		startActivity(intent);
-		//org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEY_SERVER_AND_RETURN_RESULT;;null;;notEmpty:notEmpty//.well-known/openpgpkey/hu/;;null;;Parcelable->result_data->ParcelableObj,Parcelable->result_crypto_input->ParcelableObj,
+		//org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEY_SERVER_AND_RETURN_RESULT;;null;;?:?//.well-known/openpgpkey/hu/;;null;;Parcelable->result_data->ParcelableObj,Parcelable->result_crypto_input->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

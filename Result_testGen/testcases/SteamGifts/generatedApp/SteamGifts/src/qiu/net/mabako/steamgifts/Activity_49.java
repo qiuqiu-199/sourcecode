@@ -17,11 +17,12 @@ public class Activity_49 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.WebViewActivity");
+		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.MainActivity");
 		intent.setComponent(cn);
-		intent.putExtra("url", "999999999999999999999999999999999999999999999999999");
+		intent.setAction("android.intent.action.MAIN");
+		intent.addCategory("android.intent.category.LAUNCHER");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->url->999999999999999999999999999999999999999999999999999,
+		//android.intent.action.MAIN;;android.intent.category.LAUNCHER;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

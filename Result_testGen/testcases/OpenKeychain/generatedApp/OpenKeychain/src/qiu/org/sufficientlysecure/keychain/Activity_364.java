@@ -17,12 +17,10 @@ public class Activity_364 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CreateKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteDeduplicateActivity");
 		intent.setComponent(cn);
-		Parcelable token_info = new MyParcelable();
-		intent.putExtra("token_info", token_info);
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->token_info->ParcelableObj,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,11 +17,12 @@ public class Activity_28 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.UrlHandlingActivity");
+		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.DetailActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("notEmpty"));
+		intent.putExtra("mark", false);
+		intent.putExtra("user", "abcde");
 		startActivity(intent);
-		//null;;null;;notEmpty;;null;;
+		//null;;null;;null;;null;;String->user->abcde,boolean->mark->false,
 	}
     /** Called when the activity is first created. */
     @Override

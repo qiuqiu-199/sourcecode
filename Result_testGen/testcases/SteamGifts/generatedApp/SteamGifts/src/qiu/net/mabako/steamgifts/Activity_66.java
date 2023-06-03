@@ -17,18 +17,12 @@ public class Activity_66 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.WriteCommentActivity");
+		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.WebViewActivity");
 		intent.setComponent(cn);
-		intent.putExtra("title", "!@#$%^ds:+_");
-		intent.putExtra("giveaway", "!@#$%^ds:+_");
-		intent.putExtra("xsrf", "!@#$%^ds:+_");
-		MySerializable parent = new MySerializable();
-		intent.putExtra("parent", parent);
-		MySerializable comment = new MySerializable();
-		intent.putExtra("comment", comment);
-		intent.putExtra("path", "abcde");
+		intent.putExtra("url", "abcde");
+		intent.putExtra("mark", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->path->abcde,Serializable->comment->SerializableObj,Serializable->parent->SerializableObj,String->xsrf->!@#$%^ds:+_,String->giveaway->!@#$%^ds:+_,String->title->!@#$%^ds:+_,
+		//null;;null;;null;;null;;boolean->mark->false,String->url->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

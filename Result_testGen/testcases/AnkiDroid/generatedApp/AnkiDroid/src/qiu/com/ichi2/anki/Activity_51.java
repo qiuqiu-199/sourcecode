@@ -17,13 +17,11 @@ public class Activity_51 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.IntentHandler");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity");
 		intent.setComponent(cn);
-		intent.setAction("com.ichi2.anki.DO_SYNC");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.setType("notEmpty");
+		intent.putExtra("com.ichi2.anki.LoadPronounciationActivity.extra.source", "abcde");
 		startActivity(intent);
-		//com.ichi2.anki.DO_SYNC;;null;;notEmpty;;notEmpty;;
+		//null;;null;;null;;null;;String->com.ichi2.anki.LoadPronounciationActivity.extra.source->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

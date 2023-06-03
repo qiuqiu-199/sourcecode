@@ -1,0 +1,29 @@
+--------- beginning of system
+--------- beginning of main
+05-29 17:06:26.770 24919 24919 D M_InsDal: Lcom/etesync/syncadapter/App;--->attachBaseContext(Landroid/content/Context;)V
+05-29 17:06:26.801 24919 24919 D M_InsDal: Lcom/etesync/syncadapter/App;--->onCreate()V
+05-29 17:06:26.814 24919 24919 D M_InsDal: Lcom/etesync/syncadapter/ui/WebViewActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: FATAL EXCEPTION: main
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: Process: com.etesync.syncadapter, PID: 24919
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.etesync.syncadapter/com.etesync.syncadapter.ui.WebViewActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'android.net.Uri$Builder android.net.Uri.buildUpon()' on a null object reference
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.net.Uri$Builder android.net.Uri.buildUpon()' on a null object reference
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at com.etesync.syncadapter.ui.WebViewActivity.addQueryParams(WebViewActivity.kt:82)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at com.etesync.syncadapter.ui.WebViewActivity.onCreate(WebViewActivity.kt:33)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+05-29 17:06:26.960 24919 24919 E AndroidRuntime: 	... 11 more

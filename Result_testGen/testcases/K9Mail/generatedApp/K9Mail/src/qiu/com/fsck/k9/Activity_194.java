@@ -17,12 +17,11 @@ public class Activity_194 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupOptions");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.EditIdentity");
 		intent.setComponent(cn);
-		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("makeDefault", false);
+		intent.putExtra("com.fsck.k9.EditIdentity_account", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->makeDefault->false,String->account->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;String->com.fsck.k9.EditIdentity_account->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

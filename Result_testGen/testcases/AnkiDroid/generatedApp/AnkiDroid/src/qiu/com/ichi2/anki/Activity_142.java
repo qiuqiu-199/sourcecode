@@ -17,13 +17,12 @@ public class Activity_142 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.CardBrowser");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.dialogs.AnkiDroidCrashReportDialog");
 		intent.setComponent(cn);
-		intent.putExtra("defaultDeckId", Long.MAX_VALUE);
-		intent.putExtra("selectedDeck", Long.MIN_VALUE);
-		intent.putExtra("currentCard", 0);
+		intent.putExtra("REPORT_FILE_NAME", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("FORCE_CANCEL", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->currentCard->0,long->selectedDeck->Long.MIN_VALUE,long->defaultDeckId->Long.MAX_VALUE,
+		//null;;null;;null;;null;;boolean->FORCE_CANCEL->false,String->REPORT_FILE_NAME->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

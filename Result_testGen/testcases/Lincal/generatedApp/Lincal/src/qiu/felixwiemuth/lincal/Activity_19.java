@@ -17,11 +17,10 @@ public class Activity_19 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("felixwiemuth.lincal","felixwiemuth.lincal.ui.CalendarViewActivity");
+		ComponentName cn=new ComponentName("felixwiemuth.lincal","org.acra.dialog.CrashReportDialog");
 		intent.setComponent(cn);
-		intent.putExtra("felixwiemuth.lincal.CalendarListActivity.EXTRA_ARG_CALENDAR_POS", Integer.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->felixwiemuth.lincal.CalendarListActivity.EXTRA_ARG_CALENDAR_POS->Integer.MIN_VALUE,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

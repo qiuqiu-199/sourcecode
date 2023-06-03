@@ -20,10 +20,10 @@ public class Activity_29 extends Activity
 		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("httpsservices.aircanada.com"));
+		intent.addCategory("android.intent.category.BROWSABLE");
+		intent.setData(Uri.parse("httpm.aircanada.ca"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;httpsservices.aircanada.com;;null;;
+		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpm.aircanada.ca;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

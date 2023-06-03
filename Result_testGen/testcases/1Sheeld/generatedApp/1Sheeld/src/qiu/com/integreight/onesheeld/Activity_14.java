@@ -19,9 +19,9 @@ public class Activity_14 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.MainActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.NDEF_DISCOVERED");
+		intent.setAction("?");
 		startActivity(intent);
-		//android.nfc.action.NDEF_DISCOVERED;;null;;null;;null;;
+		//?;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

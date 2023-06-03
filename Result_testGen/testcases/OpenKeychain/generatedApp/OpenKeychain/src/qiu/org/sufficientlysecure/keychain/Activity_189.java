@@ -19,11 +19,10 @@ public class Activity_189 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.BROWSABLE");
-		intent.setType("text/plain");
+		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_FILE_AND_RETURN");
+		intent.setData(Uri.parse("?://mHost:mPort//.well-known/openpgpkey/hu/"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;null;;text/plain;;
+		//org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_FILE_AND_RETURN;;null;;?://mHost:mPort//.well-known/openpgpkey/hu/;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

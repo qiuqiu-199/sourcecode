@@ -17,12 +17,11 @@ public class Activity_4 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.PrefsFast");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.hc.MainPrefs");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.ui.action.PREFS_FAST");
-		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setAction("com.csipsimple.ui.action.PREFS_GLOBAL");
 		startActivity(intent);
-		//com.csipsimple.ui.action.PREFS_FAST;;android.intent.category.DEFAULT;;null;;null;;
+		//com.csipsimple.ui.action.PREFS_GLOBAL;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

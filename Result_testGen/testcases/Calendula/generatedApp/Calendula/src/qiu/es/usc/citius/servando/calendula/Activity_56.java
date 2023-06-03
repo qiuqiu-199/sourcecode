@@ -17,15 +17,12 @@ public class Activity_56 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","com.mikepenz.aboutlibraries.ui.LibsActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.PatientDetailActivity");
 		intent.setComponent(cn);
-		intent.putExtra("ABOUT_LIBRARIES_STYLE", "abcde");
-		intent.putExtra("ABOUT_LIBRARIES_THEME", Integer.MAX_VALUE);
-		MySerializable ABOUT_COLOR = new MySerializable();
-		intent.putExtra("ABOUT_COLOR", ABOUT_COLOR);
-		intent.putExtra("ABOUT_LIBRARIES_TITLE", "!@#$%^ds:+_");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->ABOUT_LIBRARIES_TITLE->!@#$%^ds:+_,Serializable->ABOUT_COLOR->SerializableObj,int->ABOUT_LIBRARIES_THEME->Integer.MAX_VALUE,String->ABOUT_LIBRARIES_STYLE->abcde,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

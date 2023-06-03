@@ -19,10 +19,11 @@ public class Activity_92 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.SummaryCalendarActivity");
 		intent.setComponent(cn);
+		intent.putExtra("start", "abcde");
 		intent.putExtra("rest_days", 0);
-		intent.putExtra("active_days", Integer.MIN_VALUE);
+		intent.putExtra("active_days", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->active_days->Integer.MIN_VALUE,int->rest_days->0,
+		//null;;null;;null;;null;;int->active_days->0,int->rest_days->0,String->start->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

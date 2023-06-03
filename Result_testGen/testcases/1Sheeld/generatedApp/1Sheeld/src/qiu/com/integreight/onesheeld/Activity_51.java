@@ -17,10 +17,16 @@ public class Activity_51 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.Tutorial");
+		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.plugin.action.ActionActivity");
 		intent.setComponent(cn);
+		Bundle com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE = new Bundle();
+		com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE.putInt("com.integreight.onesheeld.extra.PIN_NUMBER", Integer.MAX_VALUE);
+		com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE = new Bundle();
+		com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE.putBoolean("com.integreight.onesheeld.extra.OUTPUT", true);
+		intent.putExtra("com.twofortyfouram.locale.intent.extra.BUNDLE", "com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE");
+		intent.putExtra("com.twofortyfouram.locale.intent.extra.BREADCRUMB", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;String->com.twofortyfouram.locale.intent.extra.BREADCRUMB->999999999999999999999999999999999999999999999999999,Bundle->com.twofortyfouram.locale.intent.extra.BUNDLE->BundleObj,(,boolean->com.integreight.onesheeld.extra.OUTPUT->true,int->com.integreight.onesheeld.extra.PIN_NUMBER->Integer.MAX_VALUE,),
 	}
     /** Called when the activity is first created. */
     @Override

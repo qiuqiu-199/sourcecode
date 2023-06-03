@@ -32,12 +32,12 @@ public class Activity_18 extends Activity
 		intent.putExtra("uuid", uuid);
 		MySerializable edited = new MySerializable();
 		intent.putExtra("edited", edited);
-		intent.putExtra("close", "abcde");
+		intent.putExtra("close", "!@#$%^ds:+_");
 		MySerializable comment = new MySerializable();
 		intent.putExtra("comment", comment);
 		intent.putExtra("entered", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->entered->false,Serializable->comment->SerializableObj,String->close->abcde,Serializable->edited->SerializableObj,Serializable->uuid->SerializableObj,String->user->abcde,Serializable->whitelist->SerializableObj,Serializable->notifications->SerializableObj,Serializable->discussion->SerializableObj,Serializable->giveaway->SerializableObj,
+		//null;;null;;null;;null;;boolean->entered->false,Serializable->comment->SerializableObj,String->close->!@#$%^ds:+_,Serializable->edited->SerializableObj,Serializable->uuid->SerializableObj,String->user->abcde,Serializable->whitelist->SerializableObj,Serializable->notifications->SerializableObj,Serializable->discussion->SerializableObj,Serializable->giveaway->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

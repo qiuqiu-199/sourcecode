@@ -20,9 +20,10 @@ public class Activity_191 extends Activity
 		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("notEmpty://mHost:mPort//.well-known/openpgpkey/hu/"));
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setData(Uri.parse("https"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;notEmpty://mHost:mPort//.well-known/openpgpkey/hu/;;null;;
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;https;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -1,0 +1,37 @@
+--------- beginning of main
+--------- beginning of system
+05-30 09:47:19.935 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App;---><clinit>()V
+05-30 09:47:19.935 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App$Companion;---><init>()V
+05-30 09:47:19.936 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App;---><init>()V
+05-30 09:47:19.940 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App;--->onCreate()V
+05-30 09:47:19.942 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App$onCreate$1;--->a(Lcom/github/salomonbrys/kodein/Kodein$Builder;)V
+05-30 09:47:19.942 10159 10159 D M_InsDal: Lorg/ligi/passandroid/TrackerKodeinModuleKt;--->a(Landroid/content/Context;)Lcom/github/salomonbrys/kodein/Kodein$Module;
+05-30 09:47:19.942 10159 10159 D M_InsDal: Lorg/ligi/passandroid/TrackerKodeinModuleKt$createTrackerKodeinModule$1;--->a(Lcom/github/salomonbrys/kodein/Kodein$Builder;)V
+05-30 09:47:19.942 10159 10159 D M_InsDal: Lorg/ligi/passandroid/TrackerKodeinModuleKt$createTrackerKodeinModule$1$$special$$inlined$bind$1;---><init>()V
+05-30 09:47:19.943 10159 10159 D M_InsDal: Lorg/ligi/passandroid/TrackerKodeinModuleKt$createTrackerKodeinModule$1$$special$$inlined$singleton$1;---><init>()V
+05-30 09:47:19.944 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App;--->a()Lcom/github/salomonbrys/kodein/Kodein$Module;
+05-30 09:47:19.944 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1;--->a(Lcom/github/salomonbrys/kodein/Kodein$Builder;)V
+05-30 09:47:19.944 10159 10159 D M_InsDal: Lorg/ligi/passandroid/json_adapter/ZonedTimeAdapter;---><init>()V
+05-30 09:47:19.946 10159 10159 D M_InsDal: Lorg/ligi/passandroid/json_adapter/ColorAdapter;---><init>()V
+05-30 09:47:19.946 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$bind$1;---><init>()V
+05-30 09:47:19.947 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$singleton$1;---><init>()V
+05-30 09:47:19.947 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$bind$2;---><init>()V
+05-30 09:47:19.947 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$singleton$2;---><init>()V
+05-30 09:47:19.947 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$bind$3;---><init>()V
+05-30 09:47:19.948 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$singleton$3;---><init>()V
+05-30 09:47:19.949 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App;--->b()V
+05-30 09:47:19.949 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App;--->g()V
+05-30 09:47:19.950 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App$onCreate$$inlined$instance$1;---><init>()V
+05-30 09:47:19.950 10159 10159 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$2;--->a(Lcom/github/salomonbrys/kodein/bindings/NoArgBindingKodein;)Lorg/ligi/passandroid/model/AndroidSettings;
+05-30 09:47:19.950 10159 10159 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings;---><init>(Landroid/content/Context;)V
+05-30 09:47:19.951 10159 10159 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings;--->getNightMode()I
+05-30 09:47:19.951 10159 10159 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings$sharedPreferences$2;--->invoke()Landroid/content/SharedPreferences;
+05-30 09:47:19.951 10159 10159 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings;--->getContext()Landroid/content/Context;
+05-30 09:47:19.956 10159 10159 D M_InsDal: Lorg/ligi/passandroid/ui/quirk_fix/OpenIphoneWebView;---><init>()V
+05-30 09:47:19.959 10159 10159 D M_InsDal: Lorg/ligi/passandroid/ui/quirk_fix/OpenIphoneWebView;--->onCreate(Landroid/os/Bundle;)V
+05-30 09:47:20.098 10159 10159 D M_InsDal: Lorg/ligi/passandroid/functions/InputStreamProviderKt;---><clinit>()V
+05-30 09:47:20.099 10159 10159 D M_InsDal: Lorg/ligi/passandroid/functions/InputStreamProviderKt;--->a()Ljava/lang/String;
+05-30 09:47:20.125 10159 10159 D M_InsDal: Lorg/ligi/passandroid/ui/quirk_fix/OpenIphoneWebView$onCreate$1;---><init>(Lnet/steamcrafted/loadtoast/LoadToast;)V
+05-30 09:47:20.384 10159 10159 D M_InsDal: Lorg/ligi/passandroid/ui/quirk_fix/OpenIphoneWebView$onCreate$1;--->onReceivedError(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;Landroid/webkit/WebResourceError;)V
+05-30 09:47:20.385 10159 10159 D M_InsDal: Lorg/ligi/passandroid/ui/quirk_fix/OpenIphoneWebView$onCreate$1;--->onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
+--------- beginning of crash

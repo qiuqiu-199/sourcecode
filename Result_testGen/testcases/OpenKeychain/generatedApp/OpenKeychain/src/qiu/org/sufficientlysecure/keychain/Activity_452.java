@@ -17,16 +17,10 @@ public class Activity_452 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteSelectIdKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SettingsSmartPGPAuthoritiesActivity");
 		intent.setComponent(cn);
-		intent.putExtra("show_autocrypt_hint", true);
-		intent.putExtra("package_name", "abcde");
-		Parcelable data = new MyParcelable();
-		intent.putExtra("data", data);
-		intent.putExtra("package_signature", 0);
-		intent.putExtra("user_id", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->user_id->!@#$%^ds:+_,byte[]->package_signature->0,Parcelable->data->ParcelableObj,String->package_name->abcde,boolean->show_autocrypt_hint->true,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

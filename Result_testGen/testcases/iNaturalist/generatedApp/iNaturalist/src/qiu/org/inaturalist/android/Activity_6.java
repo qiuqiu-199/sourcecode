@@ -17,12 +17,12 @@ public class Activity_6 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.inaturalist.android","org.inaturalist.android.ObservationListActivity");
+		ComponentName cn=new ComponentName("org.inaturalist.android","org.inaturalist.android.ObservationEditor");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.MAIN");
-		intent.addCategory("android.intent.category.LAUNCHER");
+		intent.setAction("android.intent.action.SEND_MULTIPLE");
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//android.intent.action.MAIN;;android.intent.category.LAUNCHER;;null;;null;;
+		//android.intent.action.SEND_MULTIPLE;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

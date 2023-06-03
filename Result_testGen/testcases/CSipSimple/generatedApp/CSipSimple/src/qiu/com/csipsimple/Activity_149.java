@@ -17,13 +17,11 @@ public class Activity_149 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.widgets.AccountWidgetConfigure");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SENDTO");
-		intent.setData(Uri.parse("imto:skype/mPath"));
-		intent.putExtra("acc_id", Long.MAX_VALUE);
+		intent.putExtra("appWidgetId", 0);
 		startActivity(intent);
-		//android.intent.action.SENDTO;;null;;imto:skype/mPath;;null;;long->acc_id->Long.MAX_VALUE,
+		//null;;null;;null;;null;;int->appWidgetId->0,
 	}
     /** Called when the activity is first created. */
     @Override

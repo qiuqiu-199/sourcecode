@@ -1,0 +1,17 @@
+--------- beginning of main
+--------- beginning of system
+05-28 23:32:08.524  8708  8708 D M_InsDal: Lde/danoeh/antennapod/PodcastApp;--->onCreate()V
+05-28 23:32:08.557  8708  8708 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onCreate(Landroid/os/Bundle;)V
+05-28 23:32:08.570  8708  8708 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerActivity;--->onStart()V
+05-28 23:32:08.575  8708  8708 D M_InsDal: Lde/danoeh/antennapod/activity/VideoplayerActivity;--->loadMediaInfo()Z
+05-28 23:32:08.576  8708  8708 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onResume()V
+05-28 23:32:08.576  8708  8708 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerActivity;--->onResume()V
+05-28 23:32:08.578  8708  8708 D M_InsDal: Lde/danoeh/antennapod/activity/VideoplayerActivity;--->onResume()V
+05-28 23:32:08.586  8708  8708 D M_InsDal: Lde/danoeh/antennapod/core/service/playback/PlaybackService;--->onCreate()V
+05-28 23:32:08.593  8708  8708 D M_InsDal: Lde/danoeh/antennapod/core/service/playback/PlaybackService;--->onStartCommand(Landroid/content/Intent;II)I
+05-28 23:32:08.666  8708  8708 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onCreateOptionsMenu(Landroid/view/Menu;)Z
+05-28 23:32:08.666  8708  8708 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerActivity;--->onCreateOptionsMenu(Landroid/view/Menu;)Z
+05-28 23:32:08.667  8708  8708 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onPrepareOptionsMenu(Landroid/view/Menu;)Z
+05-28 23:32:08.667  8708  8708 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerActivity;--->onPrepareOptionsMenu(Landroid/view/Menu;)Z
+05-28 23:32:08.667  8708  8708 D M_InsDal: Lde/danoeh/antennapod/activity/VideoplayerActivity;--->onPrepareOptionsMenu(Landroid/view/Menu;)Z
+05-28 23:32:09.192  8708  8708 D M_InsDal: Lde/danoeh/antennapod/core/service/playback/PlaybackService;--->onDestroy()V

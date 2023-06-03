@@ -19,10 +19,10 @@ public class Activity_3 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.activity.AppDetailActivity");
 		intent.setComponent(cn);
-		intent.putExtra("package", "abcde");
+		intent.putExtra("package", "999999999999999999999999999999999999999999999999999");
 		intent.putExtra("appid", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->appid->0,String->package->abcde,
+		//null;;null;;null;;null;;int->appid->0,String->package->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

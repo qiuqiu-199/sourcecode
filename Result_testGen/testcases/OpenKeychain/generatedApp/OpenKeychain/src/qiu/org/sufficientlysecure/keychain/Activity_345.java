@@ -17,17 +17,12 @@ public class Activity_345 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteSelectPubKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity");
 		intent.setComponent(cn);
-		intent.putExtra("no_user_ids", true);
-		ArrayList<String> dublicate_emails = new ArrayList<String>();
-		intent.putStringArrayListExtra("dublicate_emails", dublicate_emails);
-		ArrayList<String> missing_emails = new ArrayList<String>();
-		intent.putStringArrayListExtra("missing_emails", missing_emails);
-		long[] master_key_ids = new long[1];
-		intent.putExtra("master_key_ids", master_key_ids);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;longArray->master_key_ids->Long.MIN_VALUE,StringArrayList->missing_emails->999999999999999999999999999999999999999999999999999,StringArrayList->dublicate_emails->abcde,boolean->no_user_ids->true,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -1,0 +1,11 @@
+--------- beginning of main
+--------- beginning of system
+05-29 21:24:17.170 14597 14597 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+05-29 21:24:17.190 14597 14597 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+05-29 21:24:17.196 14597 14597 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 21:24:17.203 14597 14597 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/RemoteSelectPubKeyActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 21:24:17.205 14597 14597 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/SelectPublicKeyFragment;--->onCreate(Landroid/os/Bundle;)V
+05-29 21:24:17.207 14597 14597 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/RecyclerFragment;--->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+05-29 21:24:17.207 14597 14597 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/SelectPublicKeyFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+05-29 21:24:17.209 14597 14597 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onResume()V
+05-29 21:24:17.210 14597 14623 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainDatabase$1;--->onOpen(Landroid/arch/persistence/db/SupportSQLiteDatabase;)V

@@ -1,0 +1,50 @@
+--------- beginning of main
+--------- beginning of system
+05-29 21:04:19.453 10703 10703 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+05-29 21:04:19.471 10703 10703 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+05-29 21:04:19.476 10703 10703 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/dialog/RemoteDeduplicateActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 21:04:19.486 10703 10703 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/dialog/RemoteDeduplicateActivity$RemoteDeduplicateDialogFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+05-29 21:04:19.496 10703 10703 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/dialog/RemoteDeduplicateActivity;--->onStart()V
+--------- beginning of crash
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: FATAL EXCEPTION: main
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 10703
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.os.BaseBundle.getStringArrayList(BaseBundle.java:1273)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.os.Bundle.getStringArrayList(Bundle.java:1062)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.content.Intent.getStringArrayListExtra(Intent.java:7546)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at org.sufficientlysecure.keychain.remote.ui.dialog.RemoteDeduplicateActivity.onStart(RemoteDeduplicateActivity.java:85)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:7165)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.org.sufficientlysecure.keychain.MySerializable
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	... 22 more
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.sufficientlysecure.keychain.MySerializable" on path: DexPathList[[zip file "/data/app/org.sufficientlysecure.keychain-ju4SeniCOqMRYv0PvSfm4A==/base.apk"],nativeLibraryDirectories=[/data/app/org.sufficientlysecure.keychain-ju4SeniCOqMRYv0PvSfm4A==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+05-29 21:04:19.496 10703 10703 E AndroidRuntime: 	... 31 more

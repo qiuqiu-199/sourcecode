@@ -17,16 +17,15 @@ public class Activity_54 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteBackupActivity");
 		intent.setComponent(cn);
-		intent.setAction("org.sufficientlysecure.keychain.action.DECRYPT_DATA");
-		intent.setData(Uri.parse("mSheme://com.android.email.attachmentprovider:mPort/mPath"));
-		intent.setType("application/autocrypt-setup");
-		intent.putExtra("android.intent.extra.TEXT", "999999999999999999999999999999999999999999999999999");
-		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
-		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
+		intent.putExtra("export_secret", false);
+		Parcelable data = new MyParcelable();
+		intent.putExtra("data", data);
+		long[] master_key_ids = new long[1];
+		intent.putExtra("master_key_ids", master_key_ids);
 		startActivity(intent);
-		//org.sufficientlysecure.keychain.action.DECRYPT_DATA;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;longArray->master_key_ids->Long.MIN_VALUE,Parcelable->data->ParcelableObj,boolean->export_secret->false,
 	}
     /** Called when the activity is first created. */
     @Override

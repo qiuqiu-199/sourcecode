@@ -20,10 +20,9 @@ public class Activity_105 extends Activity
 		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.UpdateFromFileActivity");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("text/plain");
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;null;;text/plain;;
+		//android.intent.action.VIEW;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,16 +17,12 @@ public class Activity_60 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.OrbotRequiredDialogActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND_MULTIPLE");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.setType("application/autocrypt-setup");
-		intent.putExtra("android.intent.extra.TEXT", "!@#$%^ds:+_");
-		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
-		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
+		Parcelable extra_crypto_input = new MyParcelable();
+		intent.putExtra("extra_crypto_input", extra_crypto_input);
 		startActivity(intent);
-		//android.intent.action.SEND_MULTIPLE;;null;;notEmpty;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Parcelable->extra_crypto_input->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

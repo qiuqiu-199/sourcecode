@@ -21,9 +21,9 @@ public class Activity_28 extends Activity
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
 		intent.addCategory("android.intent.category.BROWSABLE");
-		intent.setData(Uri.parse("httppass-cloud.appspot.com"));
+		intent.setData(Uri.parse("httpprod.wap.ncrwebhost.mobi"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httppass-cloud.appspot.com;;null;;
+		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpprod.wap.ncrwebhost.mobi;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

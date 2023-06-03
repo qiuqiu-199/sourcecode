@@ -17,13 +17,13 @@ public class Activity_134 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesConfigActivity0");
 		intent.setComponent(cn);
-		intent.setAction("new android.content.Context");
-		MySerializable notificationID = new MySerializable();
-		intent.putExtra("notificationID", notificationID);
+		intent.putExtra("isModified", true);
+		intent.putExtra("name", "abcde");
+		intent.putExtra("appWidgetId", Integer.MIN_VALUE);
 		startActivity(intent);
-		//new android.content.Context;;null;;null;;null;;Serializable->notificationID->SerializableObj,
+		//null;;null;;null;;null;;int->appWidgetId->Integer.MIN_VALUE,String->name->abcde,boolean->isModified->true,
 	}
     /** Called when the activity is first created. */
     @Override

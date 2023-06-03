@@ -17,13 +17,15 @@ public class Activity_55 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteBackupActivity");
 		intent.setComponent(cn);
-		intent.setAction("notEmpty");
-		intent.setData(Uri.parse("mSheme://com.android.email.attachmentprovider:mPort/mPath"));
-		intent.setType("application/autocrypt-setup");
+		intent.putExtra("export_secret", false);
+		Parcelable data = new MyParcelable();
+		intent.putExtra("data", data);
+		long[] master_key_ids = new long[1];
+		intent.putExtra("master_key_ids", master_key_ids);
 		startActivity(intent);
-		//notEmpty;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;
+		//null;;null;;null;;null;;longArray->master_key_ids->0,Parcelable->data->ParcelableObj,boolean->export_secret->false,
 	}
     /** Called when the activity is first created. */
     @Override

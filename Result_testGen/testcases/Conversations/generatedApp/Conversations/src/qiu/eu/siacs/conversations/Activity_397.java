@@ -17,15 +17,15 @@ public class Activity_397 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.UriHandlerActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChannelDiscoveryActivity");
 		intent.setComponent(cn);
-		intent.setAction("eu.siacs.conversations.location.show, android.intent.action.VIEW");
-		intent.setData(Uri.parse("https://maps.google.com/maps?q=loc:,, geo:,?q=,()"));
-		intent.putExtra("longitude", Double.MIN_VALUE);
-		intent.putExtra("name", "!@#$%^ds:+_");
-		intent.putExtra("latitude", 0.0);
+		Parcelable metadata = new MyParcelable();
+		intent.putExtra("metadata", metadata);
+		Parcelable intent1 = new MyParcelable();
+		intent.putExtra("intent", intent);
+		intent.putExtra("result_code", 0);
 		startActivity(intent);
-		//eu.siacs.conversations.location.show, android.intent.action.VIEW;;null;;https://maps.google.com/maps?q=loc:,, geo:,?q=,();;null;;double->latitude->0.0,String->name->!@#$%^ds:+_,double->longitude->Double.MIN_VALUE,
+		//null;;null;;null;;null;;int->result_code->0,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

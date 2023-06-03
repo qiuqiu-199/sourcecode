@@ -17,11 +17,13 @@ public class Activity_382 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CreateKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity");
 		intent.setComponent(cn);
-		intent.putExtra("first_time", false);
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setType("vnd.android.cursor.item/vnd.org.sufficientlysecure.keychain.key");
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->first_time->false,
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;null;;vnd.android.cursor.item/vnd.org.sufficientlysecure.keychain.key;;
 	}
     /** Called when the activity is first created. */
     @Override

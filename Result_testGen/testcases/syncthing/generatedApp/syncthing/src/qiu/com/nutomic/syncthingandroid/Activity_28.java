@@ -17,11 +17,12 @@ public class Activity_28 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.FolderPickerActivity");
+		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.MainActivity");
 		intent.setComponent(cn);
-		intent.putExtra("com.nutomic.syncthingandroid.activities.FolderPickerActivity.INITIAL_DIRECTORY", "!@#$%^ds:+_");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.nutomic.syncthingandroid.activities.FolderPickerActivity.INITIAL_DIRECTORY->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

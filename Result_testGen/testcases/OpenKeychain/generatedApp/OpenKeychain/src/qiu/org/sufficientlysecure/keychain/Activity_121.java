@@ -17,18 +17,10 @@ public class Activity_121 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.UsbEventReceiverActivity");
 		intent.setComponent(cn);
-		byte[] package_signature = new byte[1];
-		intent.putExtra("package_signature", package_signature);
-		intent.putExtra("package_name", "!@#$%^ds:+_");
-		Parcelable data = new MyParcelable();
-		intent.putExtra("data", data);
-		intent.putExtra("user_id", "999999999999999999999999999999999999999999999999999");
-		Parcelable operation_result = new MyParcelable();
-		intent.putExtra("operation_result", operation_result);
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->operation_result->ParcelableObj,String->user_id->999999999999999999999999999999999999999999999999999,Parcelable->data->ParcelableObj,String->package_name->!@#$%^ds:+_,byteArray->package_signature->0,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

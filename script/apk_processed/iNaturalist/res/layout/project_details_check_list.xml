@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditText android:id="@id/search_filter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/search_taxa" android:lines="1" android:singleLine="true" android:layout_alignParentTop="true" />
-    <ListView android:id="@id/project_check_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_filter" />
-    <ProgressBar android:gravity="center" android:id="@id/progress" android:padding="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
-    <TextView android:id="@id/project_taxa_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_check_list" android:layout_centerInParent="true" />
-</RelativeLayout>
