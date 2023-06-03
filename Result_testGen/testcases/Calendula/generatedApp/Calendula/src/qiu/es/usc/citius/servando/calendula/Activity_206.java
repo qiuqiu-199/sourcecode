@@ -17,20 +17,12 @@ public class Activity_206 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.notifications.LockScreenAlarmActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.ConfirmSchedulesActivity");
 		intent.setComponent(cn);
-		Parcelable alarm_params = new MyParcelable();
-		intent.putExtra("alarm_params", alarm_params);
-		MySerializable schedule_id = new MySerializable();
-		intent.putExtra("schedule_id", schedule_id);
-		intent.putExtra("schedule_time", "abcde");
-		intent.putExtra("action", Integer.MIN_VALUE);
-		Parcelable target = new MyParcelable();
-		intent.putExtra("target", target);
-		intent.putExtra("alarm_params", "alarm_params");
-		intent.putExtra("date", "abcde");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->date->abcde,Bundle->alarm_params->BundleObj,Parcelable->target->ParcelableObj,int->action->Integer.MIN_VALUE,String->schedule_time->abcde,Serializable->schedule_id->SerializableObj,Parcelable->alarm_params->ParcelableObj,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

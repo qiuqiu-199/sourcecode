@@ -17,10 +17,11 @@ public class Activity_55 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.FullscreenBarcodeActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.ExtractURLAsIphoneActivity");
 		intent.setComponent(cn);
+		intent.setData(Uri.parse("?://mHost:mPort/mPath"));
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;?://mHost:mPort/mPath;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

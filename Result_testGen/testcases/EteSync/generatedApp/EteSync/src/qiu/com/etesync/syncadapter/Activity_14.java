@@ -17,16 +17,12 @@ public class Activity_14 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.etesync.syncadapter","com.etesync.syncadapter.ui.JournalItemActivity");
+		ComponentName cn=new ComponentName("com.etesync.syncadapter","com.etesync.syncadapter.ui.ViewCollectionActivity");
 		intent.setComponent(cn);
-		Parcelable account = new MyParcelable();
-		intent.putExtra("account", account);
-		MySerializable collectionInfo = new MySerializable();
-		intent.putExtra("collectionInfo", collectionInfo);
-		MySerializable syncEntry = new MySerializable();
-		intent.putExtra("syncEntry", syncEntry);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;Serializable->syncEntry->SerializableObj,Serializable->collectionInfo->SerializableObj,Parcelable->account->ParcelableObj,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

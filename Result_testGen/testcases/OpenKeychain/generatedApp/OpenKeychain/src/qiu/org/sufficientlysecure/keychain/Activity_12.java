@@ -19,13 +19,12 @@ public class Activity_12 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RequestKeyPermissionActivity");
 		intent.setComponent(cn);
-		long[] requested_key_ids = new long[1];
-		intent.putExtra("requested_key_ids", requested_key_ids);
-		intent.putExtra("package_name", "abcde");
+		intent.putExtra("requested_key_ids", Long.MIN_VALUE);
+		intent.putExtra("package_name", "!@#$%^ds:+_");
 		Parcelable data = new MyParcelable();
 		intent.putExtra("data", data);
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->data->ParcelableObj,String->package_name->abcde,longArray->requested_key_ids->0,
+		//null;;null;;null;;null;;Parcelable->data->ParcelableObj,String->package_name->!@#$%^ds:+_,long[]->requested_key_ids->Long.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

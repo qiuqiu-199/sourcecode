@@ -17,19 +17,10 @@ public class Activity_192 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.notifications.LockScreenAlarmActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.RoutinesActivity");
 		intent.setComponent(cn);
-		Parcelable alarm_params = new MyParcelable();
-		intent.putExtra("alarm_params", alarm_params);
-		MySerializable routine_id = new MySerializable();
-		intent.putExtra("routine_id", routine_id);
-		intent.putExtra("action", 0);
-		Parcelable target = new MyParcelable();
-		intent.putExtra("target", target);
-		intent.putExtra("alarm_params", "alarm_params");
-		intent.putExtra("date", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->date->999999999999999999999999999999999999999999999999999,Bundle->alarm_params->BundleObj,Parcelable->target->ParcelableObj,int->action->0,Serializable->routine_id->SerializableObj,Parcelable->alarm_params->ParcelableObj,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

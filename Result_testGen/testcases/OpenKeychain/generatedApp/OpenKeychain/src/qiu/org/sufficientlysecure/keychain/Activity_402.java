@@ -17,12 +17,12 @@ public class Activity_402 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.EncryptTextActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.EncryptFilesActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.PROCESS_TEXT");
-		intent.setType("notEmpty");
+		intent.setAction("org.sufficientlysecure.keychain.action.ENCRYPT_DATA");
+		intent.putExtra("org.sufficientlysecure.keychain.EXTRA_SIGNATURE_KEY_IDS", Long.MIN_VALUE);
 		startActivity(intent);
-		//android.intent.action.PROCESS_TEXT;;null;;null;;notEmpty;;
+		//org.sufficientlysecure.keychain.action.ENCRYPT_DATA;;null;;null;;null;;long[]->org.sufficientlysecure.keychain.EXTRA_SIGNATURE_KEY_IDS->Long.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

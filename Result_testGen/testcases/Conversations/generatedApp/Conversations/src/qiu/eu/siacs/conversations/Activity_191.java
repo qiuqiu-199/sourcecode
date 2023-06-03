@@ -19,19 +19,12 @@ public class Activity_191 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		intent.setAction("new java.util.List");
-		Parcelable error = new MyParcelable();
-		intent.putExtra("error", error);
-		Parcelable metadata = new MyParcelable();
-		intent.putExtra("metadata", metadata);
-		Parcelable intent1 = new MyParcelable();
-		intent.putExtra("intent", intent);
-		intent.putExtra("result_code", 0);
-		intent.putExtra("conversationUuid", "!@#$%^ds:+_");
-		intent.putExtra("eu.siacs.conversations.invite_uri", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("sign_key_id", 0);
+		intent.setAction("android.intent.action.SEND_MULTIPLE");
+		intent.putExtra("conversationUuid", "abcde");
+		ArrayList<String> android_dot_intent_dot_extra_dot_STREAM = new ArrayList<String>();
+		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
 		startActivity(intent);
-		//new java.util.List;;null;;null;;null;;long->sign_key_id->0,String->eu.siacs.conversations.invite_uri->999999999999999999999999999999999999999999999999999,String->conversationUuid->!@#$%^ds:+_,int->result_code->0,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,Parcelable->error->ParcelableObj,
+		//android.intent.action.SEND_MULTIPLE;;null;;null;;null;;ArrayList->android.intent.extra.STREAM->ArrayListObj,String->conversationUuid->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

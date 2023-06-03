@@ -25,15 +25,15 @@ public class Activity_1 extends Activity
 		intent.putExtra("metadata", metadata);
 		Parcelable intent1 = new MyParcelable();
 		intent.putExtra("intent", intent);
-		intent.putExtra("result_code", 0);
+		intent.putExtra("result_code", Integer.MAX_VALUE);
 		intent.putExtra("extra_select_multiple", false);
 		intent.putExtra("contact", "abcde");
 		intent.putExtra("extra_conversation", "abcde");
 		String[] contacts = new String[1];
 		intent.putExtra("contacts", contacts);
-		intent.putExtra("sign_key_id", 0);
+		intent.putExtra("sign_key_id", Long.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->sign_key_id->0,StringArray->contacts->abcde,String->extra_conversation->abcde,String->contact->abcde,boolean->extra_select_multiple->false,int->result_code->0,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,Parcelable->error->ParcelableObj,
+		//null;;null;;null;;null;;long->sign_key_id->Long.MIN_VALUE,StringArray->contacts->999999999999999999999999999999999999999999999999999,String->extra_conversation->abcde,String->contact->abcde,boolean->extra_select_multiple->false,int->result_code->Integer.MAX_VALUE,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,Parcelable->error->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

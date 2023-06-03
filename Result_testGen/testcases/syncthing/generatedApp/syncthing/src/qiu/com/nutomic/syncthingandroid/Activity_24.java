@@ -17,12 +17,10 @@ public class Activity_24 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.MainActivity");
+		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.ShareActivity");
 		intent.setComponent(cn);
-		MySerializable com_dot_nutomic_dot_syncthing = new MySerializable();
-		intent.putExtra("com.nutomic.syncthing", com_dot_nutomic_dot_syncthing);
 		startActivity(intent);
-		//null;;null;;null;;null;;Serializable->com.nutomic.syncthing->SerializableObj,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

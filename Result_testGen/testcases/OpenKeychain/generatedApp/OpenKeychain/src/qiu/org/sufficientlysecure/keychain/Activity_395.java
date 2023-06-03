@@ -17,13 +17,11 @@ public class Activity_395 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.EncryptTextActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SecurityTokenOperationActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("text/*");
+		intent.setAction("android.nfc.action.TAG_DISCOVERED");
 		startActivity(intent);
-		//android.intent.action.SEND;;android.intent.category.DEFAULT;;null;;text/*;;
+		//android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,14 +17,12 @@ public class Activity_8 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.MainActivity");
+		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.plugin.condition.ConditionActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.TECH_DISCOVERED");
-		intent.putExtra("url", "!@#$%^ds:+_");
-		Parcelable android_dot_nfc_dot_extra_dot_TAG = new MyParcelable();
-		intent.putExtra("android.nfc.extra.TAG", android_dot_nfc_dot_extra_dot_TAG);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//android.nfc.action.TECH_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,String->url->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

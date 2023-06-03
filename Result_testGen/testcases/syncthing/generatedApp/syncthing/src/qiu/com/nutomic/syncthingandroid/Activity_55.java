@@ -17,19 +17,10 @@ public class Activity_55 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.FolderActivity");
+		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.WebGuiActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("com.nutomic.syncthingandroid.activities.FolderPickerActivity.RESULT_DIRECTORY", "!@#$%^ds:+_");
-		intent.putExtra("com.nutomic.syncthingandroid.activities.FolderActivity.FOLDER_LABEL", "abcde");
-		intent.putExtra("com.nutomic.syncthingandroid.activities.FolderActivity.DEVICE_ID", "abcde");
-		intent.putExtra("com.nutomic.syncthinandroid.activities.FolderTypeDialogActivity.EXTRA_RESULT_FOLDER_TYPE", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("com.nutomic.syncthingandroid.activities.FolderActivity.NOTIFICATION_ID", Integer.MIN_VALUE);
-		intent.putExtra("com.nutomic.syncthinandroid.activities.PullOrderDialogActivity.EXTRA_RESULT_PULL_ORDER", "abcde");
-		intent.putExtra("com.nutomic.syncthingandroid.activities.FolderActivity.IS_CREATE", true);
-		intent.putExtra("com.nutomic.syncthingandroid.activities.FolderActivity.FOLDER_ID", "abcde");
 		startActivity(intent);
-		//null;;null;;notEmpty;;null;;String->com.nutomic.syncthingandroid.activities.FolderActivity.FOLDER_ID->abcde,boolean->com.nutomic.syncthingandroid.activities.FolderActivity.IS_CREATE->true,String->com.nutomic.syncthinandroid.activities.PullOrderDialogActivity.EXTRA_RESULT_PULL_ORDER->abcde,int->com.nutomic.syncthingandroid.activities.FolderActivity.NOTIFICATION_ID->Integer.MIN_VALUE,String->com.nutomic.syncthinandroid.activities.FolderTypeDialogActivity.EXTRA_RESULT_FOLDER_TYPE->999999999999999999999999999999999999999999999999999,String->com.nutomic.syncthingandroid.activities.FolderActivity.DEVICE_ID->abcde,String->com.nutomic.syncthingandroid.activities.FolderActivity.FOLDER_LABEL->abcde,String->com.nutomic.syncthingandroid.activities.FolderPickerActivity.RESULT_DIRECTORY->!@#$%^ds:+_,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

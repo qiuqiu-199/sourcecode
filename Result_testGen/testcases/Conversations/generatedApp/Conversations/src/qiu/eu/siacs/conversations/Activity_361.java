@@ -17,11 +17,11 @@ public class Activity_361 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.MucUsersActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.EditAccountActivity");
 		intent.setComponent(cn);
-		intent.putExtra("uuid", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("force_register", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->uuid->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;boolean->force_register->true,
 	}
     /** Called when the activity is first created. */
     @Override

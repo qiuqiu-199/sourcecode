@@ -27,17 +27,17 @@ public class Activity_15 extends Activity
 		intent.putExtra("notifications", notifications);
 		MySerializable whitelist = new MySerializable();
 		intent.putExtra("whitelist", whitelist);
-		intent.putExtra("user", "!@#$%^ds:+_");
+		intent.putExtra("user", "999999999999999999999999999999999999999999999999999");
 		MySerializable uuid = new MySerializable();
 		intent.putExtra("uuid", uuid);
 		MySerializable edited = new MySerializable();
 		intent.putExtra("edited", edited);
-		intent.putExtra("close", "!@#$%^ds:+_");
+		intent.putExtra("close", "abcde");
 		MySerializable comment = new MySerializable();
 		intent.putExtra("comment", comment);
 		intent.putExtra("entered", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->entered->false,Serializable->comment->SerializableObj,String->close->!@#$%^ds:+_,Serializable->edited->SerializableObj,Serializable->uuid->SerializableObj,String->user->!@#$%^ds:+_,Serializable->whitelist->SerializableObj,Serializable->notifications->SerializableObj,Serializable->discussion->SerializableObj,Serializable->giveaway->SerializableObj,
+		//null;;null;;null;;null;;boolean->entered->false,Serializable->comment->SerializableObj,String->close->abcde,Serializable->edited->SerializableObj,Serializable->uuid->SerializableObj,String->user->999999999999999999999999999999999999999999999999999,Serializable->whitelist->SerializableObj,Serializable->notifications->SerializableObj,Serializable->discussion->SerializableObj,Serializable->giveaway->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

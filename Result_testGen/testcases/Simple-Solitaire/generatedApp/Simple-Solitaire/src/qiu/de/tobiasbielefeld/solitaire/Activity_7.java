@@ -17,7 +17,7 @@ public class Activity_7 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.tobiasbielefeld.solitaire","de.tobiasbielefeld.solitaire.ui.settings.Settings");
+		ComponentName cn=new ComponentName("de.tobiasbielefeld.solitaire","de.tobiasbielefeld.solitaire.ui.manual.Manual");
 		intent.setComponent(cn);
 		startActivity(intent);
 		//null;;null;;null;;null;;

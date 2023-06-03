@@ -17,11 +17,15 @@ public class Activity_33 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.FilteredDeckOptions");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity");
 		intent.setComponent(cn);
-		intent.putExtra("did", 0);
+		intent.putExtra("multim.card.ed.extra.field.index", Integer.MAX_VALUE);
+		MySerializable multim_dot_card_dot_ed_dot_extra_dot_whole_dot_note = new MySerializable();
+		intent.putExtra("multim.card.ed.extra.whole.note", multim_dot_card_dot_ed_dot_extra_dot_whole_dot_note);
+		MySerializable multim_dot_card_dot_ed_dot_extra_dot_field = new MySerializable();
+		intent.putExtra("multim.card.ed.extra.field", multim_dot_card_dot_ed_dot_extra_dot_field);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->did->0,
+		//null;;null;;null;;null;;Serializable->multim.card.ed.extra.field->SerializableObj,Serializable->multim.card.ed.extra.whole.note->SerializableObj,int->multim.card.ed.extra.field.index->Integer.MAX_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

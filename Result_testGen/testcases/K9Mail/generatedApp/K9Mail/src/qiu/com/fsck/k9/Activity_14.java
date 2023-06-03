@@ -19,10 +19,11 @@ public class Activity_14 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupIncoming");
 		intent.setComponent(cn);
+		intent.setAction("android.intent.action.EDIT");
 		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("makeDefault", true);
+		intent.putExtra("makeDefault", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->makeDefault->true,String->account->999999999999999999999999999999999999999999999999999,
+		//android.intent.action.EDIT;;null;;null;;null;;boolean->makeDefault->false,String->account->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

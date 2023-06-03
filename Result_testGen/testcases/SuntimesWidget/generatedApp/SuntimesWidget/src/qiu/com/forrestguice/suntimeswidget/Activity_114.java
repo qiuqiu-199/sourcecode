@@ -17,12 +17,12 @@ public class Activity_114 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.MAIN");
-		intent.addCategory("android.intent.category.LAUNCHER");
+		intent.setAction("com.forrestguice.suntimeswidget.VIEW_SUN");
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//android.intent.action.MAIN;;android.intent.category.LAUNCHER;;null;;null;;
+		//com.forrestguice.suntimeswidget.VIEW_SUN;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

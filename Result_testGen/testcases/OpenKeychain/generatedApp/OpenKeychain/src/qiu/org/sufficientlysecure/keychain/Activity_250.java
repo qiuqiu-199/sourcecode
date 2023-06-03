@@ -17,20 +17,11 @@ public class Activity_250 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","com.journeyapps.barcodescanner.CaptureActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SettingsActivity");
 		intent.setComponent(cn);
-		intent.setAction("com.google.zxing.client.android.SCAN");
-		intent.putExtra("SCAN_MODE", "!@#$%^ds:+_");
-		intent.putExtra("SCAN_FORMATS", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("PROMPT_MESSAGE", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("BARCODE_IMAGE_ENABLED", false);
-		intent.putExtra("BEEP_ENABLED", true);
-		intent.putExtra("SCAN_ORIENTATION_LOCKED", true);
-		intent.putExtra("TIMEOUT", 0);
-		intent.putExtra("CHARACTER_SET", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("SCAN_CAMERA_ID", 0);
+		intent.putExtra(":android:show_fragment", "abcde");
 		startActivity(intent);
-		//com.google.zxing.client.android.SCAN;;null;;null;;null;;int->SCAN_CAMERA_ID->0,String->CHARACTER_SET->999999999999999999999999999999999999999999999999999,long->TIMEOUT->0,boolean->SCAN_ORIENTATION_LOCKED->true,boolean->BEEP_ENABLED->true,boolean->BARCODE_IMAGE_ENABLED->false,String->PROMPT_MESSAGE->999999999999999999999999999999999999999999999999999,String->SCAN_FORMATS->999999999999999999999999999999999999999999999999999,String->SCAN_MODE->!@#$%^ds:+_,
+		//null;;null;;null;;null;;String->:android:show_fragment->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

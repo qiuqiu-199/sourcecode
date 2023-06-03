@@ -17,13 +17,12 @@ public class Activity_103 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.cupcake.MainPrefs");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SENDTO");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("acc_id", 0);
+		intent.setAction("com.csipsimple.ui.action.PREFS_GLOBAL");
+		intent.addCategory("android.intent.category.DEFAULT");
 		startActivity(intent);
-		//android.intent.action.SENDTO;;null;;notEmpty;;null;;long->acc_id->0,
+		//com.csipsimple.ui.action.PREFS_GLOBAL;;android.intent.category.DEFAULT;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

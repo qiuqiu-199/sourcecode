@@ -17,15 +17,12 @@ public class Activity_52 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChooseContactActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShortcutActivity");
 		intent.setComponent(cn);
-		intent.putExtra("account", "!@#$%^ds:+_");
-		intent.putExtra("extra_title_res_id", 0);
-		intent.putExtra("extra_select_multiple", true);
-		intent.putExtra("extra_group_chat_name", "abcde");
-		intent.putExtra("extra_show_enter_jid", false);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->extra_show_enter_jid->false,String->extra_group_chat_name->abcde,boolean->extra_select_multiple->true,int->extra_title_res_id->0,String->account->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

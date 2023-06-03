@@ -19,10 +19,10 @@ public class Activity_78 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageList");
 		intent.setComponent(cn);
-		intent.putExtra("no_threading", false);
-		intent.putExtra("search_bytes", Byte.MIN_VALUE);
+		intent.setAction("android.intent.action.SEARCH");
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//null;;null;;null;;null;;byte[]->search_bytes->Byte.MIN_VALUE,boolean->no_threading->false,
+		//android.intent.action.SEARCH;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

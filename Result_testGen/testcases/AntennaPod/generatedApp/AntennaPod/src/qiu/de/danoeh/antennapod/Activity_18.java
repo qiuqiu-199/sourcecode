@@ -17,10 +17,11 @@ public class Activity_18 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.VideoplayerActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.FeedInfoActivity");
 		intent.setComponent(cn);
+		intent.putExtra("de.danoeh.antennapod.extra.feedId", Long.MAX_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;long->de.danoeh.antennapod.extra.feedId->Long.MAX_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,11 +17,14 @@ public class Activity_21 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.facebook.FacebookActivity");
+		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.MainActivity");
 		intent.setComponent(cn);
-		intent.setAction("FacebookDialogFragment");
+		intent.setAction("android.nfc.action.TECH_DISCOVERED");
+		intent.putExtra("url", "!@#$%^ds:+_");
+		Parcelable android_dot_nfc_dot_extra_dot_TAG = new MyParcelable();
+		intent.putExtra("android.nfc.extra.TAG", android_dot_nfc_dot_extra_dot_TAG);
 		startActivity(intent);
-		//FacebookDialogFragment;;null;;null;;null;;
+		//android.nfc.action.TECH_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,String->url->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

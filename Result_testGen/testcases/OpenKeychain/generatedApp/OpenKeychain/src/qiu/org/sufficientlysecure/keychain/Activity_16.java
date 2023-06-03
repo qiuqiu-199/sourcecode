@@ -17,10 +17,12 @@ public class Activity_16 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.RetryUploadDialogActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RequestKeyPermissionActivity");
 		intent.setComponent(cn);
+		intent.putExtra("requested_key_ids", 0);
+		intent.putExtra("package_name", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;String->package_name->!@#$%^ds:+_,long[]->requested_key_ids->0,
 	}
     /** Called when the activity is first created. */
     @Override

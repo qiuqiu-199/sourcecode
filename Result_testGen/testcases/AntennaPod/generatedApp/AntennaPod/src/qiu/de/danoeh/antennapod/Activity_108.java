@@ -17,15 +17,12 @@ public class Activity_108 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.OnlineFeedViewActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.AudioplayerActivity");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("title", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("arg.feedurl", "abcde");
-		intent.putExtra("android.intent.extra.TEXT", "999999999999999999999999999999999999999999999999999");
+		intent.setData(Uri.parse("mSheme:mAuthority/?"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;notEmpty;;null;;String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,String->arg.feedurl->abcde,String->title->999999999999999999999999999999999999999999999999999,
+		//android.intent.action.VIEW;;null;;mSheme:mAuthority/?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

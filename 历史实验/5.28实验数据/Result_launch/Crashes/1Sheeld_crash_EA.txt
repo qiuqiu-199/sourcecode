@@ -1,0 +1,97 @@
+BugInfo:
+hash:-1180255112
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.integreight.onesheeld/com.integreight.onesheeld.shields.controller.utils.NfcUtils}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.integreight.onesheeld.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.integreight.onesheeld.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at com.integreight.onesheeld.shields.controller.utils.NfcUtils.onCreate(NfcUtils.java:45)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+54	com.integreight.onesheeld.shields.controller.utils.NfcUtils	notEmpty;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,
+
+62	com.integreight.onesheeld.shields.controller.utils.NfcUtils	android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,
+
+63	com.integreight.onesheeld.shields.controller.utils.NfcUtils	android.nfc.action.NDEF_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,
+
+57	com.integreight.onesheeld.shields.controller.utils.NfcUtils	android.nfc.action.TECH_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-965427851
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.integreight.onesheeld/com.integreight.onesheeld.MainActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.integreight.onesheeld.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.integreight.onesheeld.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at android.content.Intent.getStringExtra(Intent.java:7445)
+	at com.integreight.onesheeld.MainActivity.handleNotificationWithUrlIntent(MainActivity.java:924)
+	at com.integreight.onesheeld.MainActivity.onCreate(MainActivity.java:102)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+12	com.integreight.onesheeld.MainActivity	android.nfc.action.NDEF_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,String->url->999999999999999999999999999999999999999999999999999,
+
+8	com.integreight.onesheeld.MainActivity	android.nfc.action.TECH_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,String->url->!@#$%^ds:+_,
+
+20	com.integreight.onesheeld.MainActivity	notEmpty;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,String->url->abcde,
+
+19	com.integreight.onesheeld.MainActivity	notEmpty;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,String->url->!@#$%^ds:+_,
+
+13	com.integreight.onesheeld.MainActivity	android.nfc.action.NDEF_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,String->url->abcde,
+
+15	com.integreight.onesheeld.MainActivity	android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,String->url->abcde,
+
+7	com.integreight.onesheeld.MainActivity	android.nfc.action.TECH_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,String->url->abcde,
+
+16	com.integreight.onesheeld.MainActivity	android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,String->url->!@#$%^ds:+_,
+
+------------------------------------------------------------------------
+

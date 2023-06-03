@@ -1,0 +1,86 @@
+BugInfo:
+hash:1604064517
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.activities.ShareActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.nutomic.syncthingandroid.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.nutomic.syncthingandroid.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.Bundle.getParcelable(Bundle.java:940)
+	at android.content.Intent.getParcelableExtra(Intent.java:7473)
+	at com.nutomic.syncthingandroid.activities.ShareActivity.onCreate(ShareActivity.java:123)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+11	com.nutomic.syncthingandroid.activities.ShareActivity	android.intent.action.SEND;;null;;null;;null;;boolean->com.nutomic.syncthing->true,Parcelable->android.intent.extra.STREAM->ParcelableObj,String->com.nutomic.syncthingandroid.activities.FolderPickerActivity.RESULT_DIRECTORY->abcde,
+
+13	com.nutomic.syncthingandroid.activities.ShareActivity	android.intent.action.SEND;;null;;null;;null;;boolean->com.nutomic.syncthing->true,Parcelable->android.intent.extra.STREAM->ParcelableObj,String->com.nutomic.syncthingandroid.activities.FolderPickerActivity.RESULT_DIRECTORY->999999999999999999999999999999999999999999999999999,
+
+14	com.nutomic.syncthingandroid.activities.ShareActivity	android.intent.action.SEND;;null;;null;;null;;boolean->com.nutomic.syncthing->false,Parcelable->android.intent.extra.STREAM->ParcelableObj,String->com.nutomic.syncthingandroid.activities.FolderPickerActivity.RESULT_DIRECTORY->999999999999999999999999999999999999999999999999999,
+
+12	com.nutomic.syncthingandroid.activities.ShareActivity	android.intent.action.SEND;;null;;null;;null;;boolean->com.nutomic.syncthing->false,Parcelable->android.intent.extra.STREAM->ParcelableObj,String->com.nutomic.syncthingandroid.activities.FolderPickerActivity.RESULT_DIRECTORY->abcde,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-2014509554
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.activities.ShareActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.nutomic.syncthingandroid.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.nutomic.syncthingandroid.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.Bundle.getParcelableArrayList(Bundle.java:986)
+	at android.content.Intent.getParcelableArrayListExtra(Intent.java:7502)
+	at com.nutomic.syncthingandroid.activities.ShareActivity.onCreate(ShareActivity.java:127)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+16	com.nutomic.syncthingandroid.activities.ShareActivity	android.intent.action.SEND_MULTIPLE;;null;;null;;null;;boolean->com.nutomic.syncthing->false,Parcelable->android.intent.extra.STREAM->ParcelableObj,String->com.nutomic.syncthingandroid.activities.FolderPickerActivity.RESULT_DIRECTORY->!@#$%^ds:+_,
+
+18	com.nutomic.syncthingandroid.activities.ShareActivity	android.intent.action.SEND_MULTIPLE;;null;;null;;null;;boolean->com.nutomic.syncthing->false,Parcelable->android.intent.extra.STREAM->ParcelableObj,String->com.nutomic.syncthingandroid.activities.FolderPickerActivity.RESULT_DIRECTORY->abcde,
+
+17	com.nutomic.syncthingandroid.activities.ShareActivity	android.intent.action.SEND_MULTIPLE;;null;;null;;null;;boolean->com.nutomic.syncthing->true,Parcelable->android.intent.extra.STREAM->ParcelableObj,String->com.nutomic.syncthingandroid.activities.FolderPickerActivity.RESULT_DIRECTORY->abcde,
+
+15	com.nutomic.syncthingandroid.activities.ShareActivity	android.intent.action.SEND_MULTIPLE;;null;;null;;null;;boolean->com.nutomic.syncthing->true,Parcelable->android.intent.extra.STREAM->ParcelableObj,String->com.nutomic.syncthingandroid.activities.FolderPickerActivity.RESULT_DIRECTORY->!@#$%^ds:+_,
+
+------------------------------------------------------------------------
+

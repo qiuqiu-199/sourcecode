@@ -1,0 +1,127 @@
+BugInfo:
+hash:1879216937
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{qiu.com.csipsimple/qiu.com.csipsimple.Activity_81}: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.csipsimple/com.csipsimple.ui.prefs.cupcake.MainPrefs}; have you declared this activity in your AndroidManifest.xml?
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.csipsimple/com.csipsimple.ui.prefs.cupcake.MainPrefs}; have you declared this activity in your AndroidManifest.xml?
+	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2005)
+	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1673)
+	at android.app.Activity.startActivityForResult(Activity.java:4587)
+	at android.app.Activity.startActivityForResult(Activity.java:4545)
+	at android.app.Activity.startActivity(Activity.java:4906)
+	at android.app.Activity.startActivity(Activity.java:4874)
+	at qiu.com.csipsimple.Activity_81.launch(Activity_81.java:23)
+	at qiu.com.csipsimple.Activity_81.onCreate(Activity_81.java:32)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+81	com.csipsimple.ui.prefs.cupcake.MainPrefs	com.csipsimple.ui.action.PREFS_GLOBAL;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:432964020
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.csipsimple/com.csipsimple.ui.outgoingcall.OutgoingCallChooser}: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+	at android.telephony.PhoneNumberUtils.getNumberFromIntent(PhoneNumberUtils.java:193)
+	at com.csipsimple.ui.outgoingcall.OutgoingCallChooser.getPhoneNumber(OutgoingCallChooser.java:85)
+	at com.csipsimple.ui.outgoingcall.OutgoingCallChooser.onCreate(OutgoingCallChooser.java:56)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+237	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.CALL_PRIVILEGED;;android.intent.category.DEFAULT;;sip;;null;;
+
+140	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.VIEW;;android.intent.category.DEFAULT;;sip;;null;;
+
+134	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.SENDTO;;android.intent.category.DEFAULT;;smsto;;null;;
+
+222	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	notEmpty;;null;;notEmpty;;null;;long->acc_id->Long.MAX_VALUE,
+
+229	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.phone.extra.NEW_CALL_INTENT;;android.intent.category.DEFAULT;;sip;;null;;
+
+155	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.SENDTO;;null;;notEmpty;;null;;
+
+104	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.SENDTO;;null;;notEmpty;;null;;long->acc_id->Long.MIN_VALUE,
+
+103	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.SENDTO;;null;;notEmpty;;null;;long->acc_id->0,
+
+162	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.CALL;;android.intent.category.DEFAULT;;sips;;null;;
+
+223	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	notEmpty;;null;;notEmpty;;null;;long->acc_id->0,
+
+135	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	notEmpty;;null;;notEmpty;;null;;
+
+177	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.VIEW;;android.intent.category.BROWSABLE;;imtosip;;null;;
+
+234	com.csipsimple.ui.outgoingcall.OutgoingCallChooser	android.intent.action.CALL_PRIVILEGED;;android.intent.category.DEFAULT;;tel;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1457529326
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{qiu.com.csipsimple/qiu.com.csipsimple.Activity_80}: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.csipsimple/com.csipsimple.ui.prefs.cupcake.MainPrefs}; have you declared this activity in your AndroidManifest.xml?
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.csipsimple/com.csipsimple.ui.prefs.cupcake.MainPrefs}; have you declared this activity in your AndroidManifest.xml?
+	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2005)
+	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1673)
+	at android.app.Activity.startActivityForResult(Activity.java:4587)
+	at android.app.Activity.startActivityForResult(Activity.java:4545)
+	at android.app.Activity.startActivity(Activity.java:4906)
+	at android.app.Activity.startActivity(Activity.java:4874)
+	at qiu.com.csipsimple.Activity_80.launch(Activity_80.java:24)
+	at qiu.com.csipsimple.Activity_80.onCreate(Activity_80.java:33)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+80	com.csipsimple.ui.prefs.cupcake.MainPrefs	com.csipsimple.ui.action.PREFS_GLOBAL;;android.intent.category.DEFAULT;;null;;null;;
+
+------------------------------------------------------------------------
+

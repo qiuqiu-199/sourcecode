@@ -17,12 +17,13 @@ public class Activity_216 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.EditKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		Parcelable save_keyring_parcel = new MyParcelable();
-		intent.putExtra("save_keyring_parcel", save_keyring_parcel);
+		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setType("*/*");
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->save_keyring_parcel->ParcelableObj,
+		//org.sufficientlysecure.keychain.action.IMPORT_KEY;;android.intent.category.DEFAULT;;null;;*/*;;
 	}
     /** Called when the activity is first created. */
     @Override

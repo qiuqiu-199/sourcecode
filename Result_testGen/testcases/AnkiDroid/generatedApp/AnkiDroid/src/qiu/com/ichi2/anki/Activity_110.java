@@ -21,9 +21,9 @@ public class Activity_110 extends Activity
 		intent.setComponent(cn);
 		intent.setAction("com.ichi2.anki.DO_SYNC");
 		intent.setData(Uri.parse("mSheme://mHost:mPort/.apkg"));
-		intent.setType("application/apkg");
+		intent.setType("?");
 		startActivity(intent);
-		//com.ichi2.anki.DO_SYNC;;null;;mSheme://mHost:mPort/.apkg;;application/apkg;;
+		//com.ichi2.anki.DO_SYNC;;null;;mSheme://mHost:mPort/.apkg;;?;;
 	}
     /** Called when the activity is first created. */
     @Override

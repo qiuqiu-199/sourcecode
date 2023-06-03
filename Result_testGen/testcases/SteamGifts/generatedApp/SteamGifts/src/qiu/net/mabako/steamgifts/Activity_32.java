@@ -17,12 +17,15 @@ public class Activity_32 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.UrlHandlingActivity");
+		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.DetailActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("https://www.steamgifts.com/giveaway/xxxxx/"));
+		MySerializable giveaway = new MySerializable();
+		intent.putExtra("giveaway", giveaway);
+		intent.putExtra("mark", false);
+		MySerializable comment = new MySerializable();
+		intent.putExtra("comment", comment);
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;https://www.steamgifts.com/giveaway/xxxxx/;;null;;
+		//null;;null;;null;;null;;Serializable->comment->SerializableObj,boolean->mark->false,Serializable->giveaway->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

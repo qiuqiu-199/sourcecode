@@ -17,17 +17,20 @@ public class Activity_311 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SecurityTokenOperationActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","com.journeyapps.barcodescanner.CaptureActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.TAG_DISCOVERED");
-		Parcelable crypto_input = new MyParcelable();
-		intent.putExtra("crypto_input", crypto_input);
-		Parcelable required_input = new MyParcelable();
-		intent.putExtra("required_input", required_input);
-		Parcelable result_data = new MyParcelable();
-		intent.putExtra("result_data", result_data);
+		intent.setAction("com.google.zxing.client.android.SCAN");
+		intent.putExtra("SCAN_MODE", "abcde");
+		intent.putExtra("SCAN_FORMATS", "!@#$%^ds:+_");
+		intent.putExtra("PROMPT_MESSAGE", "abcde");
+		intent.putExtra("BARCODE_IMAGE_ENABLED", true);
+		intent.putExtra("BEEP_ENABLED", false);
+		intent.putExtra("SCAN_ORIENTATION_LOCKED", false);
+		intent.putExtra("TIMEOUT", 0);
+		intent.putExtra("CHARACTER_SET", "abcde");
+		intent.putExtra("SCAN_CAMERA_ID", Integer.MAX_VALUE);
 		startActivity(intent);
-		//android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;Parcelable->result_data->ParcelableObj,Parcelable->required_input->ParcelableObj,Parcelable->crypto_input->ParcelableObj,
+		//com.google.zxing.client.android.SCAN;;null;;null;;null;;int->SCAN_CAMERA_ID->Integer.MAX_VALUE,String->CHARACTER_SET->abcde,long->TIMEOUT->0,boolean->SCAN_ORIENTATION_LOCKED->false,boolean->BEEP_ENABLED->false,boolean->BARCODE_IMAGE_ENABLED->true,String->PROMPT_MESSAGE->abcde,String->SCAN_FORMATS->!@#$%^ds:+_,String->SCAN_MODE->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

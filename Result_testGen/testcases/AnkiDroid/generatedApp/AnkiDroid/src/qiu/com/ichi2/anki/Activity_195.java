@@ -17,12 +17,12 @@ public class Activity_195 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.Previewer");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.StudyOptionsActivity");
 		intent.setComponent(cn);
-		intent.putExtra("index", 0);
-		intent.putExtra("cardList", 0);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;long[]->cardList->0,int->index->0,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

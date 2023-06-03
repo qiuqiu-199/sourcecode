@@ -1,0 +1,217 @@
+--------- beginning of system
+--------- beginning of main
+05-30 11:34:03.355 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesApplication;---><init>()V
+05-30 11:34:03.355 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/calculator/CalculatorProvider;---><clinit>()V
+05-30 11:34:03.355 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/calculator/CalculatorProvider;---><init>()V
+05-30 11:34:03.355 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/calculator/CalculatorProvider;--->onCreate()Z
+05-30 11:34:03.357 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesApplication;--->onCreate()V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;---><init>()V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$2;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$3;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$4;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$5;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$6;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$8;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$9;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$10;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$AlarmClockListTask$AlarmClockListTaskListener;---><init>()V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$11;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockAdapter$AlarmClockAdapterListener;---><init>()V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$12;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/AlarmDatabaseAdapter$AlarmUpdateTask$AlarmClockUpdateTaskListener;---><init>()V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$13;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/LocationConfigDialog$LocationConfigDialogListener;---><init>()V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$14;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.364 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$15;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$16;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$17;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity$18;---><init>(Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;)V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;--->attachBaseContext(Landroid/content/Context;)V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleInfo;---><init>()V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;---><clinit>()V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;---><clinit>()V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$DateTapAction;---><clinit>()V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$DateTapAction;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$DateTapAction;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$ClockTapAction;---><clinit>()V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$ClockTapAction;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$ClockTapAction;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetTimezones$TimeZoneSort;---><clinit>()V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetTimezones$TimeZoneSort;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetTimezones$TimeZoneSort;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->initLocale(Landroid/content/Context;Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleInfo;)Landroid/content/Context;
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->loadLocaleModePref(Landroid/content/Context;)Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;
+05-30 11:34:03.365 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->loadLocaleModePref(Landroid/content/SharedPreferences;)Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;
+05-30 11:34:03.366 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;--->valueOf(Ljava/lang/String;)Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;
+05-30 11:34:03.366 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;--->values()[Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;
+05-30 11:34:03.366 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->resetLocale(Landroid/content/Context;)Landroid/content/Context;
+05-30 11:34:03.369 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;--->onCreate(Landroid/os/Bundle;)V
+05-30 11:34:03.369 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;--->initTheme()V
+05-30 11:34:03.369 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->loadThemePref(Landroid/content/Context;)Ljava/lang/String;
+05-30 11:34:03.369 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->themePrefToStyleId(Landroid/content/Context;Ljava/lang/String;Lcom/forrestguice/suntimeswidget/calculator/SuntimesRiseSetData;)I
+05-30 11:34:03.370 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->getThemeOverride(Landroid/content/Context;I)Ljava/lang/String;
+05-30 11:34:03.370 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->loadThemeDarkPref(Landroid/content/Context;)Ljava/lang/String;
+05-30 11:34:03.371 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;--->initLocale(Landroid/content/Context;)V
+05-30 11:34:03.371 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings;---><clinit>()V
+05-30 11:34:03.371 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSun1x1;---><clinit>()V
+05-30 11:34:03.371 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSun1x1;---><init>(Ljava/lang/String;ILjava/lang/String;I)V
+05-30 11:34:03.371 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSun1x1;---><init>(Ljava/lang/String;ILjava/lang/String;I)V
+05-30 11:34:03.371 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSunPos1x1;---><clinit>()V
+05-30 11:34:03.371 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSunPos1x1;---><init>(Ljava/lang/String;ILjava/lang/String;I)V
+05-30 11:34:03.371 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSunPos1x1;---><init>(Ljava/lang/String;ILjava/lang/String;I)V
+05-30 11:34:03.371 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeMoon1x1;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeMoon1x1;---><init>(Ljava/lang/String;ILjava/lang/String;I)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeMoon1x1;---><init>(Ljava/lang/String;ILjava/lang/String;I)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$RiseSetOrder;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$RiseSetOrder;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$RiseSetOrder;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeMode;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeMode;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeMode;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolsticeEquinoxMode;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolsticeEquinoxMode;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolsticeEquinoxMode;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$MoonPhaseMode;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$MoonPhaseMode;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$MoonPhaseMode;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SolarEvents;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SolarEvents;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;IIZ)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SolarEvents;---><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;IIZ)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TrackingMode;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TrackingMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TrackingMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$CompareMode;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$CompareMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$CompareMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$ActionMode;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$ActionMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$ActionMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LocationMode;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LocationMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LocationMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimezoneMode;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimezoneMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimezoneMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolarTimeMode;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolarTimeMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolarTimeMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$DateMode;---><clinit>()V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$DateMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$DateMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings;--->initDefaults(Landroid/content/Context;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings;--->getLengthUnit(Ljava/lang/String;)Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;--->valueOf(Ljava/lang/String;)Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;--->values()[Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LengthUnit;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$ActionMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$ActionMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$ActionMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSun1x1;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSun1x1;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSun1x1;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSunPos1x1;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSunPos1x1;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeSunPos1x1;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeMoon1x1;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeMoon1x1;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$WidgetModeMoon1x1;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TrackingMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TrackingMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TrackingMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$CompareMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$CompareMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$CompareMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeMode;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeMode;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$MoonPhaseMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$MoonPhaseMode;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$MoonPhaseMode;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolsticeEquinoxMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.372 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolsticeEquinoxMode;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolsticeEquinoxMode;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LocationMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LocationMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$LocationMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimezoneMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimezoneMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimezoneMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolarTimeMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolarTimeMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$SolarTimeMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$DateMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$DateMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$DateMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$RiseSetOrder;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$RiseSetOrder;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$RiseSetOrder;--->setDisplayString(Ljava/lang/String;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils;---><clinit>()V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings;--->loadTimeFormatModePref(Landroid/content/Context;I)Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;--->valueOf(Ljava/lang/String;)Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;
+05-30 11:34:03.373 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;--->values()[Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;
+05-30 11:34:03.375 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;---><clinit>()V
+05-30 11:34:03.375 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;---><init>(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;D)V
+05-30 11:34:03.376 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;---><init>(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;D)V
+05-30 11:34:03.376 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.376 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;--->values()[Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;
+05-30 11:34:03.376 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.376 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.376 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SolarEvents;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.376 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SolarEvents;--->values()[Lcom/forrestguice/suntimeswidget/settings/SolarEvents;
+05-30 11:34:03.376 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SolarEvents;--->setDisplayString(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.376 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/SolarEvents;--->setDisplayString(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.394 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/alarmclock/ui/AlarmClockActivity;--->initViews(Landroid/content/Context;)V
+05-30 11:34:03.394 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.394 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings;--->loadTimeFormatModePref(Landroid/content/Context;I)Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;
+05-30 11:34:03.394 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;--->valueOf(Ljava/lang/String;)Lcom/forrestguice/suntimeswidget/settings/WidgetSettings$TimeFormatMode;
+05-30 11:34:03.396 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;--->initDisplayStrings(Landroid/content/Context;)V
+05-30 11:34:03.396 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;--->values()[Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;
+05-30 11:34:03.396 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+05-30 11:34:03.396 32268 32268 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesUtils$CardinalDirection;--->setDisplayStrings(Ljava/lang/String;Ljava/lang/String;)V
+--------- beginning of crash
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: FATAL EXCEPTION: main
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: Process: com.forrestguice.suntimeswidget, PID: 32268
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.forrestguice.suntimeswidget/com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.forrestguice.suntimeswidget.MyParcelable
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.forrestguice.suntimeswidget.MyParcelable
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity.initViews(AlarmClockActivity.java:444)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity.onCreate(AlarmClockActivity.java:153)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+05-30 11:34:03.401 32268 32268 E AndroidRuntime: 	... 11 more

@@ -19,14 +19,12 @@ public class Activity_189 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		intent.setAction("eu.siacs.conversations.location.show, android.intent.action.VIEW");
-		intent.setData(Uri.parse("https://maps.google.com/maps?q=loc:,, geo:,?q=,()"));
-		intent.putExtra("longitude", Double.MAX_VALUE);
-		intent.putExtra("name", "abcde");
-		intent.putExtra("jid", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("latitude", Double.MAX_VALUE);
+		intent.setAction("eu.siacs.conversations.action.VIEW");
+		intent.putExtra("as_quote", true);
+		intent.putExtra("conversationUuid", "abcde");
+		intent.putExtra("android.intent.extra.TEXT", "abcde");
 		startActivity(intent);
-		//eu.siacs.conversations.location.show, android.intent.action.VIEW;;null;;https://maps.google.com/maps?q=loc:,, geo:,?q=,();;null;;double->latitude->Double.MAX_VALUE,String->jid->999999999999999999999999999999999999999999999999999,String->name->abcde,double->longitude->Double.MAX_VALUE,
+		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->abcde,String->conversationUuid->abcde,boolean->as_quote->true,
 	}
     /** Called when the activity is first created. */
     @Override

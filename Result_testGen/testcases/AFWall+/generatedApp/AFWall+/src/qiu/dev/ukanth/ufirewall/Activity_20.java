@@ -17,10 +17,11 @@ public class Activity_20 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.widget.ToggleWidgetActivity");
+		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.activity.LogActivity");
 		intent.setComponent(cn);
+		intent.putExtra("validate", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;String->validate->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,13 +17,21 @@ public class Activity_315 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.EditAccountActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		intent.putExtra("force_register", false);
-		intent.putExtra("jid", "!@#$%^ds:+_");
-		intent.putExtra("init", false);
+		intent.setAction("?");
+		Parcelable error = new MyParcelable();
+		intent.putExtra("error", error);
+		Parcelable metadata = new MyParcelable();
+		intent.putExtra("metadata", metadata);
+		Parcelable intent1 = new MyParcelable();
+		intent.putExtra("intent", intent);
+		intent.putExtra("result_code", Integer.MIN_VALUE);
+		intent.putExtra("conversationUuid", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("eu.siacs.conversations.invite_uri", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("sign_key_id", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->init->false,String->jid->!@#$%^ds:+_,boolean->force_register->false,
+		//?;;null;;null;;null;;long->sign_key_id->0,String->eu.siacs.conversations.invite_uri->999999999999999999999999999999999999999999999999999,String->conversationUuid->999999999999999999999999999999999999999999999999999,int->result_code->Integer.MIN_VALUE,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,Parcelable->error->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

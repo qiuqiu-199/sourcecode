@@ -17,11 +17,11 @@ public class Activity_251 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","com.journeyapps.barcodescanner.CaptureActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SettingsActivity");
 		intent.setComponent(cn);
-		intent.setAction("com.google.zxing.client.android.SCAN");
+		intent.putExtra(":android:show_fragment", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//com.google.zxing.client.android.SCAN;;null;;null;;null;;
+		//null;;null;;null;;null;;String->:android:show_fragment->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

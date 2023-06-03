@@ -17,12 +17,15 @@ public class Activity_360 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.GroupingActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteDeduplicateActivity");
 		intent.setComponent(cn);
-		intent.putExtra("NumUsers", Integer.MIN_VALUE);
-		intent.putExtra("UserId", 0);
+		intent.putExtra("package_name", "abcde");
+		Parcelable data = new MyParcelable();
+		intent.putExtra("data", data);
+		MySerializable duplicate_emails = new MySerializable();
+		intent.putExtra("duplicate_emails", duplicate_emails);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->UserId->0,int->NumUsers->Integer.MIN_VALUE,
+		//null;;null;;null;;null;;Serializable->duplicate_emails->SerializableObj,Parcelable->data->ParcelableObj,String->package_name->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

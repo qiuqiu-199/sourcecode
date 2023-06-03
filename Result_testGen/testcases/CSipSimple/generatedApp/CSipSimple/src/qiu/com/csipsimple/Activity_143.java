@@ -17,13 +17,10 @@ public class Activity_143 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.messages.MessageActivity");
 		intent.setComponent(cn);
-		intent.setAction("notEmpty");
-		intent.setData(Uri.parse("notEmpty://mHost:mPort/mPath"));
-		intent.putExtra("acc_id", Long.MIN_VALUE);
 		startActivity(intent);
-		//notEmpty;;null;;notEmpty://mHost:mPort/mPath;;null;;long->acc_id->Long.MIN_VALUE,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

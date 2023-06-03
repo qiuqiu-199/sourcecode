@@ -17,13 +17,10 @@ public class Activity_26 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.MainActivity");
+		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.widget.ToggleWidgetActivity");
 		intent.setComponent(cn);
-		intent.setAction("notEmpty");
-		intent.putExtra("dev.ukanth.ufirewall.intent.extra.SCRIPT2", "abcde");
-		intent.putExtra("dev.ukanth.ufirewall.intent.extra.SCRIPT", "!@#$%^ds:+_");
 		startActivity(intent);
-		//notEmpty;;null;;null;;null;;String->dev.ukanth.ufirewall.intent.extra.SCRIPT->!@#$%^ds:+_,String->dev.ukanth.ufirewall.intent.extra.SCRIPT2->abcde,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

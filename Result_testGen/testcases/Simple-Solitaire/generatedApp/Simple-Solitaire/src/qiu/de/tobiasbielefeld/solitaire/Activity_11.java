@@ -17,11 +17,12 @@ public class Activity_11 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.tobiasbielefeld.solitaire","de.tobiasbielefeld.solitaire.ui.GameManager");
+		ComponentName cn=new ComponentName("de.tobiasbielefeld.solitaire","de.tobiasbielefeld.solitaire.ui.GameSelector");
 		intent.setComponent(cn);
-		intent.putExtra("game", Integer.MAX_VALUE);
+		intent.setAction("android.intent.action.MAIN");
+		intent.addCategory("android.intent.category.LAUNCHER");
 		startActivity(intent);
-		//null;;null;;null;;null;;int->game->Integer.MAX_VALUE,
+		//android.intent.action.MAIN;;android.intent.category.LAUNCHER;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

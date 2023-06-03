@@ -19,9 +19,10 @@ public class Activity_44 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.pinlock.PinLockActivity");
 		intent.setComponent(cn);
-		intent.setAction("PinLockActivity.action.new_pin");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//PinLockActivity.action.new_pin;;null;;null;;null;;
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

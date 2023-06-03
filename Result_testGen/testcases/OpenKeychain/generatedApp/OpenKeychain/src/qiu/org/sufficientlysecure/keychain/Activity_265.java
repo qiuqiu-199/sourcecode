@@ -17,15 +17,12 @@ public class Activity_265 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DisplayTextActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.EditKeyActivity");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("notEmpty"));
-		Parcelable result = new MyParcelable();
-		intent.putExtra("result", result);
-		Parcelable metadata = new MyParcelable();
-		intent.putExtra("metadata", metadata);
+		Parcelable save_keyring_parcel = new MyParcelable();
+		intent.putExtra("save_keyring_parcel", save_keyring_parcel);
 		startActivity(intent);
-		//null;;null;;notEmpty;;null;;Parcelable->metadata->ParcelableObj,Parcelable->result->ParcelableObj,
+		//null;;null;;null;;null;;Parcelable->save_keyring_parcel->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

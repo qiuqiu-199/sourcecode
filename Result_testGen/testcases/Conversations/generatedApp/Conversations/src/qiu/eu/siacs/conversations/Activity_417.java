@@ -17,16 +17,12 @@ public class Activity_417 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.UriHandlerActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.SettingsActivity");
 		intent.setComponent(cn);
-		intent.setAction("eu.siacs.conversations.location.show, android.intent.action.VIEW");
-		intent.setData(Uri.parse("https://maps.google.com/maps?q=loc:,, geo:,?q=,()"));
-		intent.putExtra("longitude", Double.MAX_VALUE);
-		intent.putExtra("name", "!@#$%^ds:+_");
-		intent.putExtra("jid", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("latitude", 0.0);
+		intent.setAction("android.intent.action.VIEW");
+		intent.putExtra("page", "!@#$%^ds:+_");
 		startActivity(intent);
-		//eu.siacs.conversations.location.show, android.intent.action.VIEW;;null;;https://maps.google.com/maps?q=loc:,, geo:,?q=,();;null;;double->latitude->0.0,String->jid->999999999999999999999999999999999999999999999999999,String->name->!@#$%^ds:+_,double->longitude->Double.MAX_VALUE,
+		//android.intent.action.VIEW;;null;;null;;null;;String->page->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

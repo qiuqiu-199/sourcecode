@@ -17,11 +17,14 @@ public class Activity_43 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.QrCodeCaptureActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CertifyKeyActivity");
 		intent.setComponent(cn);
-		intent.setAction("com.google.zxing.client.android.SCAN");
+		intent.putExtra("certify_key_id", Long.MIN_VALUE);
+		intent.putExtra("extra_key_ids", Long.MAX_VALUE);
+		Parcelable operation_result = new MyParcelable();
+		intent.putExtra("operation_result", operation_result);
 		startActivity(intent);
-		//com.google.zxing.client.android.SCAN;;null;;null;;null;;
+		//null;;null;;null;;null;;Parcelable->operation_result->ParcelableObj,long[]->extra_key_ids->Long.MAX_VALUE,long->certify_key_id->Long.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

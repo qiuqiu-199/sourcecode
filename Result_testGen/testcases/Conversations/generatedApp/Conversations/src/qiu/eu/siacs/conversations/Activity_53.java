@@ -17,15 +17,11 @@ public class Activity_53 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChooseContactActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShortcutActivity");
 		intent.setComponent(cn);
-		intent.putExtra("account", "abcde");
-		intent.putExtra("extra_title_res_id", 0);
-		intent.putExtra("extra_select_multiple", true);
-		intent.putExtra("extra_group_chat_name", "abcde");
-		intent.putExtra("extra_show_enter_jid", false);
+		intent.setAction("android.intent.action.CREATE_SHORTCUT");
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->extra_show_enter_jid->false,String->extra_group_chat_name->abcde,boolean->extra_select_multiple->true,int->extra_title_res_id->0,String->account->abcde,
+		//android.intent.action.CREATE_SHORTCUT;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

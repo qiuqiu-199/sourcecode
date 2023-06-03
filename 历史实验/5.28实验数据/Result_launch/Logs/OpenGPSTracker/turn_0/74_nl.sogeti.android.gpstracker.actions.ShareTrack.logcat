@@ -1,0 +1,44 @@
+--------- beginning of main
+--------- beginning of system
+05-29 19:16:30.645 20174 20174 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><clinit>()V
+05-29 19:16:30.645 20174 20174 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><init>()V
+05-29 19:16:30.645 20174 20174 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;--->onCreate()Z
+05-29 19:16:30.645 20174 20174 D M_InsDal: Lnl/sogeti/android/gpstracker/db/DatabaseHelper;---><init>(Landroid/content/Context;)V
+05-29 19:16:30.654 20174 20174 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/ShareTrack;---><init>()V
+05-29 19:16:30.655 20174 20174 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/ShareTrack$1;---><init>(Lnl/sogeti/android/gpstracker/actions/ShareTrack;)V
+05-29 19:16:30.655 20174 20174 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/ShareTrack$2;---><init>(Lnl/sogeti/android/gpstracker/actions/ShareTrack;)V
+05-29 19:16:30.656 20174 20174 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/ShareTrack;--->onCreate(Landroid/os/Bundle;)V
+05-29 19:16:30.667 20174 20174 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/ShareTrack$3;---><init>(Lnl/sogeti/android/gpstracker/actions/ShareTrack;)V
+05-29 19:16:30.667 20174 20174 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/ShareTrack$4;---><init>(Lnl/sogeti/android/gpstracker/actions/ShareTrack;)V
+05-29 19:16:30.668 20174 20174 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/ShareTrack;--->adjustTargetToType(I)V
+05-29 19:16:30.668 20174 20174 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/ShareTrack;--->setKmzExportTargets()V
+05-29 19:16:30.668 20174 20174 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/ShareTrack;--->removeScreenBitmap()V
+05-29 19:16:30.668 20174 20174 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/ShareTrack;--->queryForTrackName(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/lang/String;
+--------- beginning of crash
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: FATAL EXCEPTION: main
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: Process: nl.sogeti.android.gpstracker, PID: 20174
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{nl.sogeti.android.gpstracker/nl.sogeti.android.gpstracker.actions.ShareTrack}: java.lang.NullPointerException: uri
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: Caused by: java.lang.NullPointerException: uri
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at com.android.internal.util.Preconditions.checkNotNull(Preconditions.java:128)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:786)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:753)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:711)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at nl.sogeti.android.gpstracker.actions.ShareTrack.queryForTrackName(ShareTrack.java:617)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at nl.sogeti.android.gpstracker.actions.ShareTrack.onCreate(ShareTrack.java:206)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+05-29 19:16:30.668 20174 20174 E AndroidRuntime: 	... 11 more

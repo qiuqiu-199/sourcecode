@@ -17,12 +17,16 @@ public class Activity_297 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.StartConversationActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
+		intent.setAction("eu.siacs.conversations.location.show, android.intent.action.VIEW");
+		intent.setData(Uri.parse("https://maps.google.com/maps?q=loc:,, geo:,?q=,()"));
+		intent.putExtra("longitude", 0.0);
+		intent.putExtra("name", "abcde");
+		intent.putExtra("jid", "abcde");
+		intent.putExtra("latitude", Double.MAX_VALUE);
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;null;;null;;String->account->999999999999999999999999999999999999999999999999999,
+		//eu.siacs.conversations.location.show, android.intent.action.VIEW;;null;;https://maps.google.com/maps?q=loc:,, geo:,?q=,();;null;;double->latitude->Double.MAX_VALUE,String->jid->abcde,String->name->abcde,double->longitude->0.0,
 	}
     /** Called when the activity is first created. */
     @Override

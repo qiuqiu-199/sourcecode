@@ -19,12 +19,10 @@ public class Activity_23 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ContactDetailsActivity");
 		intent.setComponent(cn);
-		intent.setAction("view_contact");
-		intent.putExtra("account", "!@#$%^ds:+_");
-		intent.putExtra("fingerprint", "!@#$%^ds:+_");
-		intent.putExtra("contact", "abcde");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//view_contact;;null;;null;;null;;String->contact->abcde,String->fingerprint->!@#$%^ds:+_,String->account->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -1,0 +1,26 @@
+--------- beginning of main
+--------- beginning of system
+05-28 23:44:30.261 11382 11382 D M_InsDal: Lde/danoeh/antennapod/PodcastApp;--->onCreate()V
+05-28 23:44:30.296 11382 11382 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onCreate(Landroid/os/Bundle;)V
+05-28 23:44:30.311 11382 11382 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onCreate(Landroid/os/Bundle;)V
+05-28 23:44:30.311 11382 11382 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+05-28 23:44:30.315 11382 11382 D M_InsDal: Lde/danoeh/antennapod/fragment/ExternalPlayerFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+05-28 23:44:30.319 11382 11382 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onStart()V
+05-28 23:44:30.319 11382 11382 D M_InsDal: Lde/danoeh/antennapod/activity/MainActivity;--->onStart()V
+05-28 23:44:30.319 11382 11382 D M_InsDal: Lde/danoeh/antennapod/core/feed/EventDistributor;--->addObserver(Ljava/util/Observer;)V
+05-28 23:44:30.321 11382 11382 D M_InsDal: Lde/danoeh/antennapod/activity/MainActivity;--->onPostCreate(Landroid/os/Bundle;)V
+05-28 23:44:30.322 11382 11382 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onResume()V
+05-28 23:44:30.322 11382 11382 D M_InsDal: Lde/danoeh/antennapod/activity/MainActivity;--->onResume()V
+05-28 23:44:30.325 11382 11382 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onResume()V
+05-28 23:44:30.325 11382 11382 D M_InsDal: Lde/danoeh/antennapod/core/feed/EventDistributor;--->addObserver(Ljava/util/Observer;)V
+05-28 23:44:30.325 11382 11382 D M_InsDal: Lde/danoeh/antennapod/fragment/ExternalPlayerFragment;--->onResume()V
+05-28 23:44:30.326 11382 11382 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onCreate(Landroid/os/Bundle;)V
+05-28 23:44:30.326 11382 11382 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onPause()V
+05-28 23:44:30.328 11382 11382 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onDestroyView()V
+05-28 23:44:30.328 11382 11382 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+05-28 23:44:30.330 11382 11382 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onStart()V
+05-28 23:44:30.330 11382 11382 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onResume()V
+05-28 23:44:30.330 11382 11382 D M_InsDal: Lde/danoeh/antennapod/core/feed/EventDistributor;--->addObserver(Ljava/util/Observer;)V
+05-28 23:44:31.360 11382 11382 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onCreateOptionsMenu(Landroid/view/Menu;)Z
+05-28 23:44:31.360 11382 11382 D M_InsDal: Lde/danoeh/antennapod/activity/MainActivity;--->onCreateOptionsMenu(Landroid/view/Menu;)Z
+05-28 23:44:31.367 11382 11382 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onPrepareOptionsMenu(Landroid/view/Menu;)Z

@@ -17,12 +17,13 @@ public class Activity_25 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.filters.EditFilter");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.wizards.BasePrefsWizard");
 		intent.setComponent(cn);
-		intent.putExtra("account", 0);
-		intent.putExtra("android.intent.extra.UID", 0);
+		intent.putExtra("ID", "abcde");
+		intent.putExtra("wizard", "!@#$%^ds:+_");
+		intent.putExtra("id", Long.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->android.intent.extra.UID->0,long->account->0,
+		//null;;null;;null;;null;;long->id->Long.MIN_VALUE,String->wizard->!@#$%^ds:+_,String->ID->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

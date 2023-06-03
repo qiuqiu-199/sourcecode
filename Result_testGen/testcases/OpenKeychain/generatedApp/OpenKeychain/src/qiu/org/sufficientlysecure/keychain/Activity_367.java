@@ -17,12 +17,12 @@ public class Activity_367 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CreateKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SecurityTokenChangePinOperationActivity");
 		intent.setComponent(cn);
-		intent.putExtra("email", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("name", "999999999999999999999999999999999999999999999999999");
+		Parcelable change_pin_parcel = new MyParcelable();
+		intent.putExtra("change_pin_parcel", change_pin_parcel);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->name->999999999999999999999999999999999999999999999999999,String->email->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Parcelable->change_pin_parcel->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

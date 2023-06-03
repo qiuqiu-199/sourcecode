@@ -17,14 +17,12 @@ public class Activity_200 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteRegisterActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		intent.putExtra("package_name", "999999999999999999999999999999999999999999999999999");
-		Parcelable data = new MyParcelable();
-		intent.putExtra("data", data);
-		intent.putExtra("package_signature", Byte.MIN_VALUE);
+		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_FILE_AND_RETURN");
+		intent.setData(Uri.parse("?:?//.well-known/openpgpkey/hu/"));
 		startActivity(intent);
-		//null;;null;;null;;null;;byte[]->package_signature->Byte.MIN_VALUE,Parcelable->data->ParcelableObj,String->package_name->999999999999999999999999999999999999999999999999999,
+		//org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_FILE_AND_RETURN;;null;;?:?//.well-known/openpgpkey/hu/;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

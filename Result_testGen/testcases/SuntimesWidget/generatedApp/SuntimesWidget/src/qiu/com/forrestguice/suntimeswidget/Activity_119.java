@@ -17,14 +17,12 @@ public class Activity_119 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SET_ALARM");
-		intent.putExtra("android.intent.extra.alarm.MINUTES", Integer.MAX_VALUE);
-		intent.putExtra("android.intent.extra.alarm.HOUR", Integer.MIN_VALUE);
-		intent.putExtra("solarevent", "!@#$%^ds:+_");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//android.intent.action.SET_ALARM;;null;;null;;null;;String->solarevent->!@#$%^ds:+_,int->android.intent.extra.alarm.HOUR->Integer.MIN_VALUE,int->android.intent.extra.alarm.MINUTES->Integer.MAX_VALUE,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

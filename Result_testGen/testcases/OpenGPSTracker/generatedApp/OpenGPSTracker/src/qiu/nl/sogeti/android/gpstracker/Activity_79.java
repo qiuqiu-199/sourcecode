@@ -17,17 +17,12 @@ public class Activity_79 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.oauth.PrepareRequestTokenActivity");
+		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.viewer.TrackList");
 		intent.setComponent(cn);
-		intent.putExtra("CONSUMER_SECRET", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("ACCESS_URL", "abcde");
-		intent.putExtra("AUTHORIZE_URL", "abcde");
-		intent.putExtra("OAUTH_TOKEN", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("REQUEST_URL", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("OAUTH_TOKEN_SECRET", "abcde");
-		intent.putExtra("CONSUMER_KEY", "999999999999999999999999999999999999999999999999999");
+		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//null;;null;;null;;null;;String->CONSUMER_KEY->999999999999999999999999999999999999999999999999999,String->OAUTH_TOKEN_SECRET->abcde,String->REQUEST_URL->999999999999999999999999999999999999999999999999999,String->OAUTH_TOKEN->999999999999999999999999999999999999999999999999999,String->AUTHORIZE_URL->abcde,String->ACCESS_URL->abcde,String->CONSUMER_SECRET->999999999999999999999999999999999999999999999999999,
+		//android.intent.action.VIEW;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,13 +17,12 @@ public class Activity_124 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.WelcomeMessage");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND_MULTIPLE");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("*/*");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//android.intent.action.SEND_MULTIPLE;;android.intent.category.DEFAULT;;null;;*/*;;
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

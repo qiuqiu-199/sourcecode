@@ -17,11 +17,13 @@ public class Activity_91 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.UsbEventReceiverActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.hardware.usb.action.USB_DEVICE_ATTACHED");
+		intent.setAction("android.intent.action.SEND_MULTIPLE");
+		intent.setData(Uri.parse("mSheme://com.android.email.attachmentprovider:mPort/mPath"));
+		intent.setType("application/autocrypt-setup");
 		startActivity(intent);
-		//android.hardware.usb.action.USB_DEVICE_ATTACHED;;null;;null;;null;;
+		//android.intent.action.SEND_MULTIPLE;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,14 +17,11 @@ public class Activity_310 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SecurityTokenOperationActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","com.journeyapps.barcodescanner.CaptureActivity");
 		intent.setComponent(cn);
-		Parcelable crypto_input = new MyParcelable();
-		intent.putExtra("crypto_input", crypto_input);
-		Parcelable required_input = new MyParcelable();
-		intent.putExtra("required_input", required_input);
+		intent.setAction("com.google.zxing.client.android.SCAN");
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->required_input->ParcelableObj,Parcelable->crypto_input->ParcelableObj,
+		//com.google.zxing.client.android.SCAN;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

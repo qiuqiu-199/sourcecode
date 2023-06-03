@@ -19,9 +19,25 @@ public class Activity_19 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.DetailActivity");
 		intent.setComponent(cn);
-		intent.putExtra("user", "999999999999999999999999999999999999999999999999999");
+		MySerializable giveaway = new MySerializable();
+		intent.putExtra("giveaway", giveaway);
+		MySerializable discussion = new MySerializable();
+		intent.putExtra("discussion", discussion);
+		MySerializable notifications = new MySerializable();
+		intent.putExtra("notifications", notifications);
+		MySerializable whitelist = new MySerializable();
+		intent.putExtra("whitelist", whitelist);
+		intent.putExtra("user", "abcde");
+		MySerializable uuid = new MySerializable();
+		intent.putExtra("uuid", uuid);
+		MySerializable edited = new MySerializable();
+		intent.putExtra("edited", edited);
+		intent.putExtra("close", "abcde");
+		MySerializable comment = new MySerializable();
+		intent.putExtra("comment", comment);
+		intent.putExtra("entered", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->user->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;boolean->entered->false,Serializable->comment->SerializableObj,String->close->abcde,Serializable->edited->SerializableObj,Serializable->uuid->SerializableObj,String->user->abcde,Serializable->whitelist->SerializableObj,Serializable->notifications->SerializableObj,Serializable->discussion->SerializableObj,Serializable->giveaway->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

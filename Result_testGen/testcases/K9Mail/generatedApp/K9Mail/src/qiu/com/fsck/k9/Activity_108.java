@@ -17,14 +17,13 @@ public class Activity_108 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupCheckSettings");
 		intent.setComponent(cn);
-		intent.setAction("com.fsck.k9.intent.action.REPLY_ALL");
-		intent.putExtra("message_reference", "!@#$%^ds:+_");
-		Parcelable message_decryption_result = new MyParcelable();
-		intent.putExtra("message_decryption_result", message_decryption_result);
+		intent.putExtra("account", "abcde");
+		MySerializable checkDirection = new MySerializable();
+		intent.putExtra("checkDirection", checkDirection);
 		startActivity(intent);
-		//com.fsck.k9.intent.action.REPLY_ALL;;null;;null;;null;;Parcelable->message_decryption_result->ParcelableObj,String->message_reference->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Serializable->checkDirection->SerializableObj,String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

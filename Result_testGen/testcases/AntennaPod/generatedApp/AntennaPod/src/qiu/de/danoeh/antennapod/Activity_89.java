@@ -17,15 +17,15 @@ public class Activity_89 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.OnlineFeedViewActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.MainActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("title", "abcde");
-		intent.putExtra("arg.feedurl", "abcde");
-		intent.putExtra("android.intent.extra.TEXT", "999999999999999999999999999999999999999999999999999");
+		Bundle fragment_args = new Bundle();
+		intent.putExtra("fragment_args", "fragment_args");
+		intent.putExtra("nav_index", Integer.MIN_VALUE);
+		intent.putExtra("fragment_tag", "!@#$%^ds:+_");
+		intent.putExtra("fragment_feed_id", Long.MAX_VALUE);
 		startActivity(intent);
-		//android.intent.action.SEND;;null;;notEmpty;;null;;String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,String->arg.feedurl->abcde,String->title->abcde,
+		//null;;null;;null;;null;;long->fragment_feed_id->Long.MAX_VALUE,String->fragment_tag->!@#$%^ds:+_,int->nav_index->Integer.MIN_VALUE,Bundle->fragment_args->BundleObj,(,),
 	}
     /** Called when the activity is first created. */
     @Override

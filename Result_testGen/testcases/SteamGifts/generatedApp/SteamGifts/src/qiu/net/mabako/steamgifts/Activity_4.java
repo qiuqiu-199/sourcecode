@@ -19,10 +19,9 @@ public class Activity_4 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.DetailActivity");
 		intent.setComponent(cn);
-		intent.putExtra("mark", false);
-		intent.putExtra("user", "!@#$%^ds:+_");
+		intent.putExtra("user", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->user->!@#$%^ds:+_,boolean->mark->false,
+		//null;;null;;null;;null;;String->user->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

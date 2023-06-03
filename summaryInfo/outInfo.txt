@@ -1,113 +1,555 @@
 当前应用：1Sheeld
+com.facebook.FacebookActivity
+com.integreight.onesheeld.Tutorial
+com.integreight.onesheeld.shields.controller.utils.NfcUtils
+com.integreight.onesheeld.plugin.condition.ConditionActivity
+com.integreight.onesheeld.MainActivity
+com.integreight.onesheeld.plugin.action.ActionActivity
 android create project --name 1Sheeld --target android-23 --path Result_testGen\testcases\1Sheeld\generatedApp\1Sheeld --package qiu.com.integreight.onesheeld --activity Activity_
 create Result_testGen\testcases\1Sheeld\generatedApp\1Sheeld\src\qiu\com\integreight\onesheeld\MySerializable.java
 create Result_testGen\testcases\1Sheeld\generatedApp\1Sheeld\src\qiu\com\integreight\onesheeld\MyParcelable.java
 create Result_testGen\testcases\1Sheeld\testCase.iccmsg
 ant debug -buildfile Result_testGen\testcases\1Sheeld\generatedApp\1Sheeld/build.xml
-		1Sheeld生成测试用例所花时间：8秒
-==总共花费时间：8644
-finish!
-
+		1Sheeld生成测试用例所花时间：10秒
+当前应用：AFWall+
+dev.ukanth.ufirewall.activity.LogDetailActivity
+dev.ukanth.ufirewall.widget.ToggleWidgetActivity
+dev.ukanth.ufirewall.activity.HelpActivity
+dev.ukanth.ufirewall.MainActivity
+dev.ukanth.ufirewall.widget.ToggleWidgetOldActivity
+dev.ukanth.ufirewall.activity.OldLogActivity
+dev.ukanth.ufirewall.activity.CustomScriptActivity
+dev.ukanth.ufirewall.activity.ProfileActivity
+dev.ukanth.ufirewall.plugin.LocaleEdit
+dev.ukanth.ufirewall.activity.AppDetailActivity
+dev.ukanth.ufirewall.activity.LogActivity
+dev.ukanth.ufirewall.preferences.PreferencesActivity
+dev.ukanth.ufirewall.activity.RulesActivity
+dev.ukanth.ufirewall.activity.DataDumpActivity
+haibison.android.lockpattern.LockPatternActivity
+android create project --name AFWall_ --target android-23 --path Result_testGen\testcases\AFWall+\generatedApp\AFWall+ --package qiu.dev.ukanth.ufirewall --activity Activity_
+create Result_testGen\testcases\AFWall+\generatedApp\AFWall+\src\qiu\dev\ukanth\ufirewall\MySerializable.java
+create Result_testGen\testcases\AFWall+\generatedApp\AFWall+\src\qiu\dev\ukanth\ufirewall\MyParcelable.java
+create Result_testGen\testcases\AFWall+\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\AFWall+\generatedApp\AFWall+/build.xml
+		AFWall+生成测试用例所花时间：10秒
 当前应用：AnkiDroid
+com.ichi2.anki.ModelFieldEditor
+com.ichi2.anki.Info
+com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity
+com.ichi2.anki.VideoPlayer
+com.ichi2.anki.FilteredDeckOptions
+com.ichi2.anki.IntentHandler
+com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity
+com.ichi2.anki.MyAccount
+com.ichi2.anki.CardTemplateEditor
+com.ichi2.anki.Previewer
+com.ichi2.anki.multimediacard.activity.TranslationActivity
+com.ichi2.anki.DeckPicker
+com.ichi2.anki.dialogs.AnkiDroidCrashReportDialog
+com.ichi2.anki.CardBrowser
+com.ichi2.anki.StudyOptionsActivity
+com.ichi2.anki.Reviewer
+com.ichi2.anki.Statistics
+com.ichi2.anki.NoteEditor
+com.ichi2.anki.Preferences
+com.ichi2.anki.DeckOptions
+com.ichi2.anki.ModelBrowser
 android create project --name AnkiDroid --target android-23 --path Result_testGen\testcases\AnkiDroid\generatedApp\AnkiDroid --package qiu.com.ichi2.anki --activity Activity_
 create Result_testGen\testcases\AnkiDroid\generatedApp\AnkiDroid\src\qiu\com\ichi2\anki\MySerializable.java
 create Result_testGen\testcases\AnkiDroid\generatedApp\AnkiDroid\src\qiu\com\ichi2\anki\MyParcelable.java
 create Result_testGen\testcases\AnkiDroid\testCase.iccmsg
 ant debug -buildfile Result_testGen\testcases\AnkiDroid\generatedApp\AnkiDroid/build.xml
-		AnkiDroid生成测试用例所花时间：12秒
-==总共花费时间：12342
-finish!
-
+		AnkiDroid生成测试用例所花时间：27秒
 当前应用：AntennaPod
-SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+de.danoeh.antennapod.activity.CastplayerActivity
+de.danoeh.antennapod.activity.FeedInfoActivity
+de.danoeh.antennapod.activity.AboutActivity
+de.danoeh.antennapod.activity.VideoplayerActivity
+de.danoeh.antennapod.activity.FlattrAuthActivity
+de.danoeh.antennapod.activity.OpmlFeedChooserActivity
+de.danoeh.antennapod.activity.StatisticsActivity
+de.danoeh.antennapod.activity.PreferenceActivity
+de.danoeh.antennapod.activity.StorageErrorActivity
+de.danoeh.antennapod.activity.FeedSettingsActivity
+de.danoeh.antennapod.activity.OpmlImportFromPathActivity
+de.danoeh.antennapod.activity.DownloadAuthenticationActivity
+de.danoeh.antennapod.activity.ImportExportActivity
+de.danoeh.antennapod.activity.SplashActivity
+de.danoeh.antennapod.activity.DirectoryChooserActivity
+de.danoeh.antennapod.activity.MainActivity
+de.danoeh.antennapod.activity.AudioplayerActivity
+de.danoeh.antennapod.activity.gpoddernet.GpodnetAuthenticationActivity
+de.danoeh.antennapod.activity.OnlineFeedViewActivity
+de.danoeh.antennapod.activity.OpmlImportFromIntentActivity
 android create project --name AntennaPod --target android-23 --path Result_testGen\testcases\AntennaPod\generatedApp\AntennaPod --package qiu.de.danoeh.antennapod --activity Activity_
 create Result_testGen\testcases\AntennaPod\generatedApp\AntennaPod\src\qiu\de\danoeh\antennapod\MySerializable.java
 create Result_testGen\testcases\AntennaPod\generatedApp\AntennaPod\src\qiu\de\danoeh\antennapod\MyParcelable.java
 create Result_testGen\testcases\AntennaPod\testCase.iccmsg
 ant debug -buildfile Result_testGen\testcases\AntennaPod\generatedApp\AntennaPod/build.xml
-		AntennaPod生成测试用例所花时间：9秒
-==总共花费时间：9664
-finish!
-
+		AntennaPod生成测试用例所花时间：23秒
 当前应用：Calendula
-SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+es.usc.citius.servando.calendula.activities.ConfirmActivity
+es.usc.citius.servando.calendula.pinlock.PinLockActivity
+es.usc.citius.servando.calendula.activities.PatientDetailActivity
+com.mikepenz.aboutlibraries.ui.LibsActivity
+es.usc.citius.servando.calendula.activities.SummaryCalendarActivity
+es.usc.citius.servando.calendula.activities.UpdateFromFileActivity
+es.usc.citius.servando.calendula.activities.ScheduleCreationActivity
+es.usc.citius.servando.calendula.activities.StartActivity
+es.usc.citius.servando.calendula.settings.CalendulaSettingsActivity
+es.usc.citius.servando.calendula.activities.MedicinesSearchActivity
+es.usc.citius.servando.calendula.activities.AllergiesSearchActivity
+es.usc.citius.servando.calendula.activities.MedicinesActivity
+es.usc.citius.servando.calendula.activities.MedicineInfoActivity
+es.usc.citius.servando.calendula.HomePagerActivity
+es.usc.citius.servando.calendula.activities.AllergiesActivity
+es.usc.citius.servando.calendula.activities.RoutinesActivity
+es.usc.citius.servando.calendula.activities.PatientsActivity
+es.usc.citius.servando.calendula.activities.ConfirmSchedulesActivity
+es.usc.citius.servando.calendula.activities.WebViewActivity
+es.usc.citius.servando.calendula.activities.AboutActivity
+es.usc.citius.servando.calendula.activities.ScanActivity
+es.usc.citius.servando.calendula.notifications.LockScreenAlarmActivity
+es.usc.citius.servando.calendula.activities.MaterialIntroActivity
+es.usc.citius.servando.calendula.activities.SchedulesHelpActivity
+com.journeyapps.barcodescanner.CaptureActivity
+es.usc.citius.servando.calendula.activities.CalendarActivity
 android create project --name Calendula --target android-23 --path Result_testGen\testcases\Calendula\generatedApp\Calendula --package qiu.es.usc.citius.servando.calendula --activity Activity_
 create Result_testGen\testcases\Calendula\generatedApp\Calendula\src\qiu\es\usc\citius\servando\calendula\MySerializable.java
 create Result_testGen\testcases\Calendula\generatedApp\Calendula\src\qiu\es\usc\citius\servando\calendula\MyParcelable.java
 create Result_testGen\testcases\Calendula\testCase.iccmsg
 ant debug -buildfile Result_testGen\testcases\Calendula\generatedApp\Calendula/build.xml
-		Calendula生成测试用例所花时间：13秒
-==总共花费时间：13288
-finish!
-
+		Calendula生成测试用例所花时间：14秒
 当前应用：Conversations
-SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+eu.siacs.conversations.ui.ManageAccountActivity
+eu.siacs.conversations.ui.ChangePasswordActivity
+eu.siacs.conversations.ui.ShareViaAccountActivity
+eu.siacs.conversations.ui.ContactDetailsActivity
+eu.siacs.conversations.ui.ShortcutActivity
+eu.siacs.conversations.ui.ShowLocationActivity
+eu.siacs.conversations.ui.ChooseContactActivity
+eu.siacs.conversations.ui.RecordingActivity
+eu.siacs.conversations.ui.ShareWithActivity
+com.theartofdev.edmodo.cropper.CropImageActivity
+eu.siacs.conversations.ui.ConferenceDetailsActivity
+eu.siacs.conversations.ui.PickServerActivity
+eu.siacs.conversations.ui.ScanActivity
+eu.siacs.conversations.ui.ConversationsActivity
+eu.siacs.conversations.ui.StartConversationActivity
+eu.siacs.conversations.ui.ShareLocationActivity
+eu.siacs.conversations.ui.EditAccountActivity
+eu.siacs.conversations.ui.ChannelDiscoveryActivity
+eu.siacs.conversations.ui.MagicCreateActivity
+eu.siacs.conversations.ui.ImportBackupActivity
+eu.siacs.conversations.ui.SettingsActivity
+eu.siacs.conversations.ui.AboutActivity
+eu.siacs.conversations.ui.MediaBrowserActivity
+eu.siacs.conversations.ui.WelcomeActivity
+eu.siacs.conversations.ui.MucUsersActivity
+eu.siacs.conversations.ui.SearchActivity
+eu.siacs.conversations.ui.BlocklistActivity
+eu.siacs.conversations.ui.TrustKeysActivity
+eu.siacs.conversations.ui.ConversationActivity
+eu.siacs.conversations.ui.UriHandlerActivity
+eu.siacs.conversations.ui.PublishProfilePictureActivity
+eu.siacs.conversations.ui.PublishGroupChatProfilePictureActivity
+eu.siacs.conversations.ui.MemorizingActivity
 android create project --name Conversations --target android-23 --path Result_testGen\testcases\Conversations\generatedApp\Conversations --package qiu.eu.siacs.conversations --activity Activity_
 create Result_testGen\testcases\Conversations\generatedApp\Conversations\src\qiu\eu\siacs\conversations\MySerializable.java
 create Result_testGen\testcases\Conversations\generatedApp\Conversations\src\qiu\eu\siacs\conversations\MyParcelable.java
 create Result_testGen\testcases\Conversations\testCase.iccmsg
 ant debug -buildfile Result_testGen\testcases\Conversations\generatedApp\Conversations/build.xml
-		Conversations生成测试用例所花时间：20秒
-==总共花费时间：20112
-finish!
-
+		Conversations生成测试用例所花时间：34秒
 当前应用：CSipSimple
-SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+com.csipsimple.ui.prefs.PrefsFast
+com.csipsimple.widgets.ShortcutWidgetConfigure
+com.csipsimple.ui.filters.EditFilter
+com.csipsimple.ui.PickupSipUri
+com.csipsimple.ui.filters.AccountFilters
+com.csipsimple.ui.incall.InCallMediaControl
+com.csipsimple.ui.prefs.AudioTester
+com.csipsimple.ui.prefs.PrefsFilters
+com.csipsimple.wizards.impl.MondotalkCreate
+com.csipsimple.ui.prefs.hc.MainPrefs
+com.csipsimple.wizards.BasePrefsWizard
+com.csipsimple.ui.SipHome
+com.csipsimple.wizards.WizardChooser
+com.csipsimple.ui.calllog.CallLogDetailsActivity
+com.csipsimple.ui.prefs.cupcake.MainPrefs
+com.csipsimple.ui.prefs.cupcake.PrefsLoaderActivity
+com.csipsimple.ui.prefs.Codecs
+com.csipsimple.widgets.AccountWidgetConfigure
+com.csipsimple.ui.messages.MessageActivity
+com.csipsimple.ui.outgoingcall.OutgoingCallChooser
+com.csipsimple.ui.incall.InCallActivity
+com.csipsimple.ui.account.AccountsEditList
+com.csipsimple.ui.account.AccountEdit
 android create project --name CSipSimple --target android-23 --path Result_testGen\testcases\CSipSimple\generatedApp\CSipSimple --package qiu.com.csipsimple --activity Activity_
 create Result_testGen\testcases\CSipSimple\generatedApp\CSipSimple\src\qiu\com\csipsimple\MySerializable.java
 create Result_testGen\testcases\CSipSimple\generatedApp\CSipSimple\src\qiu\com\csipsimple\MyParcelable.java
 create Result_testGen\testcases\CSipSimple\testCase.iccmsg
 ant debug -buildfile Result_testGen\testcases\CSipSimple\generatedApp\CSipSimple/build.xml
 		CSipSimple生成测试用例所花时间：13秒
-==总共花费时间：13628
-finish!
-
 当前应用：EteSync
-SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+com.etesync.syncadapter.ui.setup.LoginActivity
+at.bitfire.cert4android.TrustCertificateActivity
+com.etesync.syncadapter.ui.AccountSettingsActivity
+com.etesync.syncadapter.ui.AccountsActivity
+com.etesync.syncadapter.ui.CollectionMembersActivity
+com.etesync.syncadapter.ui.DebugInfoActivity
+com.etesync.syncadapter.ui.ViewCollectionActivity
+com.etesync.syncadapter.ui.AccountActivity
+com.etesync.syncadapter.ui.AppSettingsActivity
+com.etesync.syncadapter.ui.JournalItemActivity
+com.etesync.syncadapter.ui.AboutActivity
+com.etesync.syncadapter.ui.WebViewActivity
+com.etesync.syncadapter.syncadapter.SyncNotification$NotificationHandlerActivity
+com.etesync.syncadapter.ui.CreateCollectionActivity
+com.etesync.syncadapter.ui.importlocal.ImportActivity
+com.etesync.syncadapter.ui.ChangeEncryptionPasswordActivity
+com.etesync.syncadapter.ui.PermissionsActivity
+com.etesync.syncadapter.ui.EditCollectionActivity
 android create project --name EteSync --target android-23 --path Result_testGen\testcases\EteSync\generatedApp\EteSync --package qiu.com.etesync.syncadapter --activity Activity_
 create Result_testGen\testcases\EteSync\generatedApp\EteSync\src\qiu\com\etesync\syncadapter\MySerializable.java
 create Result_testGen\testcases\EteSync\generatedApp\EteSync\src\qiu\com\etesync\syncadapter\MyParcelable.java
 create Result_testGen\testcases\EteSync\testCase.iccmsg
 ant debug -buildfile Result_testGen\testcases\EteSync\generatedApp\EteSync/build.xml
-		EteSync生成测试用例所花时间：7秒
-==总共花费时间：7675
-finish!
-
+		EteSync生成测试用例所花时间：8秒
 当前应用：Evercam
-SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+io.evercam.androidapp.sharing.SharingActivity
+io.evercam.androidapp.CamerasActivity
+io.evercam.androidapp.video.VideoActivity
+io.intercom.android.sdk.activities.IntercomHelpCenterActivity
+io.evercam.androidapp.publiccameras.PublicCamerasWebActivity
+io.intercom.android.sdk.lightbox.LightBoxActivity
+io.evercam.androidapp.addeditcamera.AddCameraActivity
+io.evercam.androidapp.MainActivity
+io.intercom.android.sdk.activities.IntercomSheetActivity
+io.evercam.androidapp.SimpleWebActivity
+io.evercam.androidapp.ScanActivity
+io.evercam.androidapp.EditCameraLocationActivity
+io.evercam.androidapp.ManageAccountsActivity
+io.evercam.androidapp.EditCameraActivity
+io.evercam.androidapp.OnBoardingActivity
+io.intercom.android.sdk.activities.IntercomPostActivity
+io.intercom.android.sdk.activities.IntercomMessengerActivity
+io.evercam.androidapp.recordings.RecordingWebActivity
+io.evercam.androidapp.DeepLinkedActivity
+io.evercam.androidapp.SignUpActivity
+io.evercam.androidapp.CameraPrefsActivity
+io.evercam.androidapp.ViewCameraActivity
+io.evercam.androidapp.LoginActivity
+io.intercom.android.sdk.activities.IntercomNoteActivity
+io.evercam.androidapp.scan.AllDevicesActivity
+io.evercam.androidapp.sharing.CreateShareActivity
+io.intercom.android.sdk.activities.IntercomArticleActivity
+io.evercam.androidapp.ReleaseNotesActivity
+com.intercom.input.gallery.GalleryInputFullScreenActivity
+io.intercom.android.sdk.activities.IntercomVideoActivity
+io.evercam.androidapp.photoview.ViewPagerActivity
+com.intercom.input.gallery.GalleryLightBoxActivity
 android create project --name Evercam --target android-23 --path Result_testGen\testcases\Evercam\generatedApp\Evercam --package qiu.io.evercam.androidapp --activity Activity_
 create Result_testGen\testcases\Evercam\generatedApp\Evercam\src\qiu\io\evercam\androidapp\MySerializable.java
 create Result_testGen\testcases\Evercam\generatedApp\Evercam\src\qiu\io\evercam\androidapp\MyParcelable.java
 create Result_testGen\testcases\Evercam\testCase.iccmsg
 ant debug -buildfile Result_testGen\testcases\Evercam\generatedApp\Evercam/build.xml
-		Evercam生成测试用例所花时间：5秒
-==总共花费时间：5738
-finish!
-
-
+		Evercam生成测试用例所花时间：8秒
 当前应用：iNaturalist
-SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+org.inaturalist.android.ProfilePhotoViewer
+org.inaturalist.android.TaxonSuggestionsActivity
+org.inaturalist.android.ObservationSearchActivity
+org.inaturalist.android.ObservationProjectsViewer
+org.inaturalist.android.ProjectSelectorActivity
+org.inaturalist.android.ExploreFiltersActivity
+org.inaturalist.android.LocationDetailsActivity
+org.inaturalist.android.IdentificationActivity
+org.inaturalist.android.ObservationListActivity
+org.inaturalist.android.ProjectDetailsAbout
+org.inaturalist.android.TaxonMapActivity
+org.inaturalist.android.ProjectNews
+org.inaturalist.android.UserProfile
+org.inaturalist.android.GuideTaxonActivity
+com.facebook.FacebookActivity
+org.inaturalist.android.UserActivity
+org.inaturalist.android.About
+org.inaturalist.android.CompareSuggestionActivity
+org.inaturalist.android.LocationChooserActivity
+org.inaturalist.android.SettingsActivity
+com.facebook.CustomTabMainActivity
+org.inaturalist.android.ProjectDetails
+org.inaturalist.android.NewsArticle
+org.inaturalist.android.ExploreSearchActivity
+org.inaturalist.android.ItemSearchActivity
+org.inaturalist.android.ProjectsActivity
+org.inaturalist.android.ObservationEditor
+org.inaturalist.android.OnboardingActivity
+org.inaturalist.android.NetworkSettings
+org.inaturalist.android.TutorialActivity
+org.inaturalist.android.LoginSignupActivity
+org.inaturalist.android.MissionDetailsMapActivity
+org.inaturalist.android.MissionDetails
+org.inaturalist.android.MissionsActivity
+org.inaturalist.android.ExploreActivity
+org.inaturalist.android.DataQualityAssessment
+org.inaturalist.android.GuideDetails
+com.facebook.CustomTabActivity
+org.inaturalist.android.TaxonSearchActivity
+org.inaturalist.android.ObservationPhotosViewer
+org.inaturalist.android.MissionsGridActivity
+org.inaturalist.android.TaxonTagPhotosViewer
+org.inaturalist.android.ProfileEditor
+org.inaturalist.android.WebActivity
+org.inaturalist.android.TaxonActivity
+org.inaturalist.android.MissionsOnboardingActivity
+org.inaturalist.android.ObservationViewerActivity
+org.inaturalist.android.GuidesActivity
 android create project --name iNaturalist --target android-23 --path Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist --package qiu.org.inaturalist.android --activity Activity_
 create Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\src\qiu\org\inaturalist\android\MySerializable.java
 create Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\src\qiu\org\inaturalist\android\MyParcelable.java
 create Result_testGen\testcases\iNaturalist\testCase.iccmsg
 ant debug -buildfile Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist/build.xml
-		iNaturalist生成测试用例所花时间：5秒
-==总共花费时间：5804
+		iNaturalist生成测试用例所花时间：50秒
+当前应用：K9Mail
+com.fsck.k9.activity.ChooseIdentity
+com.fsck.k9.activity.EmailAddressList
+com.fsck.k9.activity.setup.AccountSetupIncoming
+com.fsck.k9.activity.ChooseFolder
+com.fsck.k9.activity.MessageList
+com.fsck.k9.activity.setup.AccountSettings
+com.fsck.k9.activity.setup.AccountSetupCheckSettings
+com.fsck.k9.activity.LauncherShortcuts
+com.fsck.k9.activity.setup.WelcomeMessage
+com.fsck.k9.activity.setup.FolderSettings
+com.fsck.k9.activity.Accounts
+com.fsck.k9.activity.setup.OpenPgpAppSelectDialog
+com.fsck.k9.activity.FolderList
+com.fsck.k9.activity.EditIdentity
+com.fsck.k9.activity.setup.AccountSetupComposition
+com.fsck.k9.activity.setup.AccountSetupAccountType
+com.fsck.k9.activity.ChooseAccount
+com.fsck.k9.activity.ManageIdentities
+com.fsck.k9.activity.setup.Prefs
+com.fsck.k9.activity.setup.AccountSetupOptions
+com.fsck.k9.activity.setup.FontSizeSettings
+com.fsck.k9.activity.UpgradeDatabases
+com.fsck.k9.activity.setup.AccountSetupOutgoing
+com.fsck.k9.activity.NotificationDeleteConfirmation
+com.fsck.k9.activity.setup.AccountSetupNames
+com.fsck.k9.activity.setup.AccountSetupBasics
+com.fsck.k9.activity.Search
+com.fsck.k9.activity.UnreadWidgetConfiguration
+android create project --name K9Mail --target android-23 --path Result_testGen\testcases\K9Mail\generatedApp\K9Mail --package qiu.com.fsck.k9 --activity Activity_
+create Result_testGen\testcases\K9Mail\generatedApp\K9Mail\src\qiu\com\fsck\k9\MySerializable.java
+create Result_testGen\testcases\K9Mail\generatedApp\K9Mail\src\qiu\com\fsck\k9\MyParcelable.java
+create Result_testGen\testcases\K9Mail\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\K9Mail\generatedApp\K9Mail/build.xml
+		K9Mail生成测试用例所花时间：27秒
+当前应用：Lincal
+felixwiemuth.lincal.ui.SettingsActivity
+felixwiemuth.lincal.ui.AddCalendarActivity
+org.acra.dialog.CrashReportDialog
+felixwiemuth.lincal.ui.CalendarListActivity
+felixwiemuth.lincal.ui.CalendarViewActivity
+android create project --name Lincal --target android-23 --path Result_testGen\testcases\Lincal\generatedApp\Lincal --package qiu.felixwiemuth.lincal --activity Activity_
+create Result_testGen\testcases\Lincal\generatedApp\Lincal\src\qiu\felixwiemuth\lincal\MySerializable.java
+create Result_testGen\testcases\Lincal\generatedApp\Lincal\src\qiu\felixwiemuth\lincal\MyParcelable.java
+create Result_testGen\testcases\Lincal\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\Lincal\generatedApp\Lincal/build.xml
+		Lincal生成测试用例所花时间：6秒
+当前应用：OpenGPSTracker
+nl.sogeti.android.gpstracker.viewer.ApplicationPreferenceActivity
+nl.sogeti.android.gpstracker.actions.NameTrack
+nl.sogeti.android.gpstracker.viewer.TracksLiveFolder
+nl.sogeti.android.gpstracker.viewer.LoggerMap
+nl.sogeti.android.gpstracker.actions.InsertNote
+nl.sogeti.android.gpstracker.viewer.TrackList
+nl.sogeti.android.gpstracker.actions.Statistics
+nl.sogeti.android.gpstracker.actions.ShareTrack
+nl.sogeti.android.gpstracker.oauth.PrepareRequestTokenActivity
+nl.sogeti.android.gpstracker.actions.DescribeTrack
+nl.sogeti.android.gpstracker.actions.ControlTracking
+android create project --name OpenGPSTracker --target android-23 --path Result_testGen\testcases\OpenGPSTracker\generatedApp\OpenGPSTracker --package qiu.nl.sogeti.android.gpstracker --activity Activity_
+create Result_testGen\testcases\OpenGPSTracker\generatedApp\OpenGPSTracker\src\qiu\nl\sogeti\android\gpstracker\MySerializable.java
+create Result_testGen\testcases\OpenGPSTracker\generatedApp\OpenGPSTracker\src\qiu\nl\sogeti\android\gpstracker\MyParcelable.java
+create Result_testGen\testcases\OpenGPSTracker\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\OpenGPSTracker\generatedApp\OpenGPSTracker/build.xml
+		OpenGPSTracker生成测试用例所花时间：9秒
+当前应用：OpenKeychain
+org.sufficientlysecure.keychain.remote.ui.RemoteDisplayTransferCodeActivity
+org.sufficientlysecure.keychain.remote.ui.RequestKeyPermissionActivity
+org.sufficientlysecure.keychain.ui.RedirectImportKeysActivity
+org.sufficientlysecure.keychain.ui.UploadKeyActivity
+org.sufficientlysecure.keychain.ui.RetryUploadDialogActivity
+org.sufficientlysecure.keychain.ui.SettingsKeyServerActivity
+org.sufficientlysecure.keychain.remote.ui.RemoteImportKeysActivity
+org.sufficientlysecure.keychain.ui.CertifyKeyActivity
+org.sufficientlysecure.keychain.remote.ui.RemoteBackupActivity
+org.sufficientlysecure.keychain.ui.OrbotRequiredDialogActivity
+org.sufficientlysecure.keychain.ui.QrCodeCaptureActivity
+org.sufficientlysecure.keychain.ui.DecryptActivity
+org.sufficientlysecure.keychain.ui.UsbEventReceiverActivity
+org.sufficientlysecure.keychain.remote.ui.RemoteSecurityProblemDialogActivity
+org.sufficientlysecure.keychain.ui.MainActivity
+org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity
+org.sufficientlysecure.keychain.remote.ui.dialog.RemoteSelectAuthenticationKeyActivity
+org.sufficientlysecure.keychain.ui.ImportKeysActivity
+org.sufficientlysecure.keychain.remote.ui.RemoteRegisterActivity
+org.sufficientlysecure.keychain.ui.SettingsActivity
+org.sufficientlysecure.keychain.ui.CertifyFingerprintActivity
+org.sufficientlysecure.keychain.ui.EditKeyActivity
+org.sufficientlysecure.keychain.ui.PassphraseDialogActivity
+edu.cmu.cylab.starslinger.exchange.ExchangeActivity
+org.sufficientlysecure.keychain.ui.DeleteKeyDialogActivity
+org.sufficientlysecure.keychain.ui.DebugActionsActivity
+com.journeyapps.barcodescanner.CaptureActivity
+org.sufficientlysecure.keychain.ui.BackupActivity
+org.sufficientlysecure.keychain.ui.DisplayTextActivity
+org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity
+org.sufficientlysecure.keychain.ui.PanicExitActivity
+org.sufficientlysecure.keychain.remote.ui.RemotePassphraseDialogActivity
+org.sufficientlysecure.keychain.remote.ui.dialog.RemoteDeduplicateActivity
+org.sufficientlysecure.keychain.ui.SecurityTokenChangePinOperationActivity
+org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity
+org.sufficientlysecure.keychain.ui.SecurityTokenOperationActivity
+org.sufficientlysecure.keychain.ui.EncryptFilesActivity
+org.sufficientlysecure.keychain.ui.ViewKeyAdvActivity
+org.sufficientlysecure.keychain.remote.ui.AppSettingsActivity
+org.sufficientlysecure.keychain.remote.ui.RemoteSelectPubKeyActivity
+org.sufficientlysecure.keychain.ui.HelpActivity
+org.sufficientlysecure.keychain.ui.SettingsSmartPGPAuthoritiesActivity
+edu.cmu.cylab.starslinger.exchange.GroupingActivity
+org.sufficientlysecure.keychain.ui.CreateKeyActivity
+edu.cmu.cylab.starslinger.exchange.VerifyActivity
+org.sufficientlysecure.keychain.remote.ui.RemoteSecurityTokenOperationActivity
+org.sufficientlysecure.keychain.ui.LogDisplayActivity
+org.sufficientlysecure.keychain.ui.EncryptTextActivity
+org.sufficientlysecure.keychain.ui.QrCodeViewActivity
+org.sufficientlysecure.keychain.ui.ShowNfcSweetspotActivity
+org.sufficientlysecure.keychain.ui.linked.LinkedIdWizard
+org.sufficientlysecure.keychain.ui.SafeSlingerActivity
+org.sufficientlysecure.keychain.remote.ui.RemoteErrorActivity
+org.sufficientlysecure.keychain.ui.PanicResponderActivity
+org.sufficientlysecure.keychain.remote.ui.dialog.RemoteSelectIdKeyActivity
+android create project --name OpenKeychain --target android-23 --path Result_testGen\testcases\OpenKeychain\generatedApp\OpenKeychain --package qiu.org.sufficientlysecure.keychain --activity Activity_
+create Result_testGen\testcases\OpenKeychain\generatedApp\OpenKeychain\src\qiu\org\sufficientlysecure\keychain\MySerializable.java
+create Result_testGen\testcases\OpenKeychain\generatedApp\OpenKeychain\src\qiu\org\sufficientlysecure\keychain\MyParcelable.java
+create Result_testGen\testcases\OpenKeychain\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\OpenKeychain\generatedApp\OpenKeychain/build.xml
+		OpenKeychain生成测试用例所花时间：22秒
+当前应用：Padland
+com.mikifus.padland.NewPadActivity
+com.mikifus.padland.PadLandDataActivity
+com.mikifus.padland.SplashActivity
+com.mikifus.padland.SettingsActivity
+com.mikifus.padland.PadViewActivity
+com.mikifus.padland.PadInfoActivity
+com.mikifus.padland.IntroActivity
+com.mikifus.padland.PadListActivity
+com.mikifus.padland.About
+com.mikifus.padland.ServerListActivity
+android create project --name Padland --target android-23 --path Result_testGen\testcases\Padland\generatedApp\Padland --package qiu.com.mikifus.padland --activity Activity_
+create Result_testGen\testcases\Padland\generatedApp\Padland\src\qiu\com\mikifus\padland\MySerializable.java
+create Result_testGen\testcases\Padland\generatedApp\Padland\src\qiu\com\mikifus\padland\MyParcelable.java
+create Result_testGen\testcases\Padland\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\Padland\generatedApp\Padland/build.xml
+		Padland生成测试用例所花时间：8秒
+当前应用：PassAndroid
+org.ligi.passandroid.FullscreenMapActivity
+org.ligi.passandroid.ui.PassEditActivity
+org.ligi.passandroid.ui.HelpActivity
+org.ligi.passandroid.ui.TouchImageActivity
+org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView
+org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity
+org.ligi.passandroid.ui.ExtractURLAsIphoneActivity
+org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity
+org.ligi.passandroid.ui.PreferenceActivity
+org.ligi.passandroid.ui.PassViewActivity
+org.ligi.passandroid.ui.PassListActivity
+org.ligi.passandroid.ui.FullscreenBarcodeActivity
+org.ligi.passandroid.ui.PassImportActivity
+android create project --name PassAndroid --target android-23 --path Result_testGen\testcases\PassAndroid\generatedApp\PassAndroid --package qiu.org.ligi.passandroid --activity Activity_
+create Result_testGen\testcases\PassAndroid\generatedApp\PassAndroid\src\qiu\org\ligi\passandroid\MySerializable.java
+create Result_testGen\testcases\PassAndroid\generatedApp\PassAndroid\src\qiu\org\ligi\passandroid\MyParcelable.java
+create Result_testGen\testcases\PassAndroid\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\PassAndroid\generatedApp\PassAndroid/build.xml
+		PassAndroid生成测试用例所花时间：9秒
+当前应用：Simple-Solitaire
+de.tobiasbielefeld.solitaire.ui.about.AboutActivity
+de.tobiasbielefeld.solitaire.ui.manual.Manual
+de.tobiasbielefeld.solitaire.ui.GameSelector
+de.tobiasbielefeld.solitaire.ui.settings.Settings
+de.tobiasbielefeld.solitaire.ui.statistics.StatisticsActivity
+de.tobiasbielefeld.solitaire.ui.GameManager
+de.tobiasbielefeld.solitaire.ui.settings.SettingsGames
+android create project --name Simple_Solitaire --target android-23 --path Result_testGen\testcases\Simple-Solitaire\generatedApp\Simple-Solitaire --package qiu.de.tobiasbielefeld.solitaire --activity Activity_
+create Result_testGen\testcases\Simple-Solitaire\generatedApp\Simple-Solitaire\src\qiu\de\tobiasbielefeld\solitaire\MySerializable.java
+create Result_testGen\testcases\Simple-Solitaire\generatedApp\Simple-Solitaire\src\qiu\de\tobiasbielefeld\solitaire\MyParcelable.java
+create Result_testGen\testcases\Simple-Solitaire\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\Simple-Solitaire\generatedApp\Simple-Solitaire/build.xml
+		Simple-Solitaire生成测试用例所花时间：6秒
+当前应用：SteamGifts
+net.mabako.steamgifts.activities.DetailActivity
+net.mabako.steamgifts.activities.MainActivity
+net.mabako.steamgifts.activities.SettingsActivity
+net.mabako.steamgifts.intro.IntroActivity
+net.mabako.steamgifts.activities.UrlHandlingActivity
+net.mabako.steamgifts.activities.AboutActivity
+net.mabako.steamgifts.activities.LoginActivity
+net.mabako.steamgifts.activities.WebViewActivity
+net.mabako.sgtools.SGToolsLoginActivity
+net.mabako.steamgifts.activities.WriteCommentActivity
+net.mabako.steamgifts.activities.SyncActivity
+android create project --name SteamGifts --target android-23 --path Result_testGen\testcases\SteamGifts\generatedApp\SteamGifts --package qiu.net.mabako.steamgifts --activity Activity_
+create Result_testGen\testcases\SteamGifts\generatedApp\SteamGifts\src\qiu\net\mabako\steamgifts\MySerializable.java
+create Result_testGen\testcases\SteamGifts\generatedApp\SteamGifts\src\qiu\net\mabako\steamgifts\MyParcelable.java
+create Result_testGen\testcases\SteamGifts\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\SteamGifts\generatedApp\SteamGifts/build.xml
+		SteamGifts生成测试用例所花时间：9秒
+当前应用：SuntimesWidget
+com.forrestguice.suntimeswidget.MoonWidget0ConfigActivity_2x1
+com.forrestguice.suntimeswidget.SuntimesWidgetListActivity
+com.forrestguice.suntimeswidget.SolsticeWidget0ConfigActivity
+com.forrestguice.suntimeswidget.MoonWidget0ConfigActivity_3x1
+com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity
+com.forrestguice.suntimeswidget.SuntimesSettingsActivity
+com.forrestguice.suntimeswidget.SuntimesActivity
+com.forrestguice.suntimeswidget.SuntimesConfigActivity0
+com.forrestguice.suntimeswidget.SuntimesConfigActivity1
+com.forrestguice.suntimeswidget.SuntimesConfigActivity2
+com.forrestguice.suntimeswidget.themes.WidgetThemeConfigActivity
+com.forrestguice.suntimeswidget.SuntimesConfigActivity0_2x1
+com.forrestguice.suntimeswidget.MoonWidget0ConfigActivity
+com.forrestguice.suntimeswidget.ClockWidget0ConfigActivity
+com.forrestguice.suntimeswidget.ClockWidget0ConfigActivity_3x1
+com.forrestguice.suntimeswidget.alarmclock.ui.AlarmDismissActivity
+com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity
+com.forrestguice.suntimeswidget.SuntimesConfigActivity2_3x1
+com.forrestguice.suntimeswidget.SuntimesConfigActivity2_3x2
+android create project --name SuntimesWidget --target android-23 --path Result_testGen\testcases\SuntimesWidget\generatedApp\SuntimesWidget --package qiu.com.forrestguice.suntimeswidget --activity Activity_
+create Result_testGen\testcases\SuntimesWidget\generatedApp\SuntimesWidget\src\qiu\com\forrestguice\suntimeswidget\MySerializable.java
+create Result_testGen\testcases\SuntimesWidget\generatedApp\SuntimesWidget\src\qiu\com\forrestguice\suntimeswidget\MyParcelable.java
+create Result_testGen\testcases\SuntimesWidget\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\SuntimesWidget\generatedApp\SuntimesWidget/build.xml
+		SuntimesWidget生成测试用例所花时间：12秒
+当前应用：syncthing
+com.nutomic.syncthingandroid.activities.FolderPickerActivity
+com.nutomic.syncthingandroid.activities.VersioningDialogActivity
+com.nutomic.syncthingandroid.activities.LogActivity
+com.nutomic.syncthingandroid.activities.ShareActivity
+com.nutomic.syncthingandroid.activities.SettingsActivity
+com.nutomic.syncthingandroid.activities.PullOrderDialogActivity
+com.nutomic.syncthingandroid.activities.MainActivity
+com.nutomic.syncthingandroid.activities.WebGuiActivity
+com.nutomic.syncthingandroid.activities.DeviceActivity
+com.nutomic.syncthingandroid.activities.FolderTypeDialogActivity
+com.nutomic.syncthingandroid.activities.FolderActivity
+com.nutomic.syncthingandroid.activities.FirstStartActivity
+android create project --name syncthing --target android-23 --path Result_testGen\testcases\syncthing\generatedApp\syncthing --package qiu.com.nutomic.syncthingandroid --activity Activity_
+create Result_testGen\testcases\syncthing\generatedApp\syncthing\src\qiu\com\nutomic\syncthingandroid\MySerializable.java
+create Result_testGen\testcases\syncthing\generatedApp\syncthing\src\qiu\com\nutomic\syncthingandroid\MyParcelable.java
+create Result_testGen\testcases\syncthing\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\syncthing\generatedApp\syncthing/build.xml
+		syncthing生成测试用例所花时间：8秒
+==总共花费时间：322534
 finish!
-
-

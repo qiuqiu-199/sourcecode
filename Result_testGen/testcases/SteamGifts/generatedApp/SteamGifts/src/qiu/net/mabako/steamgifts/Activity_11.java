@@ -19,10 +19,9 @@ public class Activity_11 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.DetailActivity");
 		intent.setComponent(cn);
-		MySerializable giveaway = new MySerializable();
-		intent.putExtra("giveaway", giveaway);
+		intent.putExtra("mark", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;Serializable->giveaway->SerializableObj,
+		//null;;null;;null;;null;;boolean->mark->true,
 	}
     /** Called when the activity is first created. */
     @Override

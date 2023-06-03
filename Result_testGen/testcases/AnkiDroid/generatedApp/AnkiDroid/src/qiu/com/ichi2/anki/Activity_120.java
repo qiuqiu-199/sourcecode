@@ -17,12 +17,13 @@ public class Activity_120 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.dialogs.AnkiDroidCrashReportDialog");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.IntentHandler");
 		intent.setComponent(cn);
-		intent.putExtra("REPORT_FILE_NAME", "abcde");
-		intent.putExtra("FORCE_CANCEL", false);
+		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("file://mHost:mPort/mPath"));
+		intent.setType("?");
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->FORCE_CANCEL->false,String->REPORT_FILE_NAME->abcde,
+		//android.intent.action.VIEW;;null;;file://mHost:mPort/mPath;;?;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,11 +17,11 @@ public class Activity_101 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.widgets.AccountWidgetConfigure");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.cupcake.MainPrefs");
 		intent.setComponent(cn);
-		intent.putExtra("appWidgetId", Integer.MAX_VALUE);
+		intent.setAction("com.csipsimple.ui.action.PREFS_GLOBAL");
 		startActivity(intent);
-		//null;;null;;null;;null;;int->appWidgetId->Integer.MAX_VALUE,
+		//com.csipsimple.ui.action.PREFS_GLOBAL;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

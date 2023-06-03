@@ -17,10 +17,11 @@ public class Activity_168 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.ConfirmSchedulesActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.MedicinesActivity");
 		intent.setComponent(cn);
+		intent.putExtra("medicine_id", Long.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;long->medicine_id->Long.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

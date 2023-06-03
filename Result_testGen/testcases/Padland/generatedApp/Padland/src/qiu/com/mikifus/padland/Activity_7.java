@@ -17,13 +17,11 @@ public class Activity_7 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadViewActivity");
+		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadLandDataActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("etherpad.mozilla.org"));
+		intent.putExtra("pad_id", Long.MIN_VALUE);
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;etherpad.mozilla.org;;null;;
+		//null;;null;;null;;null;;long->pad_id->Long.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

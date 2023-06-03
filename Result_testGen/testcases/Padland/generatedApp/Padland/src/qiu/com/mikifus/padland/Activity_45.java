@@ -17,15 +17,13 @@ public class Activity_45 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadListActivity");
+		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadViewActivity");
 		intent.setComponent(cn);
-		intent.putExtra("action", "abcde");
-		intent.putExtra("android.intent.extra.TEXT", "abcde");
-		ArrayList<String> pad_id = new ArrayList<String>();
-		intent.putStringArrayListExtra("pad_id", pad_id);
-		intent.putExtra("focus_pad", Long.MIN_VALUE);
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setData(Uri.parse("http"));
 		startActivity(intent);
-		//null;;null;;null;;null;;long->focus_pad->Long.MIN_VALUE,StringArrayList->pad_id->999999999999999999999999999999999999999999999999999,String->android.intent.extra.TEXT->abcde,String->action->abcde,
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;http;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

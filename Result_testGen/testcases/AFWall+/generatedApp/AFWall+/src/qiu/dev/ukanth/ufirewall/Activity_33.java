@@ -17,13 +17,12 @@ public class Activity_33 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.MainActivity");
+		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.preferences.PreferencesActivity");
 		intent.setComponent(cn);
-		intent.setAction("dev.ukanth.ufirewall.intent.action.CUSTOM_SCRIPT");
-		intent.putExtra("dev.ukanth.ufirewall.intent.extra.SCRIPT2", "abcde");
-		intent.putExtra("dev.ukanth.ufirewall.intent.extra.SCRIPT", "999999999999999999999999999999999999999999999999999");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//dev.ukanth.ufirewall.intent.action.CUSTOM_SCRIPT;;null;;null;;null;;String->dev.ukanth.ufirewall.intent.extra.SCRIPT->999999999999999999999999999999999999999999999999999,String->dev.ukanth.ufirewall.intent.extra.SCRIPT2->abcde,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

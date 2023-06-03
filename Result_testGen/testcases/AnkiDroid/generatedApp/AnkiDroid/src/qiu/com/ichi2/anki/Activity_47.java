@@ -17,13 +17,11 @@ public class Activity_47 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.IntentHandler");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.FilteredDeckOptions");
 		intent.setComponent(cn);
-		intent.setAction("com.ichi2.anki.DO_SYNC");
-		intent.setData(Uri.parse("mSheme:mAuthority/notEmpty"));
-		intent.setType("application/apkg");
+		intent.putExtra("defaultConfig", true);
 		startActivity(intent);
-		//com.ichi2.anki.DO_SYNC;;null;;mSheme:mAuthority/notEmpty;;application/apkg;;
+		//null;;null;;null;;null;;boolean->defaultConfig->true,
 	}
     /** Called when the activity is first created. */
     @Override

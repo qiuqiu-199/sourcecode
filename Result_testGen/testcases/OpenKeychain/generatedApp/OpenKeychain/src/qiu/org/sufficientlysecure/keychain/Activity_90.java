@@ -19,11 +19,11 @@ public class Activity_90 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
 		intent.setComponent(cn);
-		intent.setAction("DECRYPT_DATA_CLIPBOARD");
+		intent.setAction("android.intent.action.SEND");
 		intent.setData(Uri.parse("mSheme://com.android.email.attachmentprovider:mPort/mPath"));
 		intent.setType("application/autocrypt-setup");
 		startActivity(intent);
-		//DECRYPT_DATA_CLIPBOARD;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;
+		//android.intent.action.SEND;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;
 	}
     /** Called when the activity is first created. */
     @Override

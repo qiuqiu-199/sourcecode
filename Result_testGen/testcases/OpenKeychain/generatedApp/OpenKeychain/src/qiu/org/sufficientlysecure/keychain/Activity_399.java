@@ -17,12 +17,13 @@ public class Activity_399 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.EncryptTextActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.EncryptFilesActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.PROCESS_TEXT");
-		intent.setType("notEmpty");
+		intent.setAction("android.intent.action.SEND_MULTIPLE");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setType("multipart/*");
 		startActivity(intent);
-		//android.intent.action.PROCESS_TEXT;;null;;null;;notEmpty;;
+		//android.intent.action.SEND_MULTIPLE;;android.intent.category.DEFAULT;;null;;multipart/*;;
 	}
     /** Called when the activity is first created. */
     @Override

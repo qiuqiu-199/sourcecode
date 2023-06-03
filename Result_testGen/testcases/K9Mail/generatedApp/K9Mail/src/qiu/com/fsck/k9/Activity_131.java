@@ -17,13 +17,14 @@ public class Activity_131 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.FolderSettings");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
 		intent.setComponent(cn);
-		intent.putExtra("com.fsck.k9.account", "999999999999999999999999999999999999999999999999999");
-		MySerializable com_dot_fsck_dot_k9_dot_folderName = new MySerializable();
-		intent.putExtra("com.fsck.k9.folderName", com_dot_fsck_dot_k9_dot_folderName);
+		intent.setAction("com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT");
+		intent.putExtra("message_reference", "abcde");
+		Parcelable message_decryption_result = new MyParcelable();
+		intent.putExtra("message_decryption_result", message_decryption_result);
 		startActivity(intent);
-		//null;;null;;null;;null;;Serializable->com.fsck.k9.folderName->SerializableObj,String->com.fsck.k9.account->999999999999999999999999999999999999999999999999999,
+		//com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT;;null;;null;;null;;Parcelable->message_decryption_result->ParcelableObj,String->message_reference->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

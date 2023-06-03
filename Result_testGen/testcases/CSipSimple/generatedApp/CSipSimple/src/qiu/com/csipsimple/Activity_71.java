@@ -19,10 +19,10 @@ public class Activity_71 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.phone.action.CALLLOG");
-		intent.setData(Uri.parse("notEmpty:mAuthority/mPath"));
+		intent.setAction("android.intent.action.DIAL");
+		intent.setData(Uri.parse("?:mAuthority/mPath"));
 		startActivity(intent);
-		//com.csipsimple.phone.action.CALLLOG;;null;;notEmpty:mAuthority/mPath;;null;;
+		//android.intent.action.DIAL;;null;;?:mAuthority/mPath;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

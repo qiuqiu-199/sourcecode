@@ -17,18 +17,12 @@ public class Activity_82 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.oauth.PrepareRequestTokenActivity");
+		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.actions.Statistics");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("x-oauthflow-opengpstracker://mHost:mPort/mPath"));
-		intent.putExtra("CONSUMER_SECRET", "!@#$%^ds:+_");
-		intent.putExtra("ACCESS_URL", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("AUTHORIZE_URL", "!@#$%^ds:+_");
-		intent.putExtra("REQUEST_URL", "abcde");
-		intent.putExtra("OAUTH_TOKEN", "abcde");
-		intent.putExtra("CONSUMER_KEY", "!@#$%^ds:+_");
-		intent.putExtra("OAUTH_TOKEN_SECRET", "abcde");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;x-oauthflow-opengpstracker://mHost:mPort/mPath;;null;;String->OAUTH_TOKEN_SECRET->abcde,String->CONSUMER_KEY->!@#$%^ds:+_,String->OAUTH_TOKEN->abcde,String->REQUEST_URL->abcde,String->AUTHORIZE_URL->!@#$%^ds:+_,String->ACCESS_URL->999999999999999999999999999999999999999999999999999,String->CONSUMER_SECRET->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

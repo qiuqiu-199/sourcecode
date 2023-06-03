@@ -17,11 +17,10 @@ public class Activity_30 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.FilteredDeckOptions");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity");
 		intent.setComponent(cn);
-		intent.putExtra("did", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->did->0,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

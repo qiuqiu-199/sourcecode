@@ -17,13 +17,12 @@ public class Activity_179 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.ScanActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.MedicineInfoActivity");
 		intent.setComponent(cn);
-		intent.putExtra("patient_id", 0);
-		intent.putExtra("after_scan_pkg", "abcde");
-		intent.putExtra("after_scan_cls", "abcde");
+		intent.putExtra("show_alerts", true);
+		intent.putExtra("medicine_id", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->after_scan_cls->abcde,String->after_scan_pkg->abcde,long->patient_id->0,
+		//null;;null;;null;;null;;long->medicine_id->0,boolean->show_alerts->true,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,10 +17,11 @@ public class Activity_49 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassViewActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.ExtractURLAsIphoneActivity");
 		intent.setComponent(cn);
+		intent.setData(Uri.parse("?:mAuthority/mPath"));
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;?:mAuthority/mPath;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

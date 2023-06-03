@@ -17,13 +17,12 @@ public class Activity_134 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.AudioTester");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SENDTO");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("smsto"));
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//android.intent.action.SENDTO;;android.intent.category.DEFAULT;;smsto;;null;;
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

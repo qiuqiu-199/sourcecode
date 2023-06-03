@@ -12,11 +12,9 @@ import java.util.Set;
  */
 
 public class AppModel {
-    private static AppModel intance = new AppModel();
-
     public String pkgName;
     public String appName;
-    public String appPath;
+
 
 //    public HashMap<String, ComponentModel> componentMap;
     public HashMap<String, ComponentModel> activityMap = new HashMap<>(); //保存activity名及其对应的activityModel
@@ -37,14 +35,7 @@ public class AppModel {
     public String manifestString;  //manifestString保存manifest文件信息
 
 
-
-    //全局单例
-    public static AppModel v(){
-        return intance;
-    }
-
-
     public HashMap<String, ActivityModel> getEaMap() {
-        return AppModel.v().eaMap;
+        return eaMap;
     }
 }

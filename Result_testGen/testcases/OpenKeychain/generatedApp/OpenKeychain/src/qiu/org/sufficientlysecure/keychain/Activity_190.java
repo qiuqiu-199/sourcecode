@@ -20,10 +20,9 @@ public class Activity_190 extends Activity
 		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.BROWSABLE");
-		intent.setData(Uri.parse("*"));
+		intent.setData(Uri.parse("http://play.google.com/store/apps/details?id=com.fidesmo.sec.android"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;*;;null;;
+		//android.intent.action.VIEW;;null;;http://play.google.com/store/apps/details?id=com.fidesmo.sec.android;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

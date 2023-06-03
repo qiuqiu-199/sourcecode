@@ -1,0 +1,105 @@
+BugInfo:
+hash:1965013450
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to resume activity {org.ligi.passandroid/org.ligi.passandroid.ui.PassViewActivity}: kotlin.UninitializedPropertyAccessException: lateinit property currentPass has not been initialized
+	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3825)
+	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3857)
+	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: kotlin.UninitializedPropertyAccessException: lateinit property currentPass has not been initialized
+	at org.ligi.passandroid.ui.PassViewActivityBase.g(SourceFile:34)
+	at org.ligi.passandroid.ui.PassViewActivity.f(SourceFile:49)
+	at org.ligi.passandroid.ui.PassViewActivity.onResumeFragments(SourceFile:130)
+	at android.support.v4.app.FragmentActivity.onPostResume(SourceFile:498)
+	at android.support.v7.app.AppCompatActivity.onPostResume(SourceFile:172)
+	at android.app.Activity.performResume(Activity.java:7325)
+	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3817)
+	... 11 more
+
+ICC Msgs:
+49	org.ligi.passandroid.ui.PassViewActivity	null;;null;;null;;null;;
+
+47	org.ligi.passandroid.ui.PassViewActivity	null;;null;;null;;null;;String->uuid->!@#$%^ds:+_,
+
+48	org.ligi.passandroid.ui.PassViewActivity	null;;null;;null;;null;;String->uuid->abcde,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:531891349
+FATAL EXCEPTION: AsyncTask #1
+java.lang.RuntimeException: An error occurred while executing doInBackground()
+	at android.os.AsyncTask$3.done(AsyncTask.java:354)
+	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:383)
+	at java.util.concurrent.FutureTask.setException(FutureTask.java:252)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:271)
+	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:245)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.lang.Thread.run(Thread.java:764)
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.net.URI.toURL(URI.java:1083)
+	at org.ligi.passandroid.ui.ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask.a(SourceFile:37)
+	at org.ligi.passandroid.ui.ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask.doInBackground(SourceFile:31)
+	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	... 4 more
+
+ICC Msgs:
+37	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	null;;null;;notEmpty;;null;;
+
+34	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpsmobile.virginaustralia.com;;null;;
+
+41	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	null;;null;;notEmpty;;null;;
+
+31	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpmobile.virginaustralia.com;;null;;
+
+30	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpscheck-in.virginaustralia.com;;null;;
+
+36	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpsmobile.aegeanair.com;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:2096009133
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.ligi.passandroid/org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity}: java.lang.ArrayIndexOutOfBoundsException: length=1; index=-1
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: length=1; index=-1
+	at org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity.onCreate(SourceFile:23)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+46	org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity	android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpswww.usairwaysmobile.com;;null;;
+
+44	org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity	android.intent.action.VIEW;;android.intent.category.DEFAULT;;httpwww.usairwaysmobile.com;;null;;
+
+45	org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity	null;;null;;notEmpty;;null;;
+
+43	org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity	null;;null;;notEmpty;;null;;
+
+------------------------------------------------------------------------
+

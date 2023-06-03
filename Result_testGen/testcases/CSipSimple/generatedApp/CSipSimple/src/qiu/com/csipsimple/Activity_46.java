@@ -20,9 +20,9 @@ public class Activity_46 extends Activity
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
 		intent.setAction("com.csipsimple.phone.action.DIALER");
-		intent.setData(Uri.parse("notEmpty"));
+		intent.setData(Uri.parse("?:mAuthority/mPath"));
 		startActivity(intent);
-		//com.csipsimple.phone.action.DIALER;;null;;notEmpty;;null;;
+		//com.csipsimple.phone.action.DIALER;;null;;?:mAuthority/mPath;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

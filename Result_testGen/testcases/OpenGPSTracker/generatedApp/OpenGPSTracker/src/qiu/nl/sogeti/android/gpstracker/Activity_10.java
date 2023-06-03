@@ -17,7 +17,7 @@ public class Activity_10 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.actions.InsertNote");
+		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.actions.NameTrack");
 		intent.setComponent(cn);
 		startActivity(intent);
 		//null;;null;;null;;null;;

@@ -17,15 +17,12 @@ public class Activity_83 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.OnlineFeedViewActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.SplashActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("title", "abcde");
-		intent.putExtra("arg.feedurl", "!@#$%^ds:+_");
-		intent.putExtra("android.intent.extra.TEXT", "abcde");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//android.intent.action.SEND;;null;;notEmpty;;null;;String->android.intent.extra.TEXT->abcde,String->arg.feedurl->!@#$%^ds:+_,String->title->abcde,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

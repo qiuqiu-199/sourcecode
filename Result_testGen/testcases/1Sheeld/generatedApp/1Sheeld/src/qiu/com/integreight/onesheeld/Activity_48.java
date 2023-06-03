@@ -17,11 +17,12 @@ public class Activity_48 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.Tutorial");
+		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.plugin.action.ActionActivity");
 		intent.setComponent(cn);
-		intent.putExtra("isMenu", true);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->isMenu->true,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

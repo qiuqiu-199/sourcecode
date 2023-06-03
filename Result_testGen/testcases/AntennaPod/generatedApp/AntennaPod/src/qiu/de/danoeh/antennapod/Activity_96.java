@@ -17,12 +17,15 @@ public class Activity_96 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.OnlineFeedViewActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.MainActivity");
 		intent.setComponent(cn);
-		intent.putExtra("title", "abcde");
-		intent.putExtra("arg.feedurl", "!@#$%^ds:+_");
+		Bundle fragment_args = new Bundle();
+		intent.putExtra("fragment_args", "fragment_args");
+		intent.putExtra("nav_index", Integer.MIN_VALUE);
+		intent.putExtra("fragment_tag", "!@#$%^ds:+_");
+		intent.putExtra("fragment_feed_id", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->arg.feedurl->!@#$%^ds:+_,String->title->abcde,
+		//null;;null;;null;;null;;long->fragment_feed_id->0,String->fragment_tag->!@#$%^ds:+_,int->nav_index->Integer.MIN_VALUE,Bundle->fragment_args->BundleObj,(,),
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,13 +17,12 @@ public class Activity_432 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.UriHandlerActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.WelcomeActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SENDTO");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("imto"));
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//android.intent.action.SENDTO;;android.intent.category.DEFAULT;;imto;;null;;
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

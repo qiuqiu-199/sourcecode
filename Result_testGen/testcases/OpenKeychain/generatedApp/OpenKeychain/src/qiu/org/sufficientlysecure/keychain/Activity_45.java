@@ -17,20 +17,14 @@ public class Activity_45 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.QrCodeCaptureActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CertifyKeyActivity");
 		intent.setComponent(cn);
-		intent.setAction("com.google.zxing.client.android.SCAN");
-		intent.putExtra("SCAN_MODE", "!@#$%^ds:+_");
-		intent.putExtra("SCAN_FORMATS", "abcde");
-		intent.putExtra("PROMPT_MESSAGE", "abcde");
-		intent.putExtra("BARCODE_IMAGE_ENABLED", false);
-		intent.putExtra("BEEP_ENABLED", false);
-		intent.putExtra("SCAN_ORIENTATION_LOCKED", false);
-		intent.putExtra("TIMEOUT", 0);
-		intent.putExtra("CHARACTER_SET", "!@#$%^ds:+_");
-		intent.putExtra("SCAN_CAMERA_ID", 0);
+		intent.putExtra("certify_key_id", Long.MIN_VALUE);
+		intent.putExtra("extra_key_ids", 0);
+		Parcelable operation_result = new MyParcelable();
+		intent.putExtra("operation_result", operation_result);
 		startActivity(intent);
-		//com.google.zxing.client.android.SCAN;;null;;null;;null;;int->SCAN_CAMERA_ID->0,String->CHARACTER_SET->!@#$%^ds:+_,long->TIMEOUT->0,boolean->SCAN_ORIENTATION_LOCKED->false,boolean->BEEP_ENABLED->false,boolean->BARCODE_IMAGE_ENABLED->false,String->PROMPT_MESSAGE->abcde,String->SCAN_FORMATS->abcde,String->SCAN_MODE->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Parcelable->operation_result->ParcelableObj,long[]->extra_key_ids->0,long->certify_key_id->Long.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

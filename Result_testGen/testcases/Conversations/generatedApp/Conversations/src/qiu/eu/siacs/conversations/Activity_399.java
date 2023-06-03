@@ -17,15 +17,13 @@ public class Activity_399 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.UriHandlerActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChooseAccountForProfilePictureActivity");
 		intent.setComponent(cn);
-		intent.setAction("eu.siacs.conversations.location.show, android.intent.action.VIEW");
-		intent.setData(Uri.parse("https://maps.google.com/maps?q=loc:,, geo:,?q=,()"));
-		intent.putExtra("longitude", 0.0);
-		intent.putExtra("name", "!@#$%^ds:+_");
-		intent.putExtra("latitude", Double.MAX_VALUE);
+		intent.setAction("android.intent.action.ATTACH_DATA");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setType("image/*");
 		startActivity(intent);
-		//eu.siacs.conversations.location.show, android.intent.action.VIEW;;null;;https://maps.google.com/maps?q=loc:,, geo:,?q=,();;null;;double->latitude->Double.MAX_VALUE,String->name->!@#$%^ds:+_,double->longitude->0.0,
+		//android.intent.action.ATTACH_DATA;;android.intent.category.DEFAULT;;null;;image/*;;
 	}
     /** Called when the activity is first created. */
     @Override

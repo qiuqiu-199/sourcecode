@@ -19,14 +19,13 @@ public class Activity_181 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		intent.setAction("eu.siacs.conversations.location.show, android.intent.action.VIEW");
-		intent.setData(Uri.parse("https://maps.google.com/maps?q=loc:,, geo:,?q=,()"));
-		intent.putExtra("longitude", 0.0);
-		intent.putExtra("name", "abcde");
-		intent.putExtra("jid", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("latitude", 0.0);
+		intent.setAction("eu.siacs.conversations.action.VIEW");
+		intent.putExtra("nick", "abcde");
+		intent.putExtra("pm", false);
+		intent.putExtra("conversationUuid", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("android.intent.extra.TEXT", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//eu.siacs.conversations.location.show, android.intent.action.VIEW;;null;;https://maps.google.com/maps?q=loc:,, geo:,?q=,();;null;;double->latitude->0.0,String->jid->999999999999999999999999999999999999999999999999999,String->name->abcde,double->longitude->0.0,
+		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,String->conversationUuid->999999999999999999999999999999999999999999999999999,boolean->pm->false,String->nick->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

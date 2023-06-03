@@ -1,0 +1,35 @@
+--------- beginning of main
+--------- beginning of system
+05-29 01:13:38.901 30087 30087 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaApp;--->onCreate()V
+05-29 01:13:38.976 30087 30087 D M_InsDal: Les/usc/citius/servando/calendula/notifications/LockScreenAlarmActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: FATAL EXCEPTION: main
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: Process: es.usc.citius.servando.calendula, PID: 30087
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{es.usc.citius.servando.calendula/es.usc.citius.servando.calendula.notifications.LockScreenAlarmActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.es.usc.citius.servando.calendula.MyParcelable
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.es.usc.citius.servando.calendula.MyParcelable
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.os.Bundle.getParcelable(Bundle.java:940)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.content.Intent.getParcelableExtra(Intent.java:7473)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at es.usc.citius.servando.calendula.notifications.LockScreenAlarmActivity.onCreate(Unknown Source:48)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+05-29 01:13:38.990 30087 30087 E AndroidRuntime: 	... 11 more

@@ -19,11 +19,10 @@ public class Activity_186 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
 		intent.setComponent(cn);
-		intent.setAction("notEmpty");
+		intent.setAction("?");
 		intent.setData(Uri.parse("smsto:csip/mPath"));
-		intent.putExtra("acc_id", Long.MIN_VALUE);
 		startActivity(intent);
-		//notEmpty;;null;;smsto:csip/mPath;;null;;long->acc_id->Long.MIN_VALUE,
+		//?;;null;;smsto:csip/mPath;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

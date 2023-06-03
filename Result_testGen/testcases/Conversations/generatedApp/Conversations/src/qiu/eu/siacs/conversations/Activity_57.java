@@ -17,15 +17,14 @@ public class Activity_57 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChooseContactActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShowLocationActivity");
 		intent.setComponent(cn);
-		intent.putExtra("account", "!@#$%^ds:+_");
-		intent.putExtra("extra_title_res_id", 0);
-		intent.putExtra("extra_select_multiple", true);
-		intent.putExtra("extra_group_chat_name", "!@#$%^ds:+_");
-		intent.putExtra("extra_show_enter_jid", false);
+		intent.setAction("eu.siacs.conversations.location.show, android.intent.action.VIEW");
+		intent.setData(Uri.parse("https://maps.google.com/maps?q=loc:,, geo:,?q=,()"));
+		intent.putExtra("longitude", Double.MAX_VALUE);
+		intent.putExtra("latitude", 0.0);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->extra_show_enter_jid->false,String->extra_group_chat_name->!@#$%^ds:+_,boolean->extra_select_multiple->true,int->extra_title_res_id->0,String->account->!@#$%^ds:+_,
+		//eu.siacs.conversations.location.show, android.intent.action.VIEW;;null;;https://maps.google.com/maps?q=loc:,, geo:,?q=,();;null;;double->latitude->0.0,double->longitude->Double.MAX_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,12 +17,12 @@ public class Activity_111 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupCheckSettings");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW, com.fsck.k9.intent.action.COMPOSE");
-		intent.putExtra("appWidgetId", 0);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//android.intent.action.VIEW, com.fsck.k9.intent.action.COMPOSE;;null;;null;;null;;int->appWidgetId->0,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

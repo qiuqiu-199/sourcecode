@@ -17,12 +17,11 @@ public class Activity_106 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSettings");
 		intent.setComponent(cn);
-		intent.setAction("com.fsck.k9.intent.action.REPLY");
-		intent.putExtra("message_reference", "abcde");
+		intent.putExtra("account", "abcde");
 		startActivity(intent);
-		//com.fsck.k9.intent.action.REPLY;;null;;null;;null;;String->message_reference->abcde,
+		//null;;null;;null;;null;;String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

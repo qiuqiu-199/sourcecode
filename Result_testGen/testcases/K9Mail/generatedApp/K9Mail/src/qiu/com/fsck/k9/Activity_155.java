@@ -17,12 +17,11 @@ public class Activity_155 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.FolderList");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.Accounts");
 		intent.setComponent(cn);
-		intent.putExtra("account", "abcde");
-		intent.putExtra("fromShortcut", false);
+		intent.putExtra("startup", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->fromShortcut->false,String->account->abcde,
+		//null;;null;;null;;null;;boolean->startup->false,
 	}
     /** Called when the activity is first created. */
     @Override

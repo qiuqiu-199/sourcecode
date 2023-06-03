@@ -17,13 +17,12 @@ public class Activity_9 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.wizards.BasePrefsWizard");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.PrefsFast");
 		intent.setComponent(cn);
-		intent.putExtra("ID", "abcde");
-		intent.putExtra("wizard", "abcde");
-		intent.putExtra("id", 0);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->id->0,String->wizard->abcde,String->ID->abcde,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

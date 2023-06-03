@@ -17,18 +17,13 @@ public class Activity_77 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.oauth.PrepareRequestTokenActivity");
+		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.viewer.TrackList");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("x-oauthflow-opengpstracker:mAuthority/mPath"));
-		intent.putExtra("CONSUMER_SECRET", "!@#$%^ds:+_");
-		intent.putExtra("ACCESS_URL", "!@#$%^ds:+_");
-		intent.putExtra("AUTHORIZE_URL", "abcde");
-		intent.putExtra("REQUEST_URL", "abcde");
-		intent.putExtra("OAUTH_TOKEN", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("CONSUMER_KEY", "abcde");
-		intent.putExtra("OAUTH_TOKEN_SECRET", "999999999999999999999999999999999999999999999999999");
+		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("content:nl.sogeti.android.gpstracker/mPath"));
+		intent.putExtra("query", "abcde");
 		startActivity(intent);
-		//null;;null;;x-oauthflow-opengpstracker:mAuthority/mPath;;null;;String->OAUTH_TOKEN_SECRET->999999999999999999999999999999999999999999999999999,String->CONSUMER_KEY->abcde,String->OAUTH_TOKEN->999999999999999999999999999999999999999999999999999,String->REQUEST_URL->abcde,String->AUTHORIZE_URL->abcde,String->ACCESS_URL->!@#$%^ds:+_,String->CONSUMER_SECRET->!@#$%^ds:+_,
+		//android.intent.action.VIEW;;null;;content:nl.sogeti.android.gpstracker/mPath;;null;;String->query->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

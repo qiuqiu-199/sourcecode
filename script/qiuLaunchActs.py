@@ -19,18 +19,14 @@ class ActivityLauncher:
     def launchAct(self):
         # tcFolder = Result_testGen\testcases\  内存放fax生成的测试用例
         tcFolder = self.testcase_dir + "testcases" + os.sep
-        packageFile = "F:\ThesisReproduction\qiu\summaryInfo\pkg.txt"
-        # 从packageFile中读取pkgName
-        fr = open(packageFile, "r")
-        pkgNames = fr.readlines()
-        count = 0
-        fr.close()
         for fn in os.listdir(tcFolder):  # 从tcFolder目录中
             # 如果folder = Result_testGen\testcases\fn 是个目录
             folder = os.path.join(tcFolder, fn)
             if os.path.isdir(folder):
-                pkgName = pkgNames[count].replace("\n", "")
-                count = count+1
+                pkgFile = "F:\\ThesisReproduction\\qiu\\summaryInfo\\" + fn + "\\declaredActivity.txt"
+                f = open(pkgFile, 'r')
+                value = f.readlines()
+                pkgName = value[1].replace("pkg_name: ", "").replace("\n", "")
                 print pkgName
                 # qiu：对pkgName对应的apk进行启动测试
                 self.testAPK(folder, pkgName, fn)
@@ -114,12 +110,12 @@ class ActivityLauncher:
             if current.startswith("."):
                 current = line.split(" ")[7].split("/")[0] + current
             str += fn + "\t" + package + "\t" + testActName + "\t" + current + "\t"
-            if current.startswith(package):
+            if current.startswith(package) or current == testActName:
                 str += "yes\n"
             else:
                 str += "no\n"
         if len(res) == 0:
-            str = fn + "\t" + package + "\t" + testActName + "\t" + "no return value" + "\t"
+            str = fn + "\t" + package + "\t" + testActName + "\t" + "no return value" + "\n"
         print "!!!" + str
         # !!!K9Mail       3       com.fsck.k9     com.fsck.k9.activity.ChooseIdentity     com.android.launcher3.Launcher  no
         # !!!K9Mail       35      com.fsck.k9     com.fsck.k9.activity.MessageList        com.fsck.k9.activity.Accounts   yes
@@ -157,18 +153,19 @@ class ActivityLauncher:
         for line in lines:
             if "\t" in line:
                 ss = line.split("\t")
-                res = ss[5].strip()
-                if res == "yes":
-                    eaSet = self.getEAs(ss[0])
-                    if ss[3] in eaSet:
-                        fw1.write(ss[0] + "\t" + ss[1] + "\t" + ss[2] + "\t" + ss[3] + "\tEA\n")
-                        if ss[3] not in history:
-                            fw2.write(ss[0] + "\t" + ss[2] + "\t" + ss[3] + "\tEA\n")
-                    else:
-                        fw1.write(ss[0] + "\t" + ss[1] + "\t" + ss[2] + "\t" + ss[3] + "\tIA\n")
-                        if ss[3] not in history:
-                            fw2.write(ss[0] + "\t" + ss[2] + "\t" + ss[3] + "\tIA\n")
-                    history.add(ss[3])
+                if len(ss) == 6:  # TODO fax这没有判断
+                    res = ss[5].strip()
+                    if res == "yes":
+                        eaSet = self.getEAs(ss[0])
+                        if ss[3] in eaSet:
+                            fw1.write(ss[0] + "\t" + ss[1] + "\t" + ss[2] + "\t" + ss[3] + "\tEA\n")
+                            if ss[3] not in history:
+                                fw2.write(ss[0] + "\t" + ss[2] + "\t" + ss[3] + "\tEA\n")
+                        else:
+                            fw1.write(ss[0] + "\t" + ss[1] + "\t" + ss[2] + "\t" + ss[3] + "\tIA\n")
+                            if ss[3] not in history:
+                                fw2.write(ss[0] + "\t" + ss[2] + "\t" + ss[3] + "\tIA\n")
+                        history.add(ss[3])
 
         fw1.close()
         fw2.close()
@@ -181,4 +178,3 @@ if __name__ == '__main__':
     launcher = ActivityLauncher(testcase_dir, launch_dir)
     launcher.launchAct()
     launcher.getLaunchedAct()
-

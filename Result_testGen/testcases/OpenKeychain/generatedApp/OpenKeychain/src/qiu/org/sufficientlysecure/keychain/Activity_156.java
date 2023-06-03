@@ -17,14 +17,13 @@ public class Activity_156 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("https"));
-		intent.setType("application/octet-stream");
+		intent.putExtra("package_name", "!@#$%^ds:+_");
+		intent.putExtra("package_signature", 0);
+		intent.putExtra("user_id", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;https;;application/octet-stream;;
+		//null;;null;;null;;null;;String->user_id->999999999999999999999999999999999999999999999999999,byte[]->package_signature->0,String->package_name->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

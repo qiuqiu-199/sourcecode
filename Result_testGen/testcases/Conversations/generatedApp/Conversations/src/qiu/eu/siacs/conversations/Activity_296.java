@@ -17,26 +17,16 @@ public class Activity_296 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.StartConversationActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SENDTO");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
-		Parcelable metadata = new MyParcelable();
-		intent.putExtra("metadata", metadata);
-		Parcelable intent1 = new MyParcelable();
-		intent.putExtra("intent", intent);
-		intent.putExtra("result_code", Integer.MAX_VALUE);
-		intent.putExtra("extra_select_multiple", true);
-		intent.putExtra("contact", "!@#$%^ds:+_");
-		intent.putExtra("scanned", true);
-		intent.putExtra("extra_group_chat_name", "!@#$%^ds:+_");
-		String[] contacts = new String[1];
-		intent.putExtra("contacts", contacts);
-		intent.putExtra("eu.siacs.conversations.invite_uri", "abcde");
-		intent.putExtra("extra_conversation", "abcde");
+		intent.setAction("eu.siacs.conversations.location.show, android.intent.action.VIEW");
+		intent.setData(Uri.parse("https://maps.google.com/maps?q=loc:,, geo:,?q=,()"));
+		intent.putExtra("longitude", 0.0);
+		intent.putExtra("name", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("jid", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("latitude", Double.MAX_VALUE);
 		startActivity(intent);
-		//android.intent.action.SENDTO;;null;;notEmpty;;null;;String->extra_conversation->abcde,String->eu.siacs.conversations.invite_uri->abcde,StringArray->contacts->999999999999999999999999999999999999999999999999999,String->extra_group_chat_name->!@#$%^ds:+_,boolean->scanned->true,String->contact->!@#$%^ds:+_,boolean->extra_select_multiple->true,int->result_code->Integer.MAX_VALUE,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,String->account->999999999999999999999999999999999999999999999999999,
+		//eu.siacs.conversations.location.show, android.intent.action.VIEW;;null;;https://maps.google.com/maps?q=loc:,, geo:,?q=,();;null;;double->latitude->Double.MAX_VALUE,String->jid->999999999999999999999999999999999999999999999999999,String->name->999999999999999999999999999999999999999999999999999,double->longitude->0.0,
 	}
     /** Called when the activity is first created. */
     @Override

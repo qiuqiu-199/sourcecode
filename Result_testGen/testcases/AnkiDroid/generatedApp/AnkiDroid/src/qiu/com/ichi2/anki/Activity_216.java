@@ -17,16 +17,14 @@ public class Activity_216 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.NoteEditor");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.Reviewer");
 		intent.setComponent(cn);
-		intent.setAction("org.openintents.action.CREATE_FLASHCARD");
-		intent.putExtra("edit.field.result.field", "abcde");
-		intent.putExtra("ID", "!@#$%^ds:+_");
-		intent.putExtra("CALLER", Integer.MAX_VALUE);
-		intent.putExtra("edit.field.result.field.index", 0);
-		intent.putExtra("CONTENTS", "!@#$%^ds:+_");
+		intent.setAction("?");
+		intent.putExtra("deckId", Long.MAX_VALUE);
+		intent.putExtra("originalDeck", 0);
+		intent.putExtra("allDecksSelected", true);
 		startActivity(intent);
-		//org.openintents.action.CREATE_FLASHCARD;;null;;null;;null;;String->CONTENTS->!@#$%^ds:+_,int->edit.field.result.field.index->0,int->CALLER->Integer.MAX_VALUE,String->ID->!@#$%^ds:+_,String->edit.field.result.field->abcde,
+		//?;;null;;null;;null;;boolean->allDecksSelected->true,long->originalDeck->0,long->deckId->Long.MAX_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

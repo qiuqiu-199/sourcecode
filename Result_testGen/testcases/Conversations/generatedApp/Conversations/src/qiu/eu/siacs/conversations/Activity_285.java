@@ -19,14 +19,9 @@ public class Activity_285 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		intent.setAction("eu.siacs.conversations.action.VIEW");
-		intent.putExtra("nick", "abcde");
-		intent.putExtra("pm", false);
-		intent.putExtra("do_not_append", false);
-		intent.putExtra("conversationUuid", "abcde");
-		intent.putExtra("android.intent.extra.TEXT", "!@#$%^ds:+_");
+		intent.setAction("new java.util.List");
 		startActivity(intent);
-		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->!@#$%^ds:+_,String->conversationUuid->abcde,boolean->do_not_append->false,boolean->pm->false,String->nick->abcde,
+		//new java.util.List;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

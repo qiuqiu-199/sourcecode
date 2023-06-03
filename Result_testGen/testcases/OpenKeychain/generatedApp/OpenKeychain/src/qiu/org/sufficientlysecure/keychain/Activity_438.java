@@ -17,14 +17,17 @@ public class Activity_438 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteSelectIdKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteSelectPubKeyActivity");
 		intent.setComponent(cn);
-		intent.putExtra("show_autocrypt_hint", false);
-		intent.putExtra("package_name", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("package_signature", 0);
-		intent.putExtra("user_id", "!@#$%^ds:+_");
+		intent.putExtra("no_user_ids", true);
+		ArrayList<String> dublicate_emails = new ArrayList<String>();
+		intent.putStringArrayListExtra("dublicate_emails", dublicate_emails);
+		ArrayList<String> missing_emails = new ArrayList<String>();
+		intent.putStringArrayListExtra("missing_emails", missing_emails);
+		long[] master_key_ids = new long[1];
+		intent.putExtra("master_key_ids", master_key_ids);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->user_id->!@#$%^ds:+_,byte[]->package_signature->0,String->package_name->999999999999999999999999999999999999999999999999999,boolean->show_autocrypt_hint->false,
+		//null;;null;;null;;null;;longArray->master_key_ids->0,StringArrayList->missing_emails->abcde,StringArrayList->dublicate_emails->abcde,boolean->no_user_ids->true,
 	}
     /** Called when the activity is first created. */
     @Override

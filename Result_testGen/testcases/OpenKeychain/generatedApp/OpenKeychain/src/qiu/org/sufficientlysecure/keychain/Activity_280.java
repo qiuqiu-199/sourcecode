@@ -17,16 +17,15 @@ public class Activity_280 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemotePassphraseDialogActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.ExchangeActivity");
 		intent.setComponent(cn);
-		Parcelable data = new MyParcelable();
-		intent.putExtra("data", data);
-		Parcelable crypto_input = new MyParcelable();
-		intent.putExtra("crypto_input", crypto_input);
-		Parcelable required_input = new MyParcelable();
-		intent.putExtra("required_input", required_input);
+		intent.putExtra("GroupId", "abcde");
+		intent.putExtra("NumUsers", Integer.MIN_VALUE);
+		byte[] UserData = new byte[1];
+		intent.putExtra("UserData", UserData);
+		intent.putExtra("HostName", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->required_input->ParcelableObj,Parcelable->crypto_input->ParcelableObj,Parcelable->data->ParcelableObj,
+		//null;;null;;null;;null;;String->HostName->999999999999999999999999999999999999999999999999999,byteArray->UserData->Byte.MAX_VALUE,int->NumUsers->Integer.MIN_VALUE,String->GroupId->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -21,11 +21,11 @@ public class Activity_65 extends Activity
 		intent.setComponent(cn);
 		intent.putExtra("account", "abcde");
 		intent.putExtra("extra_select_multiple", false);
-		intent.putExtra("extra_filtered_contacts", "abcde");
+		intent.putExtra("extra_filtered_contacts", "!@#$%^ds:+_");
 		intent.putExtra("extra_conversation", "!@#$%^ds:+_");
-		intent.putExtra("extra_show_enter_jid", false);
+		intent.putExtra("extra_show_enter_jid", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->extra_show_enter_jid->false,String->extra_conversation->!@#$%^ds:+_,String[]->extra_filtered_contacts->abcde,boolean->extra_select_multiple->false,String->account->abcde,
+		//null;;null;;null;;null;;boolean->extra_show_enter_jid->true,String->extra_conversation->!@#$%^ds:+_,String[]->extra_filtered_contacts->!@#$%^ds:+_,boolean->extra_select_multiple->false,String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

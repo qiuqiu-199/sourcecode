@@ -19,9 +19,10 @@ public class Activity_25 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.viewer.TrackList");
 		intent.setComponent(cn);
-		intent.putExtra("_id", "abcde");
+		intent.setAction("android.intent.action.SEARCH");
+		intent.addCategory("android.intent.category.DEFAULT");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->_id->abcde,
+		//android.intent.action.SEARCH;;android.intent.category.DEFAULT;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

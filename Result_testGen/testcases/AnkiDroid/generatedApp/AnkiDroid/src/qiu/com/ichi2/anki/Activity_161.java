@@ -17,10 +17,12 @@ public class Activity_161 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.CardTemplateEditor");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.CardBrowser");
 		intent.setComponent(cn);
+		intent.putExtra("selectedDeck", Long.MIN_VALUE);
+		intent.putExtra("defaultDeckId", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;long->defaultDeckId->0,long->selectedDeck->Long.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

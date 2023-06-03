@@ -21,11 +21,13 @@ public class Activity_14 extends Activity
 		intent.setComponent(cn);
 		MySerializable schedule_id = new MySerializable();
 		intent.putExtra("schedule_id", schedule_id);
-		intent.putExtra("schedule_time", "!@#$%^ds:+_");
-		intent.putExtra("position", 0);
-		intent.putExtra("date", "!@#$%^ds:+_");
+		intent.putExtra("schedule_time", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("action", Integer.MAX_VALUE);
+		Parcelable target = new MyParcelable();
+		intent.putExtra("target", target);
+		intent.putExtra("date", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->date->!@#$%^ds:+_,int->position->0,String->schedule_time->!@#$%^ds:+_,Serializable->schedule_id->SerializableObj,
+		//null;;null;;null;;null;;String->date->999999999999999999999999999999999999999999999999999,Parcelable->target->ParcelableObj,int->action->Integer.MAX_VALUE,String->schedule_time->999999999999999999999999999999999999999999999999999,Serializable->schedule_id->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

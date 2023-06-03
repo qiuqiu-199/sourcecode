@@ -17,12 +17,11 @@ public class Activity_58 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.MainActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.FlattrAuthActivity");
 		intent.setComponent(cn);
-		intent.putExtra("nav_type", Integer.MAX_VALUE);
-		intent.putExtra("nav_index", 0);
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//null;;null;;null;;null;;int->nav_index->0,int->nav_type->Integer.MAX_VALUE,
+		//null;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

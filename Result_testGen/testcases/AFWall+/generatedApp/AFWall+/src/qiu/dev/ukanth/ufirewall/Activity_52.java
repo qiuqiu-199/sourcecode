@@ -17,11 +17,13 @@ public class Activity_52 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","haibison.android.lockpattern.LockPatternActivity");
+		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.MainActivity");
 		intent.setComponent(cn);
-		intent.setAction("haibison.android.lockpattern.LockPatternActivity.CREATE_PATTERN");
+		intent.setAction("dev.ukanth.ufirewall.intent.action.CUSTOM_SCRIPT");
+		intent.putExtra("dev.ukanth.ufirewall.intent.extra.SCRIPT2", "abcde");
+		intent.putExtra("dev.ukanth.ufirewall.intent.extra.SCRIPT", "abcde");
 		startActivity(intent);
-		//haibison.android.lockpattern.LockPatternActivity.CREATE_PATTERN;;null;;null;;null;;
+		//dev.ukanth.ufirewall.intent.action.CUSTOM_SCRIPT;;null;;null;;null;;String->dev.ukanth.ufirewall.intent.extra.SCRIPT->abcde,String->dev.ukanth.ufirewall.intent.extra.SCRIPT2->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

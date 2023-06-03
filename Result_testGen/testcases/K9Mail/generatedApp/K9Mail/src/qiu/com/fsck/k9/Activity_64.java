@@ -20,31 +20,9 @@ public class Activity_64 extends Activity
 		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageList");
 		intent.setComponent(cn);
 		intent.setAction("shortcut");
-		intent.setData(Uri.parse("mSheme://mHost:mPort/notEmpty"));
-		intent.putExtra("account", "!@#$%^ds:+_");
-		Parcelable error = new MyParcelable();
-		intent.putExtra("error", error);
-		intent.putExtra("no_threading", false);
-		Parcelable intent1 = new MyParcelable();
-		intent.putExtra("intent", intent);
-		intent.putExtra("com.fsck.k9.search_folder", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("query", "!@#$%^ds:+_");
-		Parcelable decryption = new MyParcelable();
-		intent.putExtra("decryption", decryption);
-		Parcelable insecure_detail_intent = new MyParcelable();
-		intent.putExtra("insecure_detail_intent", insecure_detail_intent);
-		intent.putExtra("folder", "!@#$%^ds:+_");
-		byte[] search_bytes = new byte[1];
-		intent.putExtra("search_bytes", search_bytes);
-		intent.putExtra("result_code", 0);
-		intent.putExtra("special_folder", "999999999999999999999999999999999999999999999999999");
-		Parcelable signature = new MyParcelable();
-		intent.putExtra("signature", signature);
-		intent.putExtra("app_data", "app_data");
-		intent.putExtra("override_crypto_warning", false);
-		intent.putExtra("com.fsck.k9.search_account", "abcde");
+		intent.setData(Uri.parse("mSheme:mAuthority/?"));
 		startActivity(intent);
-		//shortcut;;null;;mSheme://mHost:mPort/notEmpty;;null;;String->com.fsck.k9.search_account->abcde,boolean->override_crypto_warning->false,Bundle->app_data->BundleObj,Parcelable->signature->ParcelableObj,String->special_folder->999999999999999999999999999999999999999999999999999,int->result_code->0,byteArray->search_bytes->0,String->folder->!@#$%^ds:+_,Parcelable->insecure_detail_intent->ParcelableObj,Parcelable->decryption->ParcelableObj,String->query->!@#$%^ds:+_,String->com.fsck.k9.search_folder->999999999999999999999999999999999999999999999999999,Parcelable->intent->ParcelableObj,boolean->no_threading->false,Parcelable->error->ParcelableObj,String->account->!@#$%^ds:+_,
+		//shortcut;;null;;mSheme:mAuthority/?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

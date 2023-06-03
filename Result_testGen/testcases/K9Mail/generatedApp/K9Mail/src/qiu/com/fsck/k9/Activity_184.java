@@ -17,11 +17,10 @@ public class Activity_184 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.Prefs");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.OpenPgpAppSelectDialog");
 		intent.setComponent(cn);
-		intent.setData(Uri.parse("mSheme:mAuthority/notEmpty"));
 		startActivity(intent);
-		//null;;null;;mSheme:mAuthority/notEmpty;;null;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

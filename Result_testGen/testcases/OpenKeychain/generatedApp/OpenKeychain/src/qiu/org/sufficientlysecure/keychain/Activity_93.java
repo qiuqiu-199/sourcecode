@@ -17,11 +17,16 @@ public class Activity_93 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.UsbEventReceiverActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.hardware.usb.action.USB_DEVICE_ATTACHED");
+		intent.setAction("android.intent.action.SEND_MULTIPLE");
+		intent.setData(Uri.parse("?"));
+		intent.setType("application/autocrypt-setup");
+		intent.putExtra("android.intent.extra.TEXT", "!@#$%^ds:+_");
+		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
+		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
 		startActivity(intent);
-		//android.hardware.usb.action.USB_DEVICE_ATTACHED;;null;;null;;null;;
+		//android.intent.action.SEND_MULTIPLE;;null;;?;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

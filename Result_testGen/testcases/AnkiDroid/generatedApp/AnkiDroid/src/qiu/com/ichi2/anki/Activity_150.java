@@ -19,10 +19,11 @@ public class Activity_150 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.CardBrowser");
 		intent.setComponent(cn);
+		intent.putExtra("defaultDeckId", 0);
 		intent.putExtra("selectedDeck", 0);
-		intent.putExtra("defaultDeckId", Long.MAX_VALUE);
+		intent.putExtra("currentCard", Long.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->defaultDeckId->Long.MAX_VALUE,long->selectedDeck->0,
+		//null;;null;;null;;null;;long->currentCard->Long.MIN_VALUE,long->selectedDeck->0,long->defaultDeckId->0,
 	}
     /** Called when the activity is first created. */
     @Override

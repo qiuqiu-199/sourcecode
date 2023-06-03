@@ -17,11 +17,12 @@ public class Activity_201 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.UpgradeDatabases");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupComposition");
 		intent.setComponent(cn);
-		intent.setAction("DatabaseUpgradeService.upgradeProgress");
+		intent.setAction("android.intent.action.EDIT");
+		intent.putExtra("account", "abcde");
 		startActivity(intent);
-		//DatabaseUpgradeService.upgradeProgress;;null;;null;;null;;
+		//android.intent.action.EDIT;;null;;null;;null;;String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

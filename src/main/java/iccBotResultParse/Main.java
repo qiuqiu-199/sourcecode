@@ -14,15 +14,18 @@ import java.io.*;
 import java.util.*;
 
 /**
- * @ClassName: Parser
+ * @ClassName: Main
  * @Author: qiuzhiq
  * @Date: 2023/5/10 16:19
  * @Description:
  */
 
-public class Parser {
+public class Main {
     public static void main(String[] args) throws DocumentException, IOException {
-        System.setOut(new PrintStream(new File("summaryInfo/outInfo.txt"))); //控制台输出重定向到文件
+        String outputLogPath = "summaryInfo/outInfo.txt";
+        File logfile = new File(outputLogPath);
+        if (!logfile.exists()) logfile.createNewFile();
+        System.setOut(new PrintStream(logfile)); //控制台输出重定向到文件
         //收集生成测试用例的时间
         long totalstarttime = System.currentTimeMillis(); //收集单个apk的测试用例生成时间
         long currentstarttime = totalstarttime;  //收集全部测试用例生成时间
@@ -30,41 +33,34 @@ public class Parser {
 
         File appPath = new File(Global.v().appPath);
         String[] list = appPath.list();
-        File file = new File("summaryInfo/pkg.txt");
-        if(!file.exists()) file.createNewFile();
-        FileOutputStream fileOutputStream = new FileOutputStream(file,true);
-
         assert list != null;
         for (String appName : list) {
-            Global.appModel = new AppModel();
-            Global.appModel.appName = appName.substring(0, appName.length() - 4);
-            System.out.println("当前应用：" + Global.appModel.appName);
+            Global.v().setAppModel(new AppModel());
+            Global.v().getAppModel().appName = appName.substring(0, appName.length() - 4);
+            System.out.println("当前应用：" + Global.v().getAppModel().appName);
 
             //解析manifest文件
             ManifestParser manifestParser = new ManifestParser(Global.v().appPath + appName);
             manifestParser.parse(true);  //这个true，对应fax里面的
-            String content = Global.appModel.pkgName +"\n";
-            fileOutputStream.write(content.getBytes());
 
 
             Map<String, Set<ICCMsg>> activity2receivedICCMap = new HashMap<>(); //存储发送给activity的iccmsg
 
-//            //从CTG.xml解析intent
-//            resolveIntentFromCTGfile(activity2receivedICCMap);
-//            //从manifest文件里的intentfile解析组件间通信
-//            resolveIntentFromManifest(activity2receivedICCMap);
-//
-//            //从componentInfo/xml文件里解析intent
-//            resolveIntentFromReceivedIntent(activity2receivedICCMap);
-//
-//            TestcaseGenerator testcaseGenerator = new TestcaseGenerator(activity2receivedICCMap);
-//            testcaseGenerator.generateTestApp();
+            //从CTG.xml解析intent
+            resolveIntentFromCTGfile(activity2receivedICCMap);
+            //从manifest文件里的intentfile解析组件间通信
+            resolveIntentFromManifest(activity2receivedICCMap);
+
+            //从componentInfo/xml文件里解析intent
+            resolveIntentFromReceivedIntent(activity2receivedICCMap);
+
+            TestcaseGenerator testcaseGenerator = new TestcaseGenerator(activity2receivedICCMap);
+            testcaseGenerator.generateTestApp();
 
             long endtime = System.currentTimeMillis();
-            System.out.println("\t\t" + AppModel.v().appName + "生成测试用例所花时间：" + (endtime - currentstarttime) / 1000 + "秒");
+            System.out.println("\t\t" + Global.v().getAppModel().appName + "生成测试用例所花时间：" + (endtime - currentstarttime) / 1000 + "秒");
             currentstarttime = endtime;
         }
-        fileOutputStream.close();
 
         System.out.println("==总共花费时间：" + (System.currentTimeMillis() - totalstarttime));
 
@@ -72,10 +68,10 @@ public class Parser {
     }
 
     public static void resolveIntentFromManifest(Map<String, Set<ICCMsg>> activity2receivedICCMap) {
-        Set<String> activityNameSet = AppModel.v().activityMap.keySet();
+        Set<String> activityNameSet = Global.v().getAppModel().activityMap.keySet();
 
         for (String activityName : activityNameSet) {
-            ActivityModel activityModel = (ActivityModel) AppModel.v().activityMap.get(activityName);
+            ActivityModel activityModel = (ActivityModel) Global.v().getAppModel().activityMap.get(activityName);
             List<IntentFilterModel> intent_filter_data_list = activityModel.getIntentFilters();
             for (IntentFilterModel intentFilterModel : intent_filter_data_list) {
                 Set<String> actions = intentFilterModel.getAction_list();
@@ -135,7 +131,7 @@ public class Parser {
     //从CTG.xml文件中解析iccmsg
     public static void resolveIntentFromCTGfile(Map<String, Set<ICCMsg>> activity2receivedICCMap) throws DocumentException {
         //从CTG.xml获取每个icc目标为activity的intent信息  TODO 忽略了一点，ctg里有些活动组件是没有被组件启动，比如com.fsck.k9.activity.ChooseIdentity
-        String path = "F:\\ThesisReproduction\\iccBot\\ICCBot\\qiuResult\\output\\" + AppModel.v().appName + "\\CTGResult\\CTG.xml";
+        String path = "F:\\ThesisReproduction\\iccBot\\ICCBot\\qiuResult\\output\\" + Global.v().getAppModel().appName + "\\CTGResult\\CTG.xml";
 //        File file = new File("F:\\ThesisReproduction\\iccBot\\ICCBot\\qiuResult\\output\\K9Mail\\CTGResult\\CTG.xml");
         File file = new File(path);
 
@@ -155,7 +151,7 @@ public class Parser {
 
                 //TODO CTG.xml的隐式intent要记得向下怎么处理
 //                if(destinationElement.attributeValue("desType").equals("Activity") && ConstantUtils.activitySet.contains(destinationElement.getName())) {
-                if (AppModel.v().activityMap.keySet().contains(destinationElement.attributeValue("name"))) {
+                if (Global.v().getAppModel().activityMap.keySet().contains(destinationElement.attributeValue("name"))) {
 
 
                     //对一条ctg边目的为activity的icc构建
@@ -173,8 +169,31 @@ public class Parser {
 
                     if (destinationElement.attributeValue("type") != null)
                         iccMsg.type = destinationElement.attributeValue("type");
-                    if (destinationElement.attributeValue("extras") != null)
-                        iccMsg.extras.addAll(Arrays.asList(destinationElement.attributeValue("extras").split(",")));
+                    if (destinationElement.attributeValue("extras") != null){
+                        String[] extras = destinationElement.attributeValue("extras").split(",");
+                        for (int i = 0; i < extras.length; ++i) {
+                            if(extras[i].split("-")[0].equals("Bundle")){
+                                MyBundleType myBundleType = new MyBundleType();
+                                myBundleType.bundleName = extras[i].split("-")[1];
+                                for(int j = i+1; j < extras.length; ++j){
+                                    String temp = extras[j];
+                                    if(temp.equals("(")) continue;
+
+                                    if(temp.contains(")")){
+                                        temp = temp.replace(")", "");
+                                        myBundleType.kvs.add(temp);
+                                        i=j;
+                                        break;
+                                    }else{
+                                        myBundleType.kvs.add(temp);
+                                    }
+                                }
+                                iccMsg.extras.add(myBundleType.toString());
+                            }else {
+                                iccMsg.extras.add(extras[i]);
+                            }
+                        }
+                    }
 
 
                     if (!activity2receivedICCMap.keySet().contains(desActName))
@@ -189,10 +208,10 @@ public class Parser {
     }
 
 
-    //    此方法解析componentInfo.xml，获取每个activity接收的intent信息
+    // 此方法解析componentInfo.xml，获取每个activity接收的intent信息
     public static void resolveIntentFromReceivedIntent(Map<String, Set<ICCMsg>> activity2receivedICCMap) throws DocumentException {
         SAXReader saxReader = new SAXReader();
-        String path = "F:\\ThesisReproduction\\iccBot\\ICCBot\\qiuResult\\output\\" + AppModel.v().appName + "\\CTGResult\\ComponentInfo.xml";
+        String path = "F:\\ThesisReproduction\\iccBot\\ICCBot\\qiuResult\\output\\" + Global.v().getAppModel().appName + "\\CTGResult\\ComponentInfo.xml";
 //        File file = new File("F:\\ThesisReproduction\\iccBot\\ICCBot\\qiuResult\\output\\K9Mail\\CTGResult\\ComponentInfo.xml");
         File file = new File(path);
         Document document = saxReader.read(file);
@@ -237,23 +256,32 @@ public class Parser {
                         typeSet.addAll(Arrays.asList(element.attributeValue("type").split(", ")));
                     } else typeSet.add("");
                     if (element.attributeValue("extras") != null) {
-                        //TODO Bundle-app_data,(,String-com.fsck.k9.search_folder,String-com.fsck.k9.search_account)处理
-//                        String[] extras = element.attributeValue("extras").split(",");
-//                        for (int i = 0; i < extras.length; ++i) {
-//                            if(extras[i].equals("(")){
-//                                BundleType bundleType = new BundleType();
-//                                for(int j = i+1; j < extras.length; ++j){
-//                                    String temp = extras[j];
-//                                    if(temp.contains(")")){
-//                                        List<ExtraData> temp1 = temp.replace(")","");
-//                                        bundleType.put("String",temp1);
-//                                    }else{
-//
-//                                    }
-//                                }
-//                            }
-//                        }
-                        extrasSet.addAll(Arrays.asList(element.attributeValue("extras").split(",")));
+                        //TODO (解决6.3)Bundle-app_data,(,String-com.fsck.k9.search_folder,String-com.fsck.k9.search_account)处理
+                        String[] extras = element.attributeValue("extras").split(",");
+                        for (int i = 0; i < extras.length; ++i) {
+                            if(extras[i].split("-")[0].equals("Bundle")){
+                                MyBundleType myBundleType = new MyBundleType();
+                                myBundleType.bundleName = extras[i].split("-")[1];
+                                for(int j = i+1; j < extras.length; ++j){
+                                    String temp = extras[j];
+                                    if(temp.equals("(")) continue;
+
+                                    if(temp.contains(")")){
+                                        temp = temp.replace(")", "");
+                                        myBundleType.kvs.add(temp);
+                                        i=j;
+                                        break;
+                                    }else{
+                                        myBundleType.kvs.add(temp);
+                                    }
+                                }
+                                extrasSet.add(myBundleType.toString());
+                            }else {
+                                extrasSet.add(extras[i]);
+                            }
+
+                        }
+//                        extrasSet.addAll(Arrays.asList(element.attributeValue("extras").split(",")));
                     } else extrasSet.add("");
                 }
             }
@@ -278,6 +306,7 @@ public class Parser {
                         if (!activity2receivedICCMap.get(activityName).toString().contains(msg.toString()))
                             activity2receivedICCMap.get(activityName).add(msg);
 
+                        //这里来一段不需要extra的icc
                         ICCMsg msg1 = new ICCMsg();
                         msg1.setAction(action);
                         msg1.setCategory(getRandomElementSetFromSet(categorySetGenerated));
@@ -290,6 +319,49 @@ public class Parser {
                     }
                 }
             }
+
+            // qiu6.3：以下三种icc每个activity都要有
+            //加个全空的icc
+            ICCMsg iccMsg = new ICCMsg();
+            iccMsg.action = null;
+            iccMsg.category.add("");
+            iccMsg.type = null;
+            iccMsg.data = null;
+            boolean flag = false;
+            //逐一对比是否存在全为null的基本属性
+            System.out.println(activityName);
+            if(!(activity2receivedICCMap.get(activityName) == null)){
+                for (ICCMsg icc : activity2receivedICCMap.get(activityName)) {
+                    if(icc.toString().equals(iccMsg.toString())) {
+                        flag = true;
+                        break;
+                    }
+                }
+            }
+            if(!flag){
+                if(activity2receivedICCMap.get(activityName) == null)
+                    activity2receivedICCMap.put(activityName,new HashSet<>());
+                activity2receivedICCMap.get(activityName).add(iccMsg);
+            }
+
+            //基本属性全为null+额外属性为一个ParcelableObj
+            ICCMsg iccMsg1 = new ICCMsg();
+            iccMsg1.action = null;
+            iccMsg1.category.add("");
+            iccMsg1.type = null;
+            iccMsg1.data = null;
+            iccMsg1.extras.add("Parcelable-parObj");
+            activity2receivedICCMap.get(componentElement.attributeValue("name")).add(iccMsg1);
+            //基本属性全为null+额外属性为一个SerializableObj
+            ICCMsg iccMsg2 = new ICCMsg();
+            iccMsg2.action = null;
+            iccMsg2.category.add("");
+            iccMsg2.type = null;
+            iccMsg2.data = null;
+            iccMsg2.extras.add("Serializable-serObj");
+            activity2receivedICCMap.get(componentElement.attributeValue("name")).add(iccMsg2);
+
+            int a = 1+1;
         }
     }
 }

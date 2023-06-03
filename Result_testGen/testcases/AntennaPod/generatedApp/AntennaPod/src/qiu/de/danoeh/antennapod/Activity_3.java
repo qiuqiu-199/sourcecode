@@ -17,13 +17,12 @@ public class Activity_3 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.StorageErrorActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.CastplayerActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.MEDIA_MOUNTED");
-		intent.putExtra("selected_dir", "!@#$%^ds:+_");
-		intent.putExtra("read", false);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//android.intent.action.MEDIA_MOUNTED;;null;;null;;null;;boolean->read->false,String->selected_dir->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

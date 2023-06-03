@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ProgressBar android:gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="?android:progressBarStyleLarge" />
-    <ListView android:orientation="vertical" android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <TextView android:textSize="18.0sp" android:textColor="#89000000" android:id="@android:id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:text="@string/no_results_found" />
-</RelativeLayout>

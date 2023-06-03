@@ -17,13 +17,11 @@ public class Activity_106 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.calllog.CallLogDetailsActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SENDTO");
-		intent.setData(Uri.parse("tel:mAuthority/mPath"));
-		intent.putExtra("acc_id", 0);
+		intent.putExtra("EXTRA_CALL_LOG_IDS", 0);
 		startActivity(intent);
-		//android.intent.action.SENDTO;;null;;tel:mAuthority/mPath;;null;;long->acc_id->0,
+		//null;;null;;null;;null;;long[]->EXTRA_CALL_LOG_IDS->0,
 	}
     /** Called when the activity is first created. */
     @Override

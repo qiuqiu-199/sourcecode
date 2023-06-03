@@ -17,11 +17,11 @@ public class Activity_226 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.DeckOptions");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.multimediacard.activity.TranslationActivity");
 		intent.setComponent(cn);
-		intent.putExtra("did", 0);
+		intent.putExtra("translation.activity.extra.source", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;long->did->0,
+		//null;;null;;null;;null;;String->translation.activity.extra.source->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

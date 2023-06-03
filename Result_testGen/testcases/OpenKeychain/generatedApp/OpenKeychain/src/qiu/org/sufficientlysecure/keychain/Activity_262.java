@@ -17,16 +17,11 @@ public class Activity_262 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DisplayTextActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CertifyFingerprintActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.setType("text/plain");
-		Parcelable result = new MyParcelable();
-		intent.putExtra("result", result);
-		Parcelable metadata = new MyParcelable();
-		intent.putExtra("metadata", metadata);
+		intent.putExtra("master_key_id", 0);
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;null;;text/plain;;Parcelable->metadata->ParcelableObj,Parcelable->result->ParcelableObj,
+		//null;;null;;null;;null;;long->master_key_id->0,
 	}
     /** Called when the activity is first created. */
     @Override

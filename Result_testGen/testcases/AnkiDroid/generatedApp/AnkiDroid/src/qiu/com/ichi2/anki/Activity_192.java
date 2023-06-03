@@ -17,12 +17,10 @@ public class Activity_192 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.Previewer");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.StudyOptionsActivity");
 		intent.setComponent(cn);
-		intent.putExtra("index", 0);
-		intent.putExtra("cardList", Long.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;long[]->cardList->Long.MIN_VALUE,int->index->0,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

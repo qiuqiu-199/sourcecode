@@ -17,12 +17,12 @@ public class Activity_315 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.EncryptFilesActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.BackupActivity");
 		intent.setComponent(cn);
-		intent.setAction("org.sufficientlysecure.keychain.action.ENCRYPT_DATA");
-		intent.putExtra("org.sufficientlysecure.keychain.EXTRA_SIGNATURE_KEY_IDS", Long.MAX_VALUE);
+		intent.putExtra("export_secret", true);
+		intent.putExtra("master_key_ids", 0);
 		startActivity(intent);
-		//org.sufficientlysecure.keychain.action.ENCRYPT_DATA;;null;;null;;null;;long[]->org.sufficientlysecure.keychain.EXTRA_SIGNATURE_KEY_IDS->Long.MAX_VALUE,
+		//null;;null;;null;;null;;long[]->master_key_ids->0,boolean->export_secret->true,
 	}
     /** Called when the activity is first created. */
     @Override

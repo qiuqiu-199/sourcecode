@@ -19,13 +19,16 @@ public class Activity_86 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.WriteCommentActivity");
 		intent.setComponent(cn);
-		intent.putExtra("title", "!@#$%^ds:+_");
+		intent.putExtra("title", "abcde");
+		intent.putExtra("giveaway", "abcde");
 		intent.putExtra("xsrf", "!@#$%^ds:+_");
 		MySerializable parent = new MySerializable();
 		intent.putExtra("parent", parent);
+		MySerializable comment = new MySerializable();
+		intent.putExtra("comment", comment);
 		intent.putExtra("path", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->path->abcde,Serializable->parent->SerializableObj,String->xsrf->!@#$%^ds:+_,String->title->!@#$%^ds:+_,
+		//null;;null;;null;;null;;String->path->abcde,Serializable->comment->SerializableObj,Serializable->parent->SerializableObj,String->xsrf->!@#$%^ds:+_,String->giveaway->abcde,String->title->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

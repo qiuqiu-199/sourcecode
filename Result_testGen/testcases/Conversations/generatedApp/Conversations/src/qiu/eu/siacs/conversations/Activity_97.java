@@ -17,12 +17,15 @@ public class Activity_97 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConferenceDetailsActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChooseContactActivity");
 		intent.setComponent(cn);
-		intent.setAction("view_muc");
-		intent.putExtra("uuid", "abcde");
+		intent.putExtra("account", "abcde");
+		intent.putExtra("extra_title_res_id", 0);
+		intent.putExtra("extra_select_multiple", false);
+		intent.putExtra("extra_group_chat_name", "abcde");
+		intent.putExtra("extra_show_enter_jid", false);
 		startActivity(intent);
-		//view_muc;;null;;null;;null;;String->uuid->abcde,
+		//null;;null;;null;;null;;boolean->extra_show_enter_jid->false,String->extra_group_chat_name->abcde,boolean->extra_select_multiple->false,int->extra_title_res_id->0,String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

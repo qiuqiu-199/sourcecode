@@ -17,15 +17,15 @@ public class Activity_96 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","com.theartofdev.edmodo.cropper.CropImageActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChooseContactActivity");
 		intent.setComponent(cn);
-		intent.putExtra("CROP_IMAGE_EXTRA_BUNDLE", "CROP_IMAGE_EXTRA_BUNDLE");
-		Parcelable CROP_IMAGE_EXTRA_OPTIONS = new MyParcelable();
-		intent.putExtra("CROP_IMAGE_EXTRA_OPTIONS", CROP_IMAGE_EXTRA_OPTIONS);
-		Parcelable CROP_IMAGE_EXTRA_SOURCE = new MyParcelable();
-		intent.putExtra("CROP_IMAGE_EXTRA_SOURCE", CROP_IMAGE_EXTRA_SOURCE);
+		intent.putExtra("account", "abcde");
+		intent.putExtra("extra_title_res_id", Integer.MIN_VALUE);
+		intent.putExtra("extra_select_multiple", false);
+		intent.putExtra("extra_group_chat_name", "abcde");
+		intent.putExtra("extra_show_enter_jid", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->CROP_IMAGE_EXTRA_SOURCE->ParcelableObj,Parcelable->CROP_IMAGE_EXTRA_OPTIONS->ParcelableObj,Bundle->CROP_IMAGE_EXTRA_BUNDLE->BundleObj,
+		//null;;null;;null;;null;;boolean->extra_show_enter_jid->false,String->extra_group_chat_name->abcde,boolean->extra_select_multiple->false,int->extra_title_res_id->Integer.MIN_VALUE,String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

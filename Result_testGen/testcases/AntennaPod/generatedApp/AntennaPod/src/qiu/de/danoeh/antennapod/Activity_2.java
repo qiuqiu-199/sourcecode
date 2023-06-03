@@ -17,13 +17,12 @@ public class Activity_2 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.StorageErrorActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.CastplayerActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.MEDIA_MOUNTED");
-		intent.putExtra("selected_dir", "abcde");
-		intent.putExtra("read", false);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//android.intent.action.MEDIA_MOUNTED;;null;;null;;null;;boolean->read->false,String->selected_dir->abcde,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

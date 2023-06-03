@@ -17,13 +17,10 @@ public class Activity_37 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.DownloadAuthenticationActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.VideoplayerActivity");
 		intent.setComponent(cn);
-		intent.putExtra("send_to_downloadrequester", false);
-		Parcelable request = new MyParcelable();
-		intent.putExtra("request", request);
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->request->ParcelableObj,boolean->send_to_downloadrequester->false,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

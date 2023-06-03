@@ -17,14 +17,10 @@ public class Activity_426 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.UriHandlerActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.MediaBrowserActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SENDTO");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("result", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("eu.siacs.conversations.invite_uri", "!@#$%^ds:+_");
 		startActivity(intent);
-		//android.intent.action.SENDTO;;null;;notEmpty;;null;;String->eu.siacs.conversations.invite_uri->!@#$%^ds:+_,String->result->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

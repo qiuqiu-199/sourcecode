@@ -17,13 +17,10 @@ public class Activity_32 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CertifyKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.UploadKeyActivity");
 		intent.setComponent(cn);
-		intent.putExtra("extra_key_ids", Long.MIN_VALUE);
-		Parcelable operation_result = new MyParcelable();
-		intent.putExtra("operation_result", operation_result);
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->operation_result->ParcelableObj,long[]->extra_key_ids->Long.MIN_VALUE,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

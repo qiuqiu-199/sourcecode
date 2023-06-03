@@ -17,12 +17,11 @@ public class Activity_98 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesSettingsActivity");
 		intent.setComponent(cn);
-		intent.setAction("com.forrestguice.suntimeswidget.VIEW_MOON");
-		intent.setData(Uri.parse("notEmpty"));
+		intent.setAction("com.forrestguice.suntimeswidget.PREFS_WIDGETLIST");
 		startActivity(intent);
-		//com.forrestguice.suntimeswidget.VIEW_MOON;;null;;notEmpty;;null;;
+		//com.forrestguice.suntimeswidget.PREFS_WIDGETLIST;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

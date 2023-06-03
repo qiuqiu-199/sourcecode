@@ -19,11 +19,11 @@ public class Activity_82 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.IntentHandler");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.setType("notEmpty");
+		intent.setAction("com.ichi2.anki.DO_SYNC");
+		intent.setData(Uri.parse("mSheme://mHost:mPort/?"));
+		intent.setType("application/apkg");
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;notEmpty;;notEmpty;;
+		//com.ichi2.anki.DO_SYNC;;null;;mSheme://mHost:mPort/?;;application/apkg;;
 	}
     /** Called when the activity is first created. */
     @Override

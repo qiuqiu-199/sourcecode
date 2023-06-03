@@ -17,10 +17,12 @@ public class Activity_248 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.wizards.impl.MondotalkCreate");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
 		intent.setComponent(cn);
+		intent.setAction("android.intent.action.SENDTO");
+		intent.setData(Uri.parse("imto://mHost:mPort/mPath"));
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//android.intent.action.SENDTO;;null;;imto://mHost:mPort/mPath;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

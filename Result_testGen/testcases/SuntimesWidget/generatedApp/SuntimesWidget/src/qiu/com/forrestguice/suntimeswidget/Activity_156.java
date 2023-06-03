@@ -17,14 +17,15 @@ public class Activity_156 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.themes.WidgetThemeConfigActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity");
 		intent.setComponent(cn);
-		intent.putExtra("previewID", Integer.MAX_VALUE);
-		MySerializable mode = new MySerializable();
-		intent.putExtra("mode", mode);
-		intent.putExtra("useWallpaper", true);
+		intent.setAction("new android.content.Context");
+		MySerializable notificationID = new MySerializable();
+		intent.putExtra("notificationID", notificationID);
+		MySerializable selectedAlarm = new MySerializable();
+		intent.putExtra("selectedAlarm", selectedAlarm);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->useWallpaper->true,Serializable->mode->SerializableObj,int->previewID->Integer.MAX_VALUE,
+		//new android.content.Context;;null;;null;;null;;Serializable->selectedAlarm->SerializableObj,Serializable->notificationID->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

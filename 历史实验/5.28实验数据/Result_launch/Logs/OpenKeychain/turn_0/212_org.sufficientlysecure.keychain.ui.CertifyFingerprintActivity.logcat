@@ -1,0 +1,9 @@
+--------- beginning of main
+--------- beginning of system
+05-29 20:38:35.589  5205  5205 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+05-29 20:38:35.607  5205  5205 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+05-29 20:38:35.612  5205  5205 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 20:38:35.620  5205  5205 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/CertifyFingerprintActivity;--->onCreate(Landroid/os/Bundle;)V
+05-29 20:38:35.626  5205  5205 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/CertifyFingerprintFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+05-29 20:38:35.628  5205  5205 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onResume()V
+05-29 20:38:35.629  5205  5232 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainDatabase$1;--->onOpen(Landroid/arch/persistence/db/SupportSQLiteDatabase;)V

@@ -17,28 +17,12 @@ public class Activity_275 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.ExchangeActivity");
 		intent.setComponent(cn);
-		intent.setAction("org.sufficientlysecure.keychain.action.SCAN_QR_CODE_WITH_RESULT");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("SCAN_RESULT_IMAGE_PATH", "abcde");
-		Parcelable result_crypto_input = new MyParcelable();
-		intent.putExtra("result_crypto_input", result_crypto_input);
-		intent.putExtra("SCAN_RESULT_ERROR_CORRECTION_LEVEL", "999999999999999999999999999999999999999999999999999");
-		Parcelable[] android_dot_nfc_dot_extra_dot_NDEF_MESSAGES = new MyParcelable[1];
-		android_dot_nfc_dot_extra_dot_NDEF_MESSAGES[0] = new MyParcelable();
-		intent.putExtra("android.nfc.extra.NDEF_MESSAGES", android_dot_nfc_dot_extra_dot_NDEF_MESSAGES);
-		byte[] SCAN_RESULT_BYTES = new byte[1];
-		intent.putExtra("SCAN_RESULT_BYTES", SCAN_RESULT_BYTES);
-		Parcelable operation_result = new MyParcelable();
-		intent.putExtra("operation_result", operation_result);
-		intent.putExtra("SCAN_RESULT_ORIENTATION", 0);
-		intent.putExtra("SCAN_RESULT", "abcde");
-		intent.putExtra("SCAN_RESULT_FORMAT", "!@#$%^ds:+_");
-		Parcelable result_data = new MyParcelable();
-		intent.putExtra("result_data", result_data);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//org.sufficientlysecure.keychain.action.SCAN_QR_CODE_WITH_RESULT;;null;;notEmpty;;null;;Parcelable->result_data->ParcelableObj,String->SCAN_RESULT_FORMAT->!@#$%^ds:+_,String->SCAN_RESULT->abcde,int->SCAN_RESULT_ORIENTATION->0,Parcelable->operation_result->ParcelableObj,byteArray->SCAN_RESULT_BYTES->Byte.MAX_VALUE,ParcelableArray->android.nfc.extra.NDEF_MESSAGES->ParcelableArrayObj,String->SCAN_RESULT_ERROR_CORRECTION_LEVEL->999999999999999999999999999999999999999999999999999,Parcelable->result_crypto_input->ParcelableObj,String->SCAN_RESULT_IMAGE_PATH->abcde,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

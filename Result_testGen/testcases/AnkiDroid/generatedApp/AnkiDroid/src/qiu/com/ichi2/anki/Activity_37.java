@@ -17,11 +17,11 @@ public class Activity_37 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.VideoPlayer");
 		intent.setComponent(cn);
-		intent.putExtra("com.ichi2.anki.LoadPronounciationActivity.extra.source", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("path", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.ichi2.anki.LoadPronounciationActivity.extra.source->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;String->path->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

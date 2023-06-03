@@ -19,11 +19,11 @@ public class Activity_70 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesSettingsActivity");
 		intent.setComponent(cn);
-		intent.setAction("com.forrestguice.suntimeswidget.PREFS_LOCALE");
+		intent.setAction("?");
 		intent.putExtra("isModified", false);
 		intent.putExtra("name", "abcde");
 		startActivity(intent);
-		//com.forrestguice.suntimeswidget.PREFS_LOCALE;;null;;null;;null;;String->name->abcde,boolean->isModified->false,
+		//?;;null;;null;;null;;String->name->abcde,boolean->isModified->false,
 	}
     /** Called when the activity is first created. */
     @Override

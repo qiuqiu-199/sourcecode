@@ -17,13 +17,12 @@ public class Activity_21 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.ChooseFolder");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupIncoming");
 		intent.setComponent(cn);
-		intent.putExtra("com.fsck.k9.ChooseFolder_selfolder", "!@#$%^ds:+_");
-		intent.putExtra("com.fsck.k9.ChooseFolder_showcurrent", "!@#$%^ds:+_");
-		intent.putExtra("com.fsck.k9.ChooseFolder_account", "abcde");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.fsck.k9.ChooseFolder_account->abcde,String->com.fsck.k9.ChooseFolder_showcurrent->!@#$%^ds:+_,String->com.fsck.k9.ChooseFolder_selfolder->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

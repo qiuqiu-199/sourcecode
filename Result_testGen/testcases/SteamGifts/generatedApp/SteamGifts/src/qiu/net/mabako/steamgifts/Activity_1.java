@@ -19,12 +19,10 @@ public class Activity_1 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.DetailActivity");
 		intent.setComponent(cn);
-		MySerializable giveaway = new MySerializable();
-		intent.putExtra("giveaway", giveaway);
-		MySerializable comment = new MySerializable();
-		intent.putExtra("comment", comment);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;Serializable->comment->SerializableObj,Serializable->giveaway->SerializableObj,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

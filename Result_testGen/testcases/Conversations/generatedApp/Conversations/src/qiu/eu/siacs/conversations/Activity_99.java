@@ -17,11 +17,15 @@ public class Activity_99 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.PickServerActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChooseContactActivity");
 		intent.setComponent(cn);
-		intent.putExtra("eu.siacs.conversations.invite_uri", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("extra_title_res_id", 0);
+		intent.putExtra("extra_select_multiple", false);
+		intent.putExtra("extra_group_chat_name", "abcde");
+		intent.putExtra("extra_show_enter_jid", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->eu.siacs.conversations.invite_uri->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;boolean->extra_show_enter_jid->true,String->extra_group_chat_name->abcde,boolean->extra_select_multiple->false,int->extra_title_res_id->0,String->account->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -19,10 +19,10 @@ public class Activity_44 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
-		intent.setAction("notEmpty");
-		intent.setData(Uri.parse("notEmpty://mHost:mPort/mPath"));
+		intent.setAction("com.csipsimple.phone.action.FAVORITES");
+		intent.setData(Uri.parse("?:mAuthority/mPath"));
 		startActivity(intent);
-		//notEmpty;;null;;notEmpty://mHost:mPort/mPath;;null;;
+		//com.csipsimple.phone.action.FAVORITES;;null;;?:mAuthority/mPath;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

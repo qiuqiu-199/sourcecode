@@ -20,10 +20,10 @@ public class Activity_71 extends Activity
 		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.IntentHandler");
 		intent.setComponent(cn);
 		intent.setAction("com.ichi2.anki.DO_SYNC");
-		intent.setData(Uri.parse("content://mHost:mPort/mPath"));
-		intent.setType("notEmpty");
+		intent.setData(Uri.parse("file://mHost:mPort/mPath"));
+		intent.setType("?");
 		startActivity(intent);
-		//com.ichi2.anki.DO_SYNC;;null;;content://mHost:mPort/mPath;;notEmpty;;
+		//com.ichi2.anki.DO_SYNC;;null;;file://mHost:mPort/mPath;;?;;
 	}
     /** Called when the activity is first created. */
     @Override

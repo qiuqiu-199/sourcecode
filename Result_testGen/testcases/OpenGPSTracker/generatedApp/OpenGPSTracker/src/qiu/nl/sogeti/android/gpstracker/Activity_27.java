@@ -20,11 +20,11 @@ public class Activity_27 extends Activity
 		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.viewer.TrackList");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.BROWSABLE");
+		intent.addCategory("android.intent.category.DEFAULT");
 		intent.setData(Uri.parse("file"));
 		intent.setType("*/*");
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;file;;*/*;;
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;file;;*/*;;
 	}
     /** Called when the activity is first created. */
     @Override

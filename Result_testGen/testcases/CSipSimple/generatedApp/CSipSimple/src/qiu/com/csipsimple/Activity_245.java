@@ -17,11 +17,13 @@ public class Activity_245 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.incall.InCallActivity");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.service.MEDIA_CHANGED");
+		intent.setAction("android.intent.action.SENDTO");
+		intent.setData(Uri.parse("csip:csip/mPath"));
+		intent.putExtra("acc_id", Long.MIN_VALUE);
 		startActivity(intent);
-		//com.csipsimple.service.MEDIA_CHANGED;;null;;null;;null;;
+		//android.intent.action.SENDTO;;null;;csip:csip/mPath;;null;;long->acc_id->Long.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

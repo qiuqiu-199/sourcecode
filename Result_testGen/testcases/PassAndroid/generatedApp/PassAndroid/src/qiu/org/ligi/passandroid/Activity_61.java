@@ -17,13 +17,13 @@ public class Activity_61 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassImportActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.ExtractURLAsIphoneActivity");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.BROWSABLE");
-		intent.setData(Uri.parse("httpswww.eventbrite.com"));
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setData(Uri.parse("httpsmobile.virginaustralia.com"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpswww.eventbrite.com;;null;;
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;httpsmobile.virginaustralia.com;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,11 +17,12 @@ public class Activity_26 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.VideoPlayer");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.Info");
 		intent.setComponent(cn);
-		intent.putExtra("path", "999999999999999999999999999999999999999999999999999");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->path->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

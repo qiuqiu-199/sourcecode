@@ -1,0 +1,11 @@
+--------- beginning of main
+--------- beginning of system
+--------- beginning of crash
+06-01 09:00:52.013 21581 21638 E AndroidRuntime: FATAL EXCEPTION: Thread-8
+06-01 09:00:52.013 21581 21638 E AndroidRuntime: Process: org.inaturalist.android, PID: 21581
+06-01 09:00:52.013 21581 21638 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.getScheme()' on a null object reference
+06-01 09:00:52.013 21581 21638 E AndroidRuntime: 	at org.inaturalist.android.FileUtils.getPath(FileUtils.java:322)
+06-01 09:00:52.013 21581 21638 E AndroidRuntime: 	at org.inaturalist.android.ObservationEditor.createObservationPhotoForPhoto(ObservationEditor.java:2469)
+06-01 09:00:52.013 21581 21638 E AndroidRuntime: 	at org.inaturalist.android.ObservationEditor.access$3600(ObservationEditor.java:116)
+06-01 09:00:52.013 21581 21638 E AndroidRuntime: 	at org.inaturalist.android.ObservationEditor$29.run(ObservationEditor.java:2395)
+06-01 09:00:52.013 21581 21638 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:764)

@@ -17,13 +17,17 @@ public class Activity_322 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.EditAccountActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.putExtra("scanned", false);
-		intent.putExtra("jid", "999999999999999999999999999999999999999999999999999");
+		intent.setAction("eu.siacs.conversations.action.VIEW");
+		intent.putExtra("nick", "abcde");
+		intent.putExtra("as_quote", false);
+		intent.putExtra("pm", true);
+		intent.putExtra("do_not_append", false);
+		intent.putExtra("conversationUuid", "!@#$%^ds:+_");
+		intent.putExtra("android.intent.extra.TEXT", "!@#$%^ds:+_");
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;null;;null;;String->jid->999999999999999999999999999999999999999999999999999,boolean->scanned->false,
+		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->!@#$%^ds:+_,String->conversationUuid->!@#$%^ds:+_,boolean->do_not_append->false,boolean->pm->true,boolean->as_quote->false,String->nick->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -1,0 +1,650 @@
+BugInfo:
+hash:-1611553055
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getSerializable(BaseBundle.java:1227)
+	at android.os.Bundle.getSerializable(Bundle.java:1034)
+	at com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity.onCreate(MultimediaEditFieldActivity.java:92)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-OKYU3jaaZsbZHxm1coLiVQ==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-OKYU3jaaZsbZHxm1coLiVQ==/lib/x86_64, /data/app/com.ichi2.anki-OKYU3jaaZsbZHxm1coLiVQ==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+23	com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity	null;;null;;null;;null;;Serializable->multim.card.ed.extra.field->SerializableObj,Serializable->multim.card.ed.extra.whole.note->SerializableObj,int->multim.card.ed.extra.field.index->0,
+
+24	com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity	null;;null;;null;;null;;Serializable->multim.card.ed.extra.field->SerializableObj,Serializable->multim.card.ed.extra.whole.note->SerializableObj,int->multim.card.ed.extra.field.index->Integer.MAX_VALUE,
+
+20	com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity	null;;null;;null;;null;;Serializable->multim.card.ed.extra.field->SerializableObj,int->multim.card.ed.extra.field.index->0,Serializable->multim.card.ed.extra.whole.note->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1639097733
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getLong(BaseBundle.java:1064)
+	at android.content.Intent.getLongExtra(Intent.java:7397)
+	at com.ichi2.anki.CardBrowser.onCollectionLoaded(CardBrowser.java:521)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 24 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-OKYU3jaaZsbZHxm1coLiVQ==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-OKYU3jaaZsbZHxm1coLiVQ==/lib/x86_64, /data/app/com.ichi2.anki-OKYU3jaaZsbZHxm1coLiVQ==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 33 more
+
+ICC Msgs:
+127	com.ichi2.anki.CardBrowser	null;;null;;null;;null;;long->currentCard->Long.MIN_VALUE,Serializable->defaultDeckId->SerializableObj,long->selectedDeck->Long.MIN_VALUE,
+
+129	com.ichi2.anki.CardBrowser	null;;null;;null;;null;;long->currentCard->Long.MIN_VALUE,Serializable->defaultDeckId->SerializableObj,long->selectedDeck->0,
+
+130	com.ichi2.anki.CardBrowser	null;;null;;null;;null;;long->currentCard->0,Serializable->defaultDeckId->SerializableObj,long->selectedDeck->Long.MIN_VALUE,
+
+128	com.ichi2.anki.CardBrowser	null;;null;;null;;null;;long->currentCard->0,Serializable->defaultDeckId->SerializableObj,long->selectedDeck->0,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1808817476
+FATAL EXCEPTION: main
+java.lang.NullPointerException: Attempt to invoke virtual method 'org.json.JSONArray org.json.JSONObject.getJSONArray(java.lang.String)' on a null object reference
+	at com.ichi2.anki.CardTemplateEditor$TemplatePagerAdapter.getCount(CardTemplateEditor.java:331)
+	at android.support.v4.view.ViewPager.setAdapter(ViewPager.java:532)
+	at com.ichi2.anki.CardTemplateEditor.onCollectionLoaded(CardTemplateEditor.java:213)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+158	com.ichi2.anki.CardTemplateEditor	null;;null;;null;;null;;long->noteId->0,long->modelId->Long.MIN_VALUE,
+
+159	com.ichi2.anki.CardTemplateEditor	null;;null;;null;;null;;long->modelId->Long.MAX_VALUE,
+
+164	com.ichi2.anki.CardTemplateEditor	null;;null;;null;;null;;long->noteId->Long.MIN_VALUE,long->modelId->Long.MIN_VALUE,
+
+165	com.ichi2.anki.CardTemplateEditor	null;;null;;null;;null;;long->noteId->0,long->modelId->Long.MIN_VALUE,
+
+157	com.ichi2.anki.CardTemplateEditor	null;;null;;null;;null;;long->noteId->Long.MIN_VALUE,long->modelId->Long.MIN_VALUE,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1841358469
+FATAL EXCEPTION: main
+java.lang.NullPointerException: Attempt to invoke virtual method 'org.json.JSONArray org.json.JSONObject.getJSONArray(java.lang.String)' on a null object reference
+	at com.ichi2.anki.ModelFieldEditor.setupLabels(ModelFieldEditor.java:161)
+	at com.ichi2.anki.ModelFieldEditor.onCollectionLoaded(ModelFieldEditor.java:124)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+11	com.ichi2.anki.ModelFieldEditor	null;;null;;null;;null;;long->noteTypeID->0,String->title->!@#$%^ds:+_,
+
+6	com.ichi2.anki.ModelFieldEditor	null;;null;;null;;null;;long->noteTypeID->Long.MAX_VALUE,String->title->abcde,
+
+9	com.ichi2.anki.ModelFieldEditor	null;;null;;null;;null;;long->noteTypeID->Long.MAX_VALUE,String->title->999999999999999999999999999999999999999999999999999,
+
+12	com.ichi2.anki.ModelFieldEditor	null;;null;;null;;null;;long->noteTypeID->Long.MIN_VALUE,String->title->abcde,
+
+14	com.ichi2.anki.ModelFieldEditor	null;;null;;null;;null;;long->noteTypeID->Long.MIN_VALUE,String->title->!@#$%^ds:+_,
+
+8	com.ichi2.anki.ModelFieldEditor	null;;null;;null;;null;;long->noteTypeID->0,String->title->999999999999999999999999999999999999999999999999999,
+
+13	com.ichi2.anki.ModelFieldEditor	null;;null;;null;;null;;long->noteTypeID->0,String->title->abcde,
+
+10	com.ichi2.anki.ModelFieldEditor	null;;null;;null;;null;;
+
+7	com.ichi2.anki.ModelFieldEditor	null;;null;;null;;null;;long->noteTypeID->0,String->title->abcde,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:2111669864
+FATAL EXCEPTION: main
+java.lang.RuntimeException:  No card with id 0
+	at com.ichi2.libanki.Card.load(Card.java:146)
+	at com.ichi2.libanki.Card.<init>(Card.java:121)
+	at com.ichi2.libanki.Collection.getCard(Collection.java:454)
+	at com.ichi2.anki.Previewer.onCollectionLoaded(Previewer.java:57)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+190	com.ichi2.anki.Previewer	null;;null;;null;;null;;int->index->0,longArray->cardList->0,
+
+191	com.ichi2.anki.Previewer	null;;null;;null;;null;;int->index->0,longArray->cardList->Long.MIN_VALUE,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1788462743
+FATAL EXCEPTION: main
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+	at com.ichi2.anki.NoteEditor.fetchIntentInformation(NoteEditor.java:563)
+	at com.ichi2.anki.NoteEditor.onCollectionLoaded(NoteEditor.java:407)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+205	com.ichi2.anki.NoteEditor	android.intent.action.SEND;;null;;null;;null;;
+
+218	com.ichi2.anki.NoteEditor	android.intent.action.SEND;;android.intent.category.DEFAULT;;null;;text/plain;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1904244693
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Reviewer}: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+	at com.ichi2.anki.Reviewer.selectDeckFromExtra(Reviewer.java:81)
+	at com.ichi2.anki.Reviewer.onCreate(Reviewer.java:73)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+175	com.ichi2.anki.Reviewer	notEmpty;;null;;null;;null;;
+
+168	com.ichi2.anki.Reviewer	android.intent.action.VIEW;;null;;null;;null;;
+
+178	com.ichi2.anki.Reviewer	android.intent.action.VIEW;;null;;market://details?id=com.ichi2.anki;;null;;
+
+177	com.ichi2.anki.Reviewer	android.intent.action.VIEW;;null;;null;;null;;
+
+176	com.ichi2.anki.Reviewer	android.intent.action.VIEW;;null;;http://www.example.com;;null;;
+
+174	com.ichi2.anki.Reviewer	android.intent.action.VIEW;;null;;http://www.amazon.com/gp/mas/dl/android?p=com.ichi2.anki;;null;;
+
+169	com.ichi2.anki.Reviewer	android.intent.action.VIEW;;android.intent.category.DEFAULT;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-840470482
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to destroy activity {com.ichi2.anki/com.ichi2.anki.Previewer}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.FrameLayout.removeAllViews()' on a null object reference
+	at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:4502)
+	at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:4524)
+	at android.app.servertransaction.DestroyActivityItem.execute(DestroyActivityItem.java:39)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.FrameLayout.removeAllViews()' on a null object reference
+	at com.ichi2.anki.AbstractFlashcardViewer.onDestroy(AbstractFlashcardViewer.java:963)
+	at android.app.Activity.performDestroy(Activity.java:7403)
+	at android.app.Instrumentation.callActivityOnDestroy(Instrumentation.java:1306)
+	at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:4487)
+	... 11 more
+
+ICC Msgs:
+188	com.ichi2.anki.Previewer	null;;null;;null;;null;;int->index->Integer.MIN_VALUE,longArray->cardList->0,
+
+189	com.ichi2.anki.Previewer	null;;null;;null;;null;;int->index->Integer.MIN_VALUE,longArray->cardList->Long.MIN_VALUE,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1710241072
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Previewer}: java.lang.NullPointerException: Attempt to get length of null array
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to get length of null array
+	at com.ichi2.anki.Previewer.onCreate(Previewer.java:44)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+192	com.ichi2.anki.Previewer	null;;null;;null;;null;;long[]->cardList->Long.MIN_VALUE,int->index->0,
+
+197	com.ichi2.anki.Statistics	null;;null;;null;;null;;
+
+196	com.ichi2.anki.Previewer	null;;null;;null;;null;;
+
+194	com.ichi2.anki.Previewer	null;;null;;null;;null;;long[]->cardList->0,int->index->Integer.MAX_VALUE,
+
+195	com.ichi2.anki.Previewer	null;;null;;null;;null;;long[]->cardList->0,int->index->0,
+
+193	com.ichi2.anki.Previewer	null;;null;;null;;null;;long[]->cardList->Long.MIN_VALUE,int->index->Integer.MAX_VALUE,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1511755318
+FATAL EXCEPTION: main
+java.lang.NullPointerException: Attempt to invoke virtual method 'org.json.JSONObject com.ichi2.libanki.Note.model()' on a null object reference
+	at com.ichi2.anki.NoteEditor.onCollectionLoaded(NoteEditor.java:444)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+210	com.ichi2.anki.NoteEditor	null;;null;;null;;null;;String->CONTENTS->abcde,int->CALLER->Integer.MIN_VALUE,
+
+206	com.ichi2.anki.NoteEditor	null;;null;;null;;null;;int->CALLER->Integer.MAX_VALUE,long->CARD_ID->0,
+
+213	com.ichi2.anki.NoteEditor	null;;null;;null;;null;;String->CONTENTS->999999999999999999999999999999999999999999999999999,int->CALLER->Integer.MIN_VALUE,
+
+208	com.ichi2.anki.NoteEditor	null;;null;;null;;null;;int->CALLER->Integer.MAX_VALUE,long->CARD_ID->Long.MAX_VALUE,
+
+204	com.ichi2.anki.NoteEditor	null;;null;;null;;null;;int->CALLER->Integer.MAX_VALUE,
+
+202	com.ichi2.anki.NoteEditor	notEmpty;;null;;null;;null;;String->CONTENTS->!@#$%^ds:+_,int->edit.field.result.field.index->Integer.MAX_VALUE,int->CALLER->Integer.MIN_VALUE,String->ID->abcde,String->edit.field.result.field->abcde,
+
+216	com.ichi2.anki.NoteEditor	org.openintents.action.CREATE_FLASHCARD;;null;;null;;null;;String->CONTENTS->!@#$%^ds:+_,int->edit.field.result.field.index->0,int->CALLER->Integer.MAX_VALUE,String->ID->!@#$%^ds:+_,String->edit.field.result.field->abcde,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1033259654
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.io.Serializable android.os.Bundle.getSerializable(java.lang.String)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.io.Serializable android.os.Bundle.getSerializable(java.lang.String)' on a null object reference
+	at com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity.onCreate(MultimediaEditFieldActivity.java:92)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+22	com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity	null;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1474249531
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.IntentHandler}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.getScheme()' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.getScheme()' on a null object reference
+	at com.ichi2.anki.IntentHandler.onCreate(IntentHandler.java:53)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+55	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/notEmpty;;application/apkg;;
+
+66	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/.apkg;;notEmpty;;
+
+105	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;android.intent.category.DEFAULT;;content;;application/x-apkg;;
+
+49	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file://mHost:mPort/mPath;;application/apkg;;
+
+112	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file:mAuthority/mPath;;application/apkg;;
+
+113	com.ichi2.anki.IntentHandler	com.ichi2.anki.DO_SYNC;;null;;content:mAuthority/mPath;;notEmpty;;
+
+53	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/notEmpty;;notEmpty;;
+
+81	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;notEmpty;;notEmpty;;
+
+98	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/.apkg;;notEmpty;;
+
+45	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/.apkg;;application/apkg;;
+
+92	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file:mAuthority/mPath;;notEmpty;;
+
+80	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content:mAuthority/mPath;;notEmpty;;
+
+89	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content:mAuthority/mPath;;application/apkg;;
+
+70	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content:mAuthority/mPath;;notEmpty;;
+
+60	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file:mAuthority/mPath;;notEmpty;;
+
+84	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file://mHost:mPort/mPath;;application/apkg;;
+
+69	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file://mHost:mPort/mPath;;notEmpty;;
+
+114	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;notEmpty;;application/apkg;;
+
+79	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content://mHost:mPort/mPath;;application/apkg;;
+
+56	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/notEmpty;;notEmpty;;
+
+86	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/notEmpty;;notEmpty;;
+
+107	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content:mAuthority/mPath;;application/apkg;;
+
+52	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;notEmpty;;application/apkg;;
+
+50	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/.apkg;;application/apkg;;
+
+46	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/notEmpty;;application/apkg;;
+
+48	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/.apkg;;application/apkg;;
+
+97	com.ichi2.anki.IntentHandler	com.ichi2.anki.DO_SYNC;;null;;file:mAuthority/mPath;;application/apkg;;
+
+88	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;android.intent.category.DEFAULT;;file*;;*/*;;
+
+102	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file:mAuthority/mPath;;application/apkg;;
+
+108	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/notEmpty;;application/apkg;;
+
+96	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/.apkg;;notEmpty;;
+
+67	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/notEmpty;;application/apkg;;
+
+75	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/notEmpty;;notEmpty;;
+
+111	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content://mHost:mPort/mPath;;application/apkg;;
+
+87	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/.apkg;;application/apkg;;
+
+117	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content://mHost:mPort/mPath;;notEmpty;;
+
+76	com.ichi2.anki.IntentHandler	com.ichi2.anki.DO_SYNC;;null;;file://mHost:mPort/mPath;;notEmpty;;
+
+77	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file://mHost:mPort/mPath;;notEmpty;;
+
+82	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;notEmpty;;notEmpty;;
+
+106	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/.apkg;;notEmpty;;
+
+116	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content://mHost:mPort/mPath;;notEmpty;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1554189941
+FATAL EXCEPTION: main
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+	at com.ichi2.anki.NoteEditor.fetchIntentInformation(NoteEditor.java:558)
+	at com.ichi2.anki.NoteEditor.onCollectionLoaded(NoteEditor.java:407)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+214	com.ichi2.anki.NoteEditor	org.openintents.action.CREATE_FLASHCARD;;null;;null;;null;;
+
+217	com.ichi2.anki.NoteEditor	org.openintents.action.CREATE_FLASHCARD;;android.intent.category.DEFAULT;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-485759462
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+	at com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity.onCreate(LoadPronounciationActivity.java:103)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+42	com.ichi2.anki.IntentHandler	com.ichi2.anki.DO_SYNC;;null;;mSheme:mAuthority/notEmpty;;notEmpty;;
+
+41	com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity	null;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1059748031
+FATAL EXCEPTION: Thread-7
+java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at com.ichi2.anki.AnkiActivity.finish(AnkiActivity.java:196)
+	at org.acra.ErrorReporter.endApplication(ErrorReporter.java:471)
+	at org.acra.ErrorReporter.access$1300(ErrorReporter.java:81)
+	at org.acra.ErrorReporter$5.run(ErrorReporter.java:851)
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-OKYU3jaaZsbZHxm1coLiVQ==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-OKYU3jaaZsbZHxm1coLiVQ==/lib/x86_64, /data/app/com.ichi2.anki-OKYU3jaaZsbZHxm1coLiVQ==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 21 more
+
+ICC Msgs:
+21	com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity	null;;null;;null;;null;;Serializable->multim.card.ed.extra.field->SerializableObj,int->multim.card.ed.extra.field.index->Integer.MIN_VALUE,Serializable->multim.card.ed.extra.whole.note->SerializableObj,
+
+------------------------------------------------------------------------
+

@@ -17,13 +17,13 @@ public class Activity_34 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.ExtractURLAsIphoneActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.BROWSABLE");
-		intent.setData(Uri.parse("httpsmobile.virginaustralia.com"));
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setData(Uri.parse("httppass-cloud.appspot.com"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpsmobile.virginaustralia.com;;null;;
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;httppass-cloud.appspot.com;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

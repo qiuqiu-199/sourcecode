@@ -17,11 +17,14 @@ public class Activity_200 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.UpgradeDatabases");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.EditIdentity");
 		intent.setComponent(cn);
-		intent.setAction("DatabaseUpgradeService.upgradeComplete");
+		MySerializable com_dot_fsck_dot_k9_dot_EditIdentity_identity = new MySerializable();
+		intent.putExtra("com.fsck.k9.EditIdentity_identity", com_dot_fsck_dot_k9_dot_EditIdentity_identity);
+		intent.putExtra("com.fsck.k9.EditIdentity_account", "!@#$%^ds:+_");
+		intent.putExtra("com.fsck.k9.EditIdentity_identity_index", Integer.MIN_VALUE);
 		startActivity(intent);
-		//DatabaseUpgradeService.upgradeComplete;;null;;null;;null;;
+		//null;;null;;null;;null;;int->com.fsck.k9.EditIdentity_identity_index->Integer.MIN_VALUE,String->com.fsck.k9.EditIdentity_account->!@#$%^ds:+_,Serializable->com.fsck.k9.EditIdentity_identity->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,13 +17,11 @@ public class Activity_138 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.MedicinesSearchActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.settings.CalendulaSettingsActivity");
 		intent.setComponent(cn);
-		intent.putExtra("MedicinesSearchActivity.extras.EXTRA_SEARCH_TERM", "abcde");
-		intent.putExtra("SCAN_RESULT", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("SCAN_RESULT_FORMAT", "!@#$%^ds:+_");
+		intent.putExtra("show_db_dialog", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->SCAN_RESULT_FORMAT->!@#$%^ds:+_,String->SCAN_RESULT->999999999999999999999999999999999999999999999999999,String->MedicinesSearchActivity.extras.EXTRA_SEARCH_TERM->abcde,
+		//null;;null;;null;;null;;boolean->show_db_dialog->false,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,13 +17,17 @@ public class Activity_139 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteSelectAuthenticationKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.MainActivity");
 		intent.setComponent(cn);
-		intent.putExtra("package_name", "abcde");
-		Parcelable data = new MyParcelable();
-		intent.putExtra("data", data);
+		intent.setAction("android.nfc.action.TAG_DISCOVERED");
+		Parcelable android_dot_nfc_dot_extra_dot_TAG = new MyParcelable();
+		intent.putExtra("android.nfc.extra.TAG", android_dot_nfc_dot_extra_dot_TAG);
+		intent.putExtra("init_frag", Integer.MAX_VALUE);
+		intent.putExtra("skip_first_time", false);
+		Parcelable operation_result = new MyParcelable();
+		intent.putExtra("operation_result", operation_result);
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->data->ParcelableObj,String->package_name->abcde,
+		//android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;Parcelable->operation_result->ParcelableObj,boolean->skip_first_time->false,int->init_frag->Integer.MAX_VALUE,Parcelable->android.nfc.extra.TAG->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

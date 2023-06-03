@@ -17,10 +17,13 @@ public class Activity_221 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.ExchangeActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
+		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setType("application/pgp-keys");
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//org.sufficientlysecure.keychain.action.IMPORT_KEY;;android.intent.category.DEFAULT;;null;;application/pgp-keys;;
 	}
     /** Called when the activity is first created. */
     @Override

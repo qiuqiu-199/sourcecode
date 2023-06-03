@@ -21,10 +21,10 @@ public class Activity_23 extends Activity
 		intent.setComponent(cn);
 		MySerializable routine_id = new MySerializable();
 		intent.putExtra("routine_id", routine_id);
-		intent.putExtra("position", 0);
+		intent.putExtra("position", Integer.MIN_VALUE);
 		intent.putExtra("date", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->date->999999999999999999999999999999999999999999999999999,int->position->0,Serializable->routine_id->SerializableObj,
+		//null;;null;;null;;null;;String->date->999999999999999999999999999999999999999999999999999,int->position->Integer.MIN_VALUE,Serializable->routine_id->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -24,9 +24,9 @@ public class Activity_265 extends Activity
 		intent.putExtra("pm", true);
 		intent.putExtra("do_not_append", false);
 		intent.putExtra("conversationUuid", "abcde");
-		intent.putExtra("android.intent.extra.TEXT", "abcde");
+		intent.putExtra("android.intent.extra.TEXT", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->abcde,String->conversationUuid->abcde,boolean->do_not_append->false,boolean->pm->true,String->nick->!@#$%^ds:+_,
+		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,String->conversationUuid->abcde,boolean->do_not_append->false,boolean->pm->true,String->nick->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

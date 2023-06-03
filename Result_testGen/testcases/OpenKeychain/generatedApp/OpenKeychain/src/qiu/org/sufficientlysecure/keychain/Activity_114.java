@@ -17,15 +17,13 @@ public class Activity_114 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
 		intent.setComponent(cn);
-		intent.putExtra("package_name", "999999999999999999999999999999999999999999999999999");
-		Parcelable data = new MyParcelable();
-		intent.putExtra("data", data);
-		intent.putExtra("package_signature", 0);
-		intent.putExtra("user_id", "abcde");
+		intent.setAction("android.intent.action.SEND");
+		intent.setData(Uri.parse("?"));
+		intent.setType("application/autocrypt-setup");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->user_id->abcde,byte[]->package_signature->0,Parcelable->data->ParcelableObj,String->package_name->999999999999999999999999999999999999999999999999999,
+		//android.intent.action.SEND;;null;;?;;application/autocrypt-setup;;
 	}
     /** Called when the activity is first created. */
     @Override

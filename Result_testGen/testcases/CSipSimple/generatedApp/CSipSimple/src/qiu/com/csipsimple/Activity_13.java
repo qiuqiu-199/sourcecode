@@ -17,13 +17,10 @@ public class Activity_13 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.wizards.BasePrefsWizard");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.widgets.ShortcutWidgetConfigure");
 		intent.setComponent(cn);
-		intent.putExtra("ID", "!@#$%^ds:+_");
-		intent.putExtra("wizard", "abcde");
-		intent.putExtra("id", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->id->0,String->wizard->abcde,String->ID->!@#$%^ds:+_,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

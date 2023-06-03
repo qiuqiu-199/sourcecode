@@ -17,12 +17,12 @@ public class Activity_74 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.gpoddernet.GpodnetAuthenticationActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.DirectoryChooserActivity");
 		intent.setComponent(cn);
-		intent.setAction(".activity.gpoddernet.GpodnetAuthenticationActivity");
-		intent.addCategory("android.intent.category.DEFAULT");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//.activity.gpoddernet.GpodnetAuthenticationActivity;;android.intent.category.DEFAULT;;null;;null;;
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

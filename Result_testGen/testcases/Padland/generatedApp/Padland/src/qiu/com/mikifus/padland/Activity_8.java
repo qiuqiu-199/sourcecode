@@ -17,11 +17,10 @@ public class Activity_8 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadViewActivity");
+		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadLandDataActivity");
 		intent.setComponent(cn);
-		intent.putExtra("pad_id", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->pad_id->0,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

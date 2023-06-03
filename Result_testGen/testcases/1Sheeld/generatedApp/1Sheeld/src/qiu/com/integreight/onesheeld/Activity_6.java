@@ -19,8 +19,14 @@ public class Activity_6 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.plugin.condition.ConditionActivity");
 		intent.setComponent(cn);
+		Bundle com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE = new Bundle();
+		com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE.putInt("com.integreight.condition.extra.PIN_NUMBER", Integer.MIN_VALUE);
+		com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE = new Bundle();
+		com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE.putBoolean("com.integreight.condition.extra.OUTPUT", false);
+		intent.putExtra("com.twofortyfouram.locale.intent.extra.BUNDLE", "com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE");
+		intent.putExtra("com.twofortyfouram.locale.intent.extra.BREADCRUMB", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;String->com.twofortyfouram.locale.intent.extra.BREADCRUMB->abcde,Bundle->com.twofortyfouram.locale.intent.extra.BUNDLE->BundleObj,(,boolean->com.integreight.condition.extra.OUTPUT->false,int->com.integreight.condition.extra.PIN_NUMBER->Integer.MIN_VALUE,),
 	}
     /** Called when the activity is first created. */
     @Override

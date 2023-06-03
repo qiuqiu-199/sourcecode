@@ -19,8 +19,10 @@ public class Activity_43 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
+		intent.setAction("android.intent.action.DIAL");
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//android.intent.action.DIAL;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,12 +17,12 @@ public class Activity_352 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.AboutActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.StartConversationActivity");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.PREFERENCE");
+		intent.putExtra("account", "abcde");
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.PREFERENCE;;null;;null;;
+		//android.intent.action.VIEW;;null;;null;;null;;String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

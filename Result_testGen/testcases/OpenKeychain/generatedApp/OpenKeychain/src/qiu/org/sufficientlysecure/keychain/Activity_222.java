@@ -17,15 +17,16 @@ public class Activity_222 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.ExchangeActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		intent.putExtra("GroupId", "!@#$%^ds:+_");
-		intent.putExtra("NumUsers", Integer.MIN_VALUE);
-		byte[] UserData = new byte[1];
-		intent.putExtra("UserData", UserData);
-		intent.putExtra("HostName", "999999999999999999999999999999999999999999999999999");
+		intent.setAction("android.intent.action.SEND");
+		intent.setData(Uri.parse("?:?//.well-known/openpgpkey/hu/"));
+		Parcelable result_crypto_input = new MyParcelable();
+		intent.putExtra("result_crypto_input", result_crypto_input);
+		Parcelable result_data = new MyParcelable();
+		intent.putExtra("result_data", result_data);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->HostName->999999999999999999999999999999999999999999999999999,byteArray->UserData->0,int->NumUsers->Integer.MIN_VALUE,String->GroupId->!@#$%^ds:+_,
+		//android.intent.action.SEND;;null;;?:?//.well-known/openpgpkey/hu/;;null;;Parcelable->result_data->ParcelableObj,Parcelable->result_crypto_input->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

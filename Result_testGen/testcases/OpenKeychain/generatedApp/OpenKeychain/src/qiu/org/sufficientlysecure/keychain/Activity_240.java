@@ -17,14 +17,12 @@ public class Activity_240 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DeleteKeyDialogActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteRegisterActivity");
 		intent.setComponent(cn);
-		intent.putExtra("extra_delete_master_key_ids", 0);
-		intent.putExtra("extra_has_secret", true);
-		Parcelable extra_keyserver = new MyParcelable();
-		intent.putExtra("extra_keyserver", extra_keyserver);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->extra_keyserver->ParcelableObj,boolean->extra_has_secret->true,long[]->extra_delete_master_key_ids->0,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

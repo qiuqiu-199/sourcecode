@@ -17,12 +17,11 @@ public class Activity_145 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.MainActivity");
 		intent.setComponent(cn);
-		intent.setAction("org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_FILE_AND_RETURN");
-		intent.setData(Uri.parse("notEmpty:notEmpty//.well-known/openpgpkey/hu/"));
+		intent.setAction("android.nfc.action.TAG_DISCOVERED");
 		startActivity(intent);
-		//org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_FILE_AND_RETURN;;null;;notEmpty:notEmpty//.well-known/openpgpkey/hu/;;null;;
+		//android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

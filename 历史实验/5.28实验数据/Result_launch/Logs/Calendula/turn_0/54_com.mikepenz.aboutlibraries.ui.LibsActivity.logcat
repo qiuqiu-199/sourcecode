@@ -1,0 +1,35 @@
+--------- beginning of main
+--------- beginning of system
+05-29 00:24:16.356 19946 19946 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaApp;--->onCreate()V
+--------- beginning of crash
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: FATAL EXCEPTION: main
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: Process: es.usc.citius.servando.calendula, PID: 19946
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: java.lang.NullPointerException: Attempt to read from field 'java.lang.String[] com.mikepenz.aboutlibraries.b.a' on a null object reference
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at com.mikepenz.aboutlibraries.ui.a.onAttach(Unknown Source:21)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.support.v4.app.j.onAttach(Unknown Source:20)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.support.v4.app.p.a(Unknown Source:342)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.support.v4.app.v.a(Unknown Source:198)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.support.v4.app.v.a(Unknown Source:18)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.support.v4.app.v.a(Unknown Source:36)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.support.v4.app.p.a(Unknown Source:113)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.support.v4.app.p.b(Unknown Source:88)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.support.v4.app.p.f(Unknown Source:21)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.support.v4.app.p.e(Unknown Source:9)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.support.v4.app.p.n(Unknown Source:6)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.support.v4.app.m.f(Unknown Source:4)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.support.v4.app.k.onStart(Unknown Source:22)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.support.v7.app.e.onStart(Unknown Source:0)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:7165)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+05-29 00:24:16.441 19946 19946 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)

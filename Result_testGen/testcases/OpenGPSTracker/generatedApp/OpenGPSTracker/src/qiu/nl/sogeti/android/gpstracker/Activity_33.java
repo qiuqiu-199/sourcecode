@@ -19,11 +19,11 @@ public class Activity_33 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("nl.sogeti.android.gpstracker","nl.sogeti.android.gpstracker.viewer.TrackList");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("query", "abcde");
+		intent.setAction("nl.sogeti.android.gpstracker.intent.action.NOTIFY_DATA_SET_CHANGED");
+		intent.setData(Uri.parse("content://mHost:mPort/mPath"));
+		intent.putExtra("query", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;notEmpty;;null;;String->query->abcde,
+		//nl.sogeti.android.gpstracker.intent.action.NOTIFY_DATA_SET_CHANGED;;null;;content://mHost:mPort/mPath;;null;;String->query->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

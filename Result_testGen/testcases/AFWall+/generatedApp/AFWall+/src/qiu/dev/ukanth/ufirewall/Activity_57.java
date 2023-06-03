@@ -17,20 +17,10 @@ public class Activity_57 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","haibison.android.lockpattern.LockPatternActivity");
+		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.widget.ToggleWidgetOldActivity");
 		intent.setComponent(cn);
-		intent.setAction("haibison.android.lockpattern.LockPatternActivity.COMPARE_PATTERN");
-		ArrayList  haibison_dot_android_dot_lockpattern_dot_LockPatternActivity_dot_PATTERN = new ArrayList<MyParcelable>();
-		haibison_dot_android_dot_lockpattern_dot_LockPatternActivity_dot_PATTERN.add(new MyParcelable());
-		intent.putParcelableArrayListExtra("haibison.android.lockpattern.LockPatternActivity.PATTERN", haibison_dot_android_dot_lockpattern_dot_LockPatternActivity_dot_PATTERN);
-		Parcelable haibison_dot_android_dot_lockpattern_dot_LockPatternActivity_dot_RESULT_RECEIVER = new MyParcelable();
-		intent.putExtra("haibison.android.lockpattern.LockPatternActivity.RESULT_RECEIVER", haibison_dot_android_dot_lockpattern_dot_LockPatternActivity_dot_RESULT_RECEIVER);
-		Parcelable haibison_dot_android_dot_lockpattern_dot_LockPatternActivity_dot_PENDING_INTENT_CANCELLED = new MyParcelable();
-		intent.putExtra("haibison.android.lockpattern.LockPatternActivity.PENDING_INTENT_CANCELLED", haibison_dot_android_dot_lockpattern_dot_LockPatternActivity_dot_PENDING_INTENT_CANCELLED);
-		Parcelable haibison_dot_android_dot_lockpattern_dot_LockPatternActivity_dot_PENDING_INTENT_FORGOT_PATTERN = new MyParcelable();
-		intent.putExtra("haibison.android.lockpattern.LockPatternActivity.PENDING_INTENT_FORGOT_PATTERN", haibison_dot_android_dot_lockpattern_dot_LockPatternActivity_dot_PENDING_INTENT_FORGOT_PATTERN);
 		startActivity(intent);
-		//haibison.android.lockpattern.LockPatternActivity.COMPARE_PATTERN;;null;;null;;null;;Parcelable->haibison.android.lockpattern.LockPatternActivity.PENDING_INTENT_FORGOT_PATTERN->ParcelableObj,Parcelable->haibison.android.lockpattern.LockPatternActivity.PENDING_INTENT_CANCELLED->ParcelableObj,Parcelable->haibison.android.lockpattern.LockPatternActivity.RESULT_RECEIVER->ParcelableObj,ParcelableArrayList->haibison.android.lockpattern.LockPatternActivity.PATTERN->ParcelableArrayListObj,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,15 +17,17 @@ public class Activity_331 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChannelDiscoveryActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		Parcelable metadata = new MyParcelable();
-		intent.putExtra("metadata", metadata);
-		Parcelable intent1 = new MyParcelable();
-		intent.putExtra("intent", intent);
-		intent.putExtra("result_code", 0);
+		intent.setAction("eu.siacs.conversations.action.VIEW");
+		intent.putExtra("nick", "abcde");
+		intent.putExtra("as_quote", true);
+		intent.putExtra("pm", false);
+		intent.putExtra("do_not_append", true);
+		intent.putExtra("conversationUuid", "!@#$%^ds:+_");
+		intent.putExtra("android.intent.extra.TEXT", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;int->result_code->0,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,
+		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->!@#$%^ds:+_,String->conversationUuid->!@#$%^ds:+_,boolean->do_not_append->true,boolean->pm->false,boolean->as_quote->true,String->nick->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

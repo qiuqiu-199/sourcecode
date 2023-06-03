@@ -20,11 +20,11 @@ public class Activity_28 extends Activity
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ContactDetailsActivity");
 		intent.setComponent(cn);
 		intent.setAction("view_contact");
-		intent.putExtra("account", "abcde");
+		intent.putExtra("account", "999999999999999999999999999999999999999999999999999");
 		intent.putExtra("fingerprint", "abcde");
 		intent.putExtra("contact", "abcde");
 		startActivity(intent);
-		//view_contact;;null;;null;;null;;String->contact->abcde,String->fingerprint->abcde,String->account->abcde,
+		//view_contact;;null;;null;;null;;String->contact->abcde,String->fingerprint->abcde,String->account->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

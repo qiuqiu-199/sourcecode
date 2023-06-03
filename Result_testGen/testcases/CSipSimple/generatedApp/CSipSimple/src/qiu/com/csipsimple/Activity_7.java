@@ -17,11 +17,10 @@ public class Activity_7 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.widgets.ShortcutWidgetConfigure");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.PrefsFast");
 		intent.setComponent(cn);
-		intent.putExtra("appWidgetId", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->appWidgetId->0,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,11 +17,10 @@ public class Activity_29 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.FolderPickerActivity");
+		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.MainActivity");
 		intent.setComponent(cn);
-		intent.putExtra("com.nutomic.syncthingandroid.activities.FolderPickerActivity.INITIAL_DIRECTORY", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.nutomic.syncthingandroid.activities.FolderPickerActivity.INITIAL_DIRECTORY->abcde,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

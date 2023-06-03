@@ -17,12 +17,15 @@ public class Activity_293 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.ExchangeActivity");
 		intent.setComponent(cn);
-		intent.putExtra("linked_transition", true);
-		intent.putExtra("master_key_id", 0);
+		intent.putExtra("GroupId", "abcde");
+		intent.putExtra("NumUsers", 0);
+		byte[] UserData = new byte[1];
+		intent.putExtra("UserData", UserData);
+		intent.putExtra("HostName", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;long->master_key_id->0,boolean->linked_transition->true,
+		//null;;null;;null;;null;;String->HostName->abcde,byteArray->UserData->Byte.MAX_VALUE,int->NumUsers->0,String->GroupId->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

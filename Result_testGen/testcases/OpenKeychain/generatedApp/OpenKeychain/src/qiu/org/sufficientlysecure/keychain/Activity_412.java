@@ -17,10 +17,14 @@ public class Activity_412 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ShowNfcSweetspotActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ViewKeyAdvActivity");
 		intent.setComponent(cn);
+		intent.putExtra("selected_tab", 0);
+		Parcelable operation_result = new MyParcelable();
+		intent.putExtra("operation_result", operation_result);
+		intent.putExtra("master_key_id", Long.MAX_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;long->master_key_id->Long.MAX_VALUE,Parcelable->operation_result->ParcelableObj,int->selected_tab->0,
 	}
     /** Called when the activity is first created. */
     @Override

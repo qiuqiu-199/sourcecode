@@ -17,11 +17,10 @@ public class Activity_96 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.incall.InCallMediaControl");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.PickupSipUri");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.service.CALL_CHANGED");
 		startActivity(intent);
-		//com.csipsimple.service.CALL_CHANGED;;null;;null;;null;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

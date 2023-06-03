@@ -17,11 +17,11 @@ public class Activity_35 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.FilteredDeckOptions");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.VideoPlayer");
 		intent.setComponent(cn);
-		intent.putExtra("defaultConfig", false);
+		intent.putExtra("path", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->defaultConfig->false,
+		//null;;null;;null;;null;;String->path->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

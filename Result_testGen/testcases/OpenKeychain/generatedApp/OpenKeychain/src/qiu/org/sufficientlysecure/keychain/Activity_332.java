@@ -17,13 +17,11 @@ public class Activity_332 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.AppSettingsActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity");
 		intent.setComponent(cn);
-		intent.putExtra("package_name", "!@#$%^ds:+_");
-		Parcelable operation_result = new MyParcelable();
-		intent.putExtra("operation_result", operation_result);
+		intent.setAction("org.sufficientlysecure.keychain.action.SCAN_QR_CODE_WITH_RESULT");
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->operation_result->ParcelableObj,String->package_name->!@#$%^ds:+_,
+		//org.sufficientlysecure.keychain.action.SCAN_QR_CODE_WITH_RESULT;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

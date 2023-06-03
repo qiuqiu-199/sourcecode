@@ -19,12 +19,12 @@ public class Activity_27 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadViewActivity");
 		intent.setComponent(cn);
-		intent.putExtra("padLocalName", "!@#$%^ds:+_");
-		intent.putExtra("padServer", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("padLocalName", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("padServer", "abcde");
 		intent.putExtra("padUrl", "abcde");
-		intent.putExtra("padName", "!@#$%^ds:+_");
+		intent.putExtra("padName", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->padName->!@#$%^ds:+_,String->padUrl->abcde,String->padServer->999999999999999999999999999999999999999999999999999,String->padLocalName->!@#$%^ds:+_,
+		//null;;null;;null;;null;;String->padName->999999999999999999999999999999999999999999999999999,String->padUrl->abcde,String->padServer->abcde,String->padLocalName->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

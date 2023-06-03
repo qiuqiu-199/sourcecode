@@ -19,9 +19,9 @@ public class Activity_4 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ManageAccountActivity");
 		intent.setComponent(cn);
-		intent.putExtra("eu.siacs.conversations.invite_uri", "!@#$%^ds:+_");
+		intent.putExtra("eu.siacs.conversations.invite_uri", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->eu.siacs.conversations.invite_uri->!@#$%^ds:+_,
+		//null;;null;;null;;null;;String->eu.siacs.conversations.invite_uri->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

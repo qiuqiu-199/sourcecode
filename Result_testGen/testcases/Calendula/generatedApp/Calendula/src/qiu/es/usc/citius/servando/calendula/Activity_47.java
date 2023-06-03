@@ -17,12 +17,11 @@ public class Activity_47 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.PatientDetailActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.pinlock.PinLockActivity");
 		intent.setComponent(cn);
-		intent.putExtra("patient_id", 0);
-		intent.putExtra("qr_data", "abcde");
+		intent.setAction("PinLockActivity.action.verify_pin");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->qr_data->abcde,long->patient_id->0,
+		//PinLockActivity.action.verify_pin;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

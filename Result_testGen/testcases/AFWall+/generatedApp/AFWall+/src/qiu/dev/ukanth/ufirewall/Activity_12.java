@@ -19,9 +19,9 @@ public class Activity_12 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.activity.LogDetailActivity");
 		intent.setComponent(cn);
-		intent.putExtra("DATA", 0);
+		intent.putExtra("DATA", Integer.MAX_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->DATA->0,
+		//null;;null;;null;;null;;int->DATA->Integer.MAX_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

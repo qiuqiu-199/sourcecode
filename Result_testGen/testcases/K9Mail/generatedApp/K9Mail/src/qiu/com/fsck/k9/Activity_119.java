@@ -17,14 +17,11 @@ public class Activity_119 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.LauncherShortcuts");
 		intent.setComponent(cn);
-		intent.setAction("com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT");
-		intent.putExtra("message_reference", "!@#$%^ds:+_");
-		Parcelable message_decryption_result = new MyParcelable();
-		intent.putExtra("message_decryption_result", message_decryption_result);
+		intent.setAction("android.intent.action.CREATE_SHORTCUT");
 		startActivity(intent);
-		//com.fsck.k9.intent.action.FORWARD_AS_ATTACHMENT;;null;;null;;null;;Parcelable->message_decryption_result->ParcelableObj,String->message_reference->!@#$%^ds:+_,
+		//android.intent.action.CREATE_SHORTCUT;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,13 +17,12 @@ public class Activity_221 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.NotificationDeleteConfirmation");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupAccountType");
 		intent.setComponent(cn);
-		ArrayList<String> messageReferences = new ArrayList<String>();
-		intent.putStringArrayListExtra("messageReferences", messageReferences);
-		intent.putExtra("accountUuid", "999999999999999999999999999999999999999999999999999");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->accountUuid->999999999999999999999999999999999999999999999999999,StringArrayList->messageReferences->abcde,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

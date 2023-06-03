@@ -17,17 +17,13 @@ public class Activity_105 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.MainActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.TAG_DISCOVERED");
-		Parcelable android_dot_nfc_dot_extra_dot_TAG = new MyParcelable();
-		intent.putExtra("android.nfc.extra.TAG", android_dot_nfc_dot_extra_dot_TAG);
-		intent.putExtra("init_frag", Integer.MAX_VALUE);
-		intent.putExtra("skip_first_time", true);
-		Parcelable operation_result = new MyParcelable();
-		intent.putExtra("operation_result", operation_result);
+		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("mSheme://com.android.email.attachmentprovider:mPort/mPath"));
+		intent.setType("application/autocrypt-setup");
 		startActivity(intent);
-		//android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;Parcelable->operation_result->ParcelableObj,boolean->skip_first_time->true,int->init_frag->Integer.MAX_VALUE,Parcelable->android.nfc.extra.TAG->ParcelableObj,
+		//android.intent.action.VIEW;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;
 	}
     /** Called when the activity is first created. */
     @Override

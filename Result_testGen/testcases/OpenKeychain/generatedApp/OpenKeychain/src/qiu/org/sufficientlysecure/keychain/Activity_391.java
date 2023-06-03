@@ -17,18 +17,12 @@ public class Activity_391 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.VerifyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SecurityTokenOperationActivity");
 		intent.setComponent(cn);
-		byte[] FlagHash = new byte[1];
-		intent.putExtra("FlagHash", FlagHash);
-		intent.putExtra("RandomPosition", 0);
-		intent.putExtra("NumUsers", Integer.MIN_VALUE);
-		byte[] DecoyHash1 = new byte[1];
-		intent.putExtra("DecoyHash1", DecoyHash1);
-		byte[] DecoyHash2 = new byte[1];
-		intent.putExtra("DecoyHash2", DecoyHash2);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;byteArray->DecoyHash2->Byte.MAX_VALUE,byteArray->DecoyHash1->Byte.MAX_VALUE,int->NumUsers->Integer.MIN_VALUE,int->RandomPosition->0,byteArray->FlagHash->0,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

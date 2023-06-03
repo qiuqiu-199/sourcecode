@@ -20,13 +20,8 @@ public class Activity_26 extends Activity
 		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.facebook.FacebookActivity");
 		intent.setComponent(cn);
 		intent.setAction("FacebookDialogFragment");
-		intent.putExtra("action_id", "abcde");
-		intent.putExtra("com.facebook.platform.protocol.CALL_ID", "!@#$%^ds:+_");
-		intent.putExtra("com.facebook.platform.protocol.METHOD_ARGS", "com_dot_facebook_dot_platform_dot_protocol_dot_METHOD_ARGS");
-		intent.putExtra("com.facebook.platform.protocol.PROTOCOL_VERSION", 0);
-		intent.putExtra("com.facebook.platform.protocol.BRIDGE_ARGS", "com_dot_facebook_dot_platform_dot_protocol_dot_BRIDGE_ARGS");
 		startActivity(intent);
-		//FacebookDialogFragment;;null;;null;;null;;Bundle->com.facebook.platform.protocol.BRIDGE_ARGS->BundleObj,int->com.facebook.platform.protocol.PROTOCOL_VERSION->0,Bundle->com.facebook.platform.protocol.METHOD_ARGS->BundleObj,String->com.facebook.platform.protocol.CALL_ID->!@#$%^ds:+_,String->action_id->abcde,
+		//FacebookDialogFragment;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -1,0 +1,304 @@
+BugInfo:
+hash:-211526693
+FATAL EXCEPTION: AsyncTask #1
+java.lang.RuntimeException: An error occurred while executing doInBackground()
+	at android.os.AsyncTask$3.done(AsyncTask.java:354)
+	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:383)
+	at java.util.concurrent.FutureTask.setException(FutureTask.java:252)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.lang.Thread.run(Thread.java:764)
+Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'boolean android.database.Cursor.moveToLast()' on a null object reference
+	at nl.sogeti.android.gpstracker.actions.utils.StatisticsCalulator.updateCalculations(StatisticsCalulator.java:103)
+	at nl.sogeti.android.gpstracker.actions.utils.StatisticsCalulator.doInBackground(StatisticsCalulator.java:426)
+	at nl.sogeti.android.gpstracker.actions.utils.StatisticsCalulator.doInBackground(StatisticsCalulator.java:1)
+	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	... 3 more
+
+ICC Msgs:
+65	nl.sogeti.android.gpstracker.actions.Statistics	null;;null;;notEmpty;;null;;
+
+68	nl.sogeti.android.gpstracker.actions.Statistics	null;;null;;new android.net.Uri;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1270571707
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{nl.sogeti.android.gpstracker/nl.sogeti.android.gpstracker.actions.ShareTrack}: java.lang.NullPointerException: Attempt to invoke interface method 'boolean android.database.Cursor.moveToFirst()' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'boolean android.database.Cursor.moveToFirst()' on a null object reference
+	at nl.sogeti.android.gpstracker.actions.ShareTrack.queryForTrackName(ShareTrack.java:618)
+	at nl.sogeti.android.gpstracker.actions.ShareTrack.onCreate(ShareTrack.java:206)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+71	nl.sogeti.android.gpstracker.actions.ShareTrack	null;;null;;notEmpty;;null;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->NAME->abcde,
+
+70	nl.sogeti.android.gpstracker.actions.ShareTrack	null;;null;;notEmpty;;null;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->NAME->999999999999999999999999999999999999999999999999999,
+
+73	nl.sogeti.android.gpstracker.actions.ShareTrack	null;;null;;notEmpty;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-2079023544
+FATAL EXCEPTION: AsyncTask #1
+java.lang.RuntimeException: An error occurred while executing doInBackground()
+	at android.os.AsyncTask$3.done(AsyncTask.java:354)
+	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:383)
+	at java.util.concurrent.FutureTask.setException(FutureTask.java:252)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.lang.Thread.run(Thread.java:764)
+Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'boolean android.database.Cursor.moveToLast()' on a null object reference
+	at nl.sogeti.android.gpstracker.actions.utils.StatisticsCalulator.updateCalculations(StatisticsCalulator.java:103)
+	at nl.sogeti.android.gpstracker.actions.utils.StatisticsCalulator.doInBackground(StatisticsCalulator.java:426)
+	at nl.sogeti.android.gpstracker.actions.utils.StatisticsCalulator.doInBackground(StatisticsCalulator.java:1)
+	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	... 3 more
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to resume activity {nl.sogeti.android.gpstracker/nl.sogeti.android.gpstracker.actions.Statistics}: java.lang.IllegalArgumentException: Invalid Uri (notEmpty) used for observer
+	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3825)
+	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3857)
+	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.IllegalArgumentException: Invalid Uri (notEmpty) used for observer
+	at android.os.Parcel.createException(Parcel.java:1954)
+	at android.os.Parcel.readException(Parcel.java:1918)
+	at android.os.Parcel.readException(Parcel.java:1868)
+	at android.content.IContentService$Stub$Proxy.registerContentObserver(IContentService.java:779)
+	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:1973)
+	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:1962)
+	at nl.sogeti.android.gpstracker.actions.Statistics.onResume(Statistics.java:282)
+	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+	at android.app.Activity.performResume(Activity.java:7300)
+	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3817)
+	... 11 more
+Caused by: android.os.RemoteException: Remote stack trace:
+	at com.android.server.content.ContentService$ObserverNode.addObserverLocked(ContentService.java:1452)
+	at com.android.server.content.ContentService$ObserverNode.addObserverLocked(ContentService.java:1435)
+	at com.android.server.content.ContentService.registerContentObserver(ContentService.java:353)
+	at android.content.IContentService$Stub.onTransact(IContentService.java:76)
+	at com.android.server.content.ContentService.onTransact(ContentService.java:262)
+
+
+ICC Msgs:
+66	nl.sogeti.android.gpstracker.actions.Statistics	null;;null;;notEmpty;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1693273708
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{nl.sogeti.android.gpstracker/nl.sogeti.android.gpstracker.actions.ShareTrack}: java.lang.NullPointerException: uri
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: uri
+	at com.android.internal.util.Preconditions.checkNotNull(Preconditions.java:128)
+	at android.content.ContentResolver.query(ContentResolver.java:786)
+	at android.content.ContentResolver.query(ContentResolver.java:753)
+	at android.content.ContentResolver.query(ContentResolver.java:711)
+	at nl.sogeti.android.gpstracker.actions.ShareTrack.queryForTrackName(ShareTrack.java:617)
+	at nl.sogeti.android.gpstracker.actions.ShareTrack.onCreate(ShareTrack.java:206)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+69	nl.sogeti.android.gpstracker.actions.ShareTrack	android.intent.action.RUN;;null;;new android.net.Uri;;vnd.android.cursor.item/vnd.nl.sogeti.android.track;;
+
+74	nl.sogeti.android.gpstracker.actions.ShareTrack	android.intent.action.RUN;;null;;null;;vnd.android.cursor.item/vnd.nl.sogeti.android.track;;Parcelable->android.intent.extra.STREAM->ParcelableObj,
+
+72	nl.sogeti.android.gpstracker.actions.ShareTrack	android.intent.action.RUN;;null;;new android.net.Uri;;vnd.android.cursor.item/vnd.nl.sogeti.android.track;;Parcelable->android.intent.extra.STREAM->ParcelableObj,
+
+75	nl.sogeti.android.gpstracker.actions.ShareTrack	android.intent.action.RUN;;android.intent.category.DEFAULT;;null;;vnd.android.cursor.item/vnd.nl.sogeti.android.track;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1764322375
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{nl.sogeti.android.gpstracker/nl.sogeti.android.gpstracker.viewer.TrackList}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.getScheme()' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.getScheme()' on a null object reference
+	at nl.sogeti.android.gpstracker.viewer.TrackList.displayIntent(TrackList.java:567)
+	at nl.sogeti.android.gpstracker.viewer.TrackList.onCreate(TrackList.java:138)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+28	nl.sogeti.android.gpstracker.viewer.TrackList	android.intent.action.VIEW;;android.intent.category.BROWSABLE;;null;;text/xml;;
+
+27	nl.sogeti.android.gpstracker.viewer.TrackList	android.intent.action.VIEW;;android.intent.category.BROWSABLE;;file;;*/*;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1962991418
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{nl.sogeti.android.gpstracker/nl.sogeti.android.gpstracker.viewer.TrackList}: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+	at nl.sogeti.android.gpstracker.viewer.TrackList.displayIntent(TrackList.java:575)
+	at nl.sogeti.android.gpstracker.viewer.TrackList.onCreate(TrackList.java:138)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+34	nl.sogeti.android.gpstracker.viewer.TrackList	android.intent.action.VIEW;;null;;notEmpty;;null;;String->query->!@#$%^ds:+_,
+
+51	nl.sogeti.android.gpstracker.viewer.TrackList	android.intent.action.VIEW;;null;;notEmpty;;null;;
+
+33	nl.sogeti.android.gpstracker.viewer.TrackList	android.intent.action.VIEW;;null;;notEmpty;;null;;String->query->abcde,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1779001115
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{nl.sogeti.android.gpstracker/nl.sogeti.android.gpstracker.viewer.LoggerMap}: java.lang.NumberFormatException: For input string: "notEmpty"
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NumberFormatException: For input string: "notEmpty"
+	at java.lang.Long.parseLong(Long.java:594)
+	at java.lang.Long.parseLong(Long.java:636)
+	at nl.sogeti.android.gpstracker.viewer.LoggerMap.onRestoreInstanceState(LoggerMap.java:353)
+	at nl.sogeti.android.gpstracker.viewer.LoggerMap.onCreate(LoggerMap.java:223)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+6	nl.sogeti.android.gpstracker.viewer.LoggerMap	null;;null;;notEmpty;;null;;
+
+5	nl.sogeti.android.gpstracker.viewer.LoggerMap	null;;null;;notEmpty;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-772825574
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to resume activity {nl.sogeti.android.gpstracker/nl.sogeti.android.gpstracker.actions.Statistics}: java.lang.NullPointerException: uri
+	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3825)
+	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3857)
+	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: uri
+	at com.android.internal.util.Preconditions.checkNotNull(Preconditions.java:128)
+	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:1960)
+	at nl.sogeti.android.gpstracker.actions.Statistics.onResume(Statistics.java:282)
+	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+	at android.app.Activity.performResume(Activity.java:7300)
+	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3817)
+	... 11 more
+FATAL EXCEPTION: AsyncTask #1
+java.lang.RuntimeException: An error occurred while executing doInBackground()
+	at android.os.AsyncTask$3.done(AsyncTask.java:354)
+	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:383)
+	at java.util.concurrent.FutureTask.setException(FutureTask.java:252)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.lang.Thread.run(Thread.java:764)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.net.Uri$Builder android.net.Uri.buildUpon()' on a null object reference
+	at android.net.Uri.withAppendedPath(Uri.java:2387)
+	at nl.sogeti.android.gpstracker.actions.utils.StatisticsCalulator.updateCalculations(StatisticsCalulator.java:97)
+	at nl.sogeti.android.gpstracker.actions.utils.StatisticsCalulator.doInBackground(StatisticsCalulator.java:426)
+	at nl.sogeti.android.gpstracker.actions.utils.StatisticsCalulator.doInBackground(StatisticsCalulator.java:1)
+	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	... 3 more
+
+ICC Msgs:
+67	nl.sogeti.android.gpstracker.actions.Statistics	null;;null;;null;;null;;
+
+------------------------------------------------------------------------
+

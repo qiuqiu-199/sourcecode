@@ -19,9 +19,11 @@ public class Activity_18 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.wizards.BasePrefsWizard");
 		intent.setComponent(cn);
+		intent.putExtra("ID", "abcde");
 		intent.putExtra("wizard", "abcde");
+		intent.putExtra("id", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->wizard->abcde,
+		//null;;null;;null;;null;;long->id->0,String->wizard->abcde,String->ID->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

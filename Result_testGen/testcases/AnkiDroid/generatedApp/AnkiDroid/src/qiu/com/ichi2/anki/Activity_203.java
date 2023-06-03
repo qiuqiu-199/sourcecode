@@ -17,11 +17,14 @@ public class Activity_203 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.NoteEditor");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.Reviewer");
 		intent.setComponent(cn);
-		intent.putExtra("CALLER", 0);
+		intent.setAction("android.intent.action.VIEW");
+		intent.putExtra("deckId", 0);
+		intent.putExtra("originalDeck", Long.MIN_VALUE);
+		intent.putExtra("allDecksSelected", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->CALLER->0,
+		//android.intent.action.VIEW;;null;;null;;null;;boolean->allDecksSelected->true,long->originalDeck->Long.MIN_VALUE,long->deckId->0,
 	}
     /** Called when the activity is first created. */
     @Override

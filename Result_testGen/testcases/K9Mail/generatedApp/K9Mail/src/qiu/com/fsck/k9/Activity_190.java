@@ -17,10 +17,14 @@ public class Activity_190 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.Prefs");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.EditIdentity");
 		intent.setComponent(cn);
+		MySerializable com_dot_fsck_dot_k9_dot_EditIdentity_identity = new MySerializable();
+		intent.putExtra("com.fsck.k9.EditIdentity_identity", com_dot_fsck_dot_k9_dot_EditIdentity_identity);
+		intent.putExtra("com.fsck.k9.EditIdentity_account", "abcde");
+		intent.putExtra("com.fsck.k9.EditIdentity_identity_index", Integer.MAX_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;int->com.fsck.k9.EditIdentity_identity_index->Integer.MAX_VALUE,String->com.fsck.k9.EditIdentity_account->abcde,Serializable->com.fsck.k9.EditIdentity_identity->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

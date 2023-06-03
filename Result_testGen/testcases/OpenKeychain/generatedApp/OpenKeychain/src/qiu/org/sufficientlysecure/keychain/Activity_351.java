@@ -17,10 +17,16 @@ public class Activity_351 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteSelectPubKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemotePassphraseDialogActivity");
 		intent.setComponent(cn);
+		Parcelable data = new MyParcelable();
+		intent.putExtra("data", data);
+		Parcelable crypto_input = new MyParcelable();
+		intent.putExtra("crypto_input", crypto_input);
+		Parcelable required_input = new MyParcelable();
+		intent.putExtra("required_input", required_input);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;Parcelable->required_input->ParcelableObj,Parcelable->crypto_input->ParcelableObj,Parcelable->data->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

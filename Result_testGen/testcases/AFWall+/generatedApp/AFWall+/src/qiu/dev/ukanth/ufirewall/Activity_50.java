@@ -17,12 +17,13 @@ public class Activity_50 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.plugin.LocaleEdit");
+		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.MainActivity");
 		intent.setComponent(cn);
-		intent.putExtra("com.twofortyfouram.locale.intent.extra.BUNDLE", "com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE");
-		intent.putExtra("dev.ukanth.ufirewall.plugin.APPLY_PROFILE", "abcde");
+		intent.setAction("dev.ukanth.ufirewall.intent.action.CUSTOM_SCRIPT");
+		intent.putExtra("dev.ukanth.ufirewall.intent.extra.SCRIPT2", "!@#$%^ds:+_");
+		intent.putExtra("dev.ukanth.ufirewall.intent.extra.SCRIPT", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->dev.ukanth.ufirewall.plugin.APPLY_PROFILE->abcde,Bundle->com.twofortyfouram.locale.intent.extra.BUNDLE->BundleObj,
+		//dev.ukanth.ufirewall.intent.action.CUSTOM_SCRIPT;;null;;null;;null;;String->dev.ukanth.ufirewall.intent.extra.SCRIPT->abcde,String->dev.ukanth.ufirewall.intent.extra.SCRIPT2->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

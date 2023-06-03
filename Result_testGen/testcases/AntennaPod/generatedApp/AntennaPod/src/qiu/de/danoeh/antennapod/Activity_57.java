@@ -17,14 +17,13 @@ public class Activity_57 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.MainActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.FlattrAuthActivity");
 		intent.setComponent(cn);
-		intent.putExtra("fragment_args", "fragment_args");
-		intent.putExtra("nav_index", Integer.MIN_VALUE);
-		intent.putExtra("fragment_tag", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("fragment_feed_id", 0);
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setData(Uri.parse("flattr4jde.danoeh.antennapod"));
 		startActivity(intent);
-		//null;;null;;null;;null;;long->fragment_feed_id->0,String->fragment_tag->999999999999999999999999999999999999999999999999999,int->nav_index->Integer.MIN_VALUE,Bundle->fragment_args->BundleObj,
+		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;flattr4jde.danoeh.antennapod;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

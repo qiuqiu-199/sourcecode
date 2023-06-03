@@ -17,16 +17,11 @@ public class Activity_63 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.OrbotRequiredDialogActivity");
 		intent.setComponent(cn);
-		intent.setAction("DECRYPT_DATA_CLIPBOARD");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.setType("application/autocrypt-setup");
-		intent.putExtra("android.intent.extra.TEXT", "999999999999999999999999999999999999999999999999999");
-		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
-		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
+		intent.putExtra("start_orbot", false);
 		startActivity(intent);
-		//DECRYPT_DATA_CLIPBOARD;;null;;notEmpty;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;boolean->start_orbot->false,
 	}
     /** Called when the activity is first created. */
     @Override

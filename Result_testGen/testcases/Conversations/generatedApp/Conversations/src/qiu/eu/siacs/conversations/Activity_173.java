@@ -20,11 +20,12 @@ public class Activity_173 extends Activity
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
 		intent.setAction("eu.siacs.conversations.action.VIEW");
-		intent.putExtra("as_quote", false);
+		intent.putExtra("nick", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("pm", false);
 		intent.putExtra("conversationUuid", "abcde");
 		intent.putExtra("android.intent.extra.TEXT", "abcde");
 		startActivity(intent);
-		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->abcde,String->conversationUuid->abcde,boolean->as_quote->false,
+		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->abcde,String->conversationUuid->abcde,boolean->pm->false,String->nick->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

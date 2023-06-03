@@ -1,0 +1,81 @@
+BugInfo:
+hash:-1260570208
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.mikifus.padland/com.mikifus.padland.PadViewActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.mikifus.padland.Models.Pad.g()' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.mikifus.padland.Models.Pad.g()' on a null object reference
+	at com.mikifus.padland.PadViewActivity.d(SourceFile:5)
+	at com.mikifus.padland.PadViewActivity.k(SourceFile:1)
+	at com.mikifus.padland.PadViewActivity.n(SourceFile:1)
+	at com.mikifus.padland.PadViewActivity.onCreate(SourceFile:2)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+8	com.mikifus.padland.PadViewActivity	null;;null;;null;;null;;long->pad_id->0,
+
+9	com.mikifus.padland.PadViewActivity	null;;null;;null;;null;;long->pad_id->Long.MIN_VALUE,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:677655374
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.mikifus.padland/com.mikifus.padland.PadViewActivity}: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:2036)
+	at com.mikifus.padland.PadViewActivity.a(SourceFile:11)
+	at com.mikifus.padland.PadViewActivity.l(SourceFile:9)
+	at com.mikifus.padland.PadViewActivity.d(SourceFile:4)
+	at com.mikifus.padland.PadViewActivity.k(SourceFile:1)
+	at com.mikifus.padland.PadViewActivity.n(SourceFile:1)
+	at com.mikifus.padland.PadViewActivity.onCreate(SourceFile:2)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+28	com.mikifus.padland.PadViewActivity	android.intent.action.VIEW;;null;;null;;null;;
+
+30	com.mikifus.padland.PadViewActivity	android.intent.action.VIEW;;android.intent.category.DEFAULT;;https;;null;;
+
+7	com.mikifus.padland.PadViewActivity	android.intent.action.VIEW;;android.intent.category.DEFAULT;;etherpad.mozilla.org;;null;;
+
+31	com.mikifus.padland.PadViewActivity	android.intent.action.VIEW;;android.intent.category.DEFAULT;;piratenpad.de;;null;;
+
+11	com.mikifus.padland.PadViewActivity	android.intent.action.VIEW;;null;;notEmpty;;null;;
+
+29	com.mikifus.padland.PadViewActivity	android.intent.action.VIEW;;android.intent.category.DEFAULT;;pad.riseup.net;;null;;
+
+10	com.mikifus.padland.PadViewActivity	android.intent.action.VIEW;;null;;notEmpty;;null;;String->padName->999999999999999999999999999999999999999999999999999,String->padUrl->999999999999999999999999999999999999999999999999999,String->padServer->abcde,String->padLocalName->!@#$%^ds:+_,long->pad_id->Long.MIN_VALUE,
+
+------------------------------------------------------------------------
+

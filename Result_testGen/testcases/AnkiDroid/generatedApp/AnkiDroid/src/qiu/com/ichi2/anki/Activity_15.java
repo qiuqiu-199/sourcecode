@@ -17,10 +17,12 @@ public class Activity_15 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.Info");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.ModelFieldEditor");
 		intent.setComponent(cn);
+		intent.putExtra("title", "abcde");
+		intent.putExtra("noteTypeID", Long.MAX_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;long->noteTypeID->Long.MAX_VALUE,String->title->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

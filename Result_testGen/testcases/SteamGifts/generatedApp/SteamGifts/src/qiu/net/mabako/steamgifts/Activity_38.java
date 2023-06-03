@@ -17,11 +17,13 @@ public class Activity_38 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.MainActivity");
+		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.UrlHandlingActivity");
 		intent.setComponent(cn);
-		intent.putExtra("mark", true);
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.BROWSABLE");
+		intent.setData(Uri.parse("https"));
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->mark->true,
+		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;https;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

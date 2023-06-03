@@ -17,12 +17,26 @@ public class Activity_350 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.MediaBrowserActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.StartConversationActivity");
 		intent.setComponent(cn);
-		intent.putExtra("account", "!@#$%^ds:+_");
-		intent.putExtra("jid", "!@#$%^ds:+_");
+		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("?"));
+		intent.putExtra("account", "abcde");
+		Parcelable metadata = new MyParcelable();
+		intent.putExtra("metadata", metadata);
+		Parcelable intent1 = new MyParcelable();
+		intent.putExtra("intent", intent);
+		intent.putExtra("result_code", Integer.MIN_VALUE);
+		intent.putExtra("extra_select_multiple", false);
+		intent.putExtra("contact", "abcde");
+		intent.putExtra("scanned", false);
+		intent.putExtra("extra_group_chat_name", "!@#$%^ds:+_");
+		String[] contacts = new String[1];
+		intent.putExtra("contacts", contacts);
+		intent.putExtra("eu.siacs.conversations.invite_uri", "abcde");
+		intent.putExtra("extra_conversation", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->jid->!@#$%^ds:+_,String->account->!@#$%^ds:+_,
+		//android.intent.action.VIEW;;null;;?;;null;;String->extra_conversation->!@#$%^ds:+_,String->eu.siacs.conversations.invite_uri->abcde,StringArray->contacts->abcde,String->extra_group_chat_name->!@#$%^ds:+_,boolean->scanned->false,String->contact->abcde,boolean->extra_select_multiple->false,int->result_code->Integer.MIN_VALUE,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

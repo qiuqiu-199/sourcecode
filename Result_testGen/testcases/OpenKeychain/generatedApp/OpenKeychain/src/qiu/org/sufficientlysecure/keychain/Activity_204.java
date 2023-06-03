@@ -17,10 +17,12 @@ public class Activity_204 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteRegisterActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
+		intent.setAction("android.nfc.action.NDEF_DISCOVERED");
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//android.nfc.action.NDEF_DISCOVERED;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

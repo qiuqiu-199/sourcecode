@@ -19,8 +19,9 @@ public class Activity_3 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.DeckPicker");
 		intent.setComponent(cn);
+		intent.putExtra("collectionLoadError", false);
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;boolean->collectionLoadError->false,
 	}
     /** Called when the activity is first created. */
     @Override

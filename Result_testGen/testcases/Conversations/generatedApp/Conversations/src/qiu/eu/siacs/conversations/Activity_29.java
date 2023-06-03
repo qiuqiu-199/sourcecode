@@ -21,10 +21,10 @@ public class Activity_29 extends Activity
 		intent.setComponent(cn);
 		intent.setAction("view_contact");
 		intent.putExtra("account", "abcde");
-		intent.putExtra("fingerprint", "!@#$%^ds:+_");
-		intent.putExtra("contact", "!@#$%^ds:+_");
+		intent.putExtra("fingerprint", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("contact", "abcde");
 		startActivity(intent);
-		//view_contact;;null;;null;;null;;String->contact->!@#$%^ds:+_,String->fingerprint->!@#$%^ds:+_,String->account->abcde,
+		//view_contact;;null;;null;;null;;String->contact->abcde,String->fingerprint->999999999999999999999999999999999999999999999999999,String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

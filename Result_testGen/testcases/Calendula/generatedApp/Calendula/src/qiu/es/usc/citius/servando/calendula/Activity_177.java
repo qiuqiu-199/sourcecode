@@ -17,21 +17,13 @@ public class Activity_177 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.ScanActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.MedicineInfoActivity");
 		intent.setComponent(cn);
-		byte[] SCAN_RESULT_BYTE_SEGMENTS_0 = new byte[1];
-		intent.putExtra("SCAN_RESULT_BYTE_SEGMENTS_0", SCAN_RESULT_BYTE_SEGMENTS_0);
-		intent.putExtra("SCAN_RESULT_IMAGE_PATH", "abcde");
-		intent.putExtra("after_scan_pkg", "abcde");
-		intent.putExtra("SCAN_RESULT_ERROR_CORRECTION_LEVEL", "!@#$%^ds:+_");
-		byte[] SCAN_RESULT_BYTES = new byte[1];
-		intent.putExtra("SCAN_RESULT_BYTES", SCAN_RESULT_BYTES);
-		intent.putExtra("after_scan_cls", "abcde");
-		intent.putExtra("SCAN_RESULT_ORIENTATION", Integer.MIN_VALUE);
-		intent.putExtra("SCAN_RESULT", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("SCAN_RESULT_FORMAT", "!@#$%^ds:+_");
+		MySerializable medicine_id = new MySerializable();
+		intent.putExtra("medicine_id", medicine_id);
+		intent.putExtra("show_alerts", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->SCAN_RESULT_FORMAT->!@#$%^ds:+_,String->SCAN_RESULT->999999999999999999999999999999999999999999999999999,int->SCAN_RESULT_ORIENTATION->Integer.MIN_VALUE,String->after_scan_cls->abcde,byteArray->SCAN_RESULT_BYTES->Byte.MAX_VALUE,String->SCAN_RESULT_ERROR_CORRECTION_LEVEL->!@#$%^ds:+_,String->after_scan_pkg->abcde,String->SCAN_RESULT_IMAGE_PATH->abcde,byteArray->SCAN_RESULT_BYTE_SEGMENTS_0->Byte.MIN_VALUE,
+		//null;;null;;null;;null;;boolean->show_alerts->true,Serializable->medicine_id->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,10 +17,11 @@ public class Activity_66 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassImportActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity");
 		intent.setComponent(cn);
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

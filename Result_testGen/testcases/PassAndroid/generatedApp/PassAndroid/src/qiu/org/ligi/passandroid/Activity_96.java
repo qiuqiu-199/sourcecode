@@ -20,10 +20,10 @@ public class Activity_96 extends Activity
 		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassImportActivity");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("application/vnd-com.apple.pkpass");
+		intent.addCategory("android.intent.category.BROWSABLE");
+		intent.setData(Uri.parse("httpsmbk.thy.com"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;null;;application/vnd-com.apple.pkpass;;
+		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpsmbk.thy.com;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

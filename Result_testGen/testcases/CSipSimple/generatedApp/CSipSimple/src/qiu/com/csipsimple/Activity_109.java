@@ -17,11 +17,10 @@ public class Activity_109 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.calllog.CallLogDetailsActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.CALL");
 		startActivity(intent);
-		//android.intent.action.CALL;;null;;null;;null;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

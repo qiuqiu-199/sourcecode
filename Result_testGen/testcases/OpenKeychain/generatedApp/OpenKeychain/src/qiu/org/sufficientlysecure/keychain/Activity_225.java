@@ -17,15 +17,12 @@ public class Activity_225 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.ExchangeActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		intent.putExtra("GroupId", "!@#$%^ds:+_");
-		intent.putExtra("NumUsers", 0);
-		byte[] UserData = new byte[1];
-		intent.putExtra("UserData", UserData);
-		intent.putExtra("HostName", "999999999999999999999999999999999999999999999999999");
+		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("market://details?id=org.torproject.android, https://f-droid.org/repository/browse/?fdid=org.torproject.android"));
 		startActivity(intent);
-		//null;;null;;null;;null;;String->HostName->999999999999999999999999999999999999999999999999999,byteArray->UserData->0,int->NumUsers->0,String->GroupId->!@#$%^ds:+_,
+		//android.intent.action.VIEW;;null;;market://details?id=org.torproject.android, https://f-droid.org/repository/browse/?fdid=org.torproject.android;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

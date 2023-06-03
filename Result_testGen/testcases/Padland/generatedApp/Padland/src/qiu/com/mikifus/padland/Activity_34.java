@@ -17,11 +17,14 @@ public class Activity_34 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadInfoActivity");
+		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadViewActivity");
 		intent.setComponent(cn);
-		intent.putExtra("pad_id", Long.MIN_VALUE);
+		intent.putExtra("padLocalName", "abcde");
+		intent.putExtra("padServer", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("padUrl", "!@#$%^ds:+_");
+		intent.putExtra("padName", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;long->pad_id->Long.MIN_VALUE,
+		//null;;null;;null;;null;;String->padName->abcde,String->padUrl->!@#$%^ds:+_,String->padServer->999999999999999999999999999999999999999999999999999,String->padLocalName->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

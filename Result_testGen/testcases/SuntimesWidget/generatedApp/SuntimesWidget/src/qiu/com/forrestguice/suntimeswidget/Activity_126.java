@@ -17,12 +17,12 @@ public class Activity_126 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesActivity");
 		intent.setComponent(cn);
-		intent.setAction("suntimeswidget.alarm.delete");
-		intent.setData(Uri.parse("notEmpty"));
+		intent.setAction("?");
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//suntimeswidget.alarm.delete;;null;;notEmpty;;null;;
+		//?;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

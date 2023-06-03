@@ -17,12 +17,11 @@ public class Activity_19 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.VideoplayerActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.FeedInfoActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("mSheme://mHost:mPort/notEmpty"));
+		intent.putExtra("de.danoeh.antennapod.extra.feedId", 0);
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;mSheme://mHost:mPort/notEmpty;;null;;
+		//null;;null;;null;;null;;long->de.danoeh.antennapod.extra.feedId->0,
 	}
     /** Called when the activity is first created. */
     @Override

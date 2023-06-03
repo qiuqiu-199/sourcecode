@@ -17,13 +17,12 @@ public class Activity_16 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.wizards.BasePrefsWizard");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.widgets.ShortcutWidgetConfigure");
 		intent.setComponent(cn);
-		intent.putExtra("ID", "!@#$%^ds:+_");
-		intent.putExtra("wizard", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("id", 0);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->id->0,String->wizard->999999999999999999999999999999999999999999999999999,String->ID->!@#$%^ds:+_,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,12 +17,12 @@ public class Activity_31 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.FolderPickerActivity");
+		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.MainActivity");
 		intent.setComponent(cn);
-		intent.putExtra("com.nutomic.syncthingandroid.activities.FolderPickerActivity.INITIAL_DIRECTORY", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("com.nutomic.syncthingandroid.activities.FolderPickerActivity.ROOT_DIRECTORY", "999999999999999999999999999999999999999999999999999");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.nutomic.syncthingandroid.activities.FolderPickerActivity.ROOT_DIRECTORY->999999999999999999999999999999999999999999999999999,String->com.nutomic.syncthingandroid.activities.FolderPickerActivity.INITIAL_DIRECTORY->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

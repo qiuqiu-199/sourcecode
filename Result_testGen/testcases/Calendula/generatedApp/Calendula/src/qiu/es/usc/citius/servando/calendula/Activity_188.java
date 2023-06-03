@@ -17,16 +17,13 @@ public class Activity_188 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.notifications.LockScreenAlarmActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.AllergiesActivity");
 		intent.setComponent(cn);
-		MySerializable routine_id = new MySerializable();
-		intent.putExtra("routine_id", routine_id);
-		intent.putExtra("action", 0);
-		Parcelable target = new MyParcelable();
-		intent.putExtra("target", target);
-		intent.putExtra("date", "999999999999999999999999999999999999999999999999999");
+		ArrayList  result = new ArrayList<MyParcelable>();
+		result.add(new MyParcelable());
+		intent.putParcelableArrayListExtra("result", result);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->date->999999999999999999999999999999999999999999999999999,Parcelable->target->ParcelableObj,int->action->0,Serializable->routine_id->SerializableObj,
+		//null;;null;;null;;null;;ParcelableArrayList->result->ParcelableArrayListObj,
 	}
     /** Called when the activity is first created. */
     @Override

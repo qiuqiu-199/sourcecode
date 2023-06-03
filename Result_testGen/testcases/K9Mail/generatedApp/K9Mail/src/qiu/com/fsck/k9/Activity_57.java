@@ -17,13 +17,12 @@ public class Activity_57 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageList");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.ChooseFolder");
 		intent.setComponent(cn);
-		intent.putExtra("no_threading", false);
-		intent.putExtra("appWidgetId", 0);
-		intent.putExtra("search_bytes", Byte.MAX_VALUE);
+		intent.putExtra("com.fsck.k9.ChooseFolder_showDisplayableOnly", "abcde");
+		intent.putExtra("com.fsck.k9.ChooseFolder_account", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;byte[]->search_bytes->Byte.MAX_VALUE,int->appWidgetId->0,boolean->no_threading->false,
+		//null;;null;;null;;null;;String->com.fsck.k9.ChooseFolder_account->abcde,String->com.fsck.k9.ChooseFolder_showDisplayableOnly->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

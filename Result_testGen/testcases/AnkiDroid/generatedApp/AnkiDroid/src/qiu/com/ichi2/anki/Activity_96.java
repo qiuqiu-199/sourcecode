@@ -20,10 +20,10 @@ public class Activity_96 extends Activity
 		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.IntentHandler");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("mSheme://mHost:mPort/.apkg"));
-		intent.setType("notEmpty");
+		intent.setData(Uri.parse("file:mAuthority/mPath"));
+		intent.setType("?");
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;mSheme://mHost:mPort/.apkg;;notEmpty;;
+		//android.intent.action.VIEW;;null;;file:mAuthority/mPath;;?;;
 	}
     /** Called when the activity is first created. */
     @Override

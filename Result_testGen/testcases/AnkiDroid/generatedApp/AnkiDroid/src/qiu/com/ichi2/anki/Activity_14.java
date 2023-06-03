@@ -19,10 +19,10 @@ public class Activity_14 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.ModelFieldEditor");
 		intent.setComponent(cn);
-		intent.putExtra("title", "!@#$%^ds:+_");
-		intent.putExtra("noteTypeID", Long.MIN_VALUE);
+		intent.putExtra("title", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("noteTypeID", Long.MAX_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;long->noteTypeID->Long.MIN_VALUE,String->title->!@#$%^ds:+_,
+		//null;;null;;null;;null;;long->noteTypeID->Long.MAX_VALUE,String->title->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

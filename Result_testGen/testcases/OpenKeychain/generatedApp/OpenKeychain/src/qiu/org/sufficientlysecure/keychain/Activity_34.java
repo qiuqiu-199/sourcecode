@@ -17,15 +17,12 @@ public class Activity_34 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteBackupActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SettingsKeyServerActivity");
 		intent.setComponent(cn);
-		intent.putExtra("export_secret", false);
-		Parcelable data = new MyParcelable();
-		intent.putExtra("data", data);
-		long[] master_key_ids = new long[1];
-		intent.putExtra("master_key_ids", master_key_ids);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;longArray->master_key_ids->0,Parcelable->data->ParcelableObj,boolean->export_secret->false,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

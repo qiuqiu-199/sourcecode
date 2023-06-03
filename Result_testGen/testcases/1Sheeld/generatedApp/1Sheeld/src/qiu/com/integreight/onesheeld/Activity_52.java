@@ -17,11 +17,16 @@ public class Activity_52 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.shields.controller.utils.NfcUtils");
+		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.plugin.action.ActionActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.NDEF_DISCOVERED");
+		Bundle com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE = new Bundle();
+		com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE.putInt("com.integreight.onesheeld.extra.PIN_NUMBER", 0);
+		com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE = new Bundle();
+		com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE.putBoolean("com.integreight.onesheeld.extra.OUTPUT", false);
+		intent.putExtra("com.twofortyfouram.locale.intent.extra.BUNDLE", "com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE");
+		intent.putExtra("com.twofortyfouram.locale.intent.extra.BREADCRUMB", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//android.nfc.action.NDEF_DISCOVERED;;null;;null;;null;;
+		//null;;null;;null;;null;;String->com.twofortyfouram.locale.intent.extra.BREADCRUMB->999999999999999999999999999999999999999999999999999,Bundle->com.twofortyfouram.locale.intent.extra.BUNDLE->BundleObj,(,boolean->com.integreight.onesheeld.extra.OUTPUT->false,int->com.integreight.onesheeld.extra.PIN_NUMBER->0,),
 	}
     /** Called when the activity is first created. */
     @Override

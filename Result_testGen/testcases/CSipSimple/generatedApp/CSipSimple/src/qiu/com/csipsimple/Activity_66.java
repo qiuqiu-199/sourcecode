@@ -19,10 +19,10 @@ public class Activity_66 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.phone.action.MESSAGES");
-		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setAction("com.csipsimple.phone.action.FAVORITES");
+		intent.setData(Uri.parse("?://mHost:mPort/mPath"));
 		startActivity(intent);
-		//com.csipsimple.phone.action.MESSAGES;;android.intent.category.DEFAULT;;null;;null;;
+		//com.csipsimple.phone.action.FAVORITES;;null;;?://mHost:mPort/mPath;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

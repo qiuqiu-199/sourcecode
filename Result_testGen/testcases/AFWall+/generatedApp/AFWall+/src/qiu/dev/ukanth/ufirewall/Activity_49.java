@@ -17,12 +17,12 @@ public class Activity_49 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.plugin.LocaleEdit");
+		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.MainActivity");
 		intent.setComponent(cn);
-		intent.putExtra("com.twofortyfouram.locale.intent.extra.BUNDLE", "com_dot_twofortyfouram_dot_locale_dot_intent_dot_extra_dot_BUNDLE");
-		intent.putExtra("dev.ukanth.ufirewall.plugin.APPLY_PROFILE", "!@#$%^ds:+_");
+		intent.setAction("android.intent.action.MAIN");
+		intent.addCategory("android.intent.category.MULTIWINDOW_LAUNCHER");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->dev.ukanth.ufirewall.plugin.APPLY_PROFILE->!@#$%^ds:+_,Bundle->com.twofortyfouram.locale.intent.extra.BUNDLE->BundleObj,
+		//android.intent.action.MAIN;;android.intent.category.MULTIWINDOW_LAUNCHER;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

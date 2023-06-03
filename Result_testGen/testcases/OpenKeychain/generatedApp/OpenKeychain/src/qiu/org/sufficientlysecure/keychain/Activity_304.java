@@ -17,13 +17,19 @@ public class Activity_304 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DeleteKeyDialogActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("vnd.android.cursor.item/vnd.org.sufficientlysecure.keychain.key");
+		long[] extra_delete_master_key_ids = new long[1];
+		intent.putExtra("extra_delete_master_key_ids", extra_delete_master_key_ids);
+		intent.putExtra("extra_has_secret", true);
+		Parcelable result_crypto_input = new MyParcelable();
+		intent.putExtra("result_crypto_input", result_crypto_input);
+		Parcelable extra_keyserver = new MyParcelable();
+		intent.putExtra("extra_keyserver", extra_keyserver);
+		Parcelable result_data = new MyParcelable();
+		intent.putExtra("result_data", result_data);
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;null;;vnd.android.cursor.item/vnd.org.sufficientlysecure.keychain.key;;
+		//null;;null;;null;;null;;Parcelable->result_data->ParcelableObj,Parcelable->extra_keyserver->ParcelableObj,Parcelable->result_crypto_input->ParcelableObj,boolean->extra_has_secret->true,longArray->extra_delete_master_key_ids->Long.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

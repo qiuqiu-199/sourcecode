@@ -19,10 +19,10 @@ public class Activity_59 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.phone.action.CALLLOG");
-		intent.setData(Uri.parse("notEmpty"));
+		intent.setAction("com.csipsimple.phone.action.FAVORITES");
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//com.csipsimple.phone.action.CALLLOG;;null;;notEmpty;;null;;
+		//com.csipsimple.phone.action.FAVORITES;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

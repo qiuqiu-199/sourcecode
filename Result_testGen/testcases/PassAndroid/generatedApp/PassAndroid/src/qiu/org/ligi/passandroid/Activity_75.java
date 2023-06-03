@@ -17,10 +17,11 @@ public class Activity_75 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassImportActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassViewActivity");
 		intent.setComponent(cn);
+		intent.putExtra("uuid", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;String->uuid->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

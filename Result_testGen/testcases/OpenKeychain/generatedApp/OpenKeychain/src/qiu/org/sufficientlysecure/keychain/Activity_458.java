@@ -17,19 +17,12 @@ public class Activity_458 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.dialog.RemoteSelectIdKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.GroupingActivity");
 		intent.setComponent(cn);
-		byte[] package_signature = new byte[1];
-		intent.putExtra("package_signature", package_signature);
-		intent.putExtra("show_autocrypt_hint", false);
-		Parcelable result_crypto_input = new MyParcelable();
-		intent.putExtra("result_crypto_input", result_crypto_input);
-		intent.putExtra("package_name", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("user_id", "!@#$%^ds:+_");
-		Parcelable result_data = new MyParcelable();
-		intent.putExtra("result_data", result_data);
+		intent.putExtra("NumUsers", 0);
+		intent.putExtra("UserId", 0);
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->result_data->ParcelableObj,String->user_id->!@#$%^ds:+_,String->package_name->999999999999999999999999999999999999999999999999999,Parcelable->result_crypto_input->ParcelableObj,boolean->show_autocrypt_hint->false,byteArray->package_signature->Byte.MIN_VALUE,
+		//null;;null;;null;;null;;int->UserId->0,int->NumUsers->0,
 	}
     /** Called when the activity is first created. */
     @Override

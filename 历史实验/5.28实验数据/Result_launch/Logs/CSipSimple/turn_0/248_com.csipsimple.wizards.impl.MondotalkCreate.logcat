@@ -1,0 +1,28 @@
+--------- beginning of main
+--------- beginning of system
+05-29 16:59:27.483 23111 23111 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;---><clinit>()V
+05-29 16:59:27.483 23111 23111 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;---><init>()V
+05-29 16:59:27.483 23111 23111 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;--->onCreate()Z
+05-29 16:59:27.483 23111 23111 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;---><clinit>()V
+05-29 16:59:27.483 23111 23111 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$1;---><init>()V
+05-29 16:59:27.483 23111 23111 D M_InsDal: Lcom/csipsimple/utils/CustomDistribution;--->getUserAgent()Ljava/lang/String;
+05-29 16:59:27.483 23111 23111 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$2;---><init>()V
+05-29 16:59:27.484 23111 23111 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$3;---><init>()V
+05-29 16:59:27.484 23111 23111 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;---><init>(Landroid/content/Context;)V
+05-29 16:59:27.484 23111 23111 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;--->needUpgrade()Ljava/lang/Integer;
+05-29 16:59:27.484 23111 23111 D M_InsDal: Lcom/csipsimple/utils/PreferencesProviderWrapper;--->getCurrentPackageInfos(Landroid/content/Context;)Landroid/content/pm/PackageInfo;
+05-29 16:59:27.485 23111 23111 D M_InsDal: Lcom/csipsimple/utils/Log;---><clinit>()V
+05-29 16:59:27.485 23111 23111 D M_InsDal: Lcom/csipsimple/utils/Log;--->d(Ljava/lang/String;Ljava/lang/String;)V
+05-29 16:59:27.485 23111 23111 D M_InsDal: Lcom/csipsimple/utils/Log;--->d(Ljava/lang/String;Ljava/lang/String;)V
+05-29 16:59:27.485 23111 23111 D M_InsDal: Lcom/csipsimple/utils/Compatibility;--->getApiLevel()I
+05-29 16:59:27.487 23111 23111 D M_InsDal: Lcom/csipsimple/wizards/impl/MondotalkCreate;---><init>()V
+05-29 16:59:27.488 23111 23111 D M_InsDal: Lcom/csipsimple/wizards/impl/MondotalkCreate$MondotalkHandler;---><init>(Lcom/csipsimple/wizards/impl/MondotalkCreate;)V
+05-29 16:59:27.489 23111 23111 D M_InsDal: Lcom/csipsimple/wizards/impl/MondotalkCreate;--->onCreate(Landroid/os/Bundle;)V
+05-29 16:59:27.504 23111 23111 D M_InsDal: Lcom/csipsimple/wizards/impl/MondotalkCreate$1;---><init>(Lcom/csipsimple/wizards/impl/MondotalkCreate;)V
+05-29 16:59:27.504 23111 23111 D M_InsDal: Lcom/csipsimple/wizards/impl/MondotalkCreate;--->canSave()Z
+05-29 16:59:27.504 23111 23111 D M_InsDal: Lcom/csipsimple/wizards/impl/MondotalkCreate;--->checkEmptyText(Landroid/widget/EditText;)Z
+05-29 16:59:27.504 23111 23130 D M_InsDal: Lcom/csipsimple/wizards/impl/MondotalkCreate$1;--->run()V
+05-29 16:59:27.504 23111 23130 D M_InsDal: Lcom/csipsimple/wizards/impl/MondotalkCreate;--->retrieveCaptcha()Z
+05-29 16:59:27.505 23111 23111 D M_InsDal: Lcom/csipsimple/wizards/impl/MondotalkCreate;--->checkEmptyText(Landroid/widget/EditText;)Z
+05-29 16:59:27.505 23111 23111 D M_InsDal: Lcom/csipsimple/wizards/impl/MondotalkCreate;--->checkEmptyText(Landroid/widget/EditText;)Z
+05-29 16:59:28.987 23111 23130 D M_InsDal: Lcom/csipsimple/utils/Log;--->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V

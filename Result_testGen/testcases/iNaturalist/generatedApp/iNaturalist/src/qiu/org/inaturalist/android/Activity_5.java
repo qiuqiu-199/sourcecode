@@ -17,13 +17,13 @@ public class Activity_5 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.inaturalist.android","org.inaturalist.android.com.google.android.gms.tagmanager.TagManagerPreviewActivity");
+		ComponentName cn=new ComponentName("org.inaturalist.android","org.inaturalist.android.ObservationEditor");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
+		intent.setAction("android.intent.action.SEND_MULTIPLE");
 		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setData(Uri.parse("tagmanager.c.org.inaturalist.android"));
+		intent.setType("image/*");
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;tagmanager.c.org.inaturalist.android;;null;;
+		//android.intent.action.SEND_MULTIPLE;;android.intent.category.DEFAULT;;null;;image/*;;
 	}
     /** Called when the activity is first created. */
     @Override

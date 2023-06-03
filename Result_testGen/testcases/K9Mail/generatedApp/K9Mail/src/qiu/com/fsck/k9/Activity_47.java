@@ -19,11 +19,15 @@ public class Activity_47 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.ChooseFolder");
 		intent.setComponent(cn);
-		intent.putExtra("com.fsck.k9.ChooseFolder_selfolder", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("com.fsck.k9.ChooseFolder_account", "abcde");
-		intent.putExtra("com.fsck.k9.ChooseFolder_curfolder", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("com.fsck.k9.ChooseFolder_showDisplayableOnly", "!@#$%^ds:+_");
+		intent.putExtra("com.fsck.k9.ChooseFolder_selfolder", "!@#$%^ds:+_");
+		intent.putExtra("com.fsck.k9.ChooseFolder_showOptionNone", "abcde");
+		intent.putExtra("com.fsck.k9.ChooseFolder_showcurrent", "abcde");
+		intent.putExtra("com.fsck.k9.ChooseFolder_message", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("com.fsck.k9.ChooseFolder_account", "!@#$%^ds:+_");
+		intent.putExtra("com.fsck.k9.ChooseFolder_curfolder", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.fsck.k9.ChooseFolder_curfolder->999999999999999999999999999999999999999999999999999,String->com.fsck.k9.ChooseFolder_account->abcde,String->com.fsck.k9.ChooseFolder_selfolder->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;String->com.fsck.k9.ChooseFolder_curfolder->abcde,String->com.fsck.k9.ChooseFolder_account->!@#$%^ds:+_,String->com.fsck.k9.ChooseFolder_message->999999999999999999999999999999999999999999999999999,String->com.fsck.k9.ChooseFolder_showcurrent->abcde,String->com.fsck.k9.ChooseFolder_showOptionNone->abcde,String->com.fsck.k9.ChooseFolder_selfolder->!@#$%^ds:+_,String->com.fsck.k9.ChooseFolder_showDisplayableOnly->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

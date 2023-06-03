@@ -17,11 +17,12 @@ public class Activity_360 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.MucUsersActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.StartConversationActivity");
 		intent.setComponent(cn);
-		intent.putExtra("uuid", "abcde");
+		intent.setAction("android.intent.action.VIEW");
+		intent.putExtra("scanned", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->uuid->abcde,
+		//android.intent.action.VIEW;;null;;null;;null;;boolean->scanned->true,
 	}
     /** Called when the activity is first created. */
     @Override

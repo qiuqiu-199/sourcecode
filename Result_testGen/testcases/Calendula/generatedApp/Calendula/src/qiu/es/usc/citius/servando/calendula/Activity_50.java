@@ -19,10 +19,10 @@ public class Activity_50 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.PatientDetailActivity");
 		intent.setComponent(cn);
-		intent.putExtra("patient_id", Long.MIN_VALUE);
-		intent.putExtra("qr_data", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("patient_id", 0);
+		intent.putExtra("qr_data", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->qr_data->999999999999999999999999999999999999999999999999999,long->patient_id->Long.MIN_VALUE,
+		//null;;null;;null;;null;;String->qr_data->!@#$%^ds:+_,long->patient_id->0,
 	}
     /** Called when the activity is first created. */
     @Override

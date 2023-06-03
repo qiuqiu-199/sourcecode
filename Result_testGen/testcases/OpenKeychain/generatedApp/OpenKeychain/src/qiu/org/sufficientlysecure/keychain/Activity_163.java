@@ -17,16 +17,13 @@ public class Activity_163 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.setData(Uri.parse("notEmpty"));
-		Parcelable result_crypto_input = new MyParcelable();
-		intent.putExtra("result_crypto_input", result_crypto_input);
-		Parcelable result_data = new MyParcelable();
-		intent.putExtra("result_data", result_data);
+		intent.putExtra("package_name", "!@#$%^ds:+_");
+		intent.putExtra("package_signature", Byte.MAX_VALUE);
+		intent.putExtra("user_id", "abcde");
 		startActivity(intent);
-		//android.intent.action.SEND;;null;;notEmpty;;null;;Parcelable->result_data->ParcelableObj,Parcelable->result_crypto_input->ParcelableObj,
+		//null;;null;;null;;null;;String->user_id->abcde,byte[]->package_signature->Byte.MAX_VALUE,String->package_name->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

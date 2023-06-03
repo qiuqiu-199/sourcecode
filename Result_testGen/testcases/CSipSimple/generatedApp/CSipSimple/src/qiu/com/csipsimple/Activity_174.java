@@ -20,9 +20,10 @@ public class Activity_174 extends Activity
 		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.outgoingcall.OutgoingCallChooser");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.SENDTO");
-		intent.setData(Uri.parse("notEmpty:csip/mPath"));
+		intent.setData(Uri.parse("smsto:sip/mPath"));
+		intent.putExtra("acc_id", Long.MIN_VALUE);
 		startActivity(intent);
-		//android.intent.action.SENDTO;;null;;notEmpty:csip/mPath;;null;;
+		//android.intent.action.SENDTO;;null;;smsto:sip/mPath;;null;;long->acc_id->Long.MIN_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

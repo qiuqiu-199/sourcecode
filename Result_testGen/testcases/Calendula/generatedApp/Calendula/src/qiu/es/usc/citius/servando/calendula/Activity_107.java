@@ -20,9 +20,9 @@ public class Activity_107 extends Activity
 		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.UpdateFromFileActivity");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("notEmpty"));
+		intent.setData(Uri.parse("file:mAuthority/?"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;notEmpty;;null;;
+		//android.intent.action.VIEW;;null;;file:mAuthority/?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

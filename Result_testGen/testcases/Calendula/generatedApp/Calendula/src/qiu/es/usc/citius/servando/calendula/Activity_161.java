@@ -17,13 +17,12 @@ public class Activity_161 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.AllergiesActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.AllergiesSearchActivity");
 		intent.setComponent(cn);
-		ArrayList  result = new ArrayList<MyParcelable>();
-		result.add(new MyParcelable());
-		intent.putParcelableArrayListExtra("result", result);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;ParcelableArrayList->result->ParcelableArrayListObj,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

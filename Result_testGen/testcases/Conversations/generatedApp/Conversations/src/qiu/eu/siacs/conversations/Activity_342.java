@@ -17,10 +17,17 @@ public class Activity_342 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.SettingsActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
+		intent.setAction("eu.siacs.conversations.action.VIEW");
+		intent.putExtra("nick", "!@#$%^ds:+_");
+		intent.putExtra("as_quote", false);
+		intent.putExtra("pm", false);
+		intent.putExtra("do_not_append", true);
+		intent.putExtra("conversationUuid", "!@#$%^ds:+_");
+		intent.putExtra("android.intent.extra.TEXT", "!@#$%^ds:+_");
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->!@#$%^ds:+_,String->conversationUuid->!@#$%^ds:+_,boolean->do_not_append->true,boolean->pm->false,boolean->as_quote->false,String->nick->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

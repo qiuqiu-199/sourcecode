@@ -17,13 +17,12 @@ public class Activity_189 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.Previewer");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.CardTemplateEditor");
 		intent.setComponent(cn);
-		long[] cardList = new long[1];
-		intent.putExtra("cardList", cardList);
-		intent.putExtra("index", Integer.MIN_VALUE);
+		intent.putExtra("modelId", 0);
+		intent.putExtra("noteId", Long.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->index->Integer.MIN_VALUE,longArray->cardList->Long.MIN_VALUE,
+		//null;;null;;null;;null;;long->noteId->Long.MIN_VALUE,long->modelId->0,
 	}
     /** Called when the activity is first created. */
     @Override

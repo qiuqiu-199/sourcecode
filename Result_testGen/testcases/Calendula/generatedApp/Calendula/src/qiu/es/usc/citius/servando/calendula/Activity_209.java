@@ -17,20 +17,12 @@ public class Activity_209 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.notifications.LockScreenAlarmActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.WebViewActivity");
 		intent.setComponent(cn);
-		Parcelable alarm_params = new MyParcelable();
-		intent.putExtra("alarm_params", alarm_params);
-		MySerializable schedule_id = new MySerializable();
-		intent.putExtra("schedule_id", schedule_id);
-		intent.putExtra("schedule_time", "abcde");
-		intent.putExtra("action", 0);
-		Parcelable target = new MyParcelable();
-		intent.putExtra("target", target);
-		intent.putExtra("alarm_params", "alarm_params");
-		intent.putExtra("date", "999999999999999999999999999999999999999999999999999");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;String->date->999999999999999999999999999999999999999999999999999,Bundle->alarm_params->BundleObj,Parcelable->target->ParcelableObj,int->action->0,String->schedule_time->abcde,Serializable->schedule_id->SerializableObj,Parcelable->alarm_params->ParcelableObj,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

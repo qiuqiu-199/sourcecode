@@ -17,17 +17,14 @@ public class Activity_35 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShareViaAccountActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ContactDetailsActivity");
 		intent.setComponent(cn);
-		Parcelable metadata = new MyParcelable();
-		intent.putExtra("metadata", metadata);
-		Parcelable intent1 = new MyParcelable();
-		intent.putExtra("intent", intent);
-		intent.putExtra("result_code", 0);
-		intent.putExtra("contact", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("body", "!@#$%^ds:+_");
+		intent.setAction("view_contact");
+		intent.putExtra("account", "abcde");
+		intent.putExtra("fingerprint", "abcde");
+		intent.putExtra("contact", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->body->!@#$%^ds:+_,String->contact->999999999999999999999999999999999999999999999999999,int->result_code->0,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,
+		//view_contact;;null;;null;;null;;String->contact->abcde,String->fingerprint->abcde,String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

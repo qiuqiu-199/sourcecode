@@ -17,13 +17,13 @@ public class Activity_36 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.ExtractURLAsIphoneActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity");
 		intent.setComponent(cn);
 		intent.setAction("android.intent.action.VIEW");
 		intent.addCategory("android.intent.category.BROWSABLE");
-		intent.setData(Uri.parse("httpsmobile.aegeanair.com"));
+		intent.setData(Uri.parse("httpsprod.wap.ncrwebhost.mobi"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpsmobile.aegeanair.com;;null;;
+		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpsprod.wap.ncrwebhost.mobi;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

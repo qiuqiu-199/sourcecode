@@ -17,12 +17,10 @@ public class Activity_92 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.incall.InCallMediaControl");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.wizards.WizardChooser");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.service.CALL_CHANGED");
-		intent.putExtra("android.intent.extra.KEY_EVENT", Integer.MAX_VALUE);
 		startActivity(intent);
-		//com.csipsimple.service.CALL_CHANGED;;null;;null;;null;;int->android.intent.extra.KEY_EVENT->Integer.MAX_VALUE,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,12 +17,14 @@ public class Activity_33 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.FlattrAuthActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.VideoplayerActivity");
 		intent.setComponent(cn);
-		intent.setAction(".activities.FlattrAuthActivity");
-		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.BROWSABLE");
+		intent.setData(Uri.parse("file"));
+		intent.setType("video/*");
 		startActivity(intent);
-		//.activities.FlattrAuthActivity;;android.intent.category.DEFAULT;;null;;null;;
+		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;file;;video/*;;
 	}
     /** Called when the activity is first created. */
     @Override

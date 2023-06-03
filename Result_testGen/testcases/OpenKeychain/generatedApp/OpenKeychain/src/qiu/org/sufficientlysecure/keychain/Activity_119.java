@@ -17,18 +17,13 @@ public class Activity_119 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
 		intent.setComponent(cn);
-		byte[] package_signature = new byte[1];
-		intent.putExtra("package_signature", package_signature);
-		intent.putExtra("package_name", "abcde");
-		Parcelable data = new MyParcelable();
-		intent.putExtra("data", data);
-		intent.putExtra("user_id", "abcde");
-		Parcelable operation_result = new MyParcelable();
-		intent.putExtra("operation_result", operation_result);
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.BROWSABLE");
+		intent.setData(Uri.parse("file"));
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->operation_result->ParcelableObj,String->user_id->abcde,Parcelable->data->ParcelableObj,String->package_name->abcde,byteArray->package_signature->Byte.MAX_VALUE,
+		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;file;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

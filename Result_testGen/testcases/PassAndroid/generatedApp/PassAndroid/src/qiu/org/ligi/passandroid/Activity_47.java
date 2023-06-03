@@ -17,11 +17,13 @@ public class Activity_47 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassViewActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.ExtractURLAsIphoneActivity");
 		intent.setComponent(cn);
-		intent.putExtra("uuid", "!@#$%^ds:+_");
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.BROWSABLE");
+		intent.setData(Uri.parse("httpcheck-in.virginaustralia.com"));
 		startActivity(intent);
-		//null;;null;;null;;null;;String->uuid->!@#$%^ds:+_,
+		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpcheck-in.virginaustralia.com;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

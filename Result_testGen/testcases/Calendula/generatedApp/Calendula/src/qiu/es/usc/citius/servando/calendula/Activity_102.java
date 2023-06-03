@@ -17,12 +17,12 @@ public class Activity_102 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.UpdateFromFileActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.SummaryCalendarActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("file:mAuthority/notEmpty"));
+		intent.putExtra("rule", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("start", "abcde");
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;file:mAuthority/notEmpty;;null;;
+		//null;;null;;null;;null;;String->start->abcde,String->rule->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

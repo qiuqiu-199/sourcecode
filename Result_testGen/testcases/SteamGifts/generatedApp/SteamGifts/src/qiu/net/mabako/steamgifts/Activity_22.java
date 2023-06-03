@@ -19,11 +19,10 @@ public class Activity_22 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.DetailActivity");
 		intent.setComponent(cn);
-		intent.putExtra("mark", false);
 		MySerializable uuid = new MySerializable();
 		intent.putExtra("uuid", uuid);
 		startActivity(intent);
-		//null;;null;;null;;null;;Serializable->uuid->SerializableObj,boolean->mark->false,
+		//null;;null;;null;;null;;Serializable->uuid->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

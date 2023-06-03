@@ -17,13 +17,13 @@ public class Activity_145 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.FolderList");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
 		intent.setComponent(cn);
-		intent.putExtra("account", "!@#$%^ds:+_");
-		intent.putExtra("fromShortcut", true);
-		intent.putExtra("appWidgetId", 0);
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.BROWSABLE");
+		intent.setData(Uri.parse("mailto"));
 		startActivity(intent);
-		//null;;null;;null;;null;;int->appWidgetId->0,boolean->fromShortcut->true,String->account->!@#$%^ds:+_,
+		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;mailto;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

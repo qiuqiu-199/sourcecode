@@ -17,10 +17,12 @@ public class Activity_42 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.LoginActivity");
+		ComponentName cn=new ComponentName("net.mabako.steamgifts","net.mabako.steamgifts.activities.UrlHandlingActivity");
 		intent.setComponent(cn);
+		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y6WJZY2VJHC6G"));
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//android.intent.action.VIEW;;null;;https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y6WJZY2VJHC6G;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

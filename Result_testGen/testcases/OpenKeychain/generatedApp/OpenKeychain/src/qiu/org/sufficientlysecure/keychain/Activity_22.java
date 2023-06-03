@@ -17,13 +17,12 @@ public class Activity_22 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SettingsKeyServerActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.RedirectImportKeysActivity");
 		intent.setComponent(cn);
-		ArrayList  key_servers = new ArrayList<MyParcelable>();
-		key_servers.add(new MyParcelable());
-		intent.putParcelableArrayListExtra("key_servers", key_servers);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;ParcelableArrayList->key_servers->ParcelableArrayListObj,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

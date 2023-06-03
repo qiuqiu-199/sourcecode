@@ -17,20 +17,15 @@ public class Activity_92 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ShareWithActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ChooseContactActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND_MULTIPLE");
-		intent.setType("text/plain");
-		Parcelable metadata = new MyParcelable();
-		intent.putExtra("metadata", metadata);
-		Parcelable intent1 = new MyParcelable();
-		intent.putExtra("intent", intent);
-		intent.putExtra("result_code", Integer.MAX_VALUE);
-		intent.putExtra("android.intent.extra.TEXT", "!@#$%^ds:+_");
-		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
-		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
+		intent.putExtra("account", "abcde");
+		intent.putExtra("extra_title_res_id", Integer.MIN_VALUE);
+		intent.putExtra("extra_select_multiple", false);
+		intent.putExtra("extra_group_chat_name", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("extra_show_enter_jid", true);
 		startActivity(intent);
-		//android.intent.action.SEND_MULTIPLE;;null;;null;;text/plain;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->!@#$%^ds:+_,int->result_code->Integer.MAX_VALUE,Parcelable->intent->ParcelableObj,Parcelable->metadata->ParcelableObj,
+		//null;;null;;null;;null;;boolean->extra_show_enter_jid->true,String->extra_group_chat_name->999999999999999999999999999999999999999999999999999,boolean->extra_select_multiple->false,int->extra_title_res_id->Integer.MIN_VALUE,String->account->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

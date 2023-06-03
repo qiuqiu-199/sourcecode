@@ -19,11 +19,11 @@ public class Activity_61 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadListActivity");
 		intent.setComponent(cn);
-		intent.putExtra("action", "abcde");
-		ArrayList<String> pad_id = new ArrayList<String>();
-		intent.putStringArrayListExtra("pad_id", pad_id);
+		intent.setAction("android.intent.action.SEND");
+		intent.setType("text/plain");
+		intent.putExtra("android.intent.extra.TEXT", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;StringArrayList->pad_id->abcde,String->action->abcde,
+		//android.intent.action.SEND;;null;;null;;text/plain;;String->android.intent.extra.TEXT->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

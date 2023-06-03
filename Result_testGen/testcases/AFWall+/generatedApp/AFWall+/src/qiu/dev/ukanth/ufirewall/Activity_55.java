@@ -17,11 +17,10 @@ public class Activity_55 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","haibison.android.lockpattern.LockPatternActivity");
+		ComponentName cn=new ComponentName("dev.ukanth.ufirewall","dev.ukanth.ufirewall.MainActivity");
 		intent.setComponent(cn);
-		intent.setAction("haibison.android.lockpattern.LockPatternActivity.VERIFY_CAPTCHA");
 		startActivity(intent);
-		//haibison.android.lockpattern.LockPatternActivity.VERIFY_CAPTCHA;;null;;null;;null;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

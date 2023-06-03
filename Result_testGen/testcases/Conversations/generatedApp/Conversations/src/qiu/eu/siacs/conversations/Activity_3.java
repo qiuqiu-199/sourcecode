@@ -19,8 +19,9 @@ public class Activity_3 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ManageAccountActivity");
 		intent.setComponent(cn);
+		intent.putExtra("eu.siacs.conversations.invite_uri", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//null;;null;;null;;null;;String->eu.siacs.conversations.invite_uri->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

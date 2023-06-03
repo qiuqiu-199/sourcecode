@@ -17,14 +17,13 @@ public class Activity_96 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteSecurityProblemDialogActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
 		intent.setComponent(cn);
-		intent.putExtra("support_override", false);
-		intent.putExtra("package_name", "!@#$%^ds:+_");
-		MySerializable security_problem = new MySerializable();
-		intent.putExtra("security_problem", security_problem);
+		intent.setAction("org.sufficientlysecure.keychain.action.DECRYPT_DATA");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setType("*/*");
 		startActivity(intent);
-		//null;;null;;null;;null;;Serializable->security_problem->SerializableObj,String->package_name->!@#$%^ds:+_,boolean->support_override->false,
+		//org.sufficientlysecure.keychain.action.DECRYPT_DATA;;android.intent.category.DEFAULT;;null;;*/*;;
 	}
     /** Called when the activity is first created. */
     @Override

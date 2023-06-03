@@ -17,11 +17,15 @@ public class Activity_291 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SecurityTokenChangePinOperationActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","edu.cmu.cylab.starslinger.exchange.ExchangeActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.TAG_DISCOVERED");
+		intent.putExtra("GroupId", "!@#$%^ds:+_");
+		intent.putExtra("NumUsers", 0);
+		byte[] UserData = new byte[1];
+		intent.putExtra("UserData", UserData);
+		intent.putExtra("HostName", "abcde");
 		startActivity(intent);
-		//android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;
+		//null;;null;;null;;null;;String->HostName->abcde,byteArray->UserData->Byte.MAX_VALUE,int->NumUsers->0,String->GroupId->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

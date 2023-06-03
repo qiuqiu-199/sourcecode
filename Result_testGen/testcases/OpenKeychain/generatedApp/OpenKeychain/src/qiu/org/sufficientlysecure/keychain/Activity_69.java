@@ -17,16 +17,20 @@ public class Activity_69 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.QrCodeCaptureActivity");
 		intent.setComponent(cn);
-		intent.setAction("notEmpty");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.setType("application/autocrypt-setup");
-		intent.putExtra("android.intent.extra.TEXT", "999999999999999999999999999999999999999999999999999");
-		Parcelable android_dot_intent_dot_extra_dot_STREAM = new MyParcelable();
-		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
+		intent.setAction("com.google.zxing.client.android.SCAN");
+		intent.putExtra("SCAN_MODE", "abcde");
+		intent.putExtra("SCAN_FORMATS", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("PROMPT_MESSAGE", "abcde");
+		intent.putExtra("BARCODE_IMAGE_ENABLED", true);
+		intent.putExtra("BEEP_ENABLED", true);
+		intent.putExtra("SCAN_ORIENTATION_LOCKED", false);
+		intent.putExtra("TIMEOUT", Long.MIN_VALUE);
+		intent.putExtra("CHARACTER_SET", "abcde");
+		intent.putExtra("SCAN_CAMERA_ID", Integer.MAX_VALUE);
 		startActivity(intent);
-		//notEmpty;;null;;notEmpty;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,
+		//com.google.zxing.client.android.SCAN;;null;;null;;null;;int->SCAN_CAMERA_ID->Integer.MAX_VALUE,String->CHARACTER_SET->abcde,long->TIMEOUT->Long.MIN_VALUE,boolean->SCAN_ORIENTATION_LOCKED->false,boolean->BEEP_ENABLED->true,boolean->BARCODE_IMAGE_ENABLED->true,String->PROMPT_MESSAGE->abcde,String->SCAN_FORMATS->999999999999999999999999999999999999999999999999999,String->SCAN_MODE->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

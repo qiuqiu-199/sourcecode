@@ -19,14 +19,11 @@ public class Activity_188 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.setData(Uri.parse("notEmpty"));
-		Parcelable result_crypto_input = new MyParcelable();
-		intent.putExtra("result_crypto_input", result_crypto_input);
-		Parcelable result_data = new MyParcelable();
-		intent.putExtra("result_data", result_data);
+		intent.setAction("android.intent.action.SEND");
+		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setData(Uri.parse("content"));
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;notEmpty;;null;;Parcelable->result_data->ParcelableObj,Parcelable->result_crypto_input->ParcelableObj,
+		//android.intent.action.SEND;;android.intent.category.DEFAULT;;content;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

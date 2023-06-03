@@ -17,13 +17,12 @@ public class Activity_204 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.UpgradeDatabases");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupComposition");
 		intent.setComponent(cn);
-		intent.setAction("upgrade_databases");
-		Parcelable start_intent = new MyParcelable();
-		intent.putExtra("start_intent", start_intent);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//upgrade_databases;;null;;null;;null;;Parcelable->start_intent->ParcelableObj,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

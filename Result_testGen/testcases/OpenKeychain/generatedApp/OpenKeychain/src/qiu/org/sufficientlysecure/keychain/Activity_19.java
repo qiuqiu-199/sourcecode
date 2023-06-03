@@ -17,16 +17,13 @@ public class Activity_19 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.UploadKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.RedirectImportKeysActivity");
 		intent.setComponent(cn);
-		Parcelable result_crypto_input = new MyParcelable();
-		intent.putExtra("result_crypto_input", result_crypto_input);
-		long[] extra_key_ids = new long[1];
-		intent.putExtra("extra_key_ids", extra_key_ids);
-		Parcelable result_data = new MyParcelable();
-		intent.putExtra("result_data", result_data);
+		intent.setAction("android.intent.action.VIEW");
+		intent.addCategory("android.intent.category.BROWSABLE");
+		intent.setData(Uri.parse("openpgp4fpr"));
 		startActivity(intent);
-		//null;;null;;null;;null;;Parcelable->result_data->ParcelableObj,longArray->extra_key_ids->0,Parcelable->result_crypto_input->ParcelableObj,
+		//android.intent.action.VIEW;;android.intent.category.BROWSABLE;;openpgp4fpr;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

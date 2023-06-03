@@ -17,12 +17,10 @@ public class Activity_61 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.MainActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.OpmlFeedChooserActivity");
 		intent.setComponent(cn);
-		intent.putExtra("nav_type", Integer.MAX_VALUE);
-		intent.putExtra("nav_index", Integer.MIN_VALUE);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->nav_index->Integer.MIN_VALUE,int->nav_type->Integer.MAX_VALUE,
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

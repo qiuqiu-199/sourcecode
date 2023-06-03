@@ -17,13 +17,12 @@ public class Activity_254 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.BackupActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SettingsActivity");
 		intent.setComponent(cn);
-		intent.putExtra("export_secret", true);
-		long[] master_key_ids = new long[1];
-		intent.putExtra("master_key_ids", master_key_ids);
+		intent.setAction("org.sufficientlysecure.keychain.ui.PREFS_GEN");
+		intent.addCategory("android.intent.category.DEFAULT");
 		startActivity(intent);
-		//null;;null;;null;;null;;longArray->master_key_ids->Long.MIN_VALUE,boolean->export_secret->true,
+		//org.sufficientlysecure.keychain.ui.PREFS_GEN;;android.intent.category.DEFAULT;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

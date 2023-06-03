@@ -17,13 +17,11 @@ public class Activity_231 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.UnreadWidgetConfiguration");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.Prefs");
 		intent.setComponent(cn);
-		intent.putExtra("com.fsck.k9.ChooseFolder_newfolder", "!@#$%^ds:+_");
-		intent.putExtra("appWidgetId", 0);
-		intent.putExtra("com.fsck.k9.ChooseAccount_account_uuid", "999999999999999999999999999999999999999999999999999");
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.fsck.k9.ChooseAccount_account_uuid->999999999999999999999999999999999999999999999999999,int->appWidgetId->0,String->com.fsck.k9.ChooseFolder_newfolder->!@#$%^ds:+_,
+		//null;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

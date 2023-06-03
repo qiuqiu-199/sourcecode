@@ -17,12 +17,11 @@ public class Activity_368 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CreateKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.SecurityTokenChangePinOperationActivity");
 		intent.setComponent(cn);
-		intent.putExtra("email", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("name", "abcde");
+		intent.setAction("android.nfc.action.TAG_DISCOVERED");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->name->abcde,String->email->999999999999999999999999999999999999999999999999999,
+		//android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

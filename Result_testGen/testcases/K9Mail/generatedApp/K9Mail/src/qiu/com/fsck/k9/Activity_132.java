@@ -17,12 +17,14 @@ public class Activity_132 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.Accounts");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.MAIN");
-		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setAction("com.fsck.k9.intent.action.REPLY");
+		intent.putExtra("message_reference", "!@#$%^ds:+_");
+		Parcelable message_decryption_result = new MyParcelable();
+		intent.putExtra("message_decryption_result", message_decryption_result);
 		startActivity(intent);
-		//android.intent.action.MAIN;;android.intent.category.DEFAULT;;null;;null;;
+		//com.fsck.k9.intent.action.REPLY;;null;;null;;null;;Parcelable->message_decryption_result->ParcelableObj,String->message_reference->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,12 +17,12 @@ public class Activity_44 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.SplashActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.OpmlImportFromPathActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.media.action.MEDIA_PLAY_FROM_SEARCH");
-		intent.addCategory("android.intent.category.DEFAULT");
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//android.media.action.MEDIA_PLAY_FROM_SEARCH;;android.intent.category.DEFAULT;;null;;null;;
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

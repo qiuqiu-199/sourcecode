@@ -17,14 +17,12 @@ public class Activity_172 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.Reviewer");
+		ComponentName cn=new ComponentName("com.ichi2.anki","com.ichi2.anki.CardBrowser");
 		intent.setComponent(cn);
-		intent.setAction("notEmpty");
-		intent.putExtra("deckId", 0);
-		intent.putExtra("originalDeck", Long.MAX_VALUE);
-		intent.putExtra("allDecksSelected", false);
+		Parcelable parObj = new MyParcelable();
+		intent.putExtra("parObj", parObj);
 		startActivity(intent);
-		//notEmpty;;null;;null;;null;;boolean->allDecksSelected->false,long->originalDeck->Long.MAX_VALUE,long->deckId->0,
+		//null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

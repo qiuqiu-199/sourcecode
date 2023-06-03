@@ -17,24 +17,13 @@ public class Activity_135 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity");
+		ComponentName cn=new ComponentName("com.forrestguice.suntimeswidget","com.forrestguice.suntimeswidget.SuntimesConfigActivity0");
 		intent.setComponent(cn);
-		intent.setAction("com.forrestguice.suntimeswidget.alarmclock.ADD_ALARM");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.putExtra("android.intent.extra.alarm.VIBRATE", false);
-		Parcelable android_dot_intent_dot_extra_dot_ringtone_dot_PICKED_URI = new MyParcelable();
-		intent.putExtra("android.intent.extra.ringtone.PICKED_URI", android_dot_intent_dot_extra_dot_ringtone_dot_PICKED_URI);
-		intent.putExtra("selectedAlarm", 0);
-		intent.putExtra("android.intent.extra.alarm.MESSAGE", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("showBack", true);
-		intent.putExtra("android.intent.extra.alarm.MINUTES", Integer.MAX_VALUE);
-		intent.putExtra("android.intent.extra.alarm.RINGTONE", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("android.intent.extra.alarm.HOUR", 0);
-		intent.putExtra("solarevent", "999999999999999999999999999999999999999999999999999");
-		ArrayList<Integer> android_dot_intent_dot_extra_dot_alarm_dot_DAYS = new ArrayList<Integer>();
-		intent.putIntegerArrayListExtra("android.intent.extra.alarm.DAYS", android_dot_intent_dot_extra_dot_alarm_dot_DAYS);
+		intent.putExtra("isModified", true);
+		intent.putExtra("name", "abcde");
+		intent.putExtra("appWidgetId", 0);
 		startActivity(intent);
-		//com.forrestguice.suntimeswidget.alarmclock.ADD_ALARM;;null;;notEmpty;;null;;IntegerArrayList->android.intent.extra.alarm.DAYS->0,String->solarevent->999999999999999999999999999999999999999999999999999,int->android.intent.extra.alarm.HOUR->0,String->android.intent.extra.alarm.RINGTONE->999999999999999999999999999999999999999999999999999,int->android.intent.extra.alarm.MINUTES->Integer.MAX_VALUE,boolean->showBack->true,String->android.intent.extra.alarm.MESSAGE->999999999999999999999999999999999999999999999999999,long->selectedAlarm->0,Parcelable->android.intent.extra.ringtone.PICKED_URI->ParcelableObj,boolean->android.intent.extra.alarm.VIBRATE->false,
+		//null;;null;;null;;null;;int->appWidgetId->0,String->name->abcde,boolean->isModified->true,
 	}
     /** Called when the activity is first created. */
     @Override

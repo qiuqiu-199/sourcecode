@@ -19,14 +19,10 @@ public class Activity_28 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.facebook.FacebookActivity");
 		intent.setComponent(cn);
-		intent.setAction("FacebookDialogFragment");
-		intent.putExtra("action_id", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("com.facebook.platform.protocol.CALL_ID", "!@#$%^ds:+_");
-		intent.putExtra("com.facebook.platform.protocol.METHOD_ARGS", "com_dot_facebook_dot_platform_dot_protocol_dot_METHOD_ARGS");
-		intent.putExtra("com.facebook.platform.protocol.PROTOCOL_VERSION", 0);
-		intent.putExtra("com.facebook.platform.protocol.BRIDGE_ARGS", "com_dot_facebook_dot_platform_dot_protocol_dot_BRIDGE_ARGS");
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//FacebookDialogFragment;;null;;null;;null;;Bundle->com.facebook.platform.protocol.BRIDGE_ARGS->BundleObj,int->com.facebook.platform.protocol.PROTOCOL_VERSION->0,Bundle->com.facebook.platform.protocol.METHOD_ARGS->BundleObj,String->com.facebook.platform.protocol.CALL_ID->!@#$%^ds:+_,String->action_id->999999999999999999999999999999999999999999999999999,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

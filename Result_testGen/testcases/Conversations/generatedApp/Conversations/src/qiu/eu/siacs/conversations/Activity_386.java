@@ -17,13 +17,12 @@ public class Activity_386 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.TrustKeysActivity");
+		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.EditAccountActivity");
 		intent.setComponent(cn);
-		intent.putExtra("account", "abcde");
-		intent.putExtra("conversation", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("contacts", "abcde");
+		intent.putExtra("jid", "!@#$%^ds:+_");
+		intent.putExtra("init", true);
 		startActivity(intent);
-		//null;;null;;null;;null;;String[]->contacts->abcde,String->conversation->999999999999999999999999999999999999999999999999999,String->account->abcde,
+		//null;;null;;null;;null;;boolean->init->true,String->jid->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

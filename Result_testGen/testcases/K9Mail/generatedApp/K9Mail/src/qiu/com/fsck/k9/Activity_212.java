@@ -17,12 +17,12 @@ public class Activity_212 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.setup.AccountSetupOutgoing");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.ManageIdentities");
 		intent.setComponent(cn);
-		intent.putExtra("account", "abcde");
-		intent.putExtra("makeDefault", true);
+		MySerializable serObj = new MySerializable();
+		intent.putExtra("serObj", serObj);
 		startActivity(intent);
-		//null;;null;;null;;null;;boolean->makeDefault->true,String->account->abcde,
+		//null;;null;;null;;null;;Serializable->serObj->SerializableObj,
 	}
     /** Called when the activity is first created. */
     @Override

@@ -17,14 +17,11 @@ public class Activity_116 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.OpmlImportFromIntentActivity");
+		ComponentName cn=new ComponentName("de.danoeh.antennapod","de.danoeh.antennapod.activity.PreferenceActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.addCategory("android.intent.category.BROWSABLE");
-		intent.setData(Uri.parse("https"));
-		intent.setType("text/x-opml");
+		intent.putExtra("selected_dir", "abcde");
 		startActivity(intent);
-		//android.intent.action.SEND;;android.intent.category.BROWSABLE;;https;;text/x-opml;;
+		//null;;null;;null;;null;;String->selected_dir->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

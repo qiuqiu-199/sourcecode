@@ -17,16 +17,11 @@ public class Activity_24 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.facebook.FacebookActivity");
+		ComponentName cn=new ComponentName("com.integreight.onesheeld","com.integreight.onesheeld.MainActivity");
 		intent.setComponent(cn);
-		intent.setAction("FacebookDialogFragment");
-		intent.putExtra("action_id", "999999999999999999999999999999999999999999999999999");
-		intent.putExtra("com.facebook.platform.protocol.CALL_ID", "abcde");
-		intent.putExtra("com.facebook.platform.protocol.METHOD_ARGS", "com_dot_facebook_dot_platform_dot_protocol_dot_METHOD_ARGS");
-		intent.putExtra("com.facebook.platform.protocol.PROTOCOL_VERSION", 0);
-		intent.putExtra("com.facebook.platform.protocol.BRIDGE_ARGS", "com_dot_facebook_dot_platform_dot_protocol_dot_BRIDGE_ARGS");
+		intent.setAction("android.nfc.action.NDEF_DISCOVERED");
 		startActivity(intent);
-		//FacebookDialogFragment;;null;;null;;null;;Bundle->com.facebook.platform.protocol.BRIDGE_ARGS->BundleObj,int->com.facebook.platform.protocol.PROTOCOL_VERSION->0,Bundle->com.facebook.platform.protocol.METHOD_ARGS->BundleObj,String->com.facebook.platform.protocol.CALL_ID->abcde,String->action_id->999999999999999999999999999999999999999999999999999,
+		//android.nfc.action.NDEF_DISCOVERED;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

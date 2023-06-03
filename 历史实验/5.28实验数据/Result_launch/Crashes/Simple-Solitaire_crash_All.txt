@@ -1,0 +1,93 @@
+BugInfo:
+hash:2059728808
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{de.tobiasbielefeld.solitaire/de.tobiasbielefeld.solitaire.ui.GameManager}: java.lang.ArrayIndexOutOfBoundsException: length=22; index=-2147483648
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: length=22; index=-2147483648
+	at java.util.ArrayList.get(ArrayList.java:439)
+	at de.tobiasbielefeld.solitaire.a.a(Unknown Source:11)
+	at de.tobiasbielefeld.solitaire.ui.GameManager.onCreate(Unknown Source:351)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+9	de.tobiasbielefeld.solitaire.ui.GameManager	null;;null;;null;;null;;int->game->Integer.MIN_VALUE,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1231709682
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{de.tobiasbielefeld.solitaire/de.tobiasbielefeld.solitaire.ui.GameManager}: java.lang.ArrayIndexOutOfBoundsException: length=22; index=-1
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: length=22; index=-1
+	at java.util.ArrayList.get(ArrayList.java:439)
+	at de.tobiasbielefeld.solitaire.a.a(Unknown Source:11)
+	at de.tobiasbielefeld.solitaire.ui.GameManager.onCreate(Unknown Source:351)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+12	de.tobiasbielefeld.solitaire.ui.GameManager	null;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1553852894
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{de.tobiasbielefeld.solitaire/de.tobiasbielefeld.solitaire.ui.GameManager}: java.lang.IndexOutOfBoundsException: Index: 2147483647, Size: 17
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 2147483647, Size: 17
+	at java.util.ArrayList.get(ArrayList.java:437)
+	at de.tobiasbielefeld.solitaire.a.a(Unknown Source:11)
+	at de.tobiasbielefeld.solitaire.ui.GameManager.onCreate(Unknown Source:351)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+11	de.tobiasbielefeld.solitaire.ui.GameManager	null;;null;;null;;null;;int->game->Integer.MAX_VALUE,
+
+------------------------------------------------------------------------
+

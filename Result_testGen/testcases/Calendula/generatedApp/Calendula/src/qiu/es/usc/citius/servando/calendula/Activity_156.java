@@ -17,12 +17,13 @@ public class Activity_156 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.MedicineInfoActivity");
+		ComponentName cn=new ComponentName("es.usc.citius.servando.calendula","es.usc.citius.servando.calendula.activities.MedicinesSearchActivity");
 		intent.setComponent(cn);
-		MySerializable medicine_id = new MySerializable();
-		intent.putExtra("medicine_id", medicine_id);
+		intent.putExtra("MedicinesSearchActivity.extras.EXTRA_SEARCH_TERM", "abcde");
+		intent.putExtra("SCAN_RESULT", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("SCAN_RESULT_FORMAT", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;Serializable->medicine_id->SerializableObj,
+		//null;;null;;null;;null;;String->SCAN_RESULT_FORMAT->abcde,String->SCAN_RESULT->999999999999999999999999999999999999999999999999999,String->MedicinesSearchActivity.extras.EXTRA_SEARCH_TERM->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

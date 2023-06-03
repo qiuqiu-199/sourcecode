@@ -19,9 +19,12 @@ public class Activity_28 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadViewActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
+		intent.putExtra("padLocalName", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("padServer", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("padUrl", "abcde");
+		intent.putExtra("padName", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//android.intent.action.VIEW;;null;;null;;null;;
+		//null;;null;;null;;null;;String->padName->999999999999999999999999999999999999999999999999999,String->padUrl->abcde,String->padServer->999999999999999999999999999999999999999999999999999,String->padLocalName->999999999999999999999999999999999999999999999999999,
 	}
     /** Called when the activity is first created. */
     @Override

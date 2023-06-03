@@ -17,10 +17,12 @@ public class Activity_84 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.cupcake.PrefsLoaderActivity");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
+		intent.setAction("com.csipsimple.phone.action.CALLLOG");
+		intent.setData(Uri.parse("?"));
 		startActivity(intent);
-		//null;;null;;null;;null;;
+		//com.csipsimple.phone.action.CALLLOG;;null;;?;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

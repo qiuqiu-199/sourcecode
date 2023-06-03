@@ -17,12 +17,12 @@ public class Activity_80 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.prefs.cupcake.MainPrefs");
+		ComponentName cn=new ComponentName("com.csipsimple","com.csipsimple.ui.SipHome");
 		intent.setComponent(cn);
-		intent.setAction("com.csipsimple.ui.action.PREFS_GLOBAL");
-		intent.addCategory("android.intent.category.DEFAULT");
+		intent.setAction("com.csipsimple.phone.action.MESSAGES");
+		intent.setData(Uri.parse("?:mAuthority/mPath"));
 		startActivity(intent);
-		//com.csipsimple.ui.action.PREFS_GLOBAL;;android.intent.category.DEFAULT;;null;;null;;
+		//com.csipsimple.phone.action.MESSAGES;;null;;?:mAuthority/mPath;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

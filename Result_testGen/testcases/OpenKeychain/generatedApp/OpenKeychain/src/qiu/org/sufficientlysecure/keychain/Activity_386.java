@@ -17,19 +17,23 @@ public class Activity_386 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.CreateKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.nfc.action.NDEF_DISCOVERED");
-		intent.putExtra("email", "!@#$%^ds:+_");
-		Parcelable android_dot_nfc_dot_extra_dot_TAG = new MyParcelable();
-		intent.putExtra("android.nfc.extra.TAG", android_dot_nfc_dot_extra_dot_TAG);
-		intent.putExtra("first_time", true);
-		intent.putExtra("name", "abcde");
-		Parcelable token_info = new MyParcelable();
-		intent.putExtra("token_info", token_info);
-		intent.putExtra("create_yubi_key", true);
+		intent.setAction("android.nfc.action.TAG_DISCOVERED");
+		intent.setData(Uri.parse("?"));
+		Parcelable result_crypto_input = new MyParcelable();
+		intent.putExtra("result_crypto_input", result_crypto_input);
+		Parcelable display_result = new MyParcelable();
+		intent.putExtra("display_result", display_result);
+		intent.putExtra("master_key_id", 0);
+		Parcelable operation_result = new MyParcelable();
+		intent.putExtra("operation_result", operation_result);
+		Parcelable result_data = new MyParcelable();
+		intent.putExtra("result_data", result_data);
+		byte[] fingerprint = new byte[1];
+		intent.putExtra("fingerprint", fingerprint);
 		startActivity(intent);
-		//android.nfc.action.NDEF_DISCOVERED;;null;;null;;null;;boolean->create_yubi_key->true,Parcelable->token_info->ParcelableObj,String->name->abcde,boolean->first_time->true,Parcelable->android.nfc.extra.TAG->ParcelableObj,String->email->!@#$%^ds:+_,
+		//android.nfc.action.TAG_DISCOVERED;;null;;?;;null;;byteArray->fingerprint->Byte.MAX_VALUE,Parcelable->result_data->ParcelableObj,Parcelable->operation_result->ParcelableObj,long->master_key_id->0,Parcelable->display_result->ParcelableObj,Parcelable->result_crypto_input->ParcelableObj,
 	}
     /** Called when the activity is first created. */
     @Override

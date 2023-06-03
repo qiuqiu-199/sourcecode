@@ -19,11 +19,8 @@ public class Activity_89 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.DecryptActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND_MULTIPLE");
-		intent.setData(Uri.parse("notEmpty"));
-		intent.setType("application/autocrypt-setup");
 		startActivity(intent);
-		//android.intent.action.SEND_MULTIPLE;;null;;notEmpty;;application/autocrypt-setup;;
+		//null;;null;;null;;null;;
 	}
     /** Called when the activity is first created. */
     @Override

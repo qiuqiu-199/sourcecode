@@ -17,17 +17,28 @@ public class Activity_334 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.remote.ui.RemoteSelectPubKeyActivity");
+		ComponentName cn=new ComponentName("org.sufficientlysecure.keychain","org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity");
 		intent.setComponent(cn);
-		intent.putExtra("no_user_ids", false);
-		ArrayList<String> dublicate_emails = new ArrayList<String>();
-		intent.putStringArrayListExtra("dublicate_emails", dublicate_emails);
-		ArrayList<String> missing_emails = new ArrayList<String>();
-		intent.putStringArrayListExtra("missing_emails", missing_emails);
-		long[] master_key_ids = new long[1];
-		intent.putExtra("master_key_ids", master_key_ids);
+		intent.setAction("android.nfc.action.NDEF_DISCOVERED");
+		intent.setData(Uri.parse("?"));
+		intent.putExtra("SCAN_RESULT_IMAGE_PATH", "!@#$%^ds:+_");
+		Parcelable result_crypto_input = new MyParcelable();
+		intent.putExtra("result_crypto_input", result_crypto_input);
+		intent.putExtra("SCAN_RESULT_ERROR_CORRECTION_LEVEL", "!@#$%^ds:+_");
+		Parcelable[] android_dot_nfc_dot_extra_dot_NDEF_MESSAGES = new MyParcelable[1];
+		android_dot_nfc_dot_extra_dot_NDEF_MESSAGES[0] = new MyParcelable();
+		intent.putExtra("android.nfc.extra.NDEF_MESSAGES", android_dot_nfc_dot_extra_dot_NDEF_MESSAGES);
+		byte[] SCAN_RESULT_BYTES = new byte[1];
+		intent.putExtra("SCAN_RESULT_BYTES", SCAN_RESULT_BYTES);
+		Parcelable operation_result = new MyParcelable();
+		intent.putExtra("operation_result", operation_result);
+		intent.putExtra("SCAN_RESULT_ORIENTATION", 0);
+		intent.putExtra("SCAN_RESULT", "abcde");
+		intent.putExtra("SCAN_RESULT_FORMAT", "!@#$%^ds:+_");
+		Parcelable result_data = new MyParcelable();
+		intent.putExtra("result_data", result_data);
 		startActivity(intent);
-		//null;;null;;null;;null;;longArray->master_key_ids->Long.MIN_VALUE,StringArrayList->missing_emails->abcde,StringArrayList->dublicate_emails->!@#$%^ds:+_,boolean->no_user_ids->false,
+		//android.nfc.action.NDEF_DISCOVERED;;null;;?;;null;;Parcelable->result_data->ParcelableObj,String->SCAN_RESULT_FORMAT->!@#$%^ds:+_,String->SCAN_RESULT->abcde,int->SCAN_RESULT_ORIENTATION->0,Parcelable->operation_result->ParcelableObj,byteArray->SCAN_RESULT_BYTES->0,ParcelableArray->android.nfc.extra.NDEF_MESSAGES->ParcelableArrayObj,String->SCAN_RESULT_ERROR_CORRECTION_LEVEL->!@#$%^ds:+_,Parcelable->result_crypto_input->ParcelableObj,String->SCAN_RESULT_IMAGE_PATH->!@#$%^ds:+_,
 	}
     /** Called when the activity is first created. */
     @Override

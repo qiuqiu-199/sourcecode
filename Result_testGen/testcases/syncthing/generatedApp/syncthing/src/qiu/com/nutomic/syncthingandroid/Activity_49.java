@@ -17,11 +17,11 @@ public class Activity_49 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.FolderTypeDialogActivity");
+		ComponentName cn=new ComponentName("com.nutomic.syncthingandroid","com.nutomic.syncthingandroid.activities.VersioningDialogActivity");
 		intent.setComponent(cn);
-		intent.putExtra("com.nutomic.syncthinandroid.activities.FolderTypeDialogActivity.FOLDER_TYPE", "!@#$%^ds:+_");
+		intent.putExtra("type", "abcde");
 		startActivity(intent);
-		//null;;null;;null;;null;;String->com.nutomic.syncthinandroid.activities.FolderTypeDialogActivity.FOLDER_TYPE->!@#$%^ds:+_,
+		//null;;null;;null;;null;;String->type->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

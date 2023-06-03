@@ -19,12 +19,14 @@ public class Activity_212 extends Activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ConversationsActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND_MULTIPLE");
-		intent.putExtra("conversationUuid", "!@#$%^ds:+_");
-		ArrayList<String> android_dot_intent_dot_extra_dot_STREAM = new ArrayList<String>();
-		intent.putExtra("android.intent.extra.STREAM", android_dot_intent_dot_extra_dot_STREAM);
+		intent.setAction("eu.siacs.conversations.action.VIEW");
+		intent.putExtra("nick", "abcde");
+		intent.putExtra("as_quote", false);
+		intent.putExtra("pm", true);
+		intent.putExtra("conversationUuid", "abcde");
+		intent.putExtra("android.intent.extra.TEXT", "abcde");
 		startActivity(intent);
-		//android.intent.action.SEND_MULTIPLE;;null;;null;;null;;ArrayList->android.intent.extra.STREAM->ArrayListObj,String->conversationUuid->!@#$%^ds:+_,
+		//eu.siacs.conversations.action.VIEW;;null;;null;;null;;String->android.intent.extra.TEXT->abcde,String->conversationUuid->abcde,boolean->pm->true,boolean->as_quote->false,String->nick->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

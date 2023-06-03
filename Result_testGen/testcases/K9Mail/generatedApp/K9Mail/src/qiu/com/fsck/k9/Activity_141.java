@@ -17,13 +17,14 @@ public class Activity_141 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.FolderList");
+		ComponentName cn=new ComponentName("com.fsck.k9","com.fsck.k9.activity.MessageCompose");
 		intent.setComponent(cn);
-		intent.putExtra("account", "abcde");
-		intent.putExtra("fromShortcut", false);
-		intent.putExtra("appWidgetId", 0);
+		intent.setAction("com.fsck.k9.intent.action.REPLY_ALL");
+		intent.putExtra("message_reference", "abcde");
+		Parcelable message_decryption_result = new MyParcelable();
+		intent.putExtra("message_decryption_result", message_decryption_result);
 		startActivity(intent);
-		//null;;null;;null;;null;;int->appWidgetId->0,boolean->fromShortcut->false,String->account->abcde,
+		//com.fsck.k9.intent.action.REPLY_ALL;;null;;null;;null;;Parcelable->message_decryption_result->ParcelableObj,String->message_reference->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

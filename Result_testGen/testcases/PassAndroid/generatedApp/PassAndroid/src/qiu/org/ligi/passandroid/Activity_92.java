@@ -17,13 +17,11 @@ public class Activity_92 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.PassImportActivity");
+		ComponentName cn=new ComponentName("org.ligi.passandroid","org.ligi.passandroid.ui.FullscreenBarcodeActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.VIEW");
-		intent.addCategory("android.intent.category.DEFAULT");
-		intent.setType("application/vnd.apple.pkpass");
+		intent.putExtra("uuid", "abcde");
 		startActivity(intent);
-		//android.intent.action.VIEW;;android.intent.category.DEFAULT;;null;;application/vnd.apple.pkpass;;
+		//null;;null;;null;;null;;String->uuid->abcde,
 	}
     /** Called when the activity is first created. */
     @Override

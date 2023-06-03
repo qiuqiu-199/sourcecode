@@ -17,13 +17,17 @@ public class Activity_40 extends Activity
 	public void launch(){
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadListActivity");
+		ComponentName cn=new ComponentName("com.mikifus.padland","com.mikifus.padland.PadViewActivity");
 		intent.setComponent(cn);
-		intent.setAction("android.intent.action.SEND");
-		intent.setType("text/plain");
-		intent.putExtra("android.intent.extra.TEXT", "999999999999999999999999999999999999999999999999999");
+		intent.setAction("android.intent.action.VIEW");
+		intent.setData(Uri.parse("?"));
+		intent.putExtra("pad_id", Long.MAX_VALUE);
+		intent.putExtra("padLocalName", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("padServer", "!@#$%^ds:+_");
+		intent.putExtra("padUrl", "999999999999999999999999999999999999999999999999999");
+		intent.putExtra("padName", "abcde");
 		startActivity(intent);
-		//android.intent.action.SEND;;null;;null;;text/plain;;String->android.intent.extra.TEXT->999999999999999999999999999999999999999999999999999,
+		//android.intent.action.VIEW;;null;;?;;null;;String->padName->abcde,String->padUrl->999999999999999999999999999999999999999999999999999,String->padServer->!@#$%^ds:+_,String->padLocalName->999999999999999999999999999999999999999999999999999,long->pad_id->Long.MAX_VALUE,
 	}
     /** Called when the activity is first created. */
     @Override

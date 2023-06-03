@@ -1,0 +1,36 @@
+--------- beginning of system
+--------- beginning of main
+05-29 16:06:22.818 11665 11665 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;---><clinit>()V
+05-29 16:06:22.818 11665 11665 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;---><init>()V
+05-29 16:06:22.818 11665 11665 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;--->onCreate()Z
+05-29 16:06:22.818 11665 11665 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;---><clinit>()V
+05-29 16:06:22.818 11665 11665 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$1;---><init>()V
+05-29 16:06:22.818 11665 11665 D M_InsDal: Lcom/csipsimple/utils/CustomDistribution;--->getUserAgent()Ljava/lang/String;
+05-29 16:06:22.819 11665 11665 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$2;---><init>()V
+05-29 16:06:22.819 11665 11665 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$3;---><init>()V
+05-29 16:06:22.819 11665 11665 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;---><init>(Landroid/content/Context;)V
+05-29 16:06:22.819 11665 11665 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;--->needUpgrade()Ljava/lang/Integer;
+05-29 16:06:22.820 11665 11665 D M_InsDal: Lcom/csipsimple/utils/PreferencesProviderWrapper;--->getCurrentPackageInfos(Landroid/content/Context;)Landroid/content/pm/PackageInfo;
+05-29 16:06:22.820 11665 11665 D M_InsDal: Lcom/csipsimple/utils/Log;---><clinit>()V
+05-29 16:06:22.821 11665 11665 D M_InsDal: Lcom/csipsimple/utils/Log;--->d(Ljava/lang/String;Ljava/lang/String;)V
+05-29 16:06:22.821 11665 11665 D M_InsDal: Lcom/csipsimple/utils/Log;--->d(Ljava/lang/String;Ljava/lang/String;)V
+05-29 16:06:22.821 11665 11665 D M_InsDal: Lcom/csipsimple/utils/Compatibility;--->getApiLevel()I
+05-29 16:06:22.826 11665 11665 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFilters;---><init>()V
+05-29 16:06:22.829 11665 11665 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFilters;--->onCreate(Landroid/os/Bundle;)V
+05-29 16:06:22.830 11665 11665 D M_InsDal: Lcom/csipsimple/utils/Log;--->e(Ljava/lang/String;Ljava/lang/String;)V
+05-29 16:06:22.846 11665 11665 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListFragment;---><init>()V
+05-29 16:06:22.846 11665 11665 D M_InsDal: Lcom/csipsimple/widgets/CSSListFragment;---><init>()V
+05-29 16:06:22.846 11665 11665 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListFragment;--->onCreate(Landroid/os/Bundle;)V
+05-29 16:06:22.847 11665 11665 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListFragment;--->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+05-29 16:06:22.850 11665 11665 D M_InsDal: Lcom/csipsimple/widgets/DragnDropListView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+05-29 16:06:22.857 11665 11665 D M_InsDal: Lcom/csipsimple/widgets/DragnDropListView;--->setGrabberId(I)V
+05-29 16:06:22.857 11665 11665 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListFragment$2;---><init>(Lcom/csipsimple/ui/filters/AccountFiltersListFragment;Lcom/csipsimple/widgets/DragnDropListView;)V
+05-29 16:06:22.857 11665 11665 D M_InsDal: Lcom/csipsimple/widgets/DragnDropListView;--->setOnDropListener(Lcom/csipsimple/widgets/DragnDropListView$DropListener;)V
+05-29 16:06:22.857 11665 11665 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListFragment$3;---><init>(Lcom/csipsimple/ui/filters/AccountFiltersListFragment;)V
+05-29 16:06:22.860 11665 11665 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListFragment;--->setAccountId(J)V
+05-29 16:06:22.955 11665 11665 D M_InsDal: Lcom/csipsimple/widgets/CSSListFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+05-29 16:06:22.955 11665 11665 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+05-29 16:06:22.955 11665 11665 D M_InsDal: Lcom/csipsimple/widgets/CSSListFragment;--->setListShown(Z)V
+05-29 16:06:22.955 11665 11665 D M_InsDal: Lcom/csipsimple/widgets/CSSListFragment;--->setListShown(ZZ)V
+05-29 16:06:22.955 11665 11665 D M_InsDal: Lcom/csipsimple/widgets/CSSListFragment;--->ensureCustomList()V
+05-29 16:06:22.955 11665 11665 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListAdapter;---><init>(Landroid/content/Context;Landroid/database/Cursor;)V

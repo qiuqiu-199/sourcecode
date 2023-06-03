@@ -20,11 +20,12 @@ public class Activity_24 extends Activity
 		ComponentName cn=new ComponentName("eu.siacs.conversations","eu.siacs.conversations.ui.ContactDetailsActivity");
 		intent.setComponent(cn);
 		intent.setAction("view_contact");
-		intent.putExtra("account", "abcde");
-		intent.putExtra("fingerprint", "!@#$%^ds:+_");
-		intent.putExtra("contact", "abcde");
+		intent.putExtra("fingerprint", "abcde");
+		Parcelable intent1 = new MyParcelable();
+		intent.putExtra("intent", intent);
+		intent.putExtra("contact", "999999999999999999999999999999999999999999999999999");
 		startActivity(intent);
-		//view_contact;;null;;null;;null;;String->contact->abcde,String->fingerprint->!@#$%^ds:+_,String->account->abcde,
+		//view_contact;;null;;null;;null;;String->contact->999999999999999999999999999999999999999999999999999,Parcelable->intent->ParcelableObj,String->fingerprint->abcde,
 	}
     /** Called when the activity is first created. */
     @Override
