@@ -9,43 +9,35 @@ import java.util.*;
  * @Date: 2023/5/18 11:09
  * @Description:
  */
-
 class Solution {
-    public static String reverseWords(String s) {
-        StringBuilder r = new StringBuilder();
-        //去除首尾空格
-        int t1 = 0;
-        while(s.charAt(t1) == ' ') t1++;
-        int t2 = s.length()-1;
-        while(s.charAt(t2) == ' ') t2--;
-        StringBuilder sb = new StringBuilder();
-        while (t1 <= t2) {
-            char c = s.charAt(t1);
-            if (c != ' ' || sb.charAt(sb.length() - 1) != ' ') {
-                sb.append(c);
+    public static int[] maxSlidingWindow(int[] nums, int k) {
+        ArrayDeque<Integer> deque = new ArrayDeque<>();
+        int n = nums.length;
+        int[] res = new int[n - k + 1];
+        int idx = 0;
+        for(int i = 0; i < n; i++) {
+            // 根据题意，i为nums下标，是要在[i - k + 1, i] 中选到最大值，只需要保证两点
+            // 1.队列头结点需要在[i - k + 1, i]范围内，不符合则要弹出
+            while(!deque.isEmpty() && deque.peek() < i - k + 1){
+                deque.poll();
             }
-            t1++;
-        }
-        s = sb.toString();
-        //翻转整个字符串
-        StringBuilder res = new StringBuilder(s);
-        s = res.reverse().toString();
-        //翻转单词
-        StringBuilder word = new StringBuilder();
-        for(int i = 0; i < s.length(); ++i){
-            if(s.charAt(i) != ' ') word.append(s.charAt(i));
-            else{
-                r.append(word.reverse().toString());
-                if(i != s.length()-1) r.append(' ');
-                word = new StringBuilder();
+            // 2.既然是单调，就要保证每次放进去的数字要比末尾的都大，否则也弹出
+            while(!deque.isEmpty() && nums[deque.peekLast()] < nums[i]) {
+                deque.pollLast();
             }
-        }
-        r.append(word.reverse().toString());
 
-        return r.toString();
+            deque.offer(i);
+
+            // 因为单调，当i增长到符合第一个k范围的时候，每滑动一步都将队列头节点放入结果就行了
+            if(i >= k - 1){
+                res[idx++] = nums[deque.peek()];
+            }
+        }
+        return res;
     }
 
     public static void main(String[] args) {
-        System.out.println("reverseWords(\"the sky is blue\") = " + reverseWords(" the sky is blue "));
+        int[] nums = new int[]{1,3,-1,-3,5,3,6,7};
+        maxSlidingWindow(nums,3);
     }
 }

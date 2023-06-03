@@ -7,6 +7,9 @@ package parser;
  */
 
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -85,9 +88,30 @@ public class ManifestParser {
 
         // get EAs
         for (ComponentModel component : AppModel.v().activityMap.values()) {
+            String path = "summaryInfo/" + AppModel.v().appName;
+            File file1 = new File(path);
+            if (!file1.exists()) file1.mkdir();
+            File file = new File( path + "/EAList.txt");
+            FileOutputStream out = null;
+            try {
+                out = new FileOutputStream(file,true);
+                if(!file.exists()) file.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
             if (component.is_exported()) {
                 AppModel.v().eaMap.put(component.getComponetName(), (ActivityModel)component);
+                try {
+                    out.write(component.getComponetName().getBytes());
+                    out.write("\n".getBytes());
+                    out.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+
+
         }
 
         //更新声明的属性, TODO 解析manifest文件时更新组件声明属性，暂不清楚用处，略过
@@ -147,9 +171,11 @@ public class ManifestParser {
                 }
             }
 
+
             // get the attributes of the activity element
-            if (componentNode.getAttribute("exported") != null)
+            if (componentNode.getAttribute("exported") != null){
                 componentModel.setExported(componentNode.getAttribute("exported").getValue().toString());
+            }
 
             if (componentNode.getAttribute("permission") != null)
                 componentModel.setPermission(componentNode.getAttribute("permission").getValue().toString());

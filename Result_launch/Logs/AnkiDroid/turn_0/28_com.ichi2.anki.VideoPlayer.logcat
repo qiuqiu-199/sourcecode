@@ -1,0 +1,36 @@
+--------- beginning of main
+--------- beginning of system
+05-28 22:18:26.600 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+05-28 22:18:26.600 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+05-28 22:18:26.600 17519 17519 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+05-28 22:18:26.600 17519 17519 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+05-28 22:18:26.600 17519 17519 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+05-28 22:18:26.600 17519 17519 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+05-28 22:18:26.601 17519 17519 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+05-28 22:18:26.604 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+05-28 22:18:26.604 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+05-28 22:18:26.608 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+05-28 22:18:26.609 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+05-28 22:18:26.609 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+05-28 22:18:26.609 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+05-28 22:18:26.609 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+05-28 22:18:26.609 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+05-28 22:18:26.609 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+05-28 22:18:26.609 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+05-28 22:18:26.609 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+05-28 22:18:26.661 17519 17519 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+05-28 22:18:26.662 17519 17519 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+05-28 22:18:26.662 17519 17519 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+05-28 22:18:26.662 17519 17519 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+05-28 22:18:26.667 17519 17519 D M_InsDal: Lcom/ichi2/anki/VideoPlayer;---><init>()V
+05-28 22:18:26.669 17519 17519 D M_InsDal: Lcom/ichi2/anki/VideoPlayer;--->onCreate(Landroid/os/Bundle;)V
+05-28 22:18:26.807 17519 17519 D M_InsDal: Lcom/ichi2/anki/VideoPlayer;--->surfaceCreated(Landroid/view/SurfaceHolder;)V
+05-28 22:18:26.807 17519 17519 D M_InsDal: Lcom/ichi2/anki/VideoPlayer$1;---><init>(Lcom/ichi2/anki/VideoPlayer;)V
+05-28 22:18:26.810 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+05-28 22:18:26.810 17519 17519 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+05-28 22:18:26.838 17519 17519 D M_InsDal: Lcom/ichi2/anki/VideoPlayer;--->surfaceChanged(Landroid/view/SurfaceHolder;III)V
+05-28 22:18:26.968 17519 17519 D M_InsDal: Lcom/ichi2/anki/VideoPlayer$1;--->onCompletion(Landroid/media/MediaPlayer;)V
+05-28 22:18:27.222 17519 17519 D M_InsDal: Lcom/ichi2/anki/VideoPlayer;--->surfaceDestroyed(Landroid/view/SurfaceHolder;)V
+05-28 22:18:27.229 17519 17519 D M_InsDal: Lcom/ichi2/anki/ReadText;---><clinit>()V
+05-28 22:18:27.229 17519 17519 D M_InsDal: Lcom/ichi2/anki/ReadText;--->stopTts()V
+05-28 22:18:27.335 17519 17519 D M_InsDal: Lcom/ichi2/anki/VideoPlayer;--->onStop()V

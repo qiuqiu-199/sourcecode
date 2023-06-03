@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="50.0dip" android:layout_height="75.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/observation_photo" android:background="#ff5d5b5e" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_action_email" android:scaleType="centerCrop" android:adjustViewBounds="false" />
+    <RelativeLayout android:id="@id/observation_is_first" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+        <ImageView android:id="@id/is_first_on" android:background="#00ffffff" android:visibility="visible" android:layout_width="19.0dip" android:layout_height="19.0dip" android:src="@drawable/ic_check_circle_black_24dp" android:scaleType="fitXY" android:tint="#ff74ac00" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/is_first_off" android:background="@drawable/circular_border" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="3.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginStart="2.0dip" />
+        <TextView android:id="@id/is_first_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="@string/first" android:layout_centerVertical="true" android:layout_marginStart="25.0dip" />
+    </RelativeLayout>
+</LinearLayout>

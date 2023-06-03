@@ -13,7 +13,6 @@ import java.util.HashSet;
 public class ConstantUtils {
     public static final String ANDROIDTARGET = "android-23";
     public static final String APKFLAG = "qiu.";
-    public static final String packageName = "com.fsck.k9";
     public static final String ACTIVITY_ = "Activity_";
     public static final String TESTCASEFOLDER = "testcases" +File.separator;
     public static final String GENERATEDAPP1 = "generatedApp" + File.separator;

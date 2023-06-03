@@ -1,0 +1,113 @@
+当前应用：1Sheeld
+android create project --name 1Sheeld --target android-23 --path Result_testGen\testcases\1Sheeld\generatedApp\1Sheeld --package qiu.com.integreight.onesheeld --activity Activity_
+create Result_testGen\testcases\1Sheeld\generatedApp\1Sheeld\src\qiu\com\integreight\onesheeld\MySerializable.java
+create Result_testGen\testcases\1Sheeld\generatedApp\1Sheeld\src\qiu\com\integreight\onesheeld\MyParcelable.java
+create Result_testGen\testcases\1Sheeld\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\1Sheeld\generatedApp\1Sheeld/build.xml
+		1Sheeld生成测试用例所花时间：8秒
+==总共花费时间：8644
+finish!
+
+当前应用：AnkiDroid
+android create project --name AnkiDroid --target android-23 --path Result_testGen\testcases\AnkiDroid\generatedApp\AnkiDroid --package qiu.com.ichi2.anki --activity Activity_
+create Result_testGen\testcases\AnkiDroid\generatedApp\AnkiDroid\src\qiu\com\ichi2\anki\MySerializable.java
+create Result_testGen\testcases\AnkiDroid\generatedApp\AnkiDroid\src\qiu\com\ichi2\anki\MyParcelable.java
+create Result_testGen\testcases\AnkiDroid\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\AnkiDroid\generatedApp\AnkiDroid/build.xml
+		AnkiDroid生成测试用例所花时间：12秒
+==总共花费时间：12342
+finish!
+
+当前应用：AntennaPod
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+android create project --name AntennaPod --target android-23 --path Result_testGen\testcases\AntennaPod\generatedApp\AntennaPod --package qiu.de.danoeh.antennapod --activity Activity_
+create Result_testGen\testcases\AntennaPod\generatedApp\AntennaPod\src\qiu\de\danoeh\antennapod\MySerializable.java
+create Result_testGen\testcases\AntennaPod\generatedApp\AntennaPod\src\qiu\de\danoeh\antennapod\MyParcelable.java
+create Result_testGen\testcases\AntennaPod\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\AntennaPod\generatedApp\AntennaPod/build.xml
+		AntennaPod生成测试用例所花时间：9秒
+==总共花费时间：9664
+finish!
+
+当前应用：Calendula
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+android create project --name Calendula --target android-23 --path Result_testGen\testcases\Calendula\generatedApp\Calendula --package qiu.es.usc.citius.servando.calendula --activity Activity_
+create Result_testGen\testcases\Calendula\generatedApp\Calendula\src\qiu\es\usc\citius\servando\calendula\MySerializable.java
+create Result_testGen\testcases\Calendula\generatedApp\Calendula\src\qiu\es\usc\citius\servando\calendula\MyParcelable.java
+create Result_testGen\testcases\Calendula\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\Calendula\generatedApp\Calendula/build.xml
+		Calendula生成测试用例所花时间：13秒
+==总共花费时间：13288
+finish!
+
+当前应用：Conversations
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+android create project --name Conversations --target android-23 --path Result_testGen\testcases\Conversations\generatedApp\Conversations --package qiu.eu.siacs.conversations --activity Activity_
+create Result_testGen\testcases\Conversations\generatedApp\Conversations\src\qiu\eu\siacs\conversations\MySerializable.java
+create Result_testGen\testcases\Conversations\generatedApp\Conversations\src\qiu\eu\siacs\conversations\MyParcelable.java
+create Result_testGen\testcases\Conversations\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\Conversations\generatedApp\Conversations/build.xml
+		Conversations生成测试用例所花时间：20秒
+==总共花费时间：20112
+finish!
+
+当前应用：CSipSimple
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+android create project --name CSipSimple --target android-23 --path Result_testGen\testcases\CSipSimple\generatedApp\CSipSimple --package qiu.com.csipsimple --activity Activity_
+create Result_testGen\testcases\CSipSimple\generatedApp\CSipSimple\src\qiu\com\csipsimple\MySerializable.java
+create Result_testGen\testcases\CSipSimple\generatedApp\CSipSimple\src\qiu\com\csipsimple\MyParcelable.java
+create Result_testGen\testcases\CSipSimple\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\CSipSimple\generatedApp\CSipSimple/build.xml
+		CSipSimple生成测试用例所花时间：13秒
+==总共花费时间：13628
+finish!
+
+当前应用：EteSync
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+android create project --name EteSync --target android-23 --path Result_testGen\testcases\EteSync\generatedApp\EteSync --package qiu.com.etesync.syncadapter --activity Activity_
+create Result_testGen\testcases\EteSync\generatedApp\EteSync\src\qiu\com\etesync\syncadapter\MySerializable.java
+create Result_testGen\testcases\EteSync\generatedApp\EteSync\src\qiu\com\etesync\syncadapter\MyParcelable.java
+create Result_testGen\testcases\EteSync\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\EteSync\generatedApp\EteSync/build.xml
+		EteSync生成测试用例所花时间：7秒
+==总共花费时间：7675
+finish!
+
+当前应用：Evercam
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+android create project --name Evercam --target android-23 --path Result_testGen\testcases\Evercam\generatedApp\Evercam --package qiu.io.evercam.androidapp --activity Activity_
+create Result_testGen\testcases\Evercam\generatedApp\Evercam\src\qiu\io\evercam\androidapp\MySerializable.java
+create Result_testGen\testcases\Evercam\generatedApp\Evercam\src\qiu\io\evercam\androidapp\MyParcelable.java
+create Result_testGen\testcases\Evercam\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\Evercam\generatedApp\Evercam/build.xml
+		Evercam生成测试用例所花时间：5秒
+==总共花费时间：5738
+finish!
+
+
+当前应用：iNaturalist
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+android create project --name iNaturalist --target android-23 --path Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist --package qiu.org.inaturalist.android --activity Activity_
+create Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\src\qiu\org\inaturalist\android\MySerializable.java
+create Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist\src\qiu\org\inaturalist\android\MyParcelable.java
+create Result_testGen\testcases\iNaturalist\testCase.iccmsg
+ant debug -buildfile Result_testGen\testcases\iNaturalist\generatedApp\iNaturalist/build.xml
+		iNaturalist生成测试用例所花时间：5秒
+==总共花费时间：5804
+finish!
+
+
