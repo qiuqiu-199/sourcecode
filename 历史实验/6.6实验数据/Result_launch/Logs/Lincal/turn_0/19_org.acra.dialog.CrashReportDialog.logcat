@@ -1,0 +1,10 @@
+--------- beginning of main
+--------- beginning of system
+06-05 16:48:13.420  9636  9636 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+06-05 16:48:13.421  9636  9636 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+06-05 16:48:13.421  9636  9636 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+06-05 16:48:13.421  9636  9636 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+06-05 16:48:13.421  9636  9636 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+06-05 16:48:13.422  9636  9636 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+06-05 16:48:13.422  9636  9636 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+06-05 16:48:13.423  9636  9636 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V

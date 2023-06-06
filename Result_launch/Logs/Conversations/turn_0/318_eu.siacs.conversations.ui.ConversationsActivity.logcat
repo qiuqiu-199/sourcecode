@@ -1,0 +1,63 @@
+--------- beginning of main
+--------- beginning of system
+06-04 11:05:13.059 26867 26867 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onCreate(Landroid/os/Bundle;)V
+06-04 11:05:13.064 26867 26867 D M_InsDal: Leu/siacs/conversations/ui/ConversationsActivity;--->onCreate(Landroid/os/Bundle;)V
+06-04 11:05:13.074 26867 26867 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onAttach(Landroid/app/Activity;)V
+06-04 11:05:13.074 26867 26867 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onCreate(Landroid/os/Bundle;)V
+06-04 11:05:13.078 26867 26867 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+06-04 11:05:13.079 26867 26867 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStart()V
+06-04 11:05:13.081 26867 26867 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onStart()V
+06-04 11:05:13.081 26867 26867 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onResume()V
+06-04 11:05:13.081 26867 26867 D M_InsDal: Leu/siacs/conversations/ui/ConversationsActivity;--->onResume()V
+06-04 11:05:13.081 26867 26867 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onResume()V
+06-04 11:05:13.085 26867 26867 D M_InsDal: Leu/siacs/conversations/ui/service/EmojiService$1;--->onFailed(Ljava/lang/Throwable;)V
+06-04 11:05:13.287  4418  4418 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/OpenPgpService;--->onCreate()V
+--------- beginning of crash
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: FATAL EXCEPTION: main
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: Process: eu.siacs.conversations, PID: 26867
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.eu.siacs.conversations.MySerializable)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at eu.siacs.conversations.ui.StartConversationActivity.addInviteUri(StartConversationActivity.java:1267)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at eu.siacs.conversations.utils.SignupUtils.getSignUpIntent(SignupUtils.java:29)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at eu.siacs.conversations.utils.SignupUtils.getSignUpIntent(SignupUtils.java:19)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at eu.siacs.conversations.utils.SignupUtils.getRedirectionIntent(SignupUtils.java:48)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at eu.siacs.conversations.ui.ConversationsActivity.performRedirectIfNecessary(ConversationsActivity.java:184)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at eu.siacs.conversations.ui.ConversationsActivity.performRedirectIfNecessary(ConversationsActivity.java:175)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at eu.siacs.conversations.ui.ConversationsActivity.onBackendConnected(ConversationsActivity.java:141)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at eu.siacs.conversations.ui.XmppActivity$1.onServiceConnected(XmppActivity.java:112)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher.doConnected(LoadedApk.java:1730)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1762)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.eu.siacs.conversations.MySerializable
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	... 23 more
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.eu.siacs.conversations.MySerializable" on path: DexPathList[[zip file "/data/app/eu.siacs.conversations-KWiOBf_XTUjh7B_ZeLacEQ==/base.apk"],nativeLibraryDirectories=[/data/app/eu.siacs.conversations-KWiOBf_XTUjh7B_ZeLacEQ==/lib/x86_64, /data/app/eu.siacs.conversations-KWiOBf_XTUjh7B_ZeLacEQ==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+06-04 11:05:13.532 26867 26867 E AndroidRuntime: 	... 32 more
+06-04 11:05:13.571  4418  4418 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+06-04 11:05:13.579  4418  4418 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+06-04 11:05:14.702  4418  4418 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/OpenPgpService;--->onCreate()V
+06-04 11:05:25.221  4418  4418 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+06-04 11:05:25.234  4418  4418 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V

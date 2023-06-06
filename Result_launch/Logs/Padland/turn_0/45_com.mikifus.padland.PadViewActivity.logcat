@@ -1,0 +1,35 @@
+--------- beginning of system
+--------- beginning of main
+06-05 21:16:10.023  7648  7648 D M_InsDal: Lcom/mikifus/padland/PadlandApp;--->onCreate()V
+06-05 21:16:10.029  7648  7648 D M_InsDal: Lcom/mikifus/padland/PadLandActivity;--->onCreate(Landroid/os/Bundle;)V
+06-05 21:16:10.029  7648  7648 D M_InsDal: Lcom/mikifus/padland/PadLandDataActivity;--->onCreate(Landroid/os/Bundle;)V
+06-05 21:16:10.029  7648  7648 D M_InsDal: Lcom/mikifus/padland/PadViewActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: FATAL EXCEPTION: main
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: Process: com.mikifus.padland, PID: 7648
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.mikifus.padland/com.mikifus.padland.PadViewActivity}: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at java.lang.String.substring(String.java:2036)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at com.mikifus.padland.PadViewActivity.a(SourceFile:11)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at com.mikifus.padland.PadViewActivity.l(SourceFile:9)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at com.mikifus.padland.PadViewActivity.d(SourceFile:4)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at com.mikifus.padland.PadViewActivity.k(SourceFile:1)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at com.mikifus.padland.PadViewActivity.n(SourceFile:1)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at com.mikifus.padland.PadViewActivity.onCreate(SourceFile:2)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-05 21:16:10.030  7648  7648 E AndroidRuntime: 	... 11 more

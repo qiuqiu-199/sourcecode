@@ -1,0 +1,32 @@
+--------- beginning of main
+--------- beginning of system
+06-04 02:34:31.649 18083 18083 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaApp;--->onCreate()V
+06-04 02:34:31.732 18083 18083 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaActivity;--->onCreate(Landroid/os/Bundle;)V
+06-04 02:34:31.732 18083 18083 D M_InsDal: Les/usc/citius/servando/calendula/activities/SummaryCalendarActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: FATAL EXCEPTION: main
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: Process: es.usc.citius.servando.calendula, PID: 18083
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{es.usc.citius.servando.calendula/es.usc.citius.servando.calendula.activities.SummaryCalendarActivity}: java.lang.IllegalArgumentException: Invalid format: "abcde"
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Invalid format: "abcde"
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at org.joda.time.format.DateTimeFormatter.parseLocalDateTime(Unknown Source:94)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at org.joda.time.format.DateTimeFormatter.parseLocalDate(Unknown Source:0)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at org.joda.time.LocalDate.parse(Unknown Source:0)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at es.usc.citius.servando.calendula.activities.SummaryCalendarActivity.setupCalendar(Unknown Source:65)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at es.usc.citius.servando.calendula.activities.SummaryCalendarActivity.onCreate(Unknown Source:61)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-04 02:34:31.747 18083 18083 E AndroidRuntime: 	... 11 more

@@ -56,8 +56,9 @@ def getActs(fn):
 
 
 if __name__ == '__main__':
-    s = "boolean-override_crypto_warning, Parcelable-signature, String-special_folder, int-result_code, byteArray-search_bytes, String-folder, Bundle-app_data->(String-com.fsck.k9.search_account,String-com.fsck.k9.search_folder), Parcelable-insecure_detail_intent, Parcelable-decryption, String-query, Parcelable-intent, boolean-no_threading, Parcelable-error, String-account, String-message_reference"
-    ss = s.split(", ")
-    s1 = "Parcelable-intent,Parcelable-insecure_detail_intent,boolean-override_crypto_warning,Parcelable-decryption,String-folder,String-special_folder,String-message_reference,Parcelable-error,boolean-no_threading,String-query,String-account,byteArray-search_bytes,Parcelable-signature,int-result_code"
-    ss1 = s1.split(",")
-    print s==s1
+    f = open("cmd.txt")
+    lines = f.readlines()
+    for line in lines:
+        ss = line.split("\t")
+        print ss[0] +"\t"+ ss[1] + "\t"+ ss[3]
+    print 000

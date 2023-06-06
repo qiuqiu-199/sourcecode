@@ -1,0 +1,6 @@
+/** Automatically generated file. DO NOT MODIFY */
+package qiu.com.csipsimple;
+
+public final class BuildConfig {
+    public final static boolean DEBUG = true;
+}

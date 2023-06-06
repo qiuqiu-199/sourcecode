@@ -1,0 +1,58 @@
+--------- beginning of main
+06-04 12:17:08.780  4418  4418 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+--------- beginning of system
+06-04 12:17:19.385 10816 10816 D M_InsDal: Leu/siacs/conversations/ui/ConversationActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: FATAL EXCEPTION: main
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: Process: eu.siacs.conversations, PID: 10816
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{eu.siacs.conversations/eu.siacs.conversations.ui.ConversationActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.eu.siacs.conversations.MyParcelable
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.eu.siacs.conversations.MyParcelable
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5620)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5632)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at eu.siacs.conversations.ui.ConversationActivity.onCreate(ConversationActivity.java:14)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-04 12:17:19.389 10816 10816 E AndroidRuntime: 	... 11 more
+06-04 12:17:19.484 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onCreate(Landroid/os/Bundle;)V
+06-04 12:17:19.489 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/ConversationsActivity;--->onCreate(Landroid/os/Bundle;)V
+06-04 12:17:19.501 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onAttach(Landroid/app/Activity;)V
+06-04 12:17:19.501 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onCreate(Landroid/os/Bundle;)V
+06-04 12:17:19.506 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+06-04 12:17:19.507 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStart()V
+06-04 12:17:19.508 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onStart()V
+06-04 12:17:19.509 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onResume()V
+06-04 12:17:19.509 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/ConversationsActivity;--->onResume()V
+06-04 12:17:19.509 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onResume()V
+06-04 12:17:19.513 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/service/EmojiService$1;--->onFailed(Ljava/lang/Throwable;)V
+06-04 12:17:19.539  4418  4418 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/OpenPgpService;--->onCreate()V
+06-04 12:17:19.991 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onPause()V
+06-04 12:17:19.991 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/ConversationsActivity;--->onPause()V
+06-04 12:17:20.000 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onCreate(Landroid/os/Bundle;)V
+06-04 12:17:20.011 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStart()V
+06-04 12:17:20.012 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/WelcomeActivity;--->onStart()V
+06-04 12:17:20.013 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onResume()V
+06-04 12:17:20.146 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStop()V
+06-04 12:17:20.147 10839 10839 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onDetach()V
+06-04 12:17:31.473  4418  4418 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V

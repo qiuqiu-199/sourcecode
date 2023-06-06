@@ -1,0 +1,45 @@
+--------- beginning of main
+--------- beginning of system
+06-05 17:37:01.598 19535 19535 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+06-05 17:37:01.619 19535 19535 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+06-05 17:37:01.624 19535 19535 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/RemoteDisplayTransferCodeActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: FATAL EXCEPTION: main
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 19535
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.os.Bundle.getParcelable(Bundle.java:940)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at org.sufficientlysecure.keychain.remote.ui.RemoteDisplayTransferCodeActivity$DisplayTransferCodeDialogFragment.onCreateDialog(RemoteDisplayTransferCodeActivity.java:64)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.support.v4.app.DialogFragment.onGetLayoutInflater(DialogFragment.java:328)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.support.v4.app.Fragment.performGetLayoutInflater(Fragment.java:1226)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1428)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1759)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1827)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.support.v4.app.BackStackRecord.executeOps(BackStackRecord.java:797)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.executeOps(FragmentManager.java:2596)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.executeOpsTogether(FragmentManager.java:2383)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.removeRedundantOperationsAndExecute(FragmentManager.java:2338)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:2245)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.dispatchStateChange(FragmentManager.java:3248)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:3200)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.support.v4.app.FragmentController.dispatchActivityCreated(FragmentController.java:195)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:597)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:7165)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-05 17:37:01.649 19535 19535 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)

@@ -1,0 +1,24 @@
+--------- beginning of main
+06-04 10:26:23.542  4418  4418 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+--------- beginning of system
+06-04 10:26:30.641 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onCreate(Landroid/os/Bundle;)V
+06-04 10:26:30.647 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/ConversationsActivity;--->onCreate(Landroid/os/Bundle;)V
+06-04 10:26:30.661 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onAttach(Landroid/app/Activity;)V
+06-04 10:26:30.661 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onCreate(Landroid/os/Bundle;)V
+06-04 10:26:30.667 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+06-04 10:26:30.711 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStart()V
+06-04 10:26:30.713 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onStart()V
+06-04 10:26:30.713 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onResume()V
+06-04 10:26:30.713 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/ConversationsActivity;--->onResume()V
+06-04 10:26:30.713 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onResume()V
+06-04 10:26:30.722 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/service/EmojiService$1;--->onFailed(Ljava/lang/Throwable;)V
+06-04 10:26:30.774  4418  4418 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/OpenPgpService;--->onCreate()V
+06-04 10:26:31.071 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onPause()V
+06-04 10:26:31.071 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/ConversationsActivity;--->onPause()V
+06-04 10:26:31.079 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onCreate(Landroid/os/Bundle;)V
+06-04 10:26:31.091 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStart()V
+06-04 10:26:31.092 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/WelcomeActivity;--->onStart()V
+06-04 10:26:31.093 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onResume()V
+06-04 10:26:31.288 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStop()V
+06-04 10:26:31.289 19208 19208 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onDetach()V
+06-04 10:26:42.822  4418  4418 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V

@@ -1,0 +1,18 @@
+--------- beginning of main
+--------- beginning of system
+06-05 18:41:47.368  6570  6570 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+06-05 18:41:47.423  6570  6570 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+06-05 18:41:47.434  6570  6570 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/ImportKeysActivity;--->onCreate(Landroid/os/Bundle;)V
+06-05 18:41:47.436  6570  6570 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onResume()V
+06-05 18:41:47.437  6570  6570 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/ImportKeysActivity;--->onResumeFragments()V
+06-05 18:41:47.437  6570  6570 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/ImportKeysSearchFragment;--->onAttach(Landroid/content/Context;)V
+06-05 18:41:47.447  6570  6570 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/ImportKeysListFragment;--->onAttach(Landroid/content/Context;)V
+--------- beginning of crash
+06-05 18:41:47.473  6570  6599 E AndroidRuntime: FATAL EXCEPTION: Thread-4
+06-05 18:41:47.473  6570  6599 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 6570
+06-05 18:41:47.473  6570  6599 E AndroidRuntime: java.lang.IllegalArgumentException: unexpected url: https://#$%^ds:+_/.well-known/openpgpkey/hu/bkhddnsk65u8tzenhk4hgo9peretsqj7
+06-05 18:41:47.473  6570  6599 E AndroidRuntime: 	at okhttp3.Request$Builder.url(Request.java:156)
+06-05 18:41:47.473  6570  6599 E AndroidRuntime: 	at org.sufficientlysecure.keychain.keyimport.WebKeyDirectoryClient.query(WebKeyDirectoryClient.java:95)
+06-05 18:41:47.473  6570  6599 E AndroidRuntime: 	at org.sufficientlysecure.keychain.keyimport.WebKeyDirectoryClient.search(WebKeyDirectoryClient.java:67)
+06-05 18:41:47.473  6570  6599 E AndroidRuntime: 	at org.sufficientlysecure.keychain.keyimport.CloudSearch$1.run(CloudSearch.java:68)
+06-05 18:41:47.473  6570  6599 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:764)

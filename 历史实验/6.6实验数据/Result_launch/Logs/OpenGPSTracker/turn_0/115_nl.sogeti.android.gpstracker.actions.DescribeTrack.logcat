@@ -1,0 +1,28 @@
+--------- beginning of main
+--------- beginning of system
+06-05 17:31:54.239 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><clinit>()V
+06-05 17:31:54.239 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><init>()V
+06-05 17:31:54.240 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;--->onCreate()Z
+06-05 17:31:54.240 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/db/DatabaseHelper;---><init>(Landroid/content/Context;)V
+06-05 17:31:54.243 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/DescribeTrack;---><init>()V
+06-05 17:31:54.243 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/DescribeTrack$1;---><init>(Lnl/sogeti/android/gpstracker/actions/DescribeTrack;)V
+06-05 17:31:54.243 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/DescribeTrack$2;---><init>(Lnl/sogeti/android/gpstracker/actions/DescribeTrack;)V
+06-05 17:31:54.245 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/DescribeTrack;--->onCreate(Landroid/os/Bundle;)V
+06-05 17:31:54.249 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/DescribeTrack;--->onStart()V
+06-05 17:31:54.251 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/DescribeTrack;--->onResume()V
+06-05 17:31:54.263 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/DescribeTrack;--->setUiEnabled()V
+06-05 17:31:54.264 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/DescribeTrack$3;---><init>(Lnl/sogeti/android/gpstracker/actions/DescribeTrack;)V
+06-05 17:31:54.268 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/DescribeTrack;--->setUiEnabled()V
+06-05 17:31:54.268 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/DescribeTrack;--->connectBreadcrumbs()V
+06-05 17:31:54.277 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/breadcrumbs/BreadcrumbsService;---><init>()V
+06-05 17:31:54.277 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/breadcrumbs/BreadcrumbsService$LocalBinder;---><init>(Lnl/sogeti/android/gpstracker/breadcrumbs/BreadcrumbsService;)V
+06-05 17:31:54.277 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/breadcrumbs/BreadcrumbsService;--->onCreate()V
+06-05 17:31:54.279 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/breadcrumbs/BreadcrumbsTracks;---><clinit>()V
+06-05 17:31:54.279 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/breadcrumbs/BreadcrumbsTracks;--->initCacheVariables()V
+06-05 17:31:54.279 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/breadcrumbs/BreadcrumbsTracks;---><init>(Landroid/content/ContentResolver;)V
+06-05 17:31:54.279 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/breadcrumbs/BreadcrumbsService;--->connectionSetup()Z
+06-05 17:31:54.280 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/breadcrumbs/BreadcrumbsService;--->onBind(Landroid/content/Intent;)Landroid/os/IBinder;
+06-05 17:31:54.430 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/DescribeTrack$1;--->onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
+06-05 17:31:54.430 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/breadcrumbs/BreadcrumbsService$LocalBinder;--->getService()Lnl/sogeti/android/gpstracker/breadcrumbs/BreadcrumbsService;
+06-05 17:31:54.430 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/DescribeTrack;--->setUiEnabled()V
+06-05 17:31:54.430 18505 18505 D M_InsDal: Lnl/sogeti/android/gpstracker/breadcrumbs/BreadcrumbsService;--->isAuthorized()Z
