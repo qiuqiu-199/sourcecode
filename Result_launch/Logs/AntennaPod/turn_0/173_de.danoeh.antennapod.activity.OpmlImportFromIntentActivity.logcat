@@ -1,9 +1,0 @@
---------- beginning of main
-06-04 02:00:32.465 15981 15981 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;---><init>()V
-06-04 02:00:32.465 15981 15981 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver;---><init>()V
-06-04 02:00:32.465 15981 15981 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;--->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-06-04 02:00:32.465 15981 15981 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver;--->shouldRunNetworkTask(Ljava/lang/String;Landroid/content/Context;)Z
-06-04 02:00:32.465 15981 15981 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->getCurrent(Landroid/content/Context;)Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;
-06-04 02:00:32.465 15981 15981 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->isLoggedIn()Z
---------- beginning of system
-06-04 02:00:37.766 11602 11602 D M_InsDal: Lde/danoeh/antennapod/PodcastApp;--->onCreate()V

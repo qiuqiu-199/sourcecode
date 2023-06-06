@@ -1,9 +1,0 @@
---------- beginning of main
---------- beginning of system
-06-05 18:39:03.943  5948  5948 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
-06-05 18:39:03.973  5948  5948 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/dialog/RemoteSelectAuthenticationKeyActivity;--->onCreate(Landroid/os/Bundle;)V
-06-05 18:39:03.991  5948  5948 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/dialog/RemoteSelectAuthenticationKeyActivity$RemoteSelectAuthenticationKeyDialogFragment;--->onActivityCreated(Landroid/os/Bundle;)V
-06-05 18:39:04.003  5948  5948 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/dialog/RemoteSelectAuthenticationKeyActivity;--->onStart()V
-06-05 18:39:04.007  5948  5975 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainDatabase$1;--->onOpen(Landroid/arch/persistence/db/SupportSQLiteDatabase;)V
-06-05 18:39:04.110  5948  5948 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
-06-05 18:39:04.114  5948  5948 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/dialog/RemoteSelectAuthenticationKeyActivity$RemoteSelectAuthenticationKeyDialogFragment;--->onDismiss(Landroid/content/DialogInterface;)V
