@@ -1,0 +1,48 @@
+--------- beginning of system
+--------- beginning of main
+06-03 22:58:44.472 22736 22736 D M_InsDal: Ldev/ukanth/ufirewall/activity/LogActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: FATAL EXCEPTION: main
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: Process: dev.ukanth.ufirewall, PID: 22736
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{dev.ukanth.ufirewall/dev.ukanth.ufirewall.activity.LogActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.dev.ukanth.ufirewall.MySerializable)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.dev.ukanth.ufirewall.MySerializable)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.os.BaseBundle.get(BaseBundle.java:516)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at dev.ukanth.ufirewall.activity.LogActivity.onCreate(LogActivity.java:99)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	... 11 more
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.dev.ukanth.ufirewall.MySerializable
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	... 21 more
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.dev.ukanth.ufirewall.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/dev.ukanth.ufirewall-qA2EMkaqNBywFTsvQQWcTg==/base.apk"],nativeLibraryDirectories=[/data/app/dev.ukanth.ufirewall-qA2EMkaqNBywFTsvQQWcTg==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+06-03 22:58:44.491 22736 22736 E AndroidRuntime: 	... 30 more

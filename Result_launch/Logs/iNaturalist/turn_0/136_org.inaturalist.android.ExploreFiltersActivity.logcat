@@ -1,0 +1,41 @@
+--------- beginning of system
+--------- beginning of main
+--------- beginning of crash
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: FATAL EXCEPTION: main
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: Process: org.inaturalist.android, PID: 13800
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{org.inaturalist.android/org.inaturalist.android.ExploreFiltersActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.inaturalist.android.MyParcelable
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.inaturalist.android.MyParcelable
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at com.facebook.appevents.internal.SourceApplicationInfo$Factory.create(SourceApplicationInfo.java:127)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at com.facebook.appevents.internal.ActivityLifecycleTracker.onActivityCreated(ActivityLifecycleTracker.java:155)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at com.facebook.appevents.internal.ActivityLifecycleTracker$1.onActivityCreated(ActivityLifecycleTracker.java:101)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.app.Application.dispatchActivityCreated(Application.java:220)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.app.Activity.onCreate(Activity.java:1048)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.support.v4.app.SupportActivity.onCreate(SupportActivity.java:66)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.onCreate(FragmentActivity.java:297)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.support.v7.app.AppCompatActivity.onCreate(AppCompatActivity.java:84)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at org.inaturalist.android.ExploreFiltersActivity.onCreate(ExploreFiltersActivity.java:146)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-05 09:45:46.801 13800 13800 E AndroidRuntime: 	... 11 more

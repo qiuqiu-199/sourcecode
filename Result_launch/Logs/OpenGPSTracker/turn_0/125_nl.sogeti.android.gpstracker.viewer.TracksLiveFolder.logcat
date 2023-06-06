@@ -1,0 +1,41 @@
+--------- beginning of main
+--------- beginning of system
+06-05 17:35:16.994 19147 19147 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><clinit>()V
+06-05 17:35:16.994 19147 19147 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><init>()V
+06-05 17:35:16.994 19147 19147 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;--->onCreate()Z
+06-05 17:35:16.994 19147 19147 D M_InsDal: Lnl/sogeti/android/gpstracker/db/DatabaseHelper;---><init>(Landroid/content/Context;)V
+06-05 17:35:16.997 19147 19147 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TracksLiveFolder;---><init>()V
+06-05 17:35:16.998 19147 19147 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TracksLiveFolder;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: FATAL EXCEPTION: main
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: Process: nl.sogeti.android.gpstracker, PID: 19147
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{nl.sogeti.android.gpstracker/nl.sogeti.android.gpstracker.viewer.TracksLiveFolder}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.nl.sogeti.android.gpstracker.MyParcelable
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.nl.sogeti.android.gpstracker.MyParcelable
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5620)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5632)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at nl.sogeti.android.gpstracker.viewer.TracksLiveFolder.onCreate(TracksLiveFolder.java:73)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-05 17:35:17.003 19147 19147 E AndroidRuntime: 	... 11 more

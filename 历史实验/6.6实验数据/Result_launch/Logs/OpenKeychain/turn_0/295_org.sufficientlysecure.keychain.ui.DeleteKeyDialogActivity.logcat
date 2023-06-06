@@ -1,0 +1,28 @@
+--------- beginning of main
+--------- beginning of system
+06-05 19:18:47.346 14583 14583 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+06-05 19:18:47.369 14583 14583 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+06-05 19:18:47.374 14583 14583 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/DeleteKeyDialogActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: FATAL EXCEPTION: main
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 14583
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.DeleteKeyDialogActivity}: java.lang.NullPointerException: Attempt to get length of null array
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to get length of null array
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at org.sufficientlysecure.keychain.ui.DeleteKeyDialogActivity.onCreate(DeleteKeyDialogActivity.java:77)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-05 19:18:47.374 14583 14583 E AndroidRuntime: 	... 11 more

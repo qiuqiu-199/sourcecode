@@ -1,0 +1,24 @@
+--------- beginning of main
+--------- beginning of system
+06-04 10:09:18.124 15192 15192 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onCreate(Landroid/os/Bundle;)V
+06-04 10:09:18.130 15192 15192 D M_InsDal: Leu/siacs/conversations/ui/ConferenceDetailsActivity;--->onCreate(Landroid/os/Bundle;)V
+06-04 10:09:18.201 15192 15192 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStart()V
+06-04 10:09:18.203 15192 15192 D M_InsDal: Leu/siacs/conversations/ui/ConferenceDetailsActivity;--->onStart()V
+06-04 10:09:18.205 15192 15192 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onResume()V
+06-04 10:09:18.218 15192 15192 D M_InsDal: Leu/siacs/conversations/ui/service/EmojiService$1;--->onFailed(Ljava/lang/Throwable;)V
+06-04 10:09:18.256  4418  4418 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/OpenPgpService;--->onCreate()V
+--------- beginning of crash
+06-04 10:09:18.281 15192 15192 E AndroidRuntime: FATAL EXCEPTION: main
+06-04 10:09:18.281 15192 15192 E AndroidRuntime: Process: eu.siacs.conversations, PID: 15192
+06-04 10:09:18.281 15192 15192 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+06-04 10:09:18.281 15192 15192 E AndroidRuntime: 	at eu.siacs.conversations.ui.ConferenceDetailsActivity.onBackendConnected(ConferenceDetailsActivity.java:412)
+06-04 10:09:18.281 15192 15192 E AndroidRuntime: 	at eu.siacs.conversations.ui.XmppActivity$1.onServiceConnected(XmppActivity.java:112)
+06-04 10:09:18.281 15192 15192 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher.doConnected(LoadedApk.java:1730)
+06-04 10:09:18.281 15192 15192 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1762)
+06-04 10:09:18.281 15192 15192 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+06-04 10:09:18.281 15192 15192 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-04 10:09:18.281 15192 15192 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-04 10:09:18.281 15192 15192 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-04 10:09:18.281 15192 15192 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-04 10:09:18.281 15192 15192 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-04 10:09:18.281 15192 15192 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)

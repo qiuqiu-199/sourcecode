@@ -1,0 +1,42 @@
+--------- beginning of main
+--------- beginning of system
+06-05 16:47:54.483  9573  9573 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+06-05 16:47:54.484  9573  9573 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+06-05 16:47:54.484  9573  9573 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+06-05 16:47:54.484  9573  9573 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+06-05 16:47:54.484  9573  9573 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+06-05 16:47:54.484  9573  9573 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+06-05 16:47:54.485  9573  9573 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+06-05 16:47:54.485  9573  9573 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+--------- beginning of crash
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: FATAL EXCEPTION: main
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: Process: felixwiemuth.lincal:acra, PID: 9573
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{felixwiemuth.lincal/org.acra.dialog.CrashReportDialog}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.felixwiemuth.lincal.MyParcelable
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.felixwiemuth.lincal.MyParcelable
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.os.BaseBundle.getSerializable(BaseBundle.java:1227)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.os.Bundle.getSerializable(Bundle.java:1034)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.content.Intent.getSerializableExtra(Intent.java:7516)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at org.acra.dialog.BaseCrashReportDialog.onCreate(BaseCrashReportDialog.java:66)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-05 16:47:54.495  9573  9573 E AndroidRuntime: 	... 11 more

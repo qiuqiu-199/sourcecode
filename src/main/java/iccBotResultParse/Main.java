@@ -25,7 +25,7 @@ public class Main {
         String outputLogPath = "summaryInfo/outInfo.txt";
         File logfile = new File(outputLogPath);
         if (!logfile.exists()) logfile.createNewFile();
-        System.setOut(new PrintStream(logfile)); //控制台输出重定向到文件
+//        System.setOut(new PrintStream(logfile)); //控制台输出重定向到文件
         //收集生成测试用例的时间
         long totalstarttime = System.currentTimeMillis(); //收集单个apk的测试用例生成时间
         long currentstarttime = totalstarttime;  //收集全部测试用例生成时间
@@ -46,14 +46,14 @@ public class Main {
 
             Map<String, Set<ICCMsg>> activity2receivedICCMap = new HashMap<>(); //存储发送给activity的iccmsg
 
-            //从CTG.xml解析intent
-            resolveIntentFromCTGfile(activity2receivedICCMap);
-            //从manifest文件里的intentfile解析组件间通信
-            resolveIntentFromManifest(activity2receivedICCMap);
-
-            //从componentInfo/xml文件里解析intent
-            resolveIntentFromReceivedIntent(activity2receivedICCMap);
-
+//            //从CTG.xml解析intent
+//            resolveIntentFromCTGfile(activity2receivedICCMap);
+//            //从manifest文件里的intentfile解析组件间通信
+//            resolveIntentFromManifest(activity2receivedICCMap);
+//
+//            //从componentInfo/xml文件里解析intent
+//            resolveIntentFromReceivedIntent(activity2receivedICCMap);
+//
             TestcaseGenerator testcaseGenerator = new TestcaseGenerator(activity2receivedICCMap);
             testcaseGenerator.generateTestApp();
 

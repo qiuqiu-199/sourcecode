@@ -1,0 +1,45 @@
+--------- beginning of main
+--------- beginning of system
+06-04 02:55:52.864 22194 22194 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaApp;--->onCreate()V
+06-04 02:55:52.946 22194 22194 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaActivity;--->onCreate(Landroid/os/Bundle;)V
+06-04 02:55:52.946 22194 22194 D M_InsDal: Les/usc/citius/servando/calendula/activities/MedicinesSearchActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: FATAL EXCEPTION: main
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: Process: es.usc.citius.servando.calendula, PID: 22194
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{es.usc.citius.servando.calendula/es.usc.citius.servando.calendula.activities.MedicinesSearchActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.es.usc.citius.servando.calendula.MyParcelable
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.es.usc.citius.servando.calendula.MyParcelable
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.content.Intent.getStringExtra(Intent.java:7445)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at es.usc.citius.servando.calendula.activities.MedicinesSearchActivity.onCreate(Unknown Source:208)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-04 02:55:52.974 22194 22194 E AndroidRuntime: 	... 11 more
+06-04 02:55:54.089 22222 22222 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaApp;--->onCreate()V
+06-04 02:56:04.203 22222 22244 E AndroidRuntime: FATAL EXCEPTION: IntentService[JobRescheduleService]
+06-04 02:56:04.203 22222 22244 E AndroidRuntime: Process: es.usc.citius.servando.calendula, PID: 22222
+06-04 02:56:04.203 22222 22244 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'void java.util.concurrent.CountDownLatch.countDown()' on a null object reference
+06-04 02:56:04.203 22222 22244 E AndroidRuntime: 	at com.evernote.android.job.JobRescheduleService.onHandleIntent(Unknown Source:132)
+06-04 02:56:04.203 22222 22244 E AndroidRuntime: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+06-04 02:56:04.203 22222 22244 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-04 02:56:04.203 22222 22244 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-04 02:56:04.203 22222 22244 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)

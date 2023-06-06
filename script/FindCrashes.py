@@ -137,7 +137,7 @@ class BugDetector:
         allBugNum = 0
         eaBugNum = 0
 
-        tcFolder = self.testcase_dir + "testcase" + os.sep
+        tcFolder = self.testcase_dir + "testcases" + os.sep
         logFolder = self.log_dir + "Logs" + os.sep
         crashFolder = self.log_dir + "Crashes" + os.sep
 

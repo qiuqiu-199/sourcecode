@@ -92,7 +92,7 @@ public class ManifestParser {
             File file = new File(path + "/EAList.txt");
             FileOutputStream out = null;
             try {
-                out = new FileOutputStream(file, true);
+                out = new FileOutputStream(file,true);
                 if (!file.exists()) file.createNewFile();
             } catch (IOException e) {
                 e.printStackTrace();
