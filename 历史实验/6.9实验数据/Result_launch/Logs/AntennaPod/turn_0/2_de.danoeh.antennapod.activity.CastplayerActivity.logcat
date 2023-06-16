@@ -1,0 +1,26 @@
+--------- beginning of main
+--------- beginning of system
+06-08 17:02:34.162  6122  6122 D M_InsDal: Lde/danoeh/antennapod/PodcastApp;--->onCreate()V
+06-08 17:02:34.199  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:02:34.199  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerInfoActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:02:34.199  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/CastplayerActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:02:34.215  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:02:34.216  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerInfoActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:02:34.217  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerActivity;--->onStart()V
+06-08 17:02:34.244  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerInfoActivity;--->setupGUI()V
+06-08 17:02:34.250  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerInfoActivity;--->loadMediaInfo()Z
+06-08 17:02:34.250  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerInfoActivity;--->onPositionObserverUpdate()V
+06-08 17:02:34.251  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onResume()V
+06-08 17:02:34.251  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerActivity;--->onResume()V
+06-08 17:02:34.254  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerInfoActivity;--->onResume()V
+06-08 17:02:34.258  6122  6122 D M_InsDal: Lde/danoeh/antennapod/core/feed/EventDistributor;--->addObserver(Ljava/util/Observer;)V
+06-08 17:02:34.260  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/AudioplayerActivity;--->onResume()V
+06-08 17:02:34.282  6122  6122 D M_InsDal: Lde/danoeh/antennapod/fragment/CoverFragment;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:02:34.282  6122  6122 D M_InsDal: Lde/danoeh/antennapod/fragment/ItemDescriptionFragment;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:02:34.287  6122  6122 D M_InsDal: Lde/danoeh/antennapod/fragment/CoverFragment;--->onStart()V
+06-08 17:02:34.537  6122  6122 D M_InsDal: Lde/danoeh/antennapod/fragment/ItemDescriptionFragment;--->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+06-08 17:02:34.583  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onCreateOptionsMenu(Landroid/view/Menu;)Z
+06-08 17:02:34.586  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerActivity;--->onCreateOptionsMenu(Landroid/view/Menu;)Z
+06-08 17:02:34.587  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onPrepareOptionsMenu(Landroid/view/Menu;)Z
+06-08 17:02:34.587  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerActivity;--->onPrepareOptionsMenu(Landroid/view/Menu;)Z
+06-08 17:02:36.518  6122  6122 D M_InsDal: Lde/danoeh/antennapod/activity/MediaplayerInfoActivity;--->onDestroy()V

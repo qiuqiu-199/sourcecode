@@ -1,0 +1,27 @@
+--------- beginning of main
+06-09 10:44:20.425 26356 26356 D M_InsDal: Lcom/fsck/k9/view/RecipientSelectView;--->onKeyDown(ILandroid/view/KeyEvent;)Z
+06-09 10:44:20.427 26356 26356 D M_InsDal: Lcom/fsck/k9/activity/MessageCompose;--->onBackPressed()V
+06-09 10:44:20.427 26356 26356 D M_InsDal: Lcom/fsck/k9/activity/MessageCompose;--->prepareToFinish(Z)V
+06-09 10:44:20.428 26356 26356 D M_InsDal: Lcom/fsck/k9/activity/MessageCompose;--->onPause()V
+06-09 10:44:20.428 26356 26356 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->getInstance(Landroid/content/Context;)Lcom/fsck/k9/controller/MessagingController;
+06-09 10:44:20.428 26356 26356 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->removeListener(Lcom/fsck/k9/controller/MessagingListener;)V
+06-09 10:44:20.428 26356 26356 D M_InsDal: Lcom/fsck/k9/activity/MessageCompose;--->checkToSaveDraftImplicitly()V
+06-09 10:44:20.428 26356 26356 D M_InsDal: Lcom/fsck/k9/Account;--->hasDraftsFolder()Z
+06-09 10:44:20.691 26356 26356 D M_InsDal: Lcom/fsck/k9/activity/MessageCompose;--->onDestroy()V
+06-09 10:44:20.691 26356 26356 D M_InsDal: Lcom/fsck/k9/activity/compose/RecipientPresenter;--->onActivityDestroy()V
+06-09 10:44:20.692 26356 26356 D M_InsDal: Lcom/fsck/k9/view/RecipientSelectView;--->onDetachedFromWindow()V
+--------- beginning of system
+06-09 10:44:20.692 26356 26356 D M_InsDal: Lcom/fsck/k9/view/RecipientSelectView;--->onDetachedFromWindow()V
+06-09 10:44:20.702 26356 26356 D M_InsDal: Lcom/fsck/k9/provider/DecryptedFileProvider;--->onTrimMemory(I)V
+06-09 10:44:20.702 26356 26356 D M_InsDal: Lcom/fsck/k9/provider/AttachmentTempFileProvider;--->onTrimMemory(I)V
+06-09 10:44:21.011 26869 26869 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><clinit>()V
+06-09 10:44:21.012 26869 26869 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><init>()V
+06-09 10:44:21.012 26869 26869 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;--->onCreate()Z
+06-09 10:44:21.012 26869 26869 D M_InsDal: Lnl/sogeti/android/gpstracker/db/DatabaseHelper;---><init>(Landroid/content/Context;)V
+06-09 10:44:21.015 26869 26869 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/ApplicationPreferenceActivity;---><init>()V
+06-09 10:44:21.024 26869 26869 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/ApplicationPreferenceActivity;--->onCreate(Landroid/os/Bundle;)V
+06-09 10:44:21.033 26869 26869 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/ApplicationPreferenceActivity;--->setEnabledCustomValues(Ljava/lang/Object;)V
+06-09 10:44:21.033 26869 26869 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/ApplicationPreferenceActivity$1;---><init>(Lnl/sogeti/android/gpstracker/viewer/ApplicationPreferenceActivity;)V
+06-09 10:44:21.033 26869 26869 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/ApplicationPreferenceActivity$2;---><init>(Lnl/sogeti/android/gpstracker/viewer/ApplicationPreferenceActivity;)V
+06-09 10:44:21.033 26869 26869 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/ApplicationPreferenceActivity$3;---><init>(Lnl/sogeti/android/gpstracker/viewer/ApplicationPreferenceActivity;)V
+06-09 10:44:21.033 26869 26869 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/ApplicationPreferenceActivity$4;---><init>(Lnl/sogeti/android/gpstracker/viewer/ApplicationPreferenceActivity;)V

@@ -1,0 +1,28 @@
+public final class kotlinx.coroutines.CommonPool$$ExternalSyntheticLambda2 extends java.lang.Object implements java.util.concurrent.Executor
+{
+
+    public void <init>()
+    {
+        kotlinx.coroutines.CommonPool$$ExternalSyntheticLambda2 r0;
+
+        r0 := @this: kotlinx.coroutines.CommonPool$$ExternalSyntheticLambda2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public final void execute(java.lang.Runnable)
+    {
+        kotlinx.coroutines.CommonPool$$ExternalSyntheticLambda2 r0;
+        java.lang.Runnable $r1;
+
+        r0 := @this: kotlinx.coroutines.CommonPool$$ExternalSyntheticLambda2;
+
+        $r1 := @parameter0: java.lang.Runnable;
+
+        staticinvoke <kotlinx.coroutines.CommonPool: void $r8$lambda$B8tWIgKlJHpaqvQwjtIxhEc709w(java.lang.Runnable)>($r1);
+
+        return;
+    }
+}

@@ -1,0 +1,42 @@
+--------- beginning of main
+--------- beginning of system
+--------- beginning of crash
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: FATAL EXCEPTION: main
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: Process: qiu.com.csipsimple, PID: 24414
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{qiu.com.csipsimple/qiu.com.csipsimple.Activity_237}: java.lang.SecurityException: Permission Denial: starting Intent { act=com.csipsimple.service.MEDIA_CHANGED flg=0x10000000 cmp=com.csipsimple/.ui.incall.InCallActivity } from ProcessRecord{4c64171 24414:qiu.com.csipsimple/u0a53} (pid=24414, uid=10053) requires android.permission.CONFIGURE_SIP
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: Caused by: java.lang.SecurityException: Permission Denial: starting Intent { act=com.csipsimple.service.MEDIA_CHANGED flg=0x10000000 cmp=com.csipsimple/.ui.incall.InCallActivity } from ProcessRecord{4c64171 24414:qiu.com.csipsimple/u0a53} (pid=24414, uid=10053) requires android.permission.CONFIGURE_SIP
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:1950)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:1918)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:1868)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.IActivityManager$Stub$Proxy.startActivity(IActivityManager.java:3756)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1669)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:4587)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:4545)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:4906)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:4874)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at qiu.com.csipsimple.Activity_237.launch(Activity_237.java:23)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at qiu.com.csipsimple.Activity_237.onCreate(Activity_237.java:32)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	... 11 more
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at com.android.server.am.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1779)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at com.android.server.am.ActivityStarter.startActivity(ActivityStarter.java:725)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at com.android.server.am.ActivityStarter.startActivity(ActivityStarter.java:551)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at com.android.server.am.ActivityStarter.startActivityMayWait(ActivityStarter.java:1156)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 	at com.android.server.am.ActivityStarter.execute(ActivityStarter.java:490)
+06-08 21:12:00.436 24414 24414 E AndroidRuntime: 

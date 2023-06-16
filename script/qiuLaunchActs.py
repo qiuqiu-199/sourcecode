@@ -5,6 +5,8 @@ import os, sys
 import shutil
 import commands
 import threading
+from multiprocessing import TimeoutError
+
 from utils import *
 
 lock = threading.RLock()
@@ -105,8 +107,7 @@ class ActivityLauncher:
         str = ""
         # 从当前activity中获取信息
         for line in res.splitlines():  # line的例子：mResumedActivity: ActivityRecord{1701ea0 u0 com.fsck.k9/.activity.MessageList t564}
-            current = line.split(" ")[7].split("/")[
-                1]  # line.split()[7] = ['', '', '', '', 'mResumedActivity:', 'ActivityRecord{2c67be9', 'u0', 'com.fsck.k9/.activity.Accounts', 't564}']
+            current = line.split(" ")[7].split("/")[1]  # line.split()[7] = ['', '', '', '', 'mResumedActivity:', 'ActivityRecord{2c67be9', 'u0', 'com.fsck.k9/.activity.Accounts', 't564}']
             if current.startswith("."):
                 current = line.split(" ")[7].split("/")[0] + current
             str += fn + "\t" + package + "\t" + testActName + "\t" + current + "\t"

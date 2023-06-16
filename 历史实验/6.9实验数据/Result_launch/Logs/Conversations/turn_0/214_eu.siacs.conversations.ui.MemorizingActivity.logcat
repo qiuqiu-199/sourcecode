@@ -1,0 +1,48 @@
+--------- beginning of main
+--------- beginning of system
+06-08 19:49:40.040  6645  6645 D M_InsDal: Leu/siacs/conversations/ui/MemorizingActivity;--->onResume()V
+--------- beginning of crash
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: FATAL EXCEPTION: main
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: Process: eu.siacs.conversations, PID: 6645
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {eu.siacs.conversations/eu.siacs.conversations.ui.MemorizingActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.eu.siacs.conversations.MySerializable)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3825)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3857)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.eu.siacs.conversations.MySerializable)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.os.BaseBundle.getInt(BaseBundle.java:1030)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.content.Intent.getIntExtra(Intent.java:7380)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at eu.siacs.conversations.ui.MemorizingActivity.onResume(MemorizingActivity.java:66)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7300)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3817)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	... 11 more
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.eu.siacs.conversations.MySerializable
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	... 21 more
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.eu.siacs.conversations.MySerializable" on path: DexPathList[[zip file "/data/app/eu.siacs.conversations-KWiOBf_XTUjh7B_ZeLacEQ==/base.apk"],nativeLibraryDirectories=[/data/app/eu.siacs.conversations-KWiOBf_XTUjh7B_ZeLacEQ==/lib/x86_64, /data/app/eu.siacs.conversations-KWiOBf_XTUjh7B_ZeLacEQ==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+06-08 19:49:40.040  6645  6645 E AndroidRuntime: 	... 30 more

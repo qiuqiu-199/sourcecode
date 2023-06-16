@@ -1,0 +1,51 @@
+--------- beginning of main
+06-09 11:38:10.334 31143 31143 D M_InsDal: Lcom/fsck/k9/provider/DecryptedFileProvider;--->onTrimMemory(I)V
+06-09 11:38:10.334 31143 31143 D M_InsDal: Lcom/fsck/k9/provider/AttachmentTempFileProvider;--->onTrimMemory(I)V
+--------- beginning of system
+06-09 11:38:20.549  4824  4824 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+06-09 11:38:20.577  4824  4824 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+06-09 11:38:20.607  4824  4824 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+06-09 11:38:20.613  4824  4824 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/QueueingCryptoOperationFragment;--->onCreate(Landroid/os/Bundle;)V
+06-09 11:38:20.613  4824  4824 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/CachingCryptoOperationFragment;--->onCreate(Landroid/os/Bundle;)V
+06-09 11:38:20.613  4824  4824 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/CertifyKeyFragment;--->onCreate(Landroid/os/Bundle;)V
+06-09 11:38:20.623  4824  4824 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/CertifyKeyFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: FATAL EXCEPTION: main
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 4824
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.os.BaseBundle.getLong(BaseBundle.java:1064)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.content.Intent.getLongExtra(Intent.java:7397)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at org.sufficientlysecure.keychain.ui.CertifyKeyFragment.onActivityCreated(CertifyKeyFragment.java:81)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.support.v4.app.Fragment.performActivityCreated(Fragment.java:2355)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1451)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1759)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1827)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.dispatchStateChange(FragmentManager.java:3244)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:3200)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.support.v4.app.FragmentController.dispatchActivityCreated(FragmentController.java:195)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:597)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.support.v7.app.AppCompatActivity.onStart(AppCompatActivity.java:177)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:7165)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-09 11:38:20.624  4824  4824 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-09 11:38:21.740  4856  4856 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+06-09 11:38:21.758  4856  4856 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+06-09 11:38:32.438 31143 31143 D M_InsDal: Lcom/fsck/k9/provider/DecryptedFileProvider;--->onTrimMemory(I)V
+06-09 11:38:32.438 31143 31143 D M_InsDal: Lcom/fsck/k9/provider/AttachmentTempFileProvider;--->onTrimMemory(I)V

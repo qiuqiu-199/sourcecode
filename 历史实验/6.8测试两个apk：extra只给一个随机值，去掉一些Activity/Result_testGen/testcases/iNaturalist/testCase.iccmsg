@@ -1,0 +1,334 @@
+1	org.inaturalist.android.ObservationEditor	android.intent.action.SEND_MULTIPLE;;null;;?;;null;;boolean->from_suggestion->false,double->latitude->0.0,int->taxon_id->0,double->accuracy->0.0,Serializable->taxon_result->SerializableObj,IntegerArrayList->project_ids->0,String->photoUri->abcde,int->observation_project->0,String->id_name->abcde,int->field_id->0,boolean->choose_photo->false,int->delete_photo_index->0,boolean->return_to_observation_list->false,String->observation_json->abcde,double->longitude->0.0,ParcelableArrayList->android.intent.extra.STREAM->ParcelableArrayListObj,int->rank_level->0,boolean->take_photo->true,String->id_url->abcde,int->set_default_photo_index->0,boolean->is_custom->true,String->rank->abcde,String->species_guess->abcde,String->taxon_name->abcde,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,Serializable->project_fields->SerializableObj,String->iconic_taxon_name->abcde,
+2	org.inaturalist.android.ObservationEditor	android.intent.action.SEND;;null;;?;;null;;boolean->from_suggestion->false,double->latitude->0.0,int->taxon_id->0,double->accuracy->0.0,Serializable->taxon_result->SerializableObj,IntegerArrayList->project_ids->0,String->photoUri->abcde,int->observation_project->0,String->id_name->abcde,int->field_id->0,boolean->choose_photo->false,int->delete_photo_index->0,boolean->return_to_observation_list->false,String->observation_json->abcde,double->longitude->0.0,ParcelableArrayList->android.intent.extra.STREAM->ParcelableArrayListObj,int->rank_level->0,boolean->take_photo->true,String->id_url->abcde,int->set_default_photo_index->0,boolean->is_custom->true,String->rank->abcde,String->species_guess->abcde,String->taxon_name->abcde,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,Serializable->project_fields->SerializableObj,String->iconic_taxon_name->abcde,
+3	org.inaturalist.android.ObservationEditor	android.intent.action.SEND_MULTIPLE;;null;;?;;null;;
+4	org.inaturalist.android.ObservationEditor	null;;null;;null;;null;;
+5	org.inaturalist.android.ObservationEditor	android.intent.action.EDIT;;null;;new android.net.Uri;;null;;
+6	org.inaturalist.android.ObservationEditor	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+7	org.inaturalist.android.ObservationEditor	android.intent.action.SEND;;null;;?;;null;;
+8	org.inaturalist.android.ObservationEditor	android.intent.action.SEND_MULTIPLE;;android.intent.category.DEFAULT;;null;;image/*;;
+9	org.inaturalist.android.ObservationEditor	?;;null;;?;;null;;boolean->from_suggestion->false,double->latitude->0.0,int->taxon_id->0,double->accuracy->0.0,Serializable->taxon_result->SerializableObj,IntegerArrayList->project_ids->0,String->photoUri->abcde,int->observation_project->0,String->id_name->abcde,int->field_id->0,boolean->choose_photo->true,int->delete_photo_index->0,boolean->return_to_observation_list->true,String->observation_json->abcde,double->longitude->0.0,ParcelableArrayList->android.intent.extra.STREAM->ParcelableArrayListObj,int->rank_level->0,boolean->take_photo->false,String->id_url->abcde,int->set_default_photo_index->0,boolean->is_custom->true,String->rank->abcde,String->species_guess->abcde,String->taxon_name->abcde,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,Serializable->project_fields->SerializableObj,String->iconic_taxon_name->abcde,
+10	org.inaturalist.android.ObservationEditor	android.intent.action.INSERT;;null;;content://org.inaturalist.android.observation/observations;;null;;boolean->take_photo->false,
+11	org.inaturalist.android.ObservationEditor	android.intent.action.EDIT;;null;;null;;null;;boolean->return_to_observation_list->true,
+12	org.inaturalist.android.ObservationEditor	android.intent.action.INSERT;;null;;?;;null;;
+13	org.inaturalist.android.ObservationEditor	android.intent.action.EDIT;;null;;new android.net.Uri;;null;;String->observation_json->abcde,
+14	org.inaturalist.android.ObservationEditor	android.intent.action.INSERT;;null;;?;;null;;boolean->from_suggestion->false,double->latitude->0.0,int->taxon_id->0,double->accuracy->0.0,Serializable->taxon_result->SerializableObj,IntegerArrayList->project_ids->0,String->photoUri->abcde,int->observation_project->0,String->id_name->abcde,int->field_id->0,boolean->choose_photo->false,int->delete_photo_index->0,boolean->return_to_observation_list->true,String->observation_json->abcde,double->longitude->0.0,ParcelableArrayList->android.intent.extra.STREAM->ParcelableArrayListObj,int->rank_level->0,boolean->take_photo->true,String->id_url->abcde,int->set_default_photo_index->0,boolean->is_custom->false,String->rank->abcde,String->species_guess->abcde,String->taxon_name->abcde,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,Serializable->project_fields->SerializableObj,String->iconic_taxon_name->abcde,
+15	org.inaturalist.android.ObservationEditor	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+16	org.inaturalist.android.ObservationEditor	android.intent.action.SEND;;android.intent.category.DEFAULT;;null;;image/*;;
+17	org.inaturalist.android.ObservationEditor	?;;null;;?;;null;;
+18	org.inaturalist.android.ObservationEditor	android.intent.action.INSERT;;null;;content://org.inaturalist.android.observation/observations;;null;;String->species_guess->abcde,
+19	org.inaturalist.android.ObservationEditor	android.intent.action.INSERT;;null;;content://org.inaturalist.android.observation/observations;;null;;boolean->choose_photo->true,
+20	org.inaturalist.android.ObservationEditor	android.intent.action.INSERT;;android.intent.category.DEFAULT;;null;;vnd.android.cursor.item/vnd.google.observation;;
+21	org.inaturalist.android.ProfilePhotoViewer	null;;null;;null;;null;;String->observation->abcde,
+22	org.inaturalist.android.ProfilePhotoViewer	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+23	org.inaturalist.android.ProfilePhotoViewer	null;;null;;null;;null;;String->observation->abcde,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+24	org.inaturalist.android.ProfilePhotoViewer	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+25	org.inaturalist.android.ProfilePhotoViewer	null;;null;;null;;null;;
+26	org.inaturalist.android.OnboardingActivity	null;;null;;null;;null;;
+27	org.inaturalist.android.OnboardingActivity	null;;null;;null;;null;;boolean->login->true,
+28	org.inaturalist.android.OnboardingActivity	null;;null;;null;;null;;
+29	org.inaturalist.android.OnboardingActivity	null;;null;;null;;null;;boolean->show_skip->true,
+30	org.inaturalist.android.OnboardingActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+31	org.inaturalist.android.OnboardingActivity	null;;null;;null;;null;;boolean->login->false,boolean->show_skip->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->accountType->abcde,String->authAccount->abcde,Parcelable->com.facebook.LoginFragment:Result->ParcelableObj,
+32	org.inaturalist.android.OnboardingActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+33	org.inaturalist.android.NetworkSettings	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+34	org.inaturalist.android.NetworkSettings	null;;null;;null;;null;;
+35	org.inaturalist.android.NetworkSettings	null;;null;;null;;null;;String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+36	org.inaturalist.android.NetworkSettings	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+37	org.inaturalist.android.NetworkSettings	null;;null;;null;;null;;
+38	org.inaturalist.android.TutorialActivity	null;;null;;null;;null;;boolean->first_time->false,
+39	org.inaturalist.android.TutorialActivity	null;;null;;null;;null;;String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+40	org.inaturalist.android.TutorialActivity	null;;null;;null;;null;;
+41	org.inaturalist.android.TutorialActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+42	org.inaturalist.android.TutorialActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+43	org.inaturalist.android.LoginSignupActivity	null;;null;;null;;null;;boolean->signup->false,boolean->password_changed->true,
+44	org.inaturalist.android.LoginSignupActivity	null;;null;;null;;null;;
+45	org.inaturalist.android.LoginSignupActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+46	org.inaturalist.android.LoginSignupActivity	null;;null;;null;;null;;boolean->signup->true,int->background_id->0,
+47	org.inaturalist.android.LoginSignupActivity	null;;null;;null;;null;;boolean->signup->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->accountType->abcde,int->background_id->0,String->error->abcde,String->authAccount->abcde,Parcelable->com.facebook.LoginFragment:Result->ParcelableObj,boolean->password_changed->false,boolean->status->false,
+48	org.inaturalist.android.LoginSignupActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+49	org.inaturalist.android.MissionDetailsMapActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+50	org.inaturalist.android.MissionDetailsMapActivity	null;;null;;null;;null;;
+51	org.inaturalist.android.MissionDetailsMapActivity	null;;null;;null;;null;;String->observations->abcde,
+52	org.inaturalist.android.MissionDetailsMapActivity	null;;null;;null;;null;;String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->observations->abcde,
+53	org.inaturalist.android.MissionDetailsMapActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+54	org.inaturalist.android.TaxonSuggestionsActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+55	org.inaturalist.android.TaxonSuggestionsActivity	null;;null;;null;;null;;String->obs_photo_filename->abcde,String->observation->abcde,double->latitude->0.0,int->observation_id->0,double->longitude->0.0,Serializable->observed_on->SerializableObj,String->obs_photo_url->abcde,
+56	org.inaturalist.android.TaxonSuggestionsActivity	null;;null;;null;;null;;String->obs_photo_filename->abcde,double->latitude->0.0,int->observation_id->0,int->observation_id_internal->0,double->longitude->0.0,Serializable->observed_on->SerializableObj,String->obs_photo_url->abcde,
+57	org.inaturalist.android.TaxonSuggestionsActivity	null;;null;;null;;null;;Serializable->observation_id_internal->SerializableObj,String->observation->abcde,String->obs_photo_filename->abcde,Serializable->longitude->SerializableObj,Serializable->observation_id->SerializableObj,Serializable->latitude->SerializableObj,Serializable->observed_on->SerializableObj,String->obs_photo_url->abcde,
+58	org.inaturalist.android.TaxonSuggestionsActivity	null;;null;;null;;null;;String->observation->abcde,String->obs_photo_filename->abcde,double->latitude->0.0,int->observation_id->0,int->observation_id_internal->0,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,double->longitude->0.0,Serializable->observed_on->SerializableObj,String->obs_photo_url->abcde,Serializable->taxon_suggestions->SerializableObj,
+59	org.inaturalist.android.TaxonSuggestionsActivity	null;;null;;null;;null;;
+60	org.inaturalist.android.TaxonSuggestionsActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+61	org.inaturalist.android.ObservationSearchActivity	null;;null;;null;;null;;
+62	org.inaturalist.android.ObservationSearchActivity	null;;null;;null;;null;;
+63	org.inaturalist.android.ObservationSearchActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+64	org.inaturalist.android.ObservationSearchActivity	null;;null;;null;;null;;String->query->abcde,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,Serializable->user_search_observations_result->SerializableObj,
+65	org.inaturalist.android.ObservationSearchActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+66	org.inaturalist.android.ObservationProjectsViewer	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+67	org.inaturalist.android.ObservationProjectsViewer	null;;null;;null;;null;;Serializable->projects->SerializableObj,
+68	org.inaturalist.android.ObservationProjectsViewer	null;;null;;null;;null;;
+69	org.inaturalist.android.ObservationProjectsViewer	null;;null;;null;;null;;Serializable->projects->SerializableObj,
+70	org.inaturalist.android.ObservationProjectsViewer	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+71	org.inaturalist.android.MissionDetails	null;;null;;null;;null;;
+72	org.inaturalist.android.MissionDetails	null;;null;;null;;null;;Serializable->mission->SerializableObj,float->location_expansion->0.0,
+73	org.inaturalist.android.MissionDetails	null;;null;;null;;null;;Serializable->mission->SerializableObj,Serializable->taxon_result->SerializableObj,float->location_expansion->0.0,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,
+74	org.inaturalist.android.MissionDetails	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+75	org.inaturalist.android.MissionDetails	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+76	org.inaturalist.android.ProjectSelectorActivity	null;;null;;null;;null;;ArrayList->umbrella_project_ids->ArrayListObj,Serializable->observation_id->SerializableObj,boolean->is_confirmation->true,Serializable->project_fields->SerializableObj,ArrayList->project_id->ArrayListObj,
+77	org.inaturalist.android.ProjectSelectorActivity	null;;null;;null;;null;;String->id_url->abcde,int->taxon_id->0,int->observation_id->0,boolean->is_confirmation->true,Serializable->projects_result->SerializableObj,String->taxon_name->abcde,IntegerArrayList->umbrella_project_ids->0,IntegerArrayList->project_id->0,Serializable->project_fields->SerializableObj,int->field_id->0,String->id_name->abcde,
+78	org.inaturalist.android.ProjectSelectorActivity	null;;null;;null;;null;;
+79	org.inaturalist.android.ProjectSelectorActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+80	org.inaturalist.android.ProjectSelectorActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+81	org.inaturalist.android.ExploreFiltersActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+82	org.inaturalist.android.ExploreFiltersActivity	null;;null;;null;;null;;Serializable->all_annotations->SerializableObj,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->result->abcde,Serializable->search_filters->SerializableObj,
+83	org.inaturalist.android.ExploreFiltersActivity	null;;null;;null;;null;;Serializable->all_annotations->SerializableObj,Serializable->search_filters->SerializableObj,
+84	org.inaturalist.android.ExploreFiltersActivity	null;;null;;null;;null;;
+85	org.inaturalist.android.ExploreFiltersActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+86	org.inaturalist.android.MissionsActivity	null;;null;;null;;null;;
+87	org.inaturalist.android.MissionsActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+88	org.inaturalist.android.MissionsActivity	?;;null;;null;;null;;boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,Serializable->recommended_missions_result->SerializableObj,
+89	org.inaturalist.android.MissionsActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+90	org.inaturalist.android.MissionsActivity	null;;null;;null;;null;;
+91	org.inaturalist.android.MissionsActivity	?;;null;;null;;null;;
+92	org.inaturalist.android.ExploreActivity	explore_get_species_result;;null;;null;;null;;
+93	org.inaturalist.android.ExploreActivity	explore_get_observers_result;;null;;null;;null;;
+94	org.inaturalist.android.ExploreActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+95	org.inaturalist.android.ExploreActivity	null;;null;;null;;null;;
+96	org.inaturalist.android.ExploreActivity	null;;null;;null;;null;;
+97	org.inaturalist.android.ExploreActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+98	org.inaturalist.android.ExploreActivity	?;;null;;null;;null;;
+99	org.inaturalist.android.ExploreActivity	?;;null;;null;;null;;Serializable->results->SerializableObj,boolean->is_shared_on_app->true,int->active_tab->0,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,Serializable->search_filters->SerializableObj,
+100	org.inaturalist.android.ExploreActivity	explore_get_observations_result;;null;;null;;null;;Serializable->results->SerializableObj,boolean->is_shared_on_app->true,int->active_tab->0,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,Serializable->search_filters->SerializableObj,
+101	org.inaturalist.android.ExploreActivity	explore_get_identifiers_result;;null;;null;;null;;Serializable->results->SerializableObj,boolean->is_shared_on_app->false,int->active_tab->0,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,Serializable->search_filters->SerializableObj,
+102	org.inaturalist.android.ExploreActivity	explore_get_observers_result;;null;;null;;null;;Serializable->results->SerializableObj,boolean->is_shared_on_app->false,int->active_tab->0,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,Serializable->search_filters->SerializableObj,
+103	org.inaturalist.android.ExploreActivity	explore_get_identifiers_result;;null;;null;;null;;
+104	org.inaturalist.android.ExploreActivity	null;;null;;null;;null;;Serializable->search_filters->SerializableObj,
+105	org.inaturalist.android.ExploreActivity	null;;null;;null;;null;;int->active_tab->0,Serializable->search_filters->SerializableObj,
+106	org.inaturalist.android.ExploreActivity	explore_get_observations_result;;null;;null;;null;;
+107	org.inaturalist.android.ExploreActivity	explore_get_species_result;;null;;null;;null;;Serializable->results->SerializableObj,boolean->is_shared_on_app->false,int->active_tab->0,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,Serializable->search_filters->SerializableObj,
+108	org.inaturalist.android.LocationDetailsActivity	null;;null;;null;;null;;
+109	org.inaturalist.android.LocationDetailsActivity	null;;null;;null;;null;;boolean->read_only->false,Serializable->observation->SerializableObj,String->observation_json->abcde,
+110	org.inaturalist.android.LocationDetailsActivity	null;;null;;null;;null;;boolean->read_only->true,Serializable->observation->SerializableObj,String->observation_json->abcde,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+111	org.inaturalist.android.LocationDetailsActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+112	org.inaturalist.android.LocationDetailsActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+113	org.inaturalist.android.IdentificationActivity	null;;null;;null;;null;;Serializable->observation_id_internal->SerializableObj,String->observation->abcde,Serializable->longitude->SerializableObj,Serializable->observation_id->SerializableObj,Serializable->latitude->SerializableObj,boolean->suggest_id->false,Serializable->observed_on->SerializableObj,
+114	org.inaturalist.android.IdentificationActivity	null;;null;;null;;null;;Serializable->observation_id_internal->SerializableObj,String->obs_photo_filename->abcde,String->observation->abcde,Serializable->longitude->SerializableObj,Serializable->observation_id->SerializableObj,Serializable->latitude->SerializableObj,boolean->suggest_id->true,Serializable->observed_on->SerializableObj,String->obs_photo_url->abcde,
+115	org.inaturalist.android.IdentificationActivity	null;;null;;null;;null;;
+116	org.inaturalist.android.IdentificationActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+117	org.inaturalist.android.IdentificationActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+118	org.inaturalist.android.IdentificationActivity	null;;null;;null;;null;;String->obs_photo_filename->abcde,String->id_url->abcde,boolean->from_suggestion->true,double->latitude->0.0,int->taxon_id->0,String->id_name->abcde,String->obs_photo_url->abcde,String->observation->abcde,int->observation_id->0,int->observation_id_internal->0,String->taxon_name->abcde,boolean->suggest_id->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,double->longitude->0.0,int->rank_level->0,Serializable->observed_on->SerializableObj,String->iconic_taxon_name->abcde,
+119	org.inaturalist.android.DataQualityAssessment	?;;null;;null;;null;;Serializable->data_quality_metrics_result->SerializableObj,Serializable->observation->SerializableObj,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+120	org.inaturalist.android.DataQualityAssessment	null;;null;;null;;null;;
+121	org.inaturalist.android.DataQualityAssessment	null;;null;;null;;null;;Serializable->observation->SerializableObj,
+122	org.inaturalist.android.DataQualityAssessment	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+123	org.inaturalist.android.DataQualityAssessment	?;;null;;null;;null;;
+124	org.inaturalist.android.DataQualityAssessment	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+125	org.inaturalist.android.GuideDetails	null;;null;;null;;null;;
+126	org.inaturalist.android.GuideDetails	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+127	org.inaturalist.android.GuideDetails	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+128	org.inaturalist.android.GuideDetails	null;;null;;null;;null;;String->guide_xml_result->abcde,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,Serializable->guide->SerializableObj,
+129	org.inaturalist.android.ObservationListActivity	null;;android.intent.category.LAUNCHER;;null;;null;;
+130	org.inaturalist.android.ObservationListActivity	android.intent.action.PICK;;null;;?;;null;;
+131	org.inaturalist.android.ObservationListActivity	android.intent.action.GET_CONTENT;;null;;?;;null;;
+132	org.inaturalist.android.ObservationListActivity	user_details_result;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->false,boolean->sync_canceled->false,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->false,String->error->abcde,boolean->from_obs_editor->true,
+133	org.inaturalist.android.ObservationListActivity	android.intent.action.MAIN;;android.intent.category.LAUNCHER;;null;;null;;
+134	org.inaturalist.android.ObservationListActivity	updates_results;;null;;?;;null;;
+135	org.inaturalist.android.ObservationListActivity	?;;null;;?;;null;;
+136	org.inaturalist.android.ObservationListActivity	identifications_result;;null;;?;;null;;
+137	org.inaturalist.android.ObservationListActivity	android.intent.action.PICK;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->false,boolean->sync_canceled->false,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->true,String->error->abcde,boolean->from_obs_editor->false,
+138	org.inaturalist.android.ObservationListActivity	species_count_result;;null;;?;;null;;
+139	org.inaturalist.android.ObservationListActivity	null;;null;;null;;null;;boolean->from_obs_editor->false,
+140	org.inaturalist.android.ObservationListActivity	updates_results;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->false,boolean->sync_canceled->true,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->true,String->error->abcde,boolean->from_obs_editor->true,
+141	org.inaturalist.android.ObservationListActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+142	org.inaturalist.android.ObservationListActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+143	org.inaturalist.android.ObservationListActivity	android.net.conn.CONNECTIVITY_CHANGE;;null;;?;;null;;
+144	org.inaturalist.android.ObservationListActivity	species_count_result;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->true,boolean->sync_canceled->true,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->true,String->error->abcde,boolean->from_obs_editor->true,
+145	org.inaturalist.android.ObservationListActivity	null;;null;;null;;null;;
+146	org.inaturalist.android.ObservationListActivity	null;;null;;null;;null;;
+147	org.inaturalist.android.ObservationListActivity	user_details_result;;null;;?;;null;;
+148	org.inaturalist.android.ObservationListActivity	android.net.conn.CONNECTIVITY_CHANGE;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->false,boolean->sync_canceled->false,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->true,String->error->abcde,boolean->from_obs_editor->true,
+149	org.inaturalist.android.ObservationListActivity	identifications_result;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->false,boolean->sync_canceled->false,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->true,String->error->abcde,boolean->from_obs_editor->true,
+150	org.inaturalist.android.ObservationListActivity	android.intent.action.GET_CONTENT;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->true,boolean->sync_canceled->false,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->true,String->error->abcde,boolean->from_obs_editor->true,
+151	org.inaturalist.android.ObservationListActivity	?;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->true,boolean->sync_canceled->false,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->true,String->error->abcde,boolean->from_obs_editor->true,
+152	org.inaturalist.android.ProjectDetailsAbout	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+153	org.inaturalist.android.ProjectDetailsAbout	null;;null;;null;;null;;Serializable->project->SerializableObj,
+154	org.inaturalist.android.ProjectDetailsAbout	null;;null;;null;;null;;
+155	org.inaturalist.android.ProjectDetailsAbout	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+156	org.inaturalist.android.ProjectDetailsAbout	null;;null;;null;;null;;Serializable->project->SerializableObj,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+157	org.inaturalist.android.TaxonSearchActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+158	org.inaturalist.android.TaxonSearchActivity	null;;null;;null;;null;;String->species_guess->abcde,int->observation_id->0,int->observation_id_internal->0,boolean->suggest_id->true,String->observation_json->abcde,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->show_unknown->false,int->field_id->0,
+159	org.inaturalist.android.TaxonSearchActivity	null;;null;;null;;null;;int->observation_id->0,int->observation_id_internal->0,String->observation_json->abcde,boolean->suggest_id->true,
+160	org.inaturalist.android.TaxonSearchActivity	null;;null;;null;;null;;Serializable->observation_id_internal->SerializableObj,String->species_guess->abcde,Serializable->observation_id->SerializableObj,String->observation_json->abcde,boolean->show_unknown->false,
+161	org.inaturalist.android.TaxonSearchActivity	null;;null;;null;;null;;Serializable->field_id->SerializableObj,
+162	org.inaturalist.android.TaxonSearchActivity	null;;null;;null;;null;;
+163	org.inaturalist.android.TaxonSearchActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+164	org.inaturalist.android.TaxonSearchActivity	null;;null;;null;;null;;String->species_guess->abcde,int->observation_id->0,int->observation_id_internal->0,String->observation_json->abcde,boolean->show_unknown->false,
+165	org.inaturalist.android.TaxonMapActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+166	org.inaturalist.android.TaxonMapActivity	null;;null;;null;;null;;
+167	org.inaturalist.android.TaxonMapActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+168	org.inaturalist.android.TaxonMapActivity	null;;null;;null;;null;;CharSequence->taxon_name->abcde,double->map_latitude->0.0,Serializable->taxon_id->SerializableObj,float->map_zoom->0.0,Serializable->observation->SerializableObj,
+169	org.inaturalist.android.TaxonMapActivity	null;;null;;null;;null;;double->map_latitude->0.0,int->taxon_id->0,float->map_zoom->0.0,String->taxon_name->abcde,Serializable->observation->SerializableObj,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+170	org.inaturalist.android.ObservationPhotosViewer	null;;null;;null;;null;;Serializable->observation_id_internal->SerializableObj,boolean->is_new_observation->false,Serializable->observation_id->SerializableObj,int->current_photo_index->0,boolean->read_only->false,
+171	org.inaturalist.android.ObservationPhotosViewer	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+172	org.inaturalist.android.ObservationPhotosViewer	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+173	org.inaturalist.android.ObservationPhotosViewer	null;;null;;null;;null;;String->observation->abcde,boolean->is_new_observation->true,int->observation_id->0,int->observation_id_internal->0,int->current_photo_index->0,boolean->read_only->true,
+174	org.inaturalist.android.ObservationPhotosViewer	null;;null;;null;;null;;boolean->is_new_observation->true,int->observation_id->0,int->observation_id_internal->0,int->current_photo_index->0,boolean->read_only->true,
+175	org.inaturalist.android.ObservationPhotosViewer	null;;null;;null;;null;;String->observation->abcde,boolean->is_new_observation->false,int->observation_id->0,int->observation_id_internal->0,int->current_photo_index->0,boolean->read_only->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->is_taxon->false,
+176	org.inaturalist.android.ObservationPhotosViewer	null;;null;;null;;null;;String->observation->abcde,int->current_photo_index->0,boolean->is_taxon->false,
+177	org.inaturalist.android.ObservationPhotosViewer	null;;null;;null;;null;;String->observation->abcde,int->current_photo_index->0,
+178	org.inaturalist.android.ObservationPhotosViewer	null;;null;;null;;null;;
+179	org.inaturalist.android.ObservationPhotosViewer	null;;null;;null;;null;;Serializable->observation_id_internal->SerializableObj,boolean->is_new_observation->false,Serializable->observation_id->SerializableObj,int->current_photo_index->0,
+180	org.inaturalist.android.ProjectNews	null;;null;;null;;null;;
+181	org.inaturalist.android.ProjectNews	?;;null;;null;;null;;
+182	org.inaturalist.android.ProjectNews	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+183	org.inaturalist.android.ProjectNews	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+184	org.inaturalist.android.ProjectNews	?;;null;;null;;null;;Serializable->results->SerializableObj,Serializable->project->SerializableObj,boolean->is_user_feed->false,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,
+185	org.inaturalist.android.ProjectNews	null;;null;;null;;null;;Serializable->project->SerializableObj,
+186	org.inaturalist.android.UserProfile	?;;null;;null;;null;;
+187	org.inaturalist.android.UserProfile	species_count_result;;null;;null;;null;;Serializable->observations->SerializableObj,Serializable->identifications->SerializableObj,Serializable->user->SerializableObj,String->username->abcde,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,Serializable->species_count_result->SerializableObj,
+188	org.inaturalist.android.UserProfile	species_count_result;;null;;null;;null;;
+189	org.inaturalist.android.UserProfile	?;;null;;null;;null;;Serializable->observations->SerializableObj,Serializable->identifications->SerializableObj,Serializable->user->SerializableObj,String->username->abcde,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,Serializable->species_count_result->SerializableObj,
+190	org.inaturalist.android.UserProfile	user_details_result;;null;;null;;null;;Serializable->observations->SerializableObj,Serializable->identifications->SerializableObj,Serializable->user->SerializableObj,String->username->abcde,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,Serializable->species_count_result->SerializableObj,
+191	org.inaturalist.android.UserProfile	identifications_result;;null;;null;;null;;Serializable->observations->SerializableObj,Serializable->identifications->SerializableObj,Serializable->user->SerializableObj,String->username->abcde,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,Serializable->species_count_result->SerializableObj,
+192	org.inaturalist.android.UserProfile	user_observations_result;;null;;null;;null;;Serializable->observations->SerializableObj,Serializable->identifications->SerializableObj,Serializable->user->SerializableObj,String->username->abcde,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,Serializable->species_count_result->SerializableObj,
+193	org.inaturalist.android.UserProfile	user_observations_result;;null;;null;;null;;
+194	org.inaturalist.android.UserProfile	null;;null;;null;;null;;Serializable->user->SerializableObj,
+195	org.inaturalist.android.UserProfile	user_details_result;;null;;null;;null;;
+196	org.inaturalist.android.UserProfile	null;;null;;null;;null;;
+197	org.inaturalist.android.UserProfile	identifications_result;;null;;null;;null;;
+198	org.inaturalist.android.UserProfile	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+199	org.inaturalist.android.UserProfile	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+200	org.inaturalist.android.MissionsGridActivity	null;;null;;null;;null;;
+201	org.inaturalist.android.MissionsGridActivity	null;;null;;null;;null;;int->taxon_id->0,int->missions_expansion_level->0,String->taxon_name->abcde,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,
+202	org.inaturalist.android.MissionsGridActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+203	org.inaturalist.android.MissionsGridActivity	null;;null;;null;;null;;
+204	org.inaturalist.android.MissionsGridActivity	null;;null;;null;;null;;int->taxon_id->0,String->taxon_name->abcde,
+205	org.inaturalist.android.MissionsGridActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+206	org.inaturalist.android.GuideTaxonActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+207	org.inaturalist.android.GuideTaxonActivity	null;;null;;null;;null;;
+208	org.inaturalist.android.GuideTaxonActivity	null;;null;;null;;null;;String->taxon_id->abcde,boolean->guide_taxon->true,String->guide_id->abcde,String->guide_xml_filename->abcde,
+209	org.inaturalist.android.GuideTaxonActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+210	org.inaturalist.android.GuideTaxonActivity	null;;null;;null;;null;;boolean->download_taxon->false,Serializable->taxon_result->SerializableObj,boolean->show_add->false,String->taxon_id->abcde,boolean->guide_taxon->false,String->guide_id->abcde,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->guide_xml_filename->abcde,Serializable->taxon->SerializableObj,
+211	org.inaturalist.android.TaxonTagPhotosViewer	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+212	org.inaturalist.android.TaxonTagPhotosViewer	null;;null;;null;;null;;String->tag_value->abcde,String->guide_id->abcde,String->tag_name->abcde,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->guide_xml_filename->abcde,
+213	org.inaturalist.android.TaxonTagPhotosViewer	null;;null;;null;;null;;
+214	org.inaturalist.android.TaxonTagPhotosViewer	null;;null;;null;;null;;String->tag_value->abcde,String->guide_id->abcde,String->tag_name->abcde,String->guide_xml_filename->abcde,
+215	org.inaturalist.android.TaxonTagPhotosViewer	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+216	org.inaturalist.android.UserActivity	?;;null;;null;;null;;Serializable->results->SerializableObj,boolean->is_shared_on_app->false,String->error->abcde,
+217	org.inaturalist.android.UserActivity	updates_following_results;;null;;null;;null;;Serializable->results->SerializableObj,boolean->is_shared_on_app->false,String->error->abcde,
+218	org.inaturalist.android.UserActivity	updates_following_results;;null;;null;;null;;
+219	org.inaturalist.android.UserActivity	updates_results;;null;;null;;null;;
+220	org.inaturalist.android.UserActivity	null;;null;;null;;null;;
+221	org.inaturalist.android.UserActivity	updates_results;;null;;null;;null;;Serializable->results->SerializableObj,boolean->is_shared_on_app->false,String->error->abcde,
+222	org.inaturalist.android.UserActivity	?;;null;;null;;null;;
+223	org.inaturalist.android.UserActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+224	org.inaturalist.android.UserActivity	null;;null;;null;;null;;
+225	org.inaturalist.android.UserActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+226	org.inaturalist.android.ProfileEditor	?;;null;;?;;null;;
+227	org.inaturalist.android.ProfileEditor	null;;null;;null;;null;;
+228	org.inaturalist.android.ProfileEditor	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+229	org.inaturalist.android.ProfileEditor	null;;null;;null;;null;;
+230	org.inaturalist.android.ProfileEditor	android.media.action.IMAGE_CAPTURE;;null;;?;;null;;
+231	org.inaturalist.android.ProfileEditor	android.media.action.IMAGE_CAPTURE;;null;;?;;null;;Serializable->user->SerializableObj,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+232	org.inaturalist.android.ProfileEditor	?;;null;;?;;null;;Serializable->user->SerializableObj,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+233	org.inaturalist.android.ProfileEditor	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+234	org.inaturalist.android.About	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+235	org.inaturalist.android.About	null;;null;;null;;null;;String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+236	org.inaturalist.android.About	null;;null;;null;;null;;
+237	org.inaturalist.android.About	null;;null;;null;;null;;
+238	org.inaturalist.android.About	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+239	org.inaturalist.android.CompareSuggestionActivity	null;;null;;null;;null;;int->observation_id->0,int->observation_id_internal->0,int->suggestion_index->0,String->observation_json->abcde,
+240	org.inaturalist.android.CompareSuggestionActivity	null;;null;;null;;null;;int->observation_id_internal->0,int->suggestion_index->0,String->observation_json->abcde,
+241	org.inaturalist.android.CompareSuggestionActivity	null;;null;;null;;null;;int->observation_id_internal->0,int->suggestion_index->0,
+242	org.inaturalist.android.CompareSuggestionActivity	null;;null;;null;;null;;int->observation_id->0,int->suggestion_index->0,String->observation_json->abcde,
+243	org.inaturalist.android.CompareSuggestionActivity	null;;null;;null;;null;;int->suggestion_index->0,
+244	org.inaturalist.android.CompareSuggestionActivity	?;;null;;null;;null;;int->observation_id->0,int->observation_id_internal->0,Serializable->taxon_result->SerializableObj,int->suggestion_index->0,boolean->is_shared_on_app->false,String->observation_json->abcde,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+245	org.inaturalist.android.CompareSuggestionActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+246	org.inaturalist.android.CompareSuggestionActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+247	org.inaturalist.android.CompareSuggestionActivity	null;;null;;null;;null;;int->suggestion_index->0,String->observation_json->abcde,
+248	org.inaturalist.android.CompareSuggestionActivity	null;;null;;null;;null;;
+249	org.inaturalist.android.CompareSuggestionActivity	?;;null;;null;;null;;
+250	org.inaturalist.android.CompareSuggestionActivity	null;;null;;null;;null;;int->observation_id->0,int->observation_id_internal->0,int->suggestion_index->0,
+251	org.inaturalist.android.LocationChooserActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+252	org.inaturalist.android.LocationChooserActivity	null;;null;;null;;null;;double->latitude->0.0,double->accuracy->0.0,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,double->longitude->0.0,String->iconic_taxon_name->abcde,
+253	org.inaturalist.android.LocationChooserActivity	null;;null;;null;;null;;
+254	org.inaturalist.android.LocationChooserActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+255	org.inaturalist.android.LocationChooserActivity	null;;null;;null;;null;;Serializable->longitude->SerializableObj,double->accuracy->0.0,Serializable->latitude->SerializableObj,String->iconic_taxon_name->abcde,
+256	org.inaturalist.android.WebActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+257	org.inaturalist.android.WebActivity	null;;null;;null;;null;;String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+258	org.inaturalist.android.WebActivity	null;;null;;null;;null;;
+259	org.inaturalist.android.WebActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+260	org.inaturalist.android.SettingsActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+261	org.inaturalist.android.SettingsActivity	null;;null;;null;;null;;
+262	org.inaturalist.android.SettingsActivity	null;;null;;null;;null;;
+263	org.inaturalist.android.SettingsActivity	null;;null;;null;;null;;String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+264	org.inaturalist.android.SettingsActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+265	org.inaturalist.android.TaxonActivity	null;;null;;null;;null;;boolean->download_taxon->false,Serializable->observation->SerializableObj,Serializable->taxon->SerializableObj,
+266	org.inaturalist.android.TaxonActivity	popular_field_values_result;;null;;null;;null;;
+267	org.inaturalist.android.TaxonActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+268	org.inaturalist.android.TaxonActivity	null;;null;;null;;null;;
+269	org.inaturalist.android.TaxonActivity	null;;null;;null;;null;;Serializable->taxon->SerializableObj,
+270	org.inaturalist.android.TaxonActivity	histogram_result;;null;;null;;null;;
+271	org.inaturalist.android.TaxonActivity	null;;null;;null;;null;;boolean->download_taxon->false,Serializable->taxon->SerializableObj,
+272	org.inaturalist.android.TaxonActivity	histogram_result;;null;;null;;null;;int->taxon_suggestion->0,Serializable->taxon_observation_bounds_result->SerializableObj,boolean->download_taxon->false,Serializable->taxon_result->SerializableObj,boolean->research_grade->false,Serializable->observation->SerializableObj,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+273	org.inaturalist.android.TaxonActivity	?;;null;;null;;null;;
+274	org.inaturalist.android.TaxonActivity	null;;null;;null;;null;;int->taxon_suggestion->0,boolean->download_taxon->true,Serializable->taxon->SerializableObj,
+275	org.inaturalist.android.TaxonActivity	popular_field_values_result;;null;;null;;null;;int->taxon_suggestion->0,Serializable->taxon_observation_bounds_result->SerializableObj,boolean->download_taxon->false,Serializable->taxon_result->SerializableObj,boolean->research_grade->false,Serializable->observation->SerializableObj,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+276	org.inaturalist.android.TaxonActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+277	org.inaturalist.android.TaxonActivity	?;;null;;null;;null;;int->taxon_suggestion->0,Serializable->taxon_observation_bounds_result->SerializableObj,boolean->download_taxon->false,Serializable->taxon_result->SerializableObj,boolean->research_grade->false,Serializable->observation->SerializableObj,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+278	org.inaturalist.android.ProjectDetails	get_project_identifiers_result;;null;;null;;null;;
+279	org.inaturalist.android.ProjectDetails	get_project_identifiers_result;;null;;null;;null;;String->project->abcde,Serializable->results->SerializableObj,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,
+280	org.inaturalist.android.ProjectDetails	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+281	org.inaturalist.android.ProjectDetails	get_project_observers_result;;null;;null;;null;;String->project->abcde,Serializable->results->SerializableObj,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,
+282	org.inaturalist.android.ProjectDetails	get_project_observations_result;;null;;null;;null;;String->project->abcde,Serializable->results->SerializableObj,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,
+283	org.inaturalist.android.ProjectDetails	?;;null;;null;;null;;
+284	org.inaturalist.android.ProjectDetails	null;;null;;null;;null;;
+285	org.inaturalist.android.ProjectDetails	?;;null;;null;;null;;String->project->abcde,Serializable->results->SerializableObj,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,
+286	org.inaturalist.android.ProjectDetails	get_project_observations_result;;null;;null;;null;;
+287	org.inaturalist.android.ProjectDetails	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+288	org.inaturalist.android.ProjectDetails	get_project_species_result;;null;;null;;null;;String->project->abcde,Serializable->results->SerializableObj,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,
+289	org.inaturalist.android.ProjectDetails	get_project_observers_result;;null;;null;;null;;
+290	org.inaturalist.android.ProjectDetails	get_project_species_result;;null;;null;;null;;
+291	org.inaturalist.android.MissionsOnboardingActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+292	org.inaturalist.android.MissionsOnboardingActivity	null;;null;;null;;null;;
+293	org.inaturalist.android.MissionsOnboardingActivity	null;;null;;null;;null;;String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+294	org.inaturalist.android.MissionsOnboardingActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+295	org.inaturalist.android.MissionsOnboardingActivity	null;;null;;null;;null;;
+296	org.inaturalist.android.ObservationViewerActivity	android.intent.action.VIEW;;null;;null;;null;;boolean->show_comments->true,boolean->scroll_to_comments_bottom->true,
+297	org.inaturalist.android.ObservationViewerActivity	android.intent.action.VIEW;;null;;null;;null;;boolean->show_comments->true,
+298	org.inaturalist.android.ObservationViewerActivity	null;;null;;?;;null;;String->id_remarks->abcde,boolean->from_suggestion->false,int->taxon_id->0,boolean->scroll_to_comments_bottom->true,String->observation_json_result->abcde,Serializable->observation_result->SerializableObj,String->observation->abcde,String->species_guess->abcde,boolean->show_comments->false,String->taxon_name->abcde,boolean->read_only->false,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->reload->true,
+299	org.inaturalist.android.ObservationViewerActivity	null;;null;;null;;null;;
+300	org.inaturalist.android.ObservationViewerActivity	null;;null;;null;;null;;String->observation->abcde,boolean->read_only->false,boolean->reload->true,
+301	org.inaturalist.android.ObservationViewerActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+302	org.inaturalist.android.ObservationViewerActivity	android.intent.action.VIEW;;null;;null;;null;;
+303	org.inaturalist.android.ObservationViewerActivity	null;;null;;null;;null;;String->observation->abcde,boolean->show_comments->true,boolean->read_only->false,boolean->scroll_to_comments_bottom->false,boolean->reload->false,
+304	org.inaturalist.android.ObservationViewerActivity	null;;null;;?;;null;;
+305	org.inaturalist.android.ObservationViewerActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+306	org.inaturalist.android.NewsArticle	null;;null;;null;;null;;boolean->is_user_feed->true,Serializable->article->SerializableObj,
+307	org.inaturalist.android.NewsArticle	null;;null;;null;;null;;Serializable->is_user_feed->SerializableObj,Serializable->article->SerializableObj,
+308	org.inaturalist.android.NewsArticle	null;;null;;null;;null;;boolean->is_user_feed->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,Serializable->article->SerializableObj,
+309	org.inaturalist.android.NewsArticle	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+310	org.inaturalist.android.NewsArticle	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+311	org.inaturalist.android.NewsArticle	null;;null;;null;;null;;
+312	org.inaturalist.android.ExploreSearchActivity	null;;null;;null;;null;;
+313	org.inaturalist.android.ExploreSearchActivity	?;;null;;null;;null;;
+314	org.inaturalist.android.ExploreSearchActivity	?;;null;;null;;null;;Serializable->results->SerializableObj,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,String->error->abcde,Serializable->search_filters->SerializableObj,
+315	org.inaturalist.android.ExploreSearchActivity	null;;null;;null;;null;;Serializable->search_filters->SerializableObj,
+316	org.inaturalist.android.ExploreSearchActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+317	org.inaturalist.android.ExploreSearchActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+318	org.inaturalist.android.ItemSearchActivity	null;;null;;null;;null;;
+319	org.inaturalist.android.ItemSearchActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+320	org.inaturalist.android.ItemSearchActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+321	org.inaturalist.android.ItemSearchActivity	null;;null;;null;;null;;String->search_hint_text->abcde,String->search_url->abcde,String->result_viewer_activity_param_name->abcde,Serializable->result_viewer_activity->SerializableObj,
+322	org.inaturalist.android.ItemSearchActivity	null;;null;;null;;null;;String->search_hint_text->abcde,String->search_url->abcde,boolean->return_result->false,
+323	org.inaturalist.android.ItemSearchActivity	null;;null;;null;;null;;String->search_hint_text->abcde,boolean->is_user->true,String->search_url->abcde,String->result_viewer_activity_param_name->abcde,boolean->return_result->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,Serializable->result_viewer_activity->SerializableObj,
+324	org.inaturalist.android.ItemSearchActivity	null;;null;;null;;null;;String->search_hint_text->abcde,boolean->is_user->false,String->search_url->abcde,boolean->return_result->false,
+325	org.inaturalist.android.GuidesActivity	null;;null;;null;;null;;
+326	org.inaturalist.android.GuidesActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+327	org.inaturalist.android.GuidesActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+328	org.inaturalist.android.GuidesActivity	null;;null;;null;;null;;
+329	org.inaturalist.android.GuidesActivity	null;;null;;null;;null;;String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+330	org.inaturalist.android.ProjectsActivity	null;;null;;null;;null;;
+331	org.inaturalist.android.ProjectsActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+332	org.inaturalist.android.ProjectsActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+333	org.inaturalist.android.ProjectsActivity	null;;null;;null;;null;;String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,
+334	org.inaturalist.android.ProjectsActivity	null;;null;;null;;null;;

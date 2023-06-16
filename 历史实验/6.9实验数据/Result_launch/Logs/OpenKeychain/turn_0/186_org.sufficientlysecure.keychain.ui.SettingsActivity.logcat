@@ -1,0 +1,37 @@
+--------- beginning of main
+06-09 12:30:24.105 31143 31143 D M_InsDal: Lcom/fsck/k9/provider/DecryptedFileProvider;--->onTrimMemory(I)V
+06-09 12:30:24.105 31143 31143 D M_InsDal: Lcom/fsck/k9/provider/AttachmentTempFileProvider;--->onTrimMemory(I)V
+--------- beginning of system
+06-09 12:30:31.399 16152 16152 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+06-09 12:30:31.423 16152 16152 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+06-09 12:30:31.438 16152 16152 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/SettingsActivity;--->onBuildHeaders(Ljava/util/List;)V
+06-09 12:30:31.438 16152 16152 D M_InsDal: Lorg/sufficientlysecure/keychain/compatibility/AppCompatPreferenceActivity;--->onTitleChanged(Ljava/lang/CharSequence;I)V
+--------- beginning of crash
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: FATAL EXCEPTION: main
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 16152
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.SettingsActivity}: java.lang.RuntimeException: Subclasses of PreferenceActivity must override isValidFragment(String) to verify that the Fragment class is valid! org.sufficientlysecure.keychain.ui.SettingsActivity has not checked if fragment abcde is valid.
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: Caused by: java.lang.RuntimeException: Subclasses of PreferenceActivity must override isValidFragment(String) to verify that the Fragment class is valid! org.sufficientlysecure.keychain.ui.SettingsActivity has not checked if fragment abcde is valid.
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.preference.PreferenceActivity.isValidFragment(PreferenceActivity.java:973)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at org.sufficientlysecure.keychain.ui.SettingsActivity.isValidFragment(SettingsActivity.java:636)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.preference.PreferenceActivity.switchToHeaderInner(PreferenceActivity.java:1249)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.preference.PreferenceActivity.switchToHeader(PreferenceActivity.java:1286)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.preference.PreferenceActivity.onCreate(PreferenceActivity.java:611)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at org.sufficientlysecure.keychain.compatibility.AppCompatPreferenceActivity.onCreate(AppCompatPreferenceActivity.java:45)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at org.sufficientlysecure.keychain.ui.SettingsActivity.onCreate(SettingsActivity.java:79)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-09 12:30:31.439 16152 16152 E AndroidRuntime: 	... 11 more

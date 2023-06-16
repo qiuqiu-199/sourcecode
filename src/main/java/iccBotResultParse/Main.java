@@ -1,5 +1,6 @@
 package iccBotResultParse;
 
+import instrument.Instrumentor;
 import model.*;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -43,32 +44,37 @@ public class Main {
             ManifestParser manifestParser = new ManifestParser(Global.v().appPath + appName);
             manifestParser.parse(true);  //这个true，对应fax里面的
 
+            Instrumentor instrumentor = new Instrumentor();
+            instrumentor.instrument();
 
-            Map<String, Set<ICCMsg>> activity2receivedICCMap = new HashMap<>(); //存储发送给activity的iccmsg
+
+
+//            Map<String, Set<ICCMsg>> activity2receivedICCMap = new HashMap<>(); //存储发送给activity的iccmsg
 
 //            //从CTG.xml解析intent
 //            resolveIntentFromCTGfile(activity2receivedICCMap);
 //            //从manifest文件里的intentfile解析组件间通信
 //            resolveIntentFromManifest(activity2receivedICCMap);
-//
 //            //从componentInfo/xml文件里解析intent
 //            resolveIntentFromReceivedIntent(activity2receivedICCMap);
 //
-            TestcaseGenerator testcaseGenerator = new TestcaseGenerator(activity2receivedICCMap);
-            testcaseGenerator.generateTestApp();
+//            TestcaseGenerator testcaseGenerator = new TestcaseGenerator(activity2receivedICCMap);
+//            testcaseGenerator.generateTestApp();
 
             long endtime = System.currentTimeMillis();
             System.out.println("\t\t" + Global.v().getAppModel().appName + "生成测试用例所花时间：" + (endtime - currentstarttime) / 1000 + "秒");
             currentstarttime = endtime;
         }
 
-        System.out.println("==总共花费时间：" + (System.currentTimeMillis() - totalstarttime));
+        System.out.println("==总共花费时间：" + (System.currentTimeMillis() - totalstarttime) / 1000 + "秒");
 
         System.out.println("finish!");
     }
 
     public static void resolveIntentFromManifest(Map<String, Set<ICCMsg>> activity2receivedICCMap) {
         Set<String> activityNameSet = Global.v().getAppModel().activityMap.keySet();
+
+        //这个方法已经排除掉了那些在manifest文件里声明但并不属于应用的Activity
 
         for (String activityName : activityNameSet) {
             ActivityModel activityModel = (ActivityModel) Global.v().getAppModel().activityMap.get(activityName);
@@ -149,6 +155,9 @@ public class Main {
                 Element destinationElement = destinationIterator.next();
                 String desActName = destinationElement.attributeValue("name");
 
+                //排除掉那些在manifest文件里声明但并不属于应用的Activity
+                if(!Global.v().getAppModel().activityMap.containsKey(desActName)) continue;
+
                 //TODO CTG.xml的隐式intent要记得向下怎么处理
 //                if(destinationElement.attributeValue("desType").equals("Activity") && ConstantUtils.activitySet.contains(destinationElement.getName())) {
                 if (Global.v().getAppModel().activityMap.keySet().contains(destinationElement.attributeValue("name"))) {
@@ -228,6 +237,10 @@ public class Main {
 
             Element componentElement = rootIterator.next();
             String activityName = componentElement.attributeValue("name");
+
+            //排除掉那些在manifest文件里声明但并不属于应用的Activity
+            if(!Global.v().getAppModel().activityMap.containsKey(activityName)) continue;
+
             Iterator<Element> componentIterator = componentElement.elementIterator();
 
             if (!componentElement.attributeValue("type").equals("Activity")) continue;

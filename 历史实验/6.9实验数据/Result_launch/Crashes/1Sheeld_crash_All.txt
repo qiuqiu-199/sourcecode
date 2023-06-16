@@ -1,0 +1,465 @@
+BugInfo:
+hash:-261242173
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.integreight.onesheeld/com.integreight.onesheeld.plugin.condition.ConditionActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.integreight.onesheeld.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.integreight.onesheeld.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.Bundle.getBundle(Bundle.java:917)
+	at android.content.Intent.getBundleExtra(Intent.java:7715)
+	at com.integreight.onesheeld.plugin.condition.ConditionActivity.onCreate(ConditionActivity.java:61)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+2	com.integreight.onesheeld.plugin.condition.ConditionActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1711227716
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.integreight.onesheeld/com.integreight.onesheeld.Tutorial}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.integreight.onesheeld.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.integreight.onesheeld.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:857)
+	at com.integreight.onesheeld.Tutorial.onCreate(Tutorial.java:60)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.integreight.onesheeld.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.integreight.onesheeld.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/base.apk"],nativeLibraryDirectories=[/data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/lib/x86, /data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/base.apk!/lib/x86, /system/lib, /system/vendor/lib]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 30 more
+
+ICC Msgs:
+28	com.integreight.onesheeld.Tutorial	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:657318245
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.integreight.onesheeld/com.integreight.onesheeld.MainActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.integreight.onesheeld.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.integreight.onesheeld.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at android.content.Intent.getStringExtra(Intent.java:7445)
+	at com.integreight.onesheeld.MainActivity.handleNotificationWithUrlIntent(MainActivity.java:924)
+	at com.integreight.onesheeld.MainActivity.onCreate(MainActivity.java:102)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.integreight.onesheeld.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.integreight.onesheeld.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/base.apk"],nativeLibraryDirectories=[/data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/lib/x86, /data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/base.apk!/lib/x86, /system/lib, /system/vendor/lib]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 32 more
+
+ICC Msgs:
+10	com.integreight.onesheeld.MainActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-674168084
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.integreight.onesheeld/com.integreight.onesheeld.shields.controller.utils.NfcUtils}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.integreight.onesheeld.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.integreight.onesheeld.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at com.integreight.onesheeld.shields.controller.utils.NfcUtils.onCreate(NfcUtils.java:45)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.integreight.onesheeld.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 24 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.integreight.onesheeld.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/base.apk"],nativeLibraryDirectories=[/data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/lib/x86, /data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/base.apk!/lib/x86, /system/lib, /system/vendor/lib]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 33 more
+
+ICC Msgs:
+42	com.integreight.onesheeld.shields.controller.utils.NfcUtils	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1705960470
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.integreight.onesheeld/com.integreight.onesheeld.plugin.action.ActionActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.integreight.onesheeld.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.integreight.onesheeld.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.Bundle.getBundle(Bundle.java:917)
+	at android.content.Intent.getBundleExtra(Intent.java:7715)
+	at com.integreight.onesheeld.plugin.action.ActionActivity.onCreate(ActionActivity.java:64)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.integreight.onesheeld.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.integreight.onesheeld.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/base.apk"],nativeLibraryDirectories=[/data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/lib/x86, /data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/base.apk!/lib/x86, /system/lib, /system/vendor/lib]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+25	com.integreight.onesheeld.plugin.action.ActionActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1592973868
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.integreight.onesheeld/com.integreight.onesheeld.plugin.action.ActionActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.integreight.onesheeld.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.integreight.onesheeld.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.Bundle.getBundle(Bundle.java:917)
+	at android.content.Intent.getBundleExtra(Intent.java:7715)
+	at com.integreight.onesheeld.plugin.action.ActionActivity.onCreate(ActionActivity.java:64)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+21	com.integreight.onesheeld.plugin.action.ActionActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:539664237
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.integreight.onesheeld/com.integreight.onesheeld.plugin.condition.ConditionActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.integreight.onesheeld.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.integreight.onesheeld.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.Bundle.getBundle(Bundle.java:917)
+	at android.content.Intent.getBundleExtra(Intent.java:7715)
+	at com.integreight.onesheeld.plugin.condition.ConditionActivity.onCreate(ConditionActivity.java:61)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.integreight.onesheeld.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.integreight.onesheeld.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/base.apk"],nativeLibraryDirectories=[/data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/lib/x86, /data/app/com.integreight.onesheeld-z_fi_SEibxyuWoWLhKiRww==/base.apk!/lib/x86, /system/lib, /system/vendor/lib]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+6	com.integreight.onesheeld.plugin.condition.ConditionActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-965427851
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.integreight.onesheeld/com.integreight.onesheeld.MainActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.integreight.onesheeld.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.integreight.onesheeld.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at android.content.Intent.getStringExtra(Intent.java:7445)
+	at com.integreight.onesheeld.MainActivity.handleNotificationWithUrlIntent(MainActivity.java:924)
+	at com.integreight.onesheeld.MainActivity.onCreate(MainActivity.java:102)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+15	com.integreight.onesheeld.MainActivity	android.nfc.action.TECH_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,String->url->abcde,
+
+19	com.integreight.onesheeld.MainActivity	android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,String->url->abcde,
+
+14	com.integreight.onesheeld.MainActivity	?;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,String->url->abcde,
+
+17	com.integreight.onesheeld.MainActivity	android.nfc.action.NDEF_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,String->url->abcde,
+
+12	com.integreight.onesheeld.MainActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1180255112
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.integreight.onesheeld/com.integreight.onesheeld.shields.controller.utils.NfcUtils}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.integreight.onesheeld.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.integreight.onesheeld.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at com.integreight.onesheeld.shields.controller.utils.NfcUtils.onCreate(NfcUtils.java:45)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+35	com.integreight.onesheeld.shields.controller.utils.NfcUtils	android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,
+
+37	com.integreight.onesheeld.shields.controller.utils.NfcUtils	android.nfc.action.NDEF_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,
+
+33	com.integreight.onesheeld.shields.controller.utils.NfcUtils	android.nfc.action.TECH_DISCOVERED;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,
+
+31	com.integreight.onesheeld.shields.controller.utils.NfcUtils	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+43	com.integreight.onesheeld.shields.controller.utils.NfcUtils	?;;null;;null;;null;;Parcelable->android.nfc.extra.TAG->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1533688100
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.integreight.onesheeld/com.integreight.onesheeld.Tutorial}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.integreight.onesheeld.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.integreight.onesheeld.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:857)
+	at com.integreight.onesheeld.Tutorial.onCreate(Tutorial.java:60)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+30	com.integreight.onesheeld.Tutorial	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+

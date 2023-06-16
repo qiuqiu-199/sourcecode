@@ -1,0 +1,8 @@
+--------- beginning of main
+06-08 22:17:44.789 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;---><init>()V
+06-08 22:17:44.789 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver;---><init>()V
+06-08 22:17:44.789 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;--->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+06-08 22:17:44.789 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver;--->shouldRunNetworkTask(Ljava/lang/String;Landroid/content/Context;)Z
+06-08 22:17:44.789 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->getCurrent(Landroid/content/Context;)Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;
+06-08 22:17:44.789 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->isLoggedIn()Z
+--------- beginning of system

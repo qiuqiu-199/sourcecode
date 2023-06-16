@@ -1,0 +1,175 @@
+final class kotlinx.coroutines.test.TestCoroutineContext$Dispatcher extends kotlinx.coroutines.EventLoop implements kotlinx.coroutines.Delay
+{
+    final kotlinx.coroutines.test.TestCoroutineContext this$0;
+
+    public void <init>(kotlinx.coroutines.test.TestCoroutineContext)
+    {
+        kotlinx.coroutines.test.TestCoroutineContext$Dispatcher r0;
+        kotlinx.coroutines.test.TestCoroutineContext $r1;
+        kotlinx.coroutines.EventLoop $r2;
+
+        r0 := @this: kotlinx.coroutines.test.TestCoroutineContext$Dispatcher;
+
+        $r1 := @parameter0: kotlinx.coroutines.test.TestCoroutineContext;
+
+        r0.<kotlinx.coroutines.test.TestCoroutineContext$Dispatcher: kotlinx.coroutines.test.TestCoroutineContext this$0> = $r1;
+
+        specialinvoke r0.<kotlinx.coroutines.EventLoop: void <init>()>();
+
+        $r2 = (kotlinx.coroutines.EventLoop) r0;
+
+        staticinvoke <kotlinx.coroutines.EventLoop: void incrementUseCount$default(kotlinx.coroutines.EventLoop,boolean,int,java.lang.Object)>($r2, 0, 1, null);
+
+        return;
+    }
+
+    public java.lang.Object delay(long, kotlin.coroutines.Continuation)
+    {
+        kotlinx.coroutines.test.TestCoroutineContext$Dispatcher r0;
+        kotlin.coroutines.Continuation $r1;
+        java.lang.Object $r2;
+        long $l0;
+
+        r0 := @this: kotlinx.coroutines.test.TestCoroutineContext$Dispatcher;
+
+        $l0 := @parameter0: long;
+
+        $r1 := @parameter1: kotlin.coroutines.Continuation;
+
+        $r2 = staticinvoke <kotlinx.coroutines.Delay$DefaultImpls: java.lang.Object delay(kotlinx.coroutines.Delay,long,kotlin.coroutines.Continuation)>(r0, $l0, $r1);
+
+        return $r2;
+    }
+
+    public void dispatch(kotlin.coroutines.CoroutineContext, java.lang.Runnable)
+    {
+        kotlinx.coroutines.test.TestCoroutineContext$Dispatcher r0;
+        java.lang.Runnable $r1;
+        kotlin.coroutines.CoroutineContext $r2;
+        kotlinx.coroutines.test.TestCoroutineContext $r3;
+
+        r0 := @this: kotlinx.coroutines.test.TestCoroutineContext$Dispatcher;
+
+        $r2 := @parameter0: kotlin.coroutines.CoroutineContext;
+
+        $r1 := @parameter1: java.lang.Runnable;
+
+        $r3 = r0.<kotlinx.coroutines.test.TestCoroutineContext$Dispatcher: kotlinx.coroutines.test.TestCoroutineContext this$0>;
+
+        staticinvoke <kotlinx.coroutines.test.TestCoroutineContext: void access$enqueue(kotlinx.coroutines.test.TestCoroutineContext,java.lang.Runnable)>($r3, $r1);
+
+        return;
+    }
+
+    public kotlinx.coroutines.DisposableHandle invokeOnTimeout(long, java.lang.Runnable, kotlin.coroutines.CoroutineContext)
+    {
+        kotlinx.coroutines.test.TestCoroutineContext$Dispatcher r0;
+        kotlinx.coroutines.test.TimedRunnableObsolete $r1;
+        long $l0;
+        java.lang.Runnable $r2;
+        kotlin.coroutines.CoroutineContext $r3;
+        kotlinx.coroutines.test.TestCoroutineContext $r4;
+        kotlinx.coroutines.test.TestCoroutineContext$Dispatcher$invokeOnTimeout$1 $r5;
+        kotlinx.coroutines.DisposableHandle $r6;
+
+        r0 := @this: kotlinx.coroutines.test.TestCoroutineContext$Dispatcher;
+
+        $l0 := @parameter0: long;
+
+        $r2 := @parameter1: java.lang.Runnable;
+
+        $r3 := @parameter2: kotlin.coroutines.CoroutineContext;
+
+        $r4 = r0.<kotlinx.coroutines.test.TestCoroutineContext$Dispatcher: kotlinx.coroutines.test.TestCoroutineContext this$0>;
+
+        $r1 = staticinvoke <kotlinx.coroutines.test.TestCoroutineContext: kotlinx.coroutines.test.TimedRunnableObsolete access$postDelayed(kotlinx.coroutines.test.TestCoroutineContext,java.lang.Runnable,long)>($r4, $r2, $l0);
+
+        $r5 = new kotlinx.coroutines.test.TestCoroutineContext$Dispatcher$invokeOnTimeout$1;
+
+        $r4 = r0.<kotlinx.coroutines.test.TestCoroutineContext$Dispatcher: kotlinx.coroutines.test.TestCoroutineContext this$0>;
+
+        specialinvoke $r5.<kotlinx.coroutines.test.TestCoroutineContext$Dispatcher$invokeOnTimeout$1: void <init>(kotlinx.coroutines.test.TestCoroutineContext,kotlinx.coroutines.test.TimedRunnableObsolete)>($r4, $r1);
+
+        $r6 = (kotlinx.coroutines.DisposableHandle) $r5;
+
+        return $r6;
+    }
+
+    public long processNextEvent()
+    {
+        kotlinx.coroutines.test.TestCoroutineContext$Dispatcher r0;
+        long $l0;
+        kotlinx.coroutines.test.TestCoroutineContext $r1;
+
+        r0 := @this: kotlinx.coroutines.test.TestCoroutineContext$Dispatcher;
+
+        $r1 = r0.<kotlinx.coroutines.test.TestCoroutineContext$Dispatcher: kotlinx.coroutines.test.TestCoroutineContext this$0>;
+
+        $l0 = staticinvoke <kotlinx.coroutines.test.TestCoroutineContext: long access$processNextEvent(kotlinx.coroutines.test.TestCoroutineContext)>($r1);
+
+        return $l0;
+    }
+
+    public void scheduleResumeAfterDelay(long, kotlinx.coroutines.CancellableContinuation)
+    {
+        kotlinx.coroutines.test.TestCoroutineContext$Dispatcher r0;
+        long $l0;
+        kotlinx.coroutines.CancellableContinuation $r1;
+        kotlinx.coroutines.test.TestCoroutineContext $r2;
+        kotlinx.coroutines.test.TestCoroutineContext$Dispatcher$scheduleResumeAfterDelay$$inlined$Runnable$1 $r3;
+        java.lang.Runnable $r4;
+
+        r0 := @this: kotlinx.coroutines.test.TestCoroutineContext$Dispatcher;
+
+        $l0 := @parameter0: long;
+
+        $r1 := @parameter1: kotlinx.coroutines.CancellableContinuation;
+
+        $r2 = r0.<kotlinx.coroutines.test.TestCoroutineContext$Dispatcher: kotlinx.coroutines.test.TestCoroutineContext this$0>;
+
+        $r3 = new kotlinx.coroutines.test.TestCoroutineContext$Dispatcher$scheduleResumeAfterDelay$$inlined$Runnable$1;
+
+        specialinvoke $r3.<kotlinx.coroutines.test.TestCoroutineContext$Dispatcher$scheduleResumeAfterDelay$$inlined$Runnable$1: void <init>(kotlinx.coroutines.CancellableContinuation,kotlinx.coroutines.test.TestCoroutineContext$Dispatcher)>($r1, r0);
+
+        $r4 = (java.lang.Runnable) $r3;
+
+        staticinvoke <kotlinx.coroutines.test.TestCoroutineContext: kotlinx.coroutines.test.TimedRunnableObsolete access$postDelayed(kotlinx.coroutines.test.TestCoroutineContext,java.lang.Runnable,long)>($r2, $r4, $l0);
+
+        return;
+    }
+
+    public boolean shouldBeProcessedFromContext()
+    {
+        kotlinx.coroutines.test.TestCoroutineContext$Dispatcher r0;
+
+        r0 := @this: kotlinx.coroutines.test.TestCoroutineContext$Dispatcher;
+
+        return 1;
+    }
+
+    public java.lang.String toString()
+    {
+        kotlinx.coroutines.test.TestCoroutineContext$Dispatcher r0;
+        java.lang.String $r1;
+        java.lang.StringBuilder $r2;
+        kotlinx.coroutines.test.TestCoroutineContext $r3;
+
+        r0 := @this: kotlinx.coroutines.test.TestCoroutineContext$Dispatcher;
+
+        $r2 = new java.lang.StringBuilder;
+
+        specialinvoke $r2.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Dispatcher(");
+
+        $r3 = r0.<kotlinx.coroutines.test.TestCoroutineContext$Dispatcher: kotlinx.coroutines.test.TestCoroutineContext this$0>;
+
+        virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r3);
+
+        virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(41);
+
+        $r1 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        return $r1;
+    }
+}

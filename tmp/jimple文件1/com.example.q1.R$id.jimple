@@ -1,0 +1,64 @@
+public final class com.example.q1.R$id extends java.lang.Object
+{
+    public static final int FirstFragment;
+    public static final int SecondFragment;
+    public static final int action_FirstFragment_to_SecondFragment;
+    public static final int action_SecondFragment_to_FirstFragment;
+    public static final int action_settings;
+    public static final int button_first;
+    public static final int button_qiu1;
+    public static final int button_second;
+    public static final int fab;
+    public static final int nav_graph;
+    public static final int nav_host_fragment_content_main;
+    public static final int qOption;
+    public static final int textview_first;
+    public static final int textview_second;
+    public static final int toolbar;
+
+    private void <init>()
+    {
+        com.example.q1.R$id r0;
+
+        r0 := @this: com.example.q1.R$id;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void <clinit>()
+    {
+        <com.example.q1.R$id: int toolbar> = 2131231185;
+
+        <com.example.q1.R$id: int textview_second> = 2131231179;
+
+        <com.example.q1.R$id: int textview_first> = 2131231178;
+
+        <com.example.q1.R$id: int qOption> = 2131231069;
+
+        <com.example.q1.R$id: int nav_host_fragment_content_main> = 2131231028;
+
+        <com.example.q1.R$id: int nav_graph> = 2131231026;
+
+        <com.example.q1.R$id: int fab> = 2131230910;
+
+        <com.example.q1.R$id: int button_second> = 2131230827;
+
+        <com.example.q1.R$id: int button_qiu1> = 2131230826;
+
+        <com.example.q1.R$id: int button_first> = 2131230825;
+
+        <com.example.q1.R$id: int action_settings> = 2131230791;
+
+        <com.example.q1.R$id: int action_SecondFragment_to_FirstFragment> = 2131230774;
+
+        <com.example.q1.R$id: int action_FirstFragment_to_SecondFragment> = 2131230773;
+
+        <com.example.q1.R$id: int SecondFragment> = 2131230733;
+
+        <com.example.q1.R$id: int FirstFragment> = 2131230725;
+
+        return;
+    }
+}

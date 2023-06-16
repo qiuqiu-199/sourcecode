@@ -1,0 +1,156 @@
+--------- beginning of main
+--------- beginning of system
+06-09 12:37:07.850 17535 17535 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+06-09 12:37:07.866 17535 17535 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+06-09 12:37:07.870 17535 17535 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/DeleteKeyDialogActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: FATAL EXCEPTION: main
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 17535
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.DeleteKeyDialogActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.os.BaseBundle.getLongArray(BaseBundle.java:1434)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.content.Intent.getLongArrayExtra(Intent.java:7645)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at org.sufficientlysecure.keychain.ui.DeleteKeyDialogActivity.onCreate(DeleteKeyDialogActivity.java:74)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-09 12:37:07.871 17535 17535 E AndroidRuntime: 	... 11 more
+06-09 12:37:15.713 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapFolderPusher$IdleStopper;--->stopAcceptingDoneContinuation()V
+06-09 12:37:15.713 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapConnection;--->close()V
+06-09 12:37:15.713 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapFolderPusher$PushRunnable;--->reacquireWakeLockAndCleanUp()V
+06-09 12:37:15.713 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->acquire(J)V
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/K9MailLib;--->isDebug()Z
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/K9$2;--->enabled()Z
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->raiseNotification()V
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapFolderPusher$PushRunnable;--->clearStoredUntaggedResponses()V
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapFolder;--->getName()Ljava/lang/String;
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/controller/MessagingControllerPushReceiver;--->setPushActive(Ljava/lang/String;Z)V
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->getListeners()Ljava/util/Set;
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/controller/MemorizingMessagingListener;--->setPushActive(Lcom/fsck/k9/Account;Ljava/lang/String;Z)V
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/controller/MemorizingMessagingListener;--->getMemory(Lcom/fsck/k9/Account;Ljava/lang/String;)Lcom/fsck/k9/controller/MemorizingMessagingListener$Memory;
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/controller/MemorizingMessagingListener;--->getMemoryKey(Lcom/fsck/k9/Account;Ljava/lang/String;)Ljava/lang/String;
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/Account;--->getDescription()Ljava/lang/String;
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/controller/SimpleMessagingListener;--->setPushActive(Lcom/fsck/k9/Account;Ljava/lang/String;Z)V
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/controller/SimpleMessagingListener;--->setPushActive(Lcom/fsck/k9/Account;Ljava/lang/String;Z)V
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapConnection;--->close()V
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapFolder;--->getName()Ljava/lang/String;
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/controller/MessagingControllerPushReceiver;--->pushError(Ljava/lang/String;Ljava/lang/Exception;)V
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->notifyUserIfCertificateProblem(Lcom/fsck/k9/Account;Ljava/lang/Exception;Z)V
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapFolder;--->getLogId()Ljava/lang/String;
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapStore;--->getStoreConfig()Lcom/fsck/k9/mail/store/StoreConfig;
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/Account;--->toString()Ljava/lang/String;
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapFolder;--->getName()Ljava/lang/String;
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/controller/MessagingControllerPushReceiver;--->sleep(Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;J)V
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/service/SleepService;--->sleep(Landroid/content/Context;JLcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;J)V
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/service/SleepService$SleepDatum;---><init>()V
+06-09 12:37:15.714 31143 31166 D M_InsDal: Lcom/fsck/k9/service/BootReceiver;--->scheduleIntent(Landroid/content/Context;JLandroid/content/Intent;)V
+06-09 12:37:15.715 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->release()V
+06-09 12:37:15.715 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/K9MailLib;--->isDebug()Z
+06-09 12:37:15.715 31143 31166 D M_InsDal: Lcom/fsck/k9/K9$2;--->enabled()Z
+06-09 12:37:15.715 31143 31166 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->cancelNotification()V
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/service/BootReceiver;---><init>()V
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/service/CoreReceiver;---><init>()V
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/service/CoreReceiver;--->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/service/CoreReceiver;--->getWakeLock(Landroid/content/Context;)Ljava/lang/Integer;
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager;--->getPowerManager(Landroid/content/Context;)Lcom/fsck/k9/mail/power/TracingPowerManager;
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager;--->newWakeLock(ILjava/lang/String;)Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;---><init>(Lcom/fsck/k9/mail/power/TracingPowerManager;ILjava/lang/String;)V
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/K9MailLib;--->isDebug()Z
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/K9$2;--->enabled()Z
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->setReferenceCounted(Z)V
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->acquire(J)V
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/K9MailLib;--->isDebug()Z
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/K9$2;--->enabled()Z
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->raiseNotification()V
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/service/BootReceiver;--->receive(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/Integer;)Ljava/lang/Integer;
+06-09 12:37:15.715 31143 31143 D M_InsDal: Lcom/fsck/k9/service/BootReceiver;--->buildPendingIntent(Landroid/content/Context;Landroid/content/Intent;)Landroid/app/PendingIntent;
+06-09 12:37:15.716 31143 31143 D M_InsDal: Lcom/fsck/k9/helper/K9AlarmManager;--->getAlarmManager(Landroid/content/Context;)Lcom/fsck/k9/helper/K9AlarmManager;
+06-09 12:37:15.716 31143 31143 D M_InsDal: Lcom/fsck/k9/power/DozeChecker;---><init>(Landroid/content/Context;)V
+06-09 12:37:15.716 31143 31143 D M_InsDal: Lcom/fsck/k9/helper/K9AlarmManager;---><init>(Landroid/app/AlarmManager;Lcom/fsck/k9/power/DozeChecker;)V
+06-09 12:37:15.716 31143 31143 D M_InsDal: Lcom/fsck/k9/helper/K9AlarmManager;--->set(IJLandroid/app/PendingIntent;)V
+06-09 12:37:15.716 31143 31143 D M_InsDal: Lcom/fsck/k9/power/DozeChecker;--->isDeviceIdleModeSupported()Z
+06-09 12:37:15.716 31143 31143 D M_InsDal: Lcom/fsck/k9/power/DozeChecker;--->isAppWhitelisted()Z
+06-09 12:37:15.716 31143 31143 D M_InsDal: Lcom/fsck/k9/service/CoreReceiver;--->releaseWakeLock(Ljava/lang/Integer;)V
+06-09 12:37:15.716 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->release()V
+06-09 12:37:15.716 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/K9MailLib;--->isDebug()Z
+06-09 12:37:15.716 31143 31143 D M_InsDal: Lcom/fsck/k9/K9$2;--->enabled()Z
+06-09 12:37:15.716 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->cancelNotification()V
+06-09 12:37:15.746 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapFolderPusher$IdleStopper;--->stopAcceptingDoneContinuation()V
+06-09 12:37:15.746 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapConnection;--->close()V
+06-09 12:37:15.747 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapFolderPusher$PushRunnable;--->reacquireWakeLockAndCleanUp()V
+06-09 12:37:15.747 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->acquire(J)V
+06-09 12:37:15.747 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/K9MailLib;--->isDebug()Z
+06-09 12:37:15.747 31143 31165 D M_InsDal: Lcom/fsck/k9/K9$2;--->enabled()Z
+06-09 12:37:15.747 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->raiseNotification()V
+06-09 12:37:15.747 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapFolderPusher$PushRunnable;--->clearStoredUntaggedResponses()V
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapFolder;--->getName()Ljava/lang/String;
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/controller/MessagingControllerPushReceiver;--->setPushActive(Ljava/lang/String;Z)V
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->getListeners()Ljava/util/Set;
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/controller/MemorizingMessagingListener;--->setPushActive(Lcom/fsck/k9/Account;Ljava/lang/String;Z)V
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/controller/MemorizingMessagingListener;--->getMemory(Lcom/fsck/k9/Account;Ljava/lang/String;)Lcom/fsck/k9/controller/MemorizingMessagingListener$Memory;
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/controller/MemorizingMessagingListener;--->getMemoryKey(Lcom/fsck/k9/Account;Ljava/lang/String;)Ljava/lang/String;
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/Account;--->getDescription()Ljava/lang/String;
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/controller/SimpleMessagingListener;--->setPushActive(Lcom/fsck/k9/Account;Ljava/lang/String;Z)V
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/controller/SimpleMessagingListener;--->setPushActive(Lcom/fsck/k9/Account;Ljava/lang/String;Z)V
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapConnection;--->close()V
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapFolder;--->getName()Ljava/lang/String;
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/controller/MessagingControllerPushReceiver;--->pushError(Ljava/lang/String;Ljava/lang/Exception;)V
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->notifyUserIfCertificateProblem(Lcom/fsck/k9/Account;Ljava/lang/Exception;Z)V
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapFolder;--->getLogId()Ljava/lang/String;
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapStore;--->getStoreConfig()Lcom/fsck/k9/mail/store/StoreConfig;
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/Account;--->toString()Ljava/lang/String;
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/store/imap/ImapFolder;--->getName()Ljava/lang/String;
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/controller/MessagingControllerPushReceiver;--->sleep(Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;J)V
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/service/SleepService;--->sleep(Landroid/content/Context;JLcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;J)V
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/service/SleepService$SleepDatum;---><init>()V
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/service/BootReceiver;--->scheduleIntent(Landroid/content/Context;JLandroid/content/Intent;)V
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->release()V
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/K9MailLib;--->isDebug()Z
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/K9$2;--->enabled()Z
+06-09 12:37:15.748 31143 31165 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->cancelNotification()V
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/service/BootReceiver;---><init>()V
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/service/CoreReceiver;---><init>()V
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/service/CoreReceiver;--->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/service/CoreReceiver;--->getWakeLock(Landroid/content/Context;)Ljava/lang/Integer;
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager;--->getPowerManager(Landroid/content/Context;)Lcom/fsck/k9/mail/power/TracingPowerManager;
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager;--->newWakeLock(ILjava/lang/String;)Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;---><init>(Lcom/fsck/k9/mail/power/TracingPowerManager;ILjava/lang/String;)V
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/K9MailLib;--->isDebug()Z
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/K9$2;--->enabled()Z
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->setReferenceCounted(Z)V
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->acquire(J)V
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/K9MailLib;--->isDebug()Z
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/K9$2;--->enabled()Z
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->raiseNotification()V
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/service/BootReceiver;--->receive(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/Integer;)Ljava/lang/Integer;
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/service/BootReceiver;--->buildPendingIntent(Landroid/content/Context;Landroid/content/Intent;)Landroid/app/PendingIntent;
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/helper/K9AlarmManager;--->getAlarmManager(Landroid/content/Context;)Lcom/fsck/k9/helper/K9AlarmManager;
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/power/DozeChecker;---><init>(Landroid/content/Context;)V
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/helper/K9AlarmManager;---><init>(Landroid/app/AlarmManager;Lcom/fsck/k9/power/DozeChecker;)V
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/helper/K9AlarmManager;--->set(IJLandroid/app/PendingIntent;)V
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/power/DozeChecker;--->isDeviceIdleModeSupported()Z
+06-09 12:37:15.749 31143 31143 D M_InsDal: Lcom/fsck/k9/power/DozeChecker;--->isAppWhitelisted()Z
+06-09 12:37:15.750 31143 31143 D M_InsDal: Lcom/fsck/k9/service/CoreReceiver;--->releaseWakeLock(Ljava/lang/Integer;)V
+06-09 12:37:15.750 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->release()V
+06-09 12:37:15.750 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/K9MailLib;--->isDebug()Z
+06-09 12:37:15.750 31143 31143 D M_InsDal: Lcom/fsck/k9/K9$2;--->enabled()Z
+06-09 12:37:15.750 31143 31143 D M_InsDal: Lcom/fsck/k9/mail/power/TracingPowerManager$TracingWakeLock;--->cancelNotification()V

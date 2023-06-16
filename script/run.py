@@ -78,13 +78,13 @@ if __name__ == '__main__':
     # exit("zant")
 
     # 启动测试
-    # launcher = ActivityLauncher(testcase_dir, launch_dir)
-    # launcher.launchAct()
-    # launcher.getLaunchedAct()  # qiu：根据上一行的结果文件，写入Result_launch目录下的isLaunched.txt和successACT.txt中
+    launcher = ActivityLauncher(testcase_dir, launch_dir)
+    launcher.launchAct()
+    launcher.getLaunchedAct()  # qiu：根据上一行的结果文件，写入Result_launch目录下的isLaunched.txt和successACT.txt中
 
     # 计算一些数据
     # activity启动成功率、intent有效率
-    # data_process()
+    data_process()
 
     # [Detect Crashes for Fax Launching]
     # 本模块的流程：查看`\Result_launch\Logs\K9Mail\turn_0`目录下的.logcat文件，将启动activity时发生了崩溃的log 和对应的启动当前activity的iccmsg记录到字典中，

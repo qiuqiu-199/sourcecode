@@ -1,0 +1,53 @@
+public class com.example.q1.SecondActivity extends android.app.Activity
+{
+
+    public void <init>()
+    {
+        com.example.q1.SecondActivity r0;
+
+        r0 := @this: com.example.q1.SecondActivity;
+
+        specialinvoke r0.<android.app.Activity: void <init>()>();
+
+        return;
+    }
+
+    protected void onCreate(android.os.Bundle)
+    {
+        com.example.q1.SecondActivity r0;
+        com.example.q1.SecondActivity$1 $r1;
+        android.os.Bundle $r2;
+        android.content.Intent $r3;
+        java.lang.String $r4, $r5;
+        android.view.View $r6;
+        android.widget.Button $r7;
+
+        r0 := @this: com.example.q1.SecondActivity;
+
+        $r2 := @parameter0: android.os.Bundle;
+
+        specialinvoke r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r2);
+
+        virtualinvoke r0.<com.example.q1.SecondActivity: void setContentView(int)>(2131427428);
+
+        $r3 = virtualinvoke r0.<com.example.q1.SecondActivity: android.content.Intent getIntent()>();
+
+        $r4 = virtualinvoke $r3.<android.content.Intent: java.lang.String getAction()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r4);
+
+        $r5 = virtualinvoke $r3.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("firstIntent");
+
+        $r6 = virtualinvoke r0.<com.example.q1.SecondActivity: android.view.View findViewById(int)>(2131230826);
+
+        $r7 = (android.widget.Button) $r6;
+
+        $r1 = new com.example.q1.SecondActivity$1;
+
+        specialinvoke $r1.<com.example.q1.SecondActivity$1: void <init>(com.example.q1.SecondActivity,java.lang.String,java.lang.String)>(r0, $r4, $r5);
+
+        virtualinvoke $r7.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r1);
+
+        return;
+    }
+}

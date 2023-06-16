@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
+import shutil
 import subprocess
 import time
 import os,sys
 
-class TimeoutError(Exception):
-	pass
 def executeCmd(cmd, timeout = 60):
 	#pass
 	s = subprocess.Popen(cmd, shell = True)
@@ -24,18 +23,12 @@ def executeCmd(cmd, timeout = 60):
 		time.sleep(0.1)
 	return True	
 
-
-def readFromFile(fn):
-	f = open(fn, "r")
-	lines = f.readlines()
-	f.close()
-	return lines
-
-def write2File(fn, lines):
-	fw = open(fn, "w")
-	for line in lines:
-		fw.write(line.strip()+"\n")
-	fw.close()
+#
+# def copyFile(old_path,new_path):
+# 	for ipath in os.listdir(old_path):
+# 		full_path = os.path.join(old_path,ipath)
+# 		if(os.path.isfile(full_path)):
+# 			shutil.copy
 
 
 

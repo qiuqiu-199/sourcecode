@@ -1,0 +1,31 @@
+public final class com.example.q1.R$style extends java.lang.Object
+{
+    public static final int Theme_Q1;
+    public static final int Theme_Q1_AppBarOverlay;
+    public static final int Theme_Q1_NoActionBar;
+    public static final int Theme_Q1_PopupOverlay;
+
+    private void <init>()
+    {
+        com.example.q1.R$style r0;
+
+        r0 := @this: com.example.q1.R$style;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void <clinit>()
+    {
+        <com.example.q1.R$style: int Theme_Q1_PopupOverlay> = 2131821120;
+
+        <com.example.q1.R$style: int Theme_Q1_NoActionBar> = 2131821119;
+
+        <com.example.q1.R$style: int Theme_Q1_AppBarOverlay> = 2131821118;
+
+        <com.example.q1.R$style: int Theme_Q1> = 2131821117;
+
+        return;
+    }
+}

@@ -1,0 +1,109 @@
+public final class com.example.q1.databinding.ContentMainBinding extends java.lang.Object implements androidx.viewbinding.ViewBinding
+{
+    private final androidx.constraintlayout.widget.ConstraintLayout rootView;
+
+    private void <init>(androidx.constraintlayout.widget.ConstraintLayout)
+    {
+        com.example.q1.databinding.ContentMainBinding r0;
+        androidx.constraintlayout.widget.ConstraintLayout $r1;
+
+        r0 := @this: com.example.q1.databinding.ContentMainBinding;
+
+        $r1 := @parameter0: androidx.constraintlayout.widget.ConstraintLayout;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        r0.<com.example.q1.databinding.ContentMainBinding: androidx.constraintlayout.widget.ConstraintLayout rootView> = $r1;
+
+        return;
+    }
+
+    public static com.example.q1.databinding.ContentMainBinding bind(android.view.View)
+    {
+        android.view.View $r0;
+        com.example.q1.databinding.ContentMainBinding $r1;
+        androidx.constraintlayout.widget.ConstraintLayout $r2;
+        java.lang.NullPointerException $r3;
+
+        $r0 := @parameter0: android.view.View;
+
+        if $r0 == null goto label1;
+
+        $r1 = new com.example.q1.databinding.ContentMainBinding;
+
+        $r2 = (androidx.constraintlayout.widget.ConstraintLayout) $r0;
+
+        specialinvoke $r1.<com.example.q1.databinding.ContentMainBinding: void <init>(androidx.constraintlayout.widget.ConstraintLayout)>($r2);
+
+        return $r1;
+
+     label1:
+        $r3 = new java.lang.NullPointerException;
+
+        specialinvoke $r3.<java.lang.NullPointerException: void <init>(java.lang.String)>("rootView");
+
+        throw $r3;
+    }
+
+    public static com.example.q1.databinding.ContentMainBinding inflate(android.view.LayoutInflater)
+    {
+        com.example.q1.databinding.ContentMainBinding $r0;
+        android.view.LayoutInflater $r1;
+
+        $r1 := @parameter0: android.view.LayoutInflater;
+
+        $r0 = staticinvoke <com.example.q1.databinding.ContentMainBinding: com.example.q1.databinding.ContentMainBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean)>($r1, null, 0);
+
+        return $r0;
+    }
+
+    public static com.example.q1.databinding.ContentMainBinding inflate(android.view.LayoutInflater, android.view.ViewGroup, boolean)
+    {
+        android.view.ViewGroup $r0;
+        boolean $z0;
+        android.view.LayoutInflater $r1;
+        android.view.View $r2;
+        com.example.q1.databinding.ContentMainBinding $r3;
+
+        $r1 := @parameter0: android.view.LayoutInflater;
+
+        $r0 := @parameter1: android.view.ViewGroup;
+
+        $z0 := @parameter2: boolean;
+
+        $r2 = virtualinvoke $r1.<android.view.LayoutInflater: android.view.View inflate(int,android.view.ViewGroup,boolean)>(2131427357, $r0, 0);
+
+        if $z0 == 0 goto label1;
+
+        virtualinvoke $r0.<android.view.ViewGroup: void addView(android.view.View)>($r2);
+
+     label1:
+        $r3 = staticinvoke <com.example.q1.databinding.ContentMainBinding: com.example.q1.databinding.ContentMainBinding bind(android.view.View)>($r2);
+
+        return $r3;
+    }
+
+    public volatile android.view.View getRoot()
+    {
+        com.example.q1.databinding.ContentMainBinding r0;
+        androidx.constraintlayout.widget.ConstraintLayout $r1;
+
+        r0 := @this: com.example.q1.databinding.ContentMainBinding;
+
+        $r1 = virtualinvoke r0.<com.example.q1.databinding.ContentMainBinding: androidx.constraintlayout.widget.ConstraintLayout getRoot()>();
+
+        return $r1;
+    }
+
+    public androidx.constraintlayout.widget.ConstraintLayout getRoot()
+    {
+        com.example.q1.databinding.ContentMainBinding r0;
+        androidx.constraintlayout.widget.ConstraintLayout r1;
+
+        r0 := @this: com.example.q1.databinding.ContentMainBinding;
+
+        r1 = r0.<com.example.q1.databinding.ContentMainBinding: androidx.constraintlayout.widget.ConstraintLayout rootView>;
+
+        return r1;
+    }
+}

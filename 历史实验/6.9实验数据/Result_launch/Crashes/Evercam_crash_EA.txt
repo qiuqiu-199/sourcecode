@@ -1,0 +1,149 @@
+BugInfo:
+hash:-535094487
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{io.evercam.androidapp/io.evercam.androidapp.video.VideoActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.io.evercam.androidapp.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.io.evercam.androidapp.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at android.os.BaseBundle.getString(BaseBundle.java:1177)
+	at io.evercam.androidapp.video.VideoActivity.readShortcutCameraId(VideoActivity.java:707)
+	at io.evercam.androidapp.video.VideoActivity.onCreate(VideoActivity.java:233)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.io.evercam.androidapp.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.io.evercam.androidapp.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/io.evercam.androidapp-1k85_hO2Z9AGkP6kuFuSMw==/base.apk"],nativeLibraryDirectories=[/data/app/io.evercam.androidapp-1k85_hO2Z9AGkP6kuFuSMw==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 32 more
+
+ICC Msgs:
+7	io.evercam.androidapp.video.VideoActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-298876949
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.io.evercam.androidapp.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at com.mixpanel.android.mpmetrics.MixpanelActivityLifecycleCallbacks.trackCampaignOpenedIfNeeded(MixpanelActivityLifecycleCallbacks.java:123)
+	at com.mixpanel.android.mpmetrics.MixpanelActivityLifecycleCallbacks.onActivityStarted(MixpanelActivityLifecycleCallbacks.java:40)
+	at android.app.Application.dispatchActivityStarted(Application.java:230)
+	at android.app.Activity.onStart(Activity.java:1278)
+	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:614)
+	at android.support.v7.app.AppCompatActivity.onStart(AppCompatActivity.java:178)
+	at io.evercam.androidapp.ParentAppCompatActivity.onStart(ParentAppCompatActivity.java:42)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+	at android.app.Activity.performStart(Activity.java:7165)
+	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.ClassNotFoundException: qiu.io.evercam.androidapp.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 27 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.io.evercam.androidapp.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/io.evercam.androidapp-1k85_hO2Z9AGkP6kuFuSMw==/base.apk"],nativeLibraryDirectories=[/data/app/io.evercam.androidapp-1k85_hO2Z9AGkP6kuFuSMw==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 36 more
+
+ICC Msgs:
+36	io.evercam.androidapp.MainActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+67	io.evercam.androidapp.DeepLinkedActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1723096885
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{io.evercam.androidapp/io.evercam.androidapp.video.VideoActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.io.evercam.androidapp.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.io.evercam.androidapp.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at android.os.BaseBundle.getString(BaseBundle.java:1177)
+	at io.evercam.androidapp.video.VideoActivity.readShortcutCameraId(VideoActivity.java:707)
+	at io.evercam.androidapp.video.VideoActivity.onCreate(VideoActivity.java:233)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+8	io.evercam.androidapp.video.VideoActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+9	io.evercam.androidapp.video.VideoActivity	android.intent.action.VIEW;;android.intent.category.DEFAULT;;21316895952131689593;;null;;
+
+------------------------------------------------------------------------
+

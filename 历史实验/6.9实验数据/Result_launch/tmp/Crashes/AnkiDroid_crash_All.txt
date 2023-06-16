@@ -1,0 +1,1657 @@
+BugInfo:
+hash:-2065692799
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Info}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getInt(BaseBundle.java:1030)
+	at android.content.Intent.getIntExtra(Intent.java:7380)
+	at com.ichi2.anki.Info.onCreate(Info.java:66)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+14	com.ichi2.anki.Info	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+15	com.ichi2.anki.Info	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1871511806
+FATAL EXCEPTION: main
+android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getLong(BaseBundle.java:1064)
+	at android.content.Intent.getLongExtra(Intent.java:7397)
+	at com.ichi2.anki.CardBrowser.onCollectionLoaded(CardBrowser.java:521)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+122	com.ichi2.anki.CardBrowser	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1841358469
+FATAL EXCEPTION: main
+java.lang.NullPointerException: Attempt to invoke virtual method 'org.json.JSONArray org.json.JSONObject.getJSONArray(java.lang.String)' on a null object reference
+	at com.ichi2.anki.ModelFieldEditor.setupLabels(ModelFieldEditor.java:161)
+	at com.ichi2.anki.ModelFieldEditor.onCollectionLoaded(ModelFieldEditor.java:124)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+10	com.ichi2.anki.ModelFieldEditor	null;;null;;null;;null;;long->noteTypeID->0,String->title->abcde,
+
+11	com.ichi2.anki.ModelFieldEditor	null;;null;;null;;null;;
+
+8	com.ichi2.anki.ModelFieldEditor	null;;null;;null;;null;;long->noteTypeID->0,String->title->abcde,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:613374214
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.VideoPlayer}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at android.content.Intent.getStringExtra(Intent.java:7445)
+	at com.ichi2.anki.VideoPlayer.onCreate(VideoPlayer.java:40)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+23	com.ichi2.anki.VideoPlayer	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1583545217
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.DeckOptions}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at android.preference.PreferenceActivity.onIsHidingHeaders(PreferenceActivity.java:773)
+	at android.preference.PreferenceActivity.onCreate(PreferenceActivity.java:580)
+	at com.ichi2.ui.AppCompatPreferenceActivity.onCreate(AppCompatPreferenceActivity.java:46)
+	at com.ichi2.anki.DeckOptions.onCreate(DeckOptions.java:500)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+194	com.ichi2.anki.DeckOptions	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1554189941
+FATAL EXCEPTION: main
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+	at com.ichi2.anki.NoteEditor.fetchIntentInformation(NoteEditor.java:558)
+	at com.ichi2.anki.NoteEditor.onCollectionLoaded(NoteEditor.java:407)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+179	com.ichi2.anki.NoteEditor	org.openintents.action.CREATE_FLASHCARD;;null;;null;;null;;
+
+174	com.ichi2.anki.NoteEditor	org.openintents.action.CREATE_FLASHCARD;;android.intent.category.DEFAULT;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1135809140
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.FilteredDeckOptions}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at android.preference.PreferenceActivity.onIsHidingHeaders(PreferenceActivity.java:773)
+	at android.preference.PreferenceActivity.onCreate(PreferenceActivity.java:580)
+	at com.ichi2.ui.AppCompatPreferenceActivity.onCreate(AppCompatPreferenceActivity.java:46)
+	at com.ichi2.anki.FilteredDeckOptions.onCreate(FilteredDeckOptions.java:353)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 25 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 34 more
+
+ICC Msgs:
+29	com.ichi2.anki.FilteredDeckOptions	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:2013879309
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.dialogs.AnkiDroidCrashReportDialog}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at org.acra.BaseCrashReportDialog.onCreate(BaseCrashReportDialog.java:39)
+	at com.ichi2.anki.dialogs.AnkiDroidCrashReportDialog.onCreate(AnkiDroidCrashReportDialog.java:43)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+118	com.ichi2.anki.dialogs.AnkiDroidCrashReportDialog	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-596417477
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.ModelFieldEditor}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at android.content.Intent.getStringExtra(Intent.java:7445)
+	at com.ichi2.anki.ModelFieldEditor.onCreate(ModelFieldEditor.java:93)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+9	com.ichi2.anki.ModelFieldEditor	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:710305428
+FATAL EXCEPTION: main
+android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at com.ichi2.anki.AnkiActivity.finishWithAnimation(AnkiActivity.java:207)
+	at com.ichi2.anki.AbstractFlashcardViewer.closeReviewer(AbstractFlashcardViewer.java:2651)
+	at com.ichi2.anki.AbstractFlashcardViewer$10.onPostExecute(AbstractFlashcardViewer.java:643)
+	at com.ichi2.async.DeckTask$TaskListener.onPostExecute(DeckTask.java:1305)
+	at com.ichi2.async.DeckTask.onPostExecute(DeckTask.java:362)
+	at com.ichi2.async.DeckTask.onPostExecute(DeckTask.java:66)
+	at android.os.AsyncTask.finish(AsyncTask.java:695)
+	at android.os.AsyncTask.access$600(AsyncTask.java:180)
+	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:712)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+147	com.ichi2.anki.Reviewer	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-584711911
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity.onCreate(LoadPronounciationActivity.java:103)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+34	com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-485759462
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+	at com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity.onCreate(LoadPronounciationActivity.java:103)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+35	com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity	null;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-667757149
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity.onCreate(LoadPronounciationActivity.java:103)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 30 more
+
+ICC Msgs:
+37	com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+38	com.ichi2.anki.IntentHandler	com.ichi2.anki.DO_SYNC;;null;;mSheme:mAuthority/.apkg;;?;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-139614810
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.CardTemplateEditor}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getLong(BaseBundle.java:1064)
+	at android.content.Intent.getLongExtra(Intent.java:7397)
+	at com.ichi2.anki.CardTemplateEditor.onCreate(CardTemplateEditor.java:134)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+136	com.ichi2.anki.CardTemplateEditor	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1904244693
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Reviewer}: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+	at com.ichi2.anki.Reviewer.selectDeckFromExtra(Reviewer.java:81)
+	at com.ichi2.anki.Reviewer.onCreate(Reviewer.java:73)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+150	com.ichi2.anki.Reviewer	?;;null;;null;;null;;boolean->allDecksSelected->true,long->originalDeck->0,long->deckId->0,
+
+152	com.ichi2.anki.Reviewer	android.intent.action.VIEW;;null;;null;;null;;
+
+146	com.ichi2.anki.Reviewer	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+154	com.ichi2.anki.Reviewer	android.intent.action.VIEW;;null;;market://details?id=com.ichi2.anki;;null;;
+
+148	com.ichi2.anki.Reviewer	android.intent.action.VIEW;;null;;http://www.example.com;;null;;
+
+149	com.ichi2.anki.Reviewer	android.intent.action.VIEW;;null;;http://www.amazon.com/gp/mas/dl/android?p=com.ichi2.anki;;null;;
+
+145	com.ichi2.anki.Reviewer	android.intent.action.VIEW;;null;;null;;null;;
+
+153	com.ichi2.anki.Reviewer	android.intent.action.VIEW;;android.intent.category.DEFAULT;;null;;null;;
+
+155	com.ichi2.anki.Reviewer	?;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-144571082
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.VideoPlayer}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at android.content.Intent.getStringExtra(Intent.java:7445)
+	at com.ichi2.anki.VideoPlayer.onCreate(VideoPlayer.java:40)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+25	com.ichi2.anki.VideoPlayer	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-201970374
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getSerializable(BaseBundle.java:1227)
+	at android.os.Bundle.getSerializable(Bundle.java:1034)
+	at com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity.onCreate(MultimediaEditFieldActivity.java:92)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+FATAL EXCEPTION: Thread-7
+java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at com.ichi2.anki.AnkiActivity.finish(AnkiActivity.java:196)
+	at org.acra.ErrorReporter.endApplication(ErrorReporter.java:471)
+	at org.acra.ErrorReporter.access$1300(ErrorReporter.java:81)
+	at org.acra.ErrorReporter$5.run(ErrorReporter.java:851)
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 21 more
+
+ICC Msgs:
+21	com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1474249531
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.IntentHandler}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.getScheme()' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.getScheme()' on a null object reference
+	at com.ichi2.anki.IntentHandler.onCreate(IntentHandler.java:53)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+74	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file:mAuthority/mPath;;?;;
+
+103	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file://mHost:mPort/mPath;;application/apkg;;
+
+77	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content:mAuthority/mPath;;?;;
+
+54	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/.apkg;;?;;
+
+62	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file:mAuthority/mPath;;application/apkg;;
+
+99	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/.apkg;;application/apkg;;
+
+63	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file://mHost:mPort/mPath;;application/apkg;;
+
+89	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;android.intent.category.DEFAULT;;https*;;*/*;;
+
+102	com.ichi2.anki.IntentHandler	com.ichi2.anki.DO_SYNC;;null;;mSheme:mAuthority/?;;?;;
+
+47	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content://mHost:mPort/mPath;;application/apkg;;
+
+113	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/.apkg;;application/apkg;;
+
+72	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;?;;?;;
+
+112	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;android.intent.category.DEFAULT;;content;;application/vnd.anki;;
+
+95	com.ichi2.anki.IntentHandler	com.ichi2.anki.DO_SYNC;;null;;mSheme://mHost:mPort/.apkg;;application/apkg;;
+
+44	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/?;;application/apkg;;
+
+78	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/.apkg;;?;;
+
+106	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/.apkg;;application/apkg;;
+
+59	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/?;;?;;
+
+97	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/?;;?;;
+
+104	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content://mHost:mPort/mPath;;?;;
+
+80	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content:mAuthority/mPath;;?;;
+
+111	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/.apkg;;?;;
+
+46	com.ichi2.anki.IntentHandler	com.ichi2.anki.DO_SYNC;;null;;mSheme://mHost:mPort/.apkg;;?;;
+
+108	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;?;;application/apkg;;
+
+88	com.ichi2.anki.IntentHandler	com.ichi2.anki.DO_SYNC;;null;;content:mAuthority/mPath;;application/apkg;;
+
+83	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/?;;?;;
+
+91	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content:mAuthority/mPath;;application/apkg;;
+
+55	com.ichi2.anki.IntentHandler	com.ichi2.anki.DO_SYNC;;null;;?;;?;;
+
+114	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file://mHost:mPort/mPath;;?;;
+
+100	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/?;;application/apkg;;
+
+39	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/?;;application/apkg;;
+
+66	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file://mHost:mPort/mPath;;?;;
+
+98	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme://mHost:mPort/.apkg;;application/apkg;;
+
+45	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/.apkg;;?;;
+
+109	com.ichi2.anki.IntentHandler	com.ichi2.anki.DO_SYNC;;null;;content://mHost:mPort/mPath;;application/apkg;;
+
+86	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content://mHost:mPort/mPath;;?;;
+
+73	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content://mHost:mPort/mPath;;application/apkg;;
+
+67	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;?;;?;;
+
+101	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file:mAuthority/mPath;;application/apkg;;
+
+84	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/?;;?;;
+
+79	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;mSheme:mAuthority/?;;application/apkg;;
+
+40	com.ichi2.anki.IntentHandler	com.ichi2.anki.DO_SYNC;;null;;?;;?;;
+
+87	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;?;;application/apkg;;
+
+94	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;file:mAuthority/mPath;;?;;
+
+50	com.ichi2.anki.IntentHandler	android.intent.action.VIEW;;null;;content:mAuthority/mPath;;application/apkg;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-2125556150
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getLong(BaseBundle.java:1064)
+	at android.content.Intent.getLongExtra(Intent.java:7397)
+	at com.ichi2.anki.CardBrowser.onCollectionLoaded(CardBrowser.java:521)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 24 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 33 more
+
+ICC Msgs:
+127	com.ichi2.anki.CardBrowser	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+128	com.ichi2.anki.CardBrowser	null;;null;;null;;null;;long->currentCard->0,Serializable->defaultDeckId->SerializableObj,long->selectedDeck->0,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:536871235
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.NoteEditor}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getInt(BaseBundle.java:1030)
+	at android.content.Intent.getIntExtra(Intent.java:7380)
+	at com.ichi2.anki.NoteEditor.onCreate(NoteEditor.java:301)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+183	com.ichi2.anki.NoteEditor	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+184	com.ichi2.anki.NoteEditor	android.intent.action.SEND;;android.intent.category.DEFAULT;;null;;text/plain;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1767982794
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.IntentHandler}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at com.ichi2.anki.IntentHandler.finishWithFade(IntentHandler.java:182)
+	at com.ichi2.anki.IntentHandler.onCreate(IntentHandler.java:139)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 25 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 34 more
+
+ICC Msgs:
+105	com.ichi2.anki.IntentHandler	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1710241072
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Previewer}: java.lang.NullPointerException: Attempt to get length of null array
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to get length of null array
+	at com.ichi2.anki.Previewer.onCreate(Previewer.java:44)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+164	com.ichi2.anki.Previewer	null;;null;;null;;null;;long[]->cardList->0,int->index->0,
+
+161	com.ichi2.anki.Previewer	null;;null;;null;;null;;
+
+165	com.ichi2.anki.Previewer	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+162	com.ichi2.anki.Previewer	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:661499089
+FATAL EXCEPTION: main
+java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+	at com.ichi2.anki.NoteEditor.onCollectionLoaded(NoteEditor.java:412)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+182	com.ichi2.anki.NoteEditor	org.openintents.action.CREATE_FLASHCARD;;null;;null;;null;;String->CONTENTS->abcde,int->edit.field.result.field.index->0,int->CALLER->0,String->ID->abcde,String->edit.field.result.field->abcde,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-572912040
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.CardTemplateEditor}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getLong(BaseBundle.java:1064)
+	at android.content.Intent.getLongExtra(Intent.java:7397)
+	at com.ichi2.anki.CardTemplateEditor.onCreate(CardTemplateEditor.java:134)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+138	com.ichi2.anki.CardTemplateEditor	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:409527001
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Preferences}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at android.preference.PreferenceActivity.onIsHidingHeaders(PreferenceActivity.java:773)
+	at android.preference.PreferenceActivity.onCreate(PreferenceActivity.java:580)
+	at com.ichi2.ui.AppCompatPreferenceActivity.onCreate(AppCompatPreferenceActivity.java:46)
+	at com.ichi2.anki.Preferences.onCreate(Preferences.java:112)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 25 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 34 more
+
+ICC Msgs:
+187	com.ichi2.anki.Preferences	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:2118693217
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.dialogs.AnkiDroidCrashReportDialog}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at org.acra.BaseCrashReportDialog.onCreate(BaseCrashReportDialog.java:39)
+	at com.ichi2.anki.dialogs.AnkiDroidCrashReportDialog.onCreate(AnkiDroidCrashReportDialog.java:43)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 32 more
+
+ICC Msgs:
+120	com.ichi2.anki.dialogs.AnkiDroidCrashReportDialog	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1326755171
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.ModelFieldEditor}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at android.content.Intent.getStringExtra(Intent.java:7445)
+	at com.ichi2.anki.ModelFieldEditor.onCreate(ModelFieldEditor.java:93)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+7	com.ichi2.anki.ModelFieldEditor	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:2111669864
+FATAL EXCEPTION: main
+java.lang.RuntimeException:  No card with id 0
+	at com.ichi2.libanki.Card.load(Card.java:146)
+	at com.ichi2.libanki.Card.<init>(Card.java:121)
+	at com.ichi2.libanki.Collection.getCard(Collection.java:454)
+	at com.ichi2.anki.Previewer.onCollectionLoaded(Previewer.java:57)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+163	com.ichi2.anki.Previewer	null;;null;;null;;null;;int->index->0,longArray->cardList->0,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-271665047
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.NoteEditor}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getInt(BaseBundle.java:1030)
+	at android.content.Intent.getIntExtra(Intent.java:7380)
+	at com.ichi2.anki.NoteEditor.onCreate(NoteEditor.java:301)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+172	com.ichi2.anki.NoteEditor	null;;null;;null;;null;;int->CALLER->0,
+
+171	com.ichi2.anki.NoteEditor	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-26003988
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.StudyOptionsActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:857)
+	at com.ichi2.anki.StudyOptionsActivity.loadStudyOptionsFragment(StudyOptionsActivity.java:53)
+	at com.ichi2.anki.StudyOptionsActivity.onCreate(StudyOptionsActivity.java:46)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+141	com.ichi2.anki.StudyOptionsActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+142	com.ichi2.anki.StudyOptionsActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:961481789
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Preferences}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at android.preference.PreferenceActivity.onIsHidingHeaders(PreferenceActivity.java:773)
+	at android.preference.PreferenceActivity.onCreate(PreferenceActivity.java:580)
+	at com.ichi2.ui.AppCompatPreferenceActivity.onCreate(AppCompatPreferenceActivity.java:46)
+	at com.ichi2.anki.Preferences.onCreate(Preferences.java:112)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+189	com.ichi2.anki.Preferences	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1617864336
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.FilteredDeckOptions}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at android.preference.PreferenceActivity.onIsHidingHeaders(PreferenceActivity.java:773)
+	at android.preference.PreferenceActivity.onCreate(PreferenceActivity.java:580)
+	at com.ichi2.ui.AppCompatPreferenceActivity.onCreate(AppCompatPreferenceActivity.java:46)
+	at com.ichi2.anki.FilteredDeckOptions.onCreate(FilteredDeckOptions.java:353)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+32	com.ichi2.anki.FilteredDeckOptions	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1180391410
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.IntentHandler}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.ichi2.anki.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at com.ichi2.anki.IntentHandler.finishWithFade(IntentHandler.java:182)
+	at com.ichi2.anki.IntentHandler.onCreate(IntentHandler.java:139)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+81	com.ichi2.anki.IntentHandler	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:147813749
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.DeckOptions}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at android.preference.PreferenceActivity.onIsHidingHeaders(PreferenceActivity.java:773)
+	at android.preference.PreferenceActivity.onCreate(PreferenceActivity.java:580)
+	at com.ichi2.ui.AppCompatPreferenceActivity.onCreate(AppCompatPreferenceActivity.java:46)
+	at com.ichi2.anki.DeckOptions.onCreate(DeckOptions.java:500)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 25 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 34 more
+
+ICC Msgs:
+193	com.ichi2.anki.DeckOptions	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1788462743
+FATAL EXCEPTION: main
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+	at com.ichi2.anki.NoteEditor.fetchIntentInformation(NoteEditor.java:563)
+	at com.ichi2.anki.NoteEditor.onCollectionLoaded(NoteEditor.java:407)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+177	com.ichi2.anki.NoteEditor	android.intent.action.SEND;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:523722104
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getSerializable(BaseBundle.java:1227)
+	at android.os.Bundle.getSerializable(Bundle.java:1034)
+	at com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity.onCreate(MultimediaEditFieldActivity.java:92)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/lib/x86_64, /data/app/com.ichi2.anki-L8pvgLjo61yBgiqSb9tzWA==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+18	com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+20	com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity	null;;null;;null;;null;;
+
+19	com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity	null;;null;;null;;null;;Serializable->multim.card.ed.extra.field->SerializableObj,int->multim.card.ed.extra.field.index->0,Serializable->multim.card.ed.extra.whole.note->SerializableObj,
+
+17	com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity	null;;null;;null;;null;;Serializable->multim.card.ed.extra.field->SerializableObj,Serializable->multim.card.ed.extra.whole.note->SerializableObj,int->multim.card.ed.extra.field.index->0,
+
+------------------------------------------------------------------------
+

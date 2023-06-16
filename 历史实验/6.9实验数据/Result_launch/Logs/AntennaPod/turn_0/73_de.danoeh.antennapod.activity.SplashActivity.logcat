@@ -1,0 +1,46 @@
+--------- beginning of main
+--------- beginning of system
+06-08 17:28:31.304  5419  5419 D M_InsDal: Lde/danoeh/antennapod/PodcastApp;--->onCreate()V
+06-08 17:28:31.380  5419  5419 D M_InsDal: Lde/danoeh/antennapod/activity/SplashActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: FATAL EXCEPTION: main
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: Process: de.danoeh.antennapod, PID: 5419
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.de.danoeh.antennapod.MyParcelable
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5620)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5632)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at de.danoeh.antennapod.activity.SplashActivity$$Lambda$1.call(Unknown Source:1048)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at rx.Completable$28.onCompleted(Completable.java:1933)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at rx.Completable$24$1$1.call(Completable.java:1625)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at rx.android.schedulers.LooperScheduler$ScheduledAction.run(LooperScheduler.java:107)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-08 17:28:31.425  5419  5419 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-08 17:28:31.551  5445  5445 D M_InsDal: Lde/danoeh/antennapod/PodcastApp;--->onCreate()V
+06-08 17:28:31.606  5445  5445 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:28:31.628  5445  5445 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:28:31.628  5445  5445 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+06-08 17:28:31.633  5445  5445 D M_InsDal: Lde/danoeh/antennapod/fragment/ExternalPlayerFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+06-08 17:28:31.635  5445  5445 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onStart()V
+06-08 17:28:31.635  5445  5445 D M_InsDal: Lde/danoeh/antennapod/activity/MainActivity;--->onStart()V
+06-08 17:28:31.635  5445  5445 D M_InsDal: Lde/danoeh/antennapod/core/feed/EventDistributor;--->addObserver(Ljava/util/Observer;)V
+06-08 17:28:31.637  5445  5445 D M_InsDal: Lde/danoeh/antennapod/activity/MainActivity;--->onPostCreate(Landroid/os/Bundle;)V
+06-08 17:28:31.637  5445  5445 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onResume()V
+06-08 17:28:31.637  5445  5445 D M_InsDal: Lde/danoeh/antennapod/activity/MainActivity;--->onResume()V
+06-08 17:28:31.640  5445  5445 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onResume()V
+06-08 17:28:31.640  5445  5445 D M_InsDal: Lde/danoeh/antennapod/core/feed/EventDistributor;--->addObserver(Ljava/util/Observer;)V
+06-08 17:28:31.641  5445  5445 D M_InsDal: Lde/danoeh/antennapod/fragment/ExternalPlayerFragment;--->onResume()V
+06-08 17:28:32.718  5445  5445 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onCreateOptionsMenu(Landroid/view/Menu;)Z
+06-08 17:28:32.719  5445  5445 D M_InsDal: Lde/danoeh/antennapod/activity/MainActivity;--->onCreateOptionsMenu(Landroid/view/Menu;)Z
+06-08 17:28:32.728  5445  5445 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onPrepareOptionsMenu(Landroid/view/Menu;)Z

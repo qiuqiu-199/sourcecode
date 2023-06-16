@@ -1,0 +1,22 @@
+public final class com.example.q1.R$dimen extends java.lang.Object
+{
+    public static final int fab_margin;
+
+    private void <init>()
+    {
+        com.example.q1.R$dimen r0;
+
+        r0 := @this: com.example.q1.R$dimen;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void <clinit>()
+    {
+        <com.example.q1.R$dimen: int fab_margin> = 2131099794;
+
+        return;
+    }
+}

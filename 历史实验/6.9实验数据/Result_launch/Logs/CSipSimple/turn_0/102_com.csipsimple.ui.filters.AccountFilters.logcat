@@ -1,0 +1,84 @@
+--------- beginning of main
+06-08 20:25:22.983 14591 14591 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;---><clinit>()V
+06-08 20:25:22.983 14591 14591 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;---><init>()V
+06-08 20:25:22.983 14591 14591 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;--->onCreate()Z
+06-08 20:25:22.983 14591 14591 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;---><clinit>()V
+06-08 20:25:22.983 14591 14591 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$1;---><init>()V
+06-08 20:25:22.983 14591 14591 D M_InsDal: Lcom/csipsimple/utils/CustomDistribution;--->getUserAgent()Ljava/lang/String;
+06-08 20:25:22.983 14591 14591 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$2;---><init>()V
+06-08 20:25:22.984 14591 14591 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$3;---><init>()V
+06-08 20:25:22.984 14591 14591 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;---><init>(Landroid/content/Context;)V
+06-08 20:25:22.984 14591 14591 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;--->needUpgrade()Ljava/lang/Integer;
+06-08 20:25:22.984 14591 14591 D M_InsDal: Lcom/csipsimple/utils/PreferencesProviderWrapper;--->getCurrentPackageInfos(Landroid/content/Context;)Landroid/content/pm/PackageInfo;
+06-08 20:25:22.985 14591 14591 D M_InsDal: Lcom/csipsimple/utils/Log;---><clinit>()V
+06-08 20:25:22.985 14591 14591 D M_InsDal: Lcom/csipsimple/utils/Log;--->d(Ljava/lang/String;Ljava/lang/String;)V
+06-08 20:25:22.986 14591 14591 D M_InsDal: Lcom/csipsimple/utils/Log;--->d(Ljava/lang/String;Ljava/lang/String;)V
+06-08 20:25:22.986 14591 14591 D M_InsDal: Lcom/csipsimple/utils/Compatibility;--->getApiLevel()I
+06-08 20:25:22.989 14591 14591 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFilters;---><init>()V
+06-08 20:25:22.990 14591 14591 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFilters;--->onCreate(Landroid/os/Bundle;)V
+06-08 20:25:22.991 14591 14591 D M_InsDal: Lcom/csipsimple/utils/Log;--->e(Ljava/lang/String;Ljava/lang/String;)V
+06-08 20:25:23.002 14591 14591 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListFragment;---><init>()V
+06-08 20:25:23.002 14591 14591 D M_InsDal: Lcom/csipsimple/widgets/CSSListFragment;---><init>()V
+06-08 20:25:23.002 14591 14591 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListFragment;--->onCreate(Landroid/os/Bundle;)V
+06-08 20:25:23.002 14591 14591 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListFragment;--->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+06-08 20:25:23.004 14591 14591 D M_InsDal: Lcom/csipsimple/widgets/DragnDropListView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+06-08 20:25:23.006 14591 14591 D M_InsDal: Lcom/csipsimple/widgets/DragnDropListView;--->setGrabberId(I)V
+06-08 20:25:23.006 14591 14591 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListFragment$2;---><init>(Lcom/csipsimple/ui/filters/AccountFiltersListFragment;Lcom/csipsimple/widgets/DragnDropListView;)V
+06-08 20:25:23.006 14591 14591 D M_InsDal: Lcom/csipsimple/widgets/DragnDropListView;--->setOnDropListener(Lcom/csipsimple/widgets/DragnDropListView$DropListener;)V
+06-08 20:25:23.006 14591 14591 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListFragment$3;---><init>(Lcom/csipsimple/ui/filters/AccountFiltersListFragment;)V
+06-08 20:25:23.008 14591 14591 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListFragment;--->setAccountId(J)V
+06-08 20:25:23.389 14591 14591 D M_InsDal: Lcom/csipsimple/widgets/CSSListFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+06-08 20:25:23.389 14591 14591 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+06-08 20:25:23.389 14591 14591 D M_InsDal: Lcom/csipsimple/widgets/CSSListFragment;--->setListShown(Z)V
+06-08 20:25:23.389 14591 14591 D M_InsDal: Lcom/csipsimple/widgets/CSSListFragment;--->setListShown(ZZ)V
+06-08 20:25:23.389 14591 14591 D M_InsDal: Lcom/csipsimple/widgets/CSSListFragment;--->ensureCustomList()V
+06-08 20:25:23.390 14591 14591 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFiltersListAdapter;---><init>(Landroid/content/Context;Landroid/database/Cursor;)V
+--------- beginning of system
+06-08 20:25:42.423 14652 14652 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;---><clinit>()V
+06-08 20:25:42.423 14652 14652 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;---><init>()V
+06-08 20:25:42.423 14652 14652 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;--->onCreate()Z
+06-08 20:25:42.423 14652 14652 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;---><clinit>()V
+06-08 20:25:42.423 14652 14652 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$1;---><init>()V
+06-08 20:25:42.423 14652 14652 D M_InsDal: Lcom/csipsimple/utils/CustomDistribution;--->getUserAgent()Ljava/lang/String;
+06-08 20:25:42.423 14652 14652 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$2;---><init>()V
+06-08 20:25:42.424 14652 14652 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$3;---><init>()V
+06-08 20:25:42.424 14652 14652 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;---><init>(Landroid/content/Context;)V
+06-08 20:25:42.424 14652 14652 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;--->needUpgrade()Ljava/lang/Integer;
+06-08 20:25:42.424 14652 14652 D M_InsDal: Lcom/csipsimple/utils/PreferencesProviderWrapper;--->getCurrentPackageInfos(Landroid/content/Context;)Landroid/content/pm/PackageInfo;
+06-08 20:25:42.425 14652 14652 D M_InsDal: Lcom/csipsimple/utils/Log;---><clinit>()V
+06-08 20:25:42.425 14652 14652 D M_InsDal: Lcom/csipsimple/utils/Log;--->d(Ljava/lang/String;Ljava/lang/String;)V
+06-08 20:25:42.425 14652 14652 D M_InsDal: Lcom/csipsimple/utils/Log;--->d(Ljava/lang/String;Ljava/lang/String;)V
+06-08 20:25:42.425 14652 14652 D M_InsDal: Lcom/csipsimple/utils/Compatibility;--->getApiLevel()I
+06-08 20:25:42.428 14652 14652 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFilters;---><init>()V
+06-08 20:25:42.430 14652 14652 D M_InsDal: Lcom/csipsimple/ui/filters/AccountFilters;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: FATAL EXCEPTION: main
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: Process: com.csipsimple, PID: 14652
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.csipsimple/com.csipsimple.ui.filters.AccountFilters}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.csipsimple.MyParcelable
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.csipsimple.MyParcelable
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.os.BaseBundle.getLong(BaseBundle.java:1064)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at com.csipsimple.ui.filters.AccountFilters.onCreate(AccountFilters.java:46)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-08 20:25:42.432 14652 14652 E AndroidRuntime: 	... 11 more
+06-08 20:25:42.453 22419 22419 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V

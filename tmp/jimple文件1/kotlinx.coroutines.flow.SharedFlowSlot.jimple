@@ -1,0 +1,136 @@
+final class kotlinx.coroutines.flow.SharedFlowSlot extends kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot
+{
+    public kotlin.coroutines.Continuation cont;
+    public long index;
+
+    public void <init>()
+    {
+        kotlinx.coroutines.flow.SharedFlowSlot r0;
+
+        r0 := @this: kotlinx.coroutines.flow.SharedFlowSlot;
+
+        specialinvoke r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot: void <init>()>();
+
+        r0.<kotlinx.coroutines.flow.SharedFlowSlot: long index> = -1L;
+
+        return;
+    }
+
+    public volatile boolean allocateLocked(java.lang.Object)
+    {
+        kotlinx.coroutines.flow.SharedFlowSlot r0;
+        boolean $z0;
+        java.lang.Object $r1;
+        kotlinx.coroutines.flow.SharedFlowImpl $r2;
+
+        r0 := @this: kotlinx.coroutines.flow.SharedFlowSlot;
+
+        $r1 := @parameter0: java.lang.Object;
+
+        $r2 = (kotlinx.coroutines.flow.SharedFlowImpl) $r1;
+
+        $z0 = virtualinvoke r0.<kotlinx.coroutines.flow.SharedFlowSlot: boolean allocateLocked(kotlinx.coroutines.flow.SharedFlowImpl)>($r2);
+
+        return $z0;
+    }
+
+    public boolean allocateLocked(kotlinx.coroutines.flow.SharedFlowImpl)
+    {
+        kotlinx.coroutines.flow.SharedFlowSlot r0;
+        long $l0;
+        kotlinx.coroutines.flow.SharedFlowImpl $r1;
+        byte $b1;
+
+        r0 := @this: kotlinx.coroutines.flow.SharedFlowSlot;
+
+        $r1 := @parameter0: kotlinx.coroutines.flow.SharedFlowImpl;
+
+        $l0 = r0.<kotlinx.coroutines.flow.SharedFlowSlot: long index>;
+
+        $b1 = $l0 cmp 0L;
+
+        if $b1 < 0 goto label1;
+
+        return 0;
+
+     label1:
+        $l0 = virtualinvoke $r1.<kotlinx.coroutines.flow.SharedFlowImpl: long updateNewCollectorIndexLocked$kotlinx_coroutines_core()>();
+
+        r0.<kotlinx.coroutines.flow.SharedFlowSlot: long index> = $l0;
+
+        return 1;
+    }
+
+    public volatile kotlin.coroutines.Continuation[] freeLocked(java.lang.Object)
+    {
+        kotlinx.coroutines.flow.SharedFlowSlot r0;
+        kotlin.coroutines.Continuation[] $r1;
+        java.lang.Object $r2;
+        kotlinx.coroutines.flow.SharedFlowImpl $r3;
+
+        r0 := @this: kotlinx.coroutines.flow.SharedFlowSlot;
+
+        $r2 := @parameter0: java.lang.Object;
+
+        $r3 = (kotlinx.coroutines.flow.SharedFlowImpl) $r2;
+
+        $r1 = virtualinvoke r0.<kotlinx.coroutines.flow.SharedFlowSlot: kotlin.coroutines.Continuation[] freeLocked(kotlinx.coroutines.flow.SharedFlowImpl)>($r3);
+
+        return $r1;
+    }
+
+    public kotlin.coroutines.Continuation[] freeLocked(kotlinx.coroutines.flow.SharedFlowImpl)
+    {
+        kotlinx.coroutines.flow.SharedFlowSlot r0;
+        kotlinx.coroutines.flow.SharedFlowImpl $r1;
+        boolean $z0;
+        long $l0;
+        byte $b1;
+        java.lang.AssertionError $r2;
+        kotlin.coroutines.Continuation[] $r3;
+
+        r0 := @this: kotlinx.coroutines.flow.SharedFlowSlot;
+
+        $r1 := @parameter0: kotlinx.coroutines.flow.SharedFlowImpl;
+
+        $z0 = staticinvoke <kotlinx.coroutines.DebugKt: boolean getASSERTIONS_ENABLED()>();
+
+        if $z0 == 0 goto label4;
+
+        $l0 = r0.<kotlinx.coroutines.flow.SharedFlowSlot: long index>;
+
+        $b1 = $l0 cmp 0L;
+
+        if $b1 < 0 goto label1;
+
+        $z0 = 1;
+
+        goto label2;
+
+     label1:
+        $z0 = 0;
+
+     label2:
+        if $z0 == 0 goto label3;
+
+        goto label4;
+
+     label3:
+        $r2 = new java.lang.AssertionError;
+
+        specialinvoke $r2.<java.lang.AssertionError: void <init>()>();
+
+        throw $r2;
+
+     label4:
+        $l0 = r0.<kotlinx.coroutines.flow.SharedFlowSlot: long index>;
+
+        r0.<kotlinx.coroutines.flow.SharedFlowSlot: long index> = -1L;
+
+        r0.<kotlinx.coroutines.flow.SharedFlowSlot: kotlin.coroutines.Continuation cont> = null;
+
+        $r3 = virtualinvoke $r1.<kotlinx.coroutines.flow.SharedFlowImpl: kotlin.coroutines.Continuation[] updateCollectorIndexLocked$kotlinx_coroutines_core(long)>($l0);
+
+        return $r3;
+    }
+}

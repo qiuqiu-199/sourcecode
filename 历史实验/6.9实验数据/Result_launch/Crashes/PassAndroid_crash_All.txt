@@ -1,0 +1,700 @@
+BugInfo:
+hash:1491967936
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.ligi.passandroid/org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.toString()' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.toString()' on a null object reference
+	at org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView.onCreate(SourceFile:24)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+20	org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+25	org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+22	org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView	null;;null;;null;;null;;
+
+24	org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView	null;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-95453147
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.ligi.passandroid/org.ligi.passandroid.ui.PassEditActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.ligi.passandroid.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.ligi.passandroid.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at org.ligi.passandroid.ui.PassEditActivity.onCreate(SourceFile:73)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.org.ligi.passandroid.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 24 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.ligi.passandroid.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/org.ligi.passandroid-HFdPLp7kDA-MOKlwy7JYTw==/base.apk"],nativeLibraryDirectories=[/data/app/org.ligi.passandroid-HFdPLp7kDA-MOKlwy7JYTw==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 33 more
+
+ICC Msgs:
+9	org.ligi.passandroid.ui.PassEditActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1738767260
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.ligi.passandroid/org.ligi.passandroid.ui.PassImportActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.ligi.passandroid.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.ligi.passandroid.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at org.ligi.passandroid.ui.PassImportActivity.onCreate(SourceFile:41)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+104	org.ligi.passandroid.ui.PassImportActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1317137115
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.ligi.passandroid.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at android.content.Intent.getStringExtra(Intent.java:7445)
+	at com.google.android.gms.analytics.Tracker.a(Unknown Source:13)
+	at com.google.android.gms.analytics.Tracker$zza.a(Unknown Source:89)
+	at com.google.android.gms.analytics.GoogleAnalytics.a(Unknown Source:18)
+	at com.google.android.gms.analytics.GoogleAnalytics$zzb.onActivityStarted(Unknown Source:2)
+	at android.app.Application.dispatchActivityStarted(Application.java:230)
+	at android.app.Activity.onStart(Activity.java:1278)
+	at android.support.v4.app.FragmentActivity.onStart(SourceFile:595)
+	at android.support.v7.app.AppCompatActivity.onStart(SourceFile:178)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+	at android.app.Activity.performStart(Activity.java:7165)
+	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.ClassNotFoundException: qiu.org.ligi.passandroid.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 28 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.ligi.passandroid.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/org.ligi.passandroid-HFdPLp7kDA-MOKlwy7JYTw==/base.apk"],nativeLibraryDirectories=[/data/app/org.ligi.passandroid-HFdPLp7kDA-MOKlwy7JYTw==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 37 more
+
+ICC Msgs:
+72	org.ligi.passandroid.ui.PassViewActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+82	org.ligi.passandroid.ui.PassListActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+87	org.ligi.passandroid.ui.FullscreenBarcodeActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1822483502
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to resume activity {org.ligi.passandroid/org.ligi.passandroid.ui.FullscreenBarcodeActivity}: kotlin.UninitializedPropertyAccessException: lateinit property currentPass has not been initialized
+	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3825)
+	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3857)
+	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: kotlin.UninitializedPropertyAccessException: lateinit property currentPass has not been initialized
+	at org.ligi.passandroid.ui.PassViewActivityBase.g(SourceFile:34)
+	at org.ligi.passandroid.ui.FullscreenBarcodeActivity.onResume(SourceFile:23)
+	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+	at android.app.Activity.performResume(Activity.java:7300)
+	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3817)
+	... 11 more
+
+ICC Msgs:
+86	org.ligi.passandroid.ui.FullscreenBarcodeActivity	null;;null;;null;;null;;String->uuid->abcde,
+
+85	org.ligi.passandroid.ui.FullscreenBarcodeActivity	null;;null;;null;;null;;
+
+88	org.ligi.passandroid.ui.FullscreenBarcodeActivity	null;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-316987094
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.ligi.passandroid/org.ligi.passandroid.ui.ExtractURLAsIphoneActivity}: java.lang.IllegalStateException: intent.data must not be null
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.IllegalStateException: intent.data must not be null
+	at org.ligi.passandroid.ui.ExtractURLAsIphoneActivity.onCreate(SourceFile:26)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+51	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+45	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	null;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:2069077133
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.ligi.passandroid/org.ligi.passandroid.ui.PassEditActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.ligi.passandroid.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.ligi.passandroid.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at org.ligi.passandroid.ui.PassEditActivity.onCreate(SourceFile:73)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+10	org.ligi.passandroid.ui.PassEditActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1625699022
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.ligi.passandroid/org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.toString()' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.toString()' on a null object reference
+	at org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity.onCreate(SourceFile:15)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+61	org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+65	org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+67	org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity	null;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:2096009133
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.ligi.passandroid/org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity}: java.lang.ArrayIndexOutOfBoundsException: length=1; index=-1
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: length=1; index=-1
+	at org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity.onCreate(SourceFile:23)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+63	org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity	null;;null;;?;;null;;
+
+62	org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity	android.intent.action.VIEW;;android.intent.category.DEFAULT;;httpswww.usairwaysmobile.com;;null;;
+
+66	org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity	android.intent.action.VIEW;;android.intent.category.DEFAULT;;httpwww.usairwaysmobile.com;;null;;
+
+64	org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity	null;;null;;?;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1002272176
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.ligi.passandroid/org.ligi.passandroid.ui.PassImportActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.ligi.passandroid.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.ligi.passandroid.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at org.ligi.passandroid.ui.PassImportActivity.onCreate(SourceFile:41)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.org.ligi.passandroid.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 24 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.ligi.passandroid.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/org.ligi.passandroid-HFdPLp7kDA-MOKlwy7JYTw==/base.apk"],nativeLibraryDirectories=[/data/app/org.ligi.passandroid-HFdPLp7kDA-MOKlwy7JYTw==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 33 more
+
+ICC Msgs:
+130	org.ligi.passandroid.ui.PassImportActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:2054597618
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.ligi.passandroid/org.ligi.passandroid.ui.TouchImageActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.ligi.passandroid.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.ligi.passandroid.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at org.ligi.passandroid.ui.TouchImageActivity.onCreate(SourceFile:25)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+15	org.ligi.passandroid.ui.TouchImageActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:531891349
+FATAL EXCEPTION: AsyncTask #1
+java.lang.RuntimeException: An error occurred while executing doInBackground()
+	at android.os.AsyncTask$3.done(AsyncTask.java:354)
+	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:383)
+	at java.util.concurrent.FutureTask.setException(FutureTask.java:252)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:271)
+	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:245)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.lang.Thread.run(Thread.java:764)
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.net.URI.toURL(URI.java:1083)
+	at org.ligi.passandroid.ui.ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask.a(SourceFile:37)
+	at org.ligi.passandroid.ui.ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask.doInBackground(SourceFile:31)
+	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	... 4 more
+
+ICC Msgs:
+56	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	null;;null;;?://mHost:mPort/mPath;;null;;
+
+57	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	null;;null;;?;;null;;
+
+46	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpscheck-in.virginaustralia.com;;null;;
+
+59	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	android.intent.action.VIEW;;android.intent.category.DEFAULT;;httpcheck-in.virginaustralia.com;;null;;
+
+47	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpsmobile.aegeanair.com;;null;;
+
+52	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	android.intent.action.VIEW;;android.intent.category.BROWSABLE;;httpsmobile.virginaustralia.com;;null;;
+
+58	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	null;;null;;?;;null;;
+
+55	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	null;;null;;?://mHost:mPort/mPath;;null;;
+
+60	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	null;;null;;?:mAuthority/mPath;;null;;
+
+48	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	android.intent.action.VIEW;;android.intent.category.DEFAULT;;httpmobile.virginaustralia.com;;null;;
+
+53	org.ligi.passandroid.ui.ExtractURLAsIphoneActivity	null;;null;;?:mAuthority/mPath;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:800583770
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.ligi.passandroid/org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity}: java.lang.IllegalArgumentException: Parameter specified as non-null is null: method kotlin.jvm.internal.Intrinsics.b, parameter uri
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.IllegalArgumentException: Parameter specified as non-null is null: method kotlin.jvm.internal.Intrinsics.b, parameter uri
+	at org.ligi.passandroid.ui.quirk_fix.URLRewriteController.a(Unknown Source:16)
+	at org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity.onCreate(SourceFile:17)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+34	org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity	null;;null;;null;;null;;
+
+33	org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+44	org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1739460347
+FATAL EXCEPTION: main
+android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.ligi.passandroid.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at android.content.Intent.getStringExtra(Intent.java:7445)
+	at com.google.android.gms.analytics.Tracker.a(Unknown Source:13)
+	at com.google.android.gms.analytics.Tracker$zza.a(Unknown Source:89)
+	at com.google.android.gms.analytics.GoogleAnalytics.a(Unknown Source:18)
+	at com.google.android.gms.analytics.GoogleAnalytics$zzb.onActivityStarted(Unknown Source:2)
+	at android.app.Application.dispatchActivityStarted(Application.java:230)
+	at android.app.Activity.onStart(Activity.java:1278)
+	at android.support.v4.app.FragmentActivity.onStart(SourceFile:595)
+	at android.support.v7.app.AppCompatActivity.onStart(SourceFile:178)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+	at android.app.Activity.performStart(Activity.java:7165)
+	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+84	org.ligi.passandroid.ui.FullscreenBarcodeActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+79	org.ligi.passandroid.ui.PassListActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+69	org.ligi.passandroid.ui.PassViewActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1965013450
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to resume activity {org.ligi.passandroid/org.ligi.passandroid.ui.PassViewActivity}: kotlin.UninitializedPropertyAccessException: lateinit property currentPass has not been initialized
+	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3825)
+	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3857)
+	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: kotlin.UninitializedPropertyAccessException: lateinit property currentPass has not been initialized
+	at org.ligi.passandroid.ui.PassViewActivityBase.g(SourceFile:34)
+	at org.ligi.passandroid.ui.PassViewActivity.f(SourceFile:49)
+	at org.ligi.passandroid.ui.PassViewActivity.onResumeFragments(SourceFile:130)
+	at android.support.v4.app.FragmentActivity.onPostResume(SourceFile:498)
+	at android.support.v7.app.AppCompatActivity.onPostResume(SourceFile:172)
+	at android.app.Activity.performResume(Activity.java:7325)
+	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3817)
+	... 11 more
+
+ICC Msgs:
+71	org.ligi.passandroid.ui.PassViewActivity	null;;null;;null;;null;;String->uuid->abcde,
+
+70	org.ligi.passandroid.ui.PassViewActivity	null;;null;;null;;null;;
+
+68	org.ligi.passandroid.ui.PassViewActivity	null;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-873071714
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.ligi.passandroid/org.ligi.passandroid.ui.TouchImageActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.ligi.passandroid.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.ligi.passandroid.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at org.ligi.passandroid.ui.TouchImageActivity.onCreate(SourceFile:25)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.org.ligi.passandroid.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 24 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.ligi.passandroid.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/org.ligi.passandroid-HFdPLp7kDA-MOKlwy7JYTw==/base.apk"],nativeLibraryDirectories=[/data/app/org.ligi.passandroid-HFdPLp7kDA-MOKlwy7JYTw==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 33 more
+
+ICC Msgs:
+17	org.ligi.passandroid.ui.TouchImageActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:230976991
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.ligi.passandroid/org.ligi.passandroid.FullscreenMapActivity}: kotlin.UninitializedPropertyAccessException: lateinit property currentPass has not been initialized
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: kotlin.UninitializedPropertyAccessException: lateinit property currentPass has not been initialized
+	at org.ligi.passandroid.ui.PassViewActivityBase.g(SourceFile:34)
+	at org.ligi.passandroid.FullscreenMapActivity.a(SourceFile:21)
+	at org.ligi.passandroid.FullscreenMapActivity.onCreate(SourceFile:14)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+1	org.ligi.passandroid.FullscreenMapActivity	null;;null;;null;;null;;
+
+2	org.ligi.passandroid.FullscreenMapActivity	null;;null;;null;;null;;
+
+4	org.ligi.passandroid.FullscreenMapActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+3	org.ligi.passandroid.FullscreenMapActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+

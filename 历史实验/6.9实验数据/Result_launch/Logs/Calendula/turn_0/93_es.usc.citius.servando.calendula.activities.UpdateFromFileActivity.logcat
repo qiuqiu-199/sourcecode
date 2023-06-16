@@ -1,0 +1,12 @@
+--------- beginning of main
+--------- beginning of system
+06-08 18:17:59.492 17729 17729 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaApp;--->onCreate()V
+06-08 18:17:59.622 17729 17729 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 18:17:59.622 17729 17729 D M_InsDal: Les/usc/citius/servando/calendula/activities/UpdateFromFileActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 18:17:59.900 17729 17729 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaActivity;--->onDestroy()V
+06-08 18:18:11.629 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;---><init>()V
+06-08 18:18:11.629 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver;---><init>()V
+06-08 18:18:11.629 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;--->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+06-08 18:18:11.629 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver;--->shouldRunNetworkTask(Ljava/lang/String;Landroid/content/Context;)Z
+06-08 18:18:11.629 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->getCurrent(Landroid/content/Context;)Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;
+06-08 18:18:11.629 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->isLoggedIn()Z
