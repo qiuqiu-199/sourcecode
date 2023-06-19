@@ -1,0 +1,171 @@
+public final class kotlinx.coroutines.UndispatchedCoroutine extends kotlinx.coroutines.internal.ScopeCoroutine
+{
+    private kotlin.coroutines.CoroutineContext savedContext;
+    private java.lang.Object savedOldValue;
+
+    public void <init>(kotlin.coroutines.CoroutineContext, kotlin.coroutines.Continuation)
+    {
+        kotlinx.coroutines.UndispatchedCoroutine r0;
+        kotlin.coroutines.Continuation $r1;
+        kotlin.coroutines.CoroutineContext $r2, $r6;
+        kotlinx.coroutines.UndispatchedMarker $r3;
+        kotlin.coroutines.CoroutineContext$Key $r4;
+        kotlin.coroutines.CoroutineContext$Element $r5;
+
+        r0 := @this: kotlinx.coroutines.UndispatchedCoroutine;
+
+        $r2 := @parameter0: kotlin.coroutines.CoroutineContext;
+
+        $r1 := @parameter1: kotlin.coroutines.Continuation;
+
+        $r3 = <kotlinx.coroutines.UndispatchedMarker: kotlinx.coroutines.UndispatchedMarker INSTANCE>;
+
+        $r4 = (kotlin.coroutines.CoroutineContext$Key) $r3;
+
+        $r5 = interfaceinvoke $r2.<kotlin.coroutines.CoroutineContext: kotlin.coroutines.CoroutineContext$Element get(kotlin.coroutines.CoroutineContext$Key)>($r4);
+
+        if $r5 != null goto label1;
+
+        $r3 = <kotlinx.coroutines.UndispatchedMarker: kotlinx.coroutines.UndispatchedMarker INSTANCE>;
+
+        $r6 = (kotlin.coroutines.CoroutineContext) $r3;
+
+        $r2 = interfaceinvoke $r2.<kotlin.coroutines.CoroutineContext: kotlin.coroutines.CoroutineContext plus(kotlin.coroutines.CoroutineContext)>($r6);
+
+     label1:
+        specialinvoke r0.<kotlinx.coroutines.internal.ScopeCoroutine: void <init>(kotlin.coroutines.CoroutineContext,kotlin.coroutines.Continuation)>($r2, $r1);
+
+        return;
+    }
+
+    protected void afterResume(java.lang.Object)
+    {
+        kotlinx.coroutines.UndispatchedCoroutine r0, $r4;
+        kotlinx.coroutines.internal.Symbol $r1;
+        java.lang.Object $r2, $r5;
+        kotlin.coroutines.CoroutineContext $r3;
+        kotlin.coroutines.Continuation $r6;
+        kotlin.Unit $r7;
+        boolean $z0;
+        java.lang.Throwable $r8;
+
+        r0 := @this: kotlinx.coroutines.UndispatchedCoroutine;
+
+        $r2 := @parameter0: java.lang.Object;
+
+        $r3 = r0.<kotlinx.coroutines.UndispatchedCoroutine: kotlin.coroutines.CoroutineContext savedContext>;
+
+        $r4 = null;
+
+        if $r3 != null goto label1;
+
+        goto label2;
+
+     label1:
+        $r5 = r0.<kotlinx.coroutines.UndispatchedCoroutine: java.lang.Object savedOldValue>;
+
+        staticinvoke <kotlinx.coroutines.internal.ThreadContextKt: void restoreThreadContext(kotlin.coroutines.CoroutineContext,java.lang.Object)>($r3, $r5);
+
+        r0.<kotlinx.coroutines.UndispatchedCoroutine: kotlin.coroutines.CoroutineContext savedContext> = null;
+
+        r0.<kotlinx.coroutines.UndispatchedCoroutine: java.lang.Object savedOldValue> = null;
+
+     label2:
+        $r6 = r0.<kotlinx.coroutines.UndispatchedCoroutine: kotlin.coroutines.Continuation uCont>;
+
+        $r2 = staticinvoke <kotlinx.coroutines.CompletionStateKt: java.lang.Object recoverResult(java.lang.Object,kotlin.coroutines.Continuation)>($r2, $r6);
+
+        $r6 = r0.<kotlinx.coroutines.UndispatchedCoroutine: kotlin.coroutines.Continuation uCont>;
+
+        $r3 = interfaceinvoke $r6.<kotlin.coroutines.Continuation: kotlin.coroutines.CoroutineContext getContext()>();
+
+        $r5 = staticinvoke <kotlinx.coroutines.internal.ThreadContextKt: java.lang.Object updateThreadContext(kotlin.coroutines.CoroutineContext,java.lang.Object)>($r3, null);
+
+        $r1 = <kotlinx.coroutines.internal.ThreadContextKt: kotlinx.coroutines.internal.Symbol NO_THREAD_ELEMENTS>;
+
+        if $r5 == $r1 goto label3;
+
+        $r4 = staticinvoke <kotlinx.coroutines.CoroutineContextKt: kotlinx.coroutines.UndispatchedCoroutine updateUndispatchedCompletion(kotlin.coroutines.Continuation,kotlin.coroutines.CoroutineContext,java.lang.Object)>($r6, $r3, $r5);
+
+        goto label3;
+
+     label3:
+        $r6 = r0.<kotlinx.coroutines.UndispatchedCoroutine: kotlin.coroutines.Continuation uCont>;
+
+        interfaceinvoke $r6.<kotlin.coroutines.Continuation: void resumeWith(java.lang.Object)>($r2);
+
+        $r7 = <kotlin.Unit: kotlin.Unit INSTANCE>;
+
+     label4:
+        if $r4 == null goto label5;
+
+        $z0 = virtualinvoke $r4.<kotlinx.coroutines.UndispatchedCoroutine: boolean clearThreadContext()>();
+
+        if $z0 == 0 goto label9;
+
+     label5:
+        staticinvoke <kotlinx.coroutines.internal.ThreadContextKt: void restoreThreadContext(kotlin.coroutines.CoroutineContext,java.lang.Object)>($r3, $r5);
+
+        return;
+
+     label6:
+        $r8 := @caughtexception;
+
+        if $r4 == null goto label7;
+
+        $z0 = virtualinvoke $r4.<kotlinx.coroutines.UndispatchedCoroutine: boolean clearThreadContext()>();
+
+        if $z0 == 0 goto label8;
+
+     label7:
+        staticinvoke <kotlinx.coroutines.internal.ThreadContextKt: void restoreThreadContext(kotlin.coroutines.CoroutineContext,java.lang.Object)>($r3, $r5);
+
+     label8:
+        throw $r8;
+
+     label9:
+        return;
+
+        catch java.lang.Throwable from label3 to label4 with label6;
+    }
+
+    public final boolean clearThreadContext()
+    {
+        kotlinx.coroutines.UndispatchedCoroutine r0;
+        kotlin.coroutines.CoroutineContext $r1;
+
+        r0 := @this: kotlinx.coroutines.UndispatchedCoroutine;
+
+        $r1 = r0.<kotlinx.coroutines.UndispatchedCoroutine: kotlin.coroutines.CoroutineContext savedContext>;
+
+        if $r1 != null goto label1;
+
+        return 0;
+
+     label1:
+        r0.<kotlinx.coroutines.UndispatchedCoroutine: kotlin.coroutines.CoroutineContext savedContext> = null;
+
+        r0.<kotlinx.coroutines.UndispatchedCoroutine: java.lang.Object savedOldValue> = null;
+
+        return 1;
+    }
+
+    public final void saveThreadContext(kotlin.coroutines.CoroutineContext, java.lang.Object)
+    {
+        kotlinx.coroutines.UndispatchedCoroutine r0;
+        kotlin.coroutines.CoroutineContext $r1;
+        java.lang.Object $r2;
+
+        r0 := @this: kotlinx.coroutines.UndispatchedCoroutine;
+
+        $r1 := @parameter0: kotlin.coroutines.CoroutineContext;
+
+        $r2 := @parameter1: java.lang.Object;
+
+        r0.<kotlinx.coroutines.UndispatchedCoroutine: kotlin.coroutines.CoroutineContext savedContext> = $r1;
+
+        r0.<kotlinx.coroutines.UndispatchedCoroutine: java.lang.Object savedOldValue> = $r2;
+
+        return;
+    }
+}

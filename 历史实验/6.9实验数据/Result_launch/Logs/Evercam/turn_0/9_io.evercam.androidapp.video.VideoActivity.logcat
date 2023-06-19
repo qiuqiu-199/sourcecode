@@ -1,0 +1,48 @@
+--------- beginning of main
+06-08 21:45:31.025   320   320 D M_InsDal: Lio/evercam/androidapp/EvercamPlayApplication;--->onCreate()V
+06-08 21:45:31.052   320   320 D M_InsDal: Lio/evercam/androidapp/ParentAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 21:45:31.065   320   320 D M_InsDal: Lio/evercam/androidapp/video/VideoActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-08 21:45:31.067   320   320 E AndroidRuntime: FATAL EXCEPTION: main
+06-08 21:45:31.067   320   320 E AndroidRuntime: Process: io.evercam.androidapp, PID: 320
+06-08 21:45:31.067   320   320 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{io.evercam.androidapp/io.evercam.androidapp.video.VideoActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.io.evercam.androidapp.MyParcelable
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-08 21:45:31.067   320   320 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.io.evercam.androidapp.MyParcelable
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.os.BaseBundle.getString(BaseBundle.java:1177)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at io.evercam.androidapp.video.VideoActivity.readShortcutCameraId(VideoActivity.java:707)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at io.evercam.androidapp.video.VideoActivity.onCreate(VideoActivity.java:233)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-08 21:45:31.067   320   320 E AndroidRuntime: 	... 11 more
+--------- beginning of system
+06-08 21:45:51.025   430   430 D M_InsDal: Lio/evercam/androidapp/EvercamPlayApplication;--->onCreate()V
+06-08 21:45:51.052   430   430 D M_InsDal: Lio/evercam/androidapp/ParentAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 21:45:51.064   430   430 D M_InsDal: Lio/evercam/androidapp/video/VideoActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 21:45:51.079   430   430 D M_InsDal: Lio/evercam/androidapp/custom/OfflineLayoutView;--->onFinishInflate()V
+06-08 21:45:51.100   430   430 D M_InsDal: Lio/evercam/androidapp/ParentAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 21:45:51.101   430   430 D M_InsDal: Lio/evercam/androidapp/MainActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 21:45:51.131   430   430 D M_InsDal: Lio/evercam/androidapp/ParentAppCompatActivity;--->onStart()V
+06-08 21:45:52.565   430   430 D M_InsDal: Lio/evercam/androidapp/ParentAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 21:45:52.565   430   430 D M_InsDal: Lio/evercam/androidapp/OnBoardingActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 21:45:52.593   430   430 D M_InsDal: Lio/evercam/androidapp/ParentAppCompatActivity;--->onStart()V
+06-08 21:45:52.869   430   430 D M_InsDal: Lio/evercam/androidapp/ParentAppCompatActivity;--->onStop()V

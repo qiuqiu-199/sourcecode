@@ -1,0 +1,42 @@
+final class kotlinx.coroutines.flow.internal.FlowProduceCoroutine extends kotlinx.coroutines.channels.ProducerCoroutine
+{
+
+    public void <init>(kotlin.coroutines.CoroutineContext, kotlinx.coroutines.channels.Channel)
+    {
+        kotlinx.coroutines.flow.internal.FlowProduceCoroutine r0;
+        kotlin.coroutines.CoroutineContext $r1;
+        kotlinx.coroutines.channels.Channel $r2;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.FlowProduceCoroutine;
+
+        $r1 := @parameter0: kotlin.coroutines.CoroutineContext;
+
+        $r2 := @parameter1: kotlinx.coroutines.channels.Channel;
+
+        specialinvoke r0.<kotlinx.coroutines.channels.ProducerCoroutine: void <init>(kotlin.coroutines.CoroutineContext,kotlinx.coroutines.channels.Channel)>($r1, $r2);
+
+        return;
+    }
+
+    public boolean childCancelled(java.lang.Throwable)
+    {
+        kotlinx.coroutines.flow.internal.FlowProduceCoroutine r0;
+        boolean $z0;
+        java.lang.Throwable $r1;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.FlowProduceCoroutine;
+
+        $r1 := @parameter0: java.lang.Throwable;
+
+        $z0 = $r1 instanceof kotlinx.coroutines.flow.internal.ChildCancelledException;
+
+        if $z0 == 0 goto label1;
+
+        return 1;
+
+     label1:
+        $z0 = virtualinvoke r0.<kotlinx.coroutines.flow.internal.FlowProduceCoroutine: boolean cancelImpl$kotlinx_coroutines_core(java.lang.Object)>($r1);
+
+        return $z0;
+    }
+}

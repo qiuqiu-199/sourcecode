@@ -1,0 +1,25 @@
+--------- beginning of main
+--------- beginning of system
+06-08 18:58:36.811 27073 27073 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 18:58:36.816 27073 27073 D M_InsDal: Leu/siacs/conversations/ui/ConferenceDetailsActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 18:58:36.855 27073 27073 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStart()V
+06-08 18:58:36.856 27073 27073 D M_InsDal: Leu/siacs/conversations/ui/ConferenceDetailsActivity;--->onStart()V
+06-08 18:58:36.857 27073 27073 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onResume()V
+06-08 18:58:36.865 27073 27073 D M_InsDal: Leu/siacs/conversations/ui/service/EmojiService$1;--->onFailed(Ljava/lang/Throwable;)V
+06-08 18:58:36.909 22419 22419 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/OpenPgpService;--->onCreate()V
+--------- beginning of crash
+06-08 18:58:36.987 27073 27073 E AndroidRuntime: FATAL EXCEPTION: main
+06-08 18:58:36.987 27073 27073 E AndroidRuntime: Process: eu.siacs.conversations, PID: 27073
+06-08 18:58:36.987 27073 27073 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+06-08 18:58:36.987 27073 27073 E AndroidRuntime: 	at eu.siacs.conversations.ui.ConferenceDetailsActivity.onBackendConnected(ConferenceDetailsActivity.java:412)
+06-08 18:58:36.987 27073 27073 E AndroidRuntime: 	at eu.siacs.conversations.ui.XmppActivity$1.onServiceConnected(XmppActivity.java:112)
+06-08 18:58:36.987 27073 27073 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher.doConnected(LoadedApk.java:1730)
+06-08 18:58:36.987 27073 27073 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1762)
+06-08 18:58:36.987 27073 27073 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+06-08 18:58:36.987 27073 27073 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-08 18:58:36.987 27073 27073 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-08 18:58:36.987 27073 27073 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-08 18:58:36.987 27073 27073 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-08 18:58:36.987 27073 27073 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-08 18:58:36.987 27073 27073 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-08 18:58:48.837 22419 22419 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V

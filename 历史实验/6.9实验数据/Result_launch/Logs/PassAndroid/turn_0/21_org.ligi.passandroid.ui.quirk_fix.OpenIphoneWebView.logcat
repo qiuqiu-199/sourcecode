@@ -1,0 +1,34 @@
+--------- beginning of main
+--------- beginning of system
+06-09 14:04:33.386  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App;---><clinit>()V
+06-09 14:04:33.387  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App$Companion;---><init>()V
+06-09 14:04:33.387  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App;---><init>()V
+06-09 14:04:33.388  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App;--->onCreate()V
+06-09 14:04:33.388  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App$onCreate$1;--->a(Lcom/github/salomonbrys/kodein/Kodein$Builder;)V
+06-09 14:04:33.388  3619  3619 D M_InsDal: Lorg/ligi/passandroid/TrackerKodeinModuleKt;--->a(Landroid/content/Context;)Lcom/github/salomonbrys/kodein/Kodein$Module;
+06-09 14:04:33.388  3619  3619 D M_InsDal: Lorg/ligi/passandroid/TrackerKodeinModuleKt$createTrackerKodeinModule$1;--->a(Lcom/github/salomonbrys/kodein/Kodein$Builder;)V
+06-09 14:04:33.388  3619  3619 D M_InsDal: Lorg/ligi/passandroid/TrackerKodeinModuleKt$createTrackerKodeinModule$1$$special$$inlined$bind$1;---><init>()V
+06-09 14:04:33.389  3619  3619 D M_InsDal: Lorg/ligi/passandroid/TrackerKodeinModuleKt$createTrackerKodeinModule$1$$special$$inlined$singleton$1;---><init>()V
+06-09 14:04:33.389  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App;--->a()Lcom/github/salomonbrys/kodein/Kodein$Module;
+06-09 14:04:33.389  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1;--->a(Lcom/github/salomonbrys/kodein/Kodein$Builder;)V
+06-09 14:04:33.389  3619  3619 D M_InsDal: Lorg/ligi/passandroid/json_adapter/ZonedTimeAdapter;---><init>()V
+06-09 14:04:33.389  3619  3619 D M_InsDal: Lorg/ligi/passandroid/json_adapter/ColorAdapter;---><init>()V
+06-09 14:04:33.389  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$bind$1;---><init>()V
+06-09 14:04:33.390  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$singleton$1;---><init>()V
+06-09 14:04:33.390  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$bind$2;---><init>()V
+06-09 14:04:33.390  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$singleton$2;---><init>()V
+06-09 14:04:33.390  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$bind$3;---><init>()V
+06-09 14:04:33.390  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$singleton$3;---><init>()V
+06-09 14:04:33.390  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App;--->b()V
+06-09 14:04:33.390  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App;--->g()V
+06-09 14:04:33.390  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App$onCreate$$inlined$instance$1;---><init>()V
+06-09 14:04:33.390  3619  3619 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$2;--->a(Lcom/github/salomonbrys/kodein/bindings/NoArgBindingKodein;)Lorg/ligi/passandroid/model/AndroidSettings;
+06-09 14:04:33.390  3619  3619 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings;---><init>(Landroid/content/Context;)V
+06-09 14:04:33.390  3619  3619 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings;--->getNightMode()I
+06-09 14:04:33.390  3619  3619 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings$sharedPreferences$2;--->invoke()Landroid/content/SharedPreferences;
+06-09 14:04:33.390  3619  3619 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings;--->getContext()Landroid/content/Context;
+06-09 14:04:33.393  3619  3619 D M_InsDal: Lorg/ligi/passandroid/ui/quirk_fix/OpenIphoneWebView;---><init>()V
+06-09 14:04:33.394  3619  3619 D M_InsDal: Lorg/ligi/passandroid/ui/quirk_fix/OpenIphoneWebView;--->onCreate(Landroid/os/Bundle;)V
+06-09 14:04:33.463  3619  3619 D M_InsDal: Lorg/ligi/passandroid/functions/InputStreamProviderKt;---><clinit>()V
+06-09 14:04:33.463  3619  3619 D M_InsDal: Lorg/ligi/passandroid/functions/InputStreamProviderKt;--->a()Ljava/lang/String;
+06-09 14:04:33.467  3619  3619 D M_InsDal: Lorg/ligi/passandroid/ui/quirk_fix/OpenIphoneWebView$onCreate$1;---><init>(Lnet/steamcrafted/loadtoast/LoadToast;)V

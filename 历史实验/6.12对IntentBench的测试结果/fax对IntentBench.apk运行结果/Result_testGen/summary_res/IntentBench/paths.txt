@@ -1,0 +1,224 @@
+key: com.example.testBench.sensitivity.FieldSensitive2
+## action:"?"
+
+key: com.example.testBench.sensitivity.FieldSensitive3
+## action:"field3"
+## action:"?"
+
+key: com.example.testBench.acdt.AcdtDataUri
+## host:"?"## path:"path_candidate"
+## scheme:"scheme_candidate"## host:"host_candidate"## path:"path_candidate"## port:"?"
+## scheme:"scheme_candidate"## host:"host_candidate"## path:"path_candidate"## port:"1024"
+## path:"?"
+## scheme:"?"## host:"host_candidate"## path:"path_candidate"
+
+key: com.example.testBench.extra.ExtraParce
+## extra:Parcelable-"parce", ParcelableArray-"parce_arr", ParcelableArrayList-"parce_arr_list", Serializable-"ser"
+
+key: com.example.testBench.string.ConstantValue
+## action:"?"
+## action:"$r1_101"
+## action:"action_vr_"
+## action:"action_vr_4"
+## action:"action_vr_2"
+## action:"action_vr_1"
+## action:"action_vr_3"
+## action:"action_vr_6"
+## action:"ACTION_VR_7"
+## action:"action_vr_5"
+## action:"action_vr_8"
+## action:"action_vr_9"
+## action:"action_vr_10"
+
+key: com.example.testBench.interact.ActionNoExtra
+## action:"Aaction1"## category:"?"
+## action:"Aaction2"
+## action:"Aaction1"## category:"category1"
+## action:"?"
+
+key: com.example.testBench.string.ConstantValueBranch
+## extra:int-"strif",int-"strelse"
+
+key: com.example.testBench.string.CompareOp
+## action:"ABCDEFGHIJaction_cr_5"
+## action:"action_cr_4action_cr_5"
+## action:"ACTION_cr_2"
+## action:"action_cr_6"
+## action:"action_cr_3"
+## action:"action_cr_1"
+## action:"action_cr_4"
+## action:"?"
+
+key: com.example.testBench.extra.ExtraArray2
+## extra:charArray-"ch_arr", CharSequenceArrayList-"charseq_arr_list", byteArray-"bt_arr", IntegerArrayList-"int_arrlist", StringArrayList-"str_arrlist", CharSequence-"charseq", CharSequenceArray-"charseq_arr"
+
+key: com.example.testBench.sensitivity.FieldSensitive
+## action:"field1_t"
+## action:"field1_f"
+## action:"field1_wrong"
+## action:"?"
+
+key: com.example.testBench.sensitivity.PathSensitive2
+## extra:int-"e11", String-"e10"
+## extra:String-"e10"
+
+key: com.example.testBench.string.ReceiveVar2
+## action:"EABCDF"
+## action:"BsubA5C"
+## action:"BsubACD"
+## action:"BsubA\u{5}C"
+
+key: com.example.testBench.string.ReceiveVar3
+## action:"rvA"
+## action:"A"
+## action:"rv"
+
+key: com.example.testBench.extra.ExtraLoop
+## extra:int-"int_c", int-"int_a"
+## extra:int-"int_c", int-"int_b"
+## extra:int-"int_c"
+## extra:int-"int_c", int-"int_b", int-"int_a"
+
+key: com.example.testBench.extra.ExtraLoopBranch
+## extra:int-"int_d", int-"int_a"
+## extra:int-"int_d", int-"int_b"
+## extra:int-"int_d", int-"int_c"
+## extra:int-"int_d"
+
+key: com.example.testBench.interact.ActionAndExtra
+## action:"Aaction1"## category:"category2"## extra:int-"extra2"
+## action:"Aaction1"## category:"?"## extra:int-"extra1"
+## action:"Aaction1"## category:"category1"
+## action:"?"
+
+key: com.example.testBench.override.FatherClass
+## extra:int-"father"
+
+key: com.example.testBench.sensitivity.PathSensitive
+## action:"?"## category:""## extra:String-"e0"
+## action:"action"## category:"?"## extra:String-"e3", String-"e0"
+## extra:String-"e0"
+## action:"?"## category:"?"## data:"data"## extra:int-"e5", String-"e0"
+## action:"action"## category:"category"## extra:String-"e2", String-"e0"
+## action:"?"## category:"?"## data:"?"## extra:String-"e0"
+## action:"Aview"## category:"?"## extra:int-"e4", String-"e0"
+
+key: com.example.testBench.acdt.AcdtCombine
+## action:"action1"## data:"data1"
+## action:"action1"## data:"data2"
+## action:"action2"
+## action:"?"## data:"?"
+## action:"?"## data:"data2"
+## action:"action1"## data:"?"
+
+key: com.example.testBench.extra.ExtraBasic2
+## extra:boolean-"bool_f", String-"str", byte-"bt", char-"char", Extras-,(,int-"int_a",)
+
+key: com.example.testBench.acdt.AcdtBasic
+## action:"action_candidate"## category:"category_candidate"## data:"?"## type:"type_candidate"
+## action:"action_candidate"## category:"category_candidate"## data:"data_candidate"## type:"?"
+## action:"?"## category:"?"## data:"?"## type:"type_candidate"
+## action:"?"## category:"?"## data:"data_candidate"## type:"?"
+## action:"action_candidate"## category:"?"## data:"?"## type:"?"
+## action:"?"## category:"category_candidate"## data:"?"## type:"?"
+## action:"action_candidate"## category:"category_candidate"## data:"data_candidate"## type:"type_candidate"
+## action:"?"## category:"?"## data:"data_candidate"## type:"type_candidate"
+## action:"action_candidate"## category:"?"## data:"?"## type:"type_candidate"
+## action:"action_candidate"## category:"?"## data:"data_candidate"## type:"?"
+## action:"?"## category:"category_candidate"## data:"data_candidate"## type:"?"
+## action:"?"## category:"category_candidate"## data:"?"## type:"type_candidate"
+## action:"?"## category:"?"## data:"?"## type:"?"
+## action:"action_candidate"## category:"category_candidate"## data:"?"## type:"?"
+## action:"action_candidate"## category:"?"## data:"data_candidate"## type:"type_candidate"
+## action:"?"## category:"category_candidate"## data:"data_candidate"## type:"type_candidate"
+
+key: com.example.testBench.string.ReceiveVar
+## action:"subA"
+## action:"ABCD"
+## action:"ABCDE5F"
+## action:"action_ve_1"
+## action:"ABCDE\u{5}F"
+
+key: com.example.testBench.sensitivity.ContextSensitive
+## action:"?"## extra:double-"d0", double-"if_d3"
+## action:"a0"## extra:double-"d0", double-"if_d3"
+## action:"if_a1"## extra:double-"if_d1", double-"d0"
+## action:"if_a2"## extra:double-"if_d2", double-"d0"
+
+key: com.example.testBench.override.TestInterface1
+
+key: com.example.testBench.string.StringSource
+## action:"action_so_2"
+## action:"action_so_1"
+## action:"?"
+
+key: com.example.testBench.override.TestInterface2
+
+key: com.example.testBench.extra.ExtraArray
+## extra:shortArray-"short_arr", intArray-"int_arr", StringArray-"str_arr", floatArray-"float_arr", doubleArray-"double_arr", booleanArray-"bool_arr", longArray-"long_arr"
+
+key: com.example.testBench.lifecycle.LifeCycle2
+## extra:double-"onDestroy_dd", double-"onResume_dd", double-"onCreate_dd", double-"onStart_dd"
+
+key: com.example.testBench.override.SonClass2
+## extra:int-"father"
+
+key: com.example.testBench.override.SonClass1
+## extra:int-"son1"
+
+key: com.example.testBench.extra.ExtraBasic
+## extra:double-"double_b", long-"long_d", int-"int_a", short-"short_e", float-"float_c"
+
+key: com.example.testBench.MainActivity
+
+key: com.example.testBench.sensitivity.ContextSensitive2
+## action:"getActionWithBranch"
+## action:"getActionWithoutPara"
+## action:"getActionWithBranch0"
+## action:"getActionWithBranch2"
+## action:"getActionWithBranch1"
+## action:"getActionWithPara"
+## action:"?"
+
+key: com.example.testBench.sensitivity.ContextSensitive3
+## action:"handleAction"
+## action:"?"
+
+key: com.example.testBench.sensitivity.FlowSensitive
+## action:"candidate1"
+## action:"?"
+
+key: com.example.testBench.sensitivity.ContextSensitive4
+## action:"getActionWithBranch"
+## action:"getActionWithBranch1"
+## action:"getActionWithBranch0"
+## action:"?"
+
+key: com.example.testBench.extra.ExtraBundle
+## extra:String-"str_l1", Bundle-"bundle_l1",(,Bundle-"bundle_l2",(,String-"str",),)
+
+key: com.example.testBench.complete.motivatingExample
+## action:"AactB"
+## action:"staAB"## extra:String-"s1", Bundle-"b1",(,Bundle-"b2",(,String-"s3",),)
+## action:"A?"
+
+key: com.example.testBench.checker.NullChecker
+## extra:int-"int_null"
+## action:"?"## extra:int-"int_not_null"
+
+key: com.example.testBench.lifecycle.LifeCycle
+## action:"onStart_action"## extra:double-"onDestroy_dd", double-"onCreate_dd", double-"onStart_dd"
+## action:"onCreate_action"## extra:double-"onDestroy_dd", double-"onCreate_dd", double-"onStart_dd"
+## action:"onDestroy_action"## extra:double-"onDestroy_dd", double-"onCreate_dd", double-"onStart_dd"
+## action:"?"## extra:double-"onDestroy_dd", double-"onCreate_dd", double-"onStart_dd"
+
+key: com.example.testBench.interact.ExtraNoAction
+## extra:int-"extra1", int-"extra2"
+
+key: com.example.testBench.sensitivity.FlowSensitive2
+## extra:String-"str2", String-"str1"
+
+key: com.example.testBench.checker.EmptyChecker
+## extra:int-"int_empty"
+## action:"?"## extra:int-"int_not_empty"
+

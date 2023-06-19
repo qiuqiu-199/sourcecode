@@ -1,0 +1,38 @@
+--------- beginning of main
+--------- beginning of system
+06-09 11:27:31.464  2558  2558 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+06-09 11:27:31.481  2558  2558 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+06-09 11:27:31.485  2558  2558 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/RemoteDisplayTransferCodeActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: FATAL EXCEPTION: main
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 2558
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.os.Parcelable android.os.Bundle.getParcelable(java.lang.String)' on a null object reference
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at org.sufficientlysecure.keychain.remote.ui.RemoteDisplayTransferCodeActivity$DisplayTransferCodeDialogFragment.onCreateDialog(RemoteDisplayTransferCodeActivity.java:64)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.support.v4.app.DialogFragment.onGetLayoutInflater(DialogFragment.java:328)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.support.v4.app.Fragment.performGetLayoutInflater(Fragment.java:1226)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1428)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1759)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1827)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.support.v4.app.BackStackRecord.executeOps(BackStackRecord.java:797)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.executeOps(FragmentManager.java:2596)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.executeOpsTogether(FragmentManager.java:2383)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.removeRedundantOperationsAndExecute(FragmentManager.java:2338)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:2245)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.dispatchStateChange(FragmentManager.java:3248)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:3200)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.support.v4.app.FragmentController.dispatchActivityCreated(FragmentController.java:195)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:597)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:7165)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-09 11:27:31.490  2558  2558 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)

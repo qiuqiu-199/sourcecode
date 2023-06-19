@@ -1,0 +1,25 @@
+--------- beginning of system
+--------- beginning of main
+06-08 17:47:40.228 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaApp;--->onCreate()V
+06-08 17:47:40.362 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:47:40.362 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/HomePagerActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:47:40.482 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/HomePagerActivity;--->onPostCreate(Landroid/os/Bundle;)V
+06-08 17:47:40.482 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/CalendulaActivity;--->onResume()V
+06-08 17:47:40.483 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/HomePagerActivity;--->onResume()V
+06-08 17:47:40.500 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/util/view/CustomDigitalClock;--->onAttachedToWindow()V
+06-08 17:47:40.506 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/fragments/DailyAgendaFragment;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:47:40.506 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/fragments/MedicinesListFragment;--->onAttach(Landroid/app/Activity;)V
+06-08 17:47:40.506 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/fragments/MedicinesListFragment;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:47:40.506 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/fragments/RoutinesListFragment;--->onAttach(Landroid/app/Activity;)V
+06-08 17:47:40.506 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/fragments/ScheduleListFragment;--->onAttach(Landroid/app/Activity;)V
+06-08 17:47:40.532 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/fragments/DailyAgendaFragment;--->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+06-08 17:47:40.592 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/fragments/MedicinesListFragment;--->onStart()V
+06-08 17:47:40.592 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/fragments/RoutinesListFragment;--->onStart()V
+06-08 17:47:40.592 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/fragments/ScheduleListFragment;--->onStart()V
+06-08 17:47:40.783 11074 11074 D M_InsDal: Les/usc/citius/servando/calendula/fragments/RoutinesListFragment$ReloadItemsTask;--->onPostExecute(Ljava/lang/Void;)V
+06-08 17:47:45.328 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;---><init>()V
+06-08 17:47:45.328 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver;---><init>()V
+06-08 17:47:45.328 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;--->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+06-08 17:47:45.328 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver;--->shouldRunNetworkTask(Ljava/lang/String;Landroid/content/Context;)Z
+06-08 17:47:45.328 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->getCurrent(Landroid/content/Context;)Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;
+06-08 17:47:45.328 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->isLoggedIn()Z

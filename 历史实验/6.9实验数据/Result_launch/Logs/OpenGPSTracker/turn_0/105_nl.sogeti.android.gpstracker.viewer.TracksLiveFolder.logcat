@@ -1,0 +1,14 @@
+--------- beginning of main
+06-09 11:25:36.463 31143 31143 D M_InsDal: Lcom/fsck/k9/provider/DecryptedFileProvider;--->onTrimMemory(I)V
+06-09 11:25:36.463 31143 31143 D M_InsDal: Lcom/fsck/k9/provider/AttachmentTempFileProvider;--->onTrimMemory(I)V
+--------- beginning of system
+06-09 11:25:46.676  1960  1960 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><clinit>()V
+06-09 11:25:46.676  1960  1960 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><init>()V
+06-09 11:25:46.676  1960  1960 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;--->onCreate()Z
+06-09 11:25:46.676  1960  1960 D M_InsDal: Lnl/sogeti/android/gpstracker/db/DatabaseHelper;---><init>(Landroid/content/Context;)V
+06-09 11:25:46.679  1960  1960 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TracksLiveFolder;---><init>()V
+06-09 11:25:46.680  1960  1960 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TracksLiveFolder;--->onCreate(Landroid/os/Bundle;)V
+06-09 11:25:46.680  1960  1960 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStracking$Tracks;---><clinit>()V
+06-09 11:25:46.680  1960  1960 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStracking;---><clinit>()V
+06-09 11:25:58.774 31143 31143 D M_InsDal: Lcom/fsck/k9/provider/DecryptedFileProvider;--->onTrimMemory(I)V
+06-09 11:25:58.774 31143 31143 D M_InsDal: Lcom/fsck/k9/provider/AttachmentTempFileProvider;--->onTrimMemory(I)V

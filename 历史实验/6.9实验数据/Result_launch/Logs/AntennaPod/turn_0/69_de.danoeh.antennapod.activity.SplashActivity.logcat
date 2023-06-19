@@ -1,0 +1,61 @@
+--------- beginning of main
+--------- beginning of system
+06-08 17:27:15.070  5070  5070 D M_InsDal: Lde/danoeh/antennapod/PodcastApp;--->onCreate()V
+06-08 17:27:15.121  5070  5070 D M_InsDal: Lde/danoeh/antennapod/activity/SplashActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: FATAL EXCEPTION: main
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: Process: de.danoeh.antennapod, PID: 5070
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.de.danoeh.antennapod.MySerializable)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5620)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5632)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at de.danoeh.antennapod.activity.SplashActivity$$Lambda$1.call(Unknown Source:1048)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at rx.Completable$28.onCompleted(Completable.java:1933)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at rx.Completable$24$1$1.call(Completable.java:1625)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at rx.android.schedulers.LooperScheduler$ScheduledAction.run(LooperScheduler.java:107)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.de.danoeh.antennapod.MySerializable
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	... 19 more
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.de.danoeh.antennapod.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/de.danoeh.antennapod-G4Bjf6n0mJ-nvR424yvoWA==/base.apk"],nativeLibraryDirectories=[/data/app/de.danoeh.antennapod-G4Bjf6n0mJ-nvR424yvoWA==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+06-08 17:27:15.146  5070  5070 E AndroidRuntime: 	... 28 more
+06-08 17:27:15.270  5096  5096 D M_InsDal: Lde/danoeh/antennapod/PodcastApp;--->onCreate()V
+06-08 17:27:15.305  5096  5096 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:27:15.320  5096  5096 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onCreate(Landroid/os/Bundle;)V
+06-08 17:27:15.320  5096  5096 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+06-08 17:27:15.326  5096  5096 D M_InsDal: Lde/danoeh/antennapod/fragment/ExternalPlayerFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+06-08 17:27:15.329  5096  5096 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onStart()V
+06-08 17:27:15.329  5096  5096 D M_InsDal: Lde/danoeh/antennapod/activity/MainActivity;--->onStart()V
+06-08 17:27:15.329  5096  5096 D M_InsDal: Lde/danoeh/antennapod/core/feed/EventDistributor;--->addObserver(Ljava/util/Observer;)V
+06-08 17:27:15.331  5096  5096 D M_InsDal: Lde/danoeh/antennapod/activity/MainActivity;--->onPostCreate(Landroid/os/Bundle;)V
+06-08 17:27:15.331  5096  5096 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onResume()V
+06-08 17:27:15.331  5096  5096 D M_InsDal: Lde/danoeh/antennapod/activity/MainActivity;--->onResume()V
+06-08 17:27:15.334  5096  5096 D M_InsDal: Lde/danoeh/antennapod/fragment/QueueFragment;--->onResume()V
+06-08 17:27:15.335  5096  5096 D M_InsDal: Lde/danoeh/antennapod/core/feed/EventDistributor;--->addObserver(Ljava/util/Observer;)V
+06-08 17:27:15.335  5096  5096 D M_InsDal: Lde/danoeh/antennapod/fragment/ExternalPlayerFragment;--->onResume()V
+06-08 17:27:16.403  5096  5096 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onCreateOptionsMenu(Landroid/view/Menu;)Z
+06-08 17:27:16.404  5096  5096 D M_InsDal: Lde/danoeh/antennapod/activity/MainActivity;--->onCreateOptionsMenu(Landroid/view/Menu;)Z
+06-08 17:27:16.411  5096  5096 D M_InsDal: Lde/danoeh/antennapod/activity/CastEnabledActivity;--->onPrepareOptionsMenu(Landroid/view/Menu;)Z

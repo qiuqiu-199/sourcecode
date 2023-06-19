@@ -1,0 +1,44 @@
+--------- beginning of main
+--------- beginning of system
+06-09 10:46:04.969 27186 27186 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><clinit>()V
+06-09 10:46:04.969 27186 27186 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><init>()V
+06-09 10:46:04.969 27186 27186 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;--->onCreate()Z
+06-09 10:46:04.969 27186 27186 D M_InsDal: Lnl/sogeti/android/gpstracker/db/DatabaseHelper;---><init>(Landroid/content/Context;)V
+06-09 10:46:04.971 27186 27186 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/NameTrack;---><init>()V
+06-09 10:46:04.972 27186 27186 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/NameTrack$1;---><init>(Lnl/sogeti/android/gpstracker/actions/NameTrack;)V
+06-09 10:46:04.972 27186 27186 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/NameTrack;--->onCreate(Landroid/os/Bundle;)V
+06-09 10:46:04.975 27186 27186 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/NameTrack;--->onResume()V
+--------- beginning of crash
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: FATAL EXCEPTION: main
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: Process: nl.sogeti.android.gpstracker, PID: 27186
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {nl.sogeti.android.gpstracker/nl.sogeti.android.gpstracker.actions.NameTrack}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.nl.sogeti.android.gpstracker.MyParcelable
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3825)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3857)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.nl.sogeti.android.gpstracker.MyParcelable
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5620)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5632)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at nl.sogeti.android.gpstracker.actions.NameTrack.onResume(NameTrack.java:163)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7300)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3817)
+06-09 10:46:04.977 27186 27186 E AndroidRuntime: 	... 11 more
+06-09 10:46:05.002 26356 26356 D M_InsDal: Lcom/fsck/k9/provider/DecryptedFileProvider;--->onTrimMemory(I)V
+06-09 10:46:05.002 26356 26356 D M_InsDal: Lcom/fsck/k9/provider/AttachmentTempFileProvider;--->onTrimMemory(I)V

@@ -1,0 +1,333 @@
+public abstract class kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc extends kotlinx.coroutines.internal.AtomicDesc
+{
+
+    public void <init>()
+    {
+        kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc r0;
+
+        r0 := @this: kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc;
+
+        specialinvoke r0.<kotlinx.coroutines.internal.AtomicDesc: void <init>()>();
+
+        return;
+    }
+
+    public final void complete(kotlinx.coroutines.internal.AtomicOp, java.lang.Object)
+    {
+        kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc r0;
+        java.util.concurrent.atomic.AtomicReferenceFieldUpdater $r1;
+        kotlinx.coroutines.internal.AtomicOp $r2;
+        java.lang.Object $r3;
+        byte $b0;
+        kotlinx.coroutines.internal.LockFreeLinkedListNode $r4, $r6;
+        boolean $z0;
+        int $i1;
+        java.lang.AssertionError $r5;
+
+        r0 := @this: kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc;
+
+        $r2 := @parameter0: kotlinx.coroutines.internal.AtomicOp;
+
+        $r3 := @parameter1: java.lang.Object;
+
+        if $r3 != null goto label1;
+
+        $b0 = 1;
+
+        goto label2;
+
+     label1:
+        $b0 = 0;
+
+     label2:
+        $r4 = virtualinvoke r0.<kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc: kotlinx.coroutines.internal.LockFreeLinkedListNode getAffectedNode()>();
+
+        if $r4 != null goto label4;
+
+        $z0 = staticinvoke <kotlinx.coroutines.DebugKt: boolean getASSERTIONS_ENABLED()>();
+
+        if $z0 == 0 goto label9;
+
+        $i1 = $b0 ^ 1;
+
+        if $i1 == 0 goto label3;
+
+        return;
+
+     label3:
+        $r5 = new java.lang.AssertionError;
+
+        specialinvoke $r5.<java.lang.AssertionError: void <init>()>();
+
+        throw $r5;
+
+     label4:
+        $r6 = virtualinvoke r0.<kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc: kotlinx.coroutines.internal.LockFreeLinkedListNode getOriginalNext()>();
+
+        if $r6 != null goto label6;
+
+        $z0 = staticinvoke <kotlinx.coroutines.DebugKt: boolean getASSERTIONS_ENABLED()>();
+
+        if $z0 == 0 goto label9;
+
+        $i1 = $b0 ^ 1;
+
+        if $i1 == 0 goto label5;
+
+        return;
+
+     label5:
+        $r5 = new java.lang.AssertionError;
+
+        specialinvoke $r5.<java.lang.AssertionError: void <init>()>();
+
+        throw $r5;
+
+     label6:
+        if $b0 == 0 goto label7;
+
+        $r3 = virtualinvoke r0.<kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc: java.lang.Object updatedNext(kotlinx.coroutines.internal.LockFreeLinkedListNode,kotlinx.coroutines.internal.LockFreeLinkedListNode)>($r4, $r6);
+
+        goto label8;
+
+     label7:
+        $r3 = $r6;
+
+     label8:
+        $r1 = <kotlinx.coroutines.internal.LockFreeLinkedListNode: java.util.concurrent.atomic.AtomicReferenceFieldUpdater _next$FU>;
+
+        $z0 = staticinvoke <androidx.concurrent.futures.AbstractResolvableFuture$SafeAtomicHelper$$ExternalSyntheticBackportWithForwarding0: boolean m(java.util.concurrent.atomic.AtomicReferenceFieldUpdater,java.lang.Object,java.lang.Object,java.lang.Object)>($r1, $r4, $r2, $r3);
+
+        if $z0 == 0 goto label9;
+
+        if $b0 == 0 goto label9;
+
+        virtualinvoke r0.<kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc: void finishOnSuccess(kotlinx.coroutines.internal.LockFreeLinkedListNode,kotlinx.coroutines.internal.LockFreeLinkedListNode)>($r4, $r6);
+
+     label9:
+        return;
+    }
+
+    protected java.lang.Object failure(kotlinx.coroutines.internal.LockFreeLinkedListNode)
+    {
+        kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc r0;
+        kotlinx.coroutines.internal.LockFreeLinkedListNode $r1;
+
+        r0 := @this: kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc;
+
+        $r1 := @parameter0: kotlinx.coroutines.internal.LockFreeLinkedListNode;
+
+        return null;
+    }
+
+    protected abstract void finishOnSuccess(kotlinx.coroutines.internal.LockFreeLinkedListNode, kotlinx.coroutines.internal.LockFreeLinkedListNode);
+
+    public abstract void finishPrepare(kotlinx.coroutines.internal.LockFreeLinkedListNode$PrepareOp);
+
+    protected abstract kotlinx.coroutines.internal.LockFreeLinkedListNode getAffectedNode();
+
+    protected abstract kotlinx.coroutines.internal.LockFreeLinkedListNode getOriginalNext();
+
+    public java.lang.Object onPrepare(kotlinx.coroutines.internal.LockFreeLinkedListNode$PrepareOp)
+    {
+        kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc r0;
+        kotlinx.coroutines.internal.LockFreeLinkedListNode$PrepareOp $r1;
+
+        r0 := @this: kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc;
+
+        $r1 := @parameter0: kotlinx.coroutines.internal.LockFreeLinkedListNode$PrepareOp;
+
+        virtualinvoke r0.<kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc: void finishPrepare(kotlinx.coroutines.internal.LockFreeLinkedListNode$PrepareOp)>($r1);
+
+        return null;
+    }
+
+    public void onRemoved(kotlinx.coroutines.internal.LockFreeLinkedListNode)
+    {
+        kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc r0;
+        kotlinx.coroutines.internal.LockFreeLinkedListNode $r1;
+
+        r0 := @this: kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc;
+
+        $r1 := @parameter0: kotlinx.coroutines.internal.LockFreeLinkedListNode;
+
+        return;
+    }
+
+    public final java.lang.Object prepare(kotlinx.coroutines.internal.AtomicOp)
+    {
+        kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc r0;
+        java.lang.Object $r1, $r5, $r9;
+        kotlinx.coroutines.internal.AtomicOp $r2;
+        kotlinx.coroutines.internal.OpDescriptor $r3;
+        kotlinx.coroutines.internal.LockFreeLinkedListNode $r4, $r7;
+        boolean $z0;
+        kotlinx.coroutines.internal.LockFreeLinkedListNode$PrepareOp $r6;
+        java.util.concurrent.atomic.AtomicReferenceFieldUpdater $r8;
+        java.lang.AssertionError $r10;
+        java.lang.Throwable $r11;
+
+        r0 := @this: kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc;
+
+        $r2 := @parameter0: kotlinx.coroutines.internal.AtomicOp;
+
+     label01:
+        $r3 = (kotlinx.coroutines.internal.OpDescriptor) $r2;
+
+        $r4 = virtualinvoke r0.<kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc: kotlinx.coroutines.internal.LockFreeLinkedListNode takeAffectedNode(kotlinx.coroutines.internal.OpDescriptor)>($r3);
+
+        if $r4 != null goto label02;
+
+        $r5 = <kotlinx.coroutines.internal.AtomicKt: java.lang.Object RETRY_ATOMIC>;
+
+        return $r5;
+
+     label02:
+        $r5 = $r4.<kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _next>;
+
+        if $r5 != $r2 goto label03;
+
+        return null;
+
+     label03:
+        $z0 = virtualinvoke $r2.<kotlinx.coroutines.internal.AtomicOp: boolean isDecided()>();
+
+        if $z0 == 0 goto label04;
+
+        return null;
+
+     label04:
+        $z0 = $r5 instanceof kotlinx.coroutines.internal.OpDescriptor;
+
+        if $z0 == 0 goto label06;
+
+        $r3 = (kotlinx.coroutines.internal.OpDescriptor) $r5;
+
+        $z0 = virtualinvoke $r2.<kotlinx.coroutines.internal.AtomicOp: boolean isEarlierThan(kotlinx.coroutines.internal.OpDescriptor)>($r3);
+
+        if $z0 == 0 goto label05;
+
+        $r5 = <kotlinx.coroutines.internal.AtomicKt: java.lang.Object RETRY_ATOMIC>;
+
+        return $r5;
+
+     label05:
+        virtualinvoke $r3.<kotlinx.coroutines.internal.OpDescriptor: java.lang.Object perform(java.lang.Object)>($r4);
+
+        goto label01;
+
+     label06:
+        $r1 = virtualinvoke r0.<kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc: java.lang.Object failure(kotlinx.coroutines.internal.LockFreeLinkedListNode)>($r4);
+
+        if $r1 == null goto label07;
+
+        return $r1;
+
+     label07:
+        $z0 = virtualinvoke r0.<kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc: boolean retry(kotlinx.coroutines.internal.LockFreeLinkedListNode,java.lang.Object)>($r4, $r5);
+
+        if $z0 == 0 goto label08;
+
+        goto label01;
+
+     label08:
+        $r6 = new kotlinx.coroutines.internal.LockFreeLinkedListNode$PrepareOp;
+
+        $r7 = (kotlinx.coroutines.internal.LockFreeLinkedListNode) $r5;
+
+        specialinvoke $r6.<kotlinx.coroutines.internal.LockFreeLinkedListNode$PrepareOp: void <init>(kotlinx.coroutines.internal.LockFreeLinkedListNode,kotlinx.coroutines.internal.LockFreeLinkedListNode,kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc)>($r4, $r7, r0);
+
+        $r8 = <kotlinx.coroutines.internal.LockFreeLinkedListNode: java.util.concurrent.atomic.AtomicReferenceFieldUpdater _next$FU>;
+
+        $z0 = staticinvoke <androidx.concurrent.futures.AbstractResolvableFuture$SafeAtomicHelper$$ExternalSyntheticBackportWithForwarding0: boolean m(java.util.concurrent.atomic.AtomicReferenceFieldUpdater,java.lang.Object,java.lang.Object,java.lang.Object)>($r8, $r4, $r5, $r6);
+
+        if $z0 == 0 goto label01;
+
+     label09:
+        $r9 = virtualinvoke $r6.<kotlinx.coroutines.internal.LockFreeLinkedListNode$PrepareOp: java.lang.Object perform(java.lang.Object)>($r4);
+
+        $r1 = <kotlinx.coroutines.internal.LockFreeLinkedList_commonKt: java.lang.Object REMOVE_PREPARED>;
+
+     label10:
+        if $r9 != $r1 goto label11;
+
+        goto label01;
+
+     label11:
+        $z0 = staticinvoke <kotlinx.coroutines.DebugKt: boolean getASSERTIONS_ENABLED()>();
+
+     label12:
+        if $z0 == 0 goto label17;
+
+        if $r9 != null goto label13;
+
+        $z0 = 1;
+
+        goto label14;
+
+     label13:
+        $z0 = 0;
+
+     label14:
+        if $z0 == 0 goto label15;
+
+        return null;
+
+     label15:
+        $r10 = new java.lang.AssertionError;
+
+        specialinvoke $r10.<java.lang.AssertionError: void <init>()>();
+
+        throw $r10;
+
+     label16:
+        $r11 := @caughtexception;
+
+        $r8 = <kotlinx.coroutines.internal.LockFreeLinkedListNode: java.util.concurrent.atomic.AtomicReferenceFieldUpdater _next$FU>;
+
+        staticinvoke <androidx.concurrent.futures.AbstractResolvableFuture$SafeAtomicHelper$$ExternalSyntheticBackportWithForwarding0: boolean m(java.util.concurrent.atomic.AtomicReferenceFieldUpdater,java.lang.Object,java.lang.Object,java.lang.Object)>($r8, $r4, $r6, $r5);
+
+        throw $r11;
+
+     label17:
+        return null;
+
+        catch java.lang.Throwable from label09 to label10 with label16;
+        catch java.lang.Throwable from label11 to label12 with label16;
+        catch java.lang.Throwable from label15 to label16 with label16;
+    }
+
+    protected boolean retry(kotlinx.coroutines.internal.LockFreeLinkedListNode, java.lang.Object)
+    {
+        kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc r0;
+        java.lang.Object $r1;
+        kotlinx.coroutines.internal.LockFreeLinkedListNode $r2;
+
+        r0 := @this: kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc;
+
+        $r2 := @parameter0: kotlinx.coroutines.internal.LockFreeLinkedListNode;
+
+        $r1 := @parameter1: java.lang.Object;
+
+        return 0;
+    }
+
+    protected kotlinx.coroutines.internal.LockFreeLinkedListNode takeAffectedNode(kotlinx.coroutines.internal.OpDescriptor)
+    {
+        kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc r0;
+        kotlinx.coroutines.internal.LockFreeLinkedListNode $r1;
+        kotlinx.coroutines.internal.OpDescriptor $r2;
+
+        r0 := @this: kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc;
+
+        $r2 := @parameter0: kotlinx.coroutines.internal.OpDescriptor;
+
+        $r1 = virtualinvoke r0.<kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc: kotlinx.coroutines.internal.LockFreeLinkedListNode getAffectedNode()>();
+
+        staticinvoke <kotlin.jvm.internal.Intrinsics: void checkNotNull(java.lang.Object)>($r1);
+
+        return $r1;
+    }
+
+    public abstract java.lang.Object updatedNext(kotlinx.coroutines.internal.LockFreeLinkedListNode, kotlinx.coroutines.internal.LockFreeLinkedListNode);
+}

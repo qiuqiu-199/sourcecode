@@ -1,0 +1,3 @@
+6.12生成测试用例的时候，对于检测出来的intent的额外属性里，如果有一个bundle里面重复嵌套了bundle，我的fax暂时还没有处理。
+例子：com.example.testBench.extra.ExtraBundle和com.example.testBench.complete.motivatingExample这两个都有这种情况，我的fax没有修正这种情况。
+详情见语雀-进度-遇到的问题-6.11。

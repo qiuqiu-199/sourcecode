@@ -1,0 +1,365 @@
+public abstract class kotlinx.coroutines.flow.internal.AbstractSharedFlow extends java.lang.Object
+{
+    private kotlinx.coroutines.flow.MutableStateFlow _subscriptionCount;
+    private int nCollectors;
+    private int nextIndex;
+    private kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] slots;
+
+    public void <init>()
+    {
+        kotlinx.coroutines.flow.internal.AbstractSharedFlow r0;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.AbstractSharedFlow;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static final int access$getNCollectors(kotlinx.coroutines.flow.internal.AbstractSharedFlow)
+    {
+        kotlinx.coroutines.flow.internal.AbstractSharedFlow $r0;
+        int i0;
+
+        $r0 := @parameter0: kotlinx.coroutines.flow.internal.AbstractSharedFlow;
+
+        i0 = $r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: int nCollectors>;
+
+        return i0;
+    }
+
+    public static final kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] access$getSlots(kotlinx.coroutines.flow.internal.AbstractSharedFlow)
+    {
+        kotlinx.coroutines.flow.internal.AbstractSharedFlow $r0;
+        kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] r1;
+
+        $r0 := @parameter0: kotlinx.coroutines.flow.internal.AbstractSharedFlow;
+
+        r1 = $r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] slots>;
+
+        return r1;
+    }
+
+    protected static void getSlots$annotations()
+    {
+        return;
+    }
+
+    protected final kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot allocateSlot()
+    {
+        kotlinx.coroutines.flow.internal.AbstractSharedFlow r0;
+        kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] $r1, $r2;
+        int $i0, $i1;
+        java.lang.Object[] $r3;
+        kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot $r4, $r5;
+        boolean $z0;
+        kotlinx.coroutines.flow.MutableStateFlow $r6;
+        java.lang.Throwable $r7;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.AbstractSharedFlow;
+
+        entermonitor r0;
+
+     label1:
+        $r1 = virtualinvoke r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] getSlots()>();
+
+        $r2 = $r1;
+
+        if $r1 != null goto label2;
+
+        $r1 = virtualinvoke r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] createSlotArray(int)>(2);
+
+        $r2 = $r1;
+
+        r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] slots> = $r1;
+
+        goto label3;
+
+     label2:
+        $i0 = virtualinvoke r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: int getNCollectors()>();
+
+        $i1 = lengthof $r1;
+
+        if $i0 < $i1 goto label3;
+
+        $i0 = lengthof $r1;
+
+        $i0 = $i0 * 2;
+
+        $r3 = staticinvoke <java.util.Arrays: java.lang.Object[] copyOf(java.lang.Object[],int)>($r1, $i0);
+
+        staticinvoke <kotlin.jvm.internal.Intrinsics: void checkNotNullExpressionValue(java.lang.Object,java.lang.String)>($r3, "java.util.Arrays.copyOf(this, newSize)");
+
+        $r2 = (kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[]) $r3;
+
+        r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] slots> = $r2;
+
+        $r2 = (kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[]) $r3;
+
+     label3:
+        $i0 = r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: int nextIndex>;
+
+     label4:
+        $r4 = $r2[$i0];
+
+        if $r4 != null goto label5;
+
+        $r5 = virtualinvoke r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot createSlot()>();
+
+        $r4 = $r5;
+
+        $r2[$i0] = $r5;
+
+     label5:
+        $i0 = $i0 + 1;
+
+        $i1 = lengthof $r2;
+
+        if $i0 < $i1 goto label6;
+
+        $i0 = 0;
+
+     label6:
+        $z0 = virtualinvoke $r4.<kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot: boolean allocateLocked(java.lang.Object)>(r0);
+
+        if $z0 == 0 goto label4;
+
+        r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: int nextIndex> = $i0;
+
+        $i0 = virtualinvoke r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: int getNCollectors()>();
+
+        $i0 = $i0 + 1;
+
+        r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: int nCollectors> = $i0;
+
+        $r6 = r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: kotlinx.coroutines.flow.MutableStateFlow _subscriptionCount>;
+
+     label7:
+        exitmonitor r0;
+
+        if $r6 != null goto label8;
+
+        return $r4;
+
+     label8:
+        staticinvoke <kotlinx.coroutines.flow.StateFlowKt: void increment(kotlinx.coroutines.flow.MutableStateFlow,int)>($r6, 1);
+
+        return $r4;
+
+     label9:
+        $r7 := @caughtexception;
+
+        exitmonitor r0;
+
+        throw $r7;
+
+        catch java.lang.Throwable from label1 to label7 with label9;
+    }
+
+    protected abstract kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot createSlot();
+
+    protected abstract kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] createSlotArray(int);
+
+    protected final void forEachSlotLocked(kotlin.jvm.functions.Function1)
+    {
+        kotlinx.coroutines.flow.internal.AbstractSharedFlow r0;
+        kotlin.jvm.functions.Function1 $r1;
+        int $i0, $i1;
+        kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot $r2;
+        kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] $r3;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.AbstractSharedFlow;
+
+        $r1 := @parameter0: kotlin.jvm.functions.Function1;
+
+        $i0 = staticinvoke <kotlinx.coroutines.flow.internal.AbstractSharedFlow: int access$getNCollectors(kotlinx.coroutines.flow.internal.AbstractSharedFlow)>(r0);
+
+        if $i0 != 0 goto label1;
+
+        return;
+
+     label1:
+        $r3 = staticinvoke <kotlinx.coroutines.flow.internal.AbstractSharedFlow: kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] access$getSlots(kotlinx.coroutines.flow.internal.AbstractSharedFlow)>(r0);
+
+        if $r3 != null goto label2;
+
+        return;
+
+     label2:
+        $i0 = lengthof $r3;
+
+        $i1 = 0;
+
+     label3:
+        if $i1 >= $i0 goto label5;
+
+        $r2 = $r3[$i1];
+
+        if $r2 == null goto label4;
+
+        interfaceinvoke $r1.<kotlin.jvm.functions.Function1: java.lang.Object invoke(java.lang.Object)>($r2);
+
+     label4:
+        $i1 = $i1 + 1;
+
+        goto label3;
+
+     label5:
+        return;
+    }
+
+    protected final void freeSlot(kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot)
+    {
+        kotlinx.coroutines.flow.internal.AbstractSharedFlow r0;
+        kotlin.coroutines.Continuation $r1;
+        kotlin.Result$Companion $r2;
+        kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot $r3;
+        int $i0, $i1;
+        kotlinx.coroutines.flow.MutableStateFlow $r4;
+        kotlin.coroutines.Continuation[] $r5;
+        kotlin.Unit $r6;
+        java.lang.Object $r7;
+        java.lang.Throwable $r8;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.AbstractSharedFlow;
+
+        $r3 := @parameter0: kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot;
+
+        entermonitor r0;
+
+     label1:
+        $i0 = virtualinvoke r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: int getNCollectors()>();
+
+        $i0 = $i0 + -1;
+
+        r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: int nCollectors> = $i0;
+
+        $r4 = r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: kotlinx.coroutines.flow.MutableStateFlow _subscriptionCount>;
+
+        $i1 = virtualinvoke r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: int getNCollectors()>();
+
+        $i0 = 0;
+
+        if $i1 != 0 goto label2;
+
+        r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: int nextIndex> = 0;
+
+     label2:
+        $r5 = virtualinvoke $r3.<kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot: kotlin.coroutines.Continuation[] freeLocked(java.lang.Object)>(r0);
+
+     label3:
+        exitmonitor r0;
+
+        $i1 = lengthof $r5;
+
+     label4:
+        if $i0 >= $i1 goto label6;
+
+        $r1 = $r5[$i0];
+
+        $i0 = $i0 + 1;
+
+        if $r1 != null goto label5;
+
+        goto label4;
+
+     label5:
+        $r6 = <kotlin.Unit: kotlin.Unit INSTANCE>;
+
+        $r2 = <kotlin.Result: kotlin.Result$Companion Companion>;
+
+        $r7 = staticinvoke <kotlin.Result: java.lang.Object constructor-impl(java.lang.Object)>($r6);
+
+        interfaceinvoke $r1.<kotlin.coroutines.Continuation: void resumeWith(java.lang.Object)>($r7);
+
+        goto label4;
+
+     label6:
+        if $r4 != null goto label7;
+
+        return;
+
+     label7:
+        staticinvoke <kotlinx.coroutines.flow.StateFlowKt: void increment(kotlinx.coroutines.flow.MutableStateFlow,int)>($r4, -1);
+
+        return;
+
+     label8:
+        $r8 := @caughtexception;
+
+        exitmonitor r0;
+
+        throw $r8;
+
+        catch java.lang.Throwable from label1 to label3 with label8;
+    }
+
+    protected final int getNCollectors()
+    {
+        kotlinx.coroutines.flow.internal.AbstractSharedFlow r0;
+        int i0;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.AbstractSharedFlow;
+
+        i0 = r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: int nCollectors>;
+
+        return i0;
+    }
+
+    protected final kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] getSlots()
+    {
+        kotlinx.coroutines.flow.internal.AbstractSharedFlow r0;
+        kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] r1;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.AbstractSharedFlow;
+
+        r1 = r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] slots>;
+
+        return r1;
+    }
+
+    public final kotlinx.coroutines.flow.StateFlow getSubscriptionCount()
+    {
+        kotlinx.coroutines.flow.internal.AbstractSharedFlow r0;
+        kotlinx.coroutines.flow.MutableStateFlow $r1, $r3;
+        int $i0;
+        java.lang.Integer $r2;
+        kotlinx.coroutines.flow.StateFlow $r4;
+        java.lang.Throwable $r5;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.AbstractSharedFlow;
+
+        entermonitor r0;
+
+     label1:
+        $r1 = r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: kotlinx.coroutines.flow.MutableStateFlow _subscriptionCount>;
+
+        if $r1 != null goto label2;
+
+        $i0 = virtualinvoke r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: int getNCollectors()>();
+
+        $r2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($i0);
+
+        $r3 = staticinvoke <kotlinx.coroutines.flow.StateFlowKt: kotlinx.coroutines.flow.MutableStateFlow MutableStateFlow(java.lang.Object)>($r2);
+
+        $r1 = $r3;
+
+        r0.<kotlinx.coroutines.flow.internal.AbstractSharedFlow: kotlinx.coroutines.flow.MutableStateFlow _subscriptionCount> = $r3;
+
+     label2:
+        exitmonitor r0;
+
+        $r4 = (kotlinx.coroutines.flow.StateFlow) $r1;
+
+        return $r4;
+
+     label3:
+        $r5 := @caughtexception;
+
+        exitmonitor r0;
+
+        throw $r5;
+
+        catch java.lang.Throwable from label1 to label2 with label3;
+    }
+}

@@ -1,0 +1,13 @@
+--------- beginning of main
+06-08 21:47:44.783 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;---><init>()V
+06-08 21:47:44.783 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver;---><init>()V
+06-08 21:47:44.783 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;--->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+06-08 21:47:44.783 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver;--->shouldRunNetworkTask(Ljava/lang/String;Landroid/content/Context;)Z
+06-08 21:47:44.783 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->getCurrent(Landroid/content/Context;)Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;
+06-08 21:47:44.783 11024 11024 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->isLoggedIn()Z
+--------- beginning of system
+06-08 21:47:52.854  2641  2641 D M_InsDal: Lio/evercam/androidapp/EvercamPlayApplication;--->onCreate()V
+06-08 21:47:52.886  2641  2641 D M_InsDal: Lio/evercam/androidapp/ParentAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 21:47:52.897  2641  2641 D M_InsDal: Lio/evercam/androidapp/WebActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 21:47:52.898  2641  2641 D M_InsDal: Lio/evercam/androidapp/publiccameras/PublicCamerasWebActivity;--->onCreate(Landroid/os/Bundle;)V
+06-08 21:47:53.008  2641  2641 D M_InsDal: Lio/evercam/androidapp/ParentAppCompatActivity;--->onStart()V

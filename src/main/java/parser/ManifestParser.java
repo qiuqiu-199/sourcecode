@@ -43,7 +43,7 @@ public class ManifestParser {
 //        }
     }
 
-    public void parse(boolean b) {  //TODO 这里加了个boolean变量
+    public void parse(boolean b) {  //TODO 这里加了个boolean变量,暂时没用上
         //获取manifest.xml文件内容，在appmodel里存为字符串manifestString
         try {
             Global.v().getAppModel().manifestString = manifestManager.getAXml().toString();

@@ -1,0 +1,8 @@
+q1.apk：原始apk，没有手动插入log语句。as生成的时候自动签了名。
+
+q1_1.apk：表示手动插入了一条语句：Log.i("qiu-tag",action);生成时自动签名。
+
+
+
+jimple输出文件1：q1_1.apk的Jimple文件
+

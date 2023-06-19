@@ -49,7 +49,6 @@ public class TestcaseGenerator {
 
         for (String actName : act2ReceivedICCMap.keySet()) {
             Set<ICCMsg> ICCs = new HashSet<>(act2ReceivedICCMap.get(actName));
-
             handleICCMsg(ICCs, actName);
         }
 
@@ -102,7 +101,9 @@ public class TestcaseGenerator {
 //            if (line.contains("</manifest>")) {
 //                if (Global.v().getAppModel().permission.length() != 0)
 //                    content += "\t<uses-permission android:name=\"" + Global.v().getAppModel().permission + "\"/>\n";
-            //TODO manifest文件解析获取activity的permission
+
+            //TODO manifest文件解析获取activity的permission。
+
 //                for ( ActivityModel ea : appModel.ops.getActivityMap().values()) {
 //                    if (ea.getPermission() != null && ea.getPermission().length()>0) {
 //                        content += "\t<uses-permission android:name=\"" + ea.getPermission() + "\"/>\n";
@@ -186,15 +187,15 @@ public class TestcaseGenerator {
                         String bundleName =split[0].split("-")[1];
                         //基本属性传入两个ACDTStr中
                         Set<String> ACDTStr1 = new HashSet<String>(ACDTStr);
-                        Set<String> ACDTStr2 = new HashSet<String>(ACDTStr);
+//                        Set<String> ACDTStr2 = new HashSet<String>(ACDTStr);
                         handleExtraAccordingToTypeNormal("Bundle",bundleName,ACDTStr1);
-                        handleExtraAccordingToTypeAbnormal("Bundle",bundleName,ACDTStr2);
+//                        handleExtraAccordingToTypeAbnormal("Bundle",bundleName,ACDTStr2);
 
                         ACDTStr.clear();
                         ACDTStr.addAll(ACDTStr1);
-                        ACDTStr.addAll(ACDTStr2);
+//                        ACDTStr.addAll(ACDTStr2);
                         //加左括号
-                        Set<String> copy = new HashSet<String>(ACDTStr);
+                        Set<String> copy = new HashSet<>(ACDTStr);
                         for (String acdt : copy) {
                             ACDTStr.add(acdt +"(,");
                             ACDTStr.remove(acdt);
@@ -208,7 +209,7 @@ public class TestcaseGenerator {
                             if(kv.contains("-")){
                                 String[] k_v = kv.split("-");
                                 handleExtraAccordingToTypeNormal(k_v[0],k_v[1],ACDTStr3);
-                                handleExtraAccordingToTypeAbnormal(k_v[0],k_v[1],ACDTStr4);
+//                                handleExtraAccordingToTypeAbnormal(k_v[0],k_v[1],ACDTStr4);
                             }
                         }
                         ACDTStr.clear();
@@ -228,15 +229,15 @@ public class TestcaseGenerator {
 
                         //基本属性传入两个ACDTStr中
                         Set<String> ACDTStr1 = new HashSet<String>(ACDTStr);
-                        Set<String> ACDTStr2 = new HashSet<String>(ACDTStr);
+//                        Set<String> ACDTStr2 = new HashSet<String>(ACDTStr);
 
                         //根据类型正常与否处理额外参数并传入不同的Set<String>中
                         handleExtraAccordingToTypeNormal(extra_type, extra_key, ACDTStr1);
-                        handleExtraAccordingToTypeAbnormal(extra_type, extra_key, ACDTStr2);
+//                        handleExtraAccordingToTypeAbnormal(extra_type, extra_key, ACDTStr2);
 
                         ACDTStr.clear();
                         ACDTStr.addAll(ACDTStr1);
-                        ACDTStr.addAll(ACDTStr2);
+//                        ACDTStr.addAll(ACDTStr2);
 
                         keyHistory.add(extra_key);
                     }

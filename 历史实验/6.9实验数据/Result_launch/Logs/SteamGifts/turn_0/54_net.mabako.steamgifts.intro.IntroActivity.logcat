@@ -1,0 +1,40 @@
+--------- beginning of main
+--------- beginning of system
+06-09 15:09:07.256 16112 16112 D M_InsDal: Lnet/mabako/steamgifts/Application;---><init>()V
+06-09 15:09:07.256 16112 16112 D M_InsDal: Lnet/mabako/steamgifts/ApplicationTemplate;---><init>()V
+06-09 15:09:07.256 16112 16112 D M_InsDal: Lnet/mabako/steamgifts/ApplicationTemplate;--->onCreate()V
+06-09 15:09:07.256 16112 16112 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;---><clinit>()V
+06-09 15:09:07.256 16112 16112 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;--->scheduleAllTasks(Landroid/content/Context;)V
+06-09 15:09:07.256 16112 16112 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;---><clinit>()V
+06-09 15:09:07.256 16112 16112 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;---><init>(Ljava/lang/String;IJLjava/lang/Class;)V
+06-09 15:09:07.256 16112 16112 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;--->values()[Lnet/mabako/steamgifts/PeriodicTasks$Task;
+06-09 15:09:07.256 16112 16112 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;--->scheduleTask(Lnet/mabako/steamgifts/PeriodicTasks$Task;Landroid/content/Context;)V
+06-09 15:09:07.257 16112 16112 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$TaskData;---><init>(Landroid/app/AlarmManager;Landroid/app/PendingIntent;)V
+06-09 15:09:07.260 16112 16112 D M_InsDal: Lnet/mabako/steamgifts/intro/IntroActivity;---><init>()V
+06-09 15:09:07.261 16112 16112 D M_InsDal: Lnet/mabako/steamgifts/intro/IntroActivity;--->attachBaseContext(Landroid/content/Context;)V
+06-09 15:09:07.281 16112 16112 D M_InsDal: Lnet/mabako/steamgifts/intro/IntroActivity;--->onSlideChanged()V
+06-09 15:09:07.281 16112 16112 D M_InsDal: Lnet/mabako/steamgifts/intro/IntroActivity;--->init(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: FATAL EXCEPTION: main
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: Process: net.mabako.steamgifts, PID: 16112
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{net.mabako.steamgifts/net.mabako.steamgifts.intro.IntroActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.hashCode()' on a null object reference
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.hashCode()' on a null object reference
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at net.mabako.steamgifts.intro.IntroActivity.init(IntroActivity.java:42)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at com.github.paolorotolo.appintro.AppIntro2.onCreate(AppIntro2.java:167)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-09 15:09:07.282 16112 16112 E AndroidRuntime: 	... 11 more

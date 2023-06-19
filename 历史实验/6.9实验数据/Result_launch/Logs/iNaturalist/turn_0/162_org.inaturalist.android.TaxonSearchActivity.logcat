@@ -1,0 +1,56 @@
+--------- beginning of main
+--------- beginning of system
+--------- beginning of crash
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: FATAL EXCEPTION: main
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: Process: org.inaturalist.android, PID: 27898
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{org.inaturalist.android/org.inaturalist.android.TaxonSearchActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.inaturalist.android.MySerializable)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.inaturalist.android.MySerializable)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at com.facebook.appevents.internal.SourceApplicationInfo$Factory.create(SourceApplicationInfo.java:127)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at com.facebook.appevents.internal.ActivityLifecycleTracker.onActivityCreated(ActivityLifecycleTracker.java:155)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at com.facebook.appevents.internal.ActivityLifecycleTracker$1.onActivityCreated(ActivityLifecycleTracker.java:101)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.app.Application.dispatchActivityCreated(Application.java:220)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.app.Activity.onCreate(Activity.java:1048)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.support.v4.app.SupportActivity.onCreate(SupportActivity.java:66)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.onCreate(FragmentActivity.java:297)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.support.v7.app.AppCompatActivity.onCreate(AppCompatActivity.java:84)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at org.inaturalist.android.TaxonSearchActivity.onCreate(TaxonSearchActivity.java:504)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	... 11 more
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.org.inaturalist.android.MySerializable
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	... 30 more
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.inaturalist.android.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/org.inaturalist.android-iS3TZ_zGRwnrdWThCvRTvQ==/base.apk"],nativeLibraryDirectories=[/data/app/org.inaturalist.android-iS3TZ_zGRwnrdWThCvRTvQ==/lib/x86, /data/app/org.inaturalist.android-iS3TZ_zGRwnrdWThCvRTvQ==/base.apk!/lib/x86, /system/lib, /system/vendor/lib]]
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+06-08 23:04:56.365 27898 27898 E AndroidRuntime: 	... 39 more

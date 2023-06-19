@@ -1,0 +1,148 @@
+manifest
+- package: com.example.testBench
+- platformBuildVersionName: 8.0.0
+- versionName: 1.0
+- platformBuildVersionCode: 26
+- versionCode: 1
+	uses-sdk
+	- minSdkVersion: 17
+	- targetSdkVersion: 23
+	application
+	- icon: 2130837504
+	- theme: 2131099649
+	- label: 2131034112
+	- allowBackup: true
+		activity
+		- name: com.example.testBench.MainActivity
+		- label: 2131034112
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER
+		activity
+		- exported: true
+		- name: .acdt.AcdtBasic
+		activity
+		- exported: true
+		- name: .acdt.AcdtCombine
+		activity
+		- exported: true
+		- name: .acdt.AcdtDataUri
+		activity
+		- exported: true
+		- name: .checker.EmptyChecker
+		activity
+		- exported: true
+		- name: .checker.NullChecker
+		activity
+		- exported: true
+		- name: .complete.motivatingExample
+		activity
+		- exported: true
+		- name: .extra.ExtraBasic
+		activity
+		- exported: true
+		- name: .extra.ExtraBasic2
+		activity
+		- exported: true
+		- name: .extra.ExtraArray
+		activity
+		- exported: true
+		- name: .extra.ExtraArray2
+		activity
+		- exported: true
+		- name: .extra.ExtraBundle
+		activity
+		- exported: true
+		- name: .extra.ExtraParce
+		activity
+		- exported: true
+		- name: .extra.ExtraLoop
+		activity
+		- exported: true
+		- name: .extra.ExtraLoopBranch
+		activity
+		- exported: true
+		- name: .interact.ActionAndExtra
+		activity
+		- exported: true
+		- name: .interact.ActionNoExtra
+		activity
+		- exported: true
+		- name: .interact.ExtraNoAction
+		activity
+		- exported: true
+		- name: .lifecycle.LifeCycle
+		activity
+		- exported: true
+		- name: .lifecycle.LifeCycle2
+		activity
+		- exported: true
+		- name: .override.FatherClass
+		activity
+		- exported: true
+		- name: .override.SonClass1
+		activity
+		- exported: true
+		- name: .override.SonClass2
+		activity
+		- exported: true
+		- name: .override.TestInterface1
+		activity
+		- exported: true
+		- name: .override.TestInterface2
+		activity
+		- exported: true
+		- name: .sensitivity.ContextSensitive
+		activity
+		- exported: true
+		- name: .sensitivity.ContextSensitive2
+		activity
+		- exported: true
+		- name: .sensitivity.ContextSensitive3
+		activity
+		- exported: true
+		- name: .sensitivity.ContextSensitive4
+		activity
+		- exported: true
+		- name: .sensitivity.FieldSensitive
+		activity
+		- exported: true
+		- name: .sensitivity.FieldSensitive2
+		activity
+		- exported: true
+		- name: .sensitivity.FieldSensitive3
+		activity
+		- exported: true
+		- name: .sensitivity.FlowSensitive
+		activity
+		- exported: true
+		- name: .sensitivity.FlowSensitive2
+		activity
+		- exported: true
+		- name: .sensitivity.PathSensitive
+		activity
+		- exported: true
+		- name: .sensitivity.PathSensitive2
+		activity
+		- exported: true
+		- name: .string.CompareOp
+		activity
+		- exported: true
+		- name: .string.ConstantValue
+		activity
+		- exported: true
+		- name: .string.ConstantValueBranch
+		activity
+		- exported: true
+		- name: .string.ReceiveVar
+		activity
+		- exported: true
+		- name: .string.ReceiveVar2
+		activity
+		- exported: true
+		- name: .string.ReceiveVar3
+		activity
+		- exported: true
+		- name: .string.StringSource

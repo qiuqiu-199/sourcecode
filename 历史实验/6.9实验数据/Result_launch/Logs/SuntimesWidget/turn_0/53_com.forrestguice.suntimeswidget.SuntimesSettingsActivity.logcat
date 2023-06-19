@@ -1,0 +1,64 @@
+--------- beginning of system
+--------- beginning of main
+06-09 15:31:47.977 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesApplication;---><init>()V
+06-09 15:31:47.977 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/calculator/CalculatorProvider;---><clinit>()V
+06-09 15:31:47.977 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/calculator/CalculatorProvider;---><init>()V
+06-09 15:31:47.977 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/calculator/CalculatorProvider;--->onCreate()Z
+06-09 15:31:47.978 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesApplication;--->onCreate()V
+06-09 15:31:47.982 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesSettingsActivity;---><clinit>()V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesSettingsActivity;---><init>()V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesSettingsActivity$1;---><init>(Lcom/forrestguice/suntimeswidget/SuntimesSettingsActivity;)V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesSettingsActivity;--->attachBaseContext(Landroid/content/Context;)V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;---><clinit>()V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;---><clinit>()V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$DateTapAction;---><clinit>()V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$DateTapAction;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$DateTapAction;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$ClockTapAction;---><clinit>()V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$ClockTapAction;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$ClockTapAction;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetTimezones$TimeZoneSort;---><clinit>()V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetTimezones$TimeZoneSort;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/WidgetTimezones$TimeZoneSort;---><init>(Ljava/lang/String;ILjava/lang/String;)V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->initLocale(Landroid/content/Context;)Landroid/content/Context;
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleInfo;---><init>()V
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->initLocale(Landroid/content/Context;Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleInfo;)Landroid/content/Context;
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->loadLocaleModePref(Landroid/content/Context;)Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->loadLocaleModePref(Landroid/content/SharedPreferences;)Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;--->valueOf(Ljava/lang/String;)Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;--->values()[Lcom/forrestguice/suntimeswidget/settings/AppSettings$LocaleMode;
+06-09 15:31:47.983 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->resetLocale(Landroid/content/Context;)Landroid/content/Context;
+06-09 15:31:47.985 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesSettingsActivity;--->onCreate(Landroid/os/Bundle;)V
+06-09 15:31:47.985 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->loadThemePref(Landroid/content/Context;)Ljava/lang/String;
+06-09 15:31:47.985 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->themePrefToStyleId(Landroid/content/Context;Ljava/lang/String;)I
+06-09 15:31:47.985 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/settings/AppSettings;--->themePrefToStyleId(Landroid/content/Context;Ljava/lang/String;Lcom/forrestguice/suntimeswidget/calculator/SuntimesRiseSetData;)I
+06-09 15:31:47.988 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesSettingsActivity;--->onBuildHeaders(Ljava/util/List;)V
+06-09 15:31:47.989 20492 20492 D M_InsDal: Lcom/forrestguice/suntimeswidget/SuntimesSettingsActivity;--->isValidFragment(Ljava/lang/String;)Z
+--------- beginning of crash
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: FATAL EXCEPTION: main
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: Process: com.forrestguice.suntimeswidget, PID: 20492
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.forrestguice.suntimeswidget/com.forrestguice.suntimeswidget.SuntimesSettingsActivity}: java.lang.IllegalArgumentException: Invalid fragment for this activity: abcde
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Invalid fragment for this activity: abcde
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.preference.PreferenceActivity.switchToHeaderInner(PreferenceActivity.java:1250)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.preference.PreferenceActivity.switchToHeader(PreferenceActivity.java:1286)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.preference.PreferenceActivity.onCreate(PreferenceActivity.java:611)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at com.forrestguice.suntimeswidget.SuntimesSettingsActivity.onCreate(SuntimesSettingsActivity.java:123)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-09 15:31:47.990 20492 20492 E AndroidRuntime: 	... 11 more

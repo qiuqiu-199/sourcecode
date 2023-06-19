@@ -1,0 +1,234 @@
+BugInfo:
+hash:-529553782
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.inaturalist.android/org.inaturalist.android.ObservationEditor}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.inaturalist.android.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.inaturalist.android.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at com.facebook.appevents.internal.SourceApplicationInfo$Factory.create(SourceApplicationInfo.java:127)
+	at com.facebook.appevents.internal.ActivityLifecycleTracker.onActivityCreated(ActivityLifecycleTracker.java:155)
+	at com.facebook.appevents.internal.ActivityLifecycleTracker$1.onActivityCreated(ActivityLifecycleTracker.java:101)
+	at android.app.Application.dispatchActivityCreated(Application.java:220)
+	at android.app.Activity.onCreate(Activity.java:1048)
+	at android.support.v4.app.SupportActivity.onCreate(SupportActivity.java:66)
+	at android.support.v4.app.FragmentActivity.onCreate(FragmentActivity.java:297)
+	at android.support.v7.app.AppCompatActivity.onCreate(AppCompatActivity.java:84)
+	at org.inaturalist.android.ObservationEditor.onCreate(ObservationEditor.java:263)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.org.inaturalist.android.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 30 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.inaturalist.android.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/org.inaturalist.android-iS3TZ_zGRwnrdWThCvRTvQ==/base.apk"],nativeLibraryDirectories=[/data/app/org.inaturalist.android-iS3TZ_zGRwnrdWThCvRTvQ==/lib/x86, /data/app/org.inaturalist.android-iS3TZ_zGRwnrdWThCvRTvQ==/base.apk!/lib/x86, /system/lib, /system/vendor/lib]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 39 more
+
+ICC Msgs:
+1	org.inaturalist.android.ObservationEditor	android.intent.action.SEND_MULTIPLE;;null;;?;;null;;boolean->from_suggestion->false,double->latitude->0.0,int->taxon_id->0,double->accuracy->0.0,Serializable->taxon_result->SerializableObj,IntegerArrayList->project_ids->0,String->photoUri->abcde,int->observation_project->0,String->id_name->abcde,int->field_id->0,boolean->choose_photo->false,int->delete_photo_index->0,boolean->return_to_observation_list->false,String->observation_json->abcde,double->longitude->0.0,ParcelableArrayList->android.intent.extra.STREAM->ParcelableArrayListObj,int->rank_level->0,boolean->take_photo->true,String->id_url->abcde,int->set_default_photo_index->0,boolean->is_custom->true,String->rank->abcde,String->species_guess->abcde,String->taxon_name->abcde,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,Serializable->project_fields->SerializableObj,String->iconic_taxon_name->abcde,
+
+9	org.inaturalist.android.ObservationEditor	?;;null;;?;;null;;boolean->from_suggestion->false,double->latitude->0.0,int->taxon_id->0,double->accuracy->0.0,Serializable->taxon_result->SerializableObj,IntegerArrayList->project_ids->0,String->photoUri->abcde,int->observation_project->0,String->id_name->abcde,int->field_id->0,boolean->choose_photo->true,int->delete_photo_index->0,boolean->return_to_observation_list->true,String->observation_json->abcde,double->longitude->0.0,ParcelableArrayList->android.intent.extra.STREAM->ParcelableArrayListObj,int->rank_level->0,boolean->take_photo->false,String->id_url->abcde,int->set_default_photo_index->0,boolean->is_custom->true,String->rank->abcde,String->species_guess->abcde,String->taxon_name->abcde,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,Serializable->project_fields->SerializableObj,String->iconic_taxon_name->abcde,
+
+2	org.inaturalist.android.ObservationEditor	android.intent.action.SEND;;null;;?;;null;;boolean->from_suggestion->false,double->latitude->0.0,int->taxon_id->0,double->accuracy->0.0,Serializable->taxon_result->SerializableObj,IntegerArrayList->project_ids->0,String->photoUri->abcde,int->observation_project->0,String->id_name->abcde,int->field_id->0,boolean->choose_photo->false,int->delete_photo_index->0,boolean->return_to_observation_list->false,String->observation_json->abcde,double->longitude->0.0,ParcelableArrayList->android.intent.extra.STREAM->ParcelableArrayListObj,int->rank_level->0,boolean->take_photo->true,String->id_url->abcde,int->set_default_photo_index->0,boolean->is_custom->true,String->rank->abcde,String->species_guess->abcde,String->taxon_name->abcde,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,Serializable->project_fields->SerializableObj,String->iconic_taxon_name->abcde,
+
+14	org.inaturalist.android.ObservationEditor	android.intent.action.INSERT;;null;;?;;null;;boolean->from_suggestion->false,double->latitude->0.0,int->taxon_id->0,double->accuracy->0.0,Serializable->taxon_result->SerializableObj,IntegerArrayList->project_ids->0,String->photoUri->abcde,int->observation_project->0,String->id_name->abcde,int->field_id->0,boolean->choose_photo->false,int->delete_photo_index->0,boolean->return_to_observation_list->true,String->observation_json->abcde,double->longitude->0.0,ParcelableArrayList->android.intent.extra.STREAM->ParcelableArrayListObj,int->rank_level->0,boolean->take_photo->true,String->id_url->abcde,int->set_default_photo_index->0,boolean->is_custom->false,String->rank->abcde,String->species_guess->abcde,String->taxon_name->abcde,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,Serializable->project_fields->SerializableObj,String->iconic_taxon_name->abcde,
+
+6	org.inaturalist.android.ObservationEditor	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1368627770
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.inaturalist.android/org.inaturalist.android.ObservationEditor}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.inaturalist.android.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.inaturalist.android.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at com.facebook.appevents.internal.SourceApplicationInfo$Factory.create(SourceApplicationInfo.java:127)
+	at com.facebook.appevents.internal.ActivityLifecycleTracker.onActivityCreated(ActivityLifecycleTracker.java:155)
+	at com.facebook.appevents.internal.ActivityLifecycleTracker$1.onActivityCreated(ActivityLifecycleTracker.java:101)
+	at android.app.Application.dispatchActivityCreated(Application.java:220)
+	at android.app.Activity.onCreate(Activity.java:1048)
+	at android.support.v4.app.SupportActivity.onCreate(SupportActivity.java:66)
+	at android.support.v4.app.FragmentActivity.onCreate(FragmentActivity.java:297)
+	at android.support.v7.app.AppCompatActivity.onCreate(AppCompatActivity.java:84)
+	at org.inaturalist.android.ObservationEditor.onCreate(ObservationEditor.java:263)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+15	org.inaturalist.android.ObservationEditor	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-838170475
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.inaturalist.android/org.inaturalist.android.ObservationListActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.inaturalist.android.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.inaturalist.android.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at com.facebook.appevents.internal.SourceApplicationInfo$Factory.create(SourceApplicationInfo.java:127)
+	at com.facebook.appevents.internal.ActivityLifecycleTracker.onActivityCreated(ActivityLifecycleTracker.java:155)
+	at com.facebook.appevents.internal.ActivityLifecycleTracker$1.onActivityCreated(ActivityLifecycleTracker.java:101)
+	at android.app.Application.dispatchActivityCreated(Application.java:220)
+	at android.app.Activity.onCreate(Activity.java:1048)
+	at android.support.v4.app.SupportActivity.onCreate(SupportActivity.java:66)
+	at android.support.v4.app.FragmentActivity.onCreate(FragmentActivity.java:297)
+	at android.support.v7.app.AppCompatActivity.onCreate(AppCompatActivity.java:84)
+	at org.inaturalist.android.ObservationListActivity.onCreate(ObservationListActivity.java:350)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.org.inaturalist.android.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 30 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.inaturalist.android.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/org.inaturalist.android-iS3TZ_zGRwnrdWThCvRTvQ==/base.apk"],nativeLibraryDirectories=[/data/app/org.inaturalist.android-iS3TZ_zGRwnrdWThCvRTvQ==/lib/x86, /data/app/org.inaturalist.android-iS3TZ_zGRwnrdWThCvRTvQ==/base.apk!/lib/x86, /system/lib, /system/vendor/lib]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 39 more
+
+ICC Msgs:
+148	org.inaturalist.android.ObservationListActivity	android.net.conn.CONNECTIVITY_CHANGE;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->false,boolean->sync_canceled->false,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->true,String->error->abcde,boolean->from_obs_editor->true,
+
+151	org.inaturalist.android.ObservationListActivity	?;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->true,boolean->sync_canceled->false,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->true,String->error->abcde,boolean->from_obs_editor->true,
+
+142	org.inaturalist.android.ObservationListActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+137	org.inaturalist.android.ObservationListActivity	android.intent.action.PICK;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->false,boolean->sync_canceled->false,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->true,String->error->abcde,boolean->from_obs_editor->false,
+
+150	org.inaturalist.android.ObservationListActivity	android.intent.action.GET_CONTENT;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->true,boolean->sync_canceled->false,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->true,String->error->abcde,boolean->from_obs_editor->true,
+
+144	org.inaturalist.android.ObservationListActivity	species_count_result;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->true,boolean->sync_canceled->true,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->true,String->error->abcde,boolean->from_obs_editor->true,
+
+149	org.inaturalist.android.ObservationListActivity	identifications_result;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->false,boolean->sync_canceled->false,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->true,String->error->abcde,boolean->from_obs_editor->true,
+
+132	org.inaturalist.android.ObservationListActivity	user_details_result;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->false,boolean->sync_canceled->false,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->false,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->false,String->error->abcde,boolean->from_obs_editor->true,
+
+140	org.inaturalist.android.ObservationListActivity	updates_results;;null;;?;;null;;Serializable->results->SerializableObj,Serializable->observations->SerializableObj,Serializable->user->SerializableObj,boolean->first_sync->false,boolean->sync_canceled->true,String->username->abcde,Serializable->species_count_result->SerializableObj,Serializable->identifications->SerializableObj,boolean->is_shared_on_app->true,String->new com.adobe.xmp.properties.XMPPropertyInfo->abcde,boolean->noConnectivity->true,String->error->abcde,boolean->from_obs_editor->true,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1175612031
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.inaturalist.android/org.inaturalist.android.ObservationListActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.inaturalist.android.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.inaturalist.android.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at com.facebook.appevents.internal.SourceApplicationInfo$Factory.create(SourceApplicationInfo.java:127)
+	at com.facebook.appevents.internal.ActivityLifecycleTracker.onActivityCreated(ActivityLifecycleTracker.java:155)
+	at com.facebook.appevents.internal.ActivityLifecycleTracker$1.onActivityCreated(ActivityLifecycleTracker.java:101)
+	at android.app.Application.dispatchActivityCreated(Application.java:220)
+	at android.app.Activity.onCreate(Activity.java:1048)
+	at android.support.v4.app.SupportActivity.onCreate(SupportActivity.java:66)
+	at android.support.v4.app.FragmentActivity.onCreate(FragmentActivity.java:297)
+	at android.support.v7.app.AppCompatActivity.onCreate(AppCompatActivity.java:84)
+	at org.inaturalist.android.ObservationListActivity.onCreate(ObservationListActivity.java:350)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+141	org.inaturalist.android.ObservationListActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+

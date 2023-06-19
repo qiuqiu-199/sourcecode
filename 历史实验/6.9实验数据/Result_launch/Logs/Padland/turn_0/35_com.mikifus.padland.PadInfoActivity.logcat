@@ -1,0 +1,38 @@
+--------- beginning of main
+--------- beginning of system
+06-09 13:51:17.465   531   531 D M_InsDal: Lcom/mikifus/padland/PadlandApp;--->onCreate()V
+06-09 13:51:17.470   531   531 D M_InsDal: Lcom/mikifus/padland/PadLandActivity;--->onCreate(Landroid/os/Bundle;)V
+06-09 13:51:17.470   531   531 D M_InsDal: Lcom/mikifus/padland/PadLandDataActivity;--->onCreate(Landroid/os/Bundle;)V
+06-09 13:51:17.479   531   531 D M_InsDal: Lcom/mikifus/padland/PadInfoActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+06-09 13:51:17.494   531   531 E AndroidRuntime: FATAL EXCEPTION: main
+06-09 13:51:17.494   531   531 E AndroidRuntime: Process: com.mikifus.padland, PID: 531
+06-09 13:51:17.494   531   531 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.mikifus.padland/com.mikifus.padland.PadInfoActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.mikifus.padland.MyParcelable
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-09 13:51:17.494   531   531 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.mikifus.padland.MyParcelable
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.os.BaseBundle.getLong(BaseBundle.java:1064)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.content.Intent.getLongExtra(Intent.java:7397)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at com.mikifus.padland.PadLandDataActivity.d(SourceFile:2)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at com.mikifus.padland.PadInfoActivity.onCreate(SourceFile:3)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-09 13:51:17.494   531   531 E AndroidRuntime: 	... 11 more

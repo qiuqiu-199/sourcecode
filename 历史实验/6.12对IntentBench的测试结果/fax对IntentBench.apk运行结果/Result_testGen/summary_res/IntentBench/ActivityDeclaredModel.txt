@@ -1,0 +1,178 @@
+app_name: IntentBench
+package_name: com.example.testBench
+
+act_name: com.example.testBench.sensitivity.FieldSensitive2
+mExported
+permission: 
+
+act_name: com.example.testBench.sensitivity.FieldSensitive3
+mExported
+permission: 
+
+act_name: com.example.testBench.acdt.AcdtDataUri
+mExported
+permission: 
+
+act_name: com.example.testBench.extra.ExtraParce
+mExported
+permission: 
+
+act_name: com.example.testBench.string.ConstantValue
+mExported
+permission: 
+
+act_name: com.example.testBench.interact.ActionNoExtra
+mExported
+permission: 
+
+act_name: com.example.testBench.string.ConstantValueBranch
+mExported
+permission: 
+
+act_name: com.example.testBench.string.CompareOp
+mExported
+permission: 
+
+act_name: com.example.testBench.extra.ExtraArray2
+mExported
+permission: 
+
+act_name: com.example.testBench.sensitivity.FieldSensitive
+mExported
+permission: 
+
+act_name: com.example.testBench.sensitivity.PathSensitive2
+mExported
+permission: 
+
+act_name: com.example.testBench.string.ReceiveVar2
+mExported
+permission: 
+
+act_name: com.example.testBench.string.ReceiveVar3
+mExported
+permission: 
+
+act_name: com.example.testBench.extra.ExtraLoop
+mExported
+permission: 
+
+act_name: com.example.testBench.extra.ExtraLoopBranch
+mExported
+permission: 
+
+act_name: com.example.testBench.interact.ActionAndExtra
+mExported
+permission: 
+
+act_name: com.example.testBench.override.FatherClass
+mExported
+permission: 
+
+act_name: com.example.testBench.sensitivity.PathSensitive
+mExported
+permission: 
+
+act_name: com.example.testBench.acdt.AcdtCombine
+mExported
+permission: 
+
+act_name: com.example.testBench.extra.ExtraBasic2
+mExported
+permission: 
+
+act_name: com.example.testBench.acdt.AcdtBasic
+mExported
+permission: 
+
+act_name: com.example.testBench.string.ReceiveVar
+mExported
+permission: 
+
+act_name: com.example.testBench.sensitivity.ContextSensitive
+mExported
+permission: 
+
+act_name: com.example.testBench.override.TestInterface1
+mExported
+permission: 
+
+act_name: com.example.testBench.string.StringSource
+mExported
+permission: 
+
+act_name: com.example.testBench.override.TestInterface2
+mExported
+permission: 
+
+act_name: com.example.testBench.extra.ExtraArray
+mExported
+permission: 
+
+act_name: com.example.testBench.lifecycle.LifeCycle2
+mExported
+permission: 
+
+act_name: com.example.testBench.override.SonClass2
+mExported
+permission: 
+
+act_name: com.example.testBench.override.SonClass1
+mExported
+permission: 
+
+act_name: com.example.testBench.extra.ExtraBasic
+mExported
+permission: 
+
+act_name: com.example.testBench.MainActivity
+permission: 
+mIntentFilter
+intent_filter: 
+action: "android.intent.action.MAIN" 
+category: "android.intent.category.LAUNCHER" 
+scheme: []://host: []: []/[]
+
+act_name: com.example.testBench.sensitivity.ContextSensitive2
+mExported
+permission: 
+
+act_name: com.example.testBench.sensitivity.ContextSensitive3
+mExported
+permission: 
+
+act_name: com.example.testBench.sensitivity.FlowSensitive
+mExported
+permission: 
+
+act_name: com.example.testBench.sensitivity.ContextSensitive4
+mExported
+permission: 
+
+act_name: com.example.testBench.extra.ExtraBundle
+mExported
+permission: 
+
+act_name: com.example.testBench.complete.motivatingExample
+mExported
+permission: 
+
+act_name: com.example.testBench.checker.NullChecker
+mExported
+permission: 
+
+act_name: com.example.testBench.lifecycle.LifeCycle
+mExported
+permission: 
+
+act_name: com.example.testBench.interact.ExtraNoAction
+mExported
+permission: 
+
+act_name: com.example.testBench.sensitivity.FlowSensitive2
+mExported
+permission: 
+
+act_name: com.example.testBench.checker.EmptyChecker
+mExported
+permission: 

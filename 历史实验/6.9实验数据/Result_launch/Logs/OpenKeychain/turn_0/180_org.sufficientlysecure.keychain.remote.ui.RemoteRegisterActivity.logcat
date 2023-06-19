@@ -1,0 +1,29 @@
+--------- beginning of main
+--------- beginning of system
+06-09 12:28:33.095 15694 15694 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+06-09 12:28:33.112 15694 15694 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+06-09 12:28:33.116 15694 15694 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/RemoteRegisterActivity;--->onCreate(Landroid/os/Bundle;)V
+06-09 12:28:33.126 15694 15694 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/RemoteRegisterActivity$RemoteRegisterDialogFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+06-09 12:28:33.137 15694 15694 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/RemoteRegisterActivity;--->onStart()V
+--------- beginning of crash
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: FATAL EXCEPTION: main
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 15694
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: java.lang.NullPointerException: Null package_name
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at org.sufficientlysecure.keychain.model.AutoValue_ApiApp.<init>(AutoValue_ApiApp.java:22)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at org.sufficientlysecure.keychain.model.ApiApp.create(ApiApp.java:31)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at org.sufficientlysecure.keychain.remote.ui.RemoteRegisterPresenter.setupFromIntentData(RemoteRegisterPresenter.java:57)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at org.sufficientlysecure.keychain.remote.ui.RemoteRegisterActivity.onStart(RemoteRegisterActivity.java:75)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:7165)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-09 12:28:33.137 15694 15694 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)

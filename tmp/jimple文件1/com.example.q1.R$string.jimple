@@ -1,0 +1,43 @@
+public final class com.example.q1.R$string extends java.lang.Object
+{
+    public static final int action_settings;
+    public static final int app_name;
+    public static final int first_fragment_label;
+    public static final int hello_first_fragment;
+    public static final int hello_second_fragment;
+    public static final int next;
+    public static final int previous;
+    public static final int second_fragment_label;
+
+    private void <init>()
+    {
+        com.example.q1.R$string r0;
+
+        r0 := @this: com.example.q1.R$string;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void <clinit>()
+    {
+        <com.example.q1.R$string: int second_fragment_label> = 2131755147;
+
+        <com.example.q1.R$string: int previous> = 2131755145;
+
+        <com.example.q1.R$string: int next> = 2131755139;
+
+        <com.example.q1.R$string: int hello_second_fragment> = 2131755052;
+
+        <com.example.q1.R$string: int hello_first_fragment> = 2131755051;
+
+        <com.example.q1.R$string: int first_fragment_label> = 2131755050;
+
+        <com.example.q1.R$string: int app_name> = 2131755037;
+
+        <com.example.q1.R$string: int action_settings> = 2131755035;
+
+        return;
+    }
+}

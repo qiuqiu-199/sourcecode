@@ -1,0 +1,13 @@
+--------- beginning of main
+--------- beginning of system
+06-09 13:21:36.728 26875 26875 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+06-09 13:21:36.748 26875 26875 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+06-09 13:21:36.755 26875 26875 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+06-09 13:21:36.763 26875 26875 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/LogDisplayFragment;--->onCreate(Landroid/os/Bundle;)V
+06-09 13:21:36.765 26875 26875 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/RecyclerFragment;--->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+06-09 13:21:36.766 26875 26875 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/LogDisplayActivity;--->onCreate(Landroid/os/Bundle;)V
+06-09 13:21:36.768 26875 26875 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/LogDisplayFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+06-09 13:21:38.305 26875 26875 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+06-09 13:21:38.306 26875 26875 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/RecyclerFragment;--->onDestroy()V
+06-09 13:21:48.809 31143 31143 D M_InsDal: Lcom/fsck/k9/provider/DecryptedFileProvider;--->onTrimMemory(I)V
+06-09 13:21:48.809 31143 31143 D M_InsDal: Lcom/fsck/k9/provider/AttachmentTempFileProvider;--->onTrimMemory(I)V

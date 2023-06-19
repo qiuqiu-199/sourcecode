@@ -1,5 +1,6 @@
 # coding=utf-8
 import os
+import shutil
 from string import lower
 import time
 
@@ -56,9 +57,6 @@ def getActs(fn):
 
 
 if __name__ == '__main__':
-    f = open("cmd.txt")
-    lines = f.readlines()
-    for line in lines:
-        ss = line.split("\t")
-        print ss[0] +"\t"+ ss[1] + "\t"+ ss[3]
+    # folder =
+    # shutil.copy(,"F:\ThesisReproduction\qiu\script\\apk")
     print 000

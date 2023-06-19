@@ -1,0 +1,60 @@
+--------- beginning of main
+--------- beginning of system
+06-09 17:02:50.917  1380  1380 D M_InsDal: Lcom/nutomic/syncthingandroid/SyncthingApp;--->onCreate()V
+06-09 17:02:51.321  1380  1380 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/StateDialogActivity;--->onCreate(Landroid/os/Bundle;)V
+06-09 17:02:51.321  1380  1380 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/MainActivity;--->onCreate(Landroid/os/Bundle;)V
+06-09 17:02:51.340  1380  1380 D M_InsDal: Lcom/nutomic/syncthingandroid/fragments/DrawerFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+06-09 17:02:51.341  1380  1380 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/SyncthingActivity;--->onPostCreate(Landroid/os/Bundle;)V
+06-09 17:02:51.342  1380  1380 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/MainActivity;--->onPostCreate(Landroid/os/Bundle;)V
+06-09 17:02:51.342  1380  1380 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/SyncthingActivity;--->onResume()V
+06-09 17:02:51.343  1380  1380 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/StateDialogActivity;--->onResume()V
+06-09 17:02:51.343  1380  1380 D M_InsDal: Lcom/nutomic/syncthingandroid/fragments/DrawerFragment;--->onResume()V
+06-09 17:02:51.365  1380  1380 D M_InsDal: Lcom/nutomic/syncthingandroid/fragments/FolderListFragment;--->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+06-09 17:02:51.366  1380  1380 D M_InsDal: Lcom/nutomic/syncthingandroid/fragments/DeviceListFragment;--->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+--------- beginning of crash
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: FATAL EXCEPTION: main
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: Process: com.nutomic.syncthingandroid, PID: 1380
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.nutomic.syncthingandroid.MySerializable)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.StateDialogActivity.showLoadingDialog(StateDialogActivity.java:162)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.StateDialogActivity.onServiceStateChange(StateDialogActivity.java:83)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.StateDialogActivity.bridge$lambda$0$StateDialogActivity(Unknown Source:0)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.StateDialogActivity$$Lambda$7.onServiceStateChange(Unknown Source:8)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at com.nutomic.syncthingandroid.service.SyncthingService.registerOnServiceStateChangeListener(SyncthingService.java:561)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.StateDialogActivity.lambda$onCreate$0$StateDialogActivity(StateDialogActivity.java:41)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.StateDialogActivity$$Lambda$0.onServiceConnected(Unknown Source:5)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.SyncthingActivity$$Lambda$0.accept(Unknown Source:8)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at com.annimon.stream.Stream.forEach(Stream.java:1486)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.SyncthingActivity.onServiceConnected(SyncthingActivity.java:73)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.MainActivity.onServiceConnected(MainActivity.java:300)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher.doConnected(LoadedApk.java:1730)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1762)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.com.nutomic.syncthingandroid.MySerializable
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	... 26 more
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.nutomic.syncthingandroid.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.nutomic.syncthingandroid-sTUnzpuLIo3oF38X9eJCMw==/base.apk"],nativeLibraryDirectories=[/data/app/com.nutomic.syncthingandroid-sTUnzpuLIo3oF38X9eJCMw==/lib/x86, /data/app/com.nutomic.syncthingandroid-sTUnzpuLIo3oF38X9eJCMw==/base.apk!/lib/x86, /system/lib, /system/vendor/lib]]
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+06-09 17:02:51.391  1380  1380 E AndroidRuntime: 	... 35 more
