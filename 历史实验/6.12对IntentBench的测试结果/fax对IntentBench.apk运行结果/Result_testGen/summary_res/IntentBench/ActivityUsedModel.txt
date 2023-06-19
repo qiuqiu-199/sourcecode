@@ -1,0 +1,229 @@
+com.example.testBench.sensitivity.FieldSensitive2
+action: "notEmpty"
+---------------------------------------
+
+com.example.testBench.sensitivity.FieldSensitive3
+action: "field3"
+---------------------------------------
+
+com.example.testBench.acdt.AcdtDataUri
+data: "scheme_candidate://host_candidate:1024/path_candidate"
+---------------------------------------
+
+com.example.testBench.extra.ExtraParce
+extra: Parcelable-"parce",Serializable-"ser",ParcelableArray-"parce_arr",ParcelableArrayList-"parce_arr_list",
+---------------------------------------
+
+com.example.testBench.string.ConstantValue
+action: "action_vr_9"
+action: "action_vr_8"
+action: "action_vr_6"
+action: "action_vr_"
+action: "$r1_101"
+action: "action_vr_5"
+action: "action_vr_4"
+action: "action_vr_3"
+action: "action_vr_2"
+action: "ACTION_VR_7"
+action: "action_vr_1"
+action: "action_vr_10"
+---------------------------------------
+
+com.example.testBench.interact.ActionNoExtra
+action: "action1"
+action: "action2"
+category: "category1"
+---------------------------------------
+
+com.example.testBench.string.ConstantValueBranch
+extra: int-"strif",int-"strelse",
+---------------------------------------
+
+com.example.testBench.string.CompareOp
+action: "action_cr_6"
+action: "action_cr_4"
+action: "action_cr_5"
+action: "notEmpty"
+action: "ACTION_cr_2"
+action: "action_cr_3"
+action: "action_cr_1"
+---------------------------------------
+
+com.example.testBench.extra.ExtraArray2
+extra: byteArray-"bt_arr",StringArrayList-"str_arrlist",IntegerArrayList-"int_arrlist",CharSequenceArrayList-"charseq_arr_list",charArray-"ch_arr",CharSequence-"charseq",CharSequenceArray-"charseq_arr",
+---------------------------------------
+
+com.example.testBench.sensitivity.FieldSensitive
+action: "field1_wrong"
+action: "field1_f"
+action: "field1_t"
+---------------------------------------
+
+com.example.testBench.sensitivity.PathSensitive2
+extra: String-"e10",int-"e11",
+---------------------------------------
+
+com.example.testBench.string.ReceiveVar2
+action: "sub"
+action: "53"
+---------------------------------------
+
+com.example.testBench.string.ReceiveVar3
+action: "rv"
+---------------------------------------
+
+com.example.testBench.extra.ExtraLoop
+extra: int-"int_a",int-"int_c",int-"int_b",
+---------------------------------------
+
+com.example.testBench.extra.ExtraLoopBranch
+extra: int-"int_b",int-"int_c",int-"int_d",int-"int_a",
+---------------------------------------
+
+com.example.testBench.interact.ActionAndExtra
+action: "action1"
+category: "category1"
+category: "category2"
+extra: int-"extra1",int-"extra2",
+---------------------------------------
+
+com.example.testBench.override.FatherClass
+extra: int-"father",
+---------------------------------------
+
+com.example.testBench.sensitivity.PathSensitive
+action: "action"
+action: "notEmpty"
+action: "view"
+category: "notEmpty"
+category: "category"
+data: "data"
+extra: String-"e2",String-"e0",String-"e1",int-"e5",String-"e3",int-"e4",
+---------------------------------------
+
+com.example.testBench.acdt.AcdtCombine
+action: "action1"
+action: "action2"
+data: "data1"
+data: "data2"
+---------------------------------------
+
+com.example.testBench.extra.ExtraBasic2
+extra: boolean-"bool_f",String-"str",char-"char",byte-"bt",Extras-,(,int-"int_a",),
+---------------------------------------
+
+com.example.testBench.acdt.AcdtBasic
+action: "action_candidate"
+category: "category_candidate"
+data: "data_candidate"
+type: "type_candidate"
+---------------------------------------
+
+com.example.testBench.string.ReceiveVar
+action: "action_ve_1"
+action: "sub"
+action: "53"
+action: "sub_wrong"
+---------------------------------------
+
+com.example.testBench.sensitivity.ContextSensitive
+action: "a0"
+action: "if_a1"
+action: "if_a2"
+extra: double-"d0",double-"if_d2",double-"if_d3",double-"if_d1",
+---------------------------------------
+
+com.example.testBench.override.TestInterface1
+---------------------------------------
+
+com.example.testBench.string.StringSource
+action: "action_so_1"
+action: "action_so_2"
+---------------------------------------
+
+com.example.testBench.override.TestInterface2
+---------------------------------------
+
+com.example.testBench.extra.ExtraArray
+extra: doubleArray-"double_arr",longArray-"long_arr",intArray-"int_arr",shortArray-"short_arr",floatArray-"float_arr",booleanArray-"bool_arr",StringArray-"str_arr",
+---------------------------------------
+
+com.example.testBench.lifecycle.LifeCycle2
+extra: double-"onCreate_dd",double-"onStart_dd",double-"onDestroy_dd",double-"onResume_dd",
+---------------------------------------
+
+com.example.testBench.override.SonClass2
+extra: int-"father",
+---------------------------------------
+
+com.example.testBench.override.SonClass1
+extra: int-"son1",
+---------------------------------------
+
+com.example.testBench.extra.ExtraBasic
+extra: long-"long_d",short-"short_e",int-"int_a",float-"float_c",double-"double_b",
+---------------------------------------
+
+com.example.testBench.MainActivity
+---------------------------------------
+
+com.example.testBench.sensitivity.ContextSensitive2
+action: "getActionWithBranch"
+action: "getActionWithBranch0"
+action: "getActionWithoutPara"
+action: "getActionWithPara"
+action: "getActionWithBranch2"
+action: "getActionWithBranch1"
+---------------------------------------
+
+com.example.testBench.sensitivity.ContextSensitive3
+action: "handleAction"
+---------------------------------------
+
+com.example.testBench.sensitivity.FlowSensitive
+action: "candidate1"
+---------------------------------------
+
+com.example.testBench.sensitivity.ContextSensitive4
+action: "getActionWithBranch"
+action: "getActionWithBranch0"
+action: "getActionWithBranch1"
+---------------------------------------
+
+com.example.testBench.extra.ExtraBundle
+extra: String-"str_l1",Bundle-"bundle_l1",(,Bundle-"bundle_l2",(,String-"str",),),
+---------------------------------------
+
+com.example.testBench.complete.motivatingExample
+action: "sta"
+action: "notEmpty"
+action: "act"
+action: "67"
+extra: String-"s1",Bundle-"b1",(,Bundle-"b2",(,String-"s3",),),
+---------------------------------------
+
+com.example.testBench.checker.NullChecker
+action: "notEmpty"
+extra: int-"int_not_null",int-"int_null",
+---------------------------------------
+
+com.example.testBench.lifecycle.LifeCycle
+action: "onCreate_action"
+action: "onDestroy_action"
+action: "onStart_action"
+extra: double-"onCreate_dd",double-"onStart_dd",double-"onDestroy_dd",
+---------------------------------------
+
+com.example.testBench.interact.ExtraNoAction
+extra: int-"extra1",int-"extra2",
+---------------------------------------
+
+com.example.testBench.sensitivity.FlowSensitive2
+extra: String-"str1",String-"str2",
+---------------------------------------
+
+com.example.testBench.checker.EmptyChecker
+action: "notEmpty"
+extra: int-"int_not_empty",int-"int_empty",
+---------------------------------------
+

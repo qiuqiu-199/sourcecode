@@ -49,10 +49,6 @@ public class TestcaseGenerator {
 
         for (String actName : act2ReceivedICCMap.keySet()) {
             Set<ICCMsg> ICCs = new HashSet<>(act2ReceivedICCMap.get(actName));
-
-            //TODo 看到进来删掉
-            if(actName.equals("com.example.testBench.extra.ExtraBundle") || actName.equals("com.example.testBench.complete.motivatingExample")) continue;
-
             handleICCMsg(ICCs, actName);
         }
 
@@ -105,7 +101,9 @@ public class TestcaseGenerator {
 //            if (line.contains("</manifest>")) {
 //                if (Global.v().getAppModel().permission.length() != 0)
 //                    content += "\t<uses-permission android:name=\"" + Global.v().getAppModel().permission + "\"/>\n";
-            //TODO manifest文件解析获取activity的permission
+
+            //TODO manifest文件解析获取activity的permission。
+
 //                for ( ActivityModel ea : appModel.ops.getActivityMap().values()) {
 //                    if (ea.getPermission() != null && ea.getPermission().length()>0) {
 //                        content += "\t<uses-permission android:name=\"" + ea.getPermission() + "\"/>\n";

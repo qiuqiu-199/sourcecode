@@ -1,0 +1,48 @@
+--------- beginning of main
+--------- beginning of system
+--------- beginning of crash
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: FATAL EXCEPTION: main
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: Process: com.example.testBench, PID: 7427
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.testBench/com.example.testBench.string.ConstantValueBranch}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.example.testBench.MySerializable)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.example.testBench.MySerializable)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.os.BaseBundle.getInt(BaseBundle.java:1030)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.content.Intent.getIntExtra(Intent.java:7380)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at com.example.testBench.string.ConstantValueBranch.onCreate(ConstantValueBranch.java:31)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	... 11 more
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.com.example.testBench.MySerializable
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	... 22 more
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.example.testBench.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.example.testBench-pLUk-L6kip5Qc0cDbTneGQ==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.testBench-pLUk-L6kip5Qc0cDbTneGQ==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+06-12 09:53:35.756  7427  7427 E AndroidRuntime: 	... 31 more
