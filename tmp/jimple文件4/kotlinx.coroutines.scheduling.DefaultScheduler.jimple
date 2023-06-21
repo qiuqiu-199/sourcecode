@@ -1,0 +1,96 @@
+public final class kotlinx.coroutines.scheduling.DefaultScheduler extends kotlinx.coroutines.scheduling.ExperimentalCoroutineDispatcher
+{
+    public static final kotlinx.coroutines.scheduling.DefaultScheduler INSTANCE;
+    private static final kotlinx.coroutines.CoroutineDispatcher IO;
+
+    static void <clinit>()
+    {
+        kotlinx.coroutines.scheduling.DefaultScheduler $r0;
+        kotlinx.coroutines.scheduling.LimitingDispatcher $r1;
+        kotlinx.coroutines.scheduling.ExperimentalCoroutineDispatcher $r2;
+        int $i0;
+        kotlinx.coroutines.CoroutineDispatcher $r3;
+
+        $r0 = new kotlinx.coroutines.scheduling.DefaultScheduler;
+
+        specialinvoke $r0.<kotlinx.coroutines.scheduling.DefaultScheduler: void <init>()>();
+
+        <kotlinx.coroutines.scheduling.DefaultScheduler: kotlinx.coroutines.scheduling.DefaultScheduler INSTANCE> = $r0;
+
+        $r1 = new kotlinx.coroutines.scheduling.LimitingDispatcher;
+
+        $r2 = (kotlinx.coroutines.scheduling.ExperimentalCoroutineDispatcher) $r0;
+
+        $i0 = staticinvoke <kotlinx.coroutines.internal.SystemPropsKt: int getAVAILABLE_PROCESSORS()>();
+
+        $i0 = staticinvoke <kotlin.ranges.RangesKt: int coerceAtLeast(int,int)>(64, $i0);
+
+        $i0 = staticinvoke <kotlinx.coroutines.internal.SystemPropsKt: int systemProp$default(java.lang.String,int,int,int,int,java.lang.Object)>("kotlinx.coroutines.io.parallelism", $i0, 0, 0, 12, null);
+
+        specialinvoke $r1.<kotlinx.coroutines.scheduling.LimitingDispatcher: void <init>(kotlinx.coroutines.scheduling.ExperimentalCoroutineDispatcher,int,java.lang.String,int)>($r2, $i0, "Dispatchers.IO", 1);
+
+        $r3 = (kotlinx.coroutines.CoroutineDispatcher) $r1;
+
+        <kotlinx.coroutines.scheduling.DefaultScheduler: kotlinx.coroutines.CoroutineDispatcher IO> = $r3;
+
+        return;
+    }
+
+    private void <init>()
+    {
+        kotlinx.coroutines.scheduling.DefaultScheduler r0;
+
+        r0 := @this: kotlinx.coroutines.scheduling.DefaultScheduler;
+
+        specialinvoke r0.<kotlinx.coroutines.scheduling.ExperimentalCoroutineDispatcher: void <init>(int,int,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker)>(0, 0, null, 7, null);
+
+        return;
+    }
+
+    public void close()
+    {
+        kotlinx.coroutines.scheduling.DefaultScheduler r0;
+        java.lang.UnsupportedOperationException $r1;
+
+        r0 := @this: kotlinx.coroutines.scheduling.DefaultScheduler;
+
+        $r1 = new java.lang.UnsupportedOperationException;
+
+        specialinvoke $r1.<java.lang.UnsupportedOperationException: void <init>(java.lang.String)>("Dispatchers.Default cannot be closed");
+
+        throw $r1;
+    }
+
+    public final kotlinx.coroutines.CoroutineDispatcher getIO()
+    {
+        kotlinx.coroutines.scheduling.DefaultScheduler r0;
+        kotlinx.coroutines.CoroutineDispatcher r1;
+
+        r0 := @this: kotlinx.coroutines.scheduling.DefaultScheduler;
+
+        r1 = <kotlinx.coroutines.scheduling.DefaultScheduler: kotlinx.coroutines.CoroutineDispatcher IO>;
+
+        return r1;
+    }
+
+    public final java.lang.String toDebugString()
+    {
+        kotlinx.coroutines.scheduling.DefaultScheduler r0;
+        java.lang.String $r1;
+
+        r0 := @this: kotlinx.coroutines.scheduling.DefaultScheduler;
+
+        $r1 = specialinvoke r0.<kotlinx.coroutines.scheduling.ExperimentalCoroutineDispatcher: java.lang.String toString()>();
+
+        return $r1;
+    }
+
+    public java.lang.String toString()
+    {
+        kotlinx.coroutines.scheduling.DefaultScheduler r0;
+
+        r0 := @this: kotlinx.coroutines.scheduling.DefaultScheduler;
+
+        return "Dispatchers.Default";
+    }
+}

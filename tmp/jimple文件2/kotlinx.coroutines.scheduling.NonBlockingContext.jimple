@@ -1,0 +1,50 @@
+public final class kotlinx.coroutines.scheduling.NonBlockingContext extends java.lang.Object implements kotlinx.coroutines.scheduling.TaskContext
+{
+    public static final kotlinx.coroutines.scheduling.NonBlockingContext INSTANCE;
+    private static final int taskMode;
+
+    static void <clinit>()
+    {
+        kotlinx.coroutines.scheduling.NonBlockingContext $r0;
+
+        $r0 = new kotlinx.coroutines.scheduling.NonBlockingContext;
+
+        specialinvoke $r0.<kotlinx.coroutines.scheduling.NonBlockingContext: void <init>()>();
+
+        <kotlinx.coroutines.scheduling.NonBlockingContext: kotlinx.coroutines.scheduling.NonBlockingContext INSTANCE> = $r0;
+
+        return;
+    }
+
+    private void <init>()
+    {
+        kotlinx.coroutines.scheduling.NonBlockingContext r0;
+
+        r0 := @this: kotlinx.coroutines.scheduling.NonBlockingContext;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public void afterTask()
+    {
+        kotlinx.coroutines.scheduling.NonBlockingContext r0;
+
+        r0 := @this: kotlinx.coroutines.scheduling.NonBlockingContext;
+
+        return;
+    }
+
+    public int getTaskMode()
+    {
+        kotlinx.coroutines.scheduling.NonBlockingContext r0;
+        int i0;
+
+        r0 := @this: kotlinx.coroutines.scheduling.NonBlockingContext;
+
+        i0 = <kotlinx.coroutines.scheduling.NonBlockingContext: int taskMode>;
+
+        return i0;
+    }
+}

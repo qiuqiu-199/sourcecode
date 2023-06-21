@@ -1,0 +1,119 @@
+public final class kotlinx.coroutines.flow.internal.DownstreamExceptionElement extends java.lang.Object implements kotlin.coroutines.CoroutineContext$Element
+{
+    public static final kotlinx.coroutines.flow.internal.DownstreamExceptionElement$Key Key;
+    public final java.lang.Throwable e;
+    private final kotlin.coroutines.CoroutineContext$Key key;
+
+    static void <clinit>()
+    {
+        kotlinx.coroutines.flow.internal.DownstreamExceptionElement$Key $r0;
+
+        $r0 = new kotlinx.coroutines.flow.internal.DownstreamExceptionElement$Key;
+
+        specialinvoke $r0.<kotlinx.coroutines.flow.internal.DownstreamExceptionElement$Key: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)>(null);
+
+        <kotlinx.coroutines.flow.internal.DownstreamExceptionElement: kotlinx.coroutines.flow.internal.DownstreamExceptionElement$Key Key> = $r0;
+
+        return;
+    }
+
+    public void <init>(java.lang.Throwable)
+    {
+        kotlinx.coroutines.flow.internal.DownstreamExceptionElement r0;
+        java.lang.Throwable $r1;
+        kotlinx.coroutines.flow.internal.DownstreamExceptionElement$Key $r2;
+        kotlin.coroutines.CoroutineContext$Key $r3;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.DownstreamExceptionElement;
+
+        $r1 := @parameter0: java.lang.Throwable;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        r0.<kotlinx.coroutines.flow.internal.DownstreamExceptionElement: java.lang.Throwable e> = $r1;
+
+        $r2 = <kotlinx.coroutines.flow.internal.DownstreamExceptionElement: kotlinx.coroutines.flow.internal.DownstreamExceptionElement$Key Key>;
+
+        $r3 = (kotlin.coroutines.CoroutineContext$Key) $r2;
+
+        r0.<kotlinx.coroutines.flow.internal.DownstreamExceptionElement: kotlin.coroutines.CoroutineContext$Key key> = $r3;
+
+        return;
+    }
+
+    public java.lang.Object fold(java.lang.Object, kotlin.jvm.functions.Function2)
+    {
+        kotlinx.coroutines.flow.internal.DownstreamExceptionElement r0;
+        kotlin.jvm.functions.Function2 $r1;
+        java.lang.Object $r2;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.DownstreamExceptionElement;
+
+        $r2 := @parameter0: java.lang.Object;
+
+        $r1 := @parameter1: kotlin.jvm.functions.Function2;
+
+        $r2 = staticinvoke <kotlin.coroutines.CoroutineContext$Element$DefaultImpls: java.lang.Object fold(kotlin.coroutines.CoroutineContext$Element,java.lang.Object,kotlin.jvm.functions.Function2)>(r0, $r2, $r1);
+
+        return $r2;
+    }
+
+    public kotlin.coroutines.CoroutineContext$Element get(kotlin.coroutines.CoroutineContext$Key)
+    {
+        kotlinx.coroutines.flow.internal.DownstreamExceptionElement r0;
+        kotlin.coroutines.CoroutineContext$Element $r1;
+        kotlin.coroutines.CoroutineContext$Key $r2;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.DownstreamExceptionElement;
+
+        $r2 := @parameter0: kotlin.coroutines.CoroutineContext$Key;
+
+        $r1 = staticinvoke <kotlin.coroutines.CoroutineContext$Element$DefaultImpls: kotlin.coroutines.CoroutineContext$Element get(kotlin.coroutines.CoroutineContext$Element,kotlin.coroutines.CoroutineContext$Key)>(r0, $r2);
+
+        return $r1;
+    }
+
+    public kotlin.coroutines.CoroutineContext$Key getKey()
+    {
+        kotlinx.coroutines.flow.internal.DownstreamExceptionElement r0;
+        kotlin.coroutines.CoroutineContext$Key r1;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.DownstreamExceptionElement;
+
+        r1 = r0.<kotlinx.coroutines.flow.internal.DownstreamExceptionElement: kotlin.coroutines.CoroutineContext$Key key>;
+
+        return r1;
+    }
+
+    public kotlin.coroutines.CoroutineContext minusKey(kotlin.coroutines.CoroutineContext$Key)
+    {
+        kotlinx.coroutines.flow.internal.DownstreamExceptionElement r0;
+        kotlin.coroutines.CoroutineContext $r1;
+        kotlin.coroutines.CoroutineContext$Key $r2;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.DownstreamExceptionElement;
+
+        $r2 := @parameter0: kotlin.coroutines.CoroutineContext$Key;
+
+        $r1 = staticinvoke <kotlin.coroutines.CoroutineContext$Element$DefaultImpls: kotlin.coroutines.CoroutineContext minusKey(kotlin.coroutines.CoroutineContext$Element,kotlin.coroutines.CoroutineContext$Key)>(r0, $r2);
+
+        return $r1;
+    }
+
+    public kotlin.coroutines.CoroutineContext plus(kotlin.coroutines.CoroutineContext)
+    {
+        kotlinx.coroutines.flow.internal.DownstreamExceptionElement r0;
+        kotlin.coroutines.CoroutineContext $r1;
+        kotlin.coroutines.CoroutineContext$Element $r2;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.DownstreamExceptionElement;
+
+        $r1 := @parameter0: kotlin.coroutines.CoroutineContext;
+
+        $r2 = (kotlin.coroutines.CoroutineContext$Element) r0;
+
+        $r1 = staticinvoke <kotlin.coroutines.CoroutineContext$Element$DefaultImpls: kotlin.coroutines.CoroutineContext plus(kotlin.coroutines.CoroutineContext$Element,kotlin.coroutines.CoroutineContext)>($r2, $r1);
+
+        return $r1;
+    }
+}

@@ -1,0 +1,73 @@
+public final class kotlinx.coroutines.android.AndroidDispatcherFactory extends java.lang.Object implements kotlinx.coroutines.internal.MainDispatcherFactory
+{
+
+    public void <init>()
+    {
+        kotlinx.coroutines.android.AndroidDispatcherFactory r0;
+
+        r0 := @this: kotlinx.coroutines.android.AndroidDispatcherFactory;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public volatile kotlinx.coroutines.MainCoroutineDispatcher createDispatcher(java.util.List)
+    {
+        kotlinx.coroutines.android.AndroidDispatcherFactory r0;
+        kotlinx.coroutines.android.HandlerContext $r1;
+        java.util.List $r2;
+        kotlinx.coroutines.MainCoroutineDispatcher $r3;
+
+        r0 := @this: kotlinx.coroutines.android.AndroidDispatcherFactory;
+
+        $r2 := @parameter0: java.util.List;
+
+        $r1 = virtualinvoke r0.<kotlinx.coroutines.android.AndroidDispatcherFactory: kotlinx.coroutines.android.HandlerContext createDispatcher(java.util.List)>($r2);
+
+        $r3 = (kotlinx.coroutines.MainCoroutineDispatcher) $r1;
+
+        return $r3;
+    }
+
+    public kotlinx.coroutines.android.HandlerContext createDispatcher(java.util.List)
+    {
+        kotlinx.coroutines.android.AndroidDispatcherFactory r0;
+        java.util.List $r1;
+        kotlinx.coroutines.android.HandlerContext $r2;
+        android.os.Looper $r3;
+        android.os.Handler $r4;
+
+        r0 := @this: kotlinx.coroutines.android.AndroidDispatcherFactory;
+
+        $r1 := @parameter0: java.util.List;
+
+        $r2 = new kotlinx.coroutines.android.HandlerContext;
+
+        $r3 = staticinvoke <android.os.Looper: android.os.Looper getMainLooper()>();
+
+        $r4 = staticinvoke <kotlinx.coroutines.android.HandlerDispatcherKt: android.os.Handler asHandler(android.os.Looper,boolean)>($r3, 1);
+
+        specialinvoke $r2.<kotlinx.coroutines.android.HandlerContext: void <init>(android.os.Handler,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker)>($r4, null, 2, null);
+
+        return $r2;
+    }
+
+    public int getLoadPriority()
+    {
+        kotlinx.coroutines.android.AndroidDispatcherFactory r0;
+
+        r0 := @this: kotlinx.coroutines.android.AndroidDispatcherFactory;
+
+        return 1073741823;
+    }
+
+    public java.lang.String hintOnError()
+    {
+        kotlinx.coroutines.android.AndroidDispatcherFactory r0;
+
+        r0 := @this: kotlinx.coroutines.android.AndroidDispatcherFactory;
+
+        return "For tests Dispatchers.setMain from kotlinx-coroutines-test module can be used";
+    }
+}

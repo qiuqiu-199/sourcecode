@@ -1,0 +1,225 @@
+final class kotlinx.coroutines.test.TimedRunnableObsolete extends java.lang.Object implements java.lang.Comparable, java.lang.Runnable, kotlinx.coroutines.internal.ThreadSafeHeapNode
+{
+    private final long count;
+    private kotlinx.coroutines.internal.ThreadSafeHeap heap;
+    private int index;
+    private final java.lang.Runnable run;
+    public final long time;
+
+    public void <init>(java.lang.Runnable, long, long)
+    {
+        kotlinx.coroutines.test.TimedRunnableObsolete r0;
+        java.lang.Runnable $r1;
+        long $l0, $l1;
+
+        r0 := @this: kotlinx.coroutines.test.TimedRunnableObsolete;
+
+        $r1 := @parameter0: java.lang.Runnable;
+
+        $l0 := @parameter1: long;
+
+        $l1 := @parameter2: long;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        r0.<kotlinx.coroutines.test.TimedRunnableObsolete: java.lang.Runnable run> = $r1;
+
+        r0.<kotlinx.coroutines.test.TimedRunnableObsolete: long count> = $l0;
+
+        r0.<kotlinx.coroutines.test.TimedRunnableObsolete: long time> = $l1;
+
+        return;
+    }
+
+    public void <init>(java.lang.Runnable, long, long, int, kotlin.jvm.internal.DefaultConstructorMarker)
+    {
+        kotlinx.coroutines.test.TimedRunnableObsolete r0;
+        java.lang.Runnable $r1;
+        long $l0, $l2;
+        int $i1, $i3;
+        kotlin.jvm.internal.DefaultConstructorMarker $r2;
+
+        r0 := @this: kotlinx.coroutines.test.TimedRunnableObsolete;
+
+        $r1 := @parameter0: java.lang.Runnable;
+
+        $l2 := @parameter1: long;
+
+        $l0 := @parameter2: long;
+
+        $i1 := @parameter3: int;
+
+        $r2 := @parameter4: kotlin.jvm.internal.DefaultConstructorMarker;
+
+        $i3 = $i1 & 2;
+
+        if $i3 == 0 goto label1;
+
+        $l2 = 0L;
+
+        goto label1;
+
+     label1:
+        $i1 = $i1 & 4;
+
+        if $i1 == 0 goto label2;
+
+        $l0 = 0L;
+
+        goto label2;
+
+     label2:
+        specialinvoke r0.<kotlinx.coroutines.test.TimedRunnableObsolete: void <init>(java.lang.Runnable,long,long)>($r1, $l2, $l0);
+
+        return;
+    }
+
+    public volatile int compareTo(java.lang.Object)
+    {
+        kotlinx.coroutines.test.TimedRunnableObsolete r0, $r2;
+        int $i0;
+        java.lang.Object $r1;
+
+        r0 := @this: kotlinx.coroutines.test.TimedRunnableObsolete;
+
+        $r1 := @parameter0: java.lang.Object;
+
+        $r2 = (kotlinx.coroutines.test.TimedRunnableObsolete) $r1;
+
+        $i0 = virtualinvoke r0.<kotlinx.coroutines.test.TimedRunnableObsolete: int compareTo(kotlinx.coroutines.test.TimedRunnableObsolete)>($r2);
+
+        return $i0;
+    }
+
+    public int compareTo(kotlinx.coroutines.test.TimedRunnableObsolete)
+    {
+        kotlinx.coroutines.test.TimedRunnableObsolete r0, $r1;
+        byte $b0;
+        long $l1, $l2;
+        int $i3;
+
+        r0 := @this: kotlinx.coroutines.test.TimedRunnableObsolete;
+
+        $r1 := @parameter0: kotlinx.coroutines.test.TimedRunnableObsolete;
+
+        $l1 = r0.<kotlinx.coroutines.test.TimedRunnableObsolete: long time>;
+
+        $l2 = $r1.<kotlinx.coroutines.test.TimedRunnableObsolete: long time>;
+
+        $b0 = $l1 cmp $l2;
+
+        if $b0 != 0 goto label1;
+
+        $l1 = r0.<kotlinx.coroutines.test.TimedRunnableObsolete: long count>;
+
+        $l2 = $r1.<kotlinx.coroutines.test.TimedRunnableObsolete: long count>;
+
+        $i3 = staticinvoke <kotlin.jvm.internal.Intrinsics: int compare(long,long)>($l1, $l2);
+
+        return $i3;
+
+     label1:
+        $i3 = staticinvoke <kotlin.jvm.internal.Intrinsics: int compare(long,long)>($l1, $l2);
+
+        return $i3;
+    }
+
+    public kotlinx.coroutines.internal.ThreadSafeHeap getHeap()
+    {
+        kotlinx.coroutines.test.TimedRunnableObsolete r0;
+        kotlinx.coroutines.internal.ThreadSafeHeap r1;
+
+        r0 := @this: kotlinx.coroutines.test.TimedRunnableObsolete;
+
+        r1 = r0.<kotlinx.coroutines.test.TimedRunnableObsolete: kotlinx.coroutines.internal.ThreadSafeHeap heap>;
+
+        return r1;
+    }
+
+    public int getIndex()
+    {
+        kotlinx.coroutines.test.TimedRunnableObsolete r0;
+        int i0;
+
+        r0 := @this: kotlinx.coroutines.test.TimedRunnableObsolete;
+
+        i0 = r0.<kotlinx.coroutines.test.TimedRunnableObsolete: int index>;
+
+        return i0;
+    }
+
+    public void run()
+    {
+        kotlinx.coroutines.test.TimedRunnableObsolete r0;
+        java.lang.Runnable $r1;
+
+        r0 := @this: kotlinx.coroutines.test.TimedRunnableObsolete;
+
+        $r1 = r0.<kotlinx.coroutines.test.TimedRunnableObsolete: java.lang.Runnable run>;
+
+        interfaceinvoke $r1.<java.lang.Runnable: void run()>();
+
+        return;
+    }
+
+    public void setHeap(kotlinx.coroutines.internal.ThreadSafeHeap)
+    {
+        kotlinx.coroutines.test.TimedRunnableObsolete r0;
+        kotlinx.coroutines.internal.ThreadSafeHeap $r1;
+
+        r0 := @this: kotlinx.coroutines.test.TimedRunnableObsolete;
+
+        $r1 := @parameter0: kotlinx.coroutines.internal.ThreadSafeHeap;
+
+        r0.<kotlinx.coroutines.test.TimedRunnableObsolete: kotlinx.coroutines.internal.ThreadSafeHeap heap> = $r1;
+
+        return;
+    }
+
+    public void setIndex(int)
+    {
+        kotlinx.coroutines.test.TimedRunnableObsolete r0;
+        int $i0;
+
+        r0 := @this: kotlinx.coroutines.test.TimedRunnableObsolete;
+
+        $i0 := @parameter0: int;
+
+        r0.<kotlinx.coroutines.test.TimedRunnableObsolete: int index> = $i0;
+
+        return;
+    }
+
+    public java.lang.String toString()
+    {
+        kotlinx.coroutines.test.TimedRunnableObsolete r0;
+        java.lang.String $r1;
+        java.lang.StringBuilder $r2;
+        long $l0;
+        java.lang.Runnable $r3;
+
+        r0 := @this: kotlinx.coroutines.test.TimedRunnableObsolete;
+
+        $r2 = new java.lang.StringBuilder;
+
+        specialinvoke $r2.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("TimedRunnable(time=");
+
+        $l0 = r0.<kotlinx.coroutines.test.TimedRunnableObsolete: long time>;
+
+        virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>($l0);
+
+        virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", run=");
+
+        $r3 = r0.<kotlinx.coroutines.test.TimedRunnableObsolete: java.lang.Runnable run>;
+
+        virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r3);
+
+        virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(41);
+
+        $r1 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        return $r1;
+    }
+}

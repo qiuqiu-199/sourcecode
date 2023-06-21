@@ -1,0 +1,25 @@
+public final class kotlinx.coroutines.CommonPool$$ExternalSyntheticLambda1 extends java.lang.Object implements java.lang.Runnable
+{
+
+    public void <init>()
+    {
+        kotlinx.coroutines.CommonPool$$ExternalSyntheticLambda1 r0;
+
+        r0 := @this: kotlinx.coroutines.CommonPool$$ExternalSyntheticLambda1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public final void run()
+    {
+        kotlinx.coroutines.CommonPool$$ExternalSyntheticLambda1 r0;
+
+        r0 := @this: kotlinx.coroutines.CommonPool$$ExternalSyntheticLambda1;
+
+        staticinvoke <kotlinx.coroutines.CommonPool: void $r8$lambda$36bgNy4lLwRHCWOZ-fm6LcwyUbo()>();
+
+        return;
+    }
+}

@@ -1,0 +1,40 @@
+class com.example.q1.FirstFragment$1 extends java.lang.Object implements android.view.View$OnClickListener
+{
+    final com.example.q1.FirstFragment this$0;
+
+    void <init>(com.example.q1.FirstFragment)
+    {
+        com.example.q1.FirstFragment$1 r0;
+        com.example.q1.FirstFragment $r1;
+
+        r0 := @this: com.example.q1.FirstFragment$1;
+
+        $r1 := @parameter0: com.example.q1.FirstFragment;
+
+        r0.<com.example.q1.FirstFragment$1: com.example.q1.FirstFragment this$0> = $r1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public void onClick(android.view.View)
+    {
+        com.example.q1.FirstFragment$1 r0;
+        androidx.navigation.NavController $r1;
+        android.view.View $r2;
+        com.example.q1.FirstFragment $r3;
+
+        r0 := @this: com.example.q1.FirstFragment$1;
+
+        $r2 := @parameter0: android.view.View;
+
+        $r3 = r0.<com.example.q1.FirstFragment$1: com.example.q1.FirstFragment this$0>;
+
+        $r1 = staticinvoke <androidx.navigation.fragment.NavHostFragment: androidx.navigation.NavController findNavController(androidx.fragment.app.Fragment)>($r3);
+
+        virtualinvoke $r1.<androidx.navigation.NavController: void navigate(int)>(2131230773);
+
+        return;
+    }
+}

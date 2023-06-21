@@ -1,0 +1,22 @@
+public final class com.example.q1.R$navigation extends java.lang.Object
+{
+    public static final int nav_graph;
+
+    private void <init>()
+    {
+        com.example.q1.R$navigation r0;
+
+        r0 := @this: com.example.q1.R$navigation;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void <clinit>()
+    {
+        <com.example.q1.R$navigation: int nav_graph> = 2131623936;
+
+        return;
+    }
+}

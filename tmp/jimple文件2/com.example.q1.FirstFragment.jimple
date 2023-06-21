@@ -1,0 +1,84 @@
+public class com.example.q1.FirstFragment extends androidx.fragment.app.Fragment
+{
+    private com.example.q1.databinding.FragmentFirstBinding binding;
+
+    public void <init>()
+    {
+        com.example.q1.FirstFragment r0;
+
+        r0 := @this: com.example.q1.FirstFragment;
+
+        specialinvoke r0.<androidx.fragment.app.Fragment: void <init>()>();
+
+        return;
+    }
+
+    public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
+    {
+        com.example.q1.FirstFragment r0;
+        android.view.ViewGroup $r1;
+        android.view.LayoutInflater $r2;
+        android.os.Bundle $r3;
+        com.example.q1.databinding.FragmentFirstBinding $r4;
+        androidx.constraintlayout.widget.ConstraintLayout $r5;
+
+        r0 := @this: com.example.q1.FirstFragment;
+
+        $r2 := @parameter0: android.view.LayoutInflater;
+
+        $r1 := @parameter1: android.view.ViewGroup;
+
+        $r3 := @parameter2: android.os.Bundle;
+
+        $r4 = staticinvoke <com.example.q1.databinding.FragmentFirstBinding: com.example.q1.databinding.FragmentFirstBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean)>($r2, $r1, 0);
+
+        r0.<com.example.q1.FirstFragment: com.example.q1.databinding.FragmentFirstBinding binding> = $r4;
+
+        $r5 = virtualinvoke $r4.<com.example.q1.databinding.FragmentFirstBinding: androidx.constraintlayout.widget.ConstraintLayout getRoot()>();
+
+        return $r5;
+    }
+
+    public void onDestroyView()
+    {
+        com.example.q1.FirstFragment r0;
+
+        r0 := @this: com.example.q1.FirstFragment;
+
+        specialinvoke r0.<androidx.fragment.app.Fragment: void onDestroyView()>();
+
+        r0.<com.example.q1.FirstFragment: com.example.q1.databinding.FragmentFirstBinding binding> = null;
+
+        return;
+    }
+
+    public void onViewCreated(android.view.View, android.os.Bundle)
+    {
+        com.example.q1.FirstFragment r0;
+        android.view.View $r1;
+        android.os.Bundle $r2;
+        com.example.q1.databinding.FragmentFirstBinding $r3;
+        android.widget.Button $r4;
+        com.example.q1.FirstFragment$1 $r5;
+
+        r0 := @this: com.example.q1.FirstFragment;
+
+        $r1 := @parameter0: android.view.View;
+
+        $r2 := @parameter1: android.os.Bundle;
+
+        specialinvoke r0.<androidx.fragment.app.Fragment: void onViewCreated(android.view.View,android.os.Bundle)>($r1, $r2);
+
+        $r3 = r0.<com.example.q1.FirstFragment: com.example.q1.databinding.FragmentFirstBinding binding>;
+
+        $r4 = $r3.<com.example.q1.databinding.FragmentFirstBinding: android.widget.Button buttonFirst>;
+
+        $r5 = new com.example.q1.FirstFragment$1;
+
+        specialinvoke $r5.<com.example.q1.FirstFragment$1: void <init>(com.example.q1.FirstFragment)>(r0);
+
+        virtualinvoke $r4.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r5);
+
+        return;
+    }
+}

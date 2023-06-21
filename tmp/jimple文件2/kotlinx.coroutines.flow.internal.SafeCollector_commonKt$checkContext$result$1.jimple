@@ -1,0 +1,143 @@
+final class kotlinx.coroutines.flow.internal.SafeCollector_commonKt$checkContext$result$1 extends kotlin.jvm.internal.Lambda implements kotlin.jvm.functions.Function2
+{
+    final kotlinx.coroutines.flow.internal.SafeCollector $this_checkContext;
+
+    void <init>(kotlinx.coroutines.flow.internal.SafeCollector)
+    {
+        kotlinx.coroutines.flow.internal.SafeCollector_commonKt$checkContext$result$1 r0;
+        kotlinx.coroutines.flow.internal.SafeCollector $r1;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.SafeCollector_commonKt$checkContext$result$1;
+
+        $r1 := @parameter0: kotlinx.coroutines.flow.internal.SafeCollector;
+
+        r0.<kotlinx.coroutines.flow.internal.SafeCollector_commonKt$checkContext$result$1: kotlinx.coroutines.flow.internal.SafeCollector $this_checkContext> = $r1;
+
+        specialinvoke r0.<kotlin.jvm.internal.Lambda: void <init>(int)>(2);
+
+        return;
+    }
+
+    public final java.lang.Integer invoke(int, kotlin.coroutines.CoroutineContext$Element)
+    {
+        kotlinx.coroutines.flow.internal.SafeCollector_commonKt$checkContext$result$1 r0;
+        kotlinx.coroutines.Job$Key $r1;
+        int $i0;
+        kotlin.coroutines.CoroutineContext$Element $r2, $r6;
+        kotlin.coroutines.CoroutineContext$Key $r3;
+        kotlinx.coroutines.flow.internal.SafeCollector $r4;
+        kotlin.coroutines.CoroutineContext $r5;
+        java.lang.Integer $r7;
+        kotlinx.coroutines.Job $r8, $r9;
+        java.lang.StringBuilder $r10;
+        java.lang.String $r11;
+        java.lang.IllegalStateException $r12;
+        java.lang.Throwable $r13;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.SafeCollector_commonKt$checkContext$result$1;
+
+        $i0 := @parameter0: int;
+
+        $r2 := @parameter1: kotlin.coroutines.CoroutineContext$Element;
+
+        $r3 = interfaceinvoke $r2.<kotlin.coroutines.CoroutineContext$Element: kotlin.coroutines.CoroutineContext$Key getKey()>();
+
+        $r4 = r0.<kotlinx.coroutines.flow.internal.SafeCollector_commonKt$checkContext$result$1: kotlinx.coroutines.flow.internal.SafeCollector $this_checkContext>;
+
+        $r5 = $r4.<kotlinx.coroutines.flow.internal.SafeCollector: kotlin.coroutines.CoroutineContext collectContext>;
+
+        $r6 = interfaceinvoke $r5.<kotlin.coroutines.CoroutineContext: kotlin.coroutines.CoroutineContext$Element get(kotlin.coroutines.CoroutineContext$Key)>($r3);
+
+        $r1 = <kotlinx.coroutines.Job: kotlinx.coroutines.Job$Key Key>;
+
+        if $r3 == $r1 goto label3;
+
+        if $r2 == $r6 goto label1;
+
+        $i0 = -2147483648;
+
+        goto label2;
+
+     label1:
+        $i0 = $i0 + 1;
+
+     label2:
+        $r7 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($i0);
+
+        return $r7;
+
+     label3:
+        $r8 = (kotlinx.coroutines.Job) $r6;
+
+        $r9 = (kotlinx.coroutines.Job) $r2;
+
+        $r9 = staticinvoke <kotlinx.coroutines.flow.internal.SafeCollector_commonKt: kotlinx.coroutines.Job transitiveCoroutineParent(kotlinx.coroutines.Job,kotlinx.coroutines.Job)>($r9, $r8);
+
+        if $r9 != $r8 goto label6;
+
+        if $r8 != null goto label4;
+
+        goto label5;
+
+     label4:
+        $i0 = $i0 + 1;
+
+     label5:
+        $r7 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($i0);
+
+        return $r7;
+
+     label6:
+        $r10 = new java.lang.StringBuilder;
+
+        specialinvoke $r10.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Flow invariant is violated:\n\t\tEmission from another coroutine is detected.\n\t\tChild of ");
+
+        virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r9);
+
+        virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", expected child of ");
+
+        virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r8);
+
+        virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".\n\t\tFlowCollector is not thread-safe and concurrent emissions are prohibited.\n\t\tTo mitigate this restriction please use \'channelFlow\' builder instead of \'flow\'");
+
+        $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        $r12 = new java.lang.IllegalStateException;
+
+        $r11 = virtualinvoke $r11.<java.lang.Object: java.lang.String toString()>();
+
+        specialinvoke $r12.<java.lang.IllegalStateException: void <init>(java.lang.String)>($r11);
+
+        $r13 = (java.lang.Throwable) $r12;
+
+        throw $r13;
+    }
+
+    public volatile java.lang.Object invoke(java.lang.Object, java.lang.Object)
+    {
+        kotlinx.coroutines.flow.internal.SafeCollector_commonKt$checkContext$result$1 r0;
+        java.lang.Object $r1, $r2;
+        java.lang.Number $r3;
+        int $i0;
+        kotlin.coroutines.CoroutineContext$Element $r4;
+        java.lang.Integer $r5;
+
+        r0 := @this: kotlinx.coroutines.flow.internal.SafeCollector_commonKt$checkContext$result$1;
+
+        $r1 := @parameter0: java.lang.Object;
+
+        $r2 := @parameter1: java.lang.Object;
+
+        $r3 = (java.lang.Number) $r1;
+
+        $i0 = virtualinvoke $r3.<java.lang.Number: int intValue()>();
+
+        $r4 = (kotlin.coroutines.CoroutineContext$Element) $r2;
+
+        $r5 = virtualinvoke r0.<kotlinx.coroutines.flow.internal.SafeCollector_commonKt$checkContext$result$1: java.lang.Integer invoke(int,kotlin.coroutines.CoroutineContext$Element)>($i0, $r4);
+
+        return $r5;
+    }
+}

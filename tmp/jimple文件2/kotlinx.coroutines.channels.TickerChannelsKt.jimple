@@ -1,0 +1,624 @@
+public final class kotlinx.coroutines.channels.TickerChannelsKt extends java.lang.Object
+{
+
+    public static final java.lang.Object access$fixedDelayTicker(long, long, kotlinx.coroutines.channels.SendChannel, kotlin.coroutines.Continuation)
+    {
+        long $l0, $l1;
+        kotlinx.coroutines.channels.SendChannel $r0;
+        kotlin.coroutines.Continuation $r1;
+        java.lang.Object $r2;
+
+        $l1 := @parameter0: long;
+
+        $l0 := @parameter1: long;
+
+        $r0 := @parameter2: kotlinx.coroutines.channels.SendChannel;
+
+        $r1 := @parameter3: kotlin.coroutines.Continuation;
+
+        $r2 = staticinvoke <kotlinx.coroutines.channels.TickerChannelsKt: java.lang.Object fixedDelayTicker(long,long,kotlinx.coroutines.channels.SendChannel,kotlin.coroutines.Continuation)>($l1, $l0, $r0, $r1);
+
+        return $r2;
+    }
+
+    public static final java.lang.Object access$fixedPeriodTicker(long, long, kotlinx.coroutines.channels.SendChannel, kotlin.coroutines.Continuation)
+    {
+        long $l0, $l1;
+        kotlinx.coroutines.channels.SendChannel $r0;
+        kotlin.coroutines.Continuation $r1;
+        java.lang.Object $r2;
+
+        $l1 := @parameter0: long;
+
+        $l0 := @parameter1: long;
+
+        $r0 := @parameter2: kotlinx.coroutines.channels.SendChannel;
+
+        $r1 := @parameter3: kotlin.coroutines.Continuation;
+
+        $r2 = staticinvoke <kotlinx.coroutines.channels.TickerChannelsKt: java.lang.Object fixedPeriodTicker(long,long,kotlinx.coroutines.channels.SendChannel,kotlin.coroutines.Continuation)>($l1, $l0, $r0, $r1);
+
+        return $r2;
+    }
+
+    private static final java.lang.Object fixedDelayTicker(long, long, kotlinx.coroutines.channels.SendChannel, kotlin.coroutines.Continuation)
+    {
+        long $l0, $l1;
+        kotlinx.coroutines.channels.SendChannel $r0;
+        kotlin.coroutines.Continuation $r1;
+        boolean $z0;
+        kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1 $r2;
+        int $i2;
+        java.lang.Object $r3, $r4, $r5;
+        java.lang.IllegalStateException $r6;
+        kotlin.Unit $r7;
+
+        $l0 := @parameter0: long;
+
+        $l1 := @parameter1: long;
+
+        $r0 := @parameter2: kotlinx.coroutines.channels.SendChannel;
+
+        $r1 := @parameter3: kotlin.coroutines.Continuation;
+
+        $z0 = $r1 instanceof kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1;
+
+        if $z0 == 0 goto label1;
+
+        $r2 = (kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1) $r1;
+
+        $i2 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: int label>;
+
+        $i2 = $i2 & -2147483648;
+
+        if $i2 == 0 goto label1;
+
+        $i2 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: int label>;
+
+        $i2 = $i2 - -2147483648;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: int label> = $i2;
+
+        goto label2;
+
+     label1:
+        $r2 = new kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1;
+
+        specialinvoke $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: void <init>(kotlin.coroutines.Continuation)>($r1);
+
+     label2:
+        $r3 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: java.lang.Object result>;
+
+        $r4 = staticinvoke <kotlin.coroutines.intrinsics.IntrinsicsKt: java.lang.Object getCOROUTINE_SUSPENDED()>();
+
+        $i2 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: int label>;
+
+        if $i2 == 0 goto label7;
+
+        if $i2 == 1 goto label6;
+
+        if $i2 == 2 goto label5;
+
+        if $i2 != 3 goto label4;
+
+        $l0 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: long J$0>;
+
+        $r5 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: java.lang.Object L$0>;
+
+        $r0 = (kotlinx.coroutines.channels.SendChannel) $r5;
+
+        staticinvoke <kotlin.ResultKt: void throwOnFailure(java.lang.Object)>($r3);
+
+     label3:
+        goto label8;
+
+     label4:
+        $r6 = new java.lang.IllegalStateException;
+
+        specialinvoke $r6.<java.lang.IllegalStateException: void <init>(java.lang.String)>("call to \'resume\' before \'invoke\' with coroutine");
+
+        throw $r6;
+
+     label5:
+        $l0 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: long J$0>;
+
+        $r5 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: java.lang.Object L$0>;
+
+        $r0 = (kotlinx.coroutines.channels.SendChannel) $r5;
+
+        staticinvoke <kotlin.ResultKt: void throwOnFailure(java.lang.Object)>($r3);
+
+        goto label9;
+
+     label6:
+        $l0 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: long J$0>;
+
+        $r5 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: java.lang.Object L$0>;
+
+        $r0 = (kotlinx.coroutines.channels.SendChannel) $r5;
+
+        staticinvoke <kotlin.ResultKt: void throwOnFailure(java.lang.Object)>($r3);
+
+        goto label8;
+
+     label7:
+        staticinvoke <kotlin.ResultKt: void throwOnFailure(java.lang.Object)>($r3);
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: java.lang.Object L$0> = $r0;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: long J$0> = $l0;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: int label> = 1;
+
+        $r3 = staticinvoke <kotlinx.coroutines.DelayKt: java.lang.Object delay(long,kotlin.coroutines.Continuation)>($l1, $r2);
+
+        if $r3 != $r4 goto label8;
+
+        return $r4;
+
+     label8:
+        $r7 = <kotlin.Unit: kotlin.Unit INSTANCE>;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: java.lang.Object L$0> = $r0;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: long J$0> = $l0;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: int label> = 2;
+
+        $r3 = interfaceinvoke $r0.<kotlinx.coroutines.channels.SendChannel: java.lang.Object send(java.lang.Object,kotlin.coroutines.Continuation)>($r7, $r2);
+
+        if $r3 != $r4 goto label9;
+
+        return $r4;
+
+     label9:
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: java.lang.Object L$0> = $r0;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: long J$0> = $l0;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1: int label> = 3;
+
+        $r3 = staticinvoke <kotlinx.coroutines.DelayKt: java.lang.Object delay(long,kotlin.coroutines.Continuation)>($l0, $r2);
+
+        if $r3 != $r4 goto label3;
+
+        return $r4;
+    }
+
+    private static final java.lang.Object fixedPeriodTicker(long, long, kotlinx.coroutines.channels.SendChannel, kotlin.coroutines.Continuation)
+    {
+        long $l0, $l1, $l4, $l5;
+        kotlinx.coroutines.channels.SendChannel $r0, $r7;
+        kotlin.coroutines.Continuation $r1;
+        byte $b2;
+        boolean $z0;
+        kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1 $r2;
+        int $i3;
+        java.lang.Object $r3, $r4, $r5;
+        java.lang.IllegalStateException $r6;
+        kotlinx.coroutines.AbstractTimeSource $r8;
+        kotlin.Unit $r9;
+
+        $l0 := @parameter0: long;
+
+        $l1 := @parameter1: long;
+
+        $r0 := @parameter2: kotlinx.coroutines.channels.SendChannel;
+
+        $r1 := @parameter3: kotlin.coroutines.Continuation;
+
+        $z0 = $r1 instanceof kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1;
+
+        if $z0 == 0 goto label01;
+
+        $r2 = (kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1) $r1;
+
+        $i3 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: int label>;
+
+        $i3 = $i3 & -2147483648;
+
+        if $i3 == 0 goto label01;
+
+        $i3 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: int label>;
+
+        $i3 = $i3 - -2147483648;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: int label> = $i3;
+
+        goto label02;
+
+     label01:
+        $r2 = new kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1;
+
+        specialinvoke $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: void <init>(kotlin.coroutines.Continuation)>($r1);
+
+     label02:
+        $r3 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: java.lang.Object result>;
+
+        $r4 = staticinvoke <kotlin.coroutines.intrinsics.IntrinsicsKt: java.lang.Object getCOROUTINE_SUSPENDED()>();
+
+        $i3 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: int label>;
+
+        if $i3 == 0 goto label09;
+
+        if $i3 == 1 goto label08;
+
+        if $i3 == 2 goto label07;
+
+        if $i3 == 3 goto label05;
+
+        if $i3 != 4 goto label04;
+
+        $l0 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$1>;
+
+        $l1 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$0>;
+
+        $r5 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: java.lang.Object L$0>;
+
+        $r0 = (kotlinx.coroutines.channels.SendChannel) $r5;
+
+        staticinvoke <kotlin.ResultKt: void throwOnFailure(java.lang.Object)>($r3);
+
+     label03:
+        goto label21;
+
+     label04:
+        $r6 = new java.lang.IllegalStateException;
+
+        specialinvoke $r6.<java.lang.IllegalStateException: void <init>(java.lang.String)>("call to \'resume\' before \'invoke\' with coroutine");
+
+        throw $r6;
+
+     label05:
+        $l0 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$1>;
+
+        $l1 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$0>;
+
+        $r5 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: java.lang.Object L$0>;
+
+        $r0 = (kotlinx.coroutines.channels.SendChannel) $r5;
+
+        staticinvoke <kotlin.ResultKt: void throwOnFailure(java.lang.Object)>($r3);
+
+     label06:
+        goto label19;
+
+     label07:
+        $l0 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$1>;
+
+        $l1 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$0>;
+
+        $r5 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: java.lang.Object L$0>;
+
+        $r0 = (kotlinx.coroutines.channels.SendChannel) $r5;
+
+        staticinvoke <kotlin.ResultKt: void throwOnFailure(java.lang.Object)>($r3);
+
+        goto label16;
+
+     label08:
+        $l1 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$1>;
+
+        $l0 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$0>;
+
+        $r5 = $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: java.lang.Object L$0>;
+
+        staticinvoke <kotlin.ResultKt: void throwOnFailure(java.lang.Object)>($r3);
+
+        $r7 = (kotlinx.coroutines.channels.SendChannel) $r5;
+
+        $l4 = $l0;
+
+        goto label13;
+
+     label09:
+        staticinvoke <kotlin.ResultKt: void throwOnFailure(java.lang.Object)>($r3);
+
+        $r8 = staticinvoke <kotlinx.coroutines.AbstractTimeSourceKt: kotlinx.coroutines.AbstractTimeSource getTimeSource()>();
+
+        if $r8 != null goto label10;
+
+        $l4 = staticinvoke <java.lang.System: long nanoTime()>();
+
+        goto label11;
+
+     label10:
+        $l4 = virtualinvoke $r8.<kotlinx.coroutines.AbstractTimeSource: long nanoTime()>();
+
+     label11:
+        $l5 = staticinvoke <kotlinx.coroutines.EventLoop_commonKt: long delayToNanos(long)>($l1);
+
+        $l5 = $l4 + $l5;
+
+        $r7 = $r0;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: java.lang.Object L$0> = $r0;
+
+        $l4 = $l0;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$0> = $l0;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$1> = $l5;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: int label> = 1;
+
+        $r3 = staticinvoke <kotlinx.coroutines.DelayKt: java.lang.Object delay(long,kotlin.coroutines.Continuation)>($l1, $r2);
+
+        if $r3 != $r4 goto label12;
+
+        return $r4;
+
+     label12:
+        $l1 = $l5;
+
+     label13:
+        $l0 = staticinvoke <kotlinx.coroutines.EventLoop_commonKt: long delayToNanos(long)>($l4);
+
+     label14:
+        $l1 = $l1 + $l0;
+
+        $r9 = <kotlin.Unit: kotlin.Unit INSTANCE>;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: java.lang.Object L$0> = $r7;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$0> = $l1;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$1> = $l0;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: int label> = 2;
+
+        $r3 = interfaceinvoke $r7.<kotlinx.coroutines.channels.SendChannel: java.lang.Object send(java.lang.Object,kotlin.coroutines.Continuation)>($r9, $r2);
+
+        if $r3 != $r4 goto label15;
+
+        return $r4;
+
+     label15:
+        $r0 = $r7;
+
+     label16:
+        $r8 = staticinvoke <kotlinx.coroutines.AbstractTimeSourceKt: kotlinx.coroutines.AbstractTimeSource getTimeSource()>();
+
+        if $r8 != null goto label17;
+
+        $l4 = staticinvoke <java.lang.System: long nanoTime()>();
+
+        goto label18;
+
+     label17:
+        $l4 = virtualinvoke $r8.<kotlinx.coroutines.AbstractTimeSource: long nanoTime()>();
+
+     label18:
+        $l5 = $l1 - $l4;
+
+        $l5 = staticinvoke <kotlin.ranges.RangesKt: long coerceAtLeast(long,long)>($l5, 0L);
+
+        $b2 = $l5 cmp 0L;
+
+        if $b2 != 0 goto label20;
+
+        $b2 = $l0 cmp 0L;
+
+        if $b2 == 0 goto label20;
+
+        $l1 = $l4 - $l1;
+
+        $l1 = $l1 % $l0;
+
+        $l5 = $l0 - $l1;
+
+        $l1 = $l4 + $l5;
+
+        $l4 = staticinvoke <kotlinx.coroutines.EventLoop_commonKt: long delayNanosToMillis(long)>($l5);
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: java.lang.Object L$0> = $r0;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$0> = $l1;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$1> = $l0;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: int label> = 3;
+
+        $r3 = staticinvoke <kotlinx.coroutines.DelayKt: java.lang.Object delay(long,kotlin.coroutines.Continuation)>($l4, $r2);
+
+        if $r3 != $r4 goto label06;
+
+        return $r4;
+
+     label19:
+        $r7 = $r0;
+
+        goto label14;
+
+     label20:
+        $l4 = staticinvoke <kotlinx.coroutines.EventLoop_commonKt: long delayNanosToMillis(long)>($l5);
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: java.lang.Object L$0> = $r0;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$0> = $l1;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: long J$1> = $l0;
+
+        $r2.<kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1: int label> = 4;
+
+        $r3 = staticinvoke <kotlinx.coroutines.DelayKt: java.lang.Object delay(long,kotlin.coroutines.Continuation)>($l4, $r2);
+
+        if $r3 != $r4 goto label03;
+
+        return $r4;
+
+     label21:
+        $r7 = $r0;
+
+        goto label14;
+    }
+
+    public static final kotlinx.coroutines.channels.ReceiveChannel ticker(long, long, kotlin.coroutines.CoroutineContext, kotlinx.coroutines.channels.TickerMode)
+    {
+        long $l0, $l1;
+        kotlin.coroutines.CoroutineContext $r0;
+        kotlinx.coroutines.channels.TickerMode $r1;
+        byte $b2;
+        boolean $z0, $z1;
+        kotlinx.coroutines.GlobalScope $r2;
+        kotlinx.coroutines.CoroutineScope $r3;
+        kotlinx.coroutines.CoroutineDispatcher $r4;
+        kotlinx.coroutines.channels.TickerChannelsKt$ticker$3 $r5;
+        kotlin.jvm.functions.Function2 $r6;
+        kotlinx.coroutines.channels.ReceiveChannel $r7;
+        java.lang.StringBuilder $r8;
+        java.lang.String $r9;
+        java.lang.IllegalArgumentException $r10;
+        java.lang.Throwable $r11;
+
+        $l0 := @parameter0: long;
+
+        $l1 := @parameter1: long;
+
+        $r0 := @parameter2: kotlin.coroutines.CoroutineContext;
+
+        $r1 := @parameter3: kotlinx.coroutines.channels.TickerMode;
+
+        $b2 = $l0 cmp 0L;
+
+        $z0 = 1;
+
+        if $b2 < 0 goto label1;
+
+        $z1 = 1;
+
+        goto label2;
+
+     label1:
+        $z1 = 0;
+
+     label2:
+        if $z1 == 0 goto label6;
+
+        $b2 = $l1 cmp 0L;
+
+        if $b2 < 0 goto label3;
+
+        goto label4;
+
+     label3:
+        $z0 = 0;
+
+     label4:
+        if $z0 == 0 goto label5;
+
+        $r2 = <kotlinx.coroutines.GlobalScope: kotlinx.coroutines.GlobalScope INSTANCE>;
+
+        $r3 = (kotlinx.coroutines.CoroutineScope) $r2;
+
+        $r4 = staticinvoke <kotlinx.coroutines.Dispatchers: kotlinx.coroutines.CoroutineDispatcher getUnconfined()>();
+
+        $r0 = virtualinvoke $r4.<kotlinx.coroutines.CoroutineDispatcher: kotlin.coroutines.CoroutineContext plus(kotlin.coroutines.CoroutineContext)>($r0);
+
+        $r5 = new kotlinx.coroutines.channels.TickerChannelsKt$ticker$3;
+
+        specialinvoke $r5.<kotlinx.coroutines.channels.TickerChannelsKt$ticker$3: void <init>(kotlinx.coroutines.channels.TickerMode,long,long,kotlin.coroutines.Continuation)>($r1, $l0, $l1, null);
+
+        $r6 = (kotlin.jvm.functions.Function2) $r5;
+
+        $r7 = staticinvoke <kotlinx.coroutines.channels.ProduceKt: kotlinx.coroutines.channels.ReceiveChannel produce(kotlinx.coroutines.CoroutineScope,kotlin.coroutines.CoroutineContext,int,kotlin.jvm.functions.Function2)>($r3, $r0, 0, $r6);
+
+        return $r7;
+
+     label5:
+        $r8 = new java.lang.StringBuilder;
+
+        specialinvoke $r8.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Expected non-negative initial delay, but has ");
+
+        virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>($l1);
+
+        virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" ms");
+
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        $r10 = new java.lang.IllegalArgumentException;
+
+        $r9 = virtualinvoke $r9.<java.lang.Object: java.lang.String toString()>();
+
+        specialinvoke $r10.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r9);
+
+        $r11 = (java.lang.Throwable) $r10;
+
+        throw $r11;
+
+     label6:
+        $r8 = new java.lang.StringBuilder;
+
+        specialinvoke $r8.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Expected non-negative delay, but has ");
+
+        virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>($l0);
+
+        virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" ms");
+
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        $r10 = new java.lang.IllegalArgumentException;
+
+        $r9 = virtualinvoke $r9.<java.lang.Object: java.lang.String toString()>();
+
+        specialinvoke $r10.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r9);
+
+        $r11 = (java.lang.Throwable) $r10;
+
+        throw $r11;
+    }
+
+    public static kotlinx.coroutines.channels.ReceiveChannel ticker$default(long, long, kotlin.coroutines.CoroutineContext, kotlinx.coroutines.channels.TickerMode, int, java.lang.Object)
+    {
+        kotlinx.coroutines.channels.ReceiveChannel $r0;
+        long $l0, $l1;
+        kotlin.coroutines.CoroutineContext $r1;
+        kotlinx.coroutines.channels.TickerMode $r2;
+        int $i2, $i3;
+        java.lang.Object $r3;
+        kotlin.coroutines.EmptyCoroutineContext $r4;
+
+        $l0 := @parameter0: long;
+
+        $l1 := @parameter1: long;
+
+        $r1 := @parameter2: kotlin.coroutines.CoroutineContext;
+
+        $r2 := @parameter3: kotlinx.coroutines.channels.TickerMode;
+
+        $i2 := @parameter4: int;
+
+        $r3 := @parameter5: java.lang.Object;
+
+        $i3 = $i2 & 2;
+
+        if $i3 == 0 goto label1;
+
+        $l1 = $l0;
+
+     label1:
+        $i3 = $i2 & 4;
+
+        if $i3 == 0 goto label2;
+
+        $r4 = <kotlin.coroutines.EmptyCoroutineContext: kotlin.coroutines.EmptyCoroutineContext INSTANCE>;
+
+        $r1 = (kotlin.coroutines.CoroutineContext) $r4;
+
+     label2:
+        $i2 = $i2 & 8;
+
+        if $i2 == 0 goto label3;
+
+        $r2 = <kotlinx.coroutines.channels.TickerMode: kotlinx.coroutines.channels.TickerMode FIXED_PERIOD>;
+
+     label3:
+        $r0 = staticinvoke <kotlinx.coroutines.channels.TickerChannelsKt: kotlinx.coroutines.channels.ReceiveChannel ticker(long,long,kotlin.coroutines.CoroutineContext,kotlinx.coroutines.channels.TickerMode)>($l0, $l1, $r1, $r2);
+
+        return $r0;
+    }
+}

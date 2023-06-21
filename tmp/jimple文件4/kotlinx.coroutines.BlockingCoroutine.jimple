@@ -1,0 +1,257 @@
+final class kotlinx.coroutines.BlockingCoroutine extends kotlinx.coroutines.AbstractCoroutine
+{
+    private final java.lang.Thread blockedThread;
+    private final kotlinx.coroutines.EventLoop eventLoop;
+
+    public void <init>(kotlin.coroutines.CoroutineContext, java.lang.Thread, kotlinx.coroutines.EventLoop)
+    {
+        kotlinx.coroutines.BlockingCoroutine r0;
+        kotlin.coroutines.CoroutineContext $r1;
+        java.lang.Thread $r2;
+        kotlinx.coroutines.EventLoop $r3;
+
+        r0 := @this: kotlinx.coroutines.BlockingCoroutine;
+
+        $r1 := @parameter0: kotlin.coroutines.CoroutineContext;
+
+        $r2 := @parameter1: java.lang.Thread;
+
+        $r3 := @parameter2: kotlinx.coroutines.EventLoop;
+
+        specialinvoke r0.<kotlinx.coroutines.AbstractCoroutine: void <init>(kotlin.coroutines.CoroutineContext,boolean,boolean)>($r1, 1, 1);
+
+        r0.<kotlinx.coroutines.BlockingCoroutine: java.lang.Thread blockedThread> = $r2;
+
+        r0.<kotlinx.coroutines.BlockingCoroutine: kotlinx.coroutines.EventLoop eventLoop> = $r3;
+
+        return;
+    }
+
+    protected void afterCompletion(java.lang.Object)
+    {
+        kotlinx.coroutines.BlockingCoroutine r0;
+        java.lang.Object $r1;
+        java.lang.Thread $r2, $r3;
+        boolean $z0;
+        kotlinx.coroutines.AbstractTimeSource $r4;
+
+        r0 := @this: kotlinx.coroutines.BlockingCoroutine;
+
+        $r1 := @parameter0: java.lang.Object;
+
+        $r2 = staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>();
+
+        $r3 = r0.<kotlinx.coroutines.BlockingCoroutine: java.lang.Thread blockedThread>;
+
+        $z0 = staticinvoke <kotlin.jvm.internal.Intrinsics: boolean areEqual(java.lang.Object,java.lang.Object)>($r2, $r3);
+
+        if $z0 != 0 goto label2;
+
+        $r2 = r0.<kotlinx.coroutines.BlockingCoroutine: java.lang.Thread blockedThread>;
+
+        $r4 = staticinvoke <kotlinx.coroutines.AbstractTimeSourceKt: kotlinx.coroutines.AbstractTimeSource getTimeSource()>();
+
+        if $r4 != null goto label1;
+
+        staticinvoke <java.util.concurrent.locks.LockSupport: void unpark(java.lang.Thread)>($r2);
+
+        return;
+
+     label1:
+        virtualinvoke $r4.<kotlinx.coroutines.AbstractTimeSource: void unpark(java.lang.Thread)>($r2);
+
+     label2:
+        return;
+    }
+
+    protected boolean isScopedCoroutine()
+    {
+        kotlinx.coroutines.BlockingCoroutine r0;
+
+        r0 := @this: kotlinx.coroutines.BlockingCoroutine;
+
+        return 1;
+    }
+
+    public final java.lang.Object joinBlocking()
+    {
+        kotlinx.coroutines.BlockingCoroutine r0;
+        kotlinx.coroutines.AbstractTimeSource $r1;
+        kotlinx.coroutines.EventLoop $r2;
+        kotlinx.coroutines.CompletedExceptionally $r3;
+        boolean $z0;
+        long $l0;
+        java.lang.Object $r4;
+        java.lang.Throwable $r5, $r7;
+        java.lang.InterruptedException $r6;
+
+        r0 := @this: kotlinx.coroutines.BlockingCoroutine;
+
+        $r1 = staticinvoke <kotlinx.coroutines.AbstractTimeSourceKt: kotlinx.coroutines.AbstractTimeSource getTimeSource()>();
+
+        if $r1 != null goto label01;
+
+        goto label02;
+
+     label01:
+        virtualinvoke $r1.<kotlinx.coroutines.AbstractTimeSource: void registerTimeLoopThread()>();
+
+     label02:
+        $r2 = r0.<kotlinx.coroutines.BlockingCoroutine: kotlinx.coroutines.EventLoop eventLoop>;
+
+     label03:
+        $r3 = null;
+
+        if $r2 != null goto label04;
+
+        goto label05;
+
+     label04:
+        staticinvoke <kotlinx.coroutines.EventLoop: void incrementUseCount$default(kotlinx.coroutines.EventLoop,boolean,int,java.lang.Object)>($r2, 0, 1, null);
+
+     label05:
+        $z0 = staticinvoke <java.lang.Thread: boolean interrupted()>();
+
+     label06:
+        if $z0 != 0 goto label26;
+
+     label07:
+        $r2 = r0.<kotlinx.coroutines.BlockingCoroutine: kotlinx.coroutines.EventLoop eventLoop>;
+
+     label08:
+        if $r2 != null goto label09;
+
+        $l0 = 9223372036854775807L;
+
+        goto label10;
+
+     label09:
+        $l0 = virtualinvoke $r2.<kotlinx.coroutines.EventLoop: long processNextEvent()>();
+
+     label10:
+        $z0 = virtualinvoke r0.<kotlinx.coroutines.BlockingCoroutine: boolean isCompleted()>();
+
+     label11:
+        if $z0 == 0 goto label20;
+
+     label12:
+        $r2 = r0.<kotlinx.coroutines.BlockingCoroutine: kotlinx.coroutines.EventLoop eventLoop>;
+
+     label13:
+        if $r2 != null goto label14;
+
+        goto label15;
+
+     label14:
+        staticinvoke <kotlinx.coroutines.EventLoop: void decrementUseCount$default(kotlinx.coroutines.EventLoop,boolean,int,java.lang.Object)>($r2, 0, 1, null);
+
+     label15:
+        $r1 = staticinvoke <kotlinx.coroutines.AbstractTimeSourceKt: kotlinx.coroutines.AbstractTimeSource getTimeSource()>();
+
+        if $r1 != null goto label16;
+
+        goto label17;
+
+     label16:
+        virtualinvoke $r1.<kotlinx.coroutines.AbstractTimeSource: void unregisterTimeLoopThread()>();
+
+     label17:
+        $r4 = virtualinvoke r0.<kotlinx.coroutines.BlockingCoroutine: java.lang.Object getState$kotlinx_coroutines_core()>();
+
+        $r4 = staticinvoke <kotlinx.coroutines.JobSupportKt: java.lang.Object unboxState(java.lang.Object)>($r4);
+
+        $z0 = $r4 instanceof kotlinx.coroutines.CompletedExceptionally;
+
+        if $z0 == 0 goto label18;
+
+        $r3 = (kotlinx.coroutines.CompletedExceptionally) $r4;
+
+     label18:
+        if $r3 != null goto label19;
+
+        return $r4;
+
+     label19:
+        $r5 = $r3.<kotlinx.coroutines.CompletedExceptionally: java.lang.Throwable cause>;
+
+        throw $r5;
+
+     label20:
+        $r1 = staticinvoke <kotlinx.coroutines.AbstractTimeSourceKt: kotlinx.coroutines.AbstractTimeSource getTimeSource()>();
+
+     label21:
+        if $r1 != null goto label24;
+
+     label22:
+        staticinvoke <java.util.concurrent.locks.LockSupport: void parkNanos(java.lang.Object,long)>(r0, $l0);
+
+     label23:
+        goto label05;
+
+     label24:
+        virtualinvoke $r1.<kotlinx.coroutines.AbstractTimeSource: void parkNanos(java.lang.Object,long)>(r0, $l0);
+
+     label25:
+        goto label05;
+
+     label26:
+        $r6 = new java.lang.InterruptedException;
+
+        specialinvoke $r6.<java.lang.InterruptedException: void <init>()>();
+
+        $r5 = (java.lang.Throwable) $r6;
+
+        virtualinvoke r0.<kotlinx.coroutines.BlockingCoroutine: boolean cancelCoroutine(java.lang.Throwable)>($r5);
+
+        $r5 = (java.lang.Throwable) $r6;
+
+        throw $r5;
+
+     label27:
+        $r5 := @caughtexception;
+
+     label28:
+        $r2 = r0.<kotlinx.coroutines.BlockingCoroutine: kotlinx.coroutines.EventLoop eventLoop>;
+
+     label29:
+        if $r2 != null goto label30;
+
+        goto label31;
+
+     label30:
+        staticinvoke <kotlinx.coroutines.EventLoop: void decrementUseCount$default(kotlinx.coroutines.EventLoop,boolean,int,java.lang.Object)>($r2, 0, 1, null);
+
+     label31:
+        throw $r5;
+
+     label32:
+        $r7 := @caughtexception;
+
+        $r1 = staticinvoke <kotlinx.coroutines.AbstractTimeSourceKt: kotlinx.coroutines.AbstractTimeSource getTimeSource()>();
+
+        if $r1 != null goto label33;
+
+        goto label34;
+
+     label33:
+        virtualinvoke $r1.<kotlinx.coroutines.AbstractTimeSource: void unregisterTimeLoopThread()>();
+
+     label34:
+        throw $r7;
+
+        catch java.lang.Throwable from label02 to label03 with label32;
+        catch java.lang.Throwable from label04 to label05 with label32;
+        catch java.lang.Throwable from label05 to label06 with label27;
+        catch java.lang.Throwable from label07 to label08 with label27;
+        catch java.lang.Throwable from label09 to label10 with label27;
+        catch java.lang.Throwable from label10 to label11 with label27;
+        catch java.lang.Throwable from label12 to label13 with label32;
+        catch java.lang.Throwable from label14 to label15 with label32;
+        catch java.lang.Throwable from label20 to label21 with label27;
+        catch java.lang.Throwable from label22 to label23 with label27;
+        catch java.lang.Throwable from label24 to label25 with label27;
+        catch java.lang.Throwable from label26 to label27 with label27;
+        catch java.lang.Throwable from label28 to label29 with label32;
+        catch java.lang.Throwable from label30 to label32 with label32;
+    }
+}

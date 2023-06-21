@@ -1,0 +1,134 @@
+public class com.example.q1.SecondActivity extends android.app.Activity
+{
+
+    public void <init>()
+    {
+        com.example.q1.SecondActivity r0;
+
+        r0 := @this: com.example.q1.SecondActivity;
+
+        specialinvoke r0.<android.app.Activity: void <init>()>();
+
+        return;
+    }
+
+    protected void onCreate(android.os.Bundle)
+    {
+        com.example.q1.SecondActivity r0;
+        android.os.Bundle $r1, qiu_extra;
+        android.content.Intent $r2;
+        java.lang.String $r3, $r4, $r5, sb_tostring;
+        android.view.View $r6;
+        android.widget.Button $r7;
+        com.example.q1.SecondActivity$1 $r8;
+        java.lang.StringBuilder sb;
+
+        r0 := @this: com.example.q1.SecondActivity;
+
+        $r1 := @parameter0: android.os.Bundle;
+
+        specialinvoke r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1);
+
+        virtualinvoke r0.<com.example.q1.SecondActivity: void setContentView(int)>(2131427428);
+
+        $r2 = virtualinvoke r0.<com.example.q1.SecondActivity: android.content.Intent getIntent()>();
+
+        qiu_extra = virtualinvoke $r2.<android.content.Intent: android.os.Bundle getExtras()>();
+
+        sb = new java.lang.StringBuilder;
+
+        specialinvoke sb.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("com.example.q1.SecondActivity");
+
+        sb_tostring = virtualinvoke sb.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", sb_tostring);
+
+        $r3 = virtualinvoke $r2.<android.content.Intent: java.lang.String getAction()>();
+
+        virtualinvoke $r2.<android.content.Intent: java.util.Set getCategories()>();
+
+        virtualinvoke $r2.<android.content.Intent: android.net.Uri getData()>();
+
+        virtualinvoke $r2.<android.content.Intent: java.lang.String getDataString()>();
+
+        virtualinvoke $r2.<android.content.Intent: java.lang.String getType()>();
+
+        virtualinvoke $r2.<android.content.Intent: double[] getDoubleArrayExtra(java.lang.String)>("doubleArray");
+
+        virtualinvoke $r2.<android.content.Intent: double getDoubleExtra(java.lang.String,double)>("double", 0.0);
+
+        virtualinvoke $r2.<android.content.Intent: float[] getFloatArrayExtra(java.lang.String)>("floatArray");
+
+        virtualinvoke $r2.<android.content.Intent: float getFloatExtra(java.lang.String,float)>("float", 0.0F);
+
+        virtualinvoke $r2.<android.content.Intent: int[] getIntArrayExtra(java.lang.String)>("intArray");
+
+        virtualinvoke $r2.<android.content.Intent: int getIntExtra(java.lang.String,int)>("int", 0);
+
+        virtualinvoke $r2.<android.content.Intent: java.util.ArrayList getIntegerArrayListExtra(java.lang.String)>("IntegerArrayList");
+
+        virtualinvoke $r2.<android.content.Intent: long[] getLongArrayExtra(java.lang.String)>("longArray");
+
+        virtualinvoke $r2.<android.content.Intent: long getLongExtra(java.lang.String,long)>("long", 0L);
+
+        virtualinvoke $r2.<android.content.Intent: short getShortExtra(java.lang.String,short)>("short", 0);
+
+        virtualinvoke $r2.<android.content.Intent: short[] getShortArrayExtra(java.lang.String)>("shortArray");
+
+        virtualinvoke $r2.<android.content.Intent: java.lang.String[] getStringArrayExtra(java.lang.String)>("stringArray");
+
+        virtualinvoke $r2.<android.content.Intent: java.util.ArrayList getStringArrayListExtra(java.lang.String)>("stringArrayList");
+
+        $r4 = virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("firstIntent");
+
+        virtualinvoke $r2.<android.content.Intent: boolean[] getBooleanArrayExtra(java.lang.String)>("booleanArray");
+
+        virtualinvoke $r2.<android.content.Intent: boolean getBooleanExtra(java.lang.String,boolean)>("boolean", 0);
+
+        virtualinvoke $r2.<android.content.Intent: byte[] getByteArrayExtra(java.lang.String)>("byteArray");
+
+        virtualinvoke $r2.<android.content.Intent: byte getByteExtra(java.lang.String,byte)>("byte", 0);
+
+        virtualinvoke $r2.<android.content.Intent: char[] getCharArrayExtra(java.lang.String)>("charArray");
+
+        virtualinvoke $r2.<android.content.Intent: char getCharExtra(java.lang.String,char)>("char", 103);
+
+        virtualinvoke $r2.<android.content.Intent: java.lang.CharSequence[] getCharSequenceArrayExtra(java.lang.String)>("charSequenceArray");
+
+        virtualinvoke $r2.<android.content.Intent: java.util.ArrayList getCharSequenceArrayListExtra(java.lang.String)>("charSequenceArrayList");
+
+        virtualinvoke $r2.<android.content.Intent: java.lang.CharSequence getCharSequenceExtra(java.lang.String)>("charSequence");
+
+        virtualinvoke $r2.<android.content.Intent: android.os.Parcelable[] getParcelableArrayExtra(java.lang.String)>("parcelableArray");
+
+        virtualinvoke $r2.<android.content.Intent: java.util.ArrayList getParcelableArrayListExtra(java.lang.String)>("parcelableArrayList");
+
+        virtualinvoke $r2.<android.content.Intent: android.os.Parcelable getParcelableExtra(java.lang.String)>("parcelable");
+
+        virtualinvoke $r2.<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>("serializable");
+
+        virtualinvoke $r2.<android.content.Intent: android.os.Bundle getBundleExtra(java.lang.String)>("bundle");
+
+        $r1 = virtualinvoke $r2.<android.content.Intent: android.os.Bundle getExtras()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", "SecondActivity");
+
+        $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $r6 = virtualinvoke r0.<com.example.q1.SecondActivity: android.view.View findViewById(int)>(2131230826);
+
+        $r7 = (android.widget.Button) $r6;
+
+        $r8 = new com.example.q1.SecondActivity$1;
+
+        specialinvoke $r8.<com.example.q1.SecondActivity$1: void <init>(com.example.q1.SecondActivity,java.lang.String,java.lang.String)>(r0, $r3, $r4);
+
+        virtualinvoke $r7.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r8);
+
+        return;
+    }
+}

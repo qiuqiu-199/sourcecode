@@ -1,0 +1,34 @@
+public final class com.example.q1.R$layout extends java.lang.Object
+{
+    public static final int activity_main;
+    public static final int content_main;
+    public static final int fragment_first;
+    public static final int fragment_second;
+    public static final int second_main;
+
+    private void <init>()
+    {
+        com.example.q1.R$layout r0;
+
+        r0 := @this: com.example.q1.R$layout;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void <clinit>()
+    {
+        <com.example.q1.R$layout: int second_main> = 2131427428;
+
+        <com.example.q1.R$layout: int fragment_second> = 2131427375;
+
+        <com.example.q1.R$layout: int fragment_first> = 2131427374;
+
+        <com.example.q1.R$layout: int content_main> = 2131427357;
+
+        <com.example.q1.R$layout: int activity_main> = 2131427356;
+
+        return;
+    }
+}

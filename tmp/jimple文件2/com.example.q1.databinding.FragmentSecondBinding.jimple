@@ -1,0 +1,148 @@
+public final class com.example.q1.databinding.FragmentSecondBinding extends java.lang.Object implements androidx.viewbinding.ViewBinding
+{
+    public final android.widget.Button buttonSecond;
+    private final androidx.constraintlayout.widget.ConstraintLayout rootView;
+    public final android.widget.TextView textviewSecond;
+
+    private void <init>(androidx.constraintlayout.widget.ConstraintLayout, android.widget.Button, android.widget.TextView)
+    {
+        com.example.q1.databinding.FragmentSecondBinding r0;
+        androidx.constraintlayout.widget.ConstraintLayout $r1;
+        android.widget.Button $r2;
+        android.widget.TextView $r3;
+
+        r0 := @this: com.example.q1.databinding.FragmentSecondBinding;
+
+        $r1 := @parameter0: androidx.constraintlayout.widget.ConstraintLayout;
+
+        $r2 := @parameter1: android.widget.Button;
+
+        $r3 := @parameter2: android.widget.TextView;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        r0.<com.example.q1.databinding.FragmentSecondBinding: androidx.constraintlayout.widget.ConstraintLayout rootView> = $r1;
+
+        r0.<com.example.q1.databinding.FragmentSecondBinding: android.widget.Button buttonSecond> = $r2;
+
+        r0.<com.example.q1.databinding.FragmentSecondBinding: android.widget.TextView textviewSecond> = $r3;
+
+        return;
+    }
+
+    public static com.example.q1.databinding.FragmentSecondBinding bind(android.view.View)
+    {
+        android.view.View $r0, $r1;
+        int $i0;
+        android.widget.Button $r2;
+        android.widget.TextView $r3;
+        com.example.q1.databinding.FragmentSecondBinding $r4;
+        androidx.constraintlayout.widget.ConstraintLayout $r5;
+        android.content.res.Resources $r6;
+        java.lang.String $r7, $r9;
+        java.lang.NullPointerException $r8;
+
+        $r0 := @parameter0: android.view.View;
+
+        $i0 = 2131230827;
+
+        $r1 = staticinvoke <androidx.viewbinding.ViewBindings: android.view.View findChildViewById(android.view.View,int)>($r0, 2131230827);
+
+        $r2 = (android.widget.Button) $r1;
+
+        if $r2 == null goto label1;
+
+        $i0 = 2131231179;
+
+        $r1 = staticinvoke <androidx.viewbinding.ViewBindings: android.view.View findChildViewById(android.view.View,int)>($r0, 2131231179);
+
+        $r3 = (android.widget.TextView) $r1;
+
+        if $r3 == null goto label1;
+
+        $r4 = new com.example.q1.databinding.FragmentSecondBinding;
+
+        $r5 = (androidx.constraintlayout.widget.ConstraintLayout) $r0;
+
+        specialinvoke $r4.<com.example.q1.databinding.FragmentSecondBinding: void <init>(androidx.constraintlayout.widget.ConstraintLayout,android.widget.Button,android.widget.TextView)>($r5, $r2, $r3);
+
+        return $r4;
+
+     label1:
+        $r6 = virtualinvoke $r0.<android.view.View: android.content.res.Resources getResources()>();
+
+        $r7 = virtualinvoke $r6.<android.content.res.Resources: java.lang.String getResourceName(int)>($i0);
+
+        $r8 = new java.lang.NullPointerException;
+
+        $r9 = "Missing required view with ID: ";
+
+        $r7 = virtualinvoke $r9.<java.lang.String: java.lang.String concat(java.lang.String)>($r7);
+
+        specialinvoke $r8.<java.lang.NullPointerException: void <init>(java.lang.String)>($r7);
+
+        throw $r8;
+    }
+
+    public static com.example.q1.databinding.FragmentSecondBinding inflate(android.view.LayoutInflater)
+    {
+        com.example.q1.databinding.FragmentSecondBinding $r0;
+        android.view.LayoutInflater $r1;
+
+        $r1 := @parameter0: android.view.LayoutInflater;
+
+        $r0 = staticinvoke <com.example.q1.databinding.FragmentSecondBinding: com.example.q1.databinding.FragmentSecondBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean)>($r1, null, 0);
+
+        return $r0;
+    }
+
+    public static com.example.q1.databinding.FragmentSecondBinding inflate(android.view.LayoutInflater, android.view.ViewGroup, boolean)
+    {
+        android.view.ViewGroup $r0;
+        boolean $z0;
+        android.view.LayoutInflater $r1;
+        android.view.View $r2;
+        com.example.q1.databinding.FragmentSecondBinding $r3;
+
+        $r1 := @parameter0: android.view.LayoutInflater;
+
+        $r0 := @parameter1: android.view.ViewGroup;
+
+        $z0 := @parameter2: boolean;
+
+        $r2 = virtualinvoke $r1.<android.view.LayoutInflater: android.view.View inflate(int,android.view.ViewGroup,boolean)>(2131427375, $r0, 0);
+
+        if $z0 == 0 goto label1;
+
+        virtualinvoke $r0.<android.view.ViewGroup: void addView(android.view.View)>($r2);
+
+     label1:
+        $r3 = staticinvoke <com.example.q1.databinding.FragmentSecondBinding: com.example.q1.databinding.FragmentSecondBinding bind(android.view.View)>($r2);
+
+        return $r3;
+    }
+
+    public volatile android.view.View getRoot()
+    {
+        com.example.q1.databinding.FragmentSecondBinding r0;
+        androidx.constraintlayout.widget.ConstraintLayout $r1;
+
+        r0 := @this: com.example.q1.databinding.FragmentSecondBinding;
+
+        $r1 = virtualinvoke r0.<com.example.q1.databinding.FragmentSecondBinding: androidx.constraintlayout.widget.ConstraintLayout getRoot()>();
+
+        return $r1;
+    }
+
+    public androidx.constraintlayout.widget.ConstraintLayout getRoot()
+    {
+        com.example.q1.databinding.FragmentSecondBinding r0;
+        androidx.constraintlayout.widget.ConstraintLayout r1;
+
+        r0 := @this: com.example.q1.databinding.FragmentSecondBinding;
+
+        r1 = r0.<com.example.q1.databinding.FragmentSecondBinding: androidx.constraintlayout.widget.ConstraintLayout rootView>;
+
+        return r1;
+    }
+}

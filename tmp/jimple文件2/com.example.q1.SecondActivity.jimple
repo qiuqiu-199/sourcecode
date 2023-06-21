@@ -1,0 +1,832 @@
+public class com.example.q1.SecondActivity extends android.app.Activity
+{
+
+    public void <init>()
+    {
+        com.example.q1.SecondActivity r0;
+
+        r0 := @this: com.example.q1.SecondActivity;
+
+        specialinvoke r0.<android.app.Activity: void <init>()>();
+
+        return;
+    }
+
+    protected void onCreate(android.os.Bundle)
+    {
+        com.example.q1.SecondActivity r0;
+        android.os.Bundle $r1;
+        android.content.Intent $r2;
+        java.lang.String $r3, $r5, $r23;
+        java.lang.StringBuilder $r4;
+        java.util.Set $r6;
+        android.net.Uri $r7;
+        double[] $r8, $r9;
+        double $d0;
+        float[] $r10, $r11;
+        float $f0;
+        int[] $r12, $r13;
+        int $i0;
+        java.util.ArrayList $r14, $r15;
+        java.lang.Integer $r16;
+        long[] $r17, $r18;
+        long $l1;
+        short $s2;
+        short[] $r19, $r20;
+        java.lang.String[] $r21, $r22;
+        boolean[] $r24, $r25;
+        boolean $z0;
+        byte[] $r26, $r27;
+        byte $b3;
+        char[] $r28;
+        char $c4;
+        java.lang.CharSequence[] $r29;
+        java.lang.CharSequence $r30;
+        android.os.Parcelable[] $r31;
+        android.os.Parcelable $r32;
+        java.io.Serializable $r33;
+        android.view.View $r34;
+        android.widget.Button $r35;
+        com.example.q1.SecondActivity$1 $r36;
+
+        r0 := @this: com.example.q1.SecondActivity;
+
+        $r1 := @parameter0: android.os.Bundle;
+
+        specialinvoke r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1);
+
+        virtualinvoke r0.<com.example.q1.SecondActivity: void setContentView(int)>(2131427428);
+
+        $r2 = virtualinvoke r0.<com.example.q1.SecondActivity: android.content.Intent getIntent()>();
+
+        $r3 = virtualinvoke $r2.<android.content.Intent: java.lang.String getAction()>();
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684action = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r3);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $r6 = virtualinvoke $r2.<android.content.Intent: java.util.Set getCategories()>();
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684categories = ");
+
+        $r5 = virtualinvoke $r6.<java.lang.Object: java.lang.String toString()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $r7 = virtualinvoke $r2.<android.content.Intent: android.net.Uri getData()>();
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684data = ");
+
+        $r5 = virtualinvoke $r7.<android.net.Uri: java.lang.String toString()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $r5 = virtualinvoke $r2.<android.content.Intent: java.lang.String getDataString()>();
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684data = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $r5 = virtualinvoke $r2.<android.content.Intent: java.lang.String getType()>();
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684type = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $r8 = virtualinvoke $r2.<android.content.Intent: double[] getDoubleArrayExtra(java.lang.String)>("doubleArray");
+
+        $r9 = $r8;
+
+        if $r8 != null goto label01;
+
+        $r9 = newarray (double)[2];
+
+        $r9[0] = 1.0;
+
+        $r9[1] = 2.0;
+
+     label01:
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684doubleArrayExtras = ");
+
+        $r5 = staticinvoke <java.util.Arrays: java.lang.String toString(double[])>($r9);
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $d0 = virtualinvoke $r2.<android.content.Intent: double getDoubleExtra(java.lang.String,double)>("double", 0.0);
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684doubleExtra = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(double)>($d0);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $r10 = virtualinvoke $r2.<android.content.Intent: float[] getFloatArrayExtra(java.lang.String)>("floatArray");
+
+        $r11 = $r10;
+
+        if $r10 != null goto label02;
+
+        $r11 = newarray (float)[2];
+
+        $r11[0] = 1.0F;
+
+        $r11[1] = 2.0F;
+
+     label02:
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684floatArrayExtras = ");
+
+        $r5 = staticinvoke <java.util.Arrays: java.lang.String toString(float[])>($r11);
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $f0 = virtualinvoke $r2.<android.content.Intent: float getFloatExtra(java.lang.String,float)>("float", 0.0F);
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684floatExtra = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(float)>($f0);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $r12 = virtualinvoke $r2.<android.content.Intent: int[] getIntArrayExtra(java.lang.String)>("intArray");
+
+        $r13 = $r12;
+
+        if $r12 != null goto label03;
+
+        $r13 = newarray (int)[2];
+
+        $r13[0] = 1;
+
+        $r13[1] = 2;
+
+     label03:
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684intArrayExtras = ");
+
+        $r5 = staticinvoke <java.util.Arrays: java.lang.String toString(int[])>($r13);
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $i0 = virtualinvoke $r2.<android.content.Intent: int getIntExtra(java.lang.String,int)>("int", 0);
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684intExtra = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i0);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $r14 = virtualinvoke $r2.<android.content.Intent: java.util.ArrayList getIntegerArrayListExtra(java.lang.String)>("IntegerArrayList");
+
+        $r15 = $r14;
+
+        if $r14 != null goto label04;
+
+        $r15 = new java.util.ArrayList;
+
+        specialinvoke $r15.<java.util.ArrayList: void <init>()>();
+
+        $r16 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(1);
+
+        virtualinvoke $r15.<java.util.ArrayList: boolean add(java.lang.Object)>($r16);
+
+        $r16 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(2);
+
+        virtualinvoke $r15.<java.util.ArrayList: boolean add(java.lang.Object)>($r16);
+
+     label04:
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684integerArrayListExtras = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r15);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $r17 = virtualinvoke $r2.<android.content.Intent: long[] getLongArrayExtra(java.lang.String)>("longArray");
+
+        $r18 = $r17;
+
+        if $r17 != null goto label05;
+
+        $r18 = newarray (long)[2];
+
+        $r18[0] = 1L;
+
+        $r18[1] = 2L;
+
+     label05:
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684longArrayExtras = ");
+
+        $r5 = staticinvoke <java.util.Arrays: java.lang.String toString(long[])>($r18);
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $l1 = virtualinvoke $r2.<android.content.Intent: long getLongExtra(java.lang.String,long)>("long", 0L);
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684longExtra = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>($l1);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $s2 = virtualinvoke $r2.<android.content.Intent: short getShortExtra(java.lang.String,short)>("short", 0);
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684shortExtra = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($s2);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $r19 = virtualinvoke $r2.<android.content.Intent: short[] getShortArrayExtra(java.lang.String)>("shortArray");
+
+        $r20 = $r19;
+
+        if $r19 != null goto label06;
+
+        $r20 = newarray (short)[2];
+
+        $r20[0] = 1;
+
+        $r20[1] = 2;
+
+     label06:
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684shortArrayExtras = ");
+
+        $r5 = staticinvoke <java.util.Arrays: java.lang.String toString(short[])>($r20);
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $r21 = virtualinvoke $r2.<android.content.Intent: java.lang.String[] getStringArrayExtra(java.lang.String)>("stringArray");
+
+        $r22 = $r21;
+
+        if $r21 != null goto label07;
+
+        $r21 = newarray (java.lang.String)[2];
+
+        $r21[0] = "qiuStringArray1";
+
+        $r21[1] = "qiuStringArray2";
+
+        $r22 = $r21;
+
+     label07:
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684stringArrayExtras = ");
+
+        $r5 = staticinvoke <java.util.Arrays: java.lang.String toString(java.lang.Object[])>($r22);
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $r14 = virtualinvoke $r2.<android.content.Intent: java.util.ArrayList getStringArrayListExtra(java.lang.String)>("stringArrayList");
+
+        $r15 = $r14;
+
+        if $r14 != null goto label08;
+
+        $r15 = new java.util.ArrayList;
+
+        specialinvoke $r15.<java.util.ArrayList: void <init>()>();
+
+        virtualinvoke $r15.<java.util.ArrayList: boolean add(java.lang.Object)>("qiuStringArraylist1");
+
+        virtualinvoke $r15.<java.util.ArrayList: boolean add(java.lang.Object)>("qiuStringArraylist2");
+
+     label08:
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684stringArrayListExtras = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r15);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r5);
+
+        $r5 = virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("firstIntent");
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684stringExtra = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $r24 = virtualinvoke $r2.<android.content.Intent: boolean[] getBooleanArrayExtra(java.lang.String)>("booleanArray");
+
+        $r25 = $r24;
+
+        if $r24 != null goto label09;
+
+        $r25 = newarray (boolean)[2];
+
+        $r25[0] = 1;
+
+        $r25[1] = 0;
+
+     label09:
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684booleanArrayExtras = ");
+
+        $r23 = staticinvoke <java.util.Arrays: java.lang.String toString(boolean[])>($r25);
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r23);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $z0 = virtualinvoke $r2.<android.content.Intent: boolean getBooleanExtra(java.lang.String,boolean)>("boolean", 0);
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684booleanExtra = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(boolean)>($z0);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $r26 = virtualinvoke $r2.<android.content.Intent: byte[] getByteArrayExtra(java.lang.String)>("byteArray");
+
+        $r27 = $r26;
+
+        if $r26 != null goto label10;
+
+        $r27 = newarray (byte)[2];
+
+        $r27[0] = 1;
+
+        $r27[1] = 2;
+
+     label10:
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684byteArrayExtras = ");
+
+        $r23 = staticinvoke <java.util.Arrays: java.lang.String toString(byte[])>($r27);
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r23);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $b3 = virtualinvoke $r2.<android.content.Intent: byte getByteExtra(java.lang.String,byte)>("byte", 0);
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684byteExtra = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($b3);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $r28 = virtualinvoke $r2.<android.content.Intent: char[] getCharArrayExtra(java.lang.String)>("charArray");
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684charArrayExtras = ");
+
+        $r23 = staticinvoke <java.util.Arrays: java.lang.String toString(char[])>($r28);
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r23);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $c4 = virtualinvoke $r2.<android.content.Intent: char getCharExtra(java.lang.String,char)>("char", 103);
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684charExtra = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>($c4);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $r29 = virtualinvoke $r2.<android.content.Intent: java.lang.CharSequence[] getCharSequenceArrayExtra(java.lang.String)>("charSequenceArray");
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684charSequenceArrayExtras = ");
+
+        $r23 = staticinvoke <java.util.Arrays: java.lang.String toString(java.lang.Object[])>($r29);
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r23);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $r14 = virtualinvoke $r2.<android.content.Intent: java.util.ArrayList getCharSequenceArrayListExtra(java.lang.String)>("charSequenceArrayList");
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684charSequenceArrayListExtras = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r14);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $r30 = virtualinvoke $r2.<android.content.Intent: java.lang.CharSequence getCharSequenceExtra(java.lang.String)>("charSequence");
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684charSequenceExtra = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r30);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $r31 = virtualinvoke $r2.<android.content.Intent: android.os.Parcelable[] getParcelableArrayExtra(java.lang.String)>("parcelableArray");
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684parcelableArrayExtras = ");
+
+        $r23 = staticinvoke <java.util.Arrays: java.lang.String toString(java.lang.Object[])>($r31);
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r23);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $r14 = virtualinvoke $r2.<android.content.Intent: java.util.ArrayList getParcelableArrayListExtra(java.lang.String)>("parcelableArrayList");
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684parcelableArrayListExtras = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r14);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $r32 = virtualinvoke $r2.<android.content.Intent: android.os.Parcelable getParcelableExtra(java.lang.String)>("parcelable");
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684parcelableExtra = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r32);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $r33 = virtualinvoke $r2.<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>("serializable");
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684serializableExtra = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r33);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $r1 = virtualinvoke $r2.<android.content.Intent: android.os.Bundle getBundleExtra(java.lang.String)>("bundle");
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684bundleExtra = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r1);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $r1 = virtualinvoke $r2.<android.content.Intent: android.os.Bundle getExtras()>();
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u5f53\u524d\u7ec4\u4ef6");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SecondActivity");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\u6536\u5230\u7684extras = ");
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r1);
+
+        $r23 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", $r23);
+
+        $r34 = virtualinvoke r0.<com.example.q1.SecondActivity: android.view.View findViewById(int)>(2131230826);
+
+        $r35 = (android.widget.Button) $r34;
+
+        $r36 = new com.example.q1.SecondActivity$1;
+
+        specialinvoke $r36.<com.example.q1.SecondActivity$1: void <init>(com.example.q1.SecondActivity,java.lang.String,java.lang.String)>(r0, $r3, $r5);
+
+        virtualinvoke $r35.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r36);
+
+        return;
+    }
+}

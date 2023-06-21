@@ -1,0 +1,87 @@
+class com.example.q1.SecondActivity$1 extends java.lang.Object implements android.view.View$OnClickListener
+{
+    final com.example.q1.SecondActivity this$0;
+    final java.lang.String val$action;
+    final java.lang.String val$stringExtra;
+
+    void <init>(com.example.q1.SecondActivity, java.lang.String, java.lang.String)
+    {
+        com.example.q1.SecondActivity$1 r0;
+        com.example.q1.SecondActivity $r1;
+        java.lang.String $r2, $r3;
+
+        r0 := @this: com.example.q1.SecondActivity$1;
+
+        $r1 := @parameter0: com.example.q1.SecondActivity;
+
+        $r2 := @parameter1: java.lang.String;
+
+        $r3 := @parameter2: java.lang.String;
+
+        r0.<com.example.q1.SecondActivity$1: com.example.q1.SecondActivity this$0> = $r1;
+
+        r0.<com.example.q1.SecondActivity$1: java.lang.String val$action> = $r2;
+
+        r0.<com.example.q1.SecondActivity$1: java.lang.String val$stringExtra> = $r3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public void onClick(android.view.View)
+    {
+        com.example.q1.SecondActivity$1 r0;
+        android.view.View $r1;
+        android.app.AlertDialog$Builder $r2;
+        com.example.q1.SecondActivity $r3;
+        java.lang.StringBuilder $r4;
+        java.lang.String $r5;
+        com.example.q1.SecondActivity$1$1 $r6;
+        android.app.AlertDialog $r7;
+
+        r0 := @this: com.example.q1.SecondActivity$1;
+
+        $r1 := @parameter0: android.view.View;
+
+        $r2 = new android.app.AlertDialog$Builder;
+
+        $r3 = r0.<com.example.q1.SecondActivity$1: com.example.q1.SecondActivity this$0>;
+
+        specialinvoke $r2.<android.app.AlertDialog$Builder: void <init>(android.content.Context)>($r3);
+
+        virtualinvoke $r2.<android.app.AlertDialog$Builder: android.app.AlertDialog$Builder setTitle(java.lang.CharSequence)>("\u5f53\u524dActivity\u6536\u5230\u7684intent\u4fe1\u606f");
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Action=");
+
+        $r5 = r0.<com.example.q1.SecondActivity$1: java.lang.String val$action>;
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(";extraString=");
+
+        $r5 = r0.<com.example.q1.SecondActivity$1: java.lang.String val$stringExtra>;
+
+        virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r2.<android.app.AlertDialog$Builder: android.app.AlertDialog$Builder setMessage(java.lang.CharSequence)>($r5);
+
+        $r6 = new com.example.q1.SecondActivity$1$1;
+
+        specialinvoke $r6.<com.example.q1.SecondActivity$1$1: void <init>(com.example.q1.SecondActivity$1)>(r0);
+
+        virtualinvoke $r2.<android.app.AlertDialog$Builder: android.app.AlertDialog$Builder setPositiveButton(java.lang.CharSequence,android.content.DialogInterface$OnClickListener)>("OK", $r6);
+
+        $r7 = virtualinvoke $r2.<android.app.AlertDialog$Builder: android.app.AlertDialog create()>();
+
+        virtualinvoke $r7.<android.app.AlertDialog: void show()>();
+
+        return;
+    }
+}

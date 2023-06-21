@@ -1,0 +1,43 @@
+public final class kotlinx.coroutines.flow.FlowKt__CollectionKt$toCollection$$inlined$collect$1 extends java.lang.Object implements kotlinx.coroutines.flow.FlowCollector
+{
+    final java.util.Collection $destination$inlined;
+
+    public void <init>(java.util.Collection)
+    {
+        kotlinx.coroutines.flow.FlowKt__CollectionKt$toCollection$$inlined$collect$1 r0;
+        java.util.Collection $r1;
+
+        r0 := @this: kotlinx.coroutines.flow.FlowKt__CollectionKt$toCollection$$inlined$collect$1;
+
+        $r1 := @parameter0: java.util.Collection;
+
+        r0.<kotlinx.coroutines.flow.FlowKt__CollectionKt$toCollection$$inlined$collect$1: java.util.Collection $destination$inlined> = $r1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public java.lang.Object emit(java.lang.Object, kotlin.coroutines.Continuation)
+    {
+        kotlinx.coroutines.flow.FlowKt__CollectionKt$toCollection$$inlined$collect$1 r0;
+        java.lang.Object $r1;
+        kotlin.coroutines.Continuation $r2;
+        java.util.Collection $r3;
+        kotlin.Unit r4;
+
+        r0 := @this: kotlinx.coroutines.flow.FlowKt__CollectionKt$toCollection$$inlined$collect$1;
+
+        $r1 := @parameter0: java.lang.Object;
+
+        $r2 := @parameter1: kotlin.coroutines.Continuation;
+
+        $r3 = r0.<kotlinx.coroutines.flow.FlowKt__CollectionKt$toCollection$$inlined$collect$1: java.util.Collection $destination$inlined>;
+
+        interfaceinvoke $r3.<java.util.Collection: boolean add(java.lang.Object)>($r1);
+
+        r4 = <kotlin.Unit: kotlin.Unit INSTANCE>;
+
+        return r4;
+    }
+}
