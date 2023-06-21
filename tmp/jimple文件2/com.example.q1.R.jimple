@@ -1,0 +1,14 @@
+public final class com.example.q1.R extends java.lang.Object
+{
+
+    private void <init>()
+    {
+        com.example.q1.R r0;
+
+        r0 := @this: com.example.q1.R;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

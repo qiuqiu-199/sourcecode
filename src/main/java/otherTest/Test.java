@@ -4,10 +4,7 @@ import utils.IOUtils;
 import utils.Utils;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -41,9 +38,13 @@ public class Test {
         return dp[obstacleGrid.length-1][obstacleGrid[0].length-1];
     }
     public static void main(String[] args) {
-        int[][] obstacleGrid = {{0,0}};
+        Set<String> set = new HashSet<>();
+        set.add("yy");
+        set.add("aa");
+        set.add("ww");
+        String s = set.toString();
+        System.out.println("set.toString() = " + set.toString());
 
-        System.out.println("result = " + uniquePathsWithObstacles(obstacleGrid));
 
     }
 

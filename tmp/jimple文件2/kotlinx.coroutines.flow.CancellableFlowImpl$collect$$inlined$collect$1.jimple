@@ -1,0 +1,55 @@
+public final class kotlinx.coroutines.flow.CancellableFlowImpl$collect$$inlined$collect$1 extends java.lang.Object implements kotlinx.coroutines.flow.FlowCollector
+{
+    final kotlinx.coroutines.flow.FlowCollector $collector$inlined;
+
+    public void <init>(kotlinx.coroutines.flow.FlowCollector)
+    {
+        kotlinx.coroutines.flow.CancellableFlowImpl$collect$$inlined$collect$1 r0;
+        kotlinx.coroutines.flow.FlowCollector $r1;
+
+        r0 := @this: kotlinx.coroutines.flow.CancellableFlowImpl$collect$$inlined$collect$1;
+
+        $r1 := @parameter0: kotlinx.coroutines.flow.FlowCollector;
+
+        r0.<kotlinx.coroutines.flow.CancellableFlowImpl$collect$$inlined$collect$1: kotlinx.coroutines.flow.FlowCollector $collector$inlined> = $r1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public java.lang.Object emit(java.lang.Object, kotlin.coroutines.Continuation)
+    {
+        kotlinx.coroutines.flow.CancellableFlowImpl$collect$$inlined$collect$1 r0;
+        java.lang.Object $r1, $r5;
+        kotlin.coroutines.Continuation $r2;
+        kotlin.coroutines.CoroutineContext $r3;
+        kotlinx.coroutines.flow.FlowCollector $r4;
+        kotlin.Unit r6;
+
+        r0 := @this: kotlinx.coroutines.flow.CancellableFlowImpl$collect$$inlined$collect$1;
+
+        $r1 := @parameter0: java.lang.Object;
+
+        $r2 := @parameter1: kotlin.coroutines.Continuation;
+
+        $r3 = interfaceinvoke $r2.<kotlin.coroutines.Continuation: kotlin.coroutines.CoroutineContext getContext()>();
+
+        staticinvoke <kotlinx.coroutines.JobKt: void ensureActive(kotlin.coroutines.CoroutineContext)>($r3);
+
+        $r4 = r0.<kotlinx.coroutines.flow.CancellableFlowImpl$collect$$inlined$collect$1: kotlinx.coroutines.flow.FlowCollector $collector$inlined>;
+
+        $r1 = interfaceinvoke $r4.<kotlinx.coroutines.flow.FlowCollector: java.lang.Object emit(java.lang.Object,kotlin.coroutines.Continuation)>($r1, $r2);
+
+        $r5 = staticinvoke <kotlin.coroutines.intrinsics.IntrinsicsKt: java.lang.Object getCOROUTINE_SUSPENDED()>();
+
+        if $r1 != $r5 goto label1;
+
+        return $r1;
+
+     label1:
+        r6 = <kotlin.Unit: kotlin.Unit INSTANCE>;
+
+        return r6;
+    }
+}

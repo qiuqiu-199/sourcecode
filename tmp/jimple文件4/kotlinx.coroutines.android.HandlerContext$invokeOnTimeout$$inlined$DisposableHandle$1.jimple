@@ -1,0 +1,46 @@
+public final class kotlinx.coroutines.android.HandlerContext$invokeOnTimeout$$inlined$DisposableHandle$1 extends java.lang.Object implements kotlinx.coroutines.DisposableHandle
+{
+    final java.lang.Runnable $block$inlined;
+    final kotlinx.coroutines.android.HandlerContext this$0;
+
+    public void <init>(kotlinx.coroutines.android.HandlerContext, java.lang.Runnable)
+    {
+        kotlinx.coroutines.android.HandlerContext$invokeOnTimeout$$inlined$DisposableHandle$1 r0;
+        kotlinx.coroutines.android.HandlerContext $r1;
+        java.lang.Runnable $r2;
+
+        r0 := @this: kotlinx.coroutines.android.HandlerContext$invokeOnTimeout$$inlined$DisposableHandle$1;
+
+        $r1 := @parameter0: kotlinx.coroutines.android.HandlerContext;
+
+        $r2 := @parameter1: java.lang.Runnable;
+
+        r0.<kotlinx.coroutines.android.HandlerContext$invokeOnTimeout$$inlined$DisposableHandle$1: kotlinx.coroutines.android.HandlerContext this$0> = $r1;
+
+        r0.<kotlinx.coroutines.android.HandlerContext$invokeOnTimeout$$inlined$DisposableHandle$1: java.lang.Runnable $block$inlined> = $r2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public void dispose()
+    {
+        kotlinx.coroutines.android.HandlerContext$invokeOnTimeout$$inlined$DisposableHandle$1 r0;
+        java.lang.Runnable $r1;
+        android.os.Handler $r2;
+        kotlinx.coroutines.android.HandlerContext $r3;
+
+        r0 := @this: kotlinx.coroutines.android.HandlerContext$invokeOnTimeout$$inlined$DisposableHandle$1;
+
+        $r3 = r0.<kotlinx.coroutines.android.HandlerContext$invokeOnTimeout$$inlined$DisposableHandle$1: kotlinx.coroutines.android.HandlerContext this$0>;
+
+        $r2 = staticinvoke <kotlinx.coroutines.android.HandlerContext: android.os.Handler access$getHandler$p(kotlinx.coroutines.android.HandlerContext)>($r3);
+
+        $r1 = r0.<kotlinx.coroutines.android.HandlerContext$invokeOnTimeout$$inlined$DisposableHandle$1: java.lang.Runnable $block$inlined>;
+
+        virtualinvoke $r2.<android.os.Handler: void removeCallbacks(java.lang.Runnable)>($r1);
+
+        return;
+    }
+}

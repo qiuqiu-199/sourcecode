@@ -1,0 +1,52 @@
+public final class kotlinx.coroutines.test.TestCoroutineContext$special$$inlined$CoroutineExceptionHandler$1 extends kotlin.coroutines.AbstractCoroutineContextElement implements kotlinx.coroutines.CoroutineExceptionHandler
+{
+    final kotlinx.coroutines.test.TestCoroutineContext this$0;
+
+    public void <init>(kotlinx.coroutines.CoroutineExceptionHandler$Key, kotlinx.coroutines.test.TestCoroutineContext)
+    {
+        kotlinx.coroutines.test.TestCoroutineContext$special$$inlined$CoroutineExceptionHandler$1 r0;
+        kotlinx.coroutines.test.TestCoroutineContext $r1;
+        kotlinx.coroutines.CoroutineExceptionHandler$Key $r2;
+        kotlin.coroutines.CoroutineContext$Key $r3;
+
+        r0 := @this: kotlinx.coroutines.test.TestCoroutineContext$special$$inlined$CoroutineExceptionHandler$1;
+
+        $r2 := @parameter0: kotlinx.coroutines.CoroutineExceptionHandler$Key;
+
+        $r1 := @parameter1: kotlinx.coroutines.test.TestCoroutineContext;
+
+        r0.<kotlinx.coroutines.test.TestCoroutineContext$special$$inlined$CoroutineExceptionHandler$1: kotlinx.coroutines.test.TestCoroutineContext this$0> = $r1;
+
+        $r3 = (kotlin.coroutines.CoroutineContext$Key) $r2;
+
+        specialinvoke r0.<kotlin.coroutines.AbstractCoroutineContextElement: void <init>(kotlin.coroutines.CoroutineContext$Key)>($r3);
+
+        return;
+    }
+
+    public void handleException(kotlin.coroutines.CoroutineContext, java.lang.Throwable)
+    {
+        kotlinx.coroutines.test.TestCoroutineContext$special$$inlined$CoroutineExceptionHandler$1 r0;
+        java.lang.Throwable $r1;
+        java.util.List $r2;
+        kotlin.coroutines.CoroutineContext $r3;
+        kotlinx.coroutines.test.TestCoroutineContext $r4;
+        java.util.Collection $r5;
+
+        r0 := @this: kotlinx.coroutines.test.TestCoroutineContext$special$$inlined$CoroutineExceptionHandler$1;
+
+        $r3 := @parameter0: kotlin.coroutines.CoroutineContext;
+
+        $r1 := @parameter1: java.lang.Throwable;
+
+        $r4 = r0.<kotlinx.coroutines.test.TestCoroutineContext$special$$inlined$CoroutineExceptionHandler$1: kotlinx.coroutines.test.TestCoroutineContext this$0>;
+
+        $r2 = staticinvoke <kotlinx.coroutines.test.TestCoroutineContext: java.util.List access$getUncaughtExceptions$p(kotlinx.coroutines.test.TestCoroutineContext)>($r4);
+
+        $r5 = (java.util.Collection) $r2;
+
+        interfaceinvoke $r5.<java.util.Collection: boolean add(java.lang.Object)>($r1);
+
+        return;
+    }
+}

@@ -1,0 +1,40 @@
+public final class com.example.q1.R$color extends java.lang.Object
+{
+    public static final int black;
+    public static final int purple_200;
+    public static final int purple_500;
+    public static final int purple_700;
+    public static final int teal_200;
+    public static final int teal_700;
+    public static final int white;
+
+    private void <init>()
+    {
+        com.example.q1.R$color r0;
+
+        r0 := @this: com.example.q1.R$color;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void <clinit>()
+    {
+        <com.example.q1.R$color: int white> = 2131034706;
+
+        <com.example.q1.R$color: int teal_700> = 2131034700;
+
+        <com.example.q1.R$color: int teal_200> = 2131034699;
+
+        <com.example.q1.R$color: int purple_700> = 2131034685;
+
+        <com.example.q1.R$color: int purple_500> = 2131034684;
+
+        <com.example.q1.R$color: int purple_200> = 2131034683;
+
+        <com.example.q1.R$color: int black> = 2131034145;
+
+        return;
+    }
+}

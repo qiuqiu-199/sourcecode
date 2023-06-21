@@ -1,0 +1,95 @@
+public abstract class kotlinx.coroutines.EventLoopImplPlatform extends kotlinx.coroutines.EventLoop
+{
+
+    public void <init>()
+    {
+        kotlinx.coroutines.EventLoopImplPlatform r0;
+
+        r0 := @this: kotlinx.coroutines.EventLoopImplPlatform;
+
+        specialinvoke r0.<kotlinx.coroutines.EventLoop: void <init>()>();
+
+        return;
+    }
+
+    protected abstract java.lang.Thread getThread();
+
+    protected final void reschedule(long, kotlinx.coroutines.EventLoopImplBase$DelayedTask)
+    {
+        kotlinx.coroutines.EventLoopImplPlatform r0;
+        kotlinx.coroutines.EventLoopImplBase$DelayedTask $r1;
+        boolean $z0;
+        long $l0;
+        kotlinx.coroutines.DefaultExecutor $r2;
+        java.lang.AssertionError $r3;
+
+        r0 := @this: kotlinx.coroutines.EventLoopImplPlatform;
+
+        $l0 := @parameter0: long;
+
+        $r1 := @parameter1: kotlinx.coroutines.EventLoopImplBase$DelayedTask;
+
+        $z0 = staticinvoke <kotlinx.coroutines.DebugKt: boolean getASSERTIONS_ENABLED()>();
+
+        if $z0 == 0 goto label4;
+
+        $r2 = <kotlinx.coroutines.DefaultExecutor: kotlinx.coroutines.DefaultExecutor INSTANCE>;
+
+        if r0 == $r2 goto label1;
+
+        $z0 = 1;
+
+        goto label2;
+
+     label1:
+        $z0 = 0;
+
+     label2:
+        if $z0 == 0 goto label3;
+
+        goto label4;
+
+     label3:
+        $r3 = new java.lang.AssertionError;
+
+        specialinvoke $r3.<java.lang.AssertionError: void <init>()>();
+
+        throw $r3;
+
+     label4:
+        $r2 = <kotlinx.coroutines.DefaultExecutor: kotlinx.coroutines.DefaultExecutor INSTANCE>;
+
+        virtualinvoke $r2.<kotlinx.coroutines.DefaultExecutor: void schedule(long,kotlinx.coroutines.EventLoopImplBase$DelayedTask)>($l0, $r1);
+
+        return;
+    }
+
+    protected final void unpark()
+    {
+        kotlinx.coroutines.EventLoopImplPlatform r0;
+        java.lang.Thread $r1, $r2;
+        kotlinx.coroutines.AbstractTimeSource $r3;
+
+        r0 := @this: kotlinx.coroutines.EventLoopImplPlatform;
+
+        $r1 = virtualinvoke r0.<kotlinx.coroutines.EventLoopImplPlatform: java.lang.Thread getThread()>();
+
+        $r2 = staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>();
+
+        if $r2 == $r1 goto label2;
+
+        $r3 = staticinvoke <kotlinx.coroutines.AbstractTimeSourceKt: kotlinx.coroutines.AbstractTimeSource getTimeSource()>();
+
+        if $r3 != null goto label1;
+
+        staticinvoke <java.util.concurrent.locks.LockSupport: void unpark(java.lang.Thread)>($r1);
+
+        return;
+
+     label1:
+        virtualinvoke $r3.<kotlinx.coroutines.AbstractTimeSource: void unpark(java.lang.Thread)>($r1);
+
+     label2:
+        return;
+    }
+}

@@ -1,0 +1,109 @@
+public final class kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1 extends java.lang.Object implements kotlinx.coroutines.flow.Flow
+{
+    final int $bufferSize$inlined;
+    final kotlin.jvm.functions.Function1 $builder$inlined;
+    final kotlin.coroutines.CoroutineContext $flowContext$inlined;
+    final kotlinx.coroutines.flow.Flow $source$inlined;
+
+    public void <init>(kotlinx.coroutines.flow.Flow, int, kotlin.jvm.functions.Function1, kotlin.coroutines.CoroutineContext)
+    {
+        kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1 r0;
+        kotlinx.coroutines.flow.Flow $r1;
+        int $i0;
+        kotlin.jvm.functions.Function1 $r2;
+        kotlin.coroutines.CoroutineContext $r3;
+
+        r0 := @this: kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1;
+
+        $r1 := @parameter0: kotlinx.coroutines.flow.Flow;
+
+        $i0 := @parameter1: int;
+
+        $r2 := @parameter2: kotlin.jvm.functions.Function1;
+
+        $r3 := @parameter3: kotlin.coroutines.CoroutineContext;
+
+        r0.<kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1: kotlinx.coroutines.flow.Flow $source$inlined> = $r1;
+
+        r0.<kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1: int $bufferSize$inlined> = $i0;
+
+        r0.<kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1: kotlin.jvm.functions.Function1 $builder$inlined> = $r2;
+
+        r0.<kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1: kotlin.coroutines.CoroutineContext $flowContext$inlined> = $r3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public java.lang.Object collect(kotlinx.coroutines.flow.FlowCollector, kotlin.coroutines.Continuation)
+    {
+        kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1 r0;
+        kotlinx.coroutines.flow.FlowCollector $r1;
+        kotlin.coroutines.Continuation $r2;
+        kotlin.coroutines.CoroutineContext $r3;
+        kotlinx.coroutines.Job$Key $r4;
+        kotlin.coroutines.CoroutineContext$Key $r5;
+        kotlinx.coroutines.flow.Flow $r6;
+        int $i0;
+        kotlin.jvm.functions.Function1 $r7;
+        java.lang.Object $r8, $r10;
+        kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$lambda-3$$inlined$collect$1 $r9;
+        kotlin.Unit r11;
+
+        r0 := @this: kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1;
+
+        $r1 := @parameter0: kotlinx.coroutines.flow.FlowCollector;
+
+        $r2 := @parameter1: kotlin.coroutines.Continuation;
+
+        $r3 = interfaceinvoke $r2.<kotlin.coroutines.Continuation: kotlin.coroutines.CoroutineContext getContext()>();
+
+        $r4 = <kotlinx.coroutines.Job: kotlinx.coroutines.Job$Key Key>;
+
+        $r5 = (kotlin.coroutines.CoroutineContext$Key) $r4;
+
+        $r3 = interfaceinvoke $r3.<kotlin.coroutines.CoroutineContext: kotlin.coroutines.CoroutineContext minusKey(kotlin.coroutines.CoroutineContext$Key)>($r5);
+
+        $r6 = r0.<kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1: kotlinx.coroutines.flow.Flow $source$inlined>;
+
+        $r6 = staticinvoke <kotlinx.coroutines.flow.FlowKt: kotlinx.coroutines.flow.Flow flowOn(kotlinx.coroutines.flow.Flow,kotlin.coroutines.CoroutineContext)>($r6, $r3);
+
+        $i0 = r0.<kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1: int $bufferSize$inlined>;
+
+        $r6 = staticinvoke <kotlinx.coroutines.flow.FlowKt: kotlinx.coroutines.flow.Flow buffer$default(kotlinx.coroutines.flow.Flow,int,kotlinx.coroutines.channels.BufferOverflow,int,java.lang.Object)>($r6, $i0, null, 2, null);
+
+        $r7 = r0.<kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1: kotlin.jvm.functions.Function1 $builder$inlined>;
+
+        $r8 = interfaceinvoke $r7.<kotlin.jvm.functions.Function1: java.lang.Object invoke(java.lang.Object)>($r6);
+
+        $r6 = (kotlinx.coroutines.flow.Flow) $r8;
+
+        $r3 = r0.<kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1: kotlin.coroutines.CoroutineContext $flowContext$inlined>;
+
+        $r6 = staticinvoke <kotlinx.coroutines.flow.FlowKt: kotlinx.coroutines.flow.Flow flowOn(kotlinx.coroutines.flow.Flow,kotlin.coroutines.CoroutineContext)>($r6, $r3);
+
+        $i0 = r0.<kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1: int $bufferSize$inlined>;
+
+        $r6 = staticinvoke <kotlinx.coroutines.flow.FlowKt: kotlinx.coroutines.flow.Flow buffer$default(kotlinx.coroutines.flow.Flow,int,kotlinx.coroutines.channels.BufferOverflow,int,java.lang.Object)>($r6, $i0, null, 2, null);
+
+        $r9 = new kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$lambda-3$$inlined$collect$1;
+
+        specialinvoke $r9.<kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$lambda-3$$inlined$collect$1: void <init>(kotlinx.coroutines.flow.FlowCollector)>($r1);
+
+        $r1 = (kotlinx.coroutines.flow.FlowCollector) $r9;
+
+        $r8 = interfaceinvoke $r6.<kotlinx.coroutines.flow.Flow: java.lang.Object collect(kotlinx.coroutines.flow.FlowCollector,kotlin.coroutines.Continuation)>($r1, $r2);
+
+        $r10 = staticinvoke <kotlin.coroutines.intrinsics.IntrinsicsKt: java.lang.Object getCOROUTINE_SUSPENDED()>();
+
+        if $r8 != $r10 goto label1;
+
+        return $r8;
+
+     label1:
+        r11 = <kotlin.Unit: kotlin.Unit INSTANCE>;
+
+        return r11;
+    }
+}

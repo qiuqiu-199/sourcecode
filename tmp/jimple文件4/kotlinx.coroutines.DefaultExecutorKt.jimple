@@ -1,0 +1,27 @@
+public final class kotlinx.coroutines.DefaultExecutorKt extends java.lang.Object
+{
+    private static final kotlinx.coroutines.Delay DefaultDelay;
+
+    static void <clinit>()
+    {
+        kotlinx.coroutines.DefaultExecutor $r0;
+        kotlinx.coroutines.Delay $r1;
+
+        $r0 = <kotlinx.coroutines.DefaultExecutor: kotlinx.coroutines.DefaultExecutor INSTANCE>;
+
+        $r1 = (kotlinx.coroutines.Delay) $r0;
+
+        <kotlinx.coroutines.DefaultExecutorKt: kotlinx.coroutines.Delay DefaultDelay> = $r1;
+
+        return;
+    }
+
+    public static final kotlinx.coroutines.Delay getDefaultDelay()
+    {
+        kotlinx.coroutines.Delay r0;
+
+        r0 = <kotlinx.coroutines.DefaultExecutorKt: kotlinx.coroutines.Delay DefaultDelay>;
+
+        return r0;
+    }
+}

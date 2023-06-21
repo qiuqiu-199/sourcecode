@@ -33,6 +33,9 @@ public class ConstantUtils {
     public static String RESULTFOLDER = "Result_testGen" + File.separator;
     public static String SRCFOLDER;
 
+    //临时用
+    public static Map<String,Set<String>> map = new HashMap<>();
+
     //属性获取相关方法
     // get attribute method
     public static final String[] getAttribute_methods = {"android.content.Intent: java.lang.String getAction(",
@@ -56,10 +59,26 @@ public class ConstantUtils {
         return false;
     }
 
+    // get intent extra method
+    public static final String[] get_intnet_extra_methods = {"getDoubleArrayExtra", "getDoubleExtra",
+            "getFloatArrayExtra", "getFloatExtra", "getIntArrayExtra", "getIntExtra", "getIntegerArrayListExtra",
+            "getLongArrayExtra", "getLongExtra", "getParcelableArrayExtra", "getParcelableArrayListExtra",
+            "getParcelableExtra", "getSerializableExtra", "getShortExtra", "getShortArrayExtra", "getStringArrayExtra",
+            "getStringArrayListExtra", "getStringExtra", "getBooleanArrayExtra", "getBooleanExtra", "getByteArrayExtra",
+            "getByteExtra", "getCharArrayExtra", "getCharExtra", "getCharSequenceArrayExtra",
+            "getCharSequenceArrayListExtra", "getCharSequenceExtra", "getBundleExtra", "getExtras",
+            "android.os.Bundle: java.lang.Object get"};
+
+    // extra intent method types
+    public static final String[] intent_extra_method_types = {"doubleArray", "double", "floatArray", "float",
+            "intArray", "int", "IntegerArrayList", "longArray", "long", "ParcelableArray", "ParcelableArrayList",
+            "Parcelable", "Serializable", "short", "shortArray", "StringArray", "StringArrayList", "String",
+            "booleanArray", "boolean", "byteArray", "byte", "charArray", "char", "CharSequenceArray",
+            "CharSequenceArrayList", "CharSequence", "Bundle", "Extras", "String"};
 
 
-    //临时用
-    public static Map<String,Set<String>> map = new HashMap<>();
+
+
 
     public static boolean isStringType(String extra_type) {
         String[] no = { "Bundle", "Parcelable", "Serializable", "Extras", "ArrayList", "Array" };

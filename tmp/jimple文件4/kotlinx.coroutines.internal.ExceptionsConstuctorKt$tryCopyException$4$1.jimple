@@ -1,0 +1,58 @@
+final class kotlinx.coroutines.internal.ExceptionsConstuctorKt$tryCopyException$4$1 extends kotlin.jvm.internal.Lambda implements kotlin.jvm.functions.Function1
+{
+    public static final kotlinx.coroutines.internal.ExceptionsConstuctorKt$tryCopyException$4$1 INSTANCE;
+
+    static void <clinit>()
+    {
+        kotlinx.coroutines.internal.ExceptionsConstuctorKt$tryCopyException$4$1 $r0;
+
+        $r0 = new kotlinx.coroutines.internal.ExceptionsConstuctorKt$tryCopyException$4$1;
+
+        specialinvoke $r0.<kotlinx.coroutines.internal.ExceptionsConstuctorKt$tryCopyException$4$1: void <init>()>();
+
+        <kotlinx.coroutines.internal.ExceptionsConstuctorKt$tryCopyException$4$1: kotlinx.coroutines.internal.ExceptionsConstuctorKt$tryCopyException$4$1 INSTANCE> = $r0;
+
+        return;
+    }
+
+    void <init>()
+    {
+        kotlinx.coroutines.internal.ExceptionsConstuctorKt$tryCopyException$4$1 r0;
+
+        r0 := @this: kotlinx.coroutines.internal.ExceptionsConstuctorKt$tryCopyException$4$1;
+
+        specialinvoke r0.<kotlin.jvm.internal.Lambda: void <init>(int)>(1);
+
+        return;
+    }
+
+    public volatile java.lang.Object invoke(java.lang.Object)
+    {
+        kotlinx.coroutines.internal.ExceptionsConstuctorKt$tryCopyException$4$1 r0;
+        java.lang.Void $r1;
+        java.lang.Object $r2;
+        java.lang.Throwable $r3;
+
+        r0 := @this: kotlinx.coroutines.internal.ExceptionsConstuctorKt$tryCopyException$4$1;
+
+        $r2 := @parameter0: java.lang.Object;
+
+        $r3 = (java.lang.Throwable) $r2;
+
+        $r1 = virtualinvoke r0.<kotlinx.coroutines.internal.ExceptionsConstuctorKt$tryCopyException$4$1: java.lang.Void invoke(java.lang.Throwable)>($r3);
+
+        return $r1;
+    }
+
+    public final java.lang.Void invoke(java.lang.Throwable)
+    {
+        kotlinx.coroutines.internal.ExceptionsConstuctorKt$tryCopyException$4$1 r0;
+        java.lang.Throwable $r1;
+
+        r0 := @this: kotlinx.coroutines.internal.ExceptionsConstuctorKt$tryCopyException$4$1;
+
+        $r1 := @parameter0: java.lang.Throwable;
+
+        return null;
+    }
+}
