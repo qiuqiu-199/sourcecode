@@ -45,7 +45,7 @@ public class Main {
             manifestParser.parse(true);  //这个true，对应fax里面的
 
             Instrumentor instrumentor = new Instrumentor();
-            instrumentor.instrument();
+            instrumentor.instrument(appName);
 
 
 

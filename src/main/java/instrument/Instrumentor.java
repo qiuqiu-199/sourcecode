@@ -18,12 +18,12 @@ public class Instrumentor {
     public Instrumentor() {
     }
 
-    public void instrument() {
+    public void instrument(String apk_needIns) {
         //初始化
-        sootSetting();
+        sootSetting(apk_needIns);
 
         //加入插桩模块
-        //这段注释掉的暂时无用
+        //这段注释掉的暂时无用,用来给方法设置activebody用的
 //        Transform t0 = new Transform("jtp.bt", new BodyTransformer() {
 //            @Override
 //            protected void internalTransform(Body body, String s, Map<String, String> map) {
@@ -35,8 +35,8 @@ public class Instrumentor {
 //        PackManager.v().getPack("jtp").add(t0);
 
         //获取jimple代码的话要先注释掉这段代码
-        LogIns_Transformer getACTD_transformer = new LogIns_Transformer();
-        Transform t1 = new Transform("jtp.qIns", getACTD_transformer);
+        LogIns_Transformer logIns_transformer = new LogIns_Transformer();
+        Transform t1 = new Transform("jtp.qIns", logIns_transformer);
         PackManager.v().getPack("jtp").add(t1);
 
 
@@ -57,14 +57,16 @@ public class Instrumentor {
 
     }
 
-    private static void sootSetting() {
+    private static void sootSetting(String apk_needIns) {
         soot.G.reset();
         String androidJar = "C:\\Users\\ql\\AppData\\Local\\Android\\Sdk\\platforms";
         Options.v().set_android_jars(androidJar);
         Options.v().set_soot_classpath(androidJar);
-        Options.v().set_process_dir(Collections.singletonList("apk\\q1_4.apk")); //设置目标apk
+        Options.v().set_process_dir(Collections.singletonList("apk\\"+apk_needIns)); //设置目标apk
+//        Options.v().set_process_dir(Collections.singletonList("apk\\q8.apk")); //设置目标apk
         Options.v().set_prepend_classpath(true);  //必选
         Options.v().set_process_multiple_dex(true);  //必选
+        Options.v().set_android_api_version(23);
         Options.v().set_output_format(Options.output_format_dex);  //插桩后输出apk文件
 //        Options.v().set_output_format(Options.output_format_jimple);  //获取jimple代码用
         Options.v().set_output_dir("sootOutput");  //输出目录

@@ -158,6 +158,18 @@ def count_bug_from_txt():
     pass
 
 
+def sign_apk(apk_dir):
+    RESIGN = "java -jar lib/signapk.jar lib/platform.x509.pem lib/platform.pk8 "
+    f = os.listdir(apk_dir)
+    for apk_file in f:
+        unsigned_apk = apk_dir+os.sep+apk_file
+        signed_apk = apk_dir+os.sep+"signed_apk"+os.sep+apk_file[:-4]+"_ins_signed.apk"
+        resign = RESIGN + unsigned_apk +" "+ signed_apk
+        print resign
+        os.system(resign)
+        print "-----"+apk_file+"插桩结束-----"
+
+
 if __name__ == '__main__':
     # 卸载原先安装的测试软件
     # unistallScript()
@@ -172,7 +184,12 @@ if __name__ == '__main__':
     # compareActivity.txt排除那些虽然在manifest文件里声明了但不属于该应用的Activity
     # exclude_1()
 
+    #
+
     # 对bug数的统计
-    count_bug_from_txt()
+    # count_bug_from_txt()
+
+    # 一键签名
+    sign_apk("F:\ThesisReproduction\qiu\sootOutput")
 
     pass
