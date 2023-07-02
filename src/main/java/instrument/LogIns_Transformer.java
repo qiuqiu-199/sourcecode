@@ -51,36 +51,36 @@ public class LogIns_Transformer extends BodyTransformer {
                         System.exit(0);
                     }
                 }
-//                //对获取额外属性里基本数据类型的地方插桩
-//                if(ConstantUtils.is_get_extra_basic(unit)){
-//                    String type = ConstantUtils.get_actual_extra_type(unit);
-//                    if(type != null) addLogExtraBasicStmt((Stmt)unit,body,type,sbLocal,sb_tostring_local);
-//                    else {
-//                        System.out.println(unit.toString());
-//                        System.err.println("获取额外属性里基本数据类型的地方的type异常！！！！！");
-//                        System.exit(0);
-//                    }
-//                }
-//                //对获取额外属性里基本数据类型的数组的地方插桩
-//                if(ConstantUtils.is_get_extra_basicArray(unit)){
-//                    String type = ConstantUtils.get_actual_extra_type(unit);
-//                    if(type != null) addLogExtraBasicArrayStmt((Stmt)unit,body,type,sbLocal,sb_tostring_local);
-//                    else{
-//                        System.out.println(unit.toString());
-//                        System.err.println("获取额外属性里基本数据类型数组的地方的type异常！！！！！");
-//                        System.exit(0);
-//                    }
-//                }
-//                //对获取额外属性里基本数据类型的ArrayList的地方进行插桩
-//                if (ConstantUtils.is_get_extra_basicArrayList(unit)){
-//                    String type = ConstantUtils.get_actual_extra_type(unit);
-//                    if(type != null) addLogExtraBasicArrayListStmt((Stmt)unit,body,type,sbLocal,sb_tostring_local);
-//                    else{
-//                        System.out.println(unit.toString());
-//                        System.err.println("获取额外属性里基本数据类型ArrayList的地方的type异常！！！！！");
-//                        System.exit(0);
-//                    }
-//                }
+                //对获取额外属性里基本数据类型的地方插桩
+                if(ConstantUtils.is_get_extra_basic(unit)){
+                    String type = ConstantUtils.get_actual_extra_type(unit);
+                    if(type != null) addLogExtraBasicStmt((Stmt)unit,body,type,sbLocal,sb_tostring_local);
+                    else {
+                        System.out.println(unit.toString());
+                        System.err.println("获取额外属性里基本数据类型的地方的type异常！！！！！");
+                        System.exit(0);
+                    }
+                }
+                //对获取额外属性里基本数据类型的数组的地方插桩
+                if(ConstantUtils.is_get_extra_basicArray(unit)){
+                    String type = ConstantUtils.get_actual_extra_type(unit);
+                    if(type != null) addLogExtraBasicArrayStmt((Stmt)unit,body,type,sbLocal,sb_tostring_local);
+                    else{
+                        System.out.println(unit.toString());
+                        System.err.println("获取额外属性里基本数据类型数组的地方的type异常！！！！！");
+                        System.exit(0);
+                    }
+                }
+                //对获取额外属性里基本数据类型的ArrayList的地方进行插桩
+                if (ConstantUtils.is_get_extra_basicArrayList(unit)){
+                    String type = ConstantUtils.get_actual_extra_type(unit);
+                    if(type != null) addLogExtraBasicArrayListStmt((Stmt)unit,body,type,sbLocal,sb_tostring_local);
+                    else{
+                        System.out.println(unit.toString());
+                        System.err.println("获取额外属性里基本数据类型ArrayList的地方的type异常！！！！！");
+                        System.exit(0);
+                    }
+                }
 
                 //弃
                 //在getIntent()的地方插桩，输出intent
@@ -148,7 +148,7 @@ public class LogIns_Transformer extends BodyTransformer {
 //      specialinvoke sb.<java.lang.StringBuilder: void <init>()>();
         generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newSpecialInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: void <init>()>").makeRef())));
 //      virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("<当前activity名>:<当前基本属性名>=");
-        generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>").makeRef(),StringConstant.v(body.getMethod().getDeclaringClass().getName() + ":basic" + type + "="))));
+        generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>").makeRef(),StringConstant.v(body.getMethod().getDeclaringClass().getName() + ":basic_" + type + "="))));
 
         //针对category和Uri进行不同的处理
         if (type.equals("category")){
@@ -204,8 +204,12 @@ public class LogIns_Transformer extends BodyTransformer {
         generated_unit.add(Jimple.v().newAssignStmt(sbLocal, Jimple.v().newNewExpr(RefType.v("java.lang.StringBuilder"))));
 //      specialinvoke sb.<java.lang.StringBuilder: void <init>()>();
         generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newSpecialInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: void <init>()>").makeRef())));
+        AssignStmt assignStmt = (AssignStmt) unit;
+        Value arg = assignStmt.getInvokeExpr().getArg(0);
+        String name = arg.toString().replace("\"","");
 //      virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("<当前activity名>:<当前基本属性名>=");
-        generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>").makeRef(),StringConstant.v(body.getMethod().getDeclaringClass().getName() + ":extra_" + type + "="))));
+        generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>").makeRef(),StringConstant.v(body.getMethod().getDeclaringClass().getName() + ":extra_" + type + "_"+ name +"="))));
+
 //      virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(double)>($d0);
         switch (type) {
             case "int":
@@ -229,6 +233,7 @@ public class LogIns_Transformer extends BodyTransformer {
         generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newStaticInvokeExpr(Scene.v().getMethod("<android.util.Log: int i(java.lang.String,java.lang.String)>").makeRef(), StringConstant.v("qiu-tag"), sb_tostring_local)));
 
         body.getUnits().insertAfter(generated_unit,unit);
+        body.validate();
     }
     //额外属性中，基本属性类型数组的值的获取
     private void addLogExtraBasicArrayStmt(Stmt unit, Body body, String type, Local sbLocal, Local sb_tostring_local) {
@@ -238,8 +243,11 @@ public class LogIns_Transformer extends BodyTransformer {
         generated_unit.add(Jimple.v().newAssignStmt(sbLocal, Jimple.v().newNewExpr(RefType.v("java.lang.StringBuilder"))));
 //      specialinvoke sb.<java.lang.StringBuilder: void <init>()>();
         generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newSpecialInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: void <init>()>").makeRef())));
+        AssignStmt assignStmt = (AssignStmt) unit;
+        Value arg = assignStmt.getInvokeExpr().getArg(0);
+        String name = arg.toString().replace("\"","");
 //      virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("<当前activity名>:<当前基本属性名>=");
-        generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>").makeRef(),StringConstant.v(body.getMethod().getDeclaringClass().getName() + ":extra_"+type+"[]="))));
+        generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>").makeRef(),StringConstant.v(body.getMethod().getDeclaringClass().getName() + ":extra_" + type + "[]_"+ name +"="))));
 
         if(type.equals("String") || type.equals("charSequence")){
             generated_unit.add(Jimple.v().newAssignStmt(sb_tostring_local,Jimple.v().newStaticInvokeExpr(Scene.v().getMethod("<java.util.Arrays: java.lang.String toString(java.lang.Object[])>").makeRef(),unit.getDefBoxes().get(0).getValue())));
@@ -251,6 +259,7 @@ public class LogIns_Transformer extends BodyTransformer {
         generated_unit.add(Jimple.v().newAssignStmt(sb_tostring_local,Jimple.v().newVirtualInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: java.lang.String toString()>").makeRef())));
         generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newStaticInvokeExpr(Scene.v().getMethod("<android.util.Log: int i(java.lang.String,java.lang.String)>").makeRef(), StringConstant.v("qiu-tag"), sb_tostring_local)));
         body.getUnits().insertAfter(generated_unit,unit);
+        body.validate();
     }
     //额外属性中，基本属性类型ArrayList的值的获取
     private void addLogExtraBasicArrayListStmt(Stmt unit, Body body, String type, Local sbLocal, Local sb_tostring_local) {
@@ -260,13 +269,17 @@ public class LogIns_Transformer extends BodyTransformer {
         generated_unit.add(Jimple.v().newAssignStmt(sbLocal, Jimple.v().newNewExpr(RefType.v("java.lang.StringBuilder"))));
 //      specialinvoke sb.<java.lang.StringBuilder: void <init>()>();
         generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newSpecialInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: void <init>()>").makeRef())));
+        AssignStmt assignStmt = (AssignStmt) unit;
+        Value arg = assignStmt.getInvokeExpr().getArg(0);
+        String name = arg.toString().replace("\"","");
 //      virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("<当前activity名>:<当前基本属性名>=");
-        generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>").makeRef(),StringConstant.v(body.getMethod().getDeclaringClass().getName() + ":extra_"+type+"ArrayList="))));
+        generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>").makeRef(),StringConstant.v(body.getMethod().getDeclaringClass().getName() + ":extra_" + type + "ArrayList_"+ name +"="))));
 
         generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>").makeRef(),unit.getDefBoxes().get(0).getValue())));
 
         generated_unit.add(Jimple.v().newAssignStmt(sb_tostring_local,Jimple.v().newVirtualInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: java.lang.String toString()>").makeRef())));
         generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newStaticInvokeExpr(Scene.v().getMethod("<android.util.Log: int i(java.lang.String,java.lang.String)>").makeRef(), StringConstant.v("qiu-tag"), sb_tostring_local)));
         body.getUnits().insertAfter(generated_unit,unit);
+        body.validate();
     }
 }

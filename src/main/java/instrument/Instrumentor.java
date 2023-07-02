@@ -66,7 +66,7 @@ public class Instrumentor {
 //        Options.v().set_process_dir(Collections.singletonList("apk\\q8.apk")); //设置目标apk
         Options.v().set_prepend_classpath(true);  //必选
         Options.v().set_process_multiple_dex(true);  //必选
-        Options.v().set_android_api_version(23);
+//        Options.v().set_android_api_version(23);  //指定api版本，避免插桩后出现dex文件分割问题,Caledule、syncthing和Etesync排除这个选项
         Options.v().set_output_format(Options.output_format_dex);  //插桩后输出apk文件
 //        Options.v().set_output_format(Options.output_format_jimple);  //获取jimple代码用
         Options.v().set_output_dir("sootOutput");  //输出目录
