@@ -17,6 +17,7 @@ import model.*;
 
 import org.xmlpull.v1.XmlPullParserException;
 
+import soot.G;
 import soot.jimple.infoflow.android.axml.AXmlNode;
 import soot.jimple.infoflow.android.manifest.ProcessManifest;
 import utils.Global;
@@ -124,6 +125,9 @@ public class ManifestParser {
             out = new FileOutputStream(file);
             content += "app_name: "+Global.v().getAppModel().appName + System.getProperty("line.separator");
             content += "pkg_name: "+Global.v().getAppModel().pkgName + System.getProperty("line.separator");
+            content += "mainAct_name: "+Global.v().getAppModel().mainActivity + System.getProperty("line.separator");
+            System.out.println(Global.v().getAppModel().appName  + " : "+ Global.v().getAppModel().mainActivity);
+
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("输出declaredActivity.txt失败！");

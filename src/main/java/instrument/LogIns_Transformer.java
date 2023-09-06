@@ -1,6 +1,7 @@
 package instrument;
 
 import soot.*;
+import soot.javaToJimple.LocalGenerator;
 import soot.jimple.*;
 import soot.jimple.internal.JimpleLocal;
 import utils.ConstantUtils;
@@ -32,10 +33,13 @@ public class LogIns_Transformer extends BodyTransformer {
             UnitPatchingChain units = body.getUnits();
             Iterator<Unit> unit_iterator = units.snapshotIterator();
 
-            Local sbLocal = Jimple.v().newLocal("sb",RefType.v("java.lang.StringBuilder"));
-            body.getLocals().add(sbLocal);
-            Local sb_tostring_local = Jimple.v().newLocal("sb_tostring",RefType.v("java.lang.String"));
-            body.getLocals().add(sb_tostring_local);
+            LocalGenerator localGenerator = new LocalGenerator(body);
+//            Local sbLocal = Jimple.v().newLocal("sb",RefType.v("java.lang.StringBuilder"));
+            Local sbLocal = localGenerator.generateLocal(RefType.v("java.lang.StringBuilder"));
+//            body.getLocals().add(sbLocal);
+//            Local sb_tostring_local = Jimple.v().newLocal("sb_tostring",RefType.v("java.lang.String"));
+            Local sb_tostring_local = localGenerator.generateLocal(RefType.v("java.lang.String"));
+//            body.getLocals().add(sb_tostring_local);
 
 //            插桩
             while (unit_iterator.hasNext()){
@@ -90,53 +94,6 @@ public class LogIns_Transformer extends BodyTransformer {
             }
             body.validate();
         }
-    }
-
-
-
-    //弃
-    private void addLogExtraStmt(Unit unit, Body body) {
-        ArrayList<Unit> generated_unit = new ArrayList<>();
-        List<ValueBox> defBoxes = unit.getDefBoxes();
-        ValueBox valueBox = defBoxes.get(0);
-        JimpleLocal intentLocal = (JimpleLocal) valueBox.getValue();
-
-
-        Local extrasLocal = Jimple.v().newLocal("qiu_extra", RefType.v("android.os.Bundle"));
-        Local sbLocal = Jimple.v().newLocal("sb",RefType.v("java.lang.StringBuilder"));
-        body.getLocals().add(extrasLocal);
-        body.getLocals().add(sbLocal);
-
-//        qiu_extra = virtualinvoke $r2.<android.content.Intent: android.os.Bundle getExtras()>();
-        AssignStmt assignStmt1 = Jimple.v().newAssignStmt(extrasLocal, Jimple.v().newVirtualInvokeExpr(intentLocal, Scene.v().getMethod("<android.content.Intent: android.os.Bundle getExtras()>").makeRef()));
-        generated_unit.add(assignStmt1);
-
-//        sb = new java.lang.StringBuilder;
-        AssignStmt assignStmt2 = Jimple.v().newAssignStmt(sbLocal, Jimple.v().newNewExpr(RefType.v("java.lang.StringBuilder")));
-        generated_unit.add(assignStmt2);
-//
-//        specialinvoke sb.<java.lang.StringBuilder: void <init>()>();
-        generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newSpecialInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: void <init>()>").makeRef())));
-
-//        virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("<当前activity名>");
-        generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>").makeRef(),StringConstant.v(body.getMethod().getDeclaringClass().getName()))));
-
-//        sb_tostring = virtualinvoke sb.<java.lang.StringBuilder: java.lang.String toString()>();
-        Local sb_tostringLocal = Jimple.v().newLocal("sb_tostring",RefType.v("java.lang.String"));
-        body.getLocals().add(sb_tostringLocal);
-        generated_unit.add(Jimple.v().newAssignStmt(sb_tostringLocal,Jimple.v().newVirtualInvokeExpr(sbLocal,Scene.v().getMethod("<java.lang.StringBuilder: java.lang.String toString()>").makeRef())));
-
-//        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", sb_tostring);
-        generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newStaticInvokeExpr(Scene.v().getMethod("<android.util.Log: int i(java.lang.String,java.lang.String)>").makeRef(),StringConstant.v("qiu-tag"),sb_tostringLocal)));
-
-
-//        sb_tostring = virtualinvoke qiue_extra.<android.os.Bundle: java.lang.String toString()>;
-        generated_unit.add(Jimple.v().newAssignStmt(sb_tostringLocal,Jimple.v().newVirtualInvokeExpr(extrasLocal,Scene.v().getMethod("<android.os.Bundle: java.lang.String toString()>").makeRef())));
-//        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("qiu-tag", sb_tostring);
-        generated_unit.add(Jimple.v().newInvokeStmt(Jimple.v().newStaticInvokeExpr(Scene.v().getMethod("<android.util.Log: int i(java.lang.String,java.lang.String)>").makeRef(),StringConstant.v("qiu-tag"),sb_tostringLocal)));
-
-        body.getUnits().insertAfter(generated_unit,unit);
-        body.validate();
     }
 
     //对基本属性获取点进行插桩
