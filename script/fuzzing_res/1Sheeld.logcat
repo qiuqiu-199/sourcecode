@@ -1,0 +1,26 @@
+--------- beginning of main
+09-07 16:40:33.636 16285 16285 I qiu-tag : com.integreight.onesheeld.MainActivity:extra_String_url=null
+09-07 16:40:33.704 16285 16285 I qiu-tag : com.integreight.onesheeld.MainActivity:extra_String_url=null
+09-07 16:40:33.704 16285 16323 I qiu-tag : com.integreight.onesheeld.MainActivity:basic_action=null
+--------- beginning of system
+--------- beginning of crash
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: FATAL EXCEPTION: main
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: Process: com.integreight.onesheeld, PID: 16285
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: java.lang.NullPointerException: Attempt to read from field 'boolean com.integreight.onesheeld.shields.controller.AccelerometerShield.isLinearExist' on a null object reference
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: 	at com.integreight.onesheeld.shields.fragments.AccelerometerFragment$1.onCheckedChanged(Unknown Source:37)
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: 	at android.widget.CompoundButton.setChecked(CompoundButton.java:171)
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: 	at android.widget.CompoundButton.toggle(CompoundButton.java:127)
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: 	at android.widget.CompoundButton.performClick(CompoundButton.java:132)
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6576)
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: 	at android.view.View.access$3100(View.java:780)
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25899)
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-07 16:40:48.793 16285 16285 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-07 16:40:53.536 16415 16415 I qiu-tag : com.integreight.onesheeld.MainActivity:extra_String_url=null
+09-07 16:40:53.609 16415 16415 I qiu-tag : com.integreight.onesheeld.MainActivity:extra_String_url=null
+09-07 16:40:53.611 16415 16454 I qiu-tag : com.integreight.onesheeld.MainActivity:basic_action=android.intent.action.MAIN

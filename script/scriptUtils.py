@@ -10,21 +10,40 @@ from utils import executeCmd
 def unistallScript():
     result = os.popen("adb shell pm list packages")
     installed_pkgs = result.readlines()
+
+    # 获取所有apk的包名，存到pkgs里
+    summaryInfo_dir = "F:\\ThesisReproduction\\qiu\\summaryInfo"
+    apk_names = os.listdir(summaryInfo_dir)
+    apk_names.remove("outInfo.txt")
+    pkgs = set()
+    for apk_name in apk_names:
+        file_path = os.path.join(summaryInfo_dir, apk_name, "declaredActivity.txt")
+        apk_info_file = open(file_path, "r")
+        lines = apk_info_file.readlines()
+        for line in lines:
+            if "pkg_name" in line:
+                pkgs.add(line.split(": ")[1])
+                break
+
+
     for installed_pkg in installed_pkgs:
         # 卸载全部
-        # if installed_pkg.replace("package:","") in pkgs \
-        #         or "qiu" in installed_pkg \
-        #         or "com.csipsimple" in installed_pkg.replace("package:", ""):
-        #     executeCmd("adb uninstall " + installed_pkg.replace("package:", "").split("\n")[0])
-        #     time.sleep(3)
-        #     print installed_pkg.replace("package:", "") + "已卸载！"
+        # 包括原始apk和插桩后的apk、qiu测试apk和fax测试apk、以及csipsimple应用
+        if installed_pkg.replace("package:", "") in pkgs \
+                or "qiu" in installed_pkg \
+                or "fax" in installed_pkg \
+                or "com.csipsimple" in installed_pkg.replace("package:", ""):
+            executeCmd("adb uninstall " + installed_pkg.replace("package:", "").split("\n")[0])
+            time.sleep(3)
+            print installed_pkg.replace("package:", "") + "已卸载！"
 
         # 卸载fax的test.apk
         # if "fax" in installed_pkg:
         #     executeCmd("adb uninstall " + installed_pkg.replace("package:", "").split("\n")[0])
+
         # 卸载qiu的test.apk
-        if "qiu" in installed_pkg:
-            executeCmd("adb uninstall " + installed_pkg.replace("package:", "").split("\n")[0])
+        # if "qiu" in installed_pkg:
+        #     executeCmd("adb uninstall " + installed_pkg.replace("package:", "").split("\n")[0])
 
 
 def compareActivity(testActName, fn, package):
@@ -140,7 +159,7 @@ def exclude_1():
             f1.write(line)
 
     print "manifest里声明但不在declaredActivity里的Activity有：" + str(len(act_dict.keys()))
-    print "为这些Activity生成的测试用例有"+ str(count_all)
+    print "为这些Activity生成的测试用例有" + str(count_all)
     print "其中结果为yes的有：" + str(count_yes)
 
 
@@ -148,7 +167,7 @@ def count_bug_from_txt():
     f = open("F:\ThesisReproduction\qiu\Result_launch\Crashes\_summary.txt")
     count = 0
     lines = f.readlines()
-    out = open("1qiuStastics\\bug_count.txt","w")
+    out = open("1qiuStastics\\bug_count.txt", "w")
     for line in lines:
         if count < 40:
             ss = line.split("\t")
@@ -167,6 +186,7 @@ def sign_apk(apk_dir):
         result = re.findall(pattern, apk_file)  # 识别以.apk结尾的文件名字，返回列表形式
         if len(result) != 0:
             unsigned_apk = apk_dir + os.sep + apk_file
+            # 存放签名后的apk的目录
             signed_apk = apk_dir + os.sep + "signed_apk" + os.sep + apk_file[:-4] + "_ins_signed.apk"
             resign = RESIGN + unsigned_apk + " " + signed_apk
             print resign
@@ -180,13 +200,13 @@ def install_apk(apk_dir):
         pattern = ".*\\.apk"
         result = re.findall(pattern, apk_file)  # 识别以.apk结尾的文件名字，返回列表形式
         if len(result) != 0:
-            os.system("adb install -g " + os.path.join(apk_dir,apk_file))
+            os.system("adb install -g " + os.path.join(apk_dir, apk_file))
             print apk_file
     pass
 
 
 if __name__ == '__main__':
-    # 卸载原先安装的测试软件
+    # 卸载原先安装的软件
     # unistallScript()
 
     # 对no return value的测试用例重新测试一遍  2023.6.8
@@ -205,9 +225,11 @@ if __name__ == '__main__':
     # count_bug_from_txt()
 
     # 一键签名
-    sign_apk("F:\ThesisReproduction\qiu\sootOutput")
+    # 参数是存放签名后的apk的目录
+    # sign_apk("F:\ThesisReproduction\qiu\sootOutput")
 
     # 一键安装
+    # 参数是存放签名完的apk的地址
     install_apk("F:\ThesisReproduction\qiu\sootOutput\signed_apk")
 
     pass
