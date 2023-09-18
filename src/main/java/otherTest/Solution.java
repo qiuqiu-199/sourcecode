@@ -26,6 +26,10 @@ class Solution {
 
     public static void main(String[] args) {
 //        int[] nums = new int[]{1,3,-1,-3,5,3,6,7};
-        integerBreak(10);
+//        integerBreak(10);
+        int[] a = null;
+//        System.out.println(Arrays.toString(a));
+
+//        StringBuilder sb
     }
 }

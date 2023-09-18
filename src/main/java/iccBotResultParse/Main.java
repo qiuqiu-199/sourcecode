@@ -44,22 +44,26 @@ public class Main {
             ManifestParser manifestParser = new ManifestParser(Global.v().appPath + appName);
             manifestParser.parse(true);  //这个true，对应fax里面的
 
-            Instrumentor instrumentor = new Instrumentor();
-            instrumentor.instrument();
+            //插桩模块
+//            Instrumentor instrumentor = new Instrumentor();
+//            instrumentor.instrument(appName);
 
 
+            //icc解析模块
+            Map<String, Set<ICCMsg>> activity2receivedICCMap = new HashMap<>(); //存储发送给activity的iccmsg
 
-//            Map<String, Set<ICCMsg>> activity2receivedICCMap = new HashMap<>(); //存储发送给activity的iccmsg
-
-//            //从CTG.xml解析intent
+            //从CTG.xml解析intent
 //            resolveIntentFromCTGfile(activity2receivedICCMap);
 //            //从manifest文件里的intentfile解析组件间通信
 //            resolveIntentFromManifest(activity2receivedICCMap);
-//            //从componentInfo/xml文件里解析intent
+//            //从componentInfo.xml文件里解析intent
 //            resolveIntentFromReceivedIntent(activity2receivedICCMap);
-//
-//            TestcaseGenerator testcaseGenerator = new TestcaseGenerator(activity2receivedICCMap);
-//            testcaseGenerator.generateTestApp();
+
+            //使用monkey进行常规gui测试后得到的动态icc里构建文件
+            resolveIntentFromDynamicTest(appName,activity2receivedICCMap);
+
+            TestcaseGenerator testcaseGenerator = new TestcaseGenerator(activity2receivedICCMap);
+            testcaseGenerator.generateTestApp();
 
             long endtime = System.currentTimeMillis();
             System.out.println("\t\t" + Global.v().getAppModel().appName + "生成测试用例所花时间：" + (endtime - currentstarttime) / 1000 + "秒");
@@ -156,7 +160,7 @@ public class Main {
                 String desActName = destinationElement.attributeValue("name");
 
                 //排除掉那些在manifest文件里声明但并不属于应用的Activity
-                if(!Global.v().getAppModel().activityMap.containsKey(desActName)) continue;
+                if (!Global.v().getAppModel().activityMap.containsKey(desActName)) continue;
 
                 //TODO CTG.xml的隐式intent要记得向下怎么处理
 //                if(destinationElement.attributeValue("desType").equals("Activity") && ConstantUtils.activitySet.contains(destinationElement.getName())) {
@@ -178,27 +182,27 @@ public class Main {
 
                     if (destinationElement.attributeValue("type") != null)
                         iccMsg.type = destinationElement.attributeValue("type");
-                    if (destinationElement.attributeValue("extras") != null){
+                    if (destinationElement.attributeValue("extras") != null) {
                         String[] extras = destinationElement.attributeValue("extras").split(",");
                         for (int i = 0; i < extras.length; ++i) {
-                            if(extras[i].split("-")[0].equals("Bundle")){
+                            if (extras[i].split("-")[0].equals("Bundle")) {
                                 MyBundleType myBundleType = new MyBundleType();
                                 myBundleType.bundleName = extras[i].split("-")[1];
-                                for(int j = i+1; j < extras.length; ++j){
+                                for (int j = i + 1; j < extras.length; ++j) {
                                     String temp = extras[j];
-                                    if(temp.equals("(")) continue;
+                                    if (temp.equals("(")) continue;
 
-                                    if(temp.contains(")")){
+                                    if (temp.contains(")")) {
                                         temp = temp.replace(")", "");
                                         myBundleType.kvs.add(temp);
-                                        i=j;
+                                        i = j;
                                         break;
-                                    }else{
+                                    } else {
                                         myBundleType.kvs.add(temp);
                                     }
                                 }
                                 iccMsg.extras.add(myBundleType.toString());
-                            }else {
+                            } else {
                                 iccMsg.extras.add(extras[i]);
                             }
                         }
@@ -239,7 +243,7 @@ public class Main {
             String activityName = componentElement.attributeValue("name");
 
             //排除掉那些在manifest文件里声明但并不属于应用的Activity
-            if(!Global.v().getAppModel().activityMap.containsKey(activityName)) continue;
+            if (!Global.v().getAppModel().activityMap.containsKey(activityName)) continue;
 
             Iterator<Element> componentIterator = componentElement.elementIterator();
 
@@ -272,24 +276,24 @@ public class Main {
                         //TODO (解决6.3)Bundle-app_data,(,String-com.fsck.k9.search_folder,String-com.fsck.k9.search_account)处理
                         String[] extras = element.attributeValue("extras").split(",");
                         for (int i = 0; i < extras.length; ++i) {
-                            if(extras[i].split("-")[0].equals("Bundle")){
+                            if (extras[i].split("-")[0].equals("Bundle")) {
                                 MyBundleType myBundleType = new MyBundleType();
                                 myBundleType.bundleName = extras[i].split("-")[1];
-                                for(int j = i+1; j < extras.length; ++j){
+                                for (int j = i + 1; j < extras.length; ++j) {
                                     String temp = extras[j];
-                                    if(temp.equals("(")) continue;
+                                    if (temp.equals("(")) continue;
 
-                                    if(temp.contains(")")){
+                                    if (temp.contains(")")) {
                                         temp = temp.replace(")", "");
                                         myBundleType.kvs.add(temp);
-                                        i=j;
+                                        i = j;
                                         break;
-                                    }else{
+                                    } else {
                                         myBundleType.kvs.add(temp);
                                     }
                                 }
                                 extrasSet.add(myBundleType.toString());
-                            }else {
+                            } else {
                                 extrasSet.add(extras[i]);
                             }
 
@@ -343,17 +347,17 @@ public class Main {
             boolean flag = false;
             //逐一对比是否存在全为null的基本属性
             System.out.println(activityName);
-            if(!(activity2receivedICCMap.get(activityName) == null)){
+            if (!(activity2receivedICCMap.get(activityName) == null)) {
                 for (ICCMsg icc : activity2receivedICCMap.get(activityName)) {
-                    if(icc.toString().equals(iccMsg.toString())) {
+                    if (icc.toString().equals(iccMsg.toString())) {
                         flag = true;
                         break;
                     }
                 }
             }
-            if(!flag){
-                if(activity2receivedICCMap.get(activityName) == null)
-                    activity2receivedICCMap.put(activityName,new HashSet<>());
+            if (!flag) {
+                if (activity2receivedICCMap.get(activityName) == null)
+                    activity2receivedICCMap.put(activityName, new HashSet<>());
                 activity2receivedICCMap.get(activityName).add(iccMsg);
             }
 
@@ -374,7 +378,35 @@ public class Main {
             iccMsg2.extras.add("Serializable-serObj");
             activity2receivedICCMap.get(componentElement.attributeValue("name")).add(iccMsg2);
 
-            int a = 1+1;
+            int a = 1 + 1;
+        }
+    }
+
+    //此方法读取通过monkey得到的动态icc构造icc
+    public static void resolveIntentFromDynamicTest(String app_name, Map<String, Set<ICCMsg>> activity2receivedICCMap) {
+        String logcatFilePath = "script/fuzzing_res";
+        File logcatFile = new File(logcatFilePath + File.separator + app_name + ".logcat");
+
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(logcatFile));
+            String line = reader.readLine();
+            while(line != null){
+                if(line.contains("qiu-tag")){
+                    String[] split = line.split(" : ")[1].split(":");
+                    String act_name = split[0];
+                    String icc_msg = split[1];
+
+                    String[] split1 = icc_msg.split("_");
+                    String type = split1[0];
+                    String key = split1[1].split("=")[0];
+                    String val = split1[1].split("=")[1];
+
+                    
+                }
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

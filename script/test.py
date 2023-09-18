@@ -59,4 +59,7 @@ def getActs(fn):
 if __name__ == '__main__':
     # folder =
     # shutil.copy(,"F:\ThesisReproduction\qiu\script\\apk")
+
+    timestamp = int(time.time())
+    print(timestamp)
     print 000

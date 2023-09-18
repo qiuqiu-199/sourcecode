@@ -43,7 +43,10 @@ public class Test {
         set.add("aa");
         set.add("ww");
         String s = set.toString();
-        System.out.println("set.toString() = " + set.toString());
+//        System.out.println("set.toString() = " + set.toString());
+
+        long timestamp = System.currentTimeMillis();
+        System.out.println(timestamp);
 
 
     }

@@ -1,5 +1,6 @@
 # coding=utf-8
 import os
+import re
 import time
 
 import qiuLaunchActs
@@ -158,6 +159,32 @@ def count_bug_from_txt():
     pass
 
 
+def sign_apk(apk_dir):
+    RESIGN = "java -jar lib/signapk.jar lib/platform.x509.pem lib/platform.pk8 "
+    f = os.listdir(apk_dir)
+    for apk_file in f:
+        pattern = ".*\\.apk"
+        result = re.findall(pattern, apk_file)  # 识别以.apk结尾的文件名字，返回列表形式
+        if len(result) != 0:
+            unsigned_apk = apk_dir + os.sep + apk_file
+            signed_apk = apk_dir + os.sep + "signed_apk" + os.sep + apk_file[:-4] + "_ins_signed.apk"
+            resign = RESIGN + unsigned_apk + " " + signed_apk
+            print resign
+            os.system(resign)
+            print "-----" + apk_file + "插桩后的apk签名完毕-----"
+
+
+def install_apk(apk_dir):
+    f = os.listdir(apk_dir)
+    for apk_file in f:
+        pattern = ".*\\.apk"
+        result = re.findall(pattern, apk_file)  # 识别以.apk结尾的文件名字，返回列表形式
+        if len(result) != 0:
+            os.system("adb install -g " + os.path.join(apk_dir,apk_file))
+            print apk_file
+    pass
+
+
 if __name__ == '__main__':
     # 卸载原先安装的测试软件
     # unistallScript()
@@ -172,7 +199,15 @@ if __name__ == '__main__':
     # compareActivity.txt排除那些虽然在manifest文件里声明了但不属于该应用的Activity
     # exclude_1()
 
+    #
+
     # 对bug数的统计
-    count_bug_from_txt()
+    # count_bug_from_txt()
+
+    # 一键签名
+    sign_apk("F:\ThesisReproduction\qiu\sootOutput")
+
+    # 一键安装
+    install_apk("F:\ThesisReproduction\qiu\sootOutput\signed_apk")
 
     pass
