@@ -25,11 +25,67 @@ public class TestcaseGenerator {
     public String apkTC;
     public Map<String, Set<ICCMsg>> act2ReceivedICCMap;
 
-    public TestcaseGenerator(Map<String, Set<ICCMsg>> act2ReceivedICCMap) {
+    public TestcaseGenerator(Map<String, Set<ICCMsg>> act2ReceivedICCMap, Map<String, Set<String>> map) {
         this.act2ReceivedICCMap = act2ReceivedICCMap;
         this.appId = 0;
         this.apkTC = ConstantUtils.RESULTFOLDER + ConstantUtils.TESTCASEFOLDER + Global.v().getAppModel().appName + File.separator + "testCase.iccmsg";
 
+        this.intergrate(act2ReceivedICCMap, map);
+        System.out.println("初始化iccmsg-qiu");
+    }
+
+    //整合map里的实际extra值进静态得到的extra里
+    private void intergrate(Map<String, Set<ICCMsg>> act2ReceivedICCMap, Map<String, Set<String>> map) {
+        for (String act : act2ReceivedICCMap.keySet()) {
+            if (!map.containsKey(act)) continue;
+            Set<ICCMsg> iccMsgs = act2ReceivedICCMap.get(act);
+            //从map里提取extra及其对应的具体值
+            Set<String> actual_extras = map.get((act));
+            Map<String, String> key2val = new HashMap<>();
+            for (String actual_extra : actual_extras) {  //eg:String-message_reference=null
+                String key = actual_extra.split("=")[0];
+                if (key.split("-")[0].contains("[]"))
+                    key = key.replace("[]", "Array");
+                String val = actual_extra.split("=")[1];
+                key2val.put(key, val);
+            }
+            for (ICCMsg iccMsg : iccMsgs) {
+                if (iccMsg.extras.size() > 0) {
+                    Set<String> new_extraset = new HashSet<>();
+                    for (String extra : iccMsg.extras) {
+                        //一般情况：String-message_reference
+                        //带Bundle：Bundle-app_data->(String-com.fsck.k9.search_account,String-com.fsck.k9.search_folder)
+                        if (extra.split("->")[0].contains("Bundle")) {
+                            StringBuilder sb = new StringBuilder();
+                            sb.append(extra.split("->")[0]);
+                            sb.append("->(");
+                            String s = extra.substring(extra.indexOf("(") + 1, extra.indexOf(")"));
+                            for (String s1 : s.split(",")) {
+                                if (key2val.containsKey(s1)) {
+                                    String tmp = s1 + "=" + key2val.get(s1);
+                                    sb.append(tmp);
+                                    sb.append(",");
+//                                    new_extraset.add(extra + "=" + key2val.get(extra));
+                                } else {
+                                    sb.append(s1);
+//                                    new_extraset.add(s1);
+                                    sb.append(",");
+                                }
+                            }
+                            sb.append(")");
+                            new_extraset.add(sb.toString().replace(",)", ")"));
+                        } else {
+
+                            if (key2val.containsKey(extra)) {
+                                new_extraset.add(extra + "=" + key2val.get(extra));
+                            } else
+                                new_extraset.add(extra);
+                        }
+                    }
+                    iccMsg.extras = new_extraset;
+                }
+            }
+        }
     }
 
 
@@ -168,7 +224,7 @@ public class TestcaseGenerator {
             else str += "null;;";
 
             //将notEmpty改为“？”
-            str = str.replace("notEmpty","?");
+            str = str.replace("notEmpty", "?");
 
             //提取得到的基本属性加入ACDTStr中
             //到这一步，ACDTStr里只有一个字符串，分别表示acdt四种基本属性的值，中间用两个分号隔开
@@ -178,17 +234,18 @@ public class TestcaseGenerator {
             if (msg.extras != null) {
                 Set<String> keyHistory = new HashSet<>();  //用来排掉一些变量名相同的额外属性
                 for (String extra : msg.extras) {
-                    if(extra.contains("-null"))
+                    if (extra.contains("-null"))
                         continue;  //避免activity接收的extras中有这样的：Serializable-null，否则java文件会出现MySerializable null = new MySerializable();
                     //bundle类型额外处理,extra = "Bundle-app_data->(String-com.fsck.k9.search_account,String-com.fsck.k9.search_folder)"
                     //处理后ACDTStr应该有这样的效果：null;;null;;null;;null;;Extras->ExtrasObj->ExtrasObj,(,String->com.ichi2.anki.LoadPronounciationActivity.extra.source->abcde,),
-                    if(extra.contains("Bundle")){
+                    if (extra.contains("Bundle")) {
                         String[] split = extra.split("->");
-                        String bundleName =split[0].split("-")[1];
+                        String bundleName = split[0].split("-")[1];
                         //基本属性传入两个ACDTStr中
                         Set<String> ACDTStr1 = new HashSet<String>(ACDTStr);
 //                        Set<String> ACDTStr2 = new HashSet<String>(ACDTStr);
-                        handleExtraAccordingToTypeNormal("Bundle",bundleName,ACDTStr1);
+
+                        handleExtraAccordingToTypeNormal("Bundle", bundleName, null, ACDTStr1);
 //                        handleExtraAccordingToTypeAbnormal("Bundle",bundleName,ACDTStr2);
 
                         ACDTStr.clear();
@@ -197,18 +254,21 @@ public class TestcaseGenerator {
                         //加左括号
                         Set<String> copy = new HashSet<>(ACDTStr);
                         for (String acdt : copy) {
-                            ACDTStr.add(acdt +"(,");
+                            ACDTStr.add(acdt + "(,");
                             ACDTStr.remove(acdt);
                         }
 
                         Set<String> ACDTStr3 = new HashSet<String>(ACDTStr);
                         Set<String> ACDTStr4 = new HashSet<String>(ACDTStr);
                         String[] kvs = split[1].split(",");
-                        for(String kv : kvs){
-                            kv = kv.replace("(","").replace(")","");
-                            if(kv.contains("-")){
+                        for (String kv : kvs) {
+                            kv = kv.replace("(", "").replace(")", "");
+                            if (kv.contains("-")) {
                                 String[] k_v = kv.split("-");
-                                handleExtraAccordingToTypeNormal(k_v[0],k_v[1],ACDTStr3);
+                                String actual_val = null;
+                                if (kv.contains("="))
+                                    actual_val = kv.split("=")[1];
+                                handleExtraAccordingToTypeNormal(k_v[0], k_v[1], actual_val, ACDTStr3);
 //                                handleExtraAccordingToTypeAbnormal(k_v[0],k_v[1],ACDTStr4);
                             }
                         }
@@ -217,22 +277,26 @@ public class TestcaseGenerator {
                         ACDTStr.addAll(ACDTStr4);
                         Set<String> copy1 = new HashSet<String>(ACDTStr);
                         for (String acdt : copy1) {
-                            ACDTStr.add(acdt +"),");
+                            ACDTStr.add(acdt + "),");
                             ACDTStr.remove(acdt);
                         }
-                    }else if (!extra.equals("") && extra.contains("-")) {
-                        String[] extra_pair = extra.split("-");
+                    } else if (!extra.equals("") && extra.contains("-")) {
+                        String actual_val = null;
+                        if (extra.contains("=")) {
+                            actual_val = extra.split("=")[1];
+                        }
+                        String[] extra_pair = extra.split("=")[0].split("-");
                         String extra_type = extra_pair[0];
-                        if(keyHistory.contains(extra_pair[1])) continue;
+                        if (keyHistory.contains(extra_pair[1])) continue;
                         String extra_key = extra_pair[1];
-                        extra_key = extra_key.replace(")",""); //给一些带了左括号的去掉左括号
+                        extra_key = extra_key.replace(")", ""); //给一些带了左括号的去掉左括号
 
                         //基本属性传入两个ACDTStr中
                         Set<String> ACDTStr1 = new HashSet<String>(ACDTStr);
 //                        Set<String> ACDTStr2 = new HashSet<String>(ACDTStr);
 
                         //根据类型正常与否处理额外参数并传入不同的Set<String>中
-                        handleExtraAccordingToTypeNormal(extra_type, extra_key, ACDTStr1);
+                        handleExtraAccordingToTypeNormal(extra_type, extra_key, actual_val, ACDTStr1);
 //                        handleExtraAccordingToTypeAbnormal(extra_type, extra_key, ACDTStr2);
 
                         ACDTStr.clear();
@@ -247,23 +311,24 @@ public class TestcaseGenerator {
             //对变量名去重
             //举例：String->date->abcde,Parcelable->target->ParcelableObj,int->action->Integer.MIN_VALUE,Serializable->routine_id->SerializableObj,Bundle->alarm_params->BundleObj,(,Parcelable->alarm_params->ParcelableObj,),
             Set<String> diffSet = new HashSet<>();
-            Map<String,String> old2new = new HashMap<>();
+            Map<String, String> old2new = new HashMap<>();
             for (String acdt : ACDTStr) {
                 String[] s = acdt.split(";;");
-                if(s.length <= 4) continue;
+                if (s.length <= 4) continue;
                 String[] extras = s[4].split(",");
                 for (String extra : extras) {
-                    if(extra.equals("(") || extra.equals(")")) continue;
+                    if (extra.equals("(") || extra.equals(")") || !extra.contains("->")) continue;
                     String type = extra.split("->")[0];
                     String value = extra.split("->")[2];
+
                     String variable = extra.split("->")[1];
-                    if(!diffSet.contains(variable)){
+                    if (!diffSet.contains(variable)) {
                         diffSet.add(variable);
-                    }else {
+                    } else {
                         variable = variable + 1;
-                        String extraNew = type +"->"+ variable+"->"+value;
-                        String acdtNew = acdt.replace(extra,extraNew);
-                        old2new.put(acdt,acdtNew);
+                        String extraNew = type + "->" + variable + "->" + value;
+                        String acdtNew = acdt.replace(extra, extraNew);
+                        old2new.put(acdt, acdtNew);
                     }
                 }
                 diffSet = new HashSet<>();
@@ -282,7 +347,6 @@ public class TestcaseGenerator {
             }
 
             for (String s : ACDTStr) {
-
                 generateJavaFile(s, actName);
             }
 
@@ -501,7 +565,7 @@ public class TestcaseGenerator {
                 content += "\t\t" + extra_key + ".add(new MyParcelable());\n";
             } else if (extra_type.contains("ArrayList")) {
                 String type = extra_type.replace("ArrayList", "");
-                if(type.equals("")) type = "String";
+                if (type.equals("")) type = "String";
                 content = "\t\tArrayList<" + type + "> " + extra_key + " = new ArrayList<" + type
                         + ">();\n";
                 if (!decSet.contains(content)) {
@@ -511,11 +575,20 @@ public class TestcaseGenerator {
                 }
             } else if (extra_type.contains("Array")) {
                 String type = extra_type.replace("Array", "");
-                content = "\t\t" + type + "[] " + extra_key + " = new " + type + "[1];\n";
+
+                //数组直接在这里初始化
+                // byteArray->search_bytes->[5:0:0:0]   ====>  byteArray->search_bytes->{5,0,0,0}
+                String extra_value = ss[2];
+                if(extra_value.contains("[")){
+                    extra_value = extra_value.replace("[", "{").replace("]", "}").replace(":", ",");
+                }else{
+                    extra_value = "{"+extra_value+"}";
+                }
+                content = "\t\t" + type + "[] " + extra_key + " = new " + type + "[]" + extra_value + ";\n";
                 if (!decSet.contains(content)) {
                     decSet.add(content);
                 } else {
-                    content = "\t\t" + extra_key + " = new " + type + "[1];\n";
+                    content = "\t\t" + extra_key + " = new " + type + "[]" + extra_value + ";\n";
                 }
             }
             IOUtils.write_to_file(java_file_path, content, true);
@@ -535,6 +608,7 @@ public class TestcaseGenerator {
         } else {
             String extra_key = Utils.refineString(ss[1]);
             String extra_value = ss[2];
+
             // there is something wrong when param contains "."
             extra_key = extra_key.replace(".", "_dot_");
             extra_key = extra_key.replace("-", "_line_");
@@ -560,8 +634,8 @@ public class TestcaseGenerator {
                     }
                 }
                 //TODO 关于bundle处理，后面再改5.24，6.3处理完成
-                if (extra_type.equals("Bundle"))
-                    extra_value = "\"" + extra_value + "\"";
+//                if (extra_type.equals("Bundle"))
+//                    extra_value = "\"" + extra_value + "\"";
                 content += "\t\t" + objName + "." + putAPI + "(\"" + extra_key.replace("_dot_", ".").replace("_maohao_", ":").replace("_line_", "-")
                         + "\", " + extra_value + ");\n";
             }
@@ -597,30 +671,59 @@ public class TestcaseGenerator {
         return "\"" + acdt + "\"";
     }
 
-    private void handleExtraAccordingToTypeNormal(String extra_type, String extra_key, Set<String> ACDTStr) {
+    private void handleExtraAccordingToTypeNormal(String extra_type, String extra_key, String actua_val, Set<String> ACDTStr) {
         Set<String> copy = new HashSet<String>(ACDTStr);
         for (String acdt : copy) {
             Random r = new Random();
             int n = r.nextInt(2);
             if (extra_type.contains("Int") || extra_type.contains("int")) {
-                ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + 0 + ",");
+                if (actua_val == null)
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + 0 + ",");
+                else {
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + actua_val + ",");
+                }
             } else if (extra_type.contains("Float") || extra_type.contains("float")) {
-                ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + 0.0 + ",");
+                if (actua_val == null)
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + 0.0 + ",");
+                else
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + actua_val + ",");
             } else if (extra_type.contains("Double") || extra_type.contains("double")) {
-                ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + 0.0 + ",");
+                if (actua_val == null)
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + 0.0 + ",");
+                else
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + actua_val + ",");
             } else if (extra_type.contains("Short") || extra_type.contains("short")) {
-                ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + 0.0 + ",");
+                if (actua_val == null)
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + 0.0 + ",");
+                else
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + actua_val + ",");
             } else if (extra_type.contains("Long") || extra_type.contains("long")) {
-                ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + 0 + ",");
+                if (actua_val == null)
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + 0 + ",");
+                else
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + actua_val + ",");
             } else if (extra_type.contains("Byte") || extra_type.contains("byte")) {
-                ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + 0 + ",");
+                if (actua_val == null)
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + 0 + ",");
+                else
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + actua_val + ",");
             } else if (extra_type.contains("String") || extra_type.contains("CharSequence")) {
-                ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + "abcde" + ",");
+                if (actua_val == null)
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + "abcde" + ",");
+                else
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + actua_val + ",");
             } else if (extra_type.contains("Char") || extra_type.contains("char")) {
-                ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + "a" + ",");
+                if (actua_val == null)
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + "a" + ",");
+                else
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + actua_val + ",");
             } else if (extra_type.contains("Boolean") || extra_type.contains("boolean")) {
-                if (n == 1) ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + "true" + ",");
-                else ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + "false" + ",");
+                if (actua_val == null)
+                    if (n == 1) ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + "true" + ",");
+                    else ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + "false" + ",");
+                else
+                    ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + actua_val + ",");
+
             } else {
                 ACDTStr.add(acdt + extra_type + "->" + extra_key + "->" + extra_type + "Obj" + ",");
             }

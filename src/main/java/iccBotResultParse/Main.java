@@ -49,20 +49,20 @@ public class Main {
 //            instrumentor.instrument(appName);
 
 
-            //icc解析模块
+//            //icc解析模块
             Map<String, Set<ICCMsg>> activity2receivedICCMap = new HashMap<>(); //存储发送给activity的iccmsg
-
-            //从CTG.xml解析intent
-//            resolveIntentFromCTGfile(activity2receivedICCMap);
+//
+//            //从CTG.xml解析intent
+            resolveIntentFromCTGfile(activity2receivedICCMap);
 //            //从manifest文件里的intentfile解析组件间通信
-//            resolveIntentFromManifest(activity2receivedICCMap);
+            resolveIntentFromManifest(activity2receivedICCMap);
 //            //从componentInfo.xml文件里解析intent
-//            resolveIntentFromReceivedIntent(activity2receivedICCMap);
-
-            //使用monkey进行常规gui测试后得到的动态icc里构建文件
-            resolveIntentFromDynamicTest(appName,activity2receivedICCMap);
-
-            TestcaseGenerator testcaseGenerator = new TestcaseGenerator(activity2receivedICCMap);
+            resolveIntentFromReceivedIntent(activity2receivedICCMap);
+//
+//            //使用monkey进行常规gui测试后得到的动态icc里获取extra属性的实际值
+            Map<String, Set<String>> map = resolveIntentFromDynamicTest(Global.v().getAppModel().appName, activity2receivedICCMap);
+//
+            TestcaseGenerator testcaseGenerator = new TestcaseGenerator(activity2receivedICCMap, map);
             testcaseGenerator.generateTestApp();
 
             long endtime = System.currentTimeMillis();
@@ -165,8 +165,6 @@ public class Main {
                 //TODO CTG.xml的隐式intent要记得向下怎么处理
 //                if(destinationElement.attributeValue("desType").equals("Activity") && ConstantUtils.activitySet.contains(destinationElement.getName())) {
                 if (Global.v().getAppModel().activityMap.keySet().contains(destinationElement.attributeValue("name"))) {
-
-
                     //对一条ctg边目的为activity的icc构建
                     ICCMsg iccMsg = new ICCMsg();
                     if (destinationElement.attributeValue("action") != null)
@@ -383,30 +381,123 @@ public class Main {
     }
 
     //此方法读取通过monkey得到的动态icc构造icc
-    public static void resolveIntentFromDynamicTest(String app_name, Map<String, Set<ICCMsg>> activity2receivedICCMap) {
+    public static Map<String, Set<String>> resolveIntentFromDynamicTest(String app_name, Map<String, Set<ICCMsg>> activity2receivedICCMap) {
         String logcatFilePath = "script/fuzzing_res";
         File logcatFile = new File(logcatFilePath + File.separator + app_name + ".logcat");
+        Map<String, Set<String>> map = new HashMap<>(); //存放动态运行时得到的act对应的实际extraSet
 
         try {
             BufferedReader reader = new BufferedReader(new FileReader(logcatFile));
             String line = reader.readLine();
-            while(line != null){
-                if(line.contains("qiu-tag")){
+
+            String pre_act_name = "";  //可能多次进入同一个activity
+            Set<String> extraSet = new HashSet<>();
+            String lastLine = "";
+//            Set<String> actionSet = new HashSet<>();
+//            Set<String> categorySet = new HashSet<>();
+//            Set<String> dataSet = new HashSet<>();
+//            Set<String> typeSet = new HashSet<>();
+            while (line != null) {
+//09-07 16:41:44.911 16500 16500 I qiu-tag : dev.ukanth.ufirewall.activity.AppDetailActivity:extra_int_appid=10162
+//09-07 16:43:04.641 17908 17908 I qiu-tag : es.usc.citius.servando.calendula.settings.CalendulaSettingsActivity:extra_boolean_show_db_dialog=false
+//09-07 16:40:53.611 16415 16454 I qiu-tag : com.integreight.onesheeld.MainActivity:basic_action=android.intent.action.MAIN
+                if (line.contains("qiu-tag") && line.contains("extra")) {
                     String[] split = line.split(" : ")[1].split(":");
                     String act_name = split[0];
                     String icc_msg = split[1];
 
-                    String[] split1 = icc_msg.split("_");
-                    String type = split1[0];
-                    String key = split1[1].split("=")[0];
-                    String val = split1[1].split("=")[1];
+                    String tmp = icc_msg.split("=")[0];
+                    String datatype = tmp.split("_")[1];
+                    String key = tmp.replace("extra_" + datatype + "_", datatype + "-");
+                    String val;
 
-                    
+                    if(icc_msg.split("=").length < 2)
+                        val = "null";
+                    else
+                        val = icc_msg.split("=")[1];
+                    //对于获取的值是数组，使用冒号分割.方便整合进代码里的时候做分割
+                    //byte[]_search_bytes=[5, 0, 0]  ===> byte[]_search_bytes=[5:0:0]
+                    if (datatype.contains("[]"))
+                        val = val.replace(", ", ":");
+
+
+                    if (pre_act_name.equals(act_name) || pre_act_name.equals("")) {
+                        if (!extraSet.contains(key))
+                            extraSet.add(key + "=" + val);
+                        else {
+                            extraSet.add(key + "=" + val);
+                            System.err.println("同一个activity的同一次启动过程中出现相同的属性！！");
+                            System.err.println(extraSet.toString());
+                        }
+                    }
+                    if ((!pre_act_name.equals(act_name) && !pre_act_name.equals(""))) {  //将某个act的extra存入map中
+                        if (map.get(pre_act_name) == null) {
+                            map.put(pre_act_name, new HashSet<>());
+                            map.get(pre_act_name).addAll(extraSet);
+                        } else {
+                            Set<String> preExtraSet = map.get(pre_act_name);
+                            preExtraSet.addAll(extraSet);
+                        }
+                        extraSet = new HashSet<>();
+                        extraSet.add(key + "=" + val);
+
+                    }
+                    pre_act_name = act_name;
+
+                }
+                lastLine = line;
+                line = reader.readLine();
+
+                if (line == null) {
+                    //处理最后一行
+                    //只处理extra，basic直接跳到最后
+                    if(lastLine.contains("extra")){
+                        String[] split = lastLine.split(" : ")[1].split(":");
+                        String act_name = split[0];
+                        String icc_msg = split[1];
+
+                        String tmp = icc_msg.split("=")[0];
+                        String datatype = tmp.split("_")[1];
+                        String key = tmp.replace("extra_" + datatype + "_", datatype + "-");
+                        String val = icc_msg.split("=")[1];
+                        //最后一行仍然是要将extra加进来，不要basic
+                        //这里如果是和之前的一样act
+                        if (pre_act_name.equals(act_name)) {
+                            if (!extraSet.contains(key))
+                                extraSet.add(key + "=" + val);
+                            else {
+                                extraSet.add(key + "=" + val);
+                                System.err.println("同一个activity的同一次启动过程中出现相同的属性！！");
+                                System.err.println(extraSet.toString());
+                            }
+                            //如果不是一样的act
+                        } else {  //将某个act的extra存入map中
+                            if (map.get(pre_act_name) == null) {
+                                map.put(pre_act_name, new HashSet<>());
+                                map.get(pre_act_name).addAll(extraSet);
+                            } else {
+                                Set<String> preExtraSet = map.get(pre_act_name);
+                                preExtraSet.addAll(extraSet);
+                            }
+                            extraSet = new HashSet<>();
+                            extraSet.add(key + "=" + val);
+                        }
+                    }
+
+                    //将extra加入map
+                    if (map.get(pre_act_name) == null) {
+                        map.put(pre_act_name, new HashSet<>());
+                        map.get(pre_act_name).addAll(extraSet);
+                    } else {
+                        Set<String> preExtraSet = map.get(pre_act_name);
+                        preExtraSet.addAll(extraSet);
+                    }
                 }
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        return map;
     }
 }

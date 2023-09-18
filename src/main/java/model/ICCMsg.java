@@ -13,7 +13,7 @@ import java.util.Set;
  */
 
 public class ICCMsg {
-//     String source;
+    //     String source;
 //     String destination;
     public String action;
     public Set<String> category = new HashSet<String>();
@@ -25,7 +25,8 @@ public class ICCMsg {
     public String type;
     public Set<String> extras = new HashSet<String>();
 
-    public ICCMsg(){}
+    public ICCMsg() {
+    }
 
     public ICCMsg(String action2, Set<String> category2, String data2, String scheme2, String host2, String path2, String port2,
                   String type2, Set<String> extra2) {
@@ -39,6 +40,7 @@ public class ICCMsg {
         type = type2;
         extras = new HashSet<>(extra2);
     }
+
     public ICCMsg(String action2, Set<String> category2, String data2, String scheme2, String host2, String path2, String port2,
                   String type2) {
         action = action2;
@@ -63,9 +65,9 @@ public class ICCMsg {
         if (action != null && !action.equals(""))
             res += " ##action:" + action;
         if (category != null && category.size() > 0)
-            res += " ##category:" ;
-        if (!PrintUtils.printSet(category,", ").equals(""))
-            res += PrintUtils.printSet(category,", ");
+            res += " ##category:";
+        if (!PrintUtils.printSet(category, ", ").equals(""))
+            res += PrintUtils.printSet(category, ", ");
         if (data != null && !data.equals(""))
             res += " ##data:" + data;
         if (scheme != null && !scheme.equals(""))
@@ -80,8 +82,8 @@ public class ICCMsg {
             res += " ##type:" + type;
         if (extras != null && extras.size() > 0)
             res += " ##extras:";
-        if (!PrintUtils.printSet(extras," ").equals(""))
-            res += PrintUtils.printSet(extras," ");
+        if (!PrintUtils.printSet(extras, " ").equals(""))
+            res += PrintUtils.printSet(extras, " ");
 //        if(flag != null && !flag.equals(""))
 //            res+= "## flag:" + flag;
         if (res.equals(""))
@@ -91,7 +93,7 @@ public class ICCMsg {
 
     @Override
     public ICCMsg clone() throws CloneNotSupportedException {
-        ICCMsg icc = new ICCMsg(action, category, data, scheme, host, path, port,type , extras);
+        ICCMsg icc = new ICCMsg(action, category, data, scheme, host, path, port, type, extras);
         return icc;
     }
 

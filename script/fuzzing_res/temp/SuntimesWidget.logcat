@@ -1,0 +1,31 @@
+--------- beginning of main
+09-06 09:40:19.341  7206  7206 I qiu-tag : com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity:extra_boolean_showBack=false
+09-06 09:40:19.342  7206  7206 I qiu-tag : com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity:basic_action=null
+09-06 09:40:19.342  7206  7206 I qiu-tag : com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity:basic_data_uri=null_value
+09-06 09:40:19.342  7206  7206 I qiu-tag : com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity:extra_long_selectedAlarm=-1
+--------- beginning of system
+--------- beginning of crash
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: FATAL EXCEPTION: main
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: Process: com.forrestguice.suntimeswidget, PID: 7206
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: java.lang.IllegalArgumentException: Out of range: -2.02558871687338419E18
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at net.time4j.calendar.astro.JulianDay.check(Unknown Source:117)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at net.time4j.calendar.astro.JulianDay.<init>(Unknown Source:3)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at net.time4j.calendar.astro.JulianDay.ofEphemerisTime(Unknown Source:4)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at net.time4j.calendar.astro.MoonPhase.atLunation(Unknown Source:860)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at net.time4j.calendar.astro.MoonPhase.after(Unknown Source:4)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at com.forrestguice.suntimeswidget.calculator.time4a.Time4ASuntimesCalculator.getMoonPhaseNextDate(Unknown Source:18)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at com.forrestguice.suntimeswidget.calculator.SuntimesMoonData.calculate(Unknown Source:509)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity.initEventDialog(Unknown Source:23)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity.showAddDialog(Unknown Source:36)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity$3.onClick(Unknown Source:4)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at android.view.View.performClick(View.java:6599)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6576)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at android.view.View.access$3100(View.java:780)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25899)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-06 09:40:22.180  7206  7206 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
