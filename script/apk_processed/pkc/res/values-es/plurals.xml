@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"%d claves secretas (privadas) erróneas ignoradas. Quizá exportó con la opción
+ --export-secret-subkeys
+Asegúrese de que exporta con
+ --export-secret-keys
+en su lugar.\""</item>
+        <item quantity="one">"%d clave secreta (privada) errónea ignorada. Quizá exportó con la opción
+ --export-secret-subkeys
+Asegúrese de que exporta con
+ --export-secret-keys
+en su lugar.\""</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">¡La certificación de %d claves falló!</item>
+        <item quantity="one">¡La certificación falló!</item>
+    </plurals>
+    <plurals name="certify_keys_ok">
+        <item quantity="other">Se confirmaron %1$d claves%2$s con éxito.</item>
+        <item quantity="one">Se confirmó una clave%2$s con éxito.</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">¡La certificación falló para %d claves!</item>
+        <item quantity="one">¡La certificación falló!</item>
+    </plurals>
+    <plurals name="delete_fail">
+        <item quantity="other">Error borrando %1$d claves.</item>
+        <item quantity="one">Error borrando una clave.</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">Se borraron con éxito %1$d claves%2$s.</item>
+        <item quantity="one">Se borró con éxito una clave%2$s.</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">%1$d claves borradas con éxito</item>
+        <item quantity="one">Una clave borrada con éxito</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">, pero no se pudieron borrar %1$d claves%2$s.</item>
+        <item quantity="one">, pero no se pudo borrar una clave%2$s.</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">¡Fallo al importar %d claves!</item>
+        <item quantity="one">¡Fallo al importar!</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">%1$d claves%2$s importadas con éxito.</item>
+        <item quantity="one">Clave%2$s importada con éxito.</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_1">
+        <item quantity="other">Se importaron con éxito %1$d claves</item>
+        <item quantity="one">Se importó con éxito una clave</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_2">
+        <item quantity="other">y se actualizaron %1$d claves%2$s.</item>
+        <item quantity="one">y se actualizó una clave%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">%1$d claves%2$s actualizadas con éxito.</item>
+        <item quantity="one">Clave%2$s actualizada con éxito.</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">¡La importación fallo para %d claves!</item>
+        <item quantity="one">¡La importación falló para una clave!</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d claves seleccionadas.</item>
+        <item quantity="one">1 clave seleccionada.</item>
+    </plurals>
+    <plurals name="linked_id_expand">
+        <item quantity="other">Hay %d tipos de identidad desconocida más</item>
+        <item quantity="one">Hay un tipo de identidad desconocida más</item>
+    </plurals>
+    <plurals name="msg_backup">
+        <item quantity="other">Copia de seguridad con %d claves</item>
+        <item quantity="one">Copia de seguridad con una clave</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uats">
+        <item quantity="other">Certificando %1$d atributos de usuario para la clave %2$s</item>
+        <item quantity="one">Certificando un atributo de usuario para la clave %2$s</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uids">
+        <item quantity="other">Certificando %1$d identidades de usuario para la clave %2$s</item>
+        <item quantity="one">Certificando una identidad de usuario para la clave %2$s</item>
+    </plurals>
+    <plurals name="msg_del">
+        <item quantity="other">Borrando %d claves</item>
+        <item quantity="one">Borrando una clave</item>
+    </plurals>
+    <plurals name="msg_del_fail">
+        <item quantity="other">No se pudieron borrar %d claves</item>
+        <item quantity="one">No se pudo borrar una clave</item>
+    </plurals>
+    <plurals name="msg_del_ok">
+        <item quantity="other">%d claves borradas con éxito</item>
+        <item quantity="one">Clave borrada con éxito</item>
+    </plurals>
+    <plurals name="msg_import">
+        <item quantity="other">Importando %d claves</item>
+        <item quantity="one">Importando clave</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">Ignorando %s certificados publicados por claves públicas desconocidas</item>
+        <item quantity="one">Ignorando un certificado publicado por una clave pública desconocida</item>
+    </plurals>
+    <plurals name="msg_ip_uid_certs_unknown">
+        <item quantity="other">Ignorando %s certificados publicados por claves públicas desconocidas</item>
+        <item quantity="one">Ignorando un certificado publicado por una clave pública desconocida</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">Clasificando identidades de usuario (usando %s claves de confianza)</item>
+        <item quantity="one">Clasificando identidades de usuario (usando una clave de confianza)</item>
+    </plurals>
+    <plurals name="msg_kc_success_bad">
+        <item quantity="other">Canonicalización del juego de claves completada, se eliminaron %d certificados erróneos</item>
+        <item quantity="one">Canonicalización del juego de claves completada, se eliminó un certificado erróneo</item>
+    </plurals>
+    <plurals name="msg_kc_success_redundant">
+        <item quantity="other">Canonicalización del juego de claves completada, se eliminaron %d certificados redundantes</item>
+        <item quantity="one">Canonicalización del juego de claves completada, se eliminó un certificado redundante</item>
+    </plurals>
+    <plurals name="msg_trust_count">
+        <item quantity="other">Actualizando %d claves</item>
+        <item quantity="one">Actualizando 1 clave</item>
+    </plurals>
+    <plurals name="n_authorities">
+        <item quantity="other">%d autoridades</item>
+        <item quantity="one">%d autoridad</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d claves</item>
+        <item quantity="one">1 clave</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d servidores de claves</item>
+        <item quantity="one">%d servidor de claves</item>
+    </plurals>
+    <plurals name="passp_cache_notif_n_keys">
+        <item quantity="other">%d contraseñas guardadas</item>
+        <item quantity="one">%d contraseña guardada</item>
+    </plurals>
+    <plurals name="security_token_error_pin">
+        <item quantity="other">"¡PIN incorrecto!
+Le quedan %d intentos."</item>
+        <item quantity="one">"¡PIN incorrecto!
+Le queda %d intento."</item>
+    </plurals>
+    <plurals name="token_unlock_attempts">
+        <item quantity="other">Le quedan %d intentos</item>
+        <item quantity="one">Le queda 1 intento</item>
+    </plurals>
+</resources>

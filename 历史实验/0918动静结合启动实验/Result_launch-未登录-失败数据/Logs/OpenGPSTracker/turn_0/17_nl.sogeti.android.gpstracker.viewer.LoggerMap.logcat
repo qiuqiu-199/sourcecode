@@ -1,0 +1,70 @@
+--------- beginning of main
+--------- beginning of system
+09-19 00:17:46.299 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><clinit>()V
+09-19 00:17:46.299 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><init>()V
+09-19 00:17:46.299 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;--->onCreate()Z
+09-19 00:17:46.299 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/db/DatabaseHelper;---><init>(Landroid/content/Context;)V
+09-19 00:17:46.305 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap;---><init>()V
+09-19 00:17:46.331 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:17:46.394 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/util/UnitsI18n;---><init>(Landroid/content/Context;)V
+09-19 00:17:46.394 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/util/UnitsI18n$1;---><init>(Lnl/sogeti/android/gpstracker/util/UnitsI18n;)V
+09-19 00:17:46.394 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/util/UnitsI18n;--->initBasedOnPreferences(Landroid/content/SharedPreferences;)V
+09-19 00:17:46.395 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/util/UnitsI18n;--->setToDefault()V
+09-19 00:17:46.395 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/util/UnitsI18n;--->init(Landroid/content/res/Resources;)V
+09-19 00:17:46.395 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/logger/GPSLoggerServiceManager;---><init>(Landroid/content/Context;)V
+09-19 00:17:46.397 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap$1;---><init>(Lnl/sogeti/android/gpstracker/viewer/LoggerMap;Ljava/lang/String;Ljava/util/concurrent/Semaphore;)V
+09-19 00:17:46.397 21008 21028 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap$1;--->run()V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/proxy/MapViewProxy;---><init>()V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/proxy/ProjectionProxy;---><init>()V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/proxy/MapControllerProxy;---><init>()V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap;--->updateMapProvider()V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/proxy/MapViewProxy;--->setMap(Landroid/view/View;)V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/proxy/MapControllerProxy;--->setController(Ljava/lang/Object;)V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/proxy/ProjectionProxy;--->setProjection(Ljava/lang/Object;)V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/proxy/MapViewProxy;--->setBuiltInZoomControls(Z)V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/proxy/MapViewProxy;--->getOverlays()Ljava/util/List;
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap;--->updateGoogleOverlays()V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/proxy/MapViewProxy;--->setSatellite(Z)V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/proxy/MapViewProxy;--->setTraffic(Z)V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/proxy/MyLocationOverlayProxy;---><init>(Landroid/content/Context;Lnl/sogeti/android/gpstracker/viewer/proxy/MapViewProxy;)V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/proxy/MapViewProxy;--->setBuiltInZoomControls(Z)V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/proxy/MapViewProxy;--->setClickable(Z)V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap;--->createListeners()V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap$3;---><init>(Lnl/sogeti/android/gpstracker/viewer/LoggerMap;)V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap$4;---><init>(Lnl/sogeti/android/gpstracker/viewer/LoggerMap;)V
+09-19 00:17:46.398 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap$5;---><init>(Lnl/sogeti/android/gpstracker/viewer/LoggerMap;)V
+09-19 00:17:46.399 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap$6;---><init>(Lnl/sogeti/android/gpstracker/viewer/LoggerMap;)V
+09-19 00:17:46.399 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap$7;---><init>(Lnl/sogeti/android/gpstracker/viewer/LoggerMap;)V
+09-19 00:17:46.399 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap$8;---><init>(Lnl/sogeti/android/gpstracker/viewer/LoggerMap;)V
+09-19 00:17:46.399 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap$9;---><init>(Lnl/sogeti/android/gpstracker/viewer/LoggerMap;)V
+09-19 00:17:46.399 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap$10;---><init>(Lnl/sogeti/android/gpstracker/viewer/LoggerMap;)V
+09-19 00:17:46.399 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap$11;---><init>(Lnl/sogeti/android/gpstracker/viewer/LoggerMap;Landroid/os/Handler;)V
+09-19 00:17:46.399 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap$12;---><init>(Lnl/sogeti/android/gpstracker/viewer/LoggerMap;Landroid/os/Handler;)V
+09-19 00:17:46.399 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap$13;---><init>(Lnl/sogeti/android/gpstracker/viewer/LoggerMap;Landroid/os/Handler;)V
+09-19 00:17:46.399 21008 21008 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/LoggerMap$14;---><init>(Lnl/sogeti/android/gpstracker/viewer/LoggerMap;)V
+--------- beginning of crash
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: Process: nl.sogeti.android.gpstracker, PID: 21008
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{nl.sogeti.android.gpstracker/nl.sogeti.android.gpstracker.viewer.LoggerMap}: java.lang.NumberFormatException: null
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: Caused by: java.lang.NumberFormatException: null
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at java.lang.Long.parseLong(Long.java:557)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at java.lang.Long.parseLong(Long.java:636)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at nl.sogeti.android.gpstracker.viewer.LoggerMap.onRestoreInstanceState(LoggerMap.java:353)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at nl.sogeti.android.gpstracker.viewer.LoggerMap.onCreate(LoggerMap.java:223)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:17:46.399 21008 21008 E AndroidRuntime: 	... 11 more

@@ -1,0 +1,73 @@
+--------- beginning of main
+--------- beginning of system
+09-19 04:00:03.221 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/Application;---><init>()V
+09-19 04:00:03.221 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/ApplicationTemplate;---><init>()V
+09-19 04:00:03.221 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/ApplicationTemplate;--->onCreate()V
+09-19 04:00:03.221 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;---><clinit>()V
+09-19 04:00:03.221 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;--->scheduleAllTasks(Landroid/content/Context;)V
+09-19 04:00:03.221 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;---><clinit>()V
+09-19 04:00:03.221 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;---><init>(Ljava/lang/String;IJLjava/lang/Class;)V
+09-19 04:00:03.221 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;--->values()[Lnet/mabako/steamgifts/PeriodicTasks$Task;
+09-19 04:00:03.221 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;--->scheduleTask(Lnet/mabako/steamgifts/PeriodicTasks$Task;Landroid/content/Context;)V
+09-19 04:00:03.222 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$TaskData;---><init>(Landroid/app/AlarmManager;Landroid/app/PendingIntent;)V
+09-19 04:00:03.224 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/activities/CommonActivity;---><clinit>()V
+09-19 04:00:03.224 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/activities/SyncActivity;---><init>()V
+09-19 04:00:03.224 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/activities/CommonActivity;---><init>()V
+09-19 04:00:03.224 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/activities/BaseActivity;---><init>()V
+09-19 04:00:03.225 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/activities/CommonActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 04:00:03.226 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/activities/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 04:00:03.226 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/activities/BaseActivity;--->setTheme()Z
+09-19 04:00:03.229 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SGToolsUserData;---><clinit>()V
+09-19 04:00:03.229 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SGToolsUserData;---><init>()V
+09-19 04:00:03.229 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SGToolsUserData;--->clear()V
+09-19 04:00:03.229 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SGToolsUserData;---><init>()V
+09-19 04:00:03.229 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/activities/SyncActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 04:00:03.240 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/behavior/ScrollAwareFABBehavior;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+09-19 04:00:03.242 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/fragments/SyncFragment;---><init>()V
+09-19 04:00:03.242 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/activities/BaseActivity;--->loadFragment(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)V
+09-19 04:00:03.243 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/fragments/SyncFragment;--->onCreate(Landroid/os/Bundle;)V
+09-19 04:00:03.243 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/fragments/SyncFragment;--->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+09-19 04:00:03.251 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;---><clinit>()V
+09-19 04:00:03.251 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->getCurrent(Landroid/content/Context;)Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;
+09-19 04:00:03.251 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;---><init>()V
+09-19 04:00:03.251 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->clear()V
+09-19 04:00:03.251 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;---><init>()V
+09-19 04:00:03.251 22968 22968 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->isLoggedIn()Z
+--------- beginning of crash
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: Process: net.mabako.steamgifts, PID: 22968
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.net.mabako.steamgifts.MyParcelable
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5620)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5632)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at net.mabako.steamgifts.fragments.SyncFragment.onCreateView(SyncFragment.java:61)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.support.v4.app.Fragment.performCreateView(Fragment.java:2184)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1298)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveFragmentsToInvisible(FragmentManager.java:2323)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.executeOpsTogether(FragmentManager.java:2136)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.optimizeAndExecuteOps(FragmentManager.java:2092)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1998)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.support.v4.app.FragmentController.execPendingActions(FragmentController.java:388)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:607)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.support.v7.app.AppCompatActivity.onStart(AppCompatActivity.java:181)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:7165)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 04:00:03.255 22968 22968 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)

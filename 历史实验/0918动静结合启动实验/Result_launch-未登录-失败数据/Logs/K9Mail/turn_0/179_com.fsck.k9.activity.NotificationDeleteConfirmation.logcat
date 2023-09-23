@@ -1,0 +1,279 @@
+--------- beginning of system
+--------- beginning of main
+09-18 23:58:07.929 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;---><clinit>()V
+09-18 23:58:07.929 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$Theme;---><clinit>()V
+09-18 23:58:07.929 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$Theme;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.929 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$Theme;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/FontSizes;---><init>()V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$BACKGROUND_OPS;---><clinit>()V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$BACKGROUND_OPS;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$BACKGROUND_OPS;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$NotificationHideSubject;---><clinit>()V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$NotificationHideSubject;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$NotificationHideSubject;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$NotificationQuickDelete;---><clinit>()V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$NotificationQuickDelete;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$NotificationQuickDelete;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$LockScreenNotificationVisibility;---><clinit>()V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$LockScreenNotificationVisibility;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$LockScreenNotificationVisibility;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$SplitViewMode;---><clinit>()V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$SplitViewMode;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$SplitViewMode;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;---><init>()V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/AttachmentTempFileProvider;---><clinit>()V
+09-18 23:58:07.930 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/AttachmentTempFileProvider;---><init>()V
+09-18 23:58:07.931 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/EmailProvider;---><clinit>()V
+09-18 23:58:07.932 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/EmailProvider;---><init>()V
+09-18 23:58:07.932 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/EmailProvider;--->onCreate()Z
+09-18 23:58:07.932 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/DecryptedFileProvider;---><clinit>()V
+09-18 23:58:07.932 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/DecryptedFileProvider;---><init>()V
+09-18 23:58:07.932 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/AttachmentProvider;---><clinit>()V
+09-18 23:58:07.932 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/AttachmentProvider;---><init>()V
+09-18 23:58:07.932 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/AttachmentProvider;--->onCreate()Z
+09-18 23:58:07.932 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/RawMessageProvider;---><clinit>()V
+09-18 23:58:07.932 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/RawMessageProvider;---><init>()V
+09-18 23:58:07.932 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/RawMessageProvider;--->onCreate()Z
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider;---><clinit>()V
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider;---><init>()V
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider;--->onCreate()Z
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/helper/MessageHelper;--->getInstance(Landroid/content/Context;)Lcom/fsck/k9/helper/MessageHelper;
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/helper/MessageHelper;---><init>(Landroid/content/Context;)V
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$AccountsQueryHandler;---><init>(Lcom/fsck/k9/provider/MessageProvider;)V
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$ThrottlingQueryHandler;---><init>(Lcom/fsck/k9/provider/MessageProvider;Lcom/fsck/k9/provider/MessageProvider$QueryHandler;)V
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider;--->registerQueryHandler(Lcom/fsck/k9/provider/MessageProvider$QueryHandler;)V
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$ThrottlingQueryHandler;--->getPath()Ljava/lang/String;
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$AccountsQueryHandler;--->getPath()Ljava/lang/String;
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$MessagesQueryHandler;---><init>(Lcom/fsck/k9/provider/MessageProvider;)V
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$ThrottlingQueryHandler;---><init>(Lcom/fsck/k9/provider/MessageProvider;Lcom/fsck/k9/provider/MessageProvider$QueryHandler;)V
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider;--->registerQueryHandler(Lcom/fsck/k9/provider/MessageProvider$QueryHandler;)V
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$ThrottlingQueryHandler;--->getPath()Ljava/lang/String;
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$MessagesQueryHandler;--->getPath()Ljava/lang/String;
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$UnreadQueryHandler;---><init>(Lcom/fsck/k9/provider/MessageProvider;)V
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$ThrottlingQueryHandler;---><init>(Lcom/fsck/k9/provider/MessageProvider;Lcom/fsck/k9/provider/MessageProvider$QueryHandler;)V
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider;--->registerQueryHandler(Lcom/fsck/k9/provider/MessageProvider$QueryHandler;)V
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$ThrottlingQueryHandler;--->getPath()Ljava/lang/String;
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$UnreadQueryHandler;--->getPath()Ljava/lang/String;
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$1;---><init>(Lcom/fsck/k9/provider/MessageProvider;)V
+09-18 23:58:07.933 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->registerApplicationAware(Lcom/fsck/k9/K9$ApplicationAware;)V
+09-18 23:58:07.934 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->onCreate()V
+09-18 23:58:07.934 15296 15296 D M_InsDal: Lcom/fsck/k9/PRNGFixes;---><clinit>()V
+09-18 23:58:07.934 15296 15296 D M_InsDal: Lcom/fsck/k9/PRNGFixes;--->getBuildFingerprintAndDeviceSerial()[B
+09-18 23:58:07.934 15296 15296 D M_InsDal: Lcom/fsck/k9/PRNGFixes;--->getDeviceSerialNumber()Ljava/lang/String;
+09-18 23:58:07.934 15296 15296 D M_InsDal: Lcom/fsck/k9/PRNGFixes;--->apply()V
+09-18 23:58:07.934 15296 15296 D M_InsDal: Lcom/fsck/k9/PRNGFixes;--->applyOpenSSLFix()V
+09-18 23:58:07.934 15296 15296 D M_InsDal: Lcom/fsck/k9/PRNGFixes;--->installLinuxPRNGSecureRandom()V
+09-18 23:58:07.934 15296 15296 D M_InsDal: Lcom/fsck/k9/Globals;--->setContext(Landroid/content/Context;)V
+09-18 23:58:07.934 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$2;---><init>(Lcom/fsck/k9/K9;)V
+09-18 23:58:07.934 15296 15296 D M_InsDal: Lcom/fsck/k9/mail/K9MailLib;---><clinit>()V
+09-18 23:58:07.934 15296 15296 D M_InsDal: Lcom/fsck/k9/mail/K9MailLib$DefaultDebugStatus;---><init>()V
+09-18 23:58:07.934 15296 15296 D M_InsDal: Lcom/fsck/k9/mail/K9MailLib;--->setDebugStatus(Lcom/fsck/k9/mail/K9MailLib$DebugStatus;)V
+09-18 23:58:07.934 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->checkCachedDatabaseVersion()V
+09-18 23:58:07.934 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->setDatabasesUpToDate(Z)V
+09-18 23:58:07.935 15296 15296 D M_InsDal: Lcom/fsck/k9/Preferences;--->getPreferences(Landroid/content/Context;)Lcom/fsck/k9/Preferences;
+09-18 23:58:07.935 15296 15296 D M_InsDal: Lcom/fsck/k9/Preferences;---><init>(Landroid/content/Context;)V
+09-18 23:58:07.935 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;---><clinit>()V
+09-18 23:58:07.935 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getStorage(Landroid/content/Context;)Lcom/fsck/k9/preferences/Storage;
+09-18 23:58:07.935 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;---><init>(Landroid/content/Context;)V
+09-18 23:58:07.935 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->loadValues()V
+09-18 23:58:07.935 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->openDB()Landroid/database/sqlite/SQLiteDatabase;
+09-18 23:58:07.938 15296 15296 D M_InsDal: Lcom/fsck/k9/helper/Utility;---><clinit>()V
+09-18 23:58:07.938 15296 15296 D M_InsDal: Lcom/fsck/k9/helper/Utility;--->closeQuietly(Landroid/database/Cursor;)V
+09-18 23:58:07.938 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->isEmpty()Z
+09-18 23:58:07.938 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->edit()Lcom/fsck/k9/preferences/StorageEditor;
+09-18 23:58:07.938 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/StorageEditor;---><init>(Lcom/fsck/k9/preferences/Storage;)V
+09-18 23:58:07.938 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getAll()Ljava/util/Map;
+09-18 23:58:07.939 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/StorageEditor;--->copy(Landroid/content/SharedPreferences;)V
+09-18 23:58:07.939 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/StorageEditor;--->commit()Z
+09-18 23:58:07.939 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/StorageEditor;--->commitChanges()V
+09-18 23:58:07.939 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/StorageEditor$1;---><init>(Lcom/fsck/k9/preferences/StorageEditor;)V
+09-18 23:58:07.939 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->doInTransaction(Ljava/lang/Runnable;)V
+09-18 23:58:07.939 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->openDB()Landroid/database/sqlite/SQLiteDatabase;
+09-18 23:58:07.940 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/StorageEditor$1;--->run()V
+09-18 23:58:07.940 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->put(Ljava/util/Map;)V
+09-18 23:58:07.940 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->loadPrefs(Lcom/fsck/k9/Preferences;)V
+09-18 23:58:07.940 15296 15296 D M_InsDal: Lcom/fsck/k9/Preferences;--->getStorage()Lcom/fsck/k9/preferences/Storage;
+09-18 23:58:07.940 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.940 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->setDebug(Z)V
+09-18 23:58:07.940 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->updateLoggingStatus()V
+09-18 23:58:07.940 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getInt(Ljava/lang/String;I)I
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getInt(Ljava/lang/String;I)I
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/Account;---><clinit>()V
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/Account$MessageFormat;---><clinit>()V
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/Account$MessageFormat;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/Account$MessageFormat;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/Account$QuoteStyle;---><clinit>()V
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/Account$QuoteStyle;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/Account$QuoteStyle;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/Account$SortType;---><clinit>()V
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/Account$SortType;---><init>(Ljava/lang/String;IIIZ)V
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/Account$SortType;---><init>(Ljava/lang/String;IIIZ)V
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/Account$SortType;--->valueOf(Ljava/lang/String;)Lcom/fsck/k9/Account$SortType;
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/Account$SortType;--->values()[Lcom/fsck/k9/Account$SortType;
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.941 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/FontSizes;--->load(Lcom/fsck/k9/preferences/Storage;)V
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getInt(Ljava/lang/String;I)I
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getInt(Ljava/lang/String;I)I
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/FontSizes;--->loadMessageViewContentPercent(Lcom/fsck/k9/preferences/Storage;)V
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->contains(Ljava/lang/String;)Z
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getInt(Ljava/lang/String;I)I
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/GlobalSettings$SettingsUpgraderV31;--->convertFromOldSize(I)I
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getInt(Ljava/lang/String;I)I
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/FontSizes;--->setMessageViewContentAsPercent(I)V
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getInt(Ljava/lang/String;I)I
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$BACKGROUND_OPS;--->valueOf(Ljava/lang/String;)Lcom/fsck/k9/K9$BACKGROUND_OPS;
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$BACKGROUND_OPS;--->values()[Lcom/fsck/k9/K9$BACKGROUND_OPS;
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->setBackgroundOps(Lcom/fsck/k9/K9$BACKGROUND_OPS;)Z
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getInt(Ljava/lang/String;I)I
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getInt(Ljava/lang/String;I)I
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->setK9Language(Ljava/lang/String;)V
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getInt(Ljava/lang/String;I)I
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->setK9Theme(Lcom/fsck/k9/K9$Theme;)V
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getInt(Ljava/lang/String;I)I
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$Theme;--->values()[Lcom/fsck/k9/K9$Theme;
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->setK9MessageViewThemeSetting(Lcom/fsck/k9/K9$Theme;)V
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getInt(Ljava/lang/String;I)I
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$Theme;--->values()[Lcom/fsck/k9/K9$Theme;
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->setK9ComposerThemeSetting(Lcom/fsck/k9/K9$Theme;)V
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getBoolean(Ljava/lang/String;Z)Z
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->setUseFixedMessageViewTheme(Z)V
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/mail/internet/BinaryTempFileBody;--->setTempDirectory(Ljava/io/File;)V
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/mail/ssl/LocalKeyStore;--->setKeyStoreLocation(Ljava/lang/String;)V
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->setServicesEnabled(Landroid/content/Context;)V
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/Preferences;--->getPreferences(Landroid/content/Context;)Lcom/fsck/k9/Preferences;
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/Preferences;--->getAvailableAccounts()Ljava/util/Collection;
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/Preferences;--->getAccounts()Ljava/util/List;
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/Preferences;--->loadAccounts()V
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/Preferences;--->getStorage()Lcom/fsck/k9/preferences/Storage;
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/preferences/Storage;--->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+09-18 23:58:07.942 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->setServicesEnabled(Landroid/content/Context;ZLjava/lang/Integer;)V
+09-18 23:58:07.943 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->updateDeviceIdleReceiver(Landroid/content/Context;Z)V
+09-18 23:58:07.943 15296 15296 D M_InsDal: Lcom/fsck/k9/power/DeviceIdleManager;--->getInstance(Landroid/content/Context;)Lcom/fsck/k9/power/DeviceIdleManager;
+09-18 23:58:07.943 15296 15296 D M_InsDal: Lcom/fsck/k9/power/DozeChecker;---><init>(Landroid/content/Context;)V
+09-18 23:58:07.943 15296 15296 D M_InsDal: Lcom/fsck/k9/power/DozeChecker;--->isDeviceIdleModeSupported()Z
+09-18 23:58:07.943 15296 15296 D M_InsDal: Lcom/fsck/k9/power/DozeChecker;--->isAppWhitelisted()Z
+09-18 23:58:07.944 15296 15296 D M_InsDal: Lcom/fsck/k9/power/DeviceIdleManager$RealDeviceIdleManager;--->newInstance(Landroid/content/Context;)Lcom/fsck/k9/power/DeviceIdleManager$RealDeviceIdleManager;
+09-18 23:58:07.944 15296 15296 D M_InsDal: Lcom/fsck/k9/power/DeviceIdleManager$RealDeviceIdleManager;---><init>(Landroid/content/Context;)V
+09-18 23:58:07.944 15296 15296 D M_InsDal: Lcom/fsck/k9/power/DeviceIdleManager;---><init>()V
+09-18 23:58:07.944 15296 15296 D M_InsDal: Lcom/fsck/k9/power/DeviceIdleReceiver;---><init>(Landroid/os/PowerManager;)V
+09-18 23:58:07.944 15296 15296 D M_InsDal: Lcom/fsck/k9/power/DeviceIdleManager$RealDeviceIdleManager;--->unregisterReceiver()V
+09-18 23:58:07.944 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->registerReceivers()V
+09-18 23:58:07.944 15296 15296 D M_InsDal: Lcom/fsck/k9/service/StorageGoneReceiver;---><init>()V
+09-18 23:58:07.944 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$1;---><init>(Lcom/fsck/k9/K9;Ljava/util/concurrent/BlockingQueue;)V
+09-18 23:58:07.944 15296 15314 D M_InsDal: Lcom/fsck/k9/K9$1;--->run()V
+09-18 23:58:07.945 15296 15296 D M_InsDal: Lcom/fsck/k9/service/ShutdownReceiver;---><init>()V
+09-18 23:58:07.945 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;---><clinit>()V
+09-18 23:58:07.945 15296 15296 D M_InsDal: Lcom/fsck/k9/mail/Flag;---><clinit>()V
+09-18 23:58:07.945 15296 15296 D M_InsDal: Lcom/fsck/k9/mail/Flag;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.945 15296 15296 D M_InsDal: Lcom/fsck/k9/mail/Flag;---><init>(Ljava/lang/String;I)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/mail/Flag;--->values()[Lcom/fsck/k9/mail/Flag;
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->getInstance(Landroid/content/Context;)Lcom/fsck/k9/controller/MessagingController;
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/NotificationController;--->newInstance(Landroid/content/Context;)Lcom/fsck/k9/notification/NotificationController;
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/NotificationController;---><init>(Landroid/content/Context;Landroid/support/v4/app/NotificationManagerCompat;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/NotificationActionCreator;---><init>(Landroid/content/Context;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/CertificateErrorNotifications;---><init>(Lcom/fsck/k9/notification/NotificationController;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/AuthenticationErrorNotifications;---><init>(Lcom/fsck/k9/notification/NotificationController;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/SyncNotifications;---><init>(Lcom/fsck/k9/notification/NotificationController;Lcom/fsck/k9/notification/NotificationActionCreator;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/SendFailedNotifications;---><init>(Lcom/fsck/k9/notification/NotificationController;Lcom/fsck/k9/notification/NotificationActionCreator;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/NewMailNotifications;--->newInstance(Lcom/fsck/k9/notification/NotificationController;Lcom/fsck/k9/notification/NotificationActionCreator;)Lcom/fsck/k9/notification/NewMailNotifications;
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/NotificationController;--->getContext()Landroid/content/Context;
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/NotificationContentCreator;---><init>(Landroid/content/Context;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/WearNotifications;---><init>(Lcom/fsck/k9/notification/NotificationController;Lcom/fsck/k9/notification/NotificationActionCreator;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/BaseNotifications;---><init>(Lcom/fsck/k9/notification/NotificationController;Lcom/fsck/k9/notification/NotificationActionCreator;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/NotificationController;--->getContext()Landroid/content/Context;
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/DeviceNotifications;--->newInstance(Lcom/fsck/k9/notification/NotificationController;Lcom/fsck/k9/notification/NotificationActionCreator;Lcom/fsck/k9/notification/WearNotifications;)Lcom/fsck/k9/notification/DeviceNotifications;
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/LockScreenNotification;--->newInstance(Lcom/fsck/k9/notification/NotificationController;)Lcom/fsck/k9/notification/LockScreenNotification;
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/LockScreenNotification;---><init>(Lcom/fsck/k9/notification/NotificationController;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/NotificationController;--->getContext()Landroid/content/Context;
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/DeviceNotifications;---><init>(Lcom/fsck/k9/notification/NotificationController;Lcom/fsck/k9/notification/NotificationActionCreator;Lcom/fsck/k9/notification/LockScreenNotification;Lcom/fsck/k9/notification/WearNotifications;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/BaseNotifications;---><init>(Lcom/fsck/k9/notification/NotificationController;Lcom/fsck/k9/notification/NotificationActionCreator;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/NotificationController;--->getContext()Landroid/content/Context;
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/notification/NewMailNotifications;---><init>(Lcom/fsck/k9/notification/NotificationController;Lcom/fsck/k9/notification/NotificationContentCreator;Lcom/fsck/k9/notification/DeviceNotifications;Lcom/fsck/k9/notification/WearNotifications;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/helper/Contacts;---><clinit>()V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/helper/Contacts;--->getInstance(Landroid/content/Context;)Lcom/fsck/k9/helper/Contacts;
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/helper/Contacts;---><init>(Landroid/content/Context;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/mail/TransportProvider;---><clinit>()V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/mail/TransportProvider;---><init>()V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/mail/TransportProvider;--->getInstance()Lcom/fsck/k9/mail/TransportProvider;
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;---><init>(Landroid/content/Context;Lcom/fsck/k9/notification/NotificationController;Lcom/fsck/k9/helper/Contacts;Lcom/fsck/k9/mail/TransportProvider;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MemorizingMessagingListener;---><init>()V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/SimpleMessagingListener;---><init>()V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MessagingController$1;---><init>(Lcom/fsck/k9/controller/MessagingController;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->addListener(Lcom/fsck/k9/controller/MessagingListener;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->refreshListener(Lcom/fsck/k9/controller/MessagingListener;)V
+09-18 23:58:07.946 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MemorizingMessagingListener;--->refreshOther(Lcom/fsck/k9/controller/MessagingListener;)V
+09-18 23:58:07.946 15296 15315 D M_InsDal: Lcom/fsck/k9/controller/MessagingController$1;--->run()V
+09-18 23:58:07.947 15296 15315 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->runInBackground()V
+09-18 23:58:07.947 15296 15296 D M_InsDal: Lcom/fsck/k9/K9$3;---><init>(Lcom/fsck/k9/K9;)V
+09-18 23:58:07.947 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/SimpleMessagingListener;---><init>()V
+09-18 23:58:07.947 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->addListener(Lcom/fsck/k9/controller/MessagingListener;)V
+09-18 23:58:07.947 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->refreshListener(Lcom/fsck/k9/controller/MessagingListener;)V
+09-18 23:58:07.947 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MemorizingMessagingListener;--->refreshOther(Lcom/fsck/k9/controller/MessagingListener;)V
+09-18 23:58:07.947 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->notifyObservers()V
+09-18 23:58:07.947 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$1;--->initializeComponent(Landroid/app/Application;)V
+09-18 23:58:07.947 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->getInstance(Landroid/content/Context;)Lcom/fsck/k9/controller/MessagingController;
+09-18 23:58:07.947 15296 15296 D M_InsDal: Lcom/fsck/k9/provider/MessageProvider$1$1;---><init>(Lcom/fsck/k9/provider/MessageProvider$1;Landroid/app/Application;)V
+09-18 23:58:07.947 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/SimpleMessagingListener;---><init>()V
+09-18 23:58:07.947 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->addListener(Lcom/fsck/k9/controller/MessagingListener;)V
+09-18 23:58:07.947 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MessagingController;--->refreshListener(Lcom/fsck/k9/controller/MessagingListener;)V
+09-18 23:58:07.947 15296 15296 D M_InsDal: Lcom/fsck/k9/controller/MemorizingMessagingListener;--->refreshOther(Lcom/fsck/k9/controller/MessagingListener;)V
+09-18 23:58:07.951 15296 15296 D M_InsDal: Lcom/fsck/k9/activity/NotificationDeleteConfirmation;---><init>()V
+09-18 23:58:07.953 15296 15296 D M_InsDal: Lcom/fsck/k9/activity/NotificationDeleteConfirmation;--->onCreate(Landroid/os/Bundle;)V
+09-18 23:58:07.953 15296 15296 D M_InsDal: Lcom/fsck/k9/K9;--->getK9Theme()Lcom/fsck/k9/K9$Theme;
+09-18 23:58:07.953 15296 15296 D M_InsDal: Lcom/fsck/k9/activity/NotificationDeleteConfirmation;--->extractExtras()V
+--------- beginning of crash
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: Process: com.fsck.k9, PID: 15296
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.fsck.k9/com.fsck.k9.activity.NotificationDeleteConfirmation}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.fsck.k9.MyParcelable
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.fsck.k9.MyParcelable
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.content.Intent.getStringExtra(Intent.java:7445)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at com.fsck.k9.activity.NotificationDeleteConfirmation.extractExtras(NotificationDeleteConfirmation.java:65)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at com.fsck.k9.activity.NotificationDeleteConfirmation.onCreate(NotificationDeleteConfirmation.java:58)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 23:58:07.954 15296 15296 E AndroidRuntime: 	... 11 more

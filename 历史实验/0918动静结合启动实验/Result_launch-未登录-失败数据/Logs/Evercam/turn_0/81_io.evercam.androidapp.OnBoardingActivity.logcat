@@ -1,0 +1,53 @@
+--------- beginning of system
+--------- beginning of main
+09-18 21:42:52.991 16595 16595 D M_InsDal: Lio/evercam/androidapp/EvercamPlayApplication;--->onCreate()V
+09-18 21:42:53.046 16595 16595 D M_InsDal: Lio/evercam/androidapp/ParentAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 21:42:53.063 16595 16595 D M_InsDal: Lio/evercam/androidapp/OnBoardingActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: Process: io.evercam.androidapp, PID: 16595
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.io.evercam.androidapp.MySerializable)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at com.mixpanel.android.mpmetrics.MixpanelActivityLifecycleCallbacks.trackCampaignOpenedIfNeeded(MixpanelActivityLifecycleCallbacks.java:123)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at com.mixpanel.android.mpmetrics.MixpanelActivityLifecycleCallbacks.onActivityStarted(MixpanelActivityLifecycleCallbacks.java:40)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.app.Application.dispatchActivityStarted(Application.java:230)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.app.Activity.onStart(Activity.java:1278)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:614)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.support.v7.app.AppCompatActivity.onStart(AppCompatActivity.java:178)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at io.evercam.androidapp.ParentAppCompatActivity.onStart(ParentAppCompatActivity.java:42)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:7165)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.io.evercam.androidapp.MySerializable
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	... 27 more
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.io.evercam.androidapp.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/io.evercam.androidapp-7Vr5lpqyVODsaIK8gLN7rQ==/base.apk"],nativeLibraryDirectories=[/data/app/io.evercam.androidapp-7Vr5lpqyVODsaIK8gLN7rQ==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-18 21:42:53.105 16595 16595 E AndroidRuntime: 	... 36 more

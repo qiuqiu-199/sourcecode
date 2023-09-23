@@ -1,0 +1,29 @@
+--------- beginning of main
+--------- beginning of system
+09-19 12:47:03.677 23845 23845 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+09-19 12:47:03.700 23845 23845 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 12:47:03.722 23845 23845 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseSecurityTokenActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 12:47:03.722 23845 23845 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/SecurityTokenOperationActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 23845
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.SecurityTokenOperationActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'android.os.Parcelable android.os.Bundle.getParcelable(java.lang.String)' on a null object reference
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.os.Parcelable android.os.Bundle.getParcelable(java.lang.String)' on a null object reference
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at org.sufficientlysecure.keychain.ui.SecurityTokenOperationActivity.onCreate(SecurityTokenOperationActivity.java:140)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 12:47:03.723 23845 23845 E AndroidRuntime: 	... 11 more

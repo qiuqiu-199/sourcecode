@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:persistent="true" android:title="@string/label_experimental_settings_desc_title" android:selectable="false" android:summary="@string/label_experimental_settings_desc_summary" />
+    <SwitchPreference android:persistent="true" android:title="@string/label_settings_analytics_title" android:key="analytics_consent" android:summary="@string/label_settings_analytics_summary" android:defaultValue="false" />
+    <SwitchPreference android:persistent="true" android:title="@string/label_experimental_settings_linked_identities_title" android:key="experimentalEnableLinkedIdentities" android:summary="@string/label_experimental_settings_linked_identities_summary" android:defaultValue="false" />
+    <SwitchPreference android:persistent="true" android:title="@string/label_experimental_settings_keybase_title" android:key="experimentalEnableKeybase" android:summary="@string/label_experimental_settings_keybase_summary" android:defaultValue="false" />
+    <ListPreference android:persistent="true" android:entries="@array/theme_entries" android:title="@string/label_theme" android:key="theme" android:defaultValue="light" android:dialogTitle="@string/label_theme" android:entryValues="@array/theme_values" />
+    <SwitchPreference android:persistent="true" android:title="@string/label_usb_untested" android:key="experimentalUsbAllowUntested" android:summary="@string/label_usb_untested_summary" android:defaultValue="false" />
+    <SwitchPreference android:title="@string/label_smartpgp_verify" android:key="smartpgp_authorities_pref" android:summary="@string/label_smartpgp_verify_summary" android:defaultValue="false" />
+    <PreferenceScreen android:title="@string/label_smartpgp_roots" android:key="smartpgp_authorities" android:dependency="smartpgp_authorities_pref" />
+</PreferenceScreen>

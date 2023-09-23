@@ -1,0 +1,11 @@
+.class public interface abstract Lorg/apache/james/mime4j/stream/Field;
+.super Ljava/lang/Object;
+.source "Field.java"
+
+
+# virtual methods
+.method public abstract getBody()Ljava/lang/String;
+.end method
+
+.method public abstract getName()Ljava/lang/String;
+.end method

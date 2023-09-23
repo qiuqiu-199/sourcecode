@@ -53,16 +53,19 @@ public class Main {
             Map<String, Set<ICCMsg>> activity2receivedICCMap = new HashMap<>(); //存储发送给activity的iccmsg
 //
 //            //从CTG.xml解析intent
-            resolveIntentFromCTGfile(activity2receivedICCMap);
+//            resolveIntentFromCTGfile(activity2receivedICCMap);
 //            //从manifest文件里的intentfile解析组件间通信
-            resolveIntentFromManifest(activity2receivedICCMap);
+//            resolveIntentFromManifest(activity2receivedICCMap);
 //            //从componentInfo.xml文件里解析intent
-            resolveIntentFromReceivedIntent(activity2receivedICCMap);
+//            resolveIntentFromReceivedIntent(activity2receivedICCMap);
 //
 //            //使用monkey进行常规gui测试后得到的动态icc里获取extra属性的实际值
-            Map<String, Set<String>> map = resolveIntentFromDynamicTest(Global.v().getAppModel().appName, activity2receivedICCMap);
-//
-            TestcaseGenerator testcaseGenerator = new TestcaseGenerator(activity2receivedICCMap, map);
+//            Map<String, Set<String>> map = resolveIntentFromDynamicTest(Global.v().getAppModel().appName, activity2receivedICCMap);
+
+            Map<String, Set<ICCMsg>> stringSetMap = buildDynamicICC(appName);
+
+//            TestcaseGenerator testcaseGenerator = new TestcaseGenerator(activity2receivedICCMap, map);
+            TestcaseGenerator testcaseGenerator = new TestcaseGenerator(stringSetMap, new HashMap<>());
             testcaseGenerator.generateTestApp();
 
             long endtime = System.currentTimeMillis();
@@ -411,7 +414,7 @@ public class Main {
                     String key = tmp.replace("extra_" + datatype + "_", datatype + "-");
                     String val;
 
-                    if(icc_msg.split("=").length < 2)
+                    if (icc_msg.split("=").length < 2)
                         val = "null";
                     else
                         val = icc_msg.split("=")[1];
@@ -451,7 +454,7 @@ public class Main {
                 if (line == null) {
                     //处理最后一行
                     //只处理extra，basic直接跳到最后
-                    if(lastLine.contains("extra")){
+                    if (lastLine.contains("extra")) {
                         String[] split = lastLine.split(" : ")[1].split(":");
                         String act_name = split[0];
                         String icc_msg = split[1];
@@ -500,4 +503,263 @@ public class Main {
 
         return map;
     }
+
+    //此方法从动态icc中构造ICCMsg，用来测试动态ICCMsg的有效性，2023.9.19
+    public static Map<String, Set<ICCMsg>> buildDynamicICC(String app_name) {
+        String logcatFilePath = "script/fuzzing_res";
+        File logcatFile = new File(logcatFilePath + File.separator + app_name.substring(0, app_name.length() - 4) + ".logcat");
+        Set<String> act_set = new HashSet<>();
+        Map<String, Set<String>> action_map = new HashMap<>(); //存放动态运行时得到的act对应的实际acdtSet和extraSet
+        Map<String, Set<String>> category_map = new HashMap<>(); //存放动态运行时得到的act对应的实际acdtSet和extraSet
+        Map<String, Set<String>> data_map = new HashMap<>(); //存放动态运行时得到的act对应的实际acdtSet和extraSet
+        Map<String, Set<String>> type_map = new HashMap<>(); //存放动态运行时得到的act对应的实际acdtSet和extraSet
+        Map<String, Set<String>> extra_map = new HashMap<>(); //存放动态运行时得到的act对应的实际acdtSet和extraSet
+
+        Map<String, Set<ICCMsg>> activity2receivedICCMap = new HashMap<>();
+
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(logcatFile));
+            String line = reader.readLine();
+
+            String pre_act_name = "";  //可能多次进入同一个activity
+            Set<String> extraSet = new HashSet<>();
+            Set<String> keySet = new HashSet<>();
+
+            String lastLine = "";
+
+            Set<String> actionSet = new HashSet<>();
+            Set<String> categorySet = new HashSet<>();
+            Set<String> dataSet = new HashSet<>();
+            Set<String> typeSet = new HashSet<>();
+            while (line != null) {
+//                09-07 16:41:33.941 16500 16500 I qiu-tag : dev.ukanth.ufirewall.activity.AppDetailActivity:extra_int_appid=-12
+                if (line.contains("qiu-tag")) {
+                    String[] split = line.split(" : ")[1].split(":");
+                    String act_name = split[0];  //dev.ukanth.ufirewall.activity.AppDetailActivity
+                    String iccmsg = split[1];  //extra_int_appid=-12   或者  basic_data_uri=null_value
+                    act_set.add(act_name);
+
+                    //如果当前收集的activity换了，说明前一个activity收集的信息该放进去了
+                    if ((!pre_act_name.equals(act_name)) && !pre_act_name.equals("")) {
+
+
+                        action_map.computeIfAbsent(pre_act_name, k -> new HashSet<>());
+                        category_map.computeIfAbsent(pre_act_name, k -> new HashSet<>());
+                        data_map.computeIfAbsent(pre_act_name, k -> new HashSet<>());
+                        type_map.computeIfAbsent(pre_act_name, k -> new HashSet<>());
+                        extra_map.computeIfAbsent(pre_act_name, k -> new HashSet<>());
+
+                        extra_map.get(pre_act_name).addAll(extraSet);
+                        action_map.get(pre_act_name).addAll(actionSet);
+                        category_map.get(pre_act_name).addAll(categorySet);
+                        type_map.get(pre_act_name).addAll(typeSet);
+                        data_map.get(pre_act_name).addAll(dataSet);
+
+                        //清空，准备记录新的activity的相关信息
+                        actionSet = new HashSet<>();
+                        categorySet = new HashSet<>();
+                        dataSet = new HashSet<>();
+                        typeSet = new HashSet<>();
+                        extraSet = new HashSet<>();
+                        keySet = new HashSet<>();
+                    }
+
+                    String attr_info = iccmsg.split("=")[0];  //extra_int_appid   basic_data_uri
+                    String val;
+                    //可能会出现 extra_String_a=这种情况
+                    if (iccmsg.split("=").length < 2)
+                        val = "null";
+                    else
+                        val = "null_value".equals(iccmsg.split("=")[1]) ? "null" : iccmsg.split("=")[1];  //null_value  也有可能是null
+                    String attr_type = attr_info.split("_")[0];  //basic 或者 extra
+
+//                    basic_action=android.intent.action.MAIN
+                    if ("basic".equals(attr_type)) {
+                        String basic_type = attr_info.replace(attr_type + "_", "");
+                        if (basic_type.contains("action")) {
+                            actionSet.add(val);
+                        } else if (basic_type.contains("category")) {
+                            categorySet.add(val);  //本次实验中没出现过category，目前这样处理没问题
+                        } else if (basic_type.contains("type")) {
+                            typeSet.add(val);
+                        } else {
+                            dataSet.add(val);
+                        }
+                    } else {
+                        String data_type = attr_info.split("_")[1];
+                        String key = attr_info.replace(attr_type + "_" + data_type + "_", data_type + "-");
+                        if (data_type.contains("[]")){
+                            key = key.replace("[]-","Array-");
+                            val = val.replace(", ", ":");
+                        }
+
+                        if(!keySet.contains(key)){
+                            keySet.add(key);
+                            extraSet.add(key + "=" + val);
+                        }
+                    }
+
+                    pre_act_name = act_name;
+                }
+                lastLine = line;
+                line = reader.readLine();
+
+                if (line == null) {
+//                    String[] split = lastLine.split(" : ")[1].split(":");
+//                    String act_name = split[0];  //dev.ukanth.ufirewall.activity.AppDetailActivity
+//                    String iccmsg = split[1];  //extra_int_appid=-12   或者  basic_data_uri=null_value
+//                    String attr_info = iccmsg.split("=")[0];  //extra_int_appid   basic_data_uri
+//                    String val;
+//                    //可能会出现 extra_String_a=这种情况
+//                    if (iccmsg.split("=").length < 2)
+//                        val = "null";
+//                    else
+//                        val = iccmsg.split("=")[1];  //null_value  也有可能是null
+//                    String attr_type = attr_info.split("_")[0];  //basic 或者 extra
+//
+////                    basic_action=android.intent.action.MAIN
+//                    if ("basic".equals(attr_type)) {
+//                        String basic_type = attr_info.replace(attr_type + "_", "");
+//                        if (basic_type.contains("action")) {
+//                            actionSet.add(val);
+//                        } else if (basic_type.contains("category")) {
+//                            categorySet.add(val);  //本次实验中没出现过category，目前这样处理没问题
+//                        } else if (basic_type.contains("type")) {
+//                            typeSet.add(val);
+//                        } else {
+//                            dataSet.add(val);
+//                        }
+//                    } else {
+//                        String data_type = attr_info.split("_")[1];
+//                        if (data_type.contains("[]"))
+//                            val = val.replace(", ", ":");
+//                        String key = attr_info.replace(attr_type + "_" + data_type + "_", "");
+//
+//                        extraSet.add(key + "=" + val);  //TODO 构建ICCMsg时，如果遇到key相同的，可以分别构造。
+//                    }
+                    action_map.computeIfAbsent(pre_act_name, k -> new HashSet<>());
+                    category_map.computeIfAbsent(pre_act_name, k -> new HashSet<>());
+                    data_map.computeIfAbsent(pre_act_name, k -> new HashSet<>());
+                    type_map.computeIfAbsent(pre_act_name, k -> new HashSet<>());
+                    extra_map.computeIfAbsent(pre_act_name, k -> new HashSet<>());
+
+                    extra_map.get(pre_act_name).addAll(extraSet);
+                    action_map.get(pre_act_name).addAll(actionSet);
+                    category_map.get(pre_act_name).addAll(categorySet);
+                    type_map.get(pre_act_name).addAll(typeSet);
+                    data_map.get(pre_act_name).addAll(dataSet);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+
+        Map<String,List<String>> key2val_map = new HashMap<>();
+        for (String act_name : act_set) {
+            //处理下extraSet。废弃
+//            Set<String> extraSet = extra_map.get(act_name);
+//            for (String extra : extraSet) {
+//                String key = extra.split("=")[0];
+//                keySet.add(key);
+//                String val = extra.split("=")[1];
+//                key2val_map.computeIfAbsent(key, k -> new ArrayList<>());
+//                if(!key2val_map.get(key).contains(val))
+//                    key2val_map.get(key).add(val);
+//            }
+//            extraSet = new HashSet<>();
+//            Random random = new Random();
+//            for (String key : keySet) {
+//                List<String> valList = key2val_map.get(key);
+//                String val = valList.get(random.nextInt(valList.size()));
+//                valList.remove(val);
+//                extraSet.add(key+"="+val);
+//            }
+
+
+            Set<String> actionSet = action_map.get(act_name);
+            Set<String> categorySetGenerated = getRandomElementSetFromSet(category_map.get(act_name));
+            if (actionSet.size() > 0) {
+                for (String action : actionSet) {
+                    Set<String> randomElementSetFromSet = getRandomElementSetFromSet(categorySetGenerated);
+
+                    Set<String> dataSet = data_map.get(act_name);
+                    if (dataSet.size() > 0) {
+                        for (String data : dataSet) {
+                            Set<String> typeSet = type_map.get(act_name);
+                            if(typeSet.size() > 0){
+                                for (String type : typeSet) {
+                                    ICCMsg iccMsg = new ICCMsg(action,randomElementSetFromSet,data,type,extra_map.get(act_name));
+                                    activity2receivedICCMap.computeIfAbsent(act_name, k -> new HashSet<>());
+                                    activity2receivedICCMap.get(act_name).add(iccMsg);
+                                }
+                            }else{
+                                String type = "null";
+                                ICCMsg iccMsg = new ICCMsg(action,randomElementSetFromSet,data,type,extra_map.get(act_name));
+                                activity2receivedICCMap.computeIfAbsent(act_name, k -> new HashSet<>());
+                                activity2receivedICCMap.get(act_name).add(iccMsg);
+                            }
+                        }
+                    } else {
+                        String data = "null";
+                        Set<String> typeSet = type_map.get(act_name);
+                        if(typeSet.size() > 0){
+                            for (String type : typeSet) {
+                                ICCMsg iccMsg = new ICCMsg(action,randomElementSetFromSet,data,type,extra_map.get(act_name));
+                                activity2receivedICCMap.computeIfAbsent(act_name, k -> new HashSet<>());
+                                activity2receivedICCMap.get(act_name).add(iccMsg);
+                            }
+                        }else{
+                            String type = "null";
+                            ICCMsg iccMsg = new ICCMsg(action,randomElementSetFromSet,data,type,extra_map.get(act_name));
+                            activity2receivedICCMap.computeIfAbsent(act_name, k -> new HashSet<>());
+                            activity2receivedICCMap.get(act_name).add(iccMsg);
+                        }
+                    }
+                }
+            } else {
+                String action = "null";
+                Set<String> randomElementSetFromSet = getRandomElementSetFromSet(categorySetGenerated);
+
+                Set<String> dataSet = data_map.get(act_name);
+                if (dataSet.size() > 0) {
+                    for (String data : dataSet) {
+                        Set<String> typeSet = type_map.get(act_name);
+                        if(typeSet.size() > 0){
+                            for (String type : typeSet) {
+                                ICCMsg iccMsg = new ICCMsg(action,randomElementSetFromSet,data,type,extra_map.get(act_name));
+                                activity2receivedICCMap.computeIfAbsent(act_name, k -> new HashSet<>());
+                                activity2receivedICCMap.get(act_name).add(iccMsg);
+                            }
+                        }else{
+                            String type = "null";
+                            ICCMsg iccMsg = new ICCMsg(action,randomElementSetFromSet,data,type,extra_map.get(act_name));
+                            activity2receivedICCMap.computeIfAbsent(act_name, k -> new HashSet<>());
+                            activity2receivedICCMap.get(act_name).add(iccMsg);
+                        }
+                    }
+                } else {
+                    String data = "null";
+                    Set<String> typeSet = type_map.get(act_name);
+                    if(typeSet.size() > 0){
+                        for (String type : typeSet) {
+                            ICCMsg iccMsg = new ICCMsg(action,randomElementSetFromSet,data,type,extra_map.get(act_name));
+                            activity2receivedICCMap.computeIfAbsent(act_name, k -> new HashSet<>());
+                            activity2receivedICCMap.get(act_name).add(iccMsg);
+                        }
+                    }else{
+                        String type = "null";
+                        ICCMsg iccMsg = new ICCMsg(action,randomElementSetFromSet,data,type,extra_map.get(act_name));
+                        activity2receivedICCMap.computeIfAbsent(act_name, k -> new HashSet<>());
+                        activity2receivedICCMap.get(act_name).add(iccMsg);
+                    }
+                }
+            }
+        }
+
+        return activity2receivedICCMap;
+    }
+
+
 }

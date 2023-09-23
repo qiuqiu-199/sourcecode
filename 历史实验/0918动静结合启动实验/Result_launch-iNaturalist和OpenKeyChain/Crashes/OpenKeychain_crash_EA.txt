@@ -1,0 +1,1418 @@
+BugInfo:
+hash:-261868669
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at org.sufficientlysecure.keychain.ui.RedirectImportKeysActivity$1.onClick(RedirectImportKeysActivity.java:54)
+	at android.support.v7.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.ClassNotFoundException: qiu.org.sufficientlysecure.keychain.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.sufficientlysecure.keychain.MySerializable" on path: DexPathList[[zip file "/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/base.apk"],nativeLibraryDirectories=[/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 25 more
+
+ICC Msgs:
+11	org.sufficientlysecure.keychain.ui.RedirectImportKeysActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1671747076
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity.handleActions(ImportKeysProxyActivity.java:104)
+	at org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity.onCreate(ImportKeysProxyActivity.java:79)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+237	org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1822704749
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to resume activity {org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.ImportKeysActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3825)
+	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3857)
+	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at org.sufficientlysecure.keychain.ui.ImportKeysActivity.handleActions(ImportKeysActivity.java:178)
+	at org.sufficientlysecure.keychain.ui.ImportKeysActivity.onResumeFragments(ImportKeysActivity.java:113)
+	at android.support.v4.app.FragmentActivity.onPostResume(FragmentActivity.java:498)
+	at android.support.v7.app.AppCompatActivity.onPostResume(AppCompatActivity.java:171)
+	at android.app.Activity.performResume(Activity.java:7325)
+	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3817)
+	... 11 more
+
+ICC Msgs:
+135	org.sufficientlysecure.keychain.ui.ImportKeysActivity	org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEY_SERVER_AND_RETURN_RESULT;;null;;?:?//.well-known/openpgpkey/hu/;;null;;Parcelable->result_data->ParcelableObj,Parcelable->result_crypto_input->ParcelableObj,
+
+155	org.sufficientlysecure.keychain.ui.ImportKeysActivity	org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEY_SERVER_AND_RETURN_RESULT;;null;;?://mHost:mPort//.well-known/openpgpkey/hu/;;null;;Parcelable->result_data->ParcelableObj,Parcelable->result_crypto_input->ParcelableObj,
+
+147	org.sufficientlysecure.keychain.ui.ImportKeysActivity	org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEY_SERVER_AND_RETURN_RESULT;;null;;?;;null;;Parcelable->result_data->ParcelableObj,Parcelable->result_crypto_input->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:382285844
+FATAL EXCEPTION: main
+java.lang.AssertionError: should not happen: NfcOperationActivity.onCreate is called instead of onNewIntent!
+	at org.sufficientlysecure.keychain.ui.base.BaseSecurityTokenActivity.onCreate(BaseSecurityTokenActivity.java:203)
+	at org.sufficientlysecure.keychain.ui.CreateKeyActivity.onCreate(CreateKeyActivity.java:75)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+315	org.sufficientlysecure.keychain.ui.CreateKeyActivity	android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;
+
+323	org.sufficientlysecure.keychain.ui.CreateKeyActivity	android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;Parcelable->token_info->ParcelableObj,String->name->null,Parcelable->android.nfc.extra.TAG->ParcelableObj,boolean->first_time->false,boolean->create_yubi_key->false,String->email->null,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-712719083
+FATAL EXCEPTION: main
+java.lang.AssertionError: should not happen: NfcOperationActivity.onCreate is called instead of onNewIntent!
+	at org.sufficientlysecure.keychain.ui.base.BaseSecurityTokenActivity.onCreate(BaseSecurityTokenActivity.java:203)
+	at org.sufficientlysecure.keychain.ui.MainActivity.onCreate(MainActivity.java:70)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+102	org.sufficientlysecure.keychain.ui.MainActivity	android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;Parcelable->operation_result->ParcelableObj,boolean->skip_first_time->false,int->init_frag->0,Parcelable->android.nfc.extra.TAG->ParcelableObj,
+
+103	org.sufficientlysecure.keychain.ui.MainActivity	android.nfc.action.TAG_DISCOVERED;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1815058326
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity}: java.lang.IllegalArgumentException: Missing required extra master_key_id or contact uri
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.IllegalArgumentException: Missing required extra master_key_id or contact uri
+	at org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity.onCreate(ViewKeyActivity.java:254)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+262	org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity	null;;null;;null;;null;;
+
+265	org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity	android.intent.action.VIEW;;android.intent.category.DEFAULT;;null;;vnd.android.cursor.item/vnd.org.sufficientlysecure.keychain.key;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1081689321
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.EncryptFilesActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getLong(BaseBundle.java:1051)
+	at org.sufficientlysecure.keychain.ui.EncryptActivity.onCreate(EncryptActivity.java:52)
+	at org.sufficientlysecure.keychain.ui.EncryptFilesActivity.onCreate(EncryptFilesActivity.java:41)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+286	org.sufficientlysecure.keychain.ui.EncryptFilesActivity	android.intent.action.SEND_MULTIPLE;;null;;?;;?;;Parcelable->android.intent.extra.STREAM->ParcelableObj,
+
+280	org.sufficientlysecure.keychain.ui.EncryptFilesActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+282	org.sufficientlysecure.keychain.ui.EncryptFilesActivity	android.intent.action.SEND;;null;;?;;?;;Parcelable->android.intent.extra.STREAM->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1554307993
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.DecryptActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at org.sufficientlysecure.keychain.ui.DecryptActivity.handleActions(DecryptActivity.java:82)
+	at org.sufficientlysecure.keychain.ui.DecryptActivity.onCreate(DecryptActivity.java:57)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.org.sufficientlysecure.keychain.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 25 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.sufficientlysecure.keychain.MySerializable" on path: DexPathList[[zip file "/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/base.apk"],nativeLibraryDirectories=[/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 34 more
+
+ICC Msgs:
+84	org.sufficientlysecure.keychain.ui.DecryptActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-2104293093
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity.handleActions(ImportKeysProxyActivity.java:104)
+	at org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity.onCreate(ImportKeysProxyActivity.java:79)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.org.sufficientlysecure.keychain.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 25 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.sufficientlysecure.keychain.MySerializable" on path: DexPathList[[zip file "/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/base.apk"],nativeLibraryDirectories=[/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 34 more
+
+ICC Msgs:
+232	org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1257708576
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.DecryptActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at org.sufficientlysecure.keychain.ui.DecryptActivity.handleActions(DecryptActivity.java:191)
+	at org.sufficientlysecure.keychain.ui.DecryptActivity.onCreate(DecryptActivity.java:57)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+87	org.sufficientlysecure.keychain.ui.DecryptActivity	DECRYPT_DATA_CLIPBOARD;;null;;?;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,
+
+56	org.sufficientlysecure.keychain.ui.DecryptActivity	android.intent.action.VIEW;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,
+
+64	org.sufficientlysecure.keychain.ui.DecryptActivity	org.sufficientlysecure.keychain.action.DECRYPT_DATA;;null;;?;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,
+
+72	org.sufficientlysecure.keychain.ui.DecryptActivity	android.intent.action.VIEW;;null;;?;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,
+
+83	org.sufficientlysecure.keychain.ui.DecryptActivity	?;;null;;?;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,
+
+62	org.sufficientlysecure.keychain.ui.DecryptActivity	DECRYPT_DATA_CLIPBOARD;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,
+
+74	org.sufficientlysecure.keychain.ui.DecryptActivity	org.sufficientlysecure.keychain.action.DECRYPT_DATA;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,
+
+65	org.sufficientlysecure.keychain.ui.DecryptActivity	?;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1080297115
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.PanicResponderActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finishAndRemoveTask(Activity.java:5735)
+	at org.sufficientlysecure.keychain.ui.PanicResponderActivity.onCreate(PanicResponderActivity.java:46)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.org.sufficientlysecure.keychain.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 24 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.sufficientlysecure.keychain.MySerializable" on path: DexPathList[[zip file "/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/base.apk"],nativeLibraryDirectories=[/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 33 more
+
+ICC Msgs:
+373	org.sufficientlysecure.keychain.ui.PanicResponderActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1767812315
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity.onCreate(ViewKeyActivity.java:242)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+271	org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:2137100583
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.DebugActionsActivity}: java.lang.UnsupportedOperationException
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.UnsupportedOperationException
+	at org.sufficientlysecure.keychain.ui.DebugActionsActivity.onCreate(DebugActionsActivity.java:68)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+212	org.sufficientlysecure.keychain.ui.DebugActionsActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+210	org.sufficientlysecure.keychain.ui.DebugActionsActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+211	org.sufficientlysecure.keychain.ui.DebugActionsActivity	org.sufficientlysecure.keychain.debug;;null;;null;;null;;
+
+209	org.sufficientlysecure.keychain.ui.DebugActionsActivity	null;;null;;null;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1249737001
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.DecryptActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at org.sufficientlysecure.keychain.ui.DecryptActivity.handleActions(DecryptActivity.java:111)
+	at org.sufficientlysecure.keychain.ui.DecryptActivity.onCreate(DecryptActivity.java:57)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+71	org.sufficientlysecure.keychain.ui.DecryptActivity	android.intent.action.SEND_MULTIPLE;;null;;?;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,
+
+55	org.sufficientlysecure.keychain.ui.DecryptActivity	android.intent.action.SEND_MULTIPLE;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-147745876
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity.onCreate(ViewKeyActivity.java:242)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.org.sufficientlysecure.keychain.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.sufficientlysecure.keychain.MySerializable" on path: DexPathList[[zip file "/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/base.apk"],nativeLibraryDirectories=[/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+270	org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity	null;;null;;null;;null;;Serializable->master_key_id->SerializableObj,
+
+268	org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1583616051
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.CreateKeyActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.Bundle.getParcelable(Bundle.java:940)
+	at android.content.Intent.getParcelableExtra(Intent.java:7473)
+	at nordpol.android.TagDispatcher.interceptIntent(TagDispatcher.java:294)
+	at org.sufficientlysecure.keychain.ui.CreateKeyActivity.onCreate(CreateKeyActivity.java:81)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+314	org.sufficientlysecure.keychain.ui.CreateKeyActivity	android.nfc.action.NDEF_DISCOVERED;;null;;null;;null;;Parcelable->token_info->ParcelableObj,String->name->null,Parcelable->android.nfc.extra.TAG->ParcelableObj,boolean->first_time->false,boolean->create_yubi_key->false,String->email->null,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:838697148
+FATAL EXCEPTION: Thread-3
+java.lang.NoClassDefFoundError: Failed resolution of: Lokhttv5/Request$Builder;
+	at org.sufficientlysecure.keychain.network.OkHttpKeybaseClient.getUrlResponse(OkHttpKeybaseClient.java:44)
+	at com.textuality.keybase.lib.KeybaseQuery.getFromKeybase(KeybaseQuery.java:64)
+	at com.textuality.keybase.lib.KeybaseQuery.search(KeybaseQuery.java:51)
+	at org.sufficientlysecure.keychain.keyimport.KeybaseKeyserverClient.search(KeybaseKeyserverClient.java:57)
+	at org.sufficientlysecure.keychain.keyimport.KeybaseKeyserverClient.search(KeybaseKeyserverClient.java:33)
+	at org.sufficientlysecure.keychain.keyimport.CloudSearch$1.run(CloudSearch.java:68)
+	at java.lang.Thread.run(Thread.java:764)
+Caused by: java.lang.ClassNotFoundException: Didn't find class "okhttv5.Request$Builder" on path: DexPathList[[zip file "/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/base.apk"],nativeLibraryDirectories=[/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 7 more
+
+ICC Msgs:
+124	org.sufficientlysecure.keychain.ui.ImportKeysActivity	org.sufficientlysecure.keychain.action.IMPORT_KEY_FROM_KEYSERVER;;null;;null;;null;;String->org.sufficientlysecure.keychain.EXTRA_QUERY->abcde,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1450815043
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.SettingsActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at android.preference.PreferenceActivity.onIsHidingHeaders(PreferenceActivity.java:773)
+	at android.preference.PreferenceActivity.onCreate(PreferenceActivity.java:580)
+	at org.sufficientlysecure.keychain.compatibility.AppCompatPreferenceActivity.onCreate(AppCompatPreferenceActivity.java:45)
+	at org.sufficientlysecure.keychain.ui.SettingsActivity.onCreate(SettingsActivity.java:79)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+186	org.sufficientlysecure.keychain.ui.SettingsActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1599935559
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.EncryptTextActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getLong(BaseBundle.java:1051)
+	at org.sufficientlysecure.keychain.ui.EncryptActivity.onCreate(EncryptActivity.java:52)
+	at org.sufficientlysecure.keychain.ui.EncryptTextActivity.onCreate(EncryptTextActivity.java:50)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.org.sufficientlysecure.keychain.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.sufficientlysecure.keychain.MySerializable" on path: DexPathList[[zip file "/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/base.apk"],nativeLibraryDirectories=[/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+334	org.sufficientlysecure.keychain.ui.EncryptTextActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1732336715
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.MainActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at org.sufficientlysecure.keychain.ui.MainActivity.onCreate(MainActivity.java:144)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.org.sufficientlysecure.keychain.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.sufficientlysecure.keychain.MySerializable" on path: DexPathList[[zip file "/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/base.apk"],nativeLibraryDirectories=[/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+104	org.sufficientlysecure.keychain.ui.MainActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-404787886
+FATAL EXCEPTION: main
+java.lang.AssertionError: should not happen: NfcOperationActivity.onCreate is called instead of onNewIntent!
+	at org.sufficientlysecure.keychain.ui.base.BaseSecurityTokenActivity.onCreate(BaseSecurityTokenActivity.java:203)
+	at org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity.onCreate(ViewKeyActivity.java:166)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+266	org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity	android.nfc.action.TAG_DISCOVERED;;null;;mSheme://com.android.contacts:mPort/mPath;;null;;byteArray->fingerprint->0,Parcelable->result_data->ParcelableObj,Parcelable->operation_result->ParcelableObj,long->master_key_id->0,Parcelable->display_result->ParcelableObj,Parcelable->result_crypto_input->ParcelableObj,
+
+263	org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity	android.nfc.action.TAG_DISCOVERED;;null;;mSheme://com.android.contacts:mPort/mPath;;null;;
+
+269	org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity	android.nfc.action.TAG_DISCOVERED;;null;;?;;null;;byteArray->fingerprint->0,Parcelable->result_data->ParcelableObj,Parcelable->operation_result->ParcelableObj,long->master_key_id->0,Parcelable->display_result->ParcelableObj,Parcelable->result_crypto_input->ParcelableObj,
+
+261	org.sufficientlysecure.keychain.ui.keyview.ViewKeyActivity	android.nfc.action.TAG_DISCOVERED;;null;;?;;null;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1992937171
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity}: java.lang.NullPointerException: Attempt to read from null array
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.NullPointerException: Attempt to read from null array
+	at org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity.handleActionNdefDiscovered(ImportKeysProxyActivity.java:288)
+	at org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity.handleActions(ImportKeysProxyActivity.java:97)
+	at org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity.onCreate(ImportKeysProxyActivity.java:79)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+230	org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity	android.nfc.action.NDEF_DISCOVERED;;null;;?;;null;;
+
+235	org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity	android.nfc.action.NDEF_DISCOVERED;;android.intent.category.DEFAULT;;null;;application/pgp-keys;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:145113176
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.EncryptTextActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getLong(BaseBundle.java:1051)
+	at org.sufficientlysecure.keychain.ui.EncryptActivity.onCreate(EncryptActivity.java:52)
+	at org.sufficientlysecure.keychain.ui.EncryptTextActivity.onCreate(EncryptTextActivity.java:50)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+343	org.sufficientlysecure.keychain.ui.EncryptTextActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-1684738464
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.DecryptActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finish(Activity.java:5632)
+	at org.sufficientlysecure.keychain.ui.DecryptActivity.handleActions(DecryptActivity.java:82)
+	at org.sufficientlysecure.keychain.ui.DecryptActivity.onCreate(DecryptActivity.java:57)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+85	org.sufficientlysecure.keychain.ui.DecryptActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-531075357
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.SettingsActivity}: java.lang.RuntimeException: Subclasses of PreferenceActivity must override isValidFragment(String) to verify that the Fragment class is valid! org.sufficientlysecure.keychain.ui.SettingsActivity has not checked if fragment abcde is valid.
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Subclasses of PreferenceActivity must override isValidFragment(String) to verify that the Fragment class is valid! org.sufficientlysecure.keychain.ui.SettingsActivity has not checked if fragment abcde is valid.
+	at android.preference.PreferenceActivity.isValidFragment(PreferenceActivity.java:973)
+	at org.sufficientlysecure.keychain.ui.SettingsActivity.isValidFragment(SettingsActivity.java:636)
+	at android.preference.PreferenceActivity.switchToHeaderInner(PreferenceActivity.java:1249)
+	at android.preference.PreferenceActivity.switchToHeader(PreferenceActivity.java:1286)
+	at android.preference.PreferenceActivity.onCreate(PreferenceActivity.java:611)
+	at org.sufficientlysecure.keychain.compatibility.AppCompatPreferenceActivity.onCreate(AppCompatPreferenceActivity.java:45)
+	at org.sufficientlysecure.keychain.ui.SettingsActivity.onCreate(SettingsActivity.java:79)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+184	org.sufficientlysecure.keychain.ui.SettingsActivity	null;;null;;null;;null;;String->:android:show_fragment->abcde,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1748838245
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.DecryptActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at org.sufficientlysecure.keychain.ui.DecryptActivity.handleActions(DecryptActivity.java:97)
+	at org.sufficientlysecure.keychain.ui.DecryptActivity.onCreate(DecryptActivity.java:57)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+86	org.sufficientlysecure.keychain.ui.DecryptActivity	android.intent.action.SEND;;null;;?;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,
+
+67	org.sufficientlysecure.keychain.ui.DecryptActivity	android.intent.action.SEND;;null;;mSheme://com.android.email.attachmentprovider:mPort/mPath;;application/autocrypt-setup;;Parcelable->android.intent.extra.STREAM->ParcelableObj,String->android.intent.extra.TEXT->abcde,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-494947096
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.EncryptFilesActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getLong(BaseBundle.java:1051)
+	at org.sufficientlysecure.keychain.ui.EncryptActivity.onCreate(EncryptActivity.java:52)
+	at org.sufficientlysecure.keychain.ui.EncryptFilesActivity.onCreate(EncryptFilesActivity.java:41)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.org.sufficientlysecure.keychain.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.sufficientlysecure.keychain.MySerializable" on path: DexPathList[[zip file "/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/base.apk"],nativeLibraryDirectories=[/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+279	org.sufficientlysecure.keychain.ui.EncryptFilesActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:128550204
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.CreateKeyActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at android.content.Intent.getStringExtra(Intent.java:7445)
+	at org.sufficientlysecure.keychain.ui.CreateKeyActivity.onCreate(CreateKeyActivity.java:106)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+318	org.sufficientlysecure.keychain.ui.CreateKeyActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+321	org.sufficientlysecure.keychain.ui.CreateKeyActivity	null;;null;;null;;null;;Parcelable->token_info->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1643444970
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.PanicResponderActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+	at android.content.Intent.hasExtra(Intent.java:7257)
+	at android.app.Activity.finish(Activity.java:5620)
+	at android.app.Activity.finishAndRemoveTask(Activity.java:5735)
+	at org.sufficientlysecure.keychain.ui.PanicResponderActivity.onCreate(PanicResponderActivity.java:46)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+372	org.sufficientlysecure.keychain.ui.PanicResponderActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1660847527
+FATAL EXCEPTION: main
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.getScheme()' on a null object reference
+	at org.sufficientlysecure.keychain.ui.EncryptFilesFragment.checkAndRequestReadPermission(EncryptFilesFragment.java:283)
+	at org.sufficientlysecure.keychain.ui.EncryptFilesFragment.processPendingInputUris(EncryptFilesFragment.java:253)
+	at org.sufficientlysecure.keychain.ui.EncryptFilesFragment.onCreateView(EncryptFilesFragment.java:168)
+	at android.support.v4.app.Fragment.performCreateView(Fragment.java:2346)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1428)
+	at android.support.v4.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1759)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1827)
+	at android.support.v4.app.BackStackRecord.executeOps(BackStackRecord.java:797)
+	at android.support.v4.app.FragmentManagerImpl.executeOps(FragmentManager.java:2596)
+	at android.support.v4.app.FragmentManagerImpl.executeOpsTogether(FragmentManager.java:2383)
+	at android.support.v4.app.FragmentManagerImpl.removeRedundantOperationsAndExecute(FragmentManager.java:2338)
+	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:2245)
+	at android.support.v4.app.FragmentManagerImpl.dispatchStateChange(FragmentManager.java:3248)
+	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:3200)
+	at android.support.v4.app.FragmentController.dispatchActivityCreated(FragmentController.java:195)
+	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:597)
+	at android.support.v7.app.AppCompatActivity.onStart(AppCompatActivity.java:177)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+	at android.app.Activity.performStart(Activity.java:7165)
+	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+
+ICC Msgs:
+283	org.sufficientlysecure.keychain.ui.EncryptFilesActivity	android.intent.action.SEND;;null;;?;;?;;
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-650730642
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.MainActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at org.sufficientlysecure.keychain.ui.MainActivity.onCreate(MainActivity.java:144)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+100	org.sufficientlysecure.keychain.ui.MainActivity	null;;null;;null;;null;;Parcelable->operation_result->ParcelableObj,
+
+101	org.sufficientlysecure.keychain.ui.MainActivity	null;;null;;null;;null;;Parcelable->parObj->ParcelableObj,
+
+107	org.sufficientlysecure.keychain.ui.MainActivity	null;;null;;null;;null;;Parcelable->openpgp_skt_info->ParcelableObj,int->init_frag->0,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:603608047
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.CreateKeyActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+	at android.content.Intent.getStringExtra(Intent.java:7445)
+	at org.sufficientlysecure.keychain.ui.CreateKeyActivity.onCreate(CreateKeyActivity.java:106)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.org.sufficientlysecure.keychain.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.sufficientlysecure.keychain.MySerializable" on path: DexPathList[[zip file "/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/base.apk"],nativeLibraryDirectories=[/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 31 more
+
+ICC Msgs:
+324	org.sufficientlysecure.keychain.ui.CreateKeyActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:-941784076
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.SettingsActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.sufficientlysecure.keychain.MySerializable)
+	at android.os.Parcel.readSerializable(Parcel.java:2933)
+	at android.os.Parcel.readValue(Parcel.java:2719)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+	at android.preference.PreferenceActivity.onIsHidingHeaders(PreferenceActivity.java:773)
+	at android.preference.PreferenceActivity.onCreate(PreferenceActivity.java:580)
+	at org.sufficientlysecure.keychain.compatibility.AppCompatPreferenceActivity.onCreate(AppCompatPreferenceActivity.java:45)
+	at org.sufficientlysecure.keychain.ui.SettingsActivity.onCreate(SettingsActivity.java:79)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+Caused by: java.lang.ClassNotFoundException: qiu.org.sufficientlysecure.keychain.MySerializable
+	at java.lang.Class.classForName(Native Method)
+	at java.lang.Class.forName(Class.java:453)
+	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at android.os.Parcel.readSerializable(Parcel.java:2927)
+	... 25 more
+Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.sufficientlysecure.keychain.MySerializable" on path: DexPathList[[zip file "/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/base.apk"],nativeLibraryDirectories=[/data/app/org.sufficientlysecure.keychain-2KoILCkLMUn8e6JtDRbEvA==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+	... 34 more
+
+ICC Msgs:
+181	org.sufficientlysecure.keychain.ui.SettingsActivity	null;;null;;null;;null;;Serializable->serObj->SerializableObj,
+
+------------------------------------------------------------------------
+
+BugInfo:
+hash:1249705849
+FATAL EXCEPTION: main
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6730)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+	at android.os.Parcel.readParcelable(Parcel.java:2765)
+	at android.os.Parcel.readValue(Parcel.java:2668)
+	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+	at android.os.Bundle.getParcelableArray(Bundle.java:963)
+	at android.content.Intent.getParcelableArrayExtra(Intent.java:7487)
+	at org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity.handleActionNdefDiscovered(ImportKeysProxyActivity.java:286)
+	at org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity.handleActions(ImportKeysProxyActivity.java:97)
+	at org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity.onCreate(ImportKeysProxyActivity.java:79)
+	at android.app.Activity.performCreate(Activity.java:7144)
+	at android.app.Activity.performCreate(Activity.java:7135)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+	... 11 more
+
+ICC Msgs:
+239	org.sufficientlysecure.keychain.ui.ImportKeysProxyActivity	android.nfc.action.NDEF_DISCOVERED;;null;;?;;null;;Parcelable->result_data->ParcelableObj,String->SCAN_RESULT_FORMAT->abcde,String->SCAN_RESULT->abcde,int->SCAN_RESULT_ORIENTATION->0,Parcelable->operation_result->ParcelableObj,byteArray->SCAN_RESULT_BYTES->0,ParcelableArray->android.nfc.extra.NDEF_MESSAGES->ParcelableArrayObj,String->SCAN_RESULT_ERROR_CORRECTION_LEVEL->abcde,Parcelable->result_crypto_input->ParcelableObj,String->SCAN_RESULT_IMAGE_PATH->abcde,
+
+------------------------------------------------------------------------
+

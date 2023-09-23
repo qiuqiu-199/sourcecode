@@ -1,0 +1,114 @@
+--------- beginning of main
+--------- beginning of system
+09-18 15:29:33.775 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 15:29:33.775 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 15:29:33.775 14647 14647 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 15:29:33.776 14647 14647 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 15:29:33.776 14647 14647 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 15:29:33.776 14647 14647 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 15:29:33.776 14647 14647 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 15:29:33.778 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 15:29:33.778 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:29:33.783 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 15:29:33.783 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 15:29:33.783 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 15:29:33.783 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 15:29:33.783 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:29:33.783 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:29:33.783 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:29:33.783 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:29:33.783 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:29:33.810 14647 14647 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 15:29:33.810 14647 14647 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 15:29:33.810 14647 14647 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 15:29:33.810 14647 14647 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 15:29:33.813 14647 14647 D M_InsDal: Lcom/ichi2/anki/ModelFieldEditor;---><init>()V
+09-18 15:29:33.813 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 15:29:33.814 14647 14647 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 15:29:33.814 14647 14647 D M_InsDal: Lcom/ichi2/anki/ModelFieldEditor$1;---><init>(Lcom/ichi2/anki/ModelFieldEditor;)V
+09-18 15:29:33.814 14647 14647 D M_InsDal: Lcom/ichi2/anki/ModelFieldEditor$8;---><init>(Lcom/ichi2/anki/ModelFieldEditor;)V
+09-18 15:29:33.814 14647 14647 D M_InsDal: Lcom/ichi2/anki/ModelFieldEditor$9;---><init>(Lcom/ichi2/anki/ModelFieldEditor;)V
+09-18 15:29:33.816 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:29:33.816 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:29:33.820 14647 14647 D M_InsDal: Lcom/ichi2/anki/ModelFieldEditor;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:29:33.837 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->startLoadingCollection()V
+09-18 15:29:33.838 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->colIsOpen()Z
+09-18 15:29:33.838 14647 14647 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getInstance()Lcom/ichi2/anki/CollectionHelper;
+09-18 15:29:33.838 14647 14647 D M_InsDal: Lcom/ichi2/anki/CollectionHelper$LazyHolder;---><clinit>()V
+09-18 15:29:33.838 14647 14647 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;---><init>()V
+09-18 15:29:33.838 14647 14647 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->colIsOpen()Z
+09-18 15:29:33.838 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->showProgressBar()V
+09-18 15:29:33.838 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onCreateLoader(ILandroid/os/Bundle;)Landroid/support/v4/content/Loader;
+09-18 15:29:33.843 14647 14647 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getInstance()Lcom/ichi2/anki/CollectionHelper;
+09-18 15:29:33.843 14647 14647 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->isCollectionLocked()Z
+09-18 15:29:33.843 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onStart()V
+09-18 15:29:33.844 14647 14672 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getInstance()Lcom/ichi2/anki/CollectionHelper;
+09-18 15:29:33.844 14647 14672 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCol(Landroid/content/Context;)Lcom/ichi2/libanki/Collection;
+09-18 15:29:33.844 14647 14672 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCollectionPath(Landroid/content/Context;)Ljava/lang/String;
+09-18 15:29:33.844 14647 14672 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 15:29:33.844 14647 14672 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 15:29:33.844 14647 14672 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->colIsOpen()Z
+09-18 15:29:33.844 14647 14672 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getParentDirectory(Ljava/lang/String;)Ljava/lang/String;
+09-18 15:29:33.844 14647 14672 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 15:29:33.844 14647 14672 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;--->i(Ljava/lang/String;[Ljava/lang/Object;)V
+09-18 15:29:33.844 14647 14672 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;--->formatString(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+09-18 15:29:33.845 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onResume()V
+09-18 15:29:33.846 14647 14647 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;--->readMessage()V
+09-18 15:29:33.850 14647 14672 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:29:33.907 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onLoadFinished(Landroid/support/v4/content/Loader;Lcom/ichi2/libanki/Collection;)V
+09-18 15:29:33.907 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->hideProgressBar()V
+09-18 15:29:33.907 14647 14647 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->colIsOpen()Z
+09-18 15:29:33.907 14647 14647 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getInstance()Lcom/ichi2/anki/CollectionHelper;
+09-18 15:29:33.907 14647 14647 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->colIsOpen()Z
+09-18 15:29:33.907 14647 14647 D M_InsDal: Lcom/ichi2/anki/ModelFieldEditor;--->onCollectionLoaded(Lcom/ichi2/libanki/Collection;)V
+09-18 15:29:33.907 14647 14647 D M_InsDal: Lcom/ichi2/anki/ModelFieldEditor;--->setupLabels()V
+--------- beginning of crash
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: Process: com.ichi2.anki, PID: 14647
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'org.json.JSONArray org.json.JSONObject.getJSONArray(java.lang.String)' on a null object reference
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at com.ichi2.anki.ModelFieldEditor.setupLabels(ModelFieldEditor.java:161)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at com.ichi2.anki.ModelFieldEditor.onCollectionLoaded(ModelFieldEditor.java:124)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:286)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at com.ichi2.anki.AnkiActivity.onLoadFinished(AnkiActivity.java:42)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:42)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at com.ichi2.async.CollectionLoader.deliverResult(CollectionLoader.java:12)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:252)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:80)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:485)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:502)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 15:29:33.908 14647 14647 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 15:29:36.142 14647 14681 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->finish()V
+09-18 15:29:36.281 14688 14688 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 15:29:36.281 14688 14688 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 15:29:36.281 14688 14688 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 15:29:36.282 14688 14688 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 15:29:36.282 14688 14688 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 15:29:36.282 14688 14688 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 15:29:36.282 14688 14688 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 15:29:36.284 14688 14688 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 15:29:36.284 14688 14688 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:29:36.287 14688 14688 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 15:29:36.287 14688 14688 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 15:29:36.287 14688 14688 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 15:29:36.287 14688 14688 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 15:29:36.287 14688 14688 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:29:36.287 14688 14688 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:29:36.287 14688 14688 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:29:36.288 14688 14688 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:29:36.288 14688 14688 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:29:36.313 14688 14688 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 15:29:36.313 14688 14688 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 15:29:36.313 14688 14688 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 15:29:36.314 14688 14688 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 15:29:36.316 14688 14688 D M_InsDal: Lcom/ichi2/anki/dialogs/AnkiDroidCrashReportDialog;---><init>()V
+09-18 15:29:36.319 14688 14688 D M_InsDal: Lcom/ichi2/anki/dialogs/AnkiDroidCrashReportDialog;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:29:36.319 14688 14688 D M_InsDal: Lcom/ichi2/anki/dialogs/AnkiDroidCrashReportDialog;--->buildCustomView(Landroid/os/Bundle;)Landroid/view/View;
+09-18 15:29:36.319 14688 14688 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;

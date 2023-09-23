@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="edit_key_edit_subkey">
+        <item>期限の変更</item>
+        <item>副鍵の破棄</item>
+        <item>副鍵のストリップ</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id">
+        <item>主IDを変更</item>
+        <item>IDを破棄</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id_revert_revocation">
+        <item>破棄処理の差し戻し</item>
+    </string-array>
+    <string-array name="help_donation_google_catalog_values">
+        <item>1 ユーロ</item>
+        <item>2 ユーロ</item>
+        <item>3 ユーロ</item>
+        <item>5 ユーロ</item>
+        <item>10 ユーロ</item>
+        <item>50 ユーロ</item>
+        <item>100 ユーロ</item>
+    </string-array>
+</resources>

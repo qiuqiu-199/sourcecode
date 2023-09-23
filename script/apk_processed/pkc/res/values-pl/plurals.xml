@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"zignorowano %d złych tajnych kluczy. Prawdopodobnie wyeksportowałeś je przy użyciu opcji
+ --export-secret-subkeys
+Upewnij się, że wyeksportujesz je z opcją
+ --export-secret-keys"</item>
+        <item quantity="one">"zignorowano %d zły tajnych klucz. Prawdopodobnie wyeksportowałeś go przy użyciu opcji
+ --export-secret-subkeys
+Upewnij się, że wyeksportujesz go z opcją
+ --export-secret-keys"</item>
+        <item quantity="few">"zignorowano %d złych tajnych kluczy. Prawdopodobnie wyeksportowałeś je przy użyciu opcji
+ --export-secret-subkeys
+Upewnij się, że wyeksportujesz je z opcją
+ --export-secret-keys"</item>
+        <item quantity="many">"zignorowano %d złych tajnych kluczy. Prawdopodobnie wyeksportowałeś je przy użyciu opcji
+ --export-secret-subkeys
+Upewnij się, że wyeksportujesz je z opcją
+ --export-secret-keys"</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">Certyfikacja %d kluczy nie powiodła się!</item>
+        <item quantity="one">Certyfikacja nie powiodła się!</item>
+        <item quantity="few">Certyfikacja %d kluczy nie powiodła się!</item>
+        <item quantity="many">Certyfikacja %d kluczy nie powiodła się!</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">Nie udana certyfikacja dla %d kluczy!</item>
+        <item quantity="one">Certyfikacja nie powiodła się!</item>
+        <item quantity="few">Nie udana certyfikacja dla %d kluczy!</item>
+        <item quantity="many">Nie udana certyfikacja dla %d kluczy!</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">Pomyślnie usunięto %1$d kluczy%2$s.</item>
+        <item quantity="one">Pomyślnie usunięto klucz%2$s.</item>
+        <item quantity="few">Pomyślnie usunięto %1$d kluczy%2$s.</item>
+        <item quantity="many">Pomyślnie usunięto %1$d kluczy%2$s.</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">Pomyślnie usunięto %1$d kluczy</item>
+        <item quantity="one">Pomyślnie usunięto jeden klucz</item>
+        <item quantity="few">Pomyślnie usunięto %1$d kluczy</item>
+        <item quantity="many">Pomyślnie usunięto %1$d kluczy</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">, ale nie udało się usunąć %1$d kluczy%2$s.</item>
+        <item quantity="one">, ale nie udało się usunąć jednego klucza%2$s.</item>
+        <item quantity="few">, ale nie udało się usunąć %1$d kluczy%2$s.</item>
+        <item quantity="many">, ale nie udało się usunąć %1$d kluczy%2$s.</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">Import %d kluczy nie udał się!</item>
+        <item quantity="one">Nieudany import!</item>
+        <item quantity="few">Import %d kluczy nie udał się!</item>
+        <item quantity="many">Import %d kluczy nie udał się!</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">Pomyślnie zaimportowano %1$d kluczy%2$s.</item>
+        <item quantity="one">Pomyślnie zaimportowano klucz%2$s.</item>
+        <item quantity="few">Pomyślnie zaimportowano %1$d kluczy%2$s.</item>
+        <item quantity="many">Pomyślnie zaimportowano %1$d kluczy%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">Pomyślnie zaktualizowano %1$d kluczy%2$s.</item>
+        <item quantity="one">Pomyślnie zaktualizowano klucz%2$s.</item>
+        <item quantity="few">Pomyślnie zaktualizowano %1$d kluczy%2$s.</item>
+        <item quantity="many">Pomyślnie zaktualizowano %1$d kluczy%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">Nie udało się zaimportować %d kluczy!</item>
+        <item quantity="one">Nie udało się zaimportować jednego klucza!</item>
+        <item quantity="few">Nie udało się zaimportować %d kluczy!</item>
+        <item quantity="many">Nie udało się zaimportować %d kluczy!</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d kluczy wybranych.</item>
+        <item quantity="one">1 klucz wybrany.</item>
+        <item quantity="few">%d kluczy wybranych.</item>
+        <item quantity="many">%d kluczy wybranych.</item>
+    </plurals>
+    <plurals name="msg_del">
+        <item quantity="other">Usuwanie %d kluczy</item>
+        <item quantity="one">Usuwanie jednego klucza</item>
+        <item quantity="few">Usuwanie %d kluczy</item>
+        <item quantity="many">Usuwanie %d kluczy</item>
+    </plurals>
+    <plurals name="msg_del_fail">
+        <item quantity="other">Nie udało się usunąć %d kluczy</item>
+        <item quantity="one">Nie udało się usunąć jednego klucza</item>
+        <item quantity="few">Nie udało się usunąć %d kluczy</item>
+        <item quantity="many">Nie udało się usunąć %d kluczy</item>
+    </plurals>
+    <plurals name="msg_del_ok">
+        <item quantity="other">Pomyślnie usunięto %d kluczy</item>
+        <item quantity="one">Pomyślnie usunięto klucz</item>
+        <item quantity="few">Pomyślnie usunięto %d kluczy</item>
+        <item quantity="many">Pomyślnie usunięto %d kluczy</item>
+    </plurals>
+    <plurals name="msg_import">
+        <item quantity="other">Importowanie %d kluczy</item>
+        <item quantity="one">Importowanie klucza</item>
+        <item quantity="few">Importowanie %d kluczy</item>
+        <item quantity="many">Importowanie %d kluczy</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d kluczy</item>
+        <item quantity="one">1 klucz</item>
+        <item quantity="few">%d klucze</item>
+        <item quantity="many">%d kluczy</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d serwerów kluczy</item>
+        <item quantity="one">%d serwer kluczy</item>
+        <item quantity="few">%d serwery kluczy</item>
+        <item quantity="many">%d serwerów kluczy</item>
+    </plurals>
+</resources>

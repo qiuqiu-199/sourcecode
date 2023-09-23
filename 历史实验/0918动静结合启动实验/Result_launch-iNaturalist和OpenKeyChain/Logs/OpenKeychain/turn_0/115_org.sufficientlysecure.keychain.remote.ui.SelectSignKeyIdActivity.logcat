@@ -1,0 +1,36 @@
+--------- beginning of main
+--------- beginning of system
+09-19 12:02:16.313 12178 12178 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+09-19 12:02:16.344 12178 12178 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 12:02:16.365 12178 12178 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/SelectSignKeyIdActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 12178
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.content.Intent.getStringExtra(Intent.java:7445)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at org.sufficientlysecure.keychain.remote.ui.SelectSignKeyIdActivity.onCreate(SelectSignKeyIdActivity.java:73)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 12:02:16.366 12178 12178 E AndroidRuntime: 	... 11 more

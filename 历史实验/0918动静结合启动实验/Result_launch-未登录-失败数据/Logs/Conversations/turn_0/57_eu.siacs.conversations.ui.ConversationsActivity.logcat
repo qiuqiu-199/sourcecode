@@ -1,0 +1,45 @@
+--------- beginning of system
+--------- beginning of main
+09-18 18:02:03.148 29555 29555 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+09-18 18:02:10.635  2188  2188 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 18:02:10.639  2188  2188 D M_InsDal: Leu/siacs/conversations/ui/ConversationsActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 18:02:10.648  2188  2188 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onAttach(Landroid/app/Activity;)V
+09-18 18:02:10.648  2188  2188 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onCreate(Landroid/os/Bundle;)V
+09-18 18:02:10.653  2188  2188 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+09-18 18:02:10.655  2188  2188 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStart()V
+09-18 18:02:10.657  2188  2188 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onStart()V
+09-18 18:02:10.657  2188  2188 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onResume()V
+09-18 18:02:10.657  2188  2188 D M_InsDal: Leu/siacs/conversations/ui/ConversationsActivity;--->onResume()V
+09-18 18:02:10.657  2188  2188 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onResume()V
+09-18 18:02:10.661  2188  2188 D M_InsDal: Leu/siacs/conversations/ui/service/EmojiService$1;--->onFailed(Ljava/lang/Throwable;)V
+09-18 18:02:10.693 29555 29555 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/OpenPgpService;--->onCreate()V
+--------- beginning of crash
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: Process: eu.siacs.conversations, PID: 2188
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.eu.siacs.conversations.MyParcelable
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at eu.siacs.conversations.ui.StartConversationActivity.addInviteUri(StartConversationActivity.java:1267)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at eu.siacs.conversations.utils.SignupUtils.getSignUpIntent(SignupUtils.java:29)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at eu.siacs.conversations.utils.SignupUtils.getSignUpIntent(SignupUtils.java:19)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at eu.siacs.conversations.utils.SignupUtils.getRedirectionIntent(SignupUtils.java:48)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at eu.siacs.conversations.ui.ConversationsActivity.performRedirectIfNecessary(ConversationsActivity.java:184)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at eu.siacs.conversations.ui.ConversationsActivity.performRedirectIfNecessary(ConversationsActivity.java:175)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at eu.siacs.conversations.ui.ConversationsActivity.onBackendConnected(ConversationsActivity.java:141)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at eu.siacs.conversations.ui.XmppActivity$1.onServiceConnected(XmppActivity.java:112)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher.doConnected(LoadedApk.java:1730)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1762)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 18:02:11.262  2188  2188 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 18:02:22.834 29555 29555 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V

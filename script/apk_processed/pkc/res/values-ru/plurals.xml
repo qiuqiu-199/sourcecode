@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"%d плохих секретных ключей проигнорировано. Возможно, вы экспортируете с параметром
+ --export-secret-subkeys
+Вместо этого используйте
+ --export-secret-keys.\""</item>
+        <item quantity="one">"%d плохой секретный ключ проигнорирован. Возможно, вы экспортируете с параметром
+ --export-secret-subkeys
+Вместо этого используйте
+ --export-secret-keys.\""</item>
+        <item quantity="few">"%d плохих секретных ключа проигнорировано. Возможно, вы экспортируете с параметром
+ --export-secret-subkeys
+Вместо этого используйте
+ --export-secret-keys.\""</item>
+        <item quantity="many">"%d плохих секретных ключей проигнорировано. Возможно, вы экспортируете с параметром
+ --export-secret-subkeys
+Вместо этого используйте
+ --export-secret-keys.\""</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">Сертификация %d ключей не удалась!</item>
+        <item quantity="one">Сертификация не удалась!</item>
+        <item quantity="few">Сертификация %d ключей не удалась!</item>
+        <item quantity="many">Сертификация %d ключей не удалась!</item>
+    </plurals>
+    <plurals name="certify_keys_ok">
+        <item quantity="other">Успешно подтверждено %1$d ключей%2$s.</item>
+        <item quantity="one">Успешно подтверждён ключ%2$s.</item>
+        <item quantity="few">Успешно подтверждено %1$d ключа%2$s.</item>
+        <item quantity="many">Успешно подтверждено %1$d ключей%2$s.</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">Сертификация для %d ключей не удалась!</item>
+        <item quantity="one">Сертификация не удалась!</item>
+        <item quantity="few">Сертификация для %d ключей не удалась!</item>
+        <item quantity="many">Сертификация для %d ключей не удалась!</item>
+    </plurals>
+    <plurals name="delete_fail">
+        <item quantity="other">Ошибка при удалении %1$d ключей.</item>
+        <item quantity="one">Ошибка при удалении ключа.</item>
+        <item quantity="few">Ошибка при удалении %1$d ключей.</item>
+        <item quantity="many">Ошибка при удалении %1$d ключей.</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">Успешно удалено %1$d ключей%2$s.</item>
+        <item quantity="one">Успешно удалён ключ%2$s.</item>
+        <item quantity="few">Успешно удалено %1$d ключа%2$s.</item>
+        <item quantity="many">Успешно удалено %1$d ключей%2$s.</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">Успешно удалено %1$d ключей</item>
+        <item quantity="one">Ключ успешно удален</item>
+        <item quantity="few">Успешно удалено %1$d ключей</item>
+        <item quantity="many">Успешно удалено %1$d ключей</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">, но не удалось удалить %1$d ключей%2$s.</item>
+        <item quantity="one">, но не удалось удалить ключ%2$s.</item>
+        <item quantity="few">, но не удалось удалить %1$d ключа%2$s.</item>
+        <item quantity="many">, но не удалось удалить %1$d ключей%2$s.</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">Импортирование %d ключей завершилось неудачно!</item>
+        <item quantity="one">Импортирование ключа завершилось неудачно!</item>
+        <item quantity="few">Импортирование %d ключей завершилось неудачно!</item>
+        <item quantity="many">Импортирование %d ключей завершилось неудачно!</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">Успешно импортировано %1$d ключей%2$s.</item>
+        <item quantity="one">Успешно импортирован ключ%2$s.</item>
+        <item quantity="few">Успешно импортировано %1$d ключа%2$s.</item>
+        <item quantity="many">Успешно импортировано %1$d ключей%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_1">
+        <item quantity="other">Успешно импортировано %1$d ключей</item>
+        <item quantity="one">Успешно импортирован один ключ</item>
+        <item quantity="few">Успешно импортировано %1$d ключа</item>
+        <item quantity="many">Успешно импортировано %1$d ключей</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_2">
+        <item quantity="other">и обновлено %1$d ключей%2$s.</item>
+        <item quantity="one">и обновлён один ключ%2$s.</item>
+        <item quantity="few">и обновлено %1$d ключа%2$s.</item>
+        <item quantity="many">и обновлено %1$d ключей%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">Успешно обновлено %1$d ключей%2$s.</item>
+        <item quantity="one">Успешно обновлён ключ%2$s.</item>
+        <item quantity="few">Успешно обновлено %1$d ключа%2$s.</item>
+        <item quantity="many">Успешно обновлено %1$d ключей%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">Ошибка импорта %d ключей!</item>
+        <item quantity="one">Ошибка импорта ключа!</item>
+        <item quantity="few">Ошибка импорта %d ключей!</item>
+        <item quantity="many">Ошибка импорта %d ключей!</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d ключей выбрано.</item>
+        <item quantity="one">1 ключ выбран.</item>
+        <item quantity="few">%d ключей выбрано.</item>
+        <item quantity="many">%d ключей выбрано.</item>
+    </plurals>
+    <plurals name="linked_id_expand">
+        <item quantity="other">Здесь ещё %d неизвестных типов идентификаторов</item>
+        <item quantity="one">Здесь ещё один неизвестный тип идентификатора</item>
+        <item quantity="few">Здесь ещё %d неизвестных типа идентификаторов</item>
+        <item quantity="many">Здесь ещё %d неизвестных типов идентификаторов</item>
+    </plurals>
+    <plurals name="msg_backup">
+        <item quantity="other">Резервное копирование с %d ключами</item>
+        <item quantity="one">Резервное копирование с одним ключом</item>
+        <item quantity="few">Резервное копирование с %d ключами</item>
+        <item quantity="many">Резервное копирование с %d ключами</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uats">
+        <item quantity="other">Сертификация %1$d атрибутов пользователя для ключа %2$s</item>
+        <item quantity="one">Сертификация атрибута пользователя для ключа %2$s</item>
+        <item quantity="few">Сертификация %1$d атрибутов пользователя для ключа %2$s</item>
+        <item quantity="many">Сертификация %1$d атрибутов пользователя для ключа %2$s</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uids">
+        <item quantity="other">Сертификация %1$d ID пользователей ключа %2$s</item>
+        <item quantity="one">Сертификация ID пользователя ключа %2$s</item>
+        <item quantity="few">Сертификация %1$d ID пользователей ключа %2$s</item>
+        <item quantity="many">Сертификация %1$d ID пользователей ключа %2$s</item>
+    </plurals>
+    <plurals name="msg_del">
+        <item quantity="other">Удаление %d ключей</item>
+        <item quantity="one">Удаление одного ключа</item>
+        <item quantity="few">Удаление %d ключей</item>
+        <item quantity="many">Удаление %d ключей</item>
+    </plurals>
+    <plurals name="msg_del_fail">
+        <item quantity="other">Не удалось удалить %d ключей</item>
+        <item quantity="one">Не удалось удалить один ключ</item>
+        <item quantity="few">Не удалось удалить %d ключа</item>
+        <item quantity="many">Не удалось удалить %d ключей</item>
+    </plurals>
+    <plurals name="msg_del_ok">
+        <item quantity="other">Успешно удалено %d ключей</item>
+        <item quantity="one">Успешно удалён ключ</item>
+        <item quantity="few">Успешно удалено %d ключа</item>
+        <item quantity="many">Успешно удалено %d ключей</item>
+    </plurals>
+    <plurals name="msg_import">
+        <item quantity="other">Импортирование %d ключей</item>
+        <item quantity="one">Импортирование ключа</item>
+        <item quantity="few">Импортирование %d ключей</item>
+        <item quantity="many">Импортирование %d ключей</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">Игнорирование %s сертификатов, выданных неизвестными публичными ключами</item>
+        <item quantity="one">Игнорирование сертификата, выданного неизвестным публичным ключом</item>
+        <item quantity="few">Игнорирование %s сертификатов, выданных неизвестными публичными ключами</item>
+        <item quantity="many">Игнорирование %s сертификатов, выданных неизвестными публичными ключами</item>
+    </plurals>
+    <plurals name="msg_ip_uid_certs_unknown">
+        <item quantity="other">Игнорирование %s сертификатов, выданных неизвестными публичными ключами</item>
+        <item quantity="one">Игнорирование сертификата, выданного неизвестным публичным ключом</item>
+        <item quantity="few">Игнорирование %s сертификатов, выданных неизвестными публичными ключами</item>
+        <item quantity="many">Игнорирование %s сертификатов, выданных неизвестными публичными ключами</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">Классификация ID пользователей (используя %s доверенных ключей)</item>
+        <item quantity="one">Классификация ID пользователей (используя 1 доверенный ключ)</item>
+        <item quantity="few">Классификация ID пользователей (используя %s доверенных ключа)</item>
+        <item quantity="many">Классификация ID пользователей (используя %s доверенных ключей)</item>
+    </plurals>
+    <plurals name="msg_kc_success_bad">
+        <item quantity="other">Связка нормализована успешно, удалено %d ошибочных сертификатов</item>
+        <item quantity="one">Связка нормализована успешно, удалён один ошибочный сертификат</item>
+        <item quantity="few">Связка нормализована успешно, удалено %d ошибочных сертификата</item>
+        <item quantity="many">Связка нормализована успешно, удалено %d ошибочных сертификатов</item>
+    </plurals>
+    <plurals name="msg_kc_success_redundant">
+        <item quantity="other">Связка нормализована успешно, удалено %d лишних сертификатов</item>
+        <item quantity="one">Связка нормализована успешно, удалён один лишний сертификат</item>
+        <item quantity="few">Связка нормализована успешно, удалено %d лишних сертификата</item>
+        <item quantity="many">Связка нормализована успешно, удалено %d лишних сертификатов</item>
+    </plurals>
+    <plurals name="msg_trust_count">
+        <item quantity="other">Обновление %d ключей</item>
+        <item quantity="one">Обновление 1 ключа</item>
+        <item quantity="few">Обновление %d ключей</item>
+        <item quantity="many">Обновление %d ключей</item>
+    </plurals>
+    <plurals name="n_authorities">
+        <item quantity="other">%d центров</item>
+        <item quantity="one">%d центр</item>
+        <item quantity="few">%d центра</item>
+        <item quantity="many">%d центров</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d ключей</item>
+        <item quantity="one">1 ключ</item>
+        <item quantity="few">%d ключей</item>
+        <item quantity="many">%d ключей</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d серверов ключей</item>
+        <item quantity="one">%d сервер ключей</item>
+        <item quantity="few">%d серверов ключей</item>
+        <item quantity="many">%d серверов ключей</item>
+    </plurals>
+    <plurals name="passp_cache_notif_n_keys">
+        <item quantity="other">%d паролей сохранено</item>
+        <item quantity="one">%d пароль сохранен</item>
+        <item quantity="few">%d пароля сохранено</item>
+        <item quantity="many">%d паролей сохранено</item>
+    </plurals>
+    <plurals name="security_token_error_pin">
+        <item quantity="other">"Неправильный PIN-код!
+Осталось %d попыток."</item>
+        <item quantity="one">"Неправильный PIN-код!
+Осталась %d попытка."</item>
+        <item quantity="few">"Неправильный PIN-код!
+Осталось %d попытки."</item>
+        <item quantity="many">"Неправильный PIN-код!
+Осталось %d попыток."</item>
+    </plurals>
+    <plurals name="token_unlock_attempts">
+        <item quantity="other">Осталось %d попыток</item>
+        <item quantity="one">Осталось 1 попытка</item>
+        <item quantity="few">Осталось %d попытки</item>
+        <item quantity="many">Осталось %d попыток</item>
+    </plurals>
+</resources>

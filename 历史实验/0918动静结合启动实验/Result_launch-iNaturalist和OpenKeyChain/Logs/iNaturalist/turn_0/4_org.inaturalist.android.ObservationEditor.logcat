@@ -1,0 +1,33 @@
+--------- beginning of main
+--------- beginning of system
+--------- beginning of crash
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: Process: org.inaturalist.android, PID: 24402
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{org.inaturalist.android/org.inaturalist.android.ObservationEditor}: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.media.action.IMAGE_CAPTURE flg=0x3 clip={text/uri-list U:file:///storage/emulated/0/Android/data/org.inaturalist.android/cache/67c79178-8b86-4fea-879c-9909978b2c97.jpeg} (has extras) }
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: Caused by: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.media.action.IMAGE_CAPTURE flg=0x3 clip={text/uri-list U:file:///storage/emulated/0/Android/data/org.inaturalist.android/cache/67c79178-8b86-4fea-879c-9909978b2c97.jpeg} (has extras) }
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2007)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1673)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:4587)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.support.v4.app.BaseFragmentActivityApi16.startActivityForResult(BaseFragmentActivityApi16.java:54)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.startActivityForResult(FragmentActivity.java:67)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:4545)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.startActivityForResult(FragmentActivity.java:732)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at org.inaturalist.android.ObservationEditor.takePhoto(ObservationEditor.java:942)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at org.inaturalist.android.ObservationEditor.onCreate(ObservationEditor.java:631)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 09:34:29.291 24402 24402 E AndroidRuntime: 	... 11 more

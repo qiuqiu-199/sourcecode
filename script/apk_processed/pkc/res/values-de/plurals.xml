@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"%d fehlerhafte private Schlüssel ignoriert. Evtl. wurden sie mit folgender Option exportiert:
+ --export-secret-subkeys
+Unbedingt mit dieser Option exportieren:
+ --export-secret-keys"</item>
+        <item quantity="one">"%d fehlerhafter privater Schlüssel ignoriert. Evtl. wurde er mit folgender Option exportiert:
+ --export-secret-subkeys
+Unbedingt mit dieser Option exportieren:
+ --export-secret-keys"</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">Beglaubigung von %d Schlüsseln ist fehlgeschlagen!</item>
+        <item quantity="one">Beglaubigung fehlgeschlagen!</item>
+    </plurals>
+    <plurals name="certify_keys_ok">
+        <item quantity="other">%1$d Schlüssel wurden erfolgreich bestätigt%2$s.</item>
+        <item quantity="one">Ein Schlüssel wurde erfolgreich bestätigt%2$s.</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">Beglaubigung für %d Schlüssel fehlgeschlagen!</item>
+        <item quantity="one">Beglaubigung fehlgeschlagen!</item>
+    </plurals>
+    <plurals name="delete_fail">
+        <item quantity="other">Fehler beim Löschen von %1$d Schlüsseln.</item>
+        <item quantity="one">Fehler beim Löschen eines Schlüssels.</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">%1$d Schlüssel wurden erfolgreich gelöscht%2$s.</item>
+        <item quantity="one">Ein Schlüssel wurde erfolgreich gelöscht%2$s.</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">%1$d Schlüssel wurden erfolgreich gelöscht</item>
+        <item quantity="one">Ein Schlüssel wurde erfolgreich gelöscht</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">, aber das Löschen von %1$d Schlüsseln ist fehlgeschlagen%2$s.</item>
+        <item quantity="one">, aber das Löschen eines Schlüssels ist fehlgeschlagen%2$s.</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">Import von %d Schlüsseln fehlgeschlagen!</item>
+        <item quantity="one">Import eines Schlüssels fehlgeschlagen!</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">%1$d Schlüssel wurden erfolgreich importiert%2$s.</item>
+        <item quantity="one">Ein Schlüssel wurde erfolgreich importiert%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_1">
+        <item quantity="other">%1$d Schlüssel wurden erfolgreich importiert</item>
+        <item quantity="one">Ein Schlüssel wurde erfolgreich importiert</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_2">
+        <item quantity="other">und %1$d Schlüssel aktualisiert%2$s.</item>
+        <item quantity="one">und ein Schlüssel aktualisiert%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">%1$d Schlüssel wurden erfolgreich aktualisiert%2$s.</item>
+        <item quantity="one">Ein Schlüssel wurde erfolgreich aktualisiert%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">Import von %d Schlüsseln fehlgeschlagen!</item>
+        <item quantity="one">Import eines Schlüssels fehlgeschlagen!</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d Schlüssel ausgewählt.</item>
+        <item quantity="one">1 Schlüssel ausgewählt.</item>
+    </plurals>
+    <plurals name="linked_id_expand">
+        <item quantity="other">Es gibt %d weitere unbekannte Identitätstypen</item>
+        <item quantity="one">Es gibt einen weiteren unbekannten Identitätstyp</item>
+    </plurals>
+    <plurals name="msg_backup">
+        <item quantity="other">Backup mit %d Schlüsseln</item>
+        <item quantity="one">Backup mit einem Schlüssel</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uats">
+        <item quantity="other">Beglaubige %1$d Benutzerattribute für Schlüssel %2$s</item>
+        <item quantity="one">Beglaubige ein Benutzerattribut für Schlüssel %2$s</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uids">
+        <item quantity="other">%1$d User-IDs von Schlüssel %2$s werden beglaubigt</item>
+        <item quantity="one">Eine User-ID von Schlüssel %2$s wird beglaubigt</item>
+    </plurals>
+    <plurals name="msg_del">
+        <item quantity="other">%d Schlüssel werden gelöscht</item>
+        <item quantity="one">Schlüssel wird gelöscht</item>
+    </plurals>
+    <plurals name="msg_del_fail">
+        <item quantity="other">Fehler beim Löschen von %d Schlüsseln</item>
+        <item quantity="one">Fehler beim Löschen eines Schlüssels</item>
+    </plurals>
+    <plurals name="msg_del_ok">
+        <item quantity="other">%d Schlüssel erfolgreich gelöscht</item>
+        <item quantity="one">Schlüssel erfolgreich gelöscht</item>
+    </plurals>
+    <plurals name="msg_import">
+        <item quantity="other">%d Schlüssel werden importiert</item>
+        <item quantity="one">Ein Schlüssel wird importiert</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">Ignoriere %s Beglaubigungen, ausgestellt von unbekannten öffentlichen Schlüsseln</item>
+        <item quantity="one">Ignoriere eine Beglaubigung, ausgestellt von einem unbekannten Schlüssel</item>
+    </plurals>
+    <plurals name="msg_ip_uid_certs_unknown">
+        <item quantity="other">Ignoriere %s Beglaubigungen, ausgestellt von unbekannten öffentlichen Schlüsseln</item>
+        <item quantity="one">Ignoriere eine Beglaubigung, ausgestellt von unbekanntem öffentlichen Schlüssel</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">User-IDs werden klassifiziert (verwende %s vertrauenswürdige Schlüssel)</item>
+        <item quantity="one">User-ID wird klassifiziert (verwende einen vertrauenswürdigen Schlüssel)</item>
+    </plurals>
+    <plurals name="msg_kc_success_bad">
+        <item quantity="other">Schlüsselbund wurde erfolgreich in vorschriftsmäßiges Format gebracht, %d fehlerhafte Beglaubigungen wurden entfernt</item>
+        <item quantity="one">Schlüsselbund wurde erfolgreich in vorschriftsmäßiges Format gebracht, eine fehlerhafte Beglaubigung wurde entfernt</item>
+    </plurals>
+    <plurals name="msg_kc_success_redundant">
+        <item quantity="other">Schlüsselbund wurde erfolgreich in vorschriftsmäßiges Format gebracht, %d redundante Beglaubigungen wurden entfernt</item>
+        <item quantity="one">Schlüsselbund wurde erfolgreich in vorschriftsmäßiges Format gebracht, eine redundante Beglaubigung wurde entfernt</item>
+    </plurals>
+    <plurals name="msg_trust_count">
+        <item quantity="other">%d Schlüssel werden aktualisiert</item>
+        <item quantity="one">Ein Schlüssel wird aktualisiert</item>
+    </plurals>
+    <plurals name="n_authorities">
+        <item quantity="other">%d Zertifizierungsstellen</item>
+        <item quantity="one">%d Zertifizierungsstelle</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d Schlüssel</item>
+        <item quantity="one">1 Schlüssel</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d Schlüsselserver</item>
+        <item quantity="one">%d Schlüsselserver</item>
+    </plurals>
+    <plurals name="passp_cache_notif_n_keys">
+        <item quantity="other">%d Passwörter gespeichert</item>
+        <item quantity="one">%d Passwort gespeichert</item>
+    </plurals>
+    <plurals name="security_token_error_pin">
+        <item quantity="other">"Falsche PIN
+%d Versuche verbleibend"</item>
+        <item quantity="one">"Falsche PIN
+%d Versuch verbleibend"</item>
+    </plurals>
+    <plurals name="token_unlock_attempts">
+        <item quantity="other">%d verbleibende Versuche</item>
+        <item quantity="one">1 verbleibender Versuch</item>
+    </plurals>
+</resources>

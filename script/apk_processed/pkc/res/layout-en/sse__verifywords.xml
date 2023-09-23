@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sse_ic_phone" android:layout_weight="0.15" />
+        <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sse__ic_arrow_left" android:layout_weight="0.15" />
+        <TextView android:textSize="@dimen/sse__text_size_small" android:gravity="center" android:id="@id/TextViewCompareNDevices" android:layout_width="132.0dip" android:layout_height="fill_parent" android:text="@string/label_CompareScreensNDevices" android:layout_weight="0.4" />
+        <ImageView android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sse_ic_arrow_right" android:layout_weight="0.15" />
+        <ImageView android:id="@id/imageView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sse_ic_phone" android:layout_weight="0.15" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sse__text_size_medium" android:gravity="center_horizontal" android:layout_gravity="center|top" android:id="@id/VerifyTextViewCenter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/sse__size_5dp" android:text="@string/label_VerifyInstruct" />
+    <ScrollView android:layout_gravity="center_horizontal" android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RadioGroup android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/VerifyLinearLayoutButtons" android:layout_width="fill_parent" android:layout_height="0.0dip">
+            <RadioButton android:textSize="@dimen/sse__text_size_large" android:gravity="center" android:id="@id/VerifyTextViewEnglishOne" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="@dimen/sse__text_size_small" android:gravity="center" android:id="@id/VerifyTextViewNumbersOne" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sse__size_20dp" android:text="" />
+            <RadioButton android:textSize="@dimen/sse__text_size_large" android:gravity="center" android:id="@id/VerifyTextViewEnglishTwo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="@dimen/sse__text_size_small" android:gravity="center" android:id="@id/VerifyTextViewNumbersTwo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sse__size_20dp" android:text="" />
+            <RadioButton android:textSize="@dimen/sse__text_size_large" android:gravity="center" android:id="@id/VerifyTextViewEnglishThree" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="@dimen/sse__text_size_small" android:gravity="center" android:id="@id/VerifyTextViewNumbersThree" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+        </RadioGroup>
+    </ScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sse__size_5dp" android:layout_marginBottom="@dimen/sse__size_5dp" android:baselineAligned="false">
+        <RelativeLayout android:id="@id/VerifyFrameButtonDiffer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/sse__text_size_medium" android:gravity="center" android:id="@id/VerifyButtonDiffer" android:paddingLeft="@dimen/sse__button_side_margin" android:paddingRight="@dimen/sse__button_side_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_NoMatch" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/VerifyFrameButtonMatch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/sse__text_size_medium" android:gravity="center" android:id="@id/VerifyButtonMatch" android:paddingLeft="@dimen/sse__button_side_margin" android:paddingRight="@dimen/sse__button_side_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_Match" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

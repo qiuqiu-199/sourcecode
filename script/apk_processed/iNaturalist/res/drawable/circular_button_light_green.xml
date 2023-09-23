@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="20.0dip" />
+            <gradient android:startColor="@color/inatapptheme_color_highlighted" android:endColor="@color/inatapptheme_color_highlighted" android:angle="270.0" />
+            <padding android:left="5.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="5.0dip" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="20.0dip" />
+            <gradient android:startColor="@color/inatapptheme_color_highlighted" android:endColor="@color/inatapptheme_color_highlighted" android:angle="270.0" />
+            <padding android:left="5.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="5.0dip" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="20.0dip" />
+            <gradient android:startColor="@color/inatapptheme_color_disabled" android:endColor="@color/inatapptheme_color_disabled" android:angle="270.0" />
+            <padding android:left="5.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="5.0dip" />
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="20.0dip" />
+            <gradient android:startColor="#80a4e717" android:endColor="#80a4e717" android:angle="270.0" />
+            <padding android:left="5.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="5.0dip" />
+        </shape>
+    </item>
+</selector>

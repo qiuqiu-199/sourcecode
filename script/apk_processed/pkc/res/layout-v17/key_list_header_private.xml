@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" super:slm_headerDisplay="sticky|inline" super:slm_section_sectionManager="linear"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:super="http://schemas.android.com/apk/lib-auto">
+    <TextView android:layout_gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/my_keys" style="@style/SectionHeader" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@android:color/darker_gray" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

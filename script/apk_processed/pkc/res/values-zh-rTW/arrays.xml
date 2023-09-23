@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="edit_key_edit_subkey">
+        <item>變更到期日</item>
+        <item>撤銷子金鑰</item>
+        <item>Strip Subkey</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id">
+        <item>變更為主身分識別</item>
+        <item>撤銷身分識別</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id_revert_revocation">
+        <item>還原撤銷</item>
+    </string-array>
+</resources>

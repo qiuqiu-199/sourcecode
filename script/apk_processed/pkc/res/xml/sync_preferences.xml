@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:persistent="true" android:title="@string/label_sync_settings_keyserver_title" android:key="syncKeyserver" android:defaultValue="true" />
+    <SwitchPreference android:persistent="true" android:title="@string/label_sync_settings_wifi_title" android:key="enableWifiSyncOnly" android:dependency="syncKeyserver" android:defaultValue="true" />
+    <SwitchPreference android:persistent="false" android:title="@string/label_sync_settings_contacts_title" android:key="syncContacts" />
+</PreferenceScreen>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"%d dåliga hemliga nycklar hoppades över. Du kanske exporterade med alternativet 
+ --export-secret-subkeys
+Se till att du exporterar med
+ --export-secret-keys
+istället.\""</item>
+        <item quantity="one">"%d dålig hemlig nyckel hoppades över. Du kanske exporterade med alternativet 
+ --export-secret-subkeys
+Se till att du exporterar med
+ --export-secret-keys
+istället.\""</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">Certifiering av %d nycklar misslyckades!</item>
+        <item quantity="one">Certifiering misslyckades!</item>
+    </plurals>
+    <plurals name="certify_keys_ok">
+        <item quantity="other">Framgångsrikt bekräftade %1$d keys%2$s.</item>
+        <item quantity="one">Framgångsrikt bekräftade key%2$s.</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">Certifiering misslyckades för %d nycklar!</item>
+        <item quantity="one">Certifiering misslyckades!</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">Raderade %1$d nycklar%2$s.</item>
+        <item quantity="one">Raderade nyckel%2$s.</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">Raderade %1$d nycklar</item>
+        <item quantity="one">Raderade en nyckel</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">, men misslyckades med att radera %1$d nycklar%2$s.</item>
+        <item quantity="one">, men misslyckades med att radera en nyckel%2$s.</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">Import av %d nycklar misslyckades!</item>
+        <item quantity="one">Import misslyckades!</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">Importerade %1$d nycklar%2$s.</item>
+        <item quantity="one">Importerade nyckel%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_1">
+        <item quantity="other">Importering av %1$d nycklar lyckades</item>
+        <item quantity="one">Importering av en nyckel lyckades</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_2">
+        <item quantity="other">och uppdaterade %1$d nycklar%2$s.</item>
+        <item quantity="one">och uppdaterade en nyckel %2$s.</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">Uppdaterade %1$d nycklar%2$s.</item>
+        <item quantity="one">Uppdaterade nyckel%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">Det gick inte att importera %d nycklar!</item>
+        <item quantity="one">Det gick inte att importera en nyckel!</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d nycklar valda.</item>
+        <item quantity="one">1 nyckel vald.</item>
+    </plurals>
+    <plurals name="msg_backup">
+        <item quantity="other">Säkerhetskopiering med %d nycklar</item>
+        <item quantity="one">Säkerhetskopiering med en nycklel</item>
+    </plurals>
+    <plurals name="msg_del">
+        <item quantity="other">Raderar %d nycklar</item>
+        <item quantity="one">Raderar en nyckel</item>
+    </plurals>
+    <plurals name="msg_del_fail">
+        <item quantity="other">Misslyckades med att radera %d nycklar</item>
+        <item quantity="one">Misslyckades med att radera en nyckel</item>
+    </plurals>
+    <plurals name="msg_del_ok">
+        <item quantity="other">Raderade %d nycklar</item>
+        <item quantity="one">Raderade nyckel</item>
+    </plurals>
+    <plurals name="msg_import">
+        <item quantity="other">Importerar %d nycklar</item>
+        <item quantity="one">Importerar nyckel</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">Hoppar över %s certifikat utfärdade av okända öppna nycklar</item>
+        <item quantity="one">Hoppar över ett certifikat utfärdat av en okänd publik nyckel</item>
+    </plurals>
+    <plurals name="msg_ip_uid_certs_unknown">
+        <item quantity="other">Hoppar över %s certifikat utfärdade av okända öppna nycklar</item>
+        <item quantity="one">Hoppar över ett certifikat utfärdat av okända publika nycklar</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">Klassificerar användar-ID:n (använder %s tillförlitliga nycklar)</item>
+        <item quantity="one">Klassificerar användar-ID:n (använder en tillförlitlig nyckel)</item>
+    </plurals>
+    <plurals name="msg_trust_count">
+        <item quantity="other">Uppdaterar %d nycklar</item>
+        <item quantity="one">Uppdaterar 1 nyckel</item>
+    </plurals>
+    <plurals name="n_authorities">
+        <item quantity="other">%d auktoriteter</item>
+        <item quantity="one">%d auktoritet</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d nycklar</item>
+        <item quantity="one">1 nyckel</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d nyckelservrar</item>
+        <item quantity="one">%d nyckelserver</item>
+    </plurals>
+    <plurals name="passp_cache_notif_n_keys">
+        <item quantity="other">%d lösenord sparade</item>
+        <item quantity="one">%d lösenord sparat</item>
+    </plurals>
+</resources>

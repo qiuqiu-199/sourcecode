@@ -1,0 +1,44 @@
+--------- beginning of main
+--------- beginning of crash
+--------- beginning of system
+09-18 15:30:25.899 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 15:30:25.899 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 15:30:25.900 15187 15187 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 15:30:25.901 15187 15187 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 15:30:25.901 15187 15187 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 15:30:25.901 15187 15187 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 15:30:25.901 15187 15187 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 15:30:25.907 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 15:30:25.907 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:25.917 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 15:30:25.917 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 15:30:25.917 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 15:30:25.918 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 15:30:25.918 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:25.918 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:25.918 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:25.918 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:25.918 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:25.995 15187 15187 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 15:30:25.996 15187 15187 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 15:30:25.996 15187 15187 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 15:30:25.997 15187 15187 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 15:30:26.005 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info;---><init>()V
+09-18 15:30:26.005 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 15:30:26.005 15187 15187 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 15:30:26.007 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:26.007 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:26.007 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:26.121 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:26.121 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:26.122 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$1;---><init>(Lcom/ichi2/anki/Info;Landroid/view/View;)V
+09-18 15:30:26.122 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$2;---><init>(Lcom/ichi2/anki/Info;)V
+09-18 15:30:26.135 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$3;---><init>(Lcom/ichi2/anki/Info;)V
+09-18 15:30:26.138 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onStart()V
+09-18 15:30:26.140 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onResume()V
+09-18 15:30:26.140 15187 15187 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;--->readMessage()V
+09-18 15:30:26.166 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$1;--->onProgressChanged(Landroid/webkit/WebView;I)V
+09-18 15:30:26.407 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$1;--->onProgressChanged(Landroid/webkit/WebView;I)V
+09-18 15:30:26.454 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$1;--->onProgressChanged(Landroid/webkit/WebView;I)V
+09-18 15:30:26.593 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$1;--->onProgressChanged(Landroid/webkit/WebView;I)V
+09-18 15:30:26.593 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$1;--->onProgressChanged(Landroid/webkit/WebView;I)V

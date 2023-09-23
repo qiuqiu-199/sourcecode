@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/user_id_item_check_box" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <include layout="@layout/view_key_adv_user_id_item" />
+</LinearLayout>

@@ -1,0 +1,68 @@
+--------- beginning of main
+--------- beginning of system
+09-19 00:32:34.631 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><clinit>()V
+09-19 00:32:34.632 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><init>()V
+09-19 00:32:34.632 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;--->onCreate()Z
+09-19 00:32:34.632 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/db/DatabaseHelper;---><init>(Landroid/content/Context;)V
+09-19 00:32:34.634 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/Statistics;---><init>()V
+09-19 00:32:34.634 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/Statistics$1;---><init>(Lnl/sogeti/android/gpstracker/actions/Statistics;Landroid/os/Handler;)V
+09-19 00:32:34.634 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/Statistics$2;---><init>(Lnl/sogeti/android/gpstracker/actions/Statistics;)V
+09-19 00:32:34.635 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/Statistics;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:32:34.635 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/Statistics$3;---><init>(Lnl/sogeti/android/gpstracker/actions/Statistics;)V
+09-19 00:32:34.635 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/util/UnitsI18n;---><init>(Landroid/content/Context;Lnl/sogeti/android/gpstracker/util/UnitsI18n$UnitsChangeListener;)V
+09-19 00:32:34.635 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/util/UnitsI18n;---><init>(Landroid/content/Context;)V
+09-19 00:32:34.635 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/util/UnitsI18n$1;---><init>(Lnl/sogeti/android/gpstracker/util/UnitsI18n;)V
+09-19 00:32:34.636 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/util/UnitsI18n;--->initBasedOnPreferences(Landroid/content/SharedPreferences;)V
+09-19 00:32:34.636 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/util/UnitsI18n;--->setToDefault()V
+09-19 00:32:34.636 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/util/UnitsI18n;--->init(Landroid/content/res/Resources;)V
+09-19 00:32:34.640 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/util/DateView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+09-19 00:32:34.641 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/util/DateView;--->setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
+09-19 00:32:34.642 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/util/DateView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+09-19 00:32:34.642 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/util/DateView;--->setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/ViewFlipper;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;--->setType(I)V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;--->renderGraph()V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;--->setType(I)V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;--->renderGraph()V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;--->setType(I)V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;--->renderGraph()V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;--->setType(I)V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/GraphCanvas;--->renderGraph()V
+09-19 00:32:34.643 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/Statistics$MyGestureDetector;---><init>(Lnl/sogeti/android/gpstracker/actions/Statistics;)V
+09-19 00:32:34.645 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/Statistics;--->onResume()V
+09-19 00:32:34.645 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/Statistics;--->drawTrackingStatistics()V
+09-19 00:32:34.645 24440 24440 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/StatisticsCalulator;---><init>(Landroid/content/Context;Lnl/sogeti/android/gpstracker/util/UnitsI18n;Lnl/sogeti/android/gpstracker/actions/utils/StatisticsDelegate;)V
+--------- beginning of crash
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: Process: nl.sogeti.android.gpstracker, PID: 24440
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {nl.sogeti.android.gpstracker/nl.sogeti.android.gpstracker.actions.Statistics}: java.lang.NullPointerException: uri
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3825)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3857)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: Caused by: java.lang.NullPointerException: uri
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at com.android.internal.util.Preconditions.checkNotNull(Preconditions.java:128)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:1960)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at nl.sogeti.android.gpstracker.actions.Statistics.onResume(Statistics.java:282)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7300)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3817)
+09-19 00:32:34.645 24440 24440 E AndroidRuntime: 	... 11 more
+09-19 00:32:34.652 24440 24459 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/StatisticsCalulator;--->doInBackground([Landroid/net/Uri;)Ljava/lang/Void;
+09-19 00:32:34.652 24440 24459 D M_InsDal: Lnl/sogeti/android/gpstracker/actions/utils/StatisticsCalulator;--->updateCalculations(Landroid/net/Uri;)V

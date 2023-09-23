@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"Ignoraronse %d chaves secretas incorrectas. Quizáis exportounas coa opción
+ --export-secret-subkeysAsegúrese de que as exporta con
+ --export-secret-keys
+como opción correcta.\""</item>
+        <item quantity="one">"Ignorouse %d chave secreta incorrecta. Quizáis exportouna coa opción
+ --export-secret-subkeysAsegúrese de que a exporta con
+ --export-secret-keys
+como opción correcta.\""</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">Fallou a certificación de %d chaves!</item>
+        <item quantity="one">Fallou a certficiación!</item>
+    </plurals>
+    <plurals name="certify_keys_ok">
+        <item quantity="other">Confirmadas correctamente %1$d chaves %2$s.</item>
+        <item quantity="one">Confirmada correctamente chave %2$s.</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">Fallou a certificación para %d chaves!</item>
+        <item quantity="one">Fallou a certificación!</item>
+    </plurals>
+    <plurals name="delete_fail">
+        <item quantity="other">Fallo eliminando %1$d chaves.</item>
+        <item quantity="one">Fallo ao eliminar unha chave.</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">Borrou correctamente %1$d chaves %2$s.</item>
+        <item quantity="one">Borrou correctamente chave %2$s.</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">Eliminou correctamente %1$d chaves</item>
+        <item quantity="one">Eliminou correctamente unha chave</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">, pero fallou o borrado de %1$d chaves %2$s.</item>
+        <item quantity="one">, pero fallou o borrado de unha chave %2$s.</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">A importación de %d chaves fallou!</item>
+        <item quantity="one">Fallou a importación</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">Importadas correctamente %1$d chaves %2$s.</item>
+        <item quantity="one">Importada correctamente chave %2$s.</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_1">
+        <item quantity="other">Importáronse con éxito %1$d chaves</item>
+        <item quantity="one">Importouse unha chave con éxito</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_2">
+        <item quantity="other">e actualizáronse %1$d chaves %2$s.</item>
+        <item quantity="one">e actualizouse unha chave %2$s.</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">Actualizada correctamente %1$d chaves %2$s.</item>
+        <item quantity="one">Actualizada correctamente chave %2$s.</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">Fallou a importación de %d chaves!</item>
+        <item quantity="one">Fallou a importación de unha chave!</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d chaves seleccionadas.</item>
+        <item quantity="one">1 chave seleccionada.</item>
+    </plurals>
+    <plurals name="msg_del">
+        <item quantity="other">Borrando %d chaves</item>
+        <item quantity="one">Borrando unha chave</item>
+    </plurals>
+    <plurals name="msg_del_fail">
+        <item quantity="other">Fallou o borrado de %dchaves</item>
+        <item quantity="one">Fallou o borrado dunha chave</item>
+    </plurals>
+    <plurals name="msg_del_ok">
+        <item quantity="other">Eliminou correctamente %d chaves</item>
+        <item quantity="one">Eliminouse correctamente a chave</item>
+    </plurals>
+    <plurals name="msg_import">
+        <item quantity="other">Importando %d chaves</item>
+        <item quantity="one">Importando chave</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">Ignorando %s certificados proporcionados por chaves públicas descoñecidas</item>
+        <item quantity="one">Ignorando un certificado proporcionado por unha chave pública descoñecida</item>
+    </plurals>
+    <plurals name="msg_ip_uid_certs_unknown">
+        <item quantity="other">Ignorando %s certificados proporcionados por chaves públicas descoñecidas</item>
+        <item quantity="one">Ignorando un certificado proporcionado por unha chave pública descoñecida</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">Clasificando IDs de usuaria (utilizando %s chaves de confianza)</item>
+        <item quantity="one">Clasificando IDs de usuaria (utilizando unha chave de confianza)</item>
+    </plurals>
+    <plurals name="msg_kc_success_bad">
+        <item quantity="other">A canonización do chaveiro foi exitosa, elimináronse %d certificados erróneos</item>
+        <item quantity="one">A canonización do chaveiro tivo éxito, eliminouse un certificado erróneo</item>
+    </plurals>
+    <plurals name="msg_kc_success_redundant">
+        <item quantity="other">A canonización do chaveiro foi exitosa, elimináronse %d certificados redundantes</item>
+        <item quantity="one">A canonización do chaveiro foi exitosa e eliminouse un certificado redundante</item>
+    </plurals>
+    <plurals name="msg_trust_count">
+        <item quantity="other">Actualizando %d chaves</item>
+        <item quantity="one">Actualizando unha chave</item>
+    </plurals>
+    <plurals name="n_authorities">
+        <item quantity="other">%d autoridades</item>
+        <item quantity="one">%d autoridade</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d chaves</item>
+        <item quantity="one">1 chave</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d servidores de chaves</item>
+        <item quantity="one">%d servidor de chaves</item>
+    </plurals>
+    <plurals name="passp_cache_notif_n_keys">
+        <item quantity="other">%d contrasinais gardados</item>
+        <item quantity="one">%d contrasinal gardado</item>
+    </plurals>
+    <plurals name="token_unlock_attempts">
+        <item quantity="other">Quedan %d intentos</item>
+        <item quantity="one">Queda 1 intento</item>
+    </plurals>
+</resources>

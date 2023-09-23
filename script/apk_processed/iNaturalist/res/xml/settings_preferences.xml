@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:layout="@layout/custom_preference" android:title="Some title" android:key="username" android:summary="Sign out" />
+    <CheckBoxPreference android:layout="@layout/custom_preference" android:title="@string/automatic_upload" android:key="auto_sync" android:summary="@string/auto_upload_description" android:widgetLayout="@layout/custom_checkbox_preference" android:defaultValue="true" />
+    <CheckBoxPreference android:layout="@layout/custom_preference" android:title="@string/suggest_species" android:key="suggest_species" android:summary="@string/suggest_species_description" android:widgetLayout="@layout/custom_checkbox_preference" android:defaultValue="true" />
+    <CheckBoxPreference android:layout="@layout/custom_preference" android:title="@string/prefers_scientific_name_first" android:key="prefers_scientific_name_first" android:summary="@string/prefers_scientific_name_first_description" android:widgetLayout="@layout/custom_checkbox_preference" android:defaultValue="false" />
+    <ListPreference android:entries="@array/language_names" android:layout="@layout/custom_preference" android:title="@string/language" android:key="language" android:summary="@string/use_device_language_settings" android:entryValues="@array/language_values" />
+    <Preference android:layout="@layout/custom_preference" android:title="@string/inat_network" android:key="inat_network" android:summary="Network Name" />
+    <Preference android:layout="@layout/custom_preference" android:title="@string/contact_support" android:key="contact_support" />
+    <Preference android:layout="@layout/custom_preference" android:title="@string/about_this_app" android:key="about" />
+    <Preference android:layout="@layout/custom_preference" android:title="@string/donate_to_inaturalist" android:key="donate" />
+    <Preference android:layout="@layout/custom_preference_with_header" android:title="@string/version" android:key="version" android:summary="1.2.3 (456)" />
+</android.support.v7.preference.PreferenceScreen>

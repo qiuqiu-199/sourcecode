@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="edit_key_edit_subkey">
+        <item>Cambia Scadenza</item>
+        <item>Revoca Sottochiave</item>
+        <item>Pulisci Sottochiave</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id">
+        <item>"Cambia in Identita' Primaria"</item>
+        <item>"Revoca identita'"</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id_revert_revocation">
+        <item>Ripristina revoca</item>
+    </string-array>
+    <string-array name="help_donation_google_catalog_values">
+        <item>1 EUR</item>
+        <item>2 EUR</item>
+        <item>3 EUR</item>
+        <item>5 EUR</item>
+        <item>10 EUR</item>
+        <item>50 EUR</item>
+        <item>100 EUR</item>
+    </string-array>
+</resources>

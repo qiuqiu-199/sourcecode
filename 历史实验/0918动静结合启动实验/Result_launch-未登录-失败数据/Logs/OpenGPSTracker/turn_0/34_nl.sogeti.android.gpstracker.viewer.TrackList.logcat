@@ -1,0 +1,40 @@
+--------- beginning of main
+--------- beginning of system
+09-19 00:22:40.078 22109 22109 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><clinit>()V
+09-19 00:22:40.078 22109 22109 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><init>()V
+09-19 00:22:40.078 22109 22109 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;--->onCreate()Z
+09-19 00:22:40.078 22109 22109 D M_InsDal: Lnl/sogeti/android/gpstracker/db/DatabaseHelper;---><init>(Landroid/content/Context;)V
+09-19 00:22:40.080 22109 22109 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TrackList;---><init>()V
+09-19 00:22:40.080 22109 22109 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TrackList$1;---><init>(Lnl/sogeti/android/gpstracker/viewer/TrackList;)V
+09-19 00:22:40.080 22109 22109 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TrackList$2;---><init>(Lnl/sogeti/android/gpstracker/viewer/TrackList;)V
+09-19 00:22:40.080 22109 22109 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TrackList$3;---><init>(Lnl/sogeti/android/gpstracker/viewer/TrackList;)V
+09-19 00:22:40.080 22109 22109 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TrackList$4;---><init>(Lnl/sogeti/android/gpstracker/viewer/TrackList;)V
+09-19 00:22:40.080 22109 22109 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TrackList$5;---><init>(Lnl/sogeti/android/gpstracker/viewer/TrackList;)V
+09-19 00:22:40.080 22109 22109 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TrackList$6;---><init>(Lnl/sogeti/android/gpstracker/viewer/TrackList;)V
+09-19 00:22:40.080 22109 22109 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TrackList$7;---><init>(Lnl/sogeti/android/gpstracker/viewer/TrackList;)V
+09-19 00:22:40.081 22109 22109 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TrackList;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:22:40.085 22109 22109 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TrackList;--->displayIntent(Landroid/content/Intent;)V
+--------- beginning of crash
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: Process: nl.sogeti.android.gpstracker, PID: 22109
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{nl.sogeti.android.gpstracker/nl.sogeti.android.gpstracker.viewer.TrackList}: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at nl.sogeti.android.gpstracker.viewer.TrackList.displayIntent(TrackList.java:575)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at nl.sogeti.android.gpstracker.viewer.TrackList.onCreate(TrackList.java:138)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:22:40.086 22109 22109 E AndroidRuntime: 	... 11 more

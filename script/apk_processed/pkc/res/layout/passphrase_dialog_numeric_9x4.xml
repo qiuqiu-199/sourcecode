@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/input" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:id="@id/passphrase_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="24.0dip" android:text="@string/passphrase_transfer" />
+        <include layout="@layout/transfer_code_input" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/progress" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+        <TextView android:layout_gravity="center_vertical" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_unlock" style="?android:textAppearanceMedium" />
+    </LinearLayout>
+</RelativeLayout>

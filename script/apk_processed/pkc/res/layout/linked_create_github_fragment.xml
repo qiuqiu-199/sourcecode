@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false" android:layout_above="@id/create_key_button_divider">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/linked_github" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/octo_link_24dp" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/account_key" />
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/linked_github_text" style="?android:textAppearanceSmall" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <org.sufficientlysecure.keychain.ui.widget.StatusIndicator android:id="@id/linked_status_step1" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="4.0dip" />
+                    <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linked_progress_auth_github" style="?android:textAppearanceMedium" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <org.sufficientlysecure.keychain.ui.widget.StatusIndicator android:id="@id/linked_status_step2" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="4.0dip" />
+                    <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linked_progress_post_gist" style="?android:textAppearanceMedium" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <org.sufficientlysecure.keychain.ui.widget.StatusIndicator android:id="@id/linked_status_step3" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="4.0dip" />
+                    <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linked_progress_update_key" style="?android:textAppearanceMedium" />
+                </LinearLayout>
+            </LinearLayout>
+            <org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator android:id="@id/button_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="16.0dip" android:inAnimation="@anim/fade_in" android:outAnimation="@anim/fade_out" custom:initialView="3">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/button_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linked_button_start" android:drawableLeft="@drawable/link_24dp" android:drawablePadding="12.0dip" android:drawableStart="@drawable/link_24dp" />
+                <Space android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <include layout="@layout/linked_id_item" />
+                <Button android:layout_gravity="center_horizontal" android:id="@id/button_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linked_button_retry_step" android:drawableLeft="@drawable/ic_repeat_black_24dp" android:drawablePadding="12.0dip" android:drawableStart="@drawable/ic_repeat_black_24dp" />
+            </org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator>
+        </LinearLayout>
+    </ScrollView>
+    <View android:id="@id/create_key_button_divider" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_alignTop="@id/create_key_buttons" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/create_key_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/back_button" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:text="@string/btn_back" android:drawableLeft="@drawable/ic_chevron_left_grey_24dp" android:drawablePadding="8.0dip" android:layout_weight="1.0" android:textAllCaps="true" style="?android:borderlessButtonStyle" />
+        <View android:background="?android:listDivider" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center|right" android:layout_gravity="center_vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:text="@string/btn_finish" android:drawableRight="@drawable/ic_person_add_grey_24dp" android:drawablePadding="8.0dip" android:layout_weight="1.0" android:textAllCaps="true" style="?android:borderlessButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

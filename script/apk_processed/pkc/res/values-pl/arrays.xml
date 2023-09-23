@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="edit_key_edit_subkey">
+        <item>Zmień wygaśnięcie</item>
+        <item>Unieważnij Pod-klucz</item>
+        <item>Usuń Pod-klucz</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id">
+        <item>Zmień na Główną Tożsamość</item>
+        <item>Unieważnij Tożsamość</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id_revert_revocation">
+        <item>Odwołaj unieważnienie</item>
+    </string-array>
+</resources>

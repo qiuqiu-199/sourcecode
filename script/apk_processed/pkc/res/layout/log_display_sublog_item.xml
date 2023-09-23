@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" super:slm_headerDisplay="sticky|inline" super:slm_section_sectionManager="linear"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:super="http://schemas.android.com/apk/lib-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/log_img" android:background="?colorLogBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="10.0dip" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/log_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_weight="1.0" />
+        <ImageView android:gravity="center_vertical" android:id="@id/log_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/ic_view_list_grey_24dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/log_second" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+        <ImageView android:id="@id/log_second_img" android:background="?colorLogBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="10.0dip" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/log_second_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

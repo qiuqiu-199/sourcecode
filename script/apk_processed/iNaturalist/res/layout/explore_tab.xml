@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/separator" android:background="#ffe9e9e9" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/separator">
+        <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/inatapptheme_color" android:layout_gravity="center_horizontal" android:id="@id/count" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="45,000" />
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/loading" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="37.0dip" style="?android:progressBarStyleSmall" />
+        <TextView android:textSize="11.0sp" android:textColor="#ffacacac" android:layout_gravity="center_horizontal" android:id="@id/tab_name" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Observations" />
+    </LinearLayout>
+</RelativeLayout>

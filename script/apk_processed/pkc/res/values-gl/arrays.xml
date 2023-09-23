@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="edit_key_edit_subkey">
+        <item>Cambiar caducidade</item>
+        <item>Revogar Subchave</item>
+        <item>Eliminar Subchave</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id">
+        <item>Converter a Identidade Primaria</item>
+        <item>Revogar Identidade</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id_revert_revocation">
+        <item>Reverter repudio</item>
+    </string-array>
+</resources>

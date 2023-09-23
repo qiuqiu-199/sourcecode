@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dsa_key_size_spinner_values">
+        <item>@string/key_size_2048</item>
+        <item>@string/key_size_3072</item>
+        <item>@string/key_size_4096</item>
+    </string-array>
+    <string-array name="edit_key_edit_subkey">
+        <item>Change Expiry</item>
+        <item>Revoke Subkey</item>
+        <item>Strip Subkey</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id">
+        <item>Change to Primary Identity</item>
+        <item>Revoke Identity</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id_revert_revocation">
+        <item>Revert revocation</item>
+    </string-array>
+    <string-array name="elgamal_key_size_spinner_values">
+        <item>@string/key_size_2048</item>
+        <item>@string/key_size_3072</item>
+        <item>@string/key_size_4096</item>
+        <item>@string/key_size_8192</item>
+    </string-array>
+    <string-array name="help_donation_google_catalog_values">
+        <item>1 EUR</item>
+        <item>2 EUR</item>
+        <item>3 EUR</item>
+        <item>5 EUR</item>
+        <item>10 EUR</item>
+        <item>50 EUR</item>
+        <item>100 EUR</item>
+    </string-array>
+    <array name="letter_tile_colors">
+        <item>#fff16364</item>
+        <item>#fff58559</item>
+        <item>#fff9a43e</item>
+        <item>#ffe4c62e</item>
+        <item>#ff67bf74</item>
+        <item>#ff59a2be</item>
+        <item>#ff2093cd</item>
+        <item>#ffad62a7</item>
+    </array>
+    <string-array name="pref_proxy_type_entries">
+        <item>@string/pref_proxy_type_choice_http</item>
+        <item>@string/pref_proxy_type_choice_socks</item>
+    </string-array>
+    <string-array name="pref_proxy_type_values">
+        <item>proxyHttp</item>
+        <item>proxySocks</item>
+    </string-array>
+    <string-array name="rev_del_dialog_entries">
+        <item>@string/del_rev_dialog_choice_rev_upload</item>
+        <item>@string/del_rev_dialog_choice_delete</item>
+    </string-array>
+    <string-array name="rsa_key_size_spinner_values">
+        <item>@string/key_size_2048</item>
+        <item>@string/key_size_4096</item>
+        <item>@string/key_size_8192</item>
+        <item>@string/key_size_custom</item>
+    </string-array>
+    <string-array name="theme_entries">
+        <item>@string/theme_dark</item>
+        <item>@string/theme_light</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>dark</item>
+        <item>light</item>
+    </string-array>
+</resources>

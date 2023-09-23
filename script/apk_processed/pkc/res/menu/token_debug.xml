@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_token_debug_keyserver" android:title="Debug / Token from Keyserver" />
+    <item android:id="@id/menu_token_debug_uri" android:title="Debug / Token from Uri" />
+    <item android:id="@id/menu_token_debug_locked" android:title="Debug / Locked Token" />
+    <item android:id="@id/menu_token_debug_locked_hard" android:title="Debug / Hard Locked Token" />
+</menu>

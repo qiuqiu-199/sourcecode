@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/create_key_buttons">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/yubikey_status_layout" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="14.0dip" android:src="@drawable/yubi_icon" android:scaleType="centerCrop" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/token_serno" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yubikey #" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/token_userid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="User ID" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/yubikey_decision" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/yubikey_status_layout">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:text="@string/security_token_reset_or_import" />
+                <RadioGroup android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioButton android:id="@id/token_decision_import" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/security_token_radio_use_existing" />
+                    <RadioButton android:id="@id/token_decision_reset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/security_token_radio_reset" />
+                </RadioGroup>
+            </LinearLayout>
+            <FrameLayout android:id="@id/security_token_import_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_below="@id/yubikey_decision">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/android_red_dark" android:layout_gravity="center" android:id="@id/token_import_reset_warning" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="24.0dip" android:text="@string/security_token_reset_warning" />
+            </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/create_key_buttons" android:background="?colorButtonRow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/create_key_back_button" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:text="@string/btn_back" android:drawableLeft="@drawable/ic_chevron_left_grey_24dp" android:drawablePadding="8.0dip" android:layout_weight="1.0" android:textAllCaps="true" style="?android:borderlessButtonStyle" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/create_key_next_button" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:text="@string/btn_import" android:drawableRight="@drawable/ic_key_plus_grey600_24dp" android:drawablePadding="8.0dip" android:layout_weight="1.0" android:textAllCaps="true" style="?android:borderlessButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

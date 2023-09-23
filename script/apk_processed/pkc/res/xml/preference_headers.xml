@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:icon="@drawable/ic_cloud_black_24dp" android:title="@string/section_cloud_search" android:summary="Keyserver, keybase.io" android:fragment="org.sufficientlysecure.keychain.ui.SettingsActivity$CloudSearchPrefsFragment" />
+    <header android:icon="@drawable/ic_lock_black_24dp" android:title="@string/section_passphrase_cache" android:summary="@string/section_passphrase_cache_summary" android:fragment="org.sufficientlysecure.keychain.ui.SettingsActivity$PassphrasePrefsFragment" />
+    <header android:icon="@drawable/ic_tor_black_24dp" android:title="@string/section_proxy_settings" android:summary="@string/section_proxy_settings_summary" android:fragment="org.sufficientlysecure.keychain.ui.SettingsActivity$ProxyPrefsFragment" />
+    <header android:icon="@drawable/ic_sync_black_24dp" android:title="@string/section_sync_settings" android:summary="@string/section_sync_settings_summary" android:fragment="org.sufficientlysecure.keychain.ui.SettingsActivity$SyncPrefsFragment" />
+    <header android:icon="@drawable/ic_extension_black_24dp" android:title="@string/section_experimental_features" android:fragment="org.sufficientlysecure.keychain.ui.SettingsActivity$ExperimentalPrefsFragment" />
+</preference-headers>

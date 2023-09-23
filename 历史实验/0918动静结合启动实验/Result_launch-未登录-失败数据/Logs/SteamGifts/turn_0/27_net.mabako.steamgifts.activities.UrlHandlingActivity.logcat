@@ -1,0 +1,74 @@
+--------- beginning of system
+--------- beginning of main
+09-19 03:46:20.536 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/Application;---><init>()V
+09-19 03:46:20.536 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/ApplicationTemplate;---><init>()V
+09-19 03:46:20.536 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/ApplicationTemplate;--->onCreate()V
+09-19 03:46:20.536 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;---><clinit>()V
+09-19 03:46:20.536 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;--->scheduleAllTasks(Landroid/content/Context;)V
+09-19 03:46:20.536 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;---><clinit>()V
+09-19 03:46:20.536 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;---><init>(Ljava/lang/String;IJLjava/lang/Class;)V
+09-19 03:46:20.536 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;--->values()[Lnet/mabako/steamgifts/PeriodicTasks$Task;
+09-19 03:46:20.536 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;--->scheduleTask(Lnet/mabako/steamgifts/PeriodicTasks$Task;Landroid/content/Context;)V
+09-19 03:46:20.537 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$TaskData;---><init>(Landroid/app/AlarmManager;Landroid/app/PendingIntent;)V
+09-19 03:46:20.539 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/activities/CommonActivity;---><clinit>()V
+09-19 03:46:20.540 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/activities/UrlHandlingActivity;---><clinit>()V
+09-19 03:46:20.540 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/activities/UrlHandlingActivity;---><init>()V
+09-19 03:46:20.540 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/activities/CommonActivity;---><init>()V
+09-19 03:46:20.540 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/activities/BaseActivity;---><init>()V
+09-19 03:46:20.540 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/activities/CommonActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 03:46:20.542 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/activities/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 03:46:20.543 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/activities/BaseActivity;--->setTheme()Z
+09-19 03:46:20.545 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SGToolsUserData;---><clinit>()V
+09-19 03:46:20.545 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SGToolsUserData;---><init>()V
+09-19 03:46:20.545 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SGToolsUserData;--->clear()V
+09-19 03:46:20.545 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SGToolsUserData;---><init>()V
+09-19 03:46:20.545 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/activities/UrlHandlingActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 03:46:20.545 19849 19849 D M_InsDal: Lnet/mabako/steamgifts/activities/UrlHandlingActivity;--->getIntentForUri(Landroid/content/Context;Landroid/net/Uri;)Landroid/content/Intent;
+--------- beginning of crash
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: Process: net.mabako.steamgifts, PID: 19849
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{net.mabako.steamgifts/net.mabako.steamgifts.activities.UrlHandlingActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.toString()' on a null object reference
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.toString()' on a null object reference
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at net.mabako.steamgifts.activities.UrlHandlingActivity.getIntentForUri(UrlHandlingActivity.java:39)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at net.mabako.steamgifts.activities.UrlHandlingActivity.onCreate(UrlHandlingActivity.java:151)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 03:46:20.546 19849 19849 E AndroidRuntime: 	... 11 more
+09-19 03:46:27.317 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/Application;---><init>()V
+09-19 03:46:27.317 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/ApplicationTemplate;---><init>()V
+09-19 03:46:27.317 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/ApplicationTemplate;--->onCreate()V
+09-19 03:46:27.317 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;---><clinit>()V
+09-19 03:46:27.317 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;--->scheduleAllTasks(Landroid/content/Context;)V
+09-19 03:46:27.317 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;---><clinit>()V
+09-19 03:46:27.317 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;---><init>(Ljava/lang/String;IJLjava/lang/Class;)V
+09-19 03:46:27.317 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;--->values()[Lnet/mabako/steamgifts/PeriodicTasks$Task;
+09-19 03:46:27.317 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;--->scheduleTask(Lnet/mabako/steamgifts/PeriodicTasks$Task;Landroid/content/Context;)V
+09-19 03:46:27.317 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$TaskData;---><init>(Landroid/app/AlarmManager;Landroid/app/PendingIntent;)V
+09-19 03:46:27.318 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;---><clinit>()V
+09-19 03:46:27.318 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver$NotificationId;---><clinit>()V
+09-19 03:46:27.318 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver$NotificationId;---><init>(Ljava/lang/String;I)V
+09-19 03:46:27.318 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver$NotificationId;---><init>(Ljava/lang/String;I)V
+09-19 03:46:27.318 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;---><init>()V
+09-19 03:46:27.318 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver;---><init>()V
+09-19 03:46:27.318 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;--->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+09-19 03:46:27.318 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver;--->shouldRunNetworkTask(Ljava/lang/String;Landroid/content/Context;)Z
+09-19 03:46:27.319 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;---><clinit>()V
+09-19 03:46:27.319 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->getCurrent(Landroid/content/Context;)Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;
+09-19 03:46:27.319 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;---><init>()V
+09-19 03:46:27.319 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->clear()V
+09-19 03:46:27.319 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;---><init>()V
+09-19 03:46:27.319 19879 19879 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->isLoggedIn()Z

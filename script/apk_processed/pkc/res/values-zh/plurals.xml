@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"忽略了 %d 个无效密钥。您也许在导出密钥时使用了选项
+ --export-secret-subkeys
+请确认您是用
+ --export-secret-keys
+选项导出密钥。"</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">%d 个密钥认证失败！</item>
+    </plurals>
+    <plurals name="certify_keys_ok">
+        <item quantity="other">成功确认了 %1$d 个密钥%2$s。</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">%d 个密钥认证失败！</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">成功删除了 %1$d 个密钥%2$s。</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">成功删除了 %1$d 个密钥</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">，但 %1$d 个密钥删除失败%2$s。</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">%d 个密钥导入失败！</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">成功导入了 %1$d 个密钥%2$s。</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_1">
+        <item quantity="other">成功导入了 %1$d 个密钥</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_2">
+        <item quantity="other">并更新了 %1$d 个密钥 %2$s。</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">成功更新了 %1$d 个密钥%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">%d 个密钥导入失败！</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">已选择 %d 个密钥。</item>
+    </plurals>
+    <plurals name="linked_id_expand">
+        <item quantity="other">共有 %d 个以上未知的用户标识类型</item>
+    </plurals>
+    <plurals name="msg_backup">
+        <item quantity="other">备份 %d 个密钥</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uats">
+        <item quantity="other">正在认证密钥 %2$s 的 %1$d 个用户属性。</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uids">
+        <item quantity="other">正在认证密钥 %2$s 的 %1$d 个用户标识。</item>
+    </plurals>
+    <plurals name="msg_del">
+        <item quantity="other">正在删除 %d 个密钥</item>
+    </plurals>
+    <plurals name="msg_del_fail">
+        <item quantity="other">不能成功删除%d个密钥</item>
+    </plurals>
+    <plurals name="msg_del_ok">
+        <item quantity="other">成功删除 %d 个密钥</item>
+    </plurals>
+    <plurals name="msg_import">
+        <item quantity="other">正在导入 %d 个密钥</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">忽略来自未知公钥签名的认证 %s</item>
+    </plurals>
+    <plurals name="msg_ip_uid_certs_unknown">
+        <item quantity="other">忽略来自未知公钥签名的认证 %s</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">鉴别用户标识中 (使用可信密钥 %s)</item>
+    </plurals>
+    <plurals name="msg_kc_success_bad">
+        <item quantity="other">密钥环格式化成功，移除 %d 个错误签名</item>
+    </plurals>
+    <plurals name="msg_kc_success_redundant">
+        <item quantity="other">密钥环格式化成功，移除 %d 个多余签名</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d 个密钥</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d 个密钥服务器</item>
+    </plurals>
+    <plurals name="security_token_error_pin">
+        <item quantity="other">"PIN码错误！
+剩余%d次尝试机会。"</item>
+    </plurals>
+</resources>

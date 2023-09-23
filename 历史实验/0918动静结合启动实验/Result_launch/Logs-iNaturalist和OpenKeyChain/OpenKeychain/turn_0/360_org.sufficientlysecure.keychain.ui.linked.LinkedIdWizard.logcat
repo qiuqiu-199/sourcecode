@@ -1,0 +1,29 @@
+--------- beginning of main
+--------- beginning of system
+09-19 13:13:18.882 30132 30132 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+09-19 13:13:18.898 30132 30132 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+09-19 13:13:18.904 30132 30132 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 13:13:18.914 30132 30132 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/linked/LinkedIdWizard;--->onCreate(Landroid/os/Bundle;)V
+09-19 13:13:18.920 30132 30132 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onResume()V
+09-19 13:13:18.922 30132 30158 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainDatabase$1;--->onOpen(Landroid/arch/persistence/db/SupportSQLiteDatabase;)V
+--------- beginning of crash
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 30132
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean org.sufficientlysecure.keychain.model.SubKey$UnifiedKeyInfo.has_any_secret()' on a null object reference
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at org.sufficientlysecure.keychain.ui.linked.LinkedIdWizard.onLoadUnifiedKeyInfo(LinkedIdWizard.java:71)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at org.sufficientlysecure.keychain.ui.linked.LinkedIdWizard.bridge$lambda$0$LinkedIdWizard(Unknown Source:0)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at org.sufficientlysecure.keychain.ui.linked.LinkedIdWizard$$Lambda$0.onChanged(Unknown Source:10)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at android.arch.lifecycle.LiveData.considerNotify(LiveData.java:109)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at android.arch.lifecycle.LiveData.dispatchingValue(LiveData.java:126)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at android.arch.lifecycle.LiveData.setValue(LiveData.java:282)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at org.sufficientlysecure.keychain.ui.keyview.loader.AsyncTaskLiveData.access$100(AsyncTaskLiveData.java:15)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at org.sufficientlysecure.keychain.ui.keyview.loader.AsyncTaskLiveData$1.onPostExecute(AsyncTaskLiveData.java:60)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at android.os.AsyncTask.finish(AsyncTask.java:695)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at android.os.AsyncTask.access$600(AsyncTask.java:180)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:712)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 13:13:18.925 30132 30132 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)

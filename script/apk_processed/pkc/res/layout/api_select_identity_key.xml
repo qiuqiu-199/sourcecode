@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:background="?colorPrimary" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:src="@mipmap/ic_launcher" />
+        <TextView android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/app_name" android:maxLines="1" style="?android:textAppearanceLarge" />
+        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/overflow_menu" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_vert_black_24dp" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/text_title_select_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="22.0dip" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/text_user_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight" />
+    <org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator android:id="@id/layout_animator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureAllChildren="false" android:inAnimation="@anim/fade_in" android:outAnimation="@anim/fade_out" custom:initialView="1">
+        <Space android:id="@id/select_key_layout_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/select_key_layout_no_keys" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_no_keys_new" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+                <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_key_plus_grey600_24dp" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_keys_gen_title" style="?android:textAppearanceMedium" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_keys_gen_subtitle" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_no_keys_existing" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+                <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_help_black_24dp" android:tint="@color/md_grey_600" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_keys_import_title" style="?android:textAppearanceMedium" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_keys_import_subtitle" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_no_keys_cancel" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:minHeight="?listPreferredItemHeight">
+                <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_close_black_24dp" android:tint="@color/md_grey_600" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_identity_cancel" style="?android:textAppearanceMedium" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/select_key_layout_key_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView android:id="@id/identity_key_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_key_list_other" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+                <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_help_black_24dp" android:tint="@color/md_grey_600" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_list_import" style="?android:textAppearanceMedium" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_key_list_cancel" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:minHeight="?listPreferredItemHeight">
+                <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_close_black_24dp" android:tint="@color/md_grey_600" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/cancel" style="?android:textAppearanceMedium" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/select_key_layout_import_expl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/key_import_text" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/button_goto_openkeychain" android:background="?selectableItemBackground" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="12.0dip" android:src="@mipmap/ic_launcher" />
+                <TextView android:background="@android:color/transparent" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_goto_openkeychain" style="?buttonBarButtonStyle" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/key_import_autocrypt_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:text="@string/key_import_text_autocrypt_setup_msg" />
+            <LinearLayout android:gravity="end" android:layout_gravity="bottom" android:orientation="horizontal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" style="?buttonBarStyle">
+                <Button android:id="@id/button_expl_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_back" style="?buttonBarButtonStyle" />
+                <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <Button android:layout_gravity="end" android:id="@id/button_expl_got_it" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_got_it" style="?buttonBarButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/select_key_layout_generate_progress" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+                <ProgressBar android:layout_gravity="center_vertical" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:indeterminate="true" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_gen_progress" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight" style="?buttonBarStyle">
+                <Button android:enabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_gen_back" style="?buttonBarButtonStyle" />
+                <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <Button android:enabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_gen_finish" style="?buttonBarButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/select_key_layout_generate_ok" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+                <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_check_black_24dp" android:tint="@color/android_green_light" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_gen_done" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/button_gen_back" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight" style="?buttonBarStyle">
+                <Button android:id="@id/button_genok_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_gen_back" style="?buttonBarButtonStyle" />
+                <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <Button android:id="@id/button_genok_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_gen_finish" style="?buttonBarButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/select_key_layout_generate_save" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight">
+                <ProgressBar android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:indeterminate="true" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_gen_finishing" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight" style="?buttonBarStyle">
+                <Button android:enabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_gen_back" style="?buttonBarButtonStyle" />
+                <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <Button android:enabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_gen_finish" style="?buttonBarButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator>
+</LinearLayout>

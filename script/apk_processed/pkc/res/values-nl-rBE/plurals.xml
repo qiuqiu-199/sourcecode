@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"%d slechte geheime sleutels genegeerd. Misschien heb je geëxporteerd met de optie
+--export-secret-subkeys
+Zorg ervoor dat je in plaats daarvan met --export-secret-keys exporteert."</item>
+        <item quantity="one">"%d slechte geheime sleutel genegeerd. Misschien heb je geëxporteerd met de optie
+--export-secret-subkeys
+Zorg ervoor dat je in plaats daarvan met --export-secret-keys exporteert."</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">Certificatie van %d sleutels mislukt!</item>
+        <item quantity="one">Certificatie mislukt!</item>
+    </plurals>
+    <plurals name="certify_keys_ok">
+        <item quantity="other">Succesvol %1$d sleutels bevestigd%2$s.</item>
+        <item quantity="one">Succesvol een sleutel bevestigd%2$s.</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">Certificatie mislukt voor %d sleutels!</item>
+        <item quantity="one">Certificatie mislukt!</item>
+    </plurals>
+    <plurals name="delete_fail">
+        <item quantity="other">Fout bij verwijderen van %1$d sleutels.</item>
+        <item quantity="one">Fout bij verwijderen van een sleutel.</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">%1$d sleutels%2$s succesvol verwijderd.</item>
+        <item quantity="one">Sleutel%2$s succesvol verwijderd.</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">%1$d sleutels succesvol verwijderd</item>
+        <item quantity="one">Een sleutel succesvol verwijderd</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">, maar verwijderen van %1$d sleutels%2$s mislukt.</item>
+        <item quantity="one">, maar verwijderen van een sleutel%2$s mislukt.</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">Importeren van %d sleutels mislukt!</item>
+        <item quantity="one">Importeren mislukt!</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">%1$d sleutels%2$s succesvol geïmporteerd.</item>
+        <item quantity="one">Sleutel%2$s succesvol geïmporteerd.</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_1">
+        <item quantity="other">Succesvol %1$d sleutels geïmporteerd</item>
+        <item quantity="one">Sleutel succesvol geïmporteerd</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_2">
+        <item quantity="other">en %1$d sleutels bijgewerkt%2$s.</item>
+        <item quantity="one">en een sleutel bijgewerkt%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">%1$d sleutels%2$s succesvol geüpdatet.</item>
+        <item quantity="one">Sleutel%2$s succesvol geüpdatet.</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">Importeren mislukt voor %d sleutels!</item>
+        <item quantity="one">Importeren mislukt voor een sleutel!</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d sleutels geselecteerd.</item>
+        <item quantity="one">1 sleutel geselecteerd.</item>
+    </plurals>
+    <plurals name="linked_id_expand">
+        <item quantity="other">Er zijn meer dan %d onbekende identiteitstypen</item>
+        <item quantity="one">Er is nog 1 onbekend identiteitstype</item>
+    </plurals>
+    <plurals name="msg_backup">
+        <item quantity="other">Back-up met %d sleutels</item>
+        <item quantity="one">Backup met één sleutel</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uats">
+        <item quantity="other">Bezig met certificeren van %1$d gebruikersattributen voor sleutel %2$s</item>
+        <item quantity="one">Bezig met certificeren van een gebruikersattribuut voor sleutel %2$s</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uids">
+        <item quantity="other">"Bezig met certificeren van %1$d gebruikers-ID's voor sleutel %2$s"</item>
+        <item quantity="one">Bezig met certificeren van een gebruikers-ID voor sleutel %2$s</item>
+    </plurals>
+    <plurals name="msg_del">
+        <item quantity="other">Bezig met verwijderen van %d sleutels</item>
+        <item quantity="one">Bezig met verwijderen van een sleutel</item>
+    </plurals>
+    <plurals name="msg_del_fail">
+        <item quantity="other">Verwijderen van %d sleutels mislukt</item>
+        <item quantity="one">Verwijderen van een sleutel mislukt</item>
+    </plurals>
+    <plurals name="msg_del_ok">
+        <item quantity="other">%d sleutels succesvol verwijderd</item>
+        <item quantity="one">Sleutel succesvol verwijderd</item>
+    </plurals>
+    <plurals name="msg_import">
+        <item quantity="other">Bezig met importeren van %d sleutels</item>
+        <item quantity="one">Bezig met importeren van sleutel</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">%s certificaten uitgegeven door onbekende publieke sleutels worden genegeerd</item>
+        <item quantity="one">Een certificaat uitgegeven door een onbekende publieke sleutel wordt genegeerd</item>
+    </plurals>
+    <plurals name="msg_ip_uid_certs_unknown">
+        <item quantity="other">%s certificaten uitgegeven door onbekende publieke sleutels worden genegeerd</item>
+        <item quantity="one">Een certificaat uitgegeven door een onbekende publieke sleutel wordt genegeerd</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">"Bezig met classificeren van gebruikers-ID's (%s vertrouwde sleutels worden gebruikt)"</item>
+        <item quantity="one">"Bezig met classificeren van gebruikers-ID's (een vertrouwde sleutel wordt gebruikt)"</item>
+    </plurals>
+    <plurals name="msg_kc_success_bad">
+        <item quantity="other">Standaardisatie van sleutelbos geslaagd, %d foutieve certificaten verwijderd</item>
+        <item quantity="one">Standaardisatie van sleutelbos geslaagd, een foutief certificaat verwijderd</item>
+    </plurals>
+    <plurals name="msg_kc_success_redundant">
+        <item quantity="other">Standaardisatie van sleutelbos geslaagd, %d overbodige certificaten verwijderd</item>
+        <item quantity="one">Standaardisatie van sleutelbos geslaagd, een overbodig certificaat verwijderd</item>
+    </plurals>
+    <plurals name="msg_trust_count">
+        <item quantity="other">%d sleutels bijwerken</item>
+        <item quantity="one">1 sleutel bijwerken</item>
+    </plurals>
+    <plurals name="n_authorities">
+        <item quantity="other">%d autoriteiten</item>
+        <item quantity="one">%d autoriteit</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d sleutels</item>
+        <item quantity="one">1 sleutel</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d sleutelservers</item>
+        <item quantity="one">%d sleutelserver</item>
+    </plurals>
+    <plurals name="passp_cache_notif_n_keys">
+        <item quantity="other">%d wachtwoorden opgeslagen</item>
+        <item quantity="one">%d wachtwoord opgeslagen</item>
+    </plurals>
+    <plurals name="security_token_error_pin">
+        <item quantity="other">"Ongeldige pincode!
+%d pogingen resterend."</item>
+        <item quantity="one">"Ongeldige pincode!
+%d poging resterend."</item>
+    </plurals>
+    <plurals name="token_unlock_attempts">
+        <item quantity="other">%d pogingen resterend</item>
+        <item quantity="one">1 poging resterend</item>
+    </plurals>
+</resources>

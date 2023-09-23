@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Security Warning" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center_vertical" android:id="@id/api_register_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="The key this message was sent by is using an outdated algorithm, and is no longer considered secure!" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="The algorithm in use is DSA 1024 bit, which has been considered insecure since 2010." />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/dialog_title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Recommended Action" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center_vertical" android:id="@id/api_register_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="The key in use is insecure, and cannot be updated. To communicate securely, the sender must create a new key!" />
+</merge>

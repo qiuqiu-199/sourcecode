@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="7.0dip" android:paddingTop="7.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="72.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/project_top_container" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/user_pic" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="11.0dip" android:src="@drawable/ic_account_circle_black_48dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/project_pic_container" android:background="@drawable/project_border" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="11.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/project_pic" android:padding="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_work_black_24dp" />
+            <ImageView android:id="@id/project_pic_none" android:background="#ffdbdbdb" android:padding="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_work_black_24dp" android:tint="#ffffffff" />
+            <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/project_pic_info" android:background="#ffcecece" android:layout_width="15.0dip" android:layout_height="18.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="1.0dip" android:text="i" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:textAlignment="center" />
+        </RelativeLayout>
+        <TextView android:ellipsize="end" android:id="@id/project_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" android:text="some project name with very lonsome project name with very longgsome project name with very long" android:maxLines="2" android:layout_toRightOf="@id/project_pic_container" android:layout_centerVertical="true" style="@android:style/TextAppearance.Medium" />
+    </RelativeLayout>
+    <View android:background="#ffdfdfdf" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="76.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

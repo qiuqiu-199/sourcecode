@@ -30,8 +30,9 @@ public class TestcaseGenerator {
         this.appId = 0;
         this.apkTC = ConstantUtils.RESULTFOLDER + ConstantUtils.TESTCASEFOLDER + Global.v().getAppModel().appName + File.separator + "testCase.iccmsg";
 
+        //将动态icc信息整合进静态的icc中
         this.intergrate(act2ReceivedICCMap, map);
-        System.out.println("初始化iccmsg-qiu");
+//        System.out.println("初始化iccmsg-qiu");
     }
 
     //整合map里的实际extra值进静态得到的extra里
@@ -579,10 +580,10 @@ public class TestcaseGenerator {
                 //数组直接在这里初始化
                 // byteArray->search_bytes->[5:0:0:0]   ====>  byteArray->search_bytes->{5,0,0,0}
                 String extra_value = ss[2];
-                if(extra_value.contains("[")){
+                if (extra_value.contains("[")) {
                     extra_value = extra_value.replace("[", "{").replace("]", "}").replace(":", ",");
-                }else{
-                    extra_value = "{"+extra_value+"}";
+                } else {
+                    extra_value = "{" + extra_value + "}";
                 }
                 content = "\t\t" + type + "[] " + extra_key + " = new " + type + "[]" + extra_value + ";\n";
                 if (!decSet.contains(content)) {

@@ -1,0 +1,28 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: OpenKeychain_ins.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+- ogg
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '15'
+  targetSdkVersion: '28'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
+  org/bouncycastle/x509/CertPathReviewerMessages_de.properties: '8'
+  org/bouncycastle/x509/CertPathReviewerMessages.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.4.1
+versionInfo:
+  versionCode: '52009'
+  versionName: '5.2'

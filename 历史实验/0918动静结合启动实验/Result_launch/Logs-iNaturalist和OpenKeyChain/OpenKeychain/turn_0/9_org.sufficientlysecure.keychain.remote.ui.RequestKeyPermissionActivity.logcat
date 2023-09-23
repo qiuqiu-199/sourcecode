@@ -1,0 +1,38 @@
+--------- beginning of main
+--------- beginning of system
+09-19 11:31:44.309  4504  4504 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+09-19 11:31:44.337  4504  4504 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/RequestKeyPermissionActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 11:31:44.353  4504  4504 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/RequestKeyPermissionActivity$RequestKeyPermissionFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+09-19 11:31:44.369  4504  4504 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/RequestKeyPermissionActivity;--->onStart()V
+09-19 11:31:44.371  4504  4504 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainDatabase$1;--->onOpen(Landroid/arch/persistence/db/SupportSQLiteDatabase;)V
+--------- beginning of crash
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 4504
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: java.lang.IllegalArgumentException: the bind value at index 1 is null
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.database.sqlite.SQLiteProgram.bindString(SQLiteProgram.java:164)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.arch.persistence.db.framework.FrameworkSQLiteProgram.bindString(FrameworkSQLiteProgram.java:49)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at org.sufficientlysecure.keychain.ApiAppsModel$Factory$GetCertificateQuery.bindTo(ApiAppsModel.java:145)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.arch.persistence.db.framework.FrameworkSQLiteDatabase$1.newCursor(FrameworkSQLiteDatabase.java:163)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:54)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1409)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1384)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.arch.persistence.db.framework.FrameworkSQLiteDatabase.query(FrameworkSQLiteDatabase.java:159)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at org.sufficientlysecure.keychain.daos.ApiAppDao.getApiAppCertificate(ApiAppDao.java:62)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at org.sufficientlysecure.keychain.remote.ApiPermissionHelper.isPackageAllowed(ApiPermissionHelper.java:209)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at org.sufficientlysecure.keychain.remote.ui.RequestKeyPermissionPresenter.checkPackageAllowed(RequestKeyPermissionPresenter.java:154)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at org.sufficientlysecure.keychain.remote.ui.RequestKeyPermissionPresenter.setupFromIntentData(RequestKeyPermissionPresenter.java:79)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at org.sufficientlysecure.keychain.remote.ui.RequestKeyPermissionActivity.onStart(RequestKeyPermissionActivity.java:76)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:7165)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 11:31:44.372  4504  4504 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)

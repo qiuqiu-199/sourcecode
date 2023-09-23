@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@android:id/progress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+    </LinearLayout>
+    <RelativeLayout android:id="@android:id/widget_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.v7.widget.RecyclerView android:id="@android:id/list" android:paddingBottom="72.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="240.0dip" android:animateLayoutChanges="true">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_list_empty_text1" />
+                <org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator android:id="@id/search_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:measureAllChildren="true" android:inAnimation="@anim/fade_in_delayed" android:outAnimation="@anim/fade_out" fab:initialView="1">
+                    <Space android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <Button android:gravity="center" android:id="@id/search_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+                </org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator>
+            </LinearLayout>
+        </FrameLayout>
+        <com.getbase.floatingactionbutton.FloatingActionsMenu android:id="@id/fab_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" fab:fab_addButtonColorNormal="?colorPrimary" fab:fab_addButtonColorPressed="?colorPrimaryDark" fab:fab_addButtonPlusIconColor="@color/icons" fab:fab_addButtonSize="normal" fab:fab_expandDirection="up" fab:fab_labelStyle="@style/FabMenuStyle">
+            <com.getbase.floatingactionbutton.FloatingActionButton android:id="@id/fab_add_qr_code" android:layout_width="wrap_content" android:layout_height="wrap_content" fab:fab_colorNormal="?colorPrimary" fab:fab_colorPressed="?colorPrimaryDark" fab:fab_icon="@drawable/ic_qrcode_white_24dp" fab:fab_size="mini" fab:fab_title="@string/key_list_fab_qr_code" />
+            <com.getbase.floatingactionbutton.FloatingActionButton android:id="@id/fab_add_cloud" android:layout_width="wrap_content" android:layout_height="wrap_content" fab:fab_colorNormal="?colorPrimary" fab:fab_colorPressed="?colorPrimaryDark" fab:fab_icon="@drawable/ic_cloud_search_24dp" fab:fab_size="mini" fab:fab_title="@string/key_list_fab_search" />
+            <com.getbase.floatingactionbutton.FloatingActionButton android:id="@id/fab_add_file" android:layout_width="wrap_content" android:layout_height="wrap_content" fab:fab_colorNormal="?colorPrimary" fab:fab_colorPressed="?colorPrimaryDark" fab:fab_icon="@drawable/ic_folder_white_24dp" fab:fab_size="mini" fab:fab_title="@string/key_list_fab_import" />
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </RelativeLayout>
+    <eu.davidea.fastscroller.FastScroller android:id="@id/fast_scroller" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" fab:fastScrollerAutoHideDelayInMillis="1000" fab:fastScrollerAutoHideEnabled="true" fab:fastScrollerBubbleEnabled="true" fab:fastScrollerBubblePosition="adjacent" fab:fastScrollerHandleAlwaysVisible="false" fab:fastScrollerIgnoreTouchesOutsideHandle="false" />
+</FrameLayout>

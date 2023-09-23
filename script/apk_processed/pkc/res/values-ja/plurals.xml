@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">%d の問題ある鍵を無視しました。 おそらく次のオプションでエクスポートしています --export-secret-subkeys 代りにエクスポートは次のオプション --export-secret-keys に置き換えてください。</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">%d 個の鍵の検証が失敗!</item>
+    </plurals>
+    <plurals name="certify_keys_ok">
+        <item quantity="other">%1$d の鍵%2$sの検証に成功。</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">%d 個の鍵で検証失敗!</item>
+    </plurals>
+    <plurals name="delete_fail">
+        <item quantity="other">%1$d の鍵を削除中にエラーが発生しました。</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">%1$d の鍵%2$sの削除に成功。</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">%1$d 個の鍵の削除に成功</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">、しかし %1$d 個の鍵 %2$s の削除が失敗。</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">%d 個の鍵のインポート失敗!</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">%1$d の鍵%2$sのインポートに成功。</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_1">
+        <item quantity="other">%1$d の鍵のインポートに成功。</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_2">
+        <item quantity="other">そして %1$d の鍵%2$s をアップロードしました。</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">%1$d の鍵%2$sのアップデートに成功。</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">%d 個の鍵でインポート失敗!</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d の鍵を選択。</item>
+    </plurals>
+    <plurals name="linked_id_expand">
+        <item quantity="other">%d 以上の不明なユーザID種別があります</item>
+    </plurals>
+    <plurals name="msg_backup">
+        <item quantity="other">%d の鍵とバックアップ</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uats">
+        <item quantity="other">%1$d のユーザ属性で鍵 %2$s の検証中</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uids">
+        <item quantity="other">%1$d のユーザIDで鍵 %2$s の検証中</item>
+    </plurals>
+    <plurals name="msg_del">
+        <item quantity="other">%d 個の鍵の削除</item>
+    </plurals>
+    <plurals name="msg_del_fail">
+        <item quantity="other">%d 個の鍵の削除に失敗</item>
+    </plurals>
+    <plurals name="msg_del_ok">
+        <item quantity="other">%d 個の鍵の削除に成功</item>
+    </plurals>
+    <plurals name="msg_import">
+        <item quantity="other">%d 個の鍵のインポート</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">不明な公開鍵なので %s の検証を無視</item>
+    </plurals>
+    <plurals name="msg_ip_uid_certs_unknown">
+        <item quantity="other">不明な公開鍵から %s の検証を無視</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">ユーザIDを検証 ( %s の信頼された鍵を使いました)</item>
+    </plurals>
+    <plurals name="msg_kc_success_bad">
+        <item quantity="other">鍵輪の認可に成功、 %d 個のエラーのある証明を除去</item>
+    </plurals>
+    <plurals name="msg_kc_success_redundant">
+        <item quantity="other">鍵輪の認可に成功、 %d 個の重複を除去</item>
+    </plurals>
+    <plurals name="n_authorities">
+        <item quantity="other">%d 認証局</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d個の鍵</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d の鍵サーバ</item>
+    </plurals>
+    <plurals name="passp_cache_notif_n_keys">
+        <item quantity="other">%d パスワードを保存しました</item>
+    </plurals>
+    <plurals name="security_token_error_pin">
+        <item quantity="other">"PINが正しくありません!
+再挑戦はあと%d回です。"</item>
+    </plurals>
+</resources>

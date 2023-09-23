@@ -1,0 +1,35 @@
+--------- beginning of system
+--------- beginning of main
+09-19 04:45:02.153 32391 32391 D M_InsDal: Lcom/nutomic/syncthingandroid/SyncthingApp;--->onCreate()V
+09-19 04:45:02.508 32391 32391 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/SettingsActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: Process: com.nutomic.syncthingandroid, PID: 32391
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.activities.SettingsActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.nutomic.syncthingandroid.MyParcelable
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.nutomic.syncthingandroid.MyParcelable
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.content.Intent.getStringExtra(Intent.java:7445)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.SettingsActivity.onCreate(SettingsActivity.java:60)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 04:45:02.509 32391 32391 E AndroidRuntime: 	... 11 more

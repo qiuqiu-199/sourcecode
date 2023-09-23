@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">Lyktes i å slette %1$d nøkler</item>
+        <item quantity="one">Lyktes i å slette én nøkkel</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">Importering av %d nøkler mislyktes!</item>
+        <item quantity="one">Importeringen mislyktes!</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">Lyktes i å importere %1$d %2$s-nøkler.</item>
+        <item quantity="one">Lyktes i å importere %2$s-nøkkelen.</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_1">
+        <item quantity="other">Importeringen av %1$d nøkler var vellykket</item>
+        <item quantity="one">Importeringen av én nøkkel var vellykket</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d nøkler valgt</item>
+        <item quantity="one">Én nøkkel valgt</item>
+    </plurals>
+    <plurals name="msg_backup">
+        <item quantity="other">Sikkerhetskopi med %d nøkler</item>
+        <item quantity="one">Sikkerhetskopi med én nøkkel</item>
+    </plurals>
+    <plurals name="msg_del">
+        <item quantity="other">Sletter %d nøkler</item>
+        <item quantity="one">Sletter én nøkkel</item>
+    </plurals>
+    <plurals name="msg_del_ok">
+        <item quantity="other">Lyktes i å slette %d nøkler</item>
+        <item quantity="one">Lyktes i å slette nøkkelen</item>
+    </plurals>
+    <plurals name="msg_import">
+        <item quantity="other">Importerer %d nøkler</item>
+        <item quantity="one">Importerer nøkkelen</item>
+    </plurals>
+    <plurals name="n_authorities">
+        <item quantity="other">%d myndigheter</item>
+        <item quantity="one">%d myndighet</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d nøkler</item>
+        <item quantity="one">én nøkkel</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d nøkkeltjenere</item>
+        <item quantity="one">%d nøkkeltjener</item>
+    </plurals>
+    <plurals name="passp_cache_notif_n_keys">
+        <item quantity="other">%d passord lagret</item>
+        <item quantity="one">%d passord lagret</item>
+    </plurals>
+</resources>

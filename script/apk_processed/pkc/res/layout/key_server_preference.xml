@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar_include" layout="@layout/toolbar_standalone" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0sp" android:layout_marginRight="6.0sp" android:text="@string/label_keyservers_title" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0sp" android:layout_marginRight="6.0sp" android:layout_marginBottom="6.0sp" android:text="@string/label_keyserver_settings_hint" />
+    <View style="@style/Divider" />
+    <FrameLayout android:orientation="vertical" android:id="@id/keyserver_settings_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

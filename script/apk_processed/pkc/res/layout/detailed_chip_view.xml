@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/container" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/content" android:background="@drawable/bg_chip_view_opened" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/info_layout" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+            <TextView android:textSize="16.0sp" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sdfdsfdsfdgs" android:maxLines="1" android:scrollHorizontally="true" />
+            <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="paul@gmail.com" android:maxLines="1" android:scrollHorizontally="true" />
+        </LinearLayout>
+        <ImageButton android:layout_gravity="center" android:id="@id/delete_button" android:background="?selectableItemBackgroundBorderless" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_cancel_white_24dp" />
+    </LinearLayout>
+</LinearLayout>

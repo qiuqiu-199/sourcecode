@@ -1,0 +1,555 @@
+--------- beginning of main
+09-18 15:30:25.899 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 15:30:25.899 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 15:30:25.900 15187 15187 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 15:30:25.901 15187 15187 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 15:30:25.901 15187 15187 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 15:30:25.901 15187 15187 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 15:30:25.901 15187 15187 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 15:30:25.907 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 15:30:25.907 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:25.917 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 15:30:25.917 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 15:30:25.917 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 15:30:25.918 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 15:30:25.918 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:25.918 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:25.918 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:25.918 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:25.918 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:25.995 15187 15187 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 15:30:25.996 15187 15187 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 15:30:25.996 15187 15187 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 15:30:25.997 15187 15187 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 15:30:26.005 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info;---><init>()V
+09-18 15:30:26.005 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 15:30:26.005 15187 15187 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 15:30:26.007 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:26.007 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:26.007 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:26.121 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:26.121 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:26.122 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$1;---><init>(Lcom/ichi2/anki/Info;Landroid/view/View;)V
+09-18 15:30:26.122 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$2;---><init>(Lcom/ichi2/anki/Info;)V
+09-18 15:30:26.135 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$3;---><init>(Lcom/ichi2/anki/Info;)V
+09-18 15:30:26.138 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onStart()V
+09-18 15:30:26.140 15187 15187 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onResume()V
+09-18 15:30:26.140 15187 15187 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;--->readMessage()V
+09-18 15:30:26.166 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$1;--->onProgressChanged(Landroid/webkit/WebView;I)V
+09-18 15:30:26.407 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$1;--->onProgressChanged(Landroid/webkit/WebView;I)V
+09-18 15:30:26.454 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$1;--->onProgressChanged(Landroid/webkit/WebView;I)V
+09-18 15:30:26.593 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$1;--->onProgressChanged(Landroid/webkit/WebView;I)V
+09-18 15:30:26.593 15187 15187 D M_InsDal: Lcom/ichi2/anki/Info$1;--->onProgressChanged(Landroid/webkit/WebView;I)V
+--------- beginning of crash
+--------- beginning of system
+09-18 15:30:42.074 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 15:30:42.074 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 15:30:42.075 15299 15299 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 15:30:42.078 15299 15299 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 15:30:42.078 15299 15299 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 15:30:42.078 15299 15299 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 15:30:42.078 15299 15299 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 15:30:42.082 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 15:30:42.082 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:42.090 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 15:30:42.090 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 15:30:42.090 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 15:30:42.091 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 15:30:42.091 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:42.091 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:42.091 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:42.091 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:42.091 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:42.159 15299 15299 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 15:30:42.160 15299 15299 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 15:30:42.160 15299 15299 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 15:30:42.160 15299 15299 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 15:30:42.166 15299 15299 D M_InsDal: Lcom/ichi2/anki/Info;---><init>()V
+09-18 15:30:42.166 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 15:30:42.167 15299 15299 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 15:30:42.170 15299 15299 D M_InsDal: Lcom/ichi2/anki/Info;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:42.170 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:42.170 15299 15299 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: Process: com.ichi2.anki, PID: 15299
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Info}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.os.BaseBundle.getInt(BaseBundle.java:1030)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.content.Intent.getIntExtra(Intent.java:7380)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at com.ichi2.anki.Info.onCreate(Info.java:66)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	... 11 more
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	... 22 more
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/lib/x86_64, /data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-18 15:30:42.180 15299 15299 E AndroidRuntime: 	... 31 more
+09-18 15:30:44.551 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 15:30:44.551 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 15:30:44.551 15339 15339 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 15:30:44.551 15339 15339 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 15:30:44.551 15339 15339 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 15:30:44.551 15339 15339 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 15:30:44.551 15339 15339 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 15:30:44.554 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 15:30:44.554 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:44.558 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 15:30:44.558 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 15:30:44.558 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 15:30:44.558 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 15:30:44.558 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:44.559 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:44.559 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:44.559 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:44.559 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:44.586 15339 15339 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 15:30:44.586 15339 15339 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 15:30:44.586 15339 15339 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 15:30:44.587 15339 15339 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 15:30:44.590 15339 15339 D M_InsDal: Lcom/ichi2/anki/Info;---><init>()V
+09-18 15:30:44.590 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 15:30:44.590 15339 15339 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 15:30:44.592 15339 15339 D M_InsDal: Lcom/ichi2/anki/Info;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:44.592 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:44.592 15339 15339 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: Process: com.ichi2.anki, PID: 15339
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Info}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.os.BaseBundle.getInt(BaseBundle.java:1030)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.content.Intent.getIntExtra(Intent.java:7380)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at com.ichi2.anki.Info.onCreate(Info.java:66)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	... 11 more
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	... 22 more
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/lib/x86_64, /data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-18 15:30:44.597 15339 15339 E AndroidRuntime: 	... 31 more
+09-18 15:30:46.736 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 15:30:46.736 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 15:30:46.736 15373 15373 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 15:30:46.736 15373 15373 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 15:30:46.737 15373 15373 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 15:30:46.737 15373 15373 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 15:30:46.737 15373 15373 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 15:30:46.739 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 15:30:46.739 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:46.742 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 15:30:46.742 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 15:30:46.742 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 15:30:46.742 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 15:30:46.742 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:46.742 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:46.742 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:46.742 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:46.742 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:46.767 15373 15373 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 15:30:46.767 15373 15373 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 15:30:46.767 15373 15373 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 15:30:46.767 15373 15373 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 15:30:46.771 15373 15373 D M_InsDal: Lcom/ichi2/anki/Info;---><init>()V
+09-18 15:30:46.771 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 15:30:46.772 15373 15373 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 15:30:46.773 15373 15373 D M_InsDal: Lcom/ichi2/anki/Info;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:46.773 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:46.773 15373 15373 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: Process: com.ichi2.anki, PID: 15373
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Info}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.os.BaseBundle.getInt(BaseBundle.java:1030)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.content.Intent.getIntExtra(Intent.java:7380)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at com.ichi2.anki.Info.onCreate(Info.java:66)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	... 11 more
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	... 22 more
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/lib/x86_64, /data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-18 15:30:46.777 15373 15373 E AndroidRuntime: 	... 31 more
+09-18 15:30:48.990 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 15:30:48.990 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 15:30:48.990 15407 15407 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 15:30:48.990 15407 15407 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 15:30:48.990 15407 15407 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 15:30:48.990 15407 15407 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 15:30:48.990 15407 15407 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 15:30:48.993 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 15:30:48.993 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:48.996 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 15:30:48.996 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 15:30:48.996 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 15:30:48.996 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 15:30:48.996 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:48.996 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:48.996 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:48.996 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:48.996 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:49.022 15407 15407 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 15:30:49.023 15407 15407 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 15:30:49.023 15407 15407 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 15:30:49.023 15407 15407 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 15:30:49.026 15407 15407 D M_InsDal: Lcom/ichi2/anki/Info;---><init>()V
+09-18 15:30:49.026 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 15:30:49.027 15407 15407 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 15:30:49.028 15407 15407 D M_InsDal: Lcom/ichi2/anki/Info;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:49.028 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:49.028 15407 15407 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: Process: com.ichi2.anki, PID: 15407
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Info}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.os.BaseBundle.getInt(BaseBundle.java:1030)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.content.Intent.getIntExtra(Intent.java:7380)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at com.ichi2.anki.Info.onCreate(Info.java:66)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	... 11 more
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	... 22 more
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/lib/x86_64, /data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-18 15:30:49.032 15407 15407 E AndroidRuntime: 	... 31 more
+09-18 15:30:51.287 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 15:30:51.287 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 15:30:51.287 15441 15441 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 15:30:51.287 15441 15441 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 15:30:51.287 15441 15441 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 15:30:51.287 15441 15441 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 15:30:51.287 15441 15441 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 15:30:51.290 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 15:30:51.290 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:51.293 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 15:30:51.293 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 15:30:51.293 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 15:30:51.293 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 15:30:51.293 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:51.293 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:51.293 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:51.293 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:51.293 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:51.318 15441 15441 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 15:30:51.319 15441 15441 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 15:30:51.319 15441 15441 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 15:30:51.319 15441 15441 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 15:30:51.322 15441 15441 D M_InsDal: Lcom/ichi2/anki/Info;---><init>()V
+09-18 15:30:51.322 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 15:30:51.323 15441 15441 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 15:30:51.324 15441 15441 D M_InsDal: Lcom/ichi2/anki/Info;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:51.324 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:51.324 15441 15441 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: Process: com.ichi2.anki, PID: 15441
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Info}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.os.BaseBundle.getInt(BaseBundle.java:1030)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.content.Intent.getIntExtra(Intent.java:7380)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at com.ichi2.anki.Info.onCreate(Info.java:66)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	... 11 more
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	... 22 more
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/lib/x86_64, /data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-18 15:30:51.328 15441 15441 E AndroidRuntime: 	... 31 more
+09-18 15:30:53.649 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 15:30:53.649 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 15:30:53.650 15476 15476 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 15:30:53.650 15476 15476 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 15:30:53.650 15476 15476 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 15:30:53.650 15476 15476 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 15:30:53.650 15476 15476 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 15:30:53.653 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 15:30:53.653 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:53.658 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 15:30:53.658 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 15:30:53.658 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 15:30:53.658 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 15:30:53.658 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:53.659 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:53.659 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:53.659 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:53.659 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:53.686 15476 15476 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 15:30:53.687 15476 15476 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 15:30:53.687 15476 15476 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 15:30:53.687 15476 15476 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 15:30:53.690 15476 15476 D M_InsDal: Lcom/ichi2/anki/Info;---><init>()V
+09-18 15:30:53.690 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 15:30:53.691 15476 15476 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 15:30:53.692 15476 15476 D M_InsDal: Lcom/ichi2/anki/Info;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:53.692 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:53.692 15476 15476 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: Process: com.ichi2.anki, PID: 15476
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Info}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.os.BaseBundle.getInt(BaseBundle.java:1030)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.content.Intent.getIntExtra(Intent.java:7380)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at com.ichi2.anki.Info.onCreate(Info.java:66)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	... 11 more
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	... 22 more
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/lib/x86_64, /data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-18 15:30:53.696 15476 15476 E AndroidRuntime: 	... 31 more
+09-18 15:30:54.287 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 15:30:54.287 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 15:30:54.287 15514 15514 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 15:30:54.287 15514 15514 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 15:30:54.287 15514 15514 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 15:30:54.287 15514 15514 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 15:30:54.287 15514 15514 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 15:30:54.289 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 15:30:54.289 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:54.293 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 15:30:54.293 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 15:30:54.293 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 15:30:54.293 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 15:30:54.293 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:54.293 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:54.293 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:54.293 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:54.293 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 15:30:54.318 15514 15514 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 15:30:54.318 15514 15514 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 15:30:54.318 15514 15514 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 15:30:54.319 15514 15514 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 15:30:54.323 15514 15514 D M_InsDal: Lcom/ichi2/anki/Info;---><init>()V
+09-18 15:30:54.323 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 15:30:54.323 15514 15514 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 15:30:54.325 15514 15514 D M_InsDal: Lcom/ichi2/anki/Info;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:54.325 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 15:30:54.325 15514 15514 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: Process: com.ichi2.anki, PID: 15514
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Info}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.com.ichi2.anki.MySerializable)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.os.BaseBundle.getInt(BaseBundle.java:1030)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.content.Intent.getIntExtra(Intent.java:7380)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at com.ichi2.anki.Info.onCreate(Info.java:66)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	... 11 more
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.com.ichi2.anki.MySerializable
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	... 22 more
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.com.ichi2.anki.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/base.apk"],nativeLibraryDirectories=[/data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/lib/x86_64, /data/app/com.ichi2.anki--5L3Cp2UYqNNkGlTW7OACw==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-18 15:30:54.329 15514 15514 E AndroidRuntime: 	... 31 more

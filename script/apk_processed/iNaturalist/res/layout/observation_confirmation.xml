@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/main_content" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.inaturalist.android.SwipeableLinearLayout android:orientation="vertical" android:id="@id/swipeable_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#ffc8565f" android:id="@id/errors" android:background="#fff3d4db" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Errors" />
+        <LinearLayout android:orientation="horizontal" android:background="#ffededed" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/take_photo" android:background="@drawable/circular_add_photo" android:layout_width="50.0dip" android:layout_height="50.0dip">
+                <ImageView android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/ic_add_a_photo_black_24dp" android:layout_centerInParent="true" android:alpha="0.6" />
+            </RelativeLayout>
+            <org.lucasr.twowayview.TwoWayView android:id="@id/gallery" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginLeft="10.0dip" android:drawSelectorOnTop="false" style="@style/TwoWayView" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <View android:id="@id/dummy_focus" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/species_guess_container" android:paddingLeft="16.0dip" android:paddingTop="6.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="65.0dip">
+            <ImageView android:id="@id/species_guess_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_species_field" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:alpha="0.6" />
+            <ImageView android:id="@id/clear_species_guess" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_close_black_48dp" android:tint="#ff717171" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/clear_species_guess" android:layout_toRightOf="@id/species_guess_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <EditText android:textSize="16.0sp" android:id="@id/speciesGuess" android:background="#00000000" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/species_guess_hint" />
+                <TextView android:textSize="12.0sp" android:id="@id/speciesGuessSub" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_suggestions" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/onboarding_species_name" android:background="#fff1f6e5" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-15.0dip">
+            <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_alignParentTop="true">
+                <View android:background="@drawable/arrow_up" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="22.0dip" android:layout_marginTop="-10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/info_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_info_outline_black_24dp" android:tint="@color/inatapptheme_color" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="14.0sp" android:id="@id/onboarding_species_name_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/onboarding_species_name" android:layout_toRightOf="@id/info_icon" android:layout_alignTop="@id/info_icon" android:layout_alignParentRight="true" />
+            <TextView android:textStyle="bold" android:textColor="#ff8bb929" android:id="@id/onboarding_species_name_close" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/got_it_all_caps" android:layout_below="@id/onboarding_species_name_description" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="64.0dip" />
+        <RelativeLayout android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/notes_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_assignment_black_24dp" android:tint="#ff686868" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <EditText android:id="@id/description" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:hint="@string/notes" android:layout_toRightOf="@id/notes_icon" android:inputType="textCapSentences|textMultiLine" android:isScrollContainer="true" />
+        </RelativeLayout>
+        <View android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="64.0dip" />
+        <RelativeLayout android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <ImageView android:id="@id/time_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_access_time_black_24dp" android:tint="#ff686868" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/observed_on_string" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:id="@id/time_observed_at" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/set_time" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:id="@id/observed_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_date" android:layout_toLeftOf="@id/time_observed_at" android:layout_toRightOf="@id/time_icon" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="64.0dip" />
+        <RelativeLayout android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <RelativeLayout android:id="@id/location_left_side" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/location_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_location_on_black_24dp" android:tint="#ff686868" />
+                <ProgressBar android:id="@id/locationProgress" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:ellipsize="end" android:id="@id/finding_current_location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/finding_current_location" android:lines="1" android:layout_toRightOf="@id/location_left_side" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/locationRefreshButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/location_left_side" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:ellipsize="end" android:id="@id/location_guess" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_location" android:lines="1" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/coordinates" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/location_guess" android:layout_centerVertical="true">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff929292" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/coordinates_lat" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff929292" android:ellipsize="end" android:id="@id/latitude" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:maxWidth="80.0dip" android:text="12.34567890123" android:lines="1" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff929292" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/coordinates_lon" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff929292" android:ellipsize="end" android:id="@id/longitude" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:maxWidth="80.0dip" android:text="12.34567890123" android:lines="1" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff929292" android:id="@id/accuracy_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/coordinates_acc" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff929292" android:ellipsize="end" android:id="@id/accuracy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="80.0dip" android:text="\ 34567890123" android:lines="1" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="64.0dip" />
+        <RelativeLayout android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <ImageView android:id="@id/location_visibility_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_public_black_24dp" android:tint="#ff686868" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/locationVisibility" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/location_visibility_icon" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/location_visibility_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Location is open" />
+                <Spinner android:entries="@array/geoprivacy_items" android:id="@id/geoprivacy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:entryValues="@array/geoprivacy_values" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="64.0dip" />
+        <RelativeLayout android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <ImageView android:id="@id/is_captive_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_nature_people_black_24dp" android:tint="#ff686868" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/is_captive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/is_captive" android:layout_toRightOf="@id/is_captive_icon" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/is_captive_checkbox" android:paddingLeft="40.0dip" android:layout_width="60.0dip" android:layout_height="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/is_captive_on_icon" android:background="#ff74ac00" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_action_accept" android:tint="#ffffffff" />
+                <ImageView android:id="@id/is_captive_off_icon" android:background="@drawable/border" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_check_box_white_24dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="64.0dip" />
+        <RelativeLayout android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <ImageView android:id="@id/projects_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_work_black_24dp" android:tint="#ff686868" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="right" android:id="@id/project_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:id="@id/select_projects" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_to_projects" android:layout_toLeftOf="@id/project_count" android:layout_toRightOf="@id/projects_icon" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="64.0dip" />
+    </org.inaturalist.android.SwipeableLinearLayout>
+</ScrollView>

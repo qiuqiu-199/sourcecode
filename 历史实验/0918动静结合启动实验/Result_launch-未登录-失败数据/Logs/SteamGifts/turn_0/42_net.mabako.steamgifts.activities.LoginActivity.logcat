@@ -1,0 +1,16 @@
+--------- beginning of main
+--------- beginning of system
+09-19 03:51:20.929 20972 20972 D M_InsDal: Lnet/mabako/steamgifts/Application;---><init>()V
+09-19 03:51:20.929 20972 20972 D M_InsDal: Lnet/mabako/steamgifts/ApplicationTemplate;---><init>()V
+09-19 03:51:20.929 20972 20972 D M_InsDal: Lnet/mabako/steamgifts/ApplicationTemplate;--->onCreate()V
+09-19 03:51:20.930 20972 20972 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;---><clinit>()V
+09-19 03:51:20.930 20972 20972 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;--->scheduleAllTasks(Landroid/content/Context;)V
+09-19 03:51:20.930 20972 20972 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;---><clinit>()V
+09-19 03:51:20.930 20972 20972 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;---><init>(Ljava/lang/String;IJLjava/lang/Class;)V
+09-19 03:51:20.930 20972 20972 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;--->values()[Lnet/mabako/steamgifts/PeriodicTasks$Task;
+09-19 03:51:20.930 20972 20972 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;--->scheduleTask(Lnet/mabako/steamgifts/PeriodicTasks$Task;Landroid/content/Context;)V
+09-19 03:51:20.931 20972 20972 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$TaskData;---><init>(Landroid/app/AlarmManager;Landroid/app/PendingIntent;)V
+09-19 03:51:20.935 20972 20972 D M_InsDal: Lnet/mabako/steamgifts/activities/LoginActivity;---><init>()V
+09-19 03:51:21.058 20972 20972 D M_InsDal: Lnet/mabako/steamgifts/activities/LoginActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 03:51:21.058 20972 20972 D M_InsDal: Lnet/mabako/steamgifts/activities/LoginActivity$JavaScriptContentHandler;---><init>(Lnet/mabako/steamgifts/activities/LoginActivity;)V
+--------- beginning of crash

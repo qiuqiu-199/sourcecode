@@ -1,0 +1,472 @@
+--------- beginning of main
+--------- beginning of system
+09-18 16:11:04.640 32681 32681 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 16:11:04.640 32681 32681 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 16:11:04.640 32681 32681 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 16:11:04.640 32681 32681 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 16:11:04.640 32681 32681 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 16:11:04.640 32681 32681 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 16:11:04.640 32681 32681 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 16:11:04.642 32681 32681 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 16:11:04.642 32681 32681 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 16:11:04.644 32681 32681 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 16:11:04.645 32681 32681 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 16:11:04.645 32681 32681 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 16:11:04.645 32681 32681 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 16:11:04.645 32681 32681 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:04.645 32681 32681 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:04.645 32681 32681 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 16:11:04.645 32681 32681 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:04.645 32681 32681 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:04.670 32681 32681 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 16:11:04.670 32681 32681 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 16:11:04.670 32681 32681 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 16:11:04.671 32681 32681 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer;---><clinit>()V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/Reviewer;---><init>()V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer;---><init>()V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/NavigationDrawerActivity;---><init>()V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$1;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$2;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$3;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$4;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$5;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$6;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$7;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$8;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:04.674 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$9;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:04.675 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$10;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:04.675 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$11;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:04.675 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$18;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:04.675 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$19;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:04.675 32681 32681 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$21;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:04.676 32681 32681 D M_InsDal: Lcom/ichi2/anki/Reviewer;--->onCreate(Landroid/os/Bundle;)V
+09-18 16:11:04.676 32681 32681 D M_InsDal: Lcom/ichi2/anki/Reviewer;--->selectDeckFromExtra()V
+--------- beginning of crash
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: Process: com.ichi2.anki, PID: 32681
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Reviewer}: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at com.ichi2.anki.Reviewer.selectDeckFromExtra(Reviewer.java:81)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at com.ichi2.anki.Reviewer.onCreate(Reviewer.java:73)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 16:11:04.676 32681 32681 E AndroidRuntime: 	... 11 more
+09-18 16:11:06.959 32722 32722 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 16:11:06.959 32722 32722 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 16:11:06.959 32722 32722 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 16:11:06.959 32722 32722 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 16:11:06.959 32722 32722 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 16:11:06.959 32722 32722 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 16:11:06.959 32722 32722 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 16:11:06.961 32722 32722 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 16:11:06.961 32722 32722 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 16:11:06.964 32722 32722 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 16:11:06.964 32722 32722 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 16:11:06.964 32722 32722 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 16:11:06.964 32722 32722 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 16:11:06.964 32722 32722 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:06.965 32722 32722 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:06.965 32722 32722 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 16:11:06.965 32722 32722 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:06.965 32722 32722 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:06.992 32722 32722 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 16:11:06.992 32722 32722 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 16:11:06.992 32722 32722 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 16:11:06.993 32722 32722 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 16:11:06.996 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer;---><clinit>()V
+09-18 16:11:06.996 32722 32722 D M_InsDal: Lcom/ichi2/anki/Reviewer;---><init>()V
+09-18 16:11:06.996 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer;---><init>()V
+09-18 16:11:06.996 32722 32722 D M_InsDal: Lcom/ichi2/anki/NavigationDrawerActivity;---><init>()V
+09-18 16:11:06.996 32722 32722 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 16:11:06.996 32722 32722 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 16:11:06.997 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$1;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:06.997 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$2;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:06.997 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$3;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:06.997 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$4;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:06.997 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$5;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:06.997 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$6;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:06.997 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$7;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:06.997 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$8;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:06.997 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$9;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:06.997 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$10;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:06.997 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$11;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:06.997 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$18;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:06.997 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$19;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:06.997 32722 32722 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$21;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:06.998 32722 32722 D M_InsDal: Lcom/ichi2/anki/Reviewer;--->onCreate(Landroid/os/Bundle;)V
+09-18 16:11:06.998 32722 32722 D M_InsDal: Lcom/ichi2/anki/Reviewer;--->selectDeckFromExtra()V
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: Process: com.ichi2.anki, PID: 32722
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Reviewer}: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at com.ichi2.anki.Reviewer.selectDeckFromExtra(Reviewer.java:81)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at com.ichi2.anki.Reviewer.onCreate(Reviewer.java:73)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 16:11:06.999 32722 32722 E AndroidRuntime: 	... 11 more
+09-18 16:11:09.243 32756 32756 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 16:11:09.243 32756 32756 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 16:11:09.243 32756 32756 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 16:11:09.243 32756 32756 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 16:11:09.243 32756 32756 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 16:11:09.243 32756 32756 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 16:11:09.243 32756 32756 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 16:11:09.246 32756 32756 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 16:11:09.246 32756 32756 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 16:11:09.249 32756 32756 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 16:11:09.249 32756 32756 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 16:11:09.249 32756 32756 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 16:11:09.250 32756 32756 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 16:11:09.250 32756 32756 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:09.250 32756 32756 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:09.250 32756 32756 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 16:11:09.250 32756 32756 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:09.250 32756 32756 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:09.274 32756 32756 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 16:11:09.274 32756 32756 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 16:11:09.274 32756 32756 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 16:11:09.274 32756 32756 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer;---><clinit>()V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/Reviewer;---><init>()V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer;---><init>()V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/NavigationDrawerActivity;---><init>()V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$1;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$2;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$3;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$4;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$5;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$6;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$7;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$8;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$9;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$10;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$11;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$18;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$19;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:09.278 32756 32756 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$21;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:09.280 32756 32756 D M_InsDal: Lcom/ichi2/anki/Reviewer;--->onCreate(Landroid/os/Bundle;)V
+09-18 16:11:09.280 32756 32756 D M_InsDal: Lcom/ichi2/anki/Reviewer;--->selectDeckFromExtra()V
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: Process: com.ichi2.anki, PID: 32756
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Reviewer}: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at com.ichi2.anki.Reviewer.selectDeckFromExtra(Reviewer.java:81)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at com.ichi2.anki.Reviewer.onCreate(Reviewer.java:73)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 16:11:09.281 32756 32756 E AndroidRuntime: 	... 11 more
+09-18 16:11:11.435   322   322 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 16:11:11.435   322   322 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 16:11:11.435   322   322 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 16:11:11.435   322   322 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 16:11:11.435   322   322 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 16:11:11.435   322   322 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 16:11:11.435   322   322 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 16:11:11.438   322   322 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 16:11:11.438   322   322 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 16:11:11.441   322   322 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 16:11:11.441   322   322 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 16:11:11.441   322   322 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 16:11:11.441   322   322 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 16:11:11.441   322   322 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:11.441   322   322 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:11.441   322   322 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 16:11:11.441   322   322 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:11.441   322   322 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:11.465   322   322 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 16:11:11.466   322   322 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 16:11:11.466   322   322 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 16:11:11.466   322   322 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 16:11:11.469   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer;---><clinit>()V
+09-18 16:11:11.469   322   322 D M_InsDal: Lcom/ichi2/anki/Reviewer;---><init>()V
+09-18 16:11:11.469   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer;---><init>()V
+09-18 16:11:11.469   322   322 D M_InsDal: Lcom/ichi2/anki/NavigationDrawerActivity;---><init>()V
+09-18 16:11:11.469   322   322 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$1;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$2;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$3;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$4;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$5;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$6;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$7;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$8;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$9;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$10;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$11;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$18;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$19;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:11.470   322   322 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$21;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:11.472   322   322 D M_InsDal: Lcom/ichi2/anki/Reviewer;--->onCreate(Landroid/os/Bundle;)V
+09-18 16:11:11.472   322   322 D M_InsDal: Lcom/ichi2/anki/Reviewer;--->selectDeckFromExtra()V
+09-18 16:11:11.472   322   322 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 16:11:11.472   322   322 E AndroidRuntime: Process: com.ichi2.anki, PID: 322
+09-18 16:11:11.472   322   322 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Reviewer}: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 16:11:11.472   322   322 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at com.ichi2.anki.Reviewer.selectDeckFromExtra(Reviewer.java:81)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at com.ichi2.anki.Reviewer.onCreate(Reviewer.java:73)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 16:11:11.472   322   322 E AndroidRuntime: 	... 11 more
+09-18 16:11:13.682   356   356 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 16:11:13.682   356   356 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 16:11:13.682   356   356 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 16:11:13.682   356   356 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 16:11:13.682   356   356 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 16:11:13.682   356   356 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 16:11:13.682   356   356 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 16:11:13.685   356   356 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 16:11:13.685   356   356 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 16:11:13.688   356   356 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 16:11:13.689   356   356 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 16:11:13.689   356   356 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 16:11:13.689   356   356 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 16:11:13.689   356   356 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:13.689   356   356 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:13.689   356   356 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 16:11:13.689   356   356 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:13.689   356   356 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:13.714   356   356 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 16:11:13.715   356   356 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 16:11:13.715   356   356 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 16:11:13.715   356   356 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer;---><clinit>()V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/Reviewer;---><init>()V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer;---><init>()V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/NavigationDrawerActivity;---><init>()V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$1;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$2;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$3;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$4;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$5;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$6;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$7;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$8;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$9;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$10;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$11;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$18;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$19;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:13.719   356   356 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$21;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:13.722   356   356 D M_InsDal: Lcom/ichi2/anki/Reviewer;--->onCreate(Landroid/os/Bundle;)V
+09-18 16:11:13.722   356   356 D M_InsDal: Lcom/ichi2/anki/Reviewer;--->selectDeckFromExtra()V
+09-18 16:11:13.722   356   356 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 16:11:13.722   356   356 E AndroidRuntime: Process: com.ichi2.anki, PID: 356
+09-18 16:11:13.722   356   356 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Reviewer}: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 16:11:13.722   356   356 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at com.ichi2.anki.Reviewer.selectDeckFromExtra(Reviewer.java:81)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at com.ichi2.anki.Reviewer.onCreate(Reviewer.java:73)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 16:11:13.722   356   356 E AndroidRuntime: 	... 11 more
+09-18 16:11:15.922   395   395 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 16:11:15.922   395   395 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 16:11:15.922   395   395 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 16:11:15.922   395   395 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 16:11:15.922   395   395 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 16:11:15.922   395   395 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 16:11:15.922   395   395 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 16:11:15.925   395   395 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 16:11:15.925   395   395 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 16:11:15.928   395   395 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 16:11:15.928   395   395 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 16:11:15.928   395   395 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 16:11:15.928   395   395 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 16:11:15.928   395   395 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:15.928   395   395 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:15.928   395   395 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 16:11:15.928   395   395 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:15.928   395   395 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:15.953   395   395 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 16:11:15.953   395   395 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 16:11:15.953   395   395 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 16:11:15.954   395   395 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 16:11:15.957   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer;---><clinit>()V
+09-18 16:11:15.957   395   395 D M_InsDal: Lcom/ichi2/anki/Reviewer;---><init>()V
+09-18 16:11:15.957   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer;---><init>()V
+09-18 16:11:15.957   395   395 D M_InsDal: Lcom/ichi2/anki/NavigationDrawerActivity;---><init>()V
+09-18 16:11:15.957   395   395 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 16:11:15.957   395   395 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 16:11:15.957   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$1;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:15.957   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$2;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:15.957   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$3;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:15.957   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$4;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:15.957   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$5;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:15.957   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$6;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:15.957   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$7;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:15.958   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$8;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:15.958   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$9;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:15.958   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$10;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:15.958   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$11;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:15.958   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$18;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:15.958   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$19;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:15.958   395   395 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$21;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:15.959   395   395 D M_InsDal: Lcom/ichi2/anki/Reviewer;--->onCreate(Landroid/os/Bundle;)V
+09-18 16:11:15.959   395   395 D M_InsDal: Lcom/ichi2/anki/Reviewer;--->selectDeckFromExtra()V
+09-18 16:11:15.959   395   395 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 16:11:15.959   395   395 E AndroidRuntime: Process: com.ichi2.anki, PID: 395
+09-18 16:11:15.959   395   395 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Reviewer}: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 16:11:15.959   395   395 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at com.ichi2.anki.Reviewer.selectDeckFromExtra(Reviewer.java:81)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at com.ichi2.anki.Reviewer.onCreate(Reviewer.java:73)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 16:11:15.959   395   395 E AndroidRuntime: 	... 11 more
+09-18 16:11:16.888   433   433 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><clinit>()V
+09-18 16:11:16.888   433   433 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;---><init>()V
+09-18 16:11:16.889   433   433 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><clinit>()V
+09-18 16:11:16.889   433   433 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract$Note;---><clinit>()V
+09-18 16:11:16.889   433   433 D M_InsDal: Lcom/ichi2/anki/FlashCardsContract;---><clinit>()V
+09-18 16:11:16.889   433   433 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;---><init>()V
+09-18 16:11:16.889   433   433 D M_InsDal: Lcom/ichi2/anki/provider/CardContentProvider;--->onCreate()Z
+09-18 16:11:16.891   433   433 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->onCreate()V
+09-18 16:11:16.891   433   433 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 16:11:16.894   433   433 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><clinit>()V
+09-18 16:11:16.894   433   433 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp$ProductionCrashReportingTree;---><init>()V
+09-18 16:11:16.894   433   433 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setAcraReportingMode(Ljava/lang/String;)V
+09-18 16:11:16.894   433   433 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->setLanguage(Ljava/lang/String;)V
+09-18 16:11:16.894   433   433 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:16.894   433   433 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:16.894   433   433 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getSharedPrefs(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-18 16:11:16.894   433   433 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:16.894   433   433 D M_InsDal: Lcom/ichi2/anki/AnkiDroidApp;--->getInstance()Lcom/ichi2/anki/AnkiDroidApp;
+09-18 16:11:16.919   433   433 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->hasStorageAccessPermission(Landroid/content/Context;)Z
+09-18 16:11:16.919   433   433 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getCurrentAnkiDroidDirectory(Landroid/content/Context;)Ljava/lang/String;
+09-18 16:11:16.919   433   433 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->getDefaultAnkiDroidDirectory()Ljava/lang/String;
+09-18 16:11:16.919   433   433 D M_InsDal: Lcom/ichi2/anki/CollectionHelper;--->initializeAnkiDroidDirectory(Ljava/lang/String;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer;---><clinit>()V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/Reviewer;---><init>()V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer;---><init>()V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/NavigationDrawerActivity;---><init>()V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AnkiActivity;---><init>()V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/dialogs/DialogHandler;---><init>(Lcom/ichi2/anki/AnkiActivity;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$1;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$2;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$3;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$4;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$5;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$6;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$7;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$8;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$9;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$10;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$11;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$18;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$19;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:16.923   433   433 D M_InsDal: Lcom/ichi2/anki/AbstractFlashcardViewer$21;---><init>(Lcom/ichi2/anki/AbstractFlashcardViewer;)V
+09-18 16:11:16.925   433   433 D M_InsDal: Lcom/ichi2/anki/Reviewer;--->onCreate(Landroid/os/Bundle;)V
+09-18 16:11:16.925   433   433 D M_InsDal: Lcom/ichi2/anki/Reviewer;--->selectDeckFromExtra()V
+09-18 16:11:16.925   433   433 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 16:11:16.925   433   433 E AndroidRuntime: Process: com.ichi2.anki, PID: 433
+09-18 16:11:16.925   433   433 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.Reviewer}: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 16:11:16.925   433   433 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.os.Bundle.getLong(java.lang.String, long)' on a null object reference
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at com.ichi2.anki.Reviewer.selectDeckFromExtra(Reviewer.java:81)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at com.ichi2.anki.Reviewer.onCreate(Reviewer.java:73)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 16:11:16.925   433   433 E AndroidRuntime: 	... 11 more

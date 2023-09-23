@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="edit_key_edit_subkey">
+        <item>Ablaufdatum ändern</item>
+        <item>Unterschlüssel widerrufen</item>
+        <item>Unterschlüssel kürzen</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id">
+        <item>Als Hauptidentität festlegen</item>
+        <item>Identität widerrufen</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id_revert_revocation">
+        <item>Widerruf rückgängig machen</item>
+    </string-array>
+    <string-array name="help_donation_google_catalog_values">
+        <item>1 Euro</item>
+        <item>2 Euro</item>
+        <item>3 Euro</item>
+        <item>5 Euro</item>
+        <item>10 Euro</item>
+        <item>50 Euro</item>
+        <item>100 Euro</item>
+    </string-array>
+</resources>

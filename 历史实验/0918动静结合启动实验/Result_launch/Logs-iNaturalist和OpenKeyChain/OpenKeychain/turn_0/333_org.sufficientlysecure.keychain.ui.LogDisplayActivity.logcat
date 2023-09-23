@@ -1,0 +1,45 @@
+--------- beginning of main
+--------- beginning of system
+09-19 13:05:00.303 28169 28169 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+09-19 13:05:00.320 28169 28169 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onTrimMemory(I)V
+09-19 13:05:00.325 28169 28169 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/BaseActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 13:05:00.334 28169 28169 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/LogDisplayFragment;--->onCreate(Landroid/os/Bundle;)V
+09-19 13:05:00.336 28169 28169 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/base/RecyclerFragment;--->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+09-19 13:05:00.338 28169 28169 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/LogDisplayActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 13:05:00.339 28169 28169 D M_InsDal: Lorg/sufficientlysecure/keychain/ui/LogDisplayFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+--------- beginning of crash
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 28169
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.org.sufficientlysecure.keychain.MyParcelable
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.os.Bundle.getParcelable(Bundle.java:940)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.content.Intent.getParcelableExtra(Intent.java:7473)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at org.sufficientlysecure.keychain.ui.LogDisplayFragment.onActivityCreated(LogDisplayFragment.java:70)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.support.v4.app.Fragment.performActivityCreated(Fragment.java:2355)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1451)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1759)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1827)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.dispatchStateChange(FragmentManager.java:3244)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:3200)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.support.v4.app.FragmentController.dispatchActivityCreated(FragmentController.java:195)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:597)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.support.v7.app.AppCompatActivity.onStart(AppCompatActivity.java:177)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:7165)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 13:05:00.340 28169 28169 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)

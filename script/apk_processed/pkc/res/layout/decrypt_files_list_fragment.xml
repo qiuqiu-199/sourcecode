@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/decrypt_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/decrypted_files_list" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/decrypt_error_overlay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/android_red_light" android:layout_gravity="center" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/decrypt_invalid_text" />
+        <Button android:textColor="@color/android_red_light" android:layout_gravity="center_horizontal" android:id="@id/decrypt_error_overlay_button" android:background="@drawable/button_edgy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/decrypt_invalid_button" />
+    </LinearLayout>
+</LinearLayout>

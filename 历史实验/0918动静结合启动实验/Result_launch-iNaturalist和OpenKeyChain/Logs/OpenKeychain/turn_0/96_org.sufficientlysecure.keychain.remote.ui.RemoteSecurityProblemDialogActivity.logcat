@@ -1,0 +1,27 @@
+--------- beginning of main
+--------- beginning of system
+09-19 11:57:00.401 10826 10826 D M_InsDal: Lorg/sufficientlysecure/keychain/KeychainApplication;--->onCreate()V
+09-19 11:57:00.433 10826 10826 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/RemoteSecurityProblemDialogActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 11:57:00.449 10826 10826 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/RemoteSecurityProblemDialogActivity$RemoteRegisterDialogFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+09-19 11:57:00.461 10826 10826 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/ui/RemoteSecurityProblemDialogActivity;--->onStart()V
+--------- beginning of crash
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: Process: org.sufficientlysecure.keychain, PID: 10826
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: java.lang.IllegalArgumentException: Unhandled security problem type!
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at org.sufficientlysecure.keychain.remote.ui.SecurityProblemPresenter.refreshSecurityProblemDisplay(SecurityProblemPresenter.java:85)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at org.sufficientlysecure.keychain.remote.ui.SecurityProblemPresenter.setupFromIntentData(SecurityProblemPresenter.java:77)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at org.sufficientlysecure.keychain.remote.ui.RemoteSecurityProblemDialogActivity.onStart(RemoteSecurityProblemDialogActivity.java:81)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:7165)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 11:57:00.462 10826 10826 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)

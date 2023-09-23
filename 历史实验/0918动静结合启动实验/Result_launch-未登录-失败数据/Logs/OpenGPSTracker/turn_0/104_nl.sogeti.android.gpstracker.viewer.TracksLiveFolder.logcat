@@ -1,0 +1,56 @@
+--------- beginning of main
+--------- beginning of system
+09-19 00:42:47.192 26704 26704 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><clinit>()V
+09-19 00:42:47.192 26704 26704 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;---><init>()V
+09-19 00:42:47.192 26704 26704 D M_InsDal: Lnl/sogeti/android/gpstracker/db/GPStrackingProvider;--->onCreate()Z
+09-19 00:42:47.192 26704 26704 D M_InsDal: Lnl/sogeti/android/gpstracker/db/DatabaseHelper;---><init>(Landroid/content/Context;)V
+09-19 00:42:47.194 26704 26704 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TracksLiveFolder;---><init>()V
+09-19 00:42:47.195 26704 26704 D M_InsDal: Lnl/sogeti/android/gpstracker/viewer/TracksLiveFolder;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: Process: nl.sogeti.android.gpstracker, PID: 26704
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{nl.sogeti.android.gpstracker/nl.sogeti.android.gpstracker.viewer.TracksLiveFolder}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.nl.sogeti.android.gpstracker.MySerializable)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.nl.sogeti.android.gpstracker.MySerializable)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5620)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5632)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at nl.sogeti.android.gpstracker.viewer.TracksLiveFolder.onCreate(TracksLiveFolder.java:73)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	... 11 more
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.nl.sogeti.android.gpstracker.MySerializable
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	... 24 more
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.nl.sogeti.android.gpstracker.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/system/framework/com.google.android.maps.jar", zip file "/data/app/nl.sogeti.android.gpstracker-anr6-6O_U4UGWymlm5i5KQ==/base.apk"],nativeLibraryDirectories=[/data/app/nl.sogeti.android.gpstracker-anr6-6O_U4UGWymlm5i5KQ==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-19 00:42:47.197 26704 26704 E AndroidRuntime: 	... 33 more

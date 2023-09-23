@@ -39,6 +39,7 @@ public class ICCMsg {
         port = port2;
         type = type2;
         extras = new HashSet<>(extra2);
+
     }
 
     public ICCMsg(String action2, Set<String> category2, String data2, String scheme2, String host2, String path2, String port2,
@@ -52,6 +53,15 @@ public class ICCMsg {
         port = port2;
         type = type2;
     }
+
+    public ICCMsg(String action2,Set<String> category2, String data2, String type2, Set<String> extra2){
+        action = action2;
+        category = category2;
+        data = data2;
+        type = type2;
+        extras = new HashSet<>(extra2);
+    }
+
 
 
     @Override

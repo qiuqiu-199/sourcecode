@@ -77,10 +77,10 @@ if __name__ == '__main__':
     launch_dir = "F:\\ThesisReproduction\\qiu\\Result_launch" + os.sep
 
     # 预处理
-    pre = qiuPreProcess(apk_input_dir, apk_output_dir)
-    pre.exportApp()
-    pre.instrument()
-    pre.install()
+    # pre = qiuPreProcess(apk_input_dir, apk_output_dir)
+    # pre.exportApp()
+    # pre.instrument()
+    # pre.install()
     # 预处理之预先十分钟的monkey测试获取log的intent属性
     # fuzzing_res_dir = "./fuzzing_res" + os.sep
     # if not os.path.exists(fuzzing_res_dir):

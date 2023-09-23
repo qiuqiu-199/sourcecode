@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff5f5f5" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="9.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.inaturalist.android.PullToRefreshGridViewExtended android:gravity="center" android:orientation="vertical" android:id="@id/missions" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="3.0dip" android:verticalSpacing="3.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+    <ProgressBar android:gravity="center" android:id="@id/loading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/recommended_missions" android:layout_centerInParent="true" android:layout_centerHorizontal="true" style="?android:progressBarStyleLarge" />
+    <TextView android:id="@id/loading_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/searching_your_area" android:layout_below="@id/loading" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/no_recommended_missions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/no_recommended_missions_icon" android:paddingBottom="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_my_location_black_48dp" android:tint="#ff929292" android:layout_centerInParent="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#8a000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_recommended_missions" android:layout_below="@id/no_recommended_missions_icon" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

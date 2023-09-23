@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="certify_error">
+        <item quantity="other">Certifikace pro %d klíčů selhala!</item>
+        <item quantity="one">Certifikace selhala!</item>
+        <item quantity="few">Certifikace pro %d klíče selhala!</item>
+        <item quantity="many">Certifikace pro %d klíčů selhala!</item>
+    </plurals>
+    <plurals name="certify_keys_ok">
+        <item quantity="other">Úspěšně potvrzeno %1$d klíčů%2$s.</item>
+        <item quantity="one">Úspěšně potvrzen klíč%2$s.</item>
+        <item quantity="few">Úspěšně potvrzeny %1$d klíče%2$s.</item>
+        <item quantity="many">Úspěšně potvrzeno %1$d klíčů%2$s.</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">Certifikace selhala pro %d klíčů!</item>
+        <item quantity="one">Certifikace selhala!</item>
+        <item quantity="few">Certifikace selhala pro %d klíče!</item>
+        <item quantity="many">Certifikace selhala pro %d klíčů!</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">Úspěšně smazáno %1$d klíčů%2$s.</item>
+        <item quantity="one">Úspěšně smazáno klíče%2$s.</item>
+        <item quantity="few">Úspěšně smazáno %1$d klíčů%2$s.</item>
+        <item quantity="many">Úspěšně smazáno %1$d klíčů%2$s.</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">Úspěšně smazáno %1$d klíčů</item>
+        <item quantity="one">Úspěšně smazán jeden klíč</item>
+        <item quantity="few">Úspěšně smazáno %1$d klíče</item>
+        <item quantity="many">Úspěšně smazáno %1$d klíčů</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">, ale selhalo smazání %1$d klíčů%2$s.</item>
+        <item quantity="one">, ale selhalo smazání jednoho klíče%2$s.</item>
+        <item quantity="few">, ale selhalo smazání %1$d klíčů%2$s.</item>
+        <item quantity="many">, ale selhalo smazání %1$d klíčů%2$s.</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">Import %d klíčů selhal!</item>
+        <item quantity="one">Import selhal!</item>
+        <item quantity="few">Import %d klíčů selhal!</item>
+        <item quantity="many">Import %d klíčů selhal!</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d klíčů vybráno.</item>
+        <item quantity="one">1 kíč vybrán</item>
+        <item quantity="few">%d klíče vybrány.</item>
+        <item quantity="many">%d klíčů vybráno.</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">Ignoruji %s certifikáty vydané neznámými veřejnými klíči</item>
+        <item quantity="one">Ignoruji jeden certifikát vydaný neznámým veřejným klíčem</item>
+        <item quantity="few">Ignoruji %s certifikáty vydané neznámými veřejnými klíči</item>
+        <item quantity="many">Ignoruji %s certifikáty vydané neznámými veřejnými klíči</item>
+    </plurals>
+    <plurals name="msg_ip_uid_certs_unknown">
+        <item quantity="other">Ignoruji %s certifikátů vydaných neznámým veřejnými klíči.</item>
+        <item quantity="one">Ignoruji certifikát vydaný neznámým veřejným klíčem.</item>
+        <item quantity="few">Ignoruji %s certifikátů vydaných neznámým veřejnými klíči.</item>
+        <item quantity="many">Ignoruji %s certifikátů vydaných neznámým veřejnými klíči.</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">Klasifikuji uživatelská ID (používám %s důvěryhodných klíčů)</item>
+        <item quantity="one">Klasifikuji uživatelské ID (používám jeden důvěryhodný klíč)</item>
+        <item quantity="few">Klasifikuji uživatelská ID (používám %s důvěryhodné klíče)</item>
+        <item quantity="many">Klasifikuji uživatelská ID (používám %s důvěryhodných klíčů)</item>
+    </plurals>
+    <plurals name="msg_kc_success_bad">
+        <item quantity="other">Kanonizace klíčenky úspšná, odebráno %d chybných certifikátů</item>
+        <item quantity="one">Kanonizace klíčenky úspšná, odebrán jeden chybný certifikát</item>
+        <item quantity="few">Kanonizace klíčenky úspšná, odebráno %d chybné certifikáty</item>
+        <item quantity="many">Kanonizace klíčenky úspšná, odebráno %d chybných certifikátů</item>
+    </plurals>
+    <plurals name="msg_kc_success_redundant">
+        <item quantity="other">Kanonizace klíčenky úspšná, odebráno %d nadbytečných certifikátů</item>
+        <item quantity="one">Kanonizace klíčenky úspšná, odebrán jeden nadbytečný certifikát</item>
+        <item quantity="few">Kanonizace klíčenky úspšná, odebrány %d nadbytečné certifikáty</item>
+        <item quantity="many">Kanonizace klíčenky úspšná, odebráno %d nadbytečných certifikátů</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d klíčů</item>
+        <item quantity="one">1 klíč</item>
+        <item quantity="few">%d klíče</item>
+        <item quantity="many">%d klíčů</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d keyserverů</item>
+        <item quantity="one">%d keyserver</item>
+        <item quantity="few">%d keyservery</item>
+        <item quantity="many">%d keyserverů</item>
+    </plurals>
+</resources>
