@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/toolbar_include" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar_inner_layout" layout="@layout/toolbar_inner_layout" />
+    <com.astuetz.PagerSlidingTabStrip android:textColor="?colorTabText" android:id="@id/sliding_tab_layout" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_below="@id/toolbar" app:pstsIndicatorColor="?colorTabIndicator" app:pstsTabTextColor="?colorTabTextSelected" />
+</RelativeLayout>

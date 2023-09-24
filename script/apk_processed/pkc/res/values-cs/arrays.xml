@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="edit_key_edit_subkey">
+        <item>Změnit expiraci</item>
+        <item>Zneplatnit podklíč</item>
+        <item>Strip podklíč</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id">
+        <item>Změnit na hlavní identitu</item>
+        <item>Zneplatnit identitu</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id_revert_revocation">
+        <item>Zrušit zneplatnění</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <nordpol.android.NfcGuideView android:id="@id/nfc_guide_view" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:nfc_device="card_black" />
+    <include layout="@layout/security_token_operation_activity_toolable_view_animator" />
+</LinearLayout>

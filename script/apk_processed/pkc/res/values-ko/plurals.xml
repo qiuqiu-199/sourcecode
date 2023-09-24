@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"%d개의 손상된 비밀키가 무시되었습니다. 만약 
+--export-secret-subkeys
+옵션으로 내보내셨다면, 반드시
+--export-secret-keys
+옵션으로 내보내세요."</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">%d 개의 키를 확인 실패!</item>
+    </plurals>
+    <plurals name="certify_keys_ok">
+        <item quantity="other">성공적으로 %1$d 개의 키 확인 (%2$s)</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">%d 개의 키를 확인 실패!</item>
+    </plurals>
+    <plurals name="delete_fail">
+        <item quantity="other">%1$d개의 키를 삭제하던 중 오류가 발생했습니다.</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">성공적으로 %1$d 개의 키 삭제 (%2$s)</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">%1$d 개의 키를 성공적으로 삭제</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">하지만 %1$d 개의 키 삭제 실패 (%2$s)</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">%d 개의 키 가져오기 실패!</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">성공적으로 %1$d 개의 키 가져옴 (%2$s)</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_1">
+        <item quantity="other">성공적으로 %1$d 개의 키를 가져옴</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_2">
+        <item quantity="other">그리고 %1$d 개의 키 업데이트 (%2$s)</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">성공적으로 %1$d 개의 키 업데이트 (%2$s)</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">%d 개의 키 가져오기 실패!</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">알 수없는 공개 키로 발행 된%s 개의 인증서 무시</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">사용자 ID 분류 (신뢰할 수있는 키 %s 사용중)</item>
+    </plurals>
+    <plurals name="msg_kc_success_bad">
+        <item quantity="other">키링 정규화 성공, %d개 잘못된 인증서 삭제됨</item>
+    </plurals>
+    <plurals name="msg_kc_success_redundant">
+        <item quantity="other">키링 정규화 성공, %d개 중복된 인증서 삭제됨</item>
+    </plurals>
+    <plurals name="n_authorities">
+        <item quantity="other">%d개의 인증기관</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d 개의 키</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d 개의 키서버</item>
+    </plurals>
+</resources>

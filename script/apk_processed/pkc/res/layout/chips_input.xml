@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.sufficientlysecure.materialchips.views.ScrollViewMaxHeight android:id="@id/container" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:maxHeight="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.RecyclerView android:id="@id/chips_recycler" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</org.sufficientlysecure.materialchips.views.ScrollViewMaxHeight>

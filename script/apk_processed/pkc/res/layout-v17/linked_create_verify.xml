@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewAnimator android:layout_gravity="center_vertical" android:id="@id/verify_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:inAnimation="@anim/fade_in" android:outAnimation="@anim/fade_out" android:layout_marginStart="16.0dip">
+        <ImageView android:id="@id/verify_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/status_signature_unverified_cutout_24dp" />
+        <ProgressBar android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminateOnly="true" />
+    </ViewAnimator>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@id/verify_status" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/linked_verify_pending" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+    <ViewAnimator android:id="@id/verify_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:inAnimation="@anim/fade_in" android:outAnimation="@anim/fade_out" android:layout_marginEnd="16.0dip">
+        <Button android:id="@id/button_verify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linked_button_verify" style="?android:buttonBarButtonStyle" />
+        <Button android:id="@id/button_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linked_button_retry" style="?android:buttonBarButtonStyle" />
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </ViewAnimator>
+</LinearLayout>

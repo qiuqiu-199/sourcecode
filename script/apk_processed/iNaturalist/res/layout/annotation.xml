@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/main_view" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="#ff808080" android:layout_gravity="top" android:id="@id/attribute_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Life Stage very very very long" android:layout_weight="2.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/expand" android:clickable="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/baseline_arrow_drop_down_black_48" android:scaleType="centerInside" android:tint="#ffc3c3c3" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/expand">
+                    <ImageView android:layout_gravity="top" android:id="@id/user_pic" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/usericon" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff808080" android:layout_gravity="top" android:id="@id/attribute_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Larva very very long" />
+                    <ImageView android:layout_gravity="top" android:id="@id/delete_attribute_value" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/baseline_cancel_black_24" android:tint="#ffc3c3c3" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/inatapptheme_color" android:layout_gravity="top" android:id="@id/select_attribute_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/expanded_section" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="bottom|center|left" android:orientation="horizontal" android:id="@id/agree_container" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/agree_prefix" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_check_black_24dp" android:tint="@color/inatapptheme_color" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/agree_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/baseline_thumb_up_black_36" android:tint="#ffc3c3c3" />
+                    <TextView android:textSize="13.0sp" android:layout_gravity="center_vertical" android:id="@id/agree_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:tint="#ffc3c3c3" android:text="@string/agree2" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/disagree_container" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/disagree_prefix" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_close_black_48dp" android:tint="#ffff0000" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/disagree_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/baseline_thumb_down_black_36" android:tint="#ffc3c3c3" />
+                    <TextView android:textSize="13.0sp" android:layout_gravity="center_vertical" android:id="@id/disagree_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:tint="#ffc3c3c3" android:text="@string/disagree" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/loading" android:background="#88000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/main_view" android:layout_alignBottom="@id/main_view">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+    </RelativeLayout>
+</RelativeLayout>

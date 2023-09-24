@@ -1,0 +1,39 @@
+--------- beginning of main
+--------- beginning of system
+09-18 21:15:46.371  4868  4868 D M_InsDal: Lcom/etesync/syncadapter/App;--->attachBaseContext(Landroid/content/Context;)V
+09-18 21:15:46.427  4868  4868 D M_InsDal: Lcom/etesync/syncadapter/App;--->onCreate()V
+09-18 21:15:46.450  4868  4868 D M_InsDal: Lcom/etesync/syncadapter/ui/PermissionsActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 21:15:46.468  4868  4868 D M_InsDal: Lcom/etesync/syncadapter/ui/PermissionsActivity;--->onResume()V
+--------- beginning of crash
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: Process: com.etesync.syncadapter, PID: 4868
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.etesync.syncadapter/com.etesync.syncadapter.ui.PermissionsActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.etesync.syncadapter.MyParcelable
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3825)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3857)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.etesync.syncadapter.MyParcelable
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5620)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5632)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at com.etesync.syncadapter.ui.PermissionsActivity.refresh(PermissionsActivity.kt:54)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at com.etesync.syncadapter.ui.PermissionsActivity.onResume(PermissionsActivity.kt:31)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7300)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3817)
+09-18 21:15:46.472  4868  4868 E AndroidRuntime: 	... 11 more

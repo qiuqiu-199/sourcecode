@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_code_explanation" style="?android:textAppearanceMedium" />
+    <include android:id="@id/transfer_code_display" layout="@layout/transfer_code_display" />
+    <CheckBox android:layout_gravity="center_vertical" android:id="@id/check_backup_code_written" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/backup_code_checkbox" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/button_bar_backup" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:buttonBarStyle">
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:buttonBarStyle">
+            <Button android:enabled="false" android:id="@id/button_backup_share" android:padding="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/btn_backup_share" android:drawableLeft="@drawable/ic_share_grey_24dp" android:drawablePadding="8.0dip" android:layout_weight="1.0" style="?android:buttonBarButtonStyle" />
+            <Button android:enabled="false" android:id="@id/button_backup_save" android:padding="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/btn_backup_save" android:drawableLeft="@drawable/ic_save_grey_24dp" android:drawablePadding="8.0dip" android:layout_weight="1.0" style="?android:buttonBarButtonStyle" />
+        </LinearLayout>
+        <Button android:gravity="center" android:id="@id/button_faq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/how_to_import" style="?android:buttonBarButtonStyle" />
+    </LinearLayout>
+    <Button android:enabled="false" android:layout_gravity="center_horizontal" android:id="@id/button_backup_export" android:padding="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/btn_backup_export" android:drawableLeft="@drawable/ic_share_grey_24dp" android:drawablePadding="8.0dip" style="?android:buttonBarButtonStyle" />
+</LinearLayout>

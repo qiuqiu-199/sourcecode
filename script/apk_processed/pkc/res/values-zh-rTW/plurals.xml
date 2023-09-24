@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"%d 忽略不良的密鑰。或許您在輸出時使用
+ --export-secret-subkeys 選項
+ 請確認您使用
+ --export-secret-keys
+ 作爲選項。\""</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">認證 %d 金鑰失敗 !</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">認證 %d 金鑰失敗 !</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">成功刪除 %1$d 金鑰%2$s。</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">成功刪除 %1$d 金鑰</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">，但刪除 %1$d 金鑰%2$s 失敗。</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">匯入 %d 金鑰失敗 !</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">成功匯入%1$d金鑰%2$s。</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">成功更新%1$d金鑰%2$s。</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">匯入 %d 金鑰失敗 !</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d 金鑰</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d 金鑰伺服器</item>
+    </plurals>
+</resources>

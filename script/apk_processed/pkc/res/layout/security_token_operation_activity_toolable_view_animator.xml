@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator android:id="@id/view_animator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:measureAllChildren="false" android:minHeight="?listPreferredItemHeightSmall" android:inAnimation="@anim/fade_in" android:outAnimation="@anim/fade_out" android:animateLayoutChanges="true" custom:initialView="4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@android:style/TextAppearance.Medium" android:id="@id/security_token_activity_0_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/security_token_nfc_text" />
+        <Button android:id="@id/security_token_activity_0_cancel" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_margin="8.0dip" android:text="@string/progress_cancel" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@android:style/TextAppearance.Medium" android:id="@id/security_token_activity_1_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/security_token_nfc_wait" />
+        <Button android:id="@id/security_token_activity_1_button_placeholder" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_margin="8.0dip" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@android:style/TextAppearance.Medium" android:id="@id/security_token_activity_2_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/security_token_nfc_finished" />
+        <Button android:id="@id/security_token_activity_2_button_placeholder" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_margin="8.0dip" android:text="" />
+    </LinearLayout>
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@android:style/TextAppearance.Medium" android:id="@id/security_token_activity_3_text_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:text="" />
+            <TextView android:textAppearance="@android:style/TextAppearance.Medium" android:textColor="@color/android_red_dark" android:id="@id/security_token_activity_3_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="24.0dip" />
+            <Button android:id="@id/security_token_activity_3_error_try_again" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_margin="8.0dip" android:text="@string/security_token_error_try_again" />
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@android:style/TextAppearance.Medium" android:textColor="@color/android_red_dark" android:id="@id/security_token_activity_4_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="24.0dip" />
+            <Button android:id="@id/security_token_activity_4_back" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_margin="8.0dip" android:text="Back" />
+        </LinearLayout>
+    </ScrollView>
+</org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator>

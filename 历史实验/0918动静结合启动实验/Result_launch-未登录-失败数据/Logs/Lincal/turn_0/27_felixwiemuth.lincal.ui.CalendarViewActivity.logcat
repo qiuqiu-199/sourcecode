@@ -1,0 +1,317 @@
+--------- beginning of main
+09-19 00:12:44.934 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:12:44.934 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:12:44.934 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:44.934 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:44.934 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:44.935 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:44.935 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:44.936 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:12:44.942 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;---><init>()V
+09-19 00:12:44.942 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;---><init>()V
+09-19 00:12:44.943 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:44.943 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:44.943 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:44.943 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:44.943 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:44.947 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:44.947 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:44.947 19641 19641 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of system
+09-19 00:12:53.608 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:12:53.608 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:12:53.608 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:53.608 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:53.608 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:53.609 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:53.609 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:53.610 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:12:53.616 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;---><init>()V
+09-19 00:12:53.616 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;---><init>()V
+09-19 00:12:53.616 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:53.616 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:53.616 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:53.616 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:53.616 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:53.621 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:53.621 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:53.621 19704 19704 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: Process: felixwiemuth.lincal, PID: 19704
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{felixwiemuth.lincal/felixwiemuth.lincal.ui.CalendarViewActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.felixwiemuth.lincal.MyParcelable
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.felixwiemuth.lincal.MyParcelable
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at felixwiemuth.lincal.ui.CalendarViewActivity.onCreate(CalendarViewActivity.java:58)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:12:53.635 19704 19704 E AndroidRuntime: 	... 11 more
+09-19 00:12:53.720 19726 19726 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:12:53.720 19726 19726 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:12:53.720 19726 19726 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:53.720 19726 19726 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:53.720 19726 19726 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:53.720 19726 19726 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:53.721 19726 19726 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:53.721 19726 19726 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:12:55.753 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:12:55.753 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:12:55.753 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:55.753 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:55.753 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:55.754 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:55.755 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:55.755 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:12:55.761 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;---><init>()V
+09-19 00:12:55.761 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;---><init>()V
+09-19 00:12:55.762 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:55.762 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:55.762 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:55.762 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:55.762 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:55.766 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:55.766 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:55.766 19754 19754 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: Process: felixwiemuth.lincal, PID: 19754
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{felixwiemuth.lincal/felixwiemuth.lincal.ui.CalendarViewActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.felixwiemuth.lincal.MyParcelable
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.felixwiemuth.lincal.MyParcelable
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at felixwiemuth.lincal.ui.CalendarViewActivity.onCreate(CalendarViewActivity.java:58)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:12:55.779 19754 19754 E AndroidRuntime: 	... 11 more
+09-19 00:12:57.892 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:12:57.892 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:12:57.892 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:57.892 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:57.892 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:57.893 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:57.893 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:57.894 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:12:57.901 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;---><init>()V
+09-19 00:12:57.901 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;---><init>()V
+09-19 00:12:57.902 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:57.902 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:57.902 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:57.902 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:57.902 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:57.906 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:57.906 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:57.906 19777 19777 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: Process: felixwiemuth.lincal, PID: 19777
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{felixwiemuth.lincal/felixwiemuth.lincal.ui.CalendarViewActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.felixwiemuth.lincal.MyParcelable
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.felixwiemuth.lincal.MyParcelable
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at felixwiemuth.lincal.ui.CalendarViewActivity.onCreate(CalendarViewActivity.java:58)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:12:57.919 19777 19777 E AndroidRuntime: 	... 11 more
+09-19 00:13:00.037 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:13:00.037 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:13:00.037 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:13:00.037 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:13:00.037 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:13:00.038 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:13:00.038 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:13:00.039 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:13:00.045 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;---><init>()V
+09-19 00:13:00.045 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;---><init>()V
+09-19 00:13:00.046 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:13:00.046 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:13:00.046 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:13:00.046 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:13:00.046 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:13:00.054 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:13:00.054 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:13:00.054 19800 19800 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: Process: felixwiemuth.lincal, PID: 19800
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{felixwiemuth.lincal/felixwiemuth.lincal.ui.CalendarViewActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.felixwiemuth.lincal.MyParcelable
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.felixwiemuth.lincal.MyParcelable
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at felixwiemuth.lincal.ui.CalendarViewActivity.onCreate(CalendarViewActivity.java:58)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:13:00.067 19800 19800 E AndroidRuntime: 	... 11 more
+09-19 00:13:02.157 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:13:02.157 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:13:02.157 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:13:02.157 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:13:02.157 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:13:02.158 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:13:02.158 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:13:02.159 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:13:02.165 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;---><init>()V
+09-19 00:13:02.165 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;---><init>()V
+09-19 00:13:02.165 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:13:02.165 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:13:02.165 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:13:02.165 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:13:02.165 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:13:02.170 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:13:02.170 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:13:02.170 19823 19823 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: Process: felixwiemuth.lincal, PID: 19823
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{felixwiemuth.lincal/felixwiemuth.lincal.ui.CalendarViewActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.felixwiemuth.lincal.MyParcelable
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.felixwiemuth.lincal.MyParcelable
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at felixwiemuth.lincal.ui.CalendarViewActivity.onCreate(CalendarViewActivity.java:58)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:13:02.181 19823 19823 E AndroidRuntime: 	... 11 more
+09-19 00:13:04.275 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:13:04.276 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:13:04.276 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:13:04.276 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:13:04.276 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:13:04.277 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:13:04.277 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:13:04.277 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:13:04.285 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;---><init>()V
+09-19 00:13:04.285 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;---><init>()V
+09-19 00:13:04.285 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:13:04.285 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:13:04.285 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:13:04.285 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:13:04.285 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:13:04.290 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:13:04.290 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:13:04.290 19847 19847 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: Process: felixwiemuth.lincal, PID: 19847
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{felixwiemuth.lincal/felixwiemuth.lincal.ui.CalendarViewActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.felixwiemuth.lincal.MyParcelable
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.felixwiemuth.lincal.MyParcelable
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at felixwiemuth.lincal.ui.CalendarViewActivity.onCreate(CalendarViewActivity.java:58)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:13:04.302 19847 19847 E AndroidRuntime: 	... 11 more

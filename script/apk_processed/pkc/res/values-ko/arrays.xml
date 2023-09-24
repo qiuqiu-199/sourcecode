@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="edit_key_edit_subkey">
+        <item>만료기한 변경</item>
+        <item>하위키 폐기</item>
+        <item>하위키 제거</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id">
+        <item>기본 신분으로 변경</item>
+        <item>신원 폐기</item>
+    </string-array>
+    <string-array name="edit_key_edit_user_id_revert_revocation">
+        <item>폐기 취소</item>
+    </string-array>
+</resources>

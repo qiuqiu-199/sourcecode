@@ -1,0 +1,11 @@
+--------- beginning of main
+--------- beginning of crash
+--------- beginning of system
+09-19 04:55:43.784  3077  3077 D M_InsDal: Lcom/nutomic/syncthingandroid/SyncthingApp;--->onCreate()V
+09-19 04:55:44.144  3077  3077 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/StateDialogActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 04:55:44.144  3077  3077 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/WebGuiActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 04:55:44.262  3077  3077 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/SyncthingActivity;--->onPostCreate(Landroid/os/Bundle;)V
+09-19 04:55:44.264  3077  3077 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/SyncthingActivity;--->onResume()V
+09-19 04:55:44.264  3077  3077 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/StateDialogActivity;--->onResume()V
+09-19 04:55:44.264  3077  3077 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/WebGuiActivity;--->onResume()V
+09-19 04:55:44.973  3077  3077 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/WebGuiActivity;--->onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V

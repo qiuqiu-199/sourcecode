@@ -1,0 +1,71 @@
+--------- beginning of system
+--------- beginning of main
+09-18 18:22:52.756  7762  7762 D M_InsDal: Leu/siacs/conversations/ui/ConversationActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: Process: eu.siacs.conversations, PID: 7762
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{eu.siacs.conversations/eu.siacs.conversations.ui.ConversationActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.eu.siacs.conversations.MySerializable)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.eu.siacs.conversations.MySerializable)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5620)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.app.Activity.finish(Activity.java:5632)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at eu.siacs.conversations.ui.ConversationActivity.onCreate(ConversationActivity.java:14)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	... 11 more
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.eu.siacs.conversations.MySerializable
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	... 24 more
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.eu.siacs.conversations.MySerializable" on path: DexPathList[[zip file "/data/app/eu.siacs.conversations-rEl5gdg3zkxg4cyzeiELxw==/base.apk"],nativeLibraryDirectories=[/data/app/eu.siacs.conversations-rEl5gdg3zkxg4cyzeiELxw==/lib/x86_64, /data/app/eu.siacs.conversations-rEl5gdg3zkxg4cyzeiELxw==/base.apk!/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-18 18:22:52.763  7762  7762 E AndroidRuntime: 	... 33 more
+09-18 18:22:52.975  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 18:22:52.979  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/ConversationsActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 18:22:52.993  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onAttach(Landroid/app/Activity;)V
+09-18 18:22:52.993  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onCreate(Landroid/os/Bundle;)V
+09-18 18:22:53.000  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+09-18 18:22:53.001  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStart()V
+09-18 18:22:53.003  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onStart()V
+09-18 18:22:53.003  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onResume()V
+09-18 18:22:53.003  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/ConversationsActivity;--->onResume()V
+09-18 18:22:53.003  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onResume()V
+09-18 18:22:53.023  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/service/EmojiService$1;--->onFailed(Ljava/lang/Throwable;)V
+09-18 18:22:53.067  3901  3901 D M_InsDal: Lorg/sufficientlysecure/keychain/remote/OpenPgpService;--->onCreate()V
+09-18 18:22:53.151  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onPause()V
+09-18 18:22:53.151  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/ConversationsActivity;--->onPause()V
+09-18 18:22:53.181  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 18:22:53.191  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStart()V
+09-18 18:22:53.191  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/WelcomeActivity;--->onStart()V
+09-18 18:22:53.192  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onResume()V
+09-18 18:22:53.313  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/XmppActivity;--->onStop()V
+09-18 18:22:53.314  7785  7785 D M_InsDal: Leu/siacs/conversations/ui/ConversationsOverviewFragment;--->onDetach()V

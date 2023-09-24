@@ -1,0 +1,420 @@
+--------- beginning of main
+09-19 00:12:08.930 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:12:08.930 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:12:08.930 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:08.930 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:08.930 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:08.931 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:08.931 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:08.932 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:12:08.938 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;---><init>()V
+09-19 00:12:08.938 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;---><init>()V
+09-19 00:12:08.939 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:08.939 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:08.939 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:08.939 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:08.939 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:08.947 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:08.947 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:08.947 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:08.957 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewFragment;---><init>()V
+09-19 00:12:08.958 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewFragment;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:08.959 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/Calendars;--->getInstance(Landroid/content/Context;)Lfelixwiemuth/lincal/Calendars;
+09-19 00:12:08.959 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/Calendars;---><init>(Landroid/content/Context;)V
+09-19 00:12:08.959 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/data/LinCalConfigStore;---><init>(Landroid/content/Context;)V
+09-19 00:12:08.959 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/data/LinCalConfigStore;--->update(Landroid/content/Context;)Z
+09-19 00:12:08.959 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/data/LinCalConfigStore;--->getVersionPref(Landroid/content/Context;)Landroid/content/SharedPreferences;
+09-19 00:12:08.959 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/data/LinCalConfigStore;--->load(Landroid/content/Context;ILjava/lang/Runnable;)V
+09-19 00:12:08.960 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/data/LinCalConfigStore;--->lockConfigFile(Landroid/content/Context;)V
+09-19 00:12:08.960 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/data/LinCalConfigStore;--->unlockConfigFile(Landroid/content/Context;)V
+09-19 00:12:08.960 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/data/LinCalConfigStore;--->getEntries()Ljava/util/List;
+09-19 00:12:08.960 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/Calendars;--->getCalendarByPos(Landroid/content/Context;I)Lfelixwiemuth/lincal/data/LinCal;
+09-19 00:12:08.960 19227 19227 D M_InsDal: Lfelixwiemuth/lincal/data/LinCalConfigStore;--->getEntries()Ljava/util/List;
+--------- beginning of system
+09-19 00:12:17.779 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:12:17.779 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:12:17.779 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:17.779 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:17.779 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:17.780 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:17.781 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:17.782 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:12:17.788 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;---><init>()V
+09-19 00:12:17.789 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;---><init>()V
+09-19 00:12:17.789 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:17.789 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:17.789 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:17.789 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:17.789 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:17.794 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:17.794 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:17.794 19292 19292 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: Process: felixwiemuth.lincal, PID: 19292
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{felixwiemuth.lincal/felixwiemuth.lincal.ui.CalendarViewActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.felixwiemuth.lincal.MySerializable)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.felixwiemuth.lincal.MySerializable)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at felixwiemuth.lincal.ui.CalendarViewActivity.onCreate(CalendarViewActivity.java:58)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	... 11 more
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.felixwiemuth.lincal.MySerializable
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	... 22 more
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.felixwiemuth.lincal.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/felixwiemuth.lincal-64FsU5FubcyFMd7VtcRB3g==/base.apk"],nativeLibraryDirectories=[/data/app/felixwiemuth.lincal-64FsU5FubcyFMd7VtcRB3g==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-19 00:12:17.807 19292 19292 E AndroidRuntime: 	... 31 more
+09-19 00:12:17.929 19314 19314 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:12:17.929 19314 19314 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:12:17.929 19314 19314 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:17.929 19314 19314 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:17.929 19314 19314 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:17.930 19314 19314 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:17.930 19314 19314 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:17.931 19314 19314 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:12:19.914 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:12:19.914 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:12:19.914 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:19.914 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:19.914 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:19.915 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:19.915 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:19.916 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:12:19.924 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;---><init>()V
+09-19 00:12:19.924 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;---><init>()V
+09-19 00:12:19.925 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:19.925 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:19.925 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:19.925 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:19.925 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:19.929 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:19.929 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:19.929 19339 19339 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: Process: felixwiemuth.lincal, PID: 19339
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{felixwiemuth.lincal/felixwiemuth.lincal.ui.CalendarViewActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.felixwiemuth.lincal.MySerializable)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.felixwiemuth.lincal.MySerializable)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at felixwiemuth.lincal.ui.CalendarViewActivity.onCreate(CalendarViewActivity.java:58)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	... 11 more
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.felixwiemuth.lincal.MySerializable
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	... 22 more
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.felixwiemuth.lincal.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/felixwiemuth.lincal-64FsU5FubcyFMd7VtcRB3g==/base.apk"],nativeLibraryDirectories=[/data/app/felixwiemuth.lincal-64FsU5FubcyFMd7VtcRB3g==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-19 00:12:19.939 19339 19339 E AndroidRuntime: 	... 31 more
+09-19 00:12:22.030 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:12:22.030 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:12:22.030 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:22.030 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:22.030 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:22.031 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:22.032 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:22.033 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:12:22.043 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;---><init>()V
+09-19 00:12:22.043 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;---><init>()V
+09-19 00:12:22.043 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:22.043 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:22.043 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:22.044 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:22.044 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:22.048 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:22.048 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:22.048 19365 19365 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: Process: felixwiemuth.lincal, PID: 19365
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{felixwiemuth.lincal/felixwiemuth.lincal.ui.CalendarViewActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.felixwiemuth.lincal.MySerializable)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.felixwiemuth.lincal.MySerializable)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at felixwiemuth.lincal.ui.CalendarViewActivity.onCreate(CalendarViewActivity.java:58)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	... 11 more
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.felixwiemuth.lincal.MySerializable
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	... 22 more
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.felixwiemuth.lincal.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/felixwiemuth.lincal-64FsU5FubcyFMd7VtcRB3g==/base.apk"],nativeLibraryDirectories=[/data/app/felixwiemuth.lincal-64FsU5FubcyFMd7VtcRB3g==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-19 00:12:22.058 19365 19365 E AndroidRuntime: 	... 31 more
+09-19 00:12:24.206 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:12:24.206 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:12:24.206 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:24.206 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:24.206 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:24.207 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:24.207 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:24.209 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:12:24.218 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;---><init>()V
+09-19 00:12:24.218 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;---><init>()V
+09-19 00:12:24.218 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:24.218 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:24.218 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:24.218 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:24.218 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:24.224 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:24.224 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:24.224 19388 19388 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: Process: felixwiemuth.lincal, PID: 19388
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{felixwiemuth.lincal/felixwiemuth.lincal.ui.CalendarViewActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.felixwiemuth.lincal.MySerializable)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.felixwiemuth.lincal.MySerializable)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at felixwiemuth.lincal.ui.CalendarViewActivity.onCreate(CalendarViewActivity.java:58)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	... 11 more
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.felixwiemuth.lincal.MySerializable
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	... 22 more
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.felixwiemuth.lincal.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/felixwiemuth.lincal-64FsU5FubcyFMd7VtcRB3g==/base.apk"],nativeLibraryDirectories=[/data/app/felixwiemuth.lincal-64FsU5FubcyFMd7VtcRB3g==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-19 00:12:24.237 19388 19388 E AndroidRuntime: 	... 31 more
+09-19 00:12:26.544 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:12:26.544 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:12:26.544 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:26.544 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:26.544 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:26.545 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:26.545 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:26.547 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:12:26.554 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;---><init>()V
+09-19 00:12:26.554 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;---><init>()V
+09-19 00:12:26.554 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:26.554 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:26.554 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:26.554 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:26.554 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:26.566 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:26.566 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:26.566 19412 19412 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: Process: felixwiemuth.lincal, PID: 19412
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{felixwiemuth.lincal/felixwiemuth.lincal.ui.CalendarViewActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.felixwiemuth.lincal.MySerializable)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.felixwiemuth.lincal.MySerializable)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at felixwiemuth.lincal.ui.CalendarViewActivity.onCreate(CalendarViewActivity.java:58)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	... 11 more
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.felixwiemuth.lincal.MySerializable
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	... 22 more
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.felixwiemuth.lincal.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/felixwiemuth.lincal-64FsU5FubcyFMd7VtcRB3g==/base.apk"],nativeLibraryDirectories=[/data/app/felixwiemuth.lincal-64FsU5FubcyFMd7VtcRB3g==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-19 00:12:26.576 19412 19412 E AndroidRuntime: 	... 31 more
+09-19 00:12:28.677 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/Main;---><clinit>()V
+09-19 00:12:28.677 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/Main;---><init>()V
+09-19 00:12:28.677 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/Main;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:28.677 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:28.677 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:28.678 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:28.678 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:28.679 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/Main;--->onCreate()V
+09-19 00:12:28.686 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;---><init>()V
+09-19 00:12:28.686 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;---><init>()V
+09-19 00:12:28.686 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->attachBaseContext(Landroid/content/Context;)V
+09-19 00:12:28.686 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->onAttach(Landroid/content/Context;)Landroid/content/Context;
+09-19 00:12:28.686 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:28.686 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->setLocale(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+09-19 00:12:28.686 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->updateResources(Landroid/content/Context;Ljava/util/Locale;)Landroid/content/Context;
+09-19 00:12:28.690 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:28.690 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/LocaleHelper;--->getPersistedLocale(Landroid/content/Context;)Ljava/lang/String;
+09-19 00:12:28.691 19436 19436 D M_InsDal: Lfelixwiemuth/lincal/ui/CalendarViewActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: Process: felixwiemuth.lincal, PID: 19436
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{felixwiemuth.lincal/felixwiemuth.lincal.ui.CalendarViewActivity}: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.felixwiemuth.lincal.MySerializable)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: Caused by: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.felixwiemuth.lincal.MySerializable)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.os.BaseBundle.containsKey(BaseBundle.java:504)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.content.Intent.hasExtra(Intent.java:7257)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at felixwiemuth.lincal.ui.CalendarViewActivity.onCreate(CalendarViewActivity.java:58)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	... 11 more
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.felixwiemuth.lincal.MySerializable
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	... 22 more
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.felixwiemuth.lincal.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/felixwiemuth.lincal-64FsU5FubcyFMd7VtcRB3g==/base.apk"],nativeLibraryDirectories=[/data/app/felixwiemuth.lincal-64FsU5FubcyFMd7VtcRB3g==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-19 00:12:28.700 19436 19436 E AndroidRuntime: 	... 31 more

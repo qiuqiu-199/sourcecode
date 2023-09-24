@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/webview" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <TextView android:gravity="center" android:id="@id/not_logged_in" android:padding="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/please_sign_in_for_updates" android:layout_centerInParent="true" />
+    <Button android:id="@id/login" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:text="@string/login_signup" android:layout_below="@id/not_logged_in" android:layout_centerHorizontal="true" />
+</RelativeLayout>

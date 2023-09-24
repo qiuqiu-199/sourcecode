@@ -1,0 +1,32 @@
+--------- beginning of main
+--------- beginning of system
+--------- beginning of crash
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: Process: qiu.org.inaturalist.android, PID: 7469
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{qiu.org.inaturalist.android/qiu.org.inaturalist.android.Activity_80}: android.content.ActivityNotFoundException: Unable to find explicit activity class {org.inaturalist.android/org.inaturalist.android.ExploreFiltersActivity}; have you declared this activity in your AndroidManifest.xml?
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: Caused by: android.content.ActivityNotFoundException: Unable to find explicit activity class {org.inaturalist.android/org.inaturalist.android.ExploreFiltersActivity}; have you declared this activity in your AndroidManifest.xml?
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2005)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1673)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:4587)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:4545)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:4906)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:4874)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at qiu.org.inaturalist.android.Activity_80.launch(Activity_80.java:28)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at qiu.org.inaturalist.android.Activity_80.onCreate(Activity_80.java:37)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 22:44:20.871  7469  7469 E AndroidRuntime: 	... 11 more

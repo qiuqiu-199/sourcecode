@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/search_filter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/search_projects" android:lines="1" android:singleLine="true" android:layout_alignParentTop="true" />
+    <ProgressBar android:gravity="center" android:id="@id/progress" android:padding="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0sp" android:gravity="center" android:id="@android:id/empty" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="@string/no_projects" />
+        <Button android:textColor="#ffffffff" android:id="@id/settings" android:background="@drawable/circular_button_rounder" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginTop="30.0dip" android:text="@string/go_to_settings" />
+        <Button android:textColor="#ffffffff" android:id="@id/login" android:background="@drawable/circular_button_rounder" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginTop="30.0dip" android:text="@string/login_signup" />
+    </LinearLayout>
+    <ListView android:orientation="vertical" android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_filter" />
+</RelativeLayout>

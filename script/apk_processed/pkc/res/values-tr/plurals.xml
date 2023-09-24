@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"%d bozuk özel anahtar yok sayıldı. Muhtemelen
+ --export-secret-subkeys
+seçeneği ile dışa aktardınız. Onun yerine 
+ --export-secret-keys
+kullandığınıza emin olun."</item>
+        <item quantity="one">"%d bozuk özel anahtar yok sayıldı. Muhtemelen
+ --export-secret-subkeys
+seçeneği ile dışa aktardınız. Onun yerine 
+ --export-secret-keys
+kullandığınıza emin olun."</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">%d anahtar için içe aktarma başarısız!</item>
+        <item quantity="one">Bir anahtar için alma başarısız.</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d anahtar seçildi.</item>
+        <item quantity="one">1 anahtar seçildi.</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d anahtar</item>
+        <item quantity="one">1 anahtar</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d anahtar sunucusu</item>
+        <item quantity="one">%d anahtar sunucusu</item>
+    </plurals>
+</resources>

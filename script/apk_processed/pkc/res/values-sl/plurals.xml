@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"Neupoštevanih %d slabih zasebnih ključev. Morda so bili izvoženi na način
+ --export-secret-subkeys
+Poskrbite, da bodo izvoženi z
+ --export-secret-keys"</item>
+        <item quantity="one">"Neupoštevan %d slab zasebni ključ. Morda je bil izvožen na način
+ --export-secret-subkeys
+Poskrbite, da bo izvožen z
+ --export-secret-keys"</item>
+        <item quantity="two">"Neupoštevana %d slaba zasebna ključa. Morda sta bila izvožena na način
+ --export-secret-subkeys
+Poskrbite, da bosta izvožena z
+ --export-secret-keys"</item>
+        <item quantity="few">"Neupoštevani %d slabi zasebni ključi. Morda so bili izvoženi na način
+ --export-secret-subkeys
+Poskrbite, da bodo izvoženi z
+ --export-secret-keys"</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">Potrditev %d ključev neuspešna!</item>
+        <item quantity="one">Potrditev neuspešna!</item>
+        <item quantity="two">Potrditev %d ključev neuspešna!</item>
+        <item quantity="few">Potrditev %d ključev neuspešna!</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">%d ključev ni bilo potrjenih!</item>
+        <item quantity="one">Ključ ni bil potrjen!</item>
+        <item quantity="two">%d ključa nista bila potrjena!</item>
+        <item quantity="few">%d ključi niso bili potrjeni!</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">Uspešno izbrisanih %1$d ključev%2$s.</item>
+        <item quantity="one">Uspešno izbrisanih ključ%2$s.</item>
+        <item quantity="two">Uspešno izbrisana %1$d ključa%2$s.</item>
+        <item quantity="few">Uspešno izbrisani %1$d ključi%2$s.</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">Uspešno izbrisanih %1$d ključev</item>
+        <item quantity="one">Uspešno izbrisan en ključ</item>
+        <item quantity="two">Uspešno izbrisana %1$d ključa</item>
+        <item quantity="few">Uspešno izbrisani %1$d ključi</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">, %1$d ključev%2$s ni bilo izbrisanih.</item>
+        <item quantity="one">, en ključ%2$s ni bil izbrisan.</item>
+        <item quantity="two">, %1$d ključa%2$s nista bila izbrisana.</item>
+        <item quantity="few">, %1$d ključi%2$s niso bili izbrisani.</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">Uvoz %d ključev neuspešen!!</item>
+        <item quantity="one">Uvoz neuspešen!</item>
+        <item quantity="two">Uvoz %d ključev neuspešen!!</item>
+        <item quantity="few">Uvoz %d ključev neuspešen!!</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">Uspešno uvoženih %1$d ključev%2$s.</item>
+        <item quantity="one">Uspešno uvožen ključ%2$s.</item>
+        <item quantity="two">Uspešno uvožena %1$d ključa%2$s.</item>
+        <item quantity="few">Uspešno uvoženi %1$d ključi%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">Uspešno posodobljenih %1$d ključev%2$s.</item>
+        <item quantity="one">Uspešno posodobljen ključ%2$s.</item>
+        <item quantity="two">Uspešno posodobljena %1$d ključa%2$s.</item>
+        <item quantity="few">Uspešno posodobljeni %1$d ključi%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">Neuspešen uvoz %d ključev!</item>
+        <item quantity="one">Neuspešen uvoz enega ključa!</item>
+        <item quantity="two">Neuspešen uvoz %d ključev!</item>
+        <item quantity="few">Neuspešen uvoz %d ključev!</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">Izbranih %d ključev.</item>
+        <item quantity="one">Izbran 1 ključ.</item>
+        <item quantity="two">Izbrana %d ključa.</item>
+        <item quantity="few">Izbrani %d ključi.</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uids">
+        <item quantity="other">Potrjujem %1$d ID-jev za ključ %2$s</item>
+        <item quantity="one">Potrjujem en ID za ključ %2$s</item>
+        <item quantity="two">Potrjujem %1$d ID-ja za ključ %2$s</item>
+        <item quantity="few">Potrjujem %1$d ID-je za ključ %2$s</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">Izpuščam %s potrdil, potrjenih s strani neznanih javnih ključev</item>
+        <item quantity="one">Izpuščam potrdilo, potrjenio s strani neznanih javnih ključev</item>
+        <item quantity="two">Izpuščam %s potrdii, potrjeni s strani neznanih javnih ključev</item>
+        <item quantity="few">Izpuščam %s potrdila, potrjena s strani neznanih javnih ključev</item>
+    </plurals>
+    <plurals name="msg_ip_uid_certs_unknown">
+        <item quantity="other">Izpuščam %s potrdil, potrjenih s strani neznanih javnih ključev.</item>
+        <item quantity="one">Izpuščam potrdilo, potrjeno s strani neznanih javnih ključev.</item>
+        <item quantity="two">Izpuščam %s potrdili, potrjeni s strani neznanih javnih ključev.</item>
+        <item quantity="few">Izpuščam %s potrdila, potrjena s strani neznanih javnih ključev.</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">Razvrščam ID-je (uporabljam %s ključev vrednih zaupanja)</item>
+        <item quantity="one">Razvrščam ID-je (uporabljam en ključ vreden zaupanja)</item>
+        <item quantity="two">Razvrščam ID-je (uporabljam %s ključa vredna zaupanja)</item>
+        <item quantity="few">Razvrščam ID-je (uporabljam %s ključe vredne zaupanja)</item>
+    </plurals>
+    <plurals name="msg_kc_success_bad">
+        <item quantity="other">Kanonizacija zbirke ključev uspešna. Odstranjenih je bilo %d napačnih potrdil.</item>
+        <item quantity="one">Kanonizacija zbirke ključev uspešna. Odstranjeno je bilo eno napačno potrdilo.</item>
+        <item quantity="two">Kanonizacija zbirke ključev uspešna. Odstranjeni sta bili %d napačni potrdili.</item>
+        <item quantity="few">Kanonizacija zbirke ključev uspešna. Odstranjena so bila %d napačna potrdila.</item>
+    </plurals>
+    <plurals name="msg_kc_success_redundant">
+        <item quantity="other">Kanonizacija zbirke ključev uspešna. Odstranjenih je bilo %d odvečnih potrdil.</item>
+        <item quantity="one">Kanonizacija zbirke ključev uspešna. Odstranjeno je bilo eno odvečno potrdilo.</item>
+        <item quantity="two">Kanonizacija zbirke ključev uspešna. Odstranjeni sta bili %d odvečni potrdili.</item>
+        <item quantity="few">Kanonizacija zbirke ključev uspešna. Odstranjena so bila %d odvečna potrdia.</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d ključev</item>
+        <item quantity="one">1 ključ</item>
+        <item quantity="two">%d ključa</item>
+        <item quantity="few">%d ključi</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d strežnikov</item>
+        <item quantity="one">%d strežnik</item>
+        <item quantity="two">%d strežnika</item>
+        <item quantity="few">%d strežniki</item>
+    </plurals>
+</resources>

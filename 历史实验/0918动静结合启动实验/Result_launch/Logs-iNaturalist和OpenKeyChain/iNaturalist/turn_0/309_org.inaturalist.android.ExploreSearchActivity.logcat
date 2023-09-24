@@ -1,0 +1,25 @@
+--------- beginning of system
+--------- beginning of main
+--------- beginning of crash
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: Process: org.inaturalist.android, PID: 22742
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {org.inaturalist.android/org.inaturalist.android.ExploreSearchActivity}: java.lang.NullPointerException: Attempt to read from field 'org.json.JSONObject org.inaturalist.android.ExploreSearchFilters.taxon' on a null object reference
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3825)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3857)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field 'org.json.JSONObject org.inaturalist.android.ExploreSearchFilters.taxon' on a null object reference
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at org.inaturalist.android.ExploreSearchActivity.refreshViewState(ExploreSearchActivity.java:351)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at org.inaturalist.android.ExploreSearchActivity.onResume(ExploreSearchActivity.java:314)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7300)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3817)
+09-19 10:59:29.087 22742 22742 E AndroidRuntime: 	... 11 more

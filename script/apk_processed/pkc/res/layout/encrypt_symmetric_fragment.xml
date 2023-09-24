@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:layout_gravity="center_horizontal" android:id="@id/passphrase" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:hint="@string/label_passphrase" android:ems="10" android:inputType="textPassword" android:imeOptions="actionNext|flagNoPersonalizedLearning" />
+    <EditText android:layout_gravity="center_horizontal" android:id="@id/passphraseAgain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:hint="@string/label_passphrase_again" android:ems="10" android:inputType="textPassword" android:imeOptions="flagNoPersonalizedLearning" />
+</LinearLayout>

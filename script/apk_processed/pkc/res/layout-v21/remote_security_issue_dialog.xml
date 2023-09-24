@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:background="?colorPrimary" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="4.0dip">
+        <ImageView android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@mipmap/ic_launcher" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:src="@drawable/link_24dp" />
+        <ImageView android:id="@id/icon_client_app" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="ifContentScrolls">
+            <LinearLayout android:orientation="vertical" android:id="@id/insecure_warning_layout" android:paddingLeft="24.0dip" android:paddingTop="24.0dip" android:paddingRight="24.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/dialog_insecure_generic" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator android:id="@id/dialog_insecure_button_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inAnimation="@anim/fade_in" android:outAnimation="@anim/fade_out" custom:initialView="0">
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?buttonBarStyle">
+            <Button android:id="@id/button_override" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_insecure_button_override" style="?buttonBarButtonStyle" />
+            <Button android:id="@id/button_override_undo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_insecure_button_undo" style="?buttonBarButtonStyle" />
+            <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:id="@id/button_view_key" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_insecure_button_view_key" style="?buttonBarButtonStyle" />
+            <Button android:id="@id/button_allow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_insecure_button_ok" style="?buttonBarButtonStyle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?buttonBarStyle">
+            <Button android:id="@id/button_override_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Back" style="?buttonBarButtonStyle" />
+            <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:id="@id/button_override_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_insecure_button_override_confirm" style="?buttonBarButtonStyle" />
+        </LinearLayout>
+    </org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator>
+</LinearLayout>

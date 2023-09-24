@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"%d giltza sekretu gaitz ezikusita. Badaiteke esportatu izana
+ --export-secret-subkeys aukerarekin.
+Zihurtatu esportatzen duzula --export-secret-keys aukerarekin ordez."</item>
+        <item quantity="one">"%d giltza sekretu gaitz ezikusita. Badaiteke esportatu izana
+ --export-secret-subkeys aukerarekin.
+Zihurtatu esportatzen duzula --export-secret-keys aukerarekin ordez."</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">Hutsegitea %d giltzen egiaztagiritzean!</item>
+        <item quantity="one">Egiaztagiritze hutsegitea!</item>
+    </plurals>
+    <plurals name="certify_keys_ok">
+        <item quantity="other">Ongi baieztatuta %1$d giltza%2$s.</item>
+        <item quantity="one">Ongi baieztatuta %2$s giltza.</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">Egiaztagiritzeak huts egindu %d giltzekin!</item>
+        <item quantity="one">Egiaztagiritze hutsegitea!</item>
+    </plurals>
+    <plurals name="delete_fail">
+        <item quantity="other">Akatsa %1$d giltza ezabatzean.</item>
+        <item quantity="one">Akatsa giltza bat ezabatzean.</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">Ongi ezabatu dira %1$d giltza%2$s.</item>
+        <item quantity="one">Ongi ezabatu da giltza%2$s.</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">Ongi ezabatu dira %1$d giltza</item>
+        <item quantity="one">Ongi ezabatu da bat giltza</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">, baina hutsegitea egon da ezabatzerakoan %1$d giltza%2$s.</item>
+        <item quantity="one">, baina hutsegitea egon da ezabatzerakoan bat giltza%2$s.</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">Hutsegitea %d giltza inportatzerakoan!</item>
+        <item quantity="one">Inportazio hutsegitea!</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">Ongi inportatuta %1$d giltza%2$s.</item>
+        <item quantity="one">Ongi inportatuta giltza%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_1">
+        <item quantity="other">Ongi inportatuta %1$d giltza</item>
+        <item quantity="one">Giltza bat ongi inportatuta</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_2">
+        <item quantity="other">eta eguneratuta %1$d giltza%2$s.</item>
+        <item quantity="one">eta eguneratuta giltza bat%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">Ongi eguneratuta %1$d giltza%2$s.</item>
+        <item quantity="one">Ongi eguneratuta giltza%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">Inportatze hutsegitea %d giltzentzat!</item>
+        <item quantity="one">Inportatze hutsegitea 1 giltzarentzat!</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d giltza hautaturik.</item>
+        <item quantity="one">1 giltza hautaturik.</item>
+    </plurals>
+    <plurals name="linked_id_expand">
+        <item quantity="other">Beste %d nortasun mota ezezagun daude</item>
+        <item quantity="one">Beste nortasun mota ezezagun bat dago</item>
+    </plurals>
+    <plurals name="msg_backup">
+        <item quantity="other">Babeskopiatu %d giltzekin</item>
+        <item quantity="one">Babeskopiatu giltza batekin</item>
+    </plurals>
+    <plurals name="msg_del">
+        <item quantity="other">%d giltza ezabatzen</item>
+        <item quantity="one">Giltza bat ezabatzen</item>
+    </plurals>
+    <plurals name="msg_del_fail">
+        <item quantity="other">Hutsegitea %d giltza ezabatzerakoan</item>
+        <item quantity="one">Hutsegitea giltza bat ezabatzerakoan</item>
+    </plurals>
+    <plurals name="msg_del_ok">
+        <item quantity="other">Ongi ezabatuta %d giltza</item>
+        <item quantity="one">Ongi ezabatuta giltza</item>
+    </plurals>
+    <plurals name="msg_import">
+        <item quantity="other">%d giltza inportatzen</item>
+        <item quantity="one">Giltza inportatzen</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">Giltza publiko ezezagunek jaulkitako %s egiaztagiri ezikusten</item>
+        <item quantity="one">Giltza publiko ezezagunak jaulkitako egiaztagiri bat ezikusten</item>
+    </plurals>
+    <plurals name="msg_ip_uid_certs_unknown">
+        <item quantity="other">Ezikusten giltza publiko ezezagunek jaulkitako %s egiaztagiri</item>
+        <item quantity="one">Ezikusten giltza publiko ezezagunak jaulkitako bat egiaztagiri</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">Erabiltzaile ID-ak sailkatzen (%s giltza fidagarri erabiltzen)</item>
+        <item quantity="one">Erabiltzaile ID-ak sailkatzen (giltza fidagarri bat erabiltzen)</item>
+    </plurals>
+    <plurals name="n_authorities">
+        <item quantity="other">%d autoritate</item>
+        <item quantity="one">%d autoritate</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d giltza</item>
+        <item quantity="one">1 giltza</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d giltza-zerbitzari</item>
+        <item quantity="one">%d giltza-zerbitzari</item>
+    </plurals>
+    <plurals name="passp_cache_notif_n_keys">
+        <item quantity="other">%d sarhitz gordeta</item>
+        <item quantity="one">%d sarhitz gordeta</item>
+    </plurals>
+    <plurals name="security_token_error_pin">
+        <item quantity="other">"PIN okerra!
+%d saiakera gelditzen dira."</item>
+        <item quantity="one">"PIN okerra!
+%d saiakera gelditzen da."</item>
+    </plurals>
+</resources>

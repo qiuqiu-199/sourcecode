@@ -1,0 +1,29 @@
+--------- beginning of main
+--------- beginning of system
+09-19 03:51:40.970 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/Application;---><init>()V
+09-19 03:51:40.970 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/ApplicationTemplate;---><init>()V
+09-19 03:51:40.970 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/ApplicationTemplate;--->onCreate()V
+09-19 03:51:40.970 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;---><clinit>()V
+09-19 03:51:40.970 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;--->scheduleAllTasks(Landroid/content/Context;)V
+09-19 03:51:40.970 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;---><clinit>()V
+09-19 03:51:40.970 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;---><init>(Ljava/lang/String;IJLjava/lang/Class;)V
+09-19 03:51:40.970 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$Task;--->values()[Lnet/mabako/steamgifts/PeriodicTasks$Task;
+09-19 03:51:40.970 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks;--->scheduleTask(Lnet/mabako/steamgifts/PeriodicTasks$Task;Landroid/content/Context;)V
+09-19 03:51:40.971 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/PeriodicTasks$TaskData;---><init>(Landroid/app/AlarmManager;Landroid/app/PendingIntent;)V
+09-19 03:51:40.973 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/activities/LoginActivity;---><init>()V
+09-19 03:51:41.065 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/activities/LoginActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 03:51:41.065 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/activities/LoginActivity$JavaScriptContentHandler;---><init>(Lnet/mabako/steamgifts/activities/LoginActivity;)V
+09-19 03:51:47.253 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;---><clinit>()V
+09-19 03:51:47.254 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver$NotificationId;---><clinit>()V
+09-19 03:51:47.254 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver$NotificationId;---><init>(Ljava/lang/String;I)V
+09-19 03:51:47.254 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver$NotificationId;---><init>(Ljava/lang/String;I)V
+09-19 03:51:47.254 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;---><init>()V
+09-19 03:51:47.254 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver;---><init>()V
+09-19 03:51:47.254 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/receivers/CheckForNewMessages;--->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+09-19 03:51:47.254 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/receivers/AbstractNotificationCheckReceiver;--->shouldRunNetworkTask(Ljava/lang/String;Landroid/content/Context;)Z
+09-19 03:51:47.255 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;---><clinit>()V
+09-19 03:51:47.255 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->getCurrent(Landroid/content/Context;)Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;
+09-19 03:51:47.255 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;---><init>()V
+09-19 03:51:47.255 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->clear()V
+09-19 03:51:47.255 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;---><init>()V
+09-19 03:51:47.255 21088 21088 D M_InsDal: Lnet/mabako/steamgifts/persistentdata/SteamGiftsUserData;--->isLoggedIn()Z

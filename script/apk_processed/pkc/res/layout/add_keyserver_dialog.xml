@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="24.0dip" android:paddingTop="16.0dip" android:paddingRight="24.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.TextInputLayout android:id="@id/keyserver_url_edit_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <EditText android:layout_gravity="center_horizontal" android:id="@id/keyserver_url_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/label_enter_keyserver_url" android:ems="10" android:inputType="textUri" android:imeOptions="actionDone" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/keyserver_onion_edit_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <EditText android:layout_gravity="center_horizontal" android:id="@id/keyserver_onion_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/label_enter_keyserver_onion" android:ems="10" android:inputType="textUri" android:imeOptions="actionDone" />
+    </android.support.design.widget.TextInputLayout>
+    <CheckBox android:id="@id/verify_connection_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/label_verify_keyserver_connection" />
+    <CheckBox android:id="@id/only_trusted_keyserver_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/label_only_trusted_keyserver" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+--------- beginning of main
+--------- beginning of system
+09-18 20:23:37.918  6303  6303 D M_InsDal: Lcom/csipsimple/db/DBProvider;---><clinit>()V
+09-18 20:23:37.919  6303  6303 D M_InsDal: Lcom/csipsimple/db/DBProvider;---><init>()V
+09-18 20:23:37.919  6303  6303 D M_InsDal: Lcom/csipsimple/db/DBProvider;--->onCreate()Z
+09-18 20:23:37.919  6303  6303 D M_InsDal: Lcom/csipsimple/db/DBAdapter$DatabaseHelper;---><init>(Landroid/content/Context;)V
+09-18 20:23:37.923  6303  6303 D M_InsDal: Lcom/csipsimple/ui/outgoingcall/OutgoingCallChooser;---><init>()V
+09-18 20:23:37.924  6303  6303 D M_InsDal: Lcom/csipsimple/ui/outgoingcall/OutgoingCallChooser$1;---><init>(Lcom/csipsimple/ui/outgoingcall/OutgoingCallChooser;)V
+09-18 20:23:37.925  6303  6303 D M_InsDal: Lcom/csipsimple/ui/outgoingcall/OutgoingCallChooser;--->onCreate(Landroid/os/Bundle;)V
+09-18 20:23:37.925  6303  6303 D M_InsDal: Lcom/csipsimple/ui/outgoingcall/OutgoingCallChooser;--->resetInternals()V
+09-18 20:23:37.925  6303  6303 D M_InsDal: Lcom/csipsimple/ui/outgoingcall/OutgoingCallChooser;--->getPhoneNumber()Ljava/lang/String;
+09-18 20:23:37.926  6303  6303 D M_InsDal: Lcom/csipsimple/utils/Log;---><clinit>()V
+09-18 20:23:37.926  6303  6303 D M_InsDal: Lcom/csipsimple/utils/Log;--->e(Ljava/lang/String;Ljava/lang/String;)V
+09-18 20:23:38.002  6303  6303 D M_InsDal: Lcom/csipsimple/ui/outgoingcall/OutgoingCallChooser;--->onDestroy()V
+09-18 20:23:38.002  6303  6303 D M_InsDal: Lcom/csipsimple/ui/outgoingcall/OutgoingCallChooser;--->resetInternals()V

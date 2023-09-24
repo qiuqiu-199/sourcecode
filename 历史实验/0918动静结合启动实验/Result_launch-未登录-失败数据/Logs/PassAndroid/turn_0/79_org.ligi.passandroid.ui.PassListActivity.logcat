@@ -1,0 +1,137 @@
+--------- beginning of system
+--------- beginning of main
+09-19 03:15:25.369 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App;---><clinit>()V
+09-19 03:15:25.369 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$Companion;---><init>()V
+09-19 03:15:25.369 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App;---><init>()V
+09-19 03:15:25.371 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App;--->onCreate()V
+09-19 03:15:25.371 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$onCreate$1;--->a(Lcom/github/salomonbrys/kodein/Kodein$Builder;)V
+09-19 03:15:25.371 12679 12679 D M_InsDal: Lorg/ligi/passandroid/TrackerKodeinModuleKt;--->a(Landroid/content/Context;)Lcom/github/salomonbrys/kodein/Kodein$Module;
+09-19 03:15:25.371 12679 12679 D M_InsDal: Lorg/ligi/passandroid/TrackerKodeinModuleKt$createTrackerKodeinModule$1;--->a(Lcom/github/salomonbrys/kodein/Kodein$Builder;)V
+09-19 03:15:25.371 12679 12679 D M_InsDal: Lorg/ligi/passandroid/TrackerKodeinModuleKt$createTrackerKodeinModule$1$$special$$inlined$bind$1;---><init>()V
+09-19 03:15:25.372 12679 12679 D M_InsDal: Lorg/ligi/passandroid/TrackerKodeinModuleKt$createTrackerKodeinModule$1$$special$$inlined$singleton$1;---><init>()V
+09-19 03:15:25.372 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App;--->a()Lcom/github/salomonbrys/kodein/Kodein$Module;
+09-19 03:15:25.372 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1;--->a(Lcom/github/salomonbrys/kodein/Kodein$Builder;)V
+09-19 03:15:25.372 12679 12679 D M_InsDal: Lorg/ligi/passandroid/json_adapter/ZonedTimeAdapter;---><init>()V
+09-19 03:15:25.372 12679 12679 D M_InsDal: Lorg/ligi/passandroid/json_adapter/ColorAdapter;---><init>()V
+09-19 03:15:25.372 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$bind$1;---><init>()V
+09-19 03:15:25.373 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$singleton$1;---><init>()V
+09-19 03:15:25.373 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$bind$2;---><init>()V
+09-19 03:15:25.373 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$singleton$2;---><init>()V
+09-19 03:15:25.373 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$bind$3;---><init>()V
+09-19 03:15:25.373 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$$special$$inlined$singleton$3;---><init>()V
+09-19 03:15:25.373 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App;--->b()V
+09-19 03:15:25.373 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App;--->g()V
+09-19 03:15:25.373 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$onCreate$$inlined$instance$1;---><init>()V
+09-19 03:15:25.373 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$2;--->a(Lcom/github/salomonbrys/kodein/bindings/NoArgBindingKodein;)Lorg/ligi/passandroid/model/AndroidSettings;
+09-19 03:15:25.373 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings;---><init>(Landroid/content/Context;)V
+09-19 03:15:25.373 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings;--->getNightMode()I
+09-19 03:15:25.373 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings$sharedPreferences$2;--->invoke()Landroid/content/SharedPreferences;
+09-19 03:15:25.373 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings;--->getContext()Landroid/content/Context;
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassListActivity;---><init>()V
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassAndroidActivity;---><init>()V
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$Companion;--->a()Lcom/github/salomonbrys/kodein/Kodein;
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassAndroidActivity$$special$$inlined$instance$1;---><init>()V
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$1;--->a(Lcom/github/salomonbrys/kodein/bindings/NoArgBindingKodein;)Lorg/ligi/passandroid/model/AndroidFileSystemPassStore;
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$1$$special$$inlined$instance$1;---><init>()V
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$1$$special$$inlined$instance$2;---><init>()V
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$createKodein$1$3;--->a(Lcom/github/salomonbrys/kodein/bindings/NoArgBindingKodein;)Lorg/greenrobot/eventbus/EventBus;
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/AndroidFileSystemPassStore;---><init>(Landroid/content/Context;Lorg/ligi/passandroid/model/Settings;Lcom/squareup/moshi/Moshi;Lorg/greenrobot/eventbus/EventBus;)V
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings;--->getPassesDir()Ljava/io/File;
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$Companion;--->a()Lcom/github/salomonbrys/kodein/Kodein;
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassAndroidActivity$$special$$inlined$instance$2;---><init>()V
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$Companion;--->a()Lcom/github/salomonbrys/kodein/Kodein;
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassAndroidActivity$$special$$inlined$instance$3;---><init>()V
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$Companion;--->a()Lcom/github/salomonbrys/kodein/Kodein;
+09-19 03:15:25.377 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassAndroidActivity$$special$$inlined$instance$4;---><init>()V
+09-19 03:15:25.378 12679 12679 D M_InsDal: Lorg/ligi/passandroid/TrackerKodeinModuleKt$createTrackerKodeinModule$1$1;--->a(Lcom/github/salomonbrys/kodein/bindings/NoArgBindingKodein;)Lorg/ligi/passandroid/AnalyticsTracker;
+09-19 03:15:25.378 12679 12679 D M_InsDal: Lorg/ligi/passandroid/AnalyticsTracker;---><init>(Landroid/content/Context;)V
+09-19 03:15:25.389 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassListActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 03:15:25.399 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/MyShyFABBehavior;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+09-19 03:15:25.404 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassNavigationView;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+09-19 03:15:25.408 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$Companion;--->a()Lcom/github/salomonbrys/kodein/Kodein;
+09-19 03:15:25.408 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassNavigationView$$special$$inlined$instance$1;---><init>()V
+09-19 03:15:25.408 12679 12679 D M_InsDal: Lorg/ligi/passandroid/App$Companion;--->a()Lcom/github/salomonbrys/kodein/Kodein;
+09-19 03:15:25.408 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassNavigationView$$special$$inlined$instance$2;---><init>()V
+09-19 03:15:25.410 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassAndroidActivity;--->e()Lorg/ligi/passandroid/Tracker;
+09-19 03:15:25.410 12679 12679 D M_InsDal: Lorg/ligi/passandroid/AnalyticsTracker;--->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)V
+09-19 03:15:25.410 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassAndroidActivity;--->c()Lorg/ligi/passandroid/model/Settings;
+09-19 03:15:25.410 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings;--->doTraceDroidEmailSend()Z
+09-19 03:15:25.419 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassListActivity$drawerToggle$2;--->a()Landroid/support/v7/app/ActionBarDrawerToggle;
+09-19 03:15:25.419 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassListActivity$adapter$2;--->a()Lorg/ligi/passandroid/ui/PassTopicFragmentPagerAdapter;
+09-19 03:15:25.419 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassAndroidActivity;--->b()Lorg/ligi/passandroid/model/PassStore;
+09-19 03:15:25.419 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/AndroidFileSystemPassStore$classifier$2;--->invoke()Lorg/ligi/passandroid/model/FileBackedPassClassifier;
+09-19 03:15:25.419 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/AndroidSettings;--->getStateDir()Ljava/io/File;
+09-19 03:15:25.419 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/FileBackedPassClassifier;---><init>(Ljava/io/File;Lorg/ligi/passandroid/model/PassStore;Lcom/squareup/moshi/Moshi;)V
+09-19 03:15:25.419 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/FileBackedPassClassifier;--->loadMap(Ljava/io/File;Lcom/squareup/moshi/Moshi;)Ljava/util/Map;
+09-19 03:15:25.419 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/PassClassifier;---><init>(Ljava/util/Map;Lorg/ligi/passandroid/model/PassStore;)V
+09-19 03:15:25.419 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/FileBackedPassClassifier;--->getAdapter(Lcom/squareup/moshi/Moshi;)Lcom/squareup/moshi/JsonAdapter;
+09-19 03:15:25.419 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassTopicFragmentPagerAdapter;---><init>(Lorg/ligi/passandroid/model/PassClassifier;Landroid/support/v4/app/FragmentManager;)V
+09-19 03:15:25.419 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassTopicFragmentPagerAdapter;--->c()V
+09-19 03:15:25.419 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/PassClassifier;--->getTopics()Ljava/util/Set;
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassTopicFragmentPagerAdapter;--->b()I
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassTopicFragmentPagerAdapter;--->b()I
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassListActivity$onCreate$1;---><init>(Lorg/ligi/passandroid/ui/PassListActivity;)V
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassAndroidActivity;--->b()Lorg/ligi/passandroid/model/PassStore;
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/AndroidFileSystemPassStore;--->syncPassStoreWithClassifier(Ljava/lang/String;)V
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/PassClassifier;--->getTopicByIdMap()Ljava/util/Map;
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassListActivity;--->onPassStoreChangeEvent(Lorg/ligi/passandroid/events/PassStoreChangeEvent;)V
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassTopicFragmentPagerAdapter;--->c()V
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/PassClassifier;--->getTopics()Ljava/util/Set;
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassTopicFragmentPagerAdapter;--->b()I
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassListActivity;--->k()V
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassListActivity;--->l()Z
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassTopicFragmentPagerAdapter;--->b()I
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassTopicFragmentPagerAdapter;--->b()I
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassAndroidActivity;--->b()Lorg/ligi/passandroid/model/PassStore;
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/PassClassifier;--->getTopicByIdMap()Ljava/util/Map;
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/ui/PassAndroidActivity;--->b()Lorg/ligi/passandroid/model/PassStore;
+09-19 03:15:25.420 12679 12679 D M_InsDal: Lorg/ligi/passandroid/model/PassClassifier;--->getTopics()Ljava/util/Set;
+--------- beginning of crash
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: Process: org.ligi.passandroid, PID: 12679
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: java.lang.RuntimeException: Parcelable encountered ClassNotFoundException reading a Serializable object (name = qiu.org.ligi.passandroid.MySerializable)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2933)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2719)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.os.BaseBundle.getString(BaseBundle.java:1155)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.content.Intent.getStringExtra(Intent.java:7445)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at com.google.android.gms.analytics.Tracker.a(Unknown Source:13)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at com.google.android.gms.analytics.Tracker$zza.a(Unknown Source:89)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at com.google.android.gms.analytics.GoogleAnalytics.a(Unknown Source:18)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at com.google.android.gms.analytics.GoogleAnalytics$zzb.onActivityStarted(Unknown Source:2)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.app.Application.dispatchActivityStarted(Application.java:230)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.app.Activity.onStart(Activity.java:1278)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.onStart(SourceFile:595)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.support.v7.app.AppCompatActivity.onStart(SourceFile:178)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.app.Activity.performStart(Activity.java:7165)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2978)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: qiu.org.ligi.passandroid.MySerializable
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at java.lang.Class.classForName(Native Method)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at java.lang.Class.forName(Class.java:453)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.os.Parcel$2.resolveClass(Parcel.java:2919)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1615)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1520)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1776)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at android.os.Parcel.readSerializable(Parcel.java:2927)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	... 28 more
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "qiu.org.ligi.passandroid.MySerializable" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/org.ligi.passandroid-Mp2QuoeTz2Bn85v6cMGVlA==/base.apk"],nativeLibraryDirectories=[/data/app/org.ligi.passandroid-Mp2QuoeTz2Bn85v6cMGVlA==/lib/x86_64, /system/lib64, /system/vendor/lib64]]
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-19 03:15:25.422 12679 12679 E AndroidRuntime: 	... 37 more

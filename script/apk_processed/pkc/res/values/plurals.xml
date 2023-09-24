@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"%d bad secret keys ignored. Perhaps you exported with the option
+ --export-secret-subkeys
+Make sure you export with
+ --export-secret-keys
+instead."</item>
+        <item quantity="one">"%d bad secret key ignored. Perhaps you exported with the option
+ --export-secret-subkeys
+Make sure you export with
+ --export-secret-keys
+instead."</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">Certification of %d keys failed!</item>
+        <item quantity="one">Certification failed!</item>
+    </plurals>
+    <plurals name="certify_keys_ok">
+        <item quantity="other">Successfully confirmed %1$d keys%2$s.</item>
+        <item quantity="one">Successfully confirmed key%2$s.</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">Certification failed for %d keys!</item>
+        <item quantity="one">Certification failed!</item>
+    </plurals>
+    <plurals name="delete_fail">
+        <item quantity="other">Error deleting %1$d keys.</item>
+        <item quantity="one">Error deleting one key.</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">Successfully deleted %1$d keys%2$s.</item>
+        <item quantity="one">Successfully deleted key%2$s.</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">Successfully deleted %1$d keys</item>
+        <item quantity="one">Successfully deleted one key</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">, but failed deleting %1$d keys%2$s.</item>
+        <item quantity="one">, but failed deleting one key%2$s.</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">Import of %d keys failed!</item>
+        <item quantity="one">Import failed!</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">Successfully imported %1$d keys%2$s.</item>
+        <item quantity="one">Successfully imported key%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_1">
+        <item quantity="other">Successfully imported %1$d keys</item>
+        <item quantity="one">Successfully imported one key</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_2">
+        <item quantity="other">and updated %1$d keys%2$s.</item>
+        <item quantity="one">and updated one key%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">Successfully updated %1$d keys%2$s.</item>
+        <item quantity="one">Successfully updated key%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">Import failed for %d keys!</item>
+        <item quantity="one">Import failed for one key!</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d keys selected.</item>
+        <item quantity="one">1 key selected.</item>
+    </plurals>
+    <plurals name="linked_id_expand">
+        <item quantity="other">There are %d more unknown identity types</item>
+        <item quantity="one">There is one more unknown identity type</item>
+    </plurals>
+    <plurals name="msg_backup">
+        <item quantity="other">Backup with %d keys</item>
+        <item quantity="one">Backup with one key</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uats">
+        <item quantity="other">Certifying %1$d user attributes for key %2$s</item>
+        <item quantity="one">Certifying one user attribute for key %2$s</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uids">
+        <item quantity="other">Certifying %1$d user IDs for key %2$s</item>
+        <item quantity="one">Certifying one user ID for key %2$s</item>
+    </plurals>
+    <plurals name="msg_del">
+        <item quantity="other">Deleting %d keys</item>
+        <item quantity="one">Deleting one key</item>
+    </plurals>
+    <plurals name="msg_del_fail">
+        <item quantity="other">Failed to delete %d keys</item>
+        <item quantity="one">Failed to delete one key</item>
+    </plurals>
+    <plurals name="msg_del_ok">
+        <item quantity="other">Successfully deleted %d keys</item>
+        <item quantity="one">Successfully deleted key</item>
+    </plurals>
+    <plurals name="msg_import">
+        <item quantity="other">Importing %d keys</item>
+        <item quantity="one">Importing key</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">Ignoring %s certificates issued by unknown public keys</item>
+        <item quantity="one">Ignoring one certificate issued by an unknown public key</item>
+    </plurals>
+    <plurals name="msg_ip_uid_certs_unknown">
+        <item quantity="other">Ignoring %s certificates issued by unknown public keys</item>
+        <item quantity="one">Ignoring one certificate issued by an unknown public key</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">Classifying user IDs (using %s trusted keys)</item>
+        <item quantity="one">Classifying user IDs (using one trusted key)</item>
+    </plurals>
+    <plurals name="msg_kc_success_bad">
+        <item quantity="other">Keyring canonicalization successful, removed %d erroneous certificates</item>
+        <item quantity="one">Keyring canonicalization successful, removed one erroneous certificate</item>
+    </plurals>
+    <plurals name="msg_kc_success_redundant">
+        <item quantity="other">Keyring canonicalization successful, removed %d redundant certificates</item>
+        <item quantity="one">Keyring canonicalization successful, removed one redundant certificate</item>
+    </plurals>
+    <plurals name="msg_trust_count">
+        <item quantity="other">Updating %d keys</item>
+        <item quantity="one">Updating 1 key</item>
+    </plurals>
+    <plurals name="n_authorities">
+        <item quantity="other">%d authorities</item>
+        <item quantity="one">%d authority</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d keys</item>
+        <item quantity="one">1 key</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d keyservers</item>
+        <item quantity="one">%d keyserver</item>
+    </plurals>
+    <plurals name="passp_cache_notif_n_keys">
+        <item quantity="other">%d passwords saved</item>
+        <item quantity="one">%d password saved</item>
+    </plurals>
+    <plurals name="security_token_error_pin">
+        <item quantity="other">"Incorrect PIN!
+%d tries remaining."</item>
+        <item quantity="one">"Incorrect PIN!
+%d try remaining."</item>
+    </plurals>
+    <plurals name="token_unlock_attempts">
+        <item quantity="other">%d attempts left</item>
+        <item quantity="one">1 attempt left</item>
+    </plurals>
+</resources>

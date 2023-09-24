@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search_white_24dp" android:id="@id/menu_key_list_search" android:title="@string/menu_search" app:actionViewClass="android.support.v7.widget.SearchView" app:showAsAction="always|collapseActionView" />
+    <item android:id="@id/menu_key_list_create" android:title="@string/menu_manage_keys" app:showAsAction="never" />
+    <item android:id="@id/menu_key_list_update_all_keys" android:title="@string/menu_update_all_keys" app:showAsAction="never" />
+    <item android:id="@id/menu_key_list_debug_bench" android:visible="false" android:title="Debug / Benchmark" app:showAsAction="never" />
+    <item android:id="@id/menu_key_list_debug_read" android:visible="false" android:title="Debug / DB restore" app:showAsAction="never" />
+    <item android:id="@id/menu_key_list_debug_write" android:visible="false" android:title="Debug / DB backup" app:showAsAction="never" />
+    <item android:id="@id/menu_key_list_debug_bgsync" android:visible="false" android:title="Debug / Background Key Sync" app:showAsAction="never" />
+    <item android:id="@id/menu_key_list_debug_first_time" android:visible="false" android:title="Debug / Show first time screen" app:showAsAction="never" />
+</menu>

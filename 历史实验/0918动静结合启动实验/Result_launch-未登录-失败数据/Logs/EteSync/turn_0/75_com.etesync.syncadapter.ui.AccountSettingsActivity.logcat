@@ -1,0 +1,36 @@
+--------- beginning of main
+--------- beginning of system
+09-18 21:18:18.461  5664  5664 D M_InsDal: Lcom/etesync/syncadapter/App;--->attachBaseContext(Landroid/content/Context;)V
+09-18 21:18:18.516  5664  5664 D M_InsDal: Lcom/etesync/syncadapter/App;--->onCreate()V
+09-18 21:18:18.535  5664  5664 D M_InsDal: Lcom/etesync/syncadapter/ui/AccountSettingsActivity;--->onCreate(Landroid/os/Bundle;)V
+--------- beginning of crash
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: Process: com.etesync.syncadapter, PID: 5664
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.etesync.syncadapter/com.etesync.syncadapter.ui.AccountSettingsActivity}: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.etesync.syncadapter.MyParcelable
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2954)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3089)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: Caused by: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.etesync.syncadapter.MyParcelable
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.os.Bundle.getParcelable(Bundle.java:940)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.content.Intent.getParcelableExtra(Intent.java:7473)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at com.etesync.syncadapter.ui.AccountSettingsActivity.onCreate(AccountSettingsActivity.kt:39)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7144)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7135)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2934)
+09-18 21:18:18.536  5664  5664 E AndroidRuntime: 	... 11 more

@@ -1,0 +1,45 @@
+--------- beginning of system
+--------- beginning of main
+09-19 04:50:04.281  1124  1124 D M_InsDal: Lcom/nutomic/syncthingandroid/SyncthingApp;--->onCreate()V
+09-19 04:50:04.645  1124  1124 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/StateDialogActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 04:50:04.645  1124  1124 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/MainActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 04:50:04.665  1124  1124 D M_InsDal: Lcom/nutomic/syncthingandroid/fragments/DrawerFragment;--->onActivityCreated(Landroid/os/Bundle;)V
+09-19 04:50:04.665  1124  1124 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/SyncthingActivity;--->onPostCreate(Landroid/os/Bundle;)V
+09-19 04:50:04.667  1124  1124 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/MainActivity;--->onPostCreate(Landroid/os/Bundle;)V
+09-19 04:50:04.667  1124  1124 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/SyncthingActivity;--->onResume()V
+09-19 04:50:04.668  1124  1124 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/StateDialogActivity;--->onResume()V
+09-19 04:50:04.668  1124  1124 D M_InsDal: Lcom/nutomic/syncthingandroid/fragments/DrawerFragment;--->onResume()V
+09-19 04:50:04.691  1124  1124 D M_InsDal: Lcom/nutomic/syncthingandroid/fragments/FolderListFragment;--->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+09-19 04:50:04.692  1124  1124 D M_InsDal: Lcom/nutomic/syncthingandroid/fragments/DeviceListFragment;--->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+--------- beginning of crash
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: FATAL EXCEPTION: main
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: Process: com.nutomic.syncthingandroid, PID: 1124
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: android.os.BadParcelableException: ClassNotFoundException when unmarshalling: qiu.com.nutomic.syncthingandroid.MyParcelable
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at android.os.Parcel.readParcelableCreator(Parcel.java:2839)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at android.os.Parcel.readParcelable(Parcel.java:2765)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at android.os.Parcel.readValue(Parcel.java:2668)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at android.os.Parcel.readArrayMapInternal(Parcel.java:3037)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at android.os.BaseBundle.initializeFromParcelLocked(BaseBundle.java:288)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at android.os.BaseBundle.unparcel(BaseBundle.java:232)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at android.os.BaseBundle.getBoolean(BaseBundle.java:894)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at android.content.Intent.getBooleanExtra(Intent.java:7312)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.StateDialogActivity.showLoadingDialog(StateDialogActivity.java:162)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.StateDialogActivity.onServiceStateChange(StateDialogActivity.java:83)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.StateDialogActivity.bridge$lambda$0$StateDialogActivity(Unknown Source:0)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.StateDialogActivity$$Lambda$7.onServiceStateChange(Unknown Source:8)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at com.nutomic.syncthingandroid.service.SyncthingService.registerOnServiceStateChangeListener(SyncthingService.java:561)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.StateDialogActivity.lambda$onCreate$0$StateDialogActivity(StateDialogActivity.java:41)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.StateDialogActivity$$Lambda$0.onServiceConnected(Unknown Source:5)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.SyncthingActivity$$Lambda$0.accept(Unknown Source:8)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at com.annimon.stream.Stream.forEach(Stream.java:1486)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.SyncthingActivity.onServiceConnected(SyncthingActivity.java:73)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at com.nutomic.syncthingandroid.activities.MainActivity.onServiceConnected(MainActivity.java:300)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher.doConnected(LoadedApk.java:1730)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1762)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-19 04:50:04.707  1124  1124 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)

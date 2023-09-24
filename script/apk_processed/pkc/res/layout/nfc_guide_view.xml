@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/nfc_guide_view_status_positive" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nfc_guide_view_checkmark" android:adjustViewBounds="true" android:layout_centerInParent="true" android:alpha="0.0" />
+    <ImageView android:id="@id/nfc_guide_view_status_negative" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nfc_guide_view_cross" android:adjustViewBounds="true" android:layout_centerInParent="true" android:alpha="0.0" />
+    <ImageView android:id="@id/nfc_guide_view_hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nfc_guide_view_hand_holding_card_ruby" android:layout_centerInParent="true" android:alpha="0.0" />
+    <ImageView android:id="@id/nfc_guide_view_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nfc_guide_view_nexus_five" android:layout_centerInParent="true" android:alpha="0.0" />
+    <ImageView android:id="@id/nfc_guide_view_transaction_item_icon" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/nfc_guide_view_cross" android:adjustViewBounds="true" android:layout_centerInParent="true" android:alpha="0.0" android:rotation="-23.0" />
+    <ProgressBar android:id="@id/nfc_guide_view_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:alpha="0.0" style="?android:progressBarStyleLarge" />
+</RelativeLayout>

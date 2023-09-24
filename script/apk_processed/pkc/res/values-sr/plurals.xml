@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"%d лоших тајних кључева игнорисано. Можда сте извезли са аргументом
+ --export-secret-subkeys
+Уместо тога извезите са
+ --export-secret-keys\""</item>
+        <item quantity="one">"%d лош тајни кључ игнорисан. Можда сте извезли са аргументом
+ --export-secret-subkeys
+Уместо тога извезите са
+ --export-secret-keys\""</item>
+        <item quantity="few">"%d лоша тајна кључа игнорисана. Можда сте извезли са аргументом
+ --export-secret-subkeys
+Уместо тога извезите са
+ --export-secret-keys\""</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">Оверавање %d кључева није успело!</item>
+        <item quantity="one">Оверавање није успело!</item>
+        <item quantity="few">Оверавање %d кључа није успело!</item>
+    </plurals>
+    <plurals name="certify_keys_ok">
+        <item quantity="other">Успешно потврђено %1$d кључева%2$s.</item>
+        <item quantity="one">Успешно потврђен један кључ%2$s.</item>
+        <item quantity="few">Успешно потврђена %1$d кључа%2$s.</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">Оверавање није успело за %d кључева!</item>
+        <item quantity="one">Оверавање није успело!</item>
+        <item quantity="few">Оверавање није успело за %d кључа!</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">Успешно обрисано %1$d кључева%2$s.</item>
+        <item quantity="one">Успешно обрисан кључ%2$s.</item>
+        <item quantity="few">Успешно обрисана %1$d кључа%2$s.</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">Успешно обрисано %1$d кључева</item>
+        <item quantity="one">Успешно обрисан један кључ</item>
+        <item quantity="few">Успешно обрисана %1$d кључа</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">, али брисање %1$d кључева%2$s није успело.</item>
+        <item quantity="one">, али брисање једног кључа%2$s није успело.</item>
+        <item quantity="few">, али брисање %1$d кључа%2$s није успело.</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">Увоз %d кључева није успео!</item>
+        <item quantity="one">Увоз није успео!</item>
+        <item quantity="few">Увоз %d кључа није успео!</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">Успешно увезено %1$d кључева%2$s.</item>
+        <item quantity="one">Успешно увезен %1$d кључ%2$s.</item>
+        <item quantity="few">Успешно увезена %1$d кључа%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_1">
+        <item quantity="other">Успешно увезено %1$d кључева</item>
+        <item quantity="one">Успешно увезен један кључ</item>
+        <item quantity="few">Успешно увезена %1$d кључа</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_2">
+        <item quantity="other">и ажурирано %1$d кључева%2$s.</item>
+        <item quantity="one">и ажуриран један кључ%2$s.</item>
+        <item quantity="few">и ажурирана %1$d кључа%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">Успешно ажурирано %1$d кључева%2$s.</item>
+        <item quantity="one">Успешно ажуриран %1$d кључ%2$s.</item>
+        <item quantity="few">Успешно ажурирана %1$d кључа%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">Увоз није успео за %d кључева!</item>
+        <item quantity="one">Увоз није успео за %d кључ!</item>
+        <item quantity="few">Увоз није успео за %d кључа!</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d кључева изабрано.</item>
+        <item quantity="one">%d кључ изабран.</item>
+        <item quantity="few">%d кључа изабрана.</item>
+    </plurals>
+    <plurals name="linked_id_expand">
+        <item quantity="other">Има још %d непознатих типова идентитета</item>
+        <item quantity="one">Има још један непознат тип идентитета</item>
+        <item quantity="few">Има још %d непозната типа идентитета</item>
+    </plurals>
+    <plurals name="msg_backup">
+        <item quantity="other">Резерва са %d кључева</item>
+        <item quantity="one">Резерва са једним кључем</item>
+        <item quantity="few">Резерва са %d кључа</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uats">
+        <item quantity="other">Потврђујем %1$d корисничких атрибута за кључ %2$s</item>
+        <item quantity="one">Потврђујем кориснички атрибут за кључ %2$s</item>
+        <item quantity="few">Потврђујем %1$d корисничка атрибута за кључ %2$s</item>
+    </plurals>
+    <plurals name="msg_crt_certify_uids">
+        <item quantity="other">Потврђујем %1$d корисничких ИД-ова за кључ %2$s</item>
+        <item quantity="one">Потврђујем кориснички ИД за кључ %2$s</item>
+        <item quantity="few">Потврђујем %1$d корисничка ИД-а за кључ %2$s</item>
+    </plurals>
+    <plurals name="msg_del">
+        <item quantity="other">Бришем %d кључева</item>
+        <item quantity="one">Бришем један кључ</item>
+        <item quantity="few">Бришем %d кључа</item>
+    </plurals>
+    <plurals name="msg_del_fail">
+        <item quantity="other">Брисање %d кључева није успело</item>
+        <item quantity="one">Брисање једног кључа није успело</item>
+        <item quantity="few">Брисање %d кључа није успело</item>
+    </plurals>
+    <plurals name="msg_del_ok">
+        <item quantity="other">Успешно обрисано %d кључева</item>
+        <item quantity="one">Успешно обрисан кључ</item>
+        <item quantity="few">Успешно обрисана %d кључа</item>
+    </plurals>
+    <plurals name="msg_import">
+        <item quantity="other">Увозим %d кључева</item>
+        <item quantity="one">Увозим кључ</item>
+        <item quantity="few">Увозим %d кључа</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">Игноришем %s сертификата издатих од непознатих јавних кључева</item>
+        <item quantity="one">Игноришем сертификат издат од непознатог јавног кључа</item>
+        <item quantity="few">Игноришем %s сертификата издата од непознатих јавних кључева</item>
+    </plurals>
+    <plurals name="msg_ip_uid_certs_unknown">
+        <item quantity="other">Игноришем %s сертификата издатих од непознатих јавних кључева</item>
+        <item quantity="one">Игноришем %s сертификат издат од непознатог јавног кључа</item>
+        <item quantity="few">Игноришем %s сертификата издата од непознатих јавних кључева</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">Разврставам корисничке ИД-ове (користим %s поузданих кључева)</item>
+        <item quantity="one">Разврставам корисничке ИД-ове (користим један поуздан кључ)</item>
+        <item quantity="few">Разврставам корисничке ИД-ове (користим %s поуздана кључа)</item>
+    </plurals>
+    <plurals name="msg_kc_success_bad">
+        <item quantity="other">Каноникализација привеска је успела, уклоњено %d погрешних сертификата</item>
+        <item quantity="one">Каноникализација привеска је успела, уклоњен један погрешан сертификат</item>
+        <item quantity="few">Каноникализација привеска је успела, уклоњена %d погрешна сертификата</item>
+    </plurals>
+    <plurals name="msg_kc_success_redundant">
+        <item quantity="other">Каноникализација привеска је успела, уклоњено %d сувишних сертификата</item>
+        <item quantity="one">Каноникализација привеска је успела, уклоњен један сувишни сертификат</item>
+        <item quantity="few">Каноникализација привеска је успела, уклоњена %d сувишна сертификата</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d кључева</item>
+        <item quantity="one">%d кључ</item>
+        <item quantity="few">%d кључа</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d сервера кључева</item>
+        <item quantity="one">%d сервер кључева</item>
+        <item quantity="few">%d сервера кључева</item>
+    </plurals>
+    <plurals name="security_token_error_pin">
+        <item quantity="other">"Нетачан ПИН!
+%d покушаја преостало."</item>
+        <item quantity="one">"Нетачан ПИН!
+%d покушај преостао."</item>
+        <item quantity="few">"Нетачан ПИН!
+%d покушаја преостала."</item>
+    </plurals>
+</resources>

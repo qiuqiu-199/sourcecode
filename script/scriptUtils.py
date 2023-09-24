@@ -27,23 +27,27 @@ def unistallScript():
 
 
     for installed_pkg in installed_pkgs:
-        # 卸载全部
+        # 方式一：：卸载全部
         # 包括原始apk和插桩后的apk、qiu测试apk和fax测试apk、以及csipsimple应用
-        if installed_pkg.replace("package:", "") in pkgs \
-                or "qiu" in installed_pkg \
-                or "fax" in installed_pkg \
-                or "com.csipsimple" in installed_pkg.replace("package:", ""):
-            executeCmd("adb uninstall " + installed_pkg.replace("package:", "").split("\n")[0])
-            time.sleep(3)
-            print installed_pkg.replace("package:", "") + "已卸载！"
+        # if installed_pkg.replace("package:", "") in pkgs \
+        #         or "qiu" in installed_pkg \
+        #         or "fax" in installed_pkg \
+        #         or "com.csipsimple" in installed_pkg.replace("package:", ""):
+        #     executeCmd("adb uninstall " + installed_pkg.replace("package:", "").split("\n")[0])
+        #     time.sleep(3)
+        #     print installed_pkg.replace("package:", "") + "已卸载！"
 
-        # 卸载fax的test.apk
+
+
+        # 方式二：：卸载fax的test.apk
         # if "fax" in installed_pkg:
         #     executeCmd("adb uninstall " + installed_pkg.replace("package:", "").split("\n")[0])
 
-        # 卸载qiu的test.apk
-        # if "qiu" in installed_pkg:
-        #     executeCmd("adb uninstall " + installed_pkg.replace("package:", "").split("\n")[0])
+
+
+        # 方式三：：卸载qiu的test.apk
+        if "qiu" in installed_pkg:
+            executeCmd("adb uninstall " + installed_pkg.replace("package:", "").split("\n")[0])
 
 
 def compareActivity(testActName, fn, package):
@@ -207,7 +211,7 @@ def install_apk(apk_dir):
 
 if __name__ == '__main__':
     # 卸载原先安装的软件
-    # unistallScript()
+    unistallScript()
 
     # 对no return value的测试用例重新测试一遍  2023.6.8
     # testAgainForNRV()
@@ -230,6 +234,18 @@ if __name__ == '__main__':
 
     # 一键安装
     # 参数是存放签名完的apk的地址
-    install_apk("F:\ThesisReproduction\qiu\sootOutput\signed_apk")
+    # install_apk("F:\ThesisReproduction\qiu\sootOutput\signed_apk")
+
+    # result = os.popen("adb shell pm list packages")
+    # f = result.readlines()
+
+    # 如果没有安装生成的test.apk则先安装
+    # if "package:qiu." + package + "\n" not in f:
+    #     print package, "not install"
+    #     executeCmd("adb install " + appFile)
+    #     time.sleep(5)
+    #     executeCmd("adb shell input keyevent 4")  # 相当于back键
+    #     time.sleep(1)
+    #     executeCmd("adb shell input keyevent 4")
 
     pass

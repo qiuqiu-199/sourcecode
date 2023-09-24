@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bad_keys_encountered">
+        <item quantity="other">"%d chiavi segrete corrotte ignorate. Tra l'altro hai esportato con l'opzione
+ --export-secret-subkeys
+Assicurati di esportare con
+ --export-secret-keys
+invece."</item>
+        <item quantity="one">"%d chiave segreta corrotta ignorata. Tra l'altro hai esportato con l'opzione
+ --export-secret-subkeys
+Assicurati di esportare con
+ --export-secret-keys
+invece."</item>
+    </plurals>
+    <plurals name="certify_error">
+        <item quantity="other">Certificazione di %d chiavi fallita!</item>
+        <item quantity="one">Certificazione fallita!</item>
+    </plurals>
+    <plurals name="certify_keys_ok">
+        <item quantity="other">Confermate correttamente %1$d chiavi%2$s.</item>
+        <item quantity="one">Confermata correttamente la chiave%2$s.</item>
+    </plurals>
+    <plurals name="certify_keys_with_errors">
+        <item quantity="other">Certificazione fallita per %d chiavi!</item>
+        <item quantity="one">Certificazione fallita!</item>
+    </plurals>
+    <plurals name="delete_ok">
+        <item quantity="other">Eliminazione %1$d chiavi riuscita%2$s.</item>
+        <item quantity="one">Eliminazione chiave riuscita%2$s.</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_1">
+        <item quantity="other">Eliminazione di %1$d chiavi riuscita</item>
+        <item quantity="one">Eliminazione di una chiave riuscita</item>
+    </plurals>
+    <plurals name="delete_ok_but_fail_2">
+        <item quantity="other">", ma fallita l'eliminazione di %1$d chiavi%2$s."</item>
+        <item quantity="one">", ma fallita l'eliminazione di una chiave%2$s."</item>
+    </plurals>
+    <plurals name="import_error">
+        <item quantity="other">Importazione di %d chiavi fallite!</item>
+        <item quantity="one">Importazione fallita!</item>
+    </plurals>
+    <plurals name="import_keys_added">
+        <item quantity="other">%1$d chiavi%2$s importate correttamente.</item>
+        <item quantity="one">Chiave%2$s importata correttamente.</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_1">
+        <item quantity="other">Importazione di %1$d chiavi riuscita</item>
+        <item quantity="one">Importazione di una chiave riuscita</item>
+    </plurals>
+    <plurals name="import_keys_added_and_updated_2">
+        <item quantity="other">e aggiornate %1$d chiavi%2$s.</item>
+        <item quantity="one">e aggiornato una chiave%2$s.</item>
+    </plurals>
+    <plurals name="import_keys_updated">
+        <item quantity="other">Aggiornate %1$d chiavi%2$s con successo.</item>
+        <item quantity="one">Chiave%2$s aggiornata con successo.</item>
+    </plurals>
+    <plurals name="import_keys_with_errors">
+        <item quantity="other">Importazioni fallite per %d chiavi!</item>
+        <item quantity="one">Importazione fallita per una chiave!</item>
+    </plurals>
+    <plurals name="key_list_selected_keys">
+        <item quantity="other">%d chiavi selezionate.</item>
+        <item quantity="one">1 chiave selezionata.</item>
+    </plurals>
+    <plurals name="msg_del">
+        <item quantity="other">Cancellazione di %d chiavi</item>
+        <item quantity="one">Cancellazione di una chiave</item>
+    </plurals>
+    <plurals name="msg_import">
+        <item quantity="other">Importazione di %d chiavi</item>
+        <item quantity="one">Importazione della chiave</item>
+    </plurals>
+    <plurals name="msg_ip_uat_certs_unknown">
+        <item quantity="other">Ignoro %s certificati rilasciati da chiavi pubbliche sconosciute</item>
+        <item quantity="one">Ignoro un certificato rilasciato da una chiave pubblica sconosciuta</item>
+    </plurals>
+    <plurals name="msg_ip_uid_certs_unknown">
+        <item quantity="other">Ignoro %s certificati rilasciati da chiavi pubbliche sconosciute</item>
+        <item quantity="one">Ignoro un certificato rilasciato da chiavi pubbliche sconosciute</item>
+    </plurals>
+    <plurals name="msg_ip_uid_classifying">
+        <item quantity="other">Classificazione ID utenti (usando %s chiavi fidate)</item>
+        <item quantity="one">Classificazione ID utenti (usando una chiave fidata)</item>
+    </plurals>
+    <plurals name="msg_kc_success_bad">
+        <item quantity="other">Canonicalizzazione portachiavi con successo, rimossi %d certificati errati</item>
+        <item quantity="one">Canonicalizzazione portachiavi con successo, rimosso un certificato errato</item>
+    </plurals>
+    <plurals name="msg_kc_success_redundant">
+        <item quantity="other">Canonicalizzazione portachiavi con successo, rimossi %d certificati ridondanti</item>
+        <item quantity="one">Canonicalizzazione portachiavi con successo, rimosso un certificato ridondante</item>
+    </plurals>
+    <plurals name="n_keys">
+        <item quantity="other">%d chiavi</item>
+        <item quantity="one">1 chiave</item>
+    </plurals>
+    <plurals name="n_keyservers">
+        <item quantity="other">%d server delle chiavi</item>
+        <item quantity="one">%d server delle chiavi</item>
+    </plurals>
+    <plurals name="security_token_error_pin">
+        <item quantity="other">"PIN errato!
+%d tentativi rimasti."</item>
+        <item quantity="one">"PIN errato!
+%d tentativo rimasto."</item>
+    </plurals>
+</resources>

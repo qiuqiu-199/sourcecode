@@ -1,0 +1,70 @@
+--------- beginning of main
+--------- beginning of system
+09-18 18:54:45.294 15941 15941 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;---><clinit>()V
+09-18 18:54:45.294 15941 15941 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;---><init>()V
+09-18 18:54:45.294 15941 15941 D M_InsDal: Lcom/csipsimple/service/PreferenceProvider;--->onCreate()Z
+09-18 18:54:45.295 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;---><clinit>()V
+09-18 18:54:45.295 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$1;---><init>()V
+09-18 18:54:45.295 15941 15941 D M_InsDal: Lcom/csipsimple/utils/CustomDistribution;--->getUserAgent()Ljava/lang/String;
+09-18 18:54:45.295 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$2;---><init>()V
+09-18 18:54:45.295 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper$3;---><init>()V
+09-18 18:54:45.295 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;---><init>(Landroid/content/Context;)V
+09-18 18:54:45.295 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;--->needUpgrade()Ljava/lang/Integer;
+09-18 18:54:45.295 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PreferencesProviderWrapper;--->getCurrentPackageInfos(Landroid/content/Context;)Landroid/content/pm/PackageInfo;
+09-18 18:54:45.296 15941 15941 D M_InsDal: Lcom/csipsimple/utils/Log;---><clinit>()V
+09-18 18:54:45.296 15941 15941 D M_InsDal: Lcom/csipsimple/utils/Log;--->d(Ljava/lang/String;Ljava/lang/String;)V
+09-18 18:54:45.296 15941 15941 D M_InsDal: Lcom/csipsimple/utils/Log;--->d(Ljava/lang/String;Ljava/lang/String;)V
+09-18 18:54:45.296 15941 15941 D M_InsDal: Lcom/csipsimple/utils/Compatibility;--->getApiLevel()I
+09-18 18:54:45.298 15941 15941 D M_InsDal: Lcom/csipsimple/ui/calllog/CallLogDetailsActivity;---><init>()V
+09-18 18:54:45.300 15941 15941 D M_InsDal: Lcom/csipsimple/ui/calllog/CallLogDetailsActivity;--->onCreate(Landroid/os/Bundle;)V
+09-18 18:54:45.300 15941 15941 D M_InsDal: Lcom/csipsimple/ui/calllog/CallLogDetailsFragment;---><clinit>()V
+09-18 18:54:45.300 15941 15941 D M_InsDal: Lcom/csipsimple/ui/calllog/CallLogDetailsFragment;---><init>()V
+09-18 18:54:45.300 15941 15941 D M_InsDal: Lcom/csipsimple/ui/calllog/CallLogDetailsFragment$1;---><init>(Lcom/csipsimple/ui/calllog/CallLogDetailsFragment;)V
+09-18 18:54:45.300 15941 15941 D M_InsDal: Lcom/csipsimple/ui/calllog/CallLogDetailsFragment;--->setOnQuitListener(Lcom/csipsimple/ui/calllog/CallLogDetailsFragment$OnQuitListener;)V
+09-18 18:54:45.307 15941 15941 D M_InsDal: Lcom/csipsimple/ui/calllog/CallLogDetailsFragment;--->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+09-18 18:54:45.310 15941 15941 D M_InsDal: Lcom/csipsimple/widgets/AccountChooserButton;---><clinit>()V
+09-18 18:54:45.310 15941 15941 D M_InsDal: Lcom/csipsimple/widgets/AccountChooserButton;---><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+09-18 18:54:45.312 15941 15941 D M_InsDal: Lcom/csipsimple/widgets/AccountChooserButton;--->setAccount(Lcom/csipsimple/api/SipProfile;)V
+09-18 18:54:45.312 15941 15941 D M_InsDal: Lcom/csipsimple/utils/Compatibility;--->canMakeGSMCall(Landroid/content/Context;)Z
+09-18 18:54:45.312 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;---><init>(Landroid/content/Context;)V
+09-18 18:54:45.312 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;--->getGsmIntegrationType()I
+09-18 18:54:45.312 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;--->getPreferenceStringValue(Ljava/lang/String;)Ljava/lang/String;
+09-18 18:54:45.312 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PreferencesWrapper;--->gPrefStringValue(Landroid/content/SharedPreferences;Ljava/lang/String;)Ljava/lang/String;
+09-18 18:54:45.312 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PhoneCapabilityTester;---><clinit>()V
+09-18 18:54:45.312 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PhoneCapabilityTester;--->isPhone(Landroid/content/Context;)Z
+09-18 18:54:45.312 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PhoneCapabilityTester;--->initialize(Landroid/content/Context;)V
+09-18 18:54:45.313 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PhoneCapabilityTester;--->getPriviledgedIntent(Ljava/lang/String;)Landroid/content/Intent;
+09-18 18:54:45.313 15941 15941 D M_InsDal: Lcom/csipsimple/utils/PhoneCapabilityTester;--->getPossibleActivities(Landroid/content/Context;Landroid/content/Intent;)Ljava/util/List;
+09-18 18:54:45.315 15941 15941 D M_InsDal: Lcom/csipsimple/ui/calllog/PhoneCallDetailsHelper;---><init>(Landroid/content/res/Resources;)V
+09-18 18:54:45.316 15941 15941 D M_InsDal: Lcom/csipsimple/ui/calllog/CallLogDetailsActivity;--->onStart()V
+09-18 18:54:45.318 15941 15941 D M_InsDal: Lcom/csipsimple/ui/calllog/CallLogDetailsFragment;--->onResume()V
+09-18 18:54:45.318 15941 15941 D M_InsDal: Lcom/csipsimple/ui/calllog/CallLogDetailsFragment;--->getCallLogEntryUris()[Landroid/net/Uri;
+--------- beginning of crash
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: FATAL EXCEPTION: main
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: Process: com.csipsimple, PID: 15941
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.csipsimple/com.csipsimple.ui.calllog.CallLogDetailsActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'long[] android.os.Bundle.getLongArray(java.lang.String)' on a null object reference
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3825)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3857)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1819)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6730)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:860)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long[] android.os.Bundle.getLongArray(java.lang.String)' on a null object reference
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at com.csipsimple.ui.calllog.CallLogDetailsFragment.getCallLogEntryUris(CallLogDetailsFragment.java:160)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at com.csipsimple.ui.calllog.CallLogDetailsFragment.onResume(CallLogDetailsFragment.java:147)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:918)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1083)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1065)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.support.v4.app.FragmentManagerImpl.dispatchResume(FragmentManager.java:1854)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.onResumeFragments(FragmentActivity.java:431)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.onPostResume(FragmentActivity.java:420)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at com.actionbarsherlock.app.SherlockFragmentActivity.onPostResume(SherlockFragmentActivity.java:70)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7325)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3817)
+09-18 18:54:45.319 15941 15941 E AndroidRuntime: 	... 11 more

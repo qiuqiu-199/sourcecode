@@ -63,6 +63,8 @@ class ActivityLauncher:
             executeCmd("adb shell input keyevent 4")
 
         # 获取ICCMsg的icc消息，下面遍历用
+        if not os.path.exists(iccFile):  #.iccmsg文件不存在的情况
+            return
         f = open(iccFile)
         lines = f.readlines()
         f.close()

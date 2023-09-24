@@ -1,0 +1,10 @@
+--------- beginning of main
+--------- beginning of system
+09-19 04:58:07.107  3762  3762 D M_InsDal: Lcom/nutomic/syncthingandroid/SyncthingApp;--->onCreate()V
+09-19 04:58:07.463  3762  3762 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/DeviceActivity;--->onCreate(Landroid/os/Bundle;)V
+09-19 04:58:07.481  3762  3762 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/SyncthingActivity;--->onPostCreate(Landroid/os/Bundle;)V
+09-19 04:58:07.483  3762  3762 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/SyncthingActivity;--->onResume()V
+09-19 04:58:07.521  3762  3762 D M_InsDal: Lcom/nutomic/syncthingandroid/views/EnhancedEditText;--->onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
+09-19 04:58:09.509  3762  3762 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/DeviceActivity;--->onPause()V
+09-19 04:58:09.510  3762  3762 D M_InsDal: Lcom/nutomic/syncthingandroid/views/EnhancedEditText;--->onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
+09-19 04:58:09.622  3762  3762 D M_InsDal: Lcom/nutomic/syncthingandroid/activities/DeviceActivity;--->onDestroy()V

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/cap_certify" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/cap_cert_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ic_action_verified_cutout_24dp" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorHeaderText" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cap_title_confirm" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/cap_cert_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/cap_cert_security_token" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/yubi_icon_24dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/cap_sign" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/cap_sign_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ic_mode_edit_white_24dp" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorHeaderText" android:layout_gravity="center_vertical" android:id="@id/cap_sign_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cap_title_sign" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/cap_sign_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/cap_sign_security_token" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/yubi_icon_24dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/cap_decrypt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/cap_decrypt_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ic_lock_white_24dp" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorHeaderText" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cap_title_decrypt" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/cap_decrypt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/cap_decrypt_security_token" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/yubi_icon_24dp" />
+    </LinearLayout>
+</merge>

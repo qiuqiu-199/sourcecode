@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:id="@id/card_linked_ids" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="?colorCardViewBackground" card_view:cardCornerRadius="4.0dip" card_view:cardElevation="2.0dip" card_view:cardUseCompatPadding="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_linked_identity" style="@style/CardViewHeader" />
+            <include layout="@layout/linked_id_item" />
+            <ViewAnimator android:id="@id/linked_verify_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:measureAllChildren="false">
+                <include layout="@layout/cert_list_widget" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:animateLayoutChanges="true">
+                    <TextSwitcher android:id="@id/linked_cert_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:measureAllChildren="false" android:inAnimation="@anim/fade_in_quick" android:outAnimation="@anim/fade_out_quick" android:layout_weight="1.0">
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </TextSwitcher>
+                    <ViewAnimator android:layout_gravity="center" android:id="@id/linked_cert_progress" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="4.0dip" android:inAnimation="@anim/fade_in" android:outAnimation="@anim/fade_out">
+                        <ProgressBar android:layout_width="22.0dip" android:layout_height="22.0dip" android:indeterminate="true" />
+                        <ImageView android:id="@id/status_icon_verified" android:layout_width="22.0dip" android:layout_height="wrap_content" android:src="@drawable/status_signature_verified_inner_24dp" />
+                        <ImageView android:id="@id/status_icon_invalid" android:layout_width="22.0dip" android:layout_height="wrap_content" android:src="@drawable/status_signature_invalid_cutout_24dp" />
+                    </ViewAnimator>
+                </LinearLayout>
+            </ViewAnimator>
+            <LinearLayout android:id="@id/cert_key_spincontainer" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/add_keys_my_key" android:layout_marginEnd="4.0dip" />
+                <org.sufficientlysecure.keychain.ui.widget.KeySpinner android:id="@id/cert_key_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="start" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@color/card_view_button" android:id="@id/button_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linked_button_view" style="?android:borderlessButtonStyle" />
+                <ViewAnimator android:id="@id/button_animator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inAnimation="@anim/fade_in" android:outAnimation="@anim/fade_out">
+                    <Button android:textColor="@color/card_view_button" android:id="@id/button_verify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linked_button_verify" style="?android:borderlessButtonStyle" />
+                    <Button android:textColor="@color/card_view_button" android:id="@id/button_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linked_button_retry" style="?android:borderlessButtonStyle" />
+                    <Button android:textColor="@color/card_view_button" android:id="@id/button_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linked_button_confirm" style="?android:borderlessButtonStyle" />
+                </ViewAnimator>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>
